@@ -29,12 +29,15 @@ description: Use to close company planning sessions and verify Brain, domain-own
 1. Identify every file changed in the session.
 2. Read every new or changed doc end to end.
 3. Decide whether Brain company brief needs an update.
-4. Decide whether any domain owner needs follow-up.
+4. Decide whether any domain owner needs follow-up, including whether any department brief, source docs, or work queue was affected.
 5. Decide whether structured tasks, domain history, milestones, or operational records are implicated.
-6. Run `git diff --name-only` or equivalent.
-7. Run `git status --short --branch`.
-8. Confirm no Supabase records, structured records, app behavior, public site behavior, Brain mirrored docs, test data, or unapproved commitments changed.
-9. Provide the standard closeout report.
+6. If structured tasks or domain history changed, summarize those changes clearly.
+7. If local docs changed and Brain mirrors are still relevant, ask whether a Brain docs sync should be run. Syncing is not a hard rule during migration and must not happen unless explicitly scoped.
+8. Commit and push only when the user asks or the work unit is explicitly scoped for git publication.
+9. Run `git diff --name-only` or equivalent.
+10. Run `git status --short --branch`.
+11. Confirm no Supabase records, structured records, app behavior, public site behavior, Brain mirrored docs, test data, or unapproved commitments changed.
+12. Provide the standard closeout report.
 
 ## Expected Output
 ```markdown
@@ -55,6 +58,7 @@ Unresolved questions:
 - Update Brain company brief only when manager-facing strategy state changed and the user has not deferred it.
 - Do not write to Supabase or structured records unless explicitly asked.
 - Do not sync or edit Brain mirrored docs unless explicitly scoped.
+- Do not commit or push unless explicitly scoped.
 - Follow `MINIBIOTA_WRITE_MODE`.
 
 ## Do-Not-Do Boundaries

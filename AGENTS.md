@@ -59,6 +59,7 @@ Chat history and private model memory are never source of truth. Durable project
 
 ## Company Safety Rules
 - Do not invent business commitments, launch targets, legal decisions, financial commitments, sponsor obligations, roadmap commitments, or public promises from memory.
+- Do not invent business plans, launch dates, legal decisions, public commitments, or financial commitments.
 - Do not make commitments or public promises without explicit user direction.
 - Keep current state, planned state, proposed changes, and aspirational roadmap separate.
 - Keep mission, vision, roadmap, governance, and operating priorities separate from domain-specific implementation details.
@@ -74,10 +75,11 @@ This repo reports to the Strategy Agent through:
 
 Update that brief at session end when any of these changed:
 - Mission, vision, roadmap, operating model, or governance.
-- Active company priorities or cross-domain sequencing.
+- Active company priorities, risks, planning gaps, or cross-domain sequencing.
 - Recent milestones or decisions.
-- Known risks, blockers, or planning gaps.
 - Cross-domain dependencies for Research, Hardware, Content, Brand, Growth, Financials, Web, App, Raw Footage, or Brain.
+- A decision affects another department's brief, source docs, or work queue.
+- Business plan, roadmap, or quarterly objectives are created or materially changed.
 
 Do not push full planning drafts or detailed department-specific work into the Brain brief. Keep detailed company work in this repo and structured records in Supabase.
 
@@ -111,7 +113,8 @@ Do not edit Brain mirrored docs directly. Source docs live in this repo while mi
 | `docs/company_operations_overview.md` | Original Brain Company Operations overview, retained as migrated context |
 | `docs/strategic_roadmap.md` | Quarterly and five-year milestone planning |
 | `docs/ai_operating_interface_guide.md` | Legacy AI interface guide; Claude-specific guidance is historical unless reactivated |
-| `docs/agent_protocol.md` | Earlier Codex operating protocol for Company sessions, retained during migration |
+
+`docs/agent_protocol.md` was absorbed into `AGENTS.md`, `memory/`, and `skills/` during Phase 2 Batch 1 and archived at `archive/superseded/agent_protocol.md`.
 
 ## Write Policy
 Respect `MINIBIOTA_WRITE_MODE` from Brain when available:
@@ -137,6 +140,9 @@ For documentation-only sessions:
 For company planning/ops sessions:
 - Verify current structured tasks, milestones, finance-sensitive assumptions, or domain status before making time-sensitive recommendations.
 - Report any live checks that could not run because of sandbox, auth, or network restrictions.
+- If structured tasks or domain history changed, summarize those changes clearly.
+- If local docs changed and Brain mirrors are still relevant, ask whether a Brain docs sync should be run. Syncing Brain mirrors is not a hard Company closeout rule during migration because the active architecture is moving to `AGENTS.md`, `memory/`, and `skills/`, and this repo must not update Brain mirrored docs unless explicitly scoped.
+- Commit and push only when the user asks or the work unit is explicitly scoped for git publication. Do not make commit/push a hard closeout rule.
 
 ## Session Closeout Report
 Close every session with:

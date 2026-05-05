@@ -38,4 +38,4 @@ try {
     Write-Host "Git status check failed: $($_.Exception.Message)"
 }
 
-Write-Host "Startup complete. Read AGENTS.md, docs/agent_protocol.md, Brain agent_memory.md, and Brain company_brief.md before work."
+Write-Host "Startup complete. Read AGENTS.md, memory/00-index.md, relevant memory and skills, Brain agent_memory.md when needed, and Brain company_brief.md for strategy-level state."

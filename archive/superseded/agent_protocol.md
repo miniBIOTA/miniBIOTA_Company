@@ -3,9 +3,16 @@ id: company_agent_protocol
 title: miniBIOTA Company Agent Protocol
 domain: company_operations
 last_updated: 2026-04-30
-tags: [codex, agent-protocol, company, strategy, operations]
+tags: [codex, agent-protocol, company, strategy, operations, superseded]
+superseded_by:
+  - ../../AGENTS.md
+  - ../../memory/00-index.md
+  - ../../skills/company-session-closeout/SKILL.md
+archived_on: 2026-05-05
 ---
 # miniBIOTA Company Agent Protocol
+
+> Superseded: This protocol was absorbed into active Company Agent architecture during Phase 2 Batch 1. Use `AGENTS.md`, `memory/`, and `skills/` for current operating rules.
 
 ## Role
 The Company Agent owns miniBIOTA's top-level operating memory and strategic planning layer. This includes mission, vision, roadmap, governance, cross-domain sequencing, business-planning gaps, and company-level decisions that affect multiple departments.

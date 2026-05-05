@@ -15,6 +15,8 @@ Use this order when sources disagree:
 7. Local `docs/` files for migration-era reference not yet absorbed into memory or skill reference.
 8. Brain mirrored docs and compiled exports as reference artifacts only.
 
+Chat history and private model memory are never durable project truth.
+
 ## Durable Memory Destinations
 - Company operating rules and recurring decisions: `AGENTS.md` or `memory/`.
 - Repeatable workflows: `skills/*/SKILL.md`.
@@ -24,7 +26,9 @@ Use this order when sources disagree:
 - Historical or superseded material: `archive/`, only when an explicit migration phase asks for archival.
 
 ## Docs During Migration
-`docs/` remains in place during Phase 1. Do not delete, move, or archive old docs yet. Future phases should absorb active material into memory or skill reference folders, then archive superseded docs only with explicit scope.
+`docs/` remains in place during migration for exact reference material that has not yet been absorbed. `docs/agent_protocol.md` has been absorbed and archived at `archive/superseded/agent_protocol.md`.
+
+Do not delete, move, or archive other docs unless a migration batch explicitly scopes that work. Future phases should absorb active material into memory or skill reference folders, then archive superseded docs only with explicit scope.
 
 ## Structured Records
 Do not write to Supabase or structured records unless explicitly asked. If a recommendation depends on current structured state, verify it before answering in depth and report any live-check limitation.

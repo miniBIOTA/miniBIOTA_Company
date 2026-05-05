@@ -32,10 +32,11 @@ description: Use to promote durable company decisions, governance rules, strateg
 1. Identify the proposed durable fact, rule, decision, or constraint.
 2. Check existing memory for duplication or conflict.
 3. Decide the correct destination: `AGENTS.md`, a `memory/*.md` file, a skill, skill reference, Brain company brief, Supabase, or `memory/inbox.md`.
-4. Ask before editing memory unless the user explicitly scoped the edit.
-5. Write the smallest durable update that preserves current/planned/proposed/aspirational distinctions.
-6. Read changed files end to end.
-7. Report whether Brain brief, domain owners, or structured records are implicated.
+4. Check whether the candidate belongs in active memory or should remain in `memory/inbox.md` as unapproved or unresolved.
+5. Ask before editing memory unless the user explicitly scoped the edit.
+6. Write the smallest durable update that preserves current/planned/proposed/aspirational distinctions.
+7. Read changed files end to end.
+8. Report whether Brain brief, domain owners, or structured records are implicated.
 
 ## Expected Output
 - Destination decision.

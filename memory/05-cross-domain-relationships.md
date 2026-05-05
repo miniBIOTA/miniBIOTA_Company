@@ -19,6 +19,9 @@ When company work affects more than one domain, identify the affected domains, d
 - Raw Footage: archival evidence, media source material, proof assets, and documentary history.
 - Brain: manager-facing strategy state, cross-domain briefs, and federated agent coordination.
 
+## Department Impact Rule
+When a company decision affects a department, explicitly name the affected domain and what it needs to do next. If the decision affects a department's brief, source docs, or work queue, call that out separately from implementation recommendations.
+
 ## Ownership Pattern
 Company can frame the decision and downstream need. The domain owner or domain agent owns the implementation detail unless Josue explicitly scopes the Company Agent to make a direct cross-repo change.
 

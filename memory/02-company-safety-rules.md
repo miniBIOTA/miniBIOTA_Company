@@ -6,10 +6,13 @@ last_updated: 2026-05-05
 
 ## Commitment Boundaries
 Do not invent, imply, or finalize any of the following without explicit user direction:
+- Business plans.
 - Business commitments.
 - Public promises.
+- Public commitments.
 - Financial commitments.
 - Launch targets.
+- Launch dates.
 - Legal decisions.
 - Sponsor obligations.
 - Roadmap commitments.
@@ -35,6 +38,8 @@ Do not update Brain mirrored docs directly.
 
 ## Cross-Domain Safety
 When a company decision affects Research, Hardware, Content, Brand, Growth, Financials, Web, App, Raw Footage, or Brain, name the affected domain and what it needs next. Do not silently convert company planning into a department mandate.
+
+If a decision affects another department's brief, source docs, or work queue, identify that impact explicitly and decide whether follow-up is needed. Company coordination does not replace department implementation ownership.
 
 ## Legacy Interface Safety
 Claude-specific files and historical equal-peer interface language are legacy reference unless Josue explicitly reactivates them. Codex is the primary Company Agent interface moving forward.

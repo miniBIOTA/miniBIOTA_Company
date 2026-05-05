@@ -30,10 +30,11 @@ description: Use when company work affects multiple domains and needs downstream
 1. Define the company-level objective or tension.
 2. List affected domains from Research, Hardware, Content, Brand, Growth, Financials, Web, App, Raw Footage, and Brain.
 3. For each affected domain, identify why it is implicated and what it needs next.
-4. Separate company coordination from domain implementation ownership.
-5. Flag dependencies, blockers, sequencing constraints, and approval needs.
-6. Identify whether Brain company brief or domain-owner follow-up is needed.
-7. Present a concise coordination plan.
+4. Identify whether any department brief, source docs, or work queue is affected.
+5. Separate company coordination from domain implementation ownership.
+6. Flag dependencies, blockers, sequencing constraints, and approval needs.
+7. Identify whether Brain company brief or domain-owner follow-up is needed.
+8. Present a concise coordination plan.
 
 ## Expected Output
 - Cross-domain impact map.

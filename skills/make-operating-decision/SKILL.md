@@ -32,8 +32,9 @@ description: Use for company-level decisions, governance choices, sequencing dec
 3. Identify affected domains and downstream owners.
 4. Check whether the decision would imply a business commitment, public promise, financial commitment, launch target, legal decision, sponsor obligation, or roadmap commitment.
 5. If the decision requires explicit approval, frame it as a recommendation or option until Josue approves it.
-6. Provide the decision, rationale, assumptions, downstream next steps, and any unresolved risks.
-7. Decide whether the result should update `memory/`, Brain company brief, domain follow-up notes, or structured records.
+6. Check whether the decision affects another department's brief, source docs, or work queue.
+7. Provide the decision, rationale, assumptions, downstream next steps, and any unresolved risks.
+8. Decide whether the result should update `memory/`, Brain company brief, domain follow-up notes, or structured records.
 
 ## Expected Output
 - Decision or recommendation.
@@ -50,6 +51,7 @@ description: Use for company-level decisions, governance choices, sequencing dec
 
 ## Do-Not-Do Boundaries
 - Do not invent commitments.
+- Do not invent business plans.
 - Do not make public promises.
 - Do not create financial, legal, sponsor, launch, or roadmap obligations without explicit user direction.
 - Do not replace domain source-of-truth implementation details.

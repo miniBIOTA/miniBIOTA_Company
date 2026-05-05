@@ -38,8 +38,9 @@ description: Use when a milestone, project, deadline, quarterly plan, or five-ye
 3. Check whether the request would create or imply a launch target, roadmap commitment, financial commitment, sponsor obligation, or public promise.
 4. If current structured state matters, verify tasks, milestones, or domain status before making time-sensitive recommendations.
 5. Identify affected domains and feasibility inputs needed from each.
-6. Describe implications, dependencies, risks, and decision points.
-7. State clearly whether anything is proposed or approved.
+6. Identify whether the roadmap implication affects another department's brief, source docs, or work queue.
+7. Describe implications, dependencies, risks, and decision points.
+8. State clearly whether anything is proposed or approved.
 
 ## Expected Output
 - Roadmap implication summary.

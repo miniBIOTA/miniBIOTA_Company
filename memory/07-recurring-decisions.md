@@ -15,7 +15,7 @@ last_updated: 2026-05-05
 - No active Company docs remain after Phase 2 Batch 4.
 - Brain company brief updates are for manager-facing state changes, not every working note.
 - Company planning must identify downstream domains when decisions affect Research, Hardware, Content, Brand, Growth, Financials, Web, App, Raw Footage, or Brain.
-- Commit/push and Brain docs sync are not hard closeout rules. They happen only when explicitly scoped or requested, because migration is moving active context out of mirrored docs and git publication should remain user-directed.
+- Commit/push is not a hard closeout rule. Brain docs sync no longer mirrors Company docs; active Company context lives in this repo memory/skills architecture, and git publication should remain user-directed.
 - No executive persona framing is used for Company memory or planning.
 - Supabase tasks are the structured source for task state when current operating status matters; do not recreate task truth in Markdown.
 - Cross-interface and cross-agent handoffs must use durable files, briefs, or structured records as the handoff surface. Chat history alone is not enough.

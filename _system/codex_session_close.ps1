@@ -12,8 +12,8 @@ Write-Host "Company repo status:"
 git status --short --branch
 Pop-Location
 
-if (Test-Path "$brainRoot\1. Company Operations\company_brief.md") {
-    Write-Host "Company brief exists: $brainRoot\1. Company Operations\company_brief.md"
+if (Test-Path "$brainRoot\1. miniBIOTA_Company\company_brief.md") {
+    Write-Host "Company brief exists: $brainRoot\1. miniBIOTA_Company\company_brief.md"
 } else {
     Write-Host "Company brief missing at expected path."
 }

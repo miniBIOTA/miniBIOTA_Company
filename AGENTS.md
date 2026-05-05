@@ -17,7 +17,7 @@ Codex is the primary operating interface for this repo. Durable company memory b
 - Company memory under `memory/`.
 - Company workflow playbooks under `skills/`.
 - Roadmap exact reference under `skills/review-roadmap-implications/reference/`.
-- Brain strategy brief at `M:\miniBIOTA\miniBIOTA_Brain\1. Company Operations\company_brief.md`.
+- Brain strategy brief at `M:\miniBIOTA\miniBIOTA_Brain\1. miniBIOTA_Company\company_brief.md`.
 - Supabase, via `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py`, for tasks, domain history, milestones, and structured operational records when the work requires current structured state.
 
 ## Startup Sequence
@@ -34,7 +34,7 @@ If working manually:
 3. Load the lightest relevant `memory/*.md` files for the request.
 4. Use the matching `skills/*/SKILL.md` playbook when the request matches a repeatable company workflow.
 5. Read `M:\miniBIOTA\miniBIOTA_Brain\_system\agent_memory.md` when Brain-wide operating context or write mode may matter.
-6. Read `M:\miniBIOTA\miniBIOTA_Brain\1. Company Operations\company_brief.md` for strategy-level current state.
+6. Read `M:\miniBIOTA\miniBIOTA_Brain\1. miniBIOTA_Company\company_brief.md` for strategy-level current state.
 7. Use `skills/*/reference/` for exact workflow reference material.
 8. Use Supabase only when current structured tasks, domain history, milestones, or operational records matter.
 
@@ -52,7 +52,7 @@ Use this hierarchy when sources disagree:
 5. Brain `company_brief.md` for manager-facing strategy-level current state.
 6. Supabase for structured/queryable tasks, domain history, milestones, and operational records when those records are relevant.
 7. `skills/*/reference/` files for exact workflow reference material.
-8. Brain mirrored docs and compiled exports as reference artifacts only.
+8. Brain company brief and compiled exports as reference artifacts only.
 
 Chat history and private model memory are never source of truth. Durable project memory belongs in Markdown in this repo, in the Brain company brief, or in Supabase when it is structured data.
 
@@ -70,7 +70,7 @@ Chat history and private model memory are never source of truth. Durable project
 ## Brain Relationship
 This repo reports to the Strategy Agent through:
 
-`M:\miniBIOTA\miniBIOTA_Brain\1. Company Operations\company_brief.md`
+`M:\miniBIOTA\miniBIOTA_Brain\1. miniBIOTA_Company\company_brief.md`
 
 Update that brief at session end when any of these changed:
 - Mission, vision, roadmap, operating model, or governance.
@@ -82,7 +82,7 @@ Update that brief at session end when any of these changed:
 
 Do not push full planning drafts or detailed department-specific work into the Brain brief. Keep detailed company work in this repo and structured records in Supabase.
 
-Do not edit Brain mirrored docs directly. After the Company restructure, active Company Agent behavior lives in this repo's `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`; Brain mirrors are historical/reference artifacts unless explicitly scoped otherwise.
+Do not edit Brain mirrored docs directly. After the Company restructure, Brain no longer keeps a Company docs mirror; active Company Agent behavior lives in this repo's `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 
 ## Current Memory Map
 | File | Purpose |

@@ -12,8 +12,8 @@ if (Test-Path "$brainRoot\_system\agent_memory.md") {
     Write-Host "Brain memory not found at expected path: $brainRoot\_system\agent_memory.md"
 }
 
-if (Test-Path "$brainRoot\1. Company Operations\company_brief.md") {
-    Write-Host "Company brief: $brainRoot\1. Company Operations\company_brief.md"
+if (Test-Path "$brainRoot\1. miniBIOTA_Company\company_brief.md") {
+    Write-Host "Company brief: $brainRoot\1. miniBIOTA_Company\company_brief.md"
 } else {
     Write-Host "Company brief not found yet at expected path."
 }

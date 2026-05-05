@@ -15,18 +15,18 @@ Then read:
 3. The smallest relevant `memory/*.md` files for the request
 4. The matching `skills/*/SKILL.md` playbook, when a repeatable workflow applies
 5. `M:\miniBIOTA\miniBIOTA_Brain\_system\agent_memory.md`, when Brain-wide context or write mode matters
-6. `M:\miniBIOTA\miniBIOTA_Brain\1. Company Operations\company_brief.md`, for strategy-level current state
+6. `M:\miniBIOTA\miniBIOTA_Brain\1. miniBIOTA_Company\company_brief.md`, for strategy-level current state
 
 ## Brain Relationship
 
 This repo reports to the Strategy Agent through:
 
-`M:\miniBIOTA\miniBIOTA_Brain\1. Company Operations\company_brief.md`
+`M:\miniBIOTA\miniBIOTA_Brain\1. miniBIOTA_Company\company_brief.md`
 
-Original migration-era company docs have been absorbed into `memory/`, `skills/`, skill reference files, or `archive/`. Brain mirrored docs may exist as older read-only artifacts, but they are not active workflow authorities.
+Original migration-era company docs have been absorbed into `memory/`, `skills/`, skill reference files, or `archive/`. Brain no longer keeps a Company docs mirror; active Company detail lives here.
 
 Active Company Agent rules live in `AGENTS.md`, `memory/`, and `skills/`. Roadmap exact reference lives in `skills/review-roadmap-implications/reference/strategic-roadmap.md`. Archived legacy docs are historical context only unless a current entry point says otherwise.
 
 ## GitHub
 
-Remote: `https://github.com/miniBIOTA/miniBIOTA_Company`
+Remote: `https://github.com/miniBIOTA/miniBIOTA_Company.git`

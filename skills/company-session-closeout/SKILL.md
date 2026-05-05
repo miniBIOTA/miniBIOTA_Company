@@ -29,15 +29,16 @@ description: Use to close company planning sessions and verify Brain, domain-own
 1. Identify every file changed in the session.
 2. Read every new or changed doc end to end.
 3. Decide whether Brain company brief needs an update.
-4. Decide whether any domain owner needs follow-up, including whether any department brief, source docs, or work queue was affected.
-5. Decide whether structured tasks, domain history, milestones, or operational records are implicated.
-6. If structured tasks or domain history changed, summarize those changes clearly.
-7. If local docs changed and Brain mirrors are still relevant, ask whether a Brain docs sync should be run. Syncing is not a hard rule during migration and must not happen unless explicitly scoped.
-8. Commit and push only when the user asks or the work unit is explicitly scoped for git publication.
-9. Run `git diff --name-only` or equivalent.
-10. Run `git status --short --branch`.
-11. Confirm no Supabase records, structured records, app behavior, public site behavior, Brain mirrored docs, test data, or unapproved commitments changed.
-12. Provide the standard closeout report.
+4. Decide whether company-level priorities, risks, planning gaps, roadmap gaps, business-planning gaps, governance, or cross-domain sequencing changed.
+5. Decide whether any domain owner needs follow-up, including whether any department brief, source docs, or work queue was affected.
+6. Decide whether structured tasks, domain history, milestones, or operational records are implicated.
+7. If structured tasks or domain history changed, summarize those changes clearly.
+8. If local docs changed and Brain mirrors are still relevant, ask whether a Brain docs sync should be run. Syncing is not a hard rule during migration and must not happen unless explicitly scoped.
+9. Commit and push only when the user asks or the work unit is explicitly scoped for git publication.
+10. Run `git diff --name-only` or equivalent.
+11. Run `git status --short --branch`.
+12. Confirm no Supabase records, structured records, app behavior, public site behavior, Brain mirrored docs, test data, or unapproved commitments changed.
+13. Provide the standard closeout report.
 
 ## Expected Output
 ```markdown

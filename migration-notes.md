@@ -19,5 +19,12 @@ Phase 2 Batch 1 absorbed `docs/agent_protocol.md` into active Company Agent arch
 - The superseded protocol was archived at `archive/superseded/agent_protocol.md`.
 - Commit/push and Brain docs sync prompts were preserved as scoped actions, not hard closeout rules, because active Company context is moving out of `docs/` and this repo should not update Brain mirrors or publish git history unless explicitly scoped.
 
+## Phase 2 Batch 2 - Company Operations Overview Absorption
+Phase 2 Batch 2 absorbed `docs/company_operations_overview.md` into active Company Agent memory and relevant skills:
+- Company-level purpose, operating scope, mission, vision, operating model, source boundaries, priorities, risks, and planning gaps now live in `memory/`.
+- Decision, cross-domain coordination, and closeout workflows now account for company-level priorities, risks, planning gaps, business-planning gaps, and governance implications.
+- The superseded overview was archived at `archive/superseded/company_operations_overview.md`.
+- Current-state claims from the overview were preserved only where already consistent with active memory or Brain brief context; roadmap and task-priority language remains framed as planning gaps or items needing Josue review, not commitments.
+
 ## Explicit Non-Changes
-No Supabase records, structured records, app behavior, public site behavior, Brain mirrored docs, Brain company brief, test data, business commitments, public promises, financial commitments, launch targets, legal decisions, sponsor obligations, or roadmap commitments were changed by Phase 1 or Phase 2 Batch 1.
+No Supabase records, structured records, app behavior, public site behavior, Brain mirrored docs, Brain company brief, test data, business commitments, public promises, financial commitments, launch targets, legal decisions, sponsor obligations, or roadmap commitments were changed by Phase 1, Phase 2 Batch 1, or Phase 2 Batch 2.

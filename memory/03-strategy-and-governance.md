@@ -25,6 +25,10 @@ Current design priorities include climate control precision, atmospheric sealing
 ## Operating Model
 The Company Agent maintains the top-level coordination layer. Brain holds the manager-facing strategy brief. Domains maintain detailed source-of-truth context in their own repos, memory, skills, docs, codebases, and structured records.
 
+No executive persona framing is used. Company memory should remain operational, source-grounded, and practical.
+
+Historical Brain overview language used topic-based knowledge folders and equal-peer Claude/Codex language. Current Company architecture is Codex-primary and uses `AGENTS.md`, `memory/`, `skills/`, `skills/*/reference/`, and `archive/` as the active local structure.
+
 ## Brain Brief Update Rules
 Update the Brain company brief when manager-facing strategy state changes, including:
 - Mission, vision, roadmap, governance, or operating model changes.

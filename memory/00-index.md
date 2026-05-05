@@ -31,6 +31,6 @@ Use memory for stable company context. Use skills for repeatable workflows. Use 
 | `inbox.md` | Temporary holding area for migration notes and candidate durable memory |
 
 ## Migration Status
-Phase 1 created the memory and skill architecture. Phase 2 Batch 1 absorbed `docs/agent_protocol.md` into `AGENTS.md`, `memory/`, and `skills/`, then archived it at `archive/superseded/agent_protocol.md`.
+Phase 1 created the memory and skill architecture. Phase 2 Batch 1 absorbed `docs/agent_protocol.md` into `AGENTS.md`, `memory/`, and `skills/`, then archived it at `archive/superseded/agent_protocol.md`. Phase 2 Batch 2 absorbed `docs/company_operations_overview.md` into `memory/` and relevant `skills/`, then archived it at `archive/superseded/company_operations_overview.md`.
 
 Remaining `docs/` files have not been archived or deleted. Future migration phases should absorb useful material from `docs/` into memory files or skill reference folders, then archive superseded material only when explicitly approved.

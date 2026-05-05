@@ -3,9 +3,19 @@ id: company_operations
 title: 1. Company Operations
 domain: company_operations
 last_updated: 2026-04-17
-tags: [operations, strategy, roadmap, business-planning, governance]
+tags: [operations, strategy, roadmap, business-planning, governance, superseded]
+superseded_by:
+  - ../../memory/01-agent-purpose.md
+  - ../../memory/03-strategy-and-governance.md
+  - ../../memory/04-roadmap-and-priorities.md
+  - ../../memory/05-cross-domain-relationships.md
+  - ../../memory/06-source-of-truth-rules.md
+  - ../../memory/07-recurring-decisions.md
+archived_on: 2026-05-05
 ---
 # 1. Company Operations
+
+> Superseded: This overview was absorbed into active Company Agent memory and skills during Phase 2 Batch 2. Use `memory/` and `skills/` for current operating rules and context.
 
 ## Scope
 - Defines the company's mission, vision, strategic direction, and operating priorities for the miniBIOTA program.
@@ -34,15 +44,14 @@ tags: [operations, strategy, roadmap, business-planning, governance]
 ## Risks / Gaps
 - The roadmap is mostly unfilled after the first confirmed milestone, limiting strategic visibility.
 - Core business planning is not yet documented in a single operating plan.
-- Q2 goals are not yet defined in `Strategic Roadmap.md` — this is the most urgent planning gap.
+- Q2 goals are not yet defined in `Strategic Roadmap.md` - this is the most urgent planning gap.
 - Task priorities and quarter targets were assigned by Brain Agent during migration and need Josue's review.
 
 ## Files In This Folder
-- `ai_operating_interface_guide.md` — practical guidance for when to use Claude Code vs Codex
-- `Strategic Roadmap.md` — quarterly milestone planning (tasks now in Supabase, not a tasks.md file)
-
+- `ai_operating_interface_guide.md` - practical guidance for when to use Claude Code vs Codex
+- `Strategic Roadmap.md` - quarterly milestone planning (tasks now in Supabase, not a tasks.md file)
 
 ## Vault Sync Status
-- Last verified: —
+- Last verified: -
 - Known divergences: none noted
 - Next sync check: flag during relevant domain session

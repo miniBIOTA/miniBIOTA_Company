@@ -25,8 +25,11 @@ Chat history and private model memory are never durable project truth.
 - Structured tasks, domain history, milestones, and operational records: Supabase.
 - Historical or superseded material: `archive/`, only when an explicit migration phase asks for archival.
 
+## Supabase Boundaries
+Tasks are structured records in the Supabase `tasks` table and are queryable by domain when current operating state matters. Do not recreate task state in Markdown as an active source of truth. Do not write to Supabase unless explicitly scoped.
+
 ## Docs During Migration
-`docs/` remains in place during migration for exact reference material that has not yet been absorbed. `docs/agent_protocol.md` has been absorbed and archived at `archive/superseded/agent_protocol.md`.
+`docs/` remains in place during migration for exact reference material that has not yet been absorbed. `docs/agent_protocol.md` has been absorbed and archived at `archive/superseded/agent_protocol.md`. `docs/company_operations_overview.md` has been absorbed and archived at `archive/superseded/company_operations_overview.md`.
 
 Do not delete, move, or archive other docs unless a migration batch explicitly scopes that work. Future phases should absorb active material into memory or skill reference folders, then archive superseded docs only with explicit scope.
 

@@ -30,11 +30,12 @@ description: Use for company-level decisions, governance choices, sequencing dec
 1. Restate the decision being made and the scope of authority.
 2. Separate current state, planned state, proposed options, and aspirational roadmap.
 3. Identify affected domains and downstream owners.
-4. Check whether the decision would imply a business commitment, public promise, financial commitment, launch target, legal decision, sponsor obligation, or roadmap commitment.
-5. If the decision requires explicit approval, frame it as a recommendation or option until Josue approves it.
-6. Check whether the decision affects another department's brief, source docs, or work queue.
-7. Provide the decision, rationale, assumptions, downstream next steps, and any unresolved risks.
-8. Decide whether the result should update `memory/`, Brain company brief, domain follow-up notes, or structured records.
+4. Identify whether the decision touches a company-level priority, risk, planning gap, business-planning gap, roadmap gap, or governance principle.
+5. Check whether the decision would imply a business commitment, public promise, financial commitment, launch target, legal decision, sponsor obligation, or roadmap commitment.
+6. If the decision requires explicit approval, frame it as a recommendation or option until Josue approves it.
+7. Check whether the decision affects another department's brief, source docs, or work queue.
+8. Provide the decision, rationale, assumptions, downstream next steps, and any unresolved risks.
+9. Decide whether the result should update `memory/`, Brain company brief, domain follow-up notes, or structured records.
 
 ## Expected Output
 - Decision or recommendation.

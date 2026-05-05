@@ -110,11 +110,12 @@ Do not edit Brain mirrored docs directly. Source docs live in this repo while mi
 ## Temporary Docs During Migration
 | File | Contents |
 |---|---|
-| `docs/company_operations_overview.md` | Original Brain Company Operations overview, retained as migrated context |
 | `docs/strategic_roadmap.md` | Quarterly and five-year milestone planning |
 | `docs/ai_operating_interface_guide.md` | Legacy AI interface guide; Claude-specific guidance is historical unless reactivated |
 
 `docs/agent_protocol.md` was absorbed into `AGENTS.md`, `memory/`, and `skills/` during Phase 2 Batch 1 and archived at `archive/superseded/agent_protocol.md`.
+
+`docs/company_operations_overview.md` was absorbed into `memory/` and relevant `skills/` during Phase 2 Batch 2 and archived at `archive/superseded/company_operations_overview.md`.
 
 ## Write Policy
 Respect `MINIBIOTA_WRITE_MODE` from Brain when available:

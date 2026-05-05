@@ -7,6 +7,8 @@ last_updated: 2026-05-05
 ## Coordination Rule
 When company work affects more than one domain, identify the affected domains, downstream owners, what each domain needs next, and whether the Brain company brief needs to change.
 
+Company strategy provides the top-level business context for downstream execution. It should align operations, funding, storytelling, hardware development, brand/public language, web presentation, app workflows, and research truth without replacing domain ownership.
+
 ## Domain Map
 - Research: ecological feasibility, species/data truth, observations, scientific claims, and knowledge graph integrity.
 - Hardware: engineering priorities, sensor expansion, telemetry, climate control, enclosure, estuary feasibility, and live-system safety.

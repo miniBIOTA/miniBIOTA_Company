@@ -15,6 +15,13 @@ Q2 goals are not yet defined in `docs/strategic_roadmap.md`. Treat this as an ac
 - Finish species card coverage and finalize species information for public-facing use.
 - Expand the roadmap beyond Q1 2026 into decision-ready quarterly objectives.
 - Coordinate cross-domain priorities without replacing department source-of-truth systems.
+- Review migrated task priorities and quarter targets with Josue before treating them as approved.
+
+## Known Risks And Gaps
+- Roadmap detail is mostly unfilled after the first confirmed milestone, limiting strategic visibility.
+- Core business planning is not yet documented in a single operating plan.
+- Q2 goals are not yet defined; this is an active planning gap.
+- Migrated task priorities and quarter targets need Josue's review before they are treated as approved current priorities.
 
 ## Roadmap Principles
 - Distinguish confirmed milestones, active priorities, proposed changes, and aspirational roadmap.
@@ -23,4 +30,4 @@ Q2 goals are not yet defined in `docs/strategic_roadmap.md`. Treat this as an ac
 - Use domain owners to validate implementation feasibility before making company-level sequencing feel final.
 
 ## Migration Reference
-During Phase 1 migration, exact roadmap material still lives in `docs/strategic_roadmap.md`. Use `skills/review-roadmap-implications/SKILL.md` for milestone, deadline, quarterly plan, or five-year roadmap questions.
+During migration, exact roadmap material still lives in `docs/strategic_roadmap.md`. Use `skills/review-roadmap-implications/SKILL.md` for milestone, deadline, quarterly plan, or five-year roadmap questions.

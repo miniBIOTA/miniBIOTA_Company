@@ -11,5 +11,5 @@ Use this file as a temporary holding area for:
 - Migration notes that need later absorption into memory, skills, reference, or archive.
 
 ## Open Inbox Items
-- Future migration phases should review `docs/company_operations_overview.md`, `docs/strategic_roadmap.md`, and `docs/ai_operating_interface_guide.md` for absorption into `memory/` or `skills/*/reference/`.
+- Future migration phases should review `docs/strategic_roadmap.md` and `docs/ai_operating_interface_guide.md` for absorption into `memory/` or `skills/*/reference/`.
 - Decide whether any old Company docs should remain as active docs after migration, or whether `docs/` should disappear entirely.

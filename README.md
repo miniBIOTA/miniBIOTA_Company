@@ -23,7 +23,7 @@ This repo reports to the Strategy Agent through:
 
 `M:\miniBIOTA\miniBIOTA_Brain\1. Company Operations\company_brief.md`
 
-Detailed company docs live here. Brain mirrors them read-only into:
+Remaining migration-era company docs live here. Brain mirrors them read-only into:
 
 `M:\miniBIOTA\miniBIOTA_Brain\1. Company Operations\docs\`
 

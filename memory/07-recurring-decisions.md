@@ -9,10 +9,13 @@ last_updated: 2026-05-05
 - Claude-specific guidance is legacy reference unless Josue explicitly reactivates it.
 - The Company Agent architecture is moving toward `AGENTS.md`, `memory/`, `skills/`, `skills/*/reference/`, and `archive/`.
 - `docs/agent_protocol.md` was absorbed into active architecture during Phase 2 Batch 1 and archived at `archive/superseded/agent_protocol.md`.
+- `docs/company_operations_overview.md` was absorbed into active memory and skills during Phase 2 Batch 2 and archived at `archive/superseded/company_operations_overview.md`.
 - Remaining old `docs/` files stay in place until explicitly scoped for migration.
 - Brain company brief updates are for manager-facing state changes, not every working note.
 - Company planning must identify downstream domains when decisions affect Research, Hardware, Content, Brand, Growth, Financials, Web, App, Raw Footage, or Brain.
 - Commit/push and Brain docs sync are not hard closeout rules. They happen only when explicitly scoped or requested, because migration is moving active context out of mirrored docs and git publication should remain user-directed.
+- No executive persona framing is used for Company memory or planning.
+- Supabase tasks are the structured source for task state when current operating status matters; do not recreate task truth in Markdown.
 
 ## Recurring Constraints
 - Do not create business commitments, public promises, financial commitments, launch targets, legal decisions, sponsor obligations, or roadmap commitments without explicit user direction.

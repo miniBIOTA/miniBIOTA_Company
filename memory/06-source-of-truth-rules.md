@@ -17,6 +17,11 @@ Use this order when sources disagree:
 
 Chat history and private model memory are never durable project truth.
 
+## AI Interface And Handoff Rules
+Treat the repo, Brain brief, domain briefs, and structured records as the real memory. If work moves between interfaces or agents, write durable conclusions back to the appropriate source before treating the handoff as complete.
+
+Old Claude-specific routing guidance is historical. Codex is the active Company Agent interface for repo-heavy execution, direct file changes, scripts, tooling, and multi-step implementation work in this repo.
+
 ## Durable Memory Destinations
 - Company operating rules and recurring decisions: `AGENTS.md` or `memory/`.
 - Repeatable workflows: `skills/*/SKILL.md`.
@@ -29,7 +34,7 @@ Chat history and private model memory are never durable project truth.
 Tasks are structured records in the Supabase `tasks` table and are queryable by domain when current operating state matters. Do not recreate task state in Markdown as an active source of truth. Do not write to Supabase unless explicitly scoped.
 
 ## Docs During Migration
-`docs/` remains in place during migration for exact reference material that has not yet been absorbed. `docs/agent_protocol.md` has been absorbed and archived at `archive/superseded/agent_protocol.md`. `docs/company_operations_overview.md` has been absorbed and archived at `archive/superseded/company_operations_overview.md`.
+`docs/` remains in place during migration for exact reference material that has not yet been absorbed. `docs/agent_protocol.md` has been absorbed and archived at `archive/superseded/agent_protocol.md`. `docs/company_operations_overview.md` has been absorbed and archived at `archive/superseded/company_operations_overview.md`. `docs/ai_operating_interface_guide.md` has been absorbed and archived at `archive/superseded/ai_operating_interface_guide.md`.
 
 Do not delete, move, or archive other docs unless a migration batch explicitly scopes that work. Future phases should absorb active material into memory or skill reference folders, then archive superseded docs only with explicit scope.
 

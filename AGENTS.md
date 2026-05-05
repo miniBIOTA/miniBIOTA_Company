@@ -41,7 +41,7 @@ If working manually:
 
 For roadmap work, use `skills/review-roadmap-implications/SKILL.md`, `memory/04-roadmap-and-priorities.md`, and `docs/strategic_roadmap.md` while the roadmap source remains in `docs/`.
 
-For historical AI-interface context, use `docs/ai_operating_interface_guide.md`, but treat Claude-specific guidance as legacy unless the user explicitly reactivates it.
+Historical AI-interface guidance has been archived at `archive/superseded/ai_operating_interface_guide.md`. Treat Claude-specific routing as legacy unless the user explicitly reactivates it.
 
 ## Source Of Truth
 Use this hierarchy when sources disagree:
@@ -111,11 +111,12 @@ Do not edit Brain mirrored docs directly. Source docs live in this repo while mi
 | File | Contents |
 |---|---|
 | `docs/strategic_roadmap.md` | Quarterly and five-year milestone planning |
-| `docs/ai_operating_interface_guide.md` | Legacy AI interface guide; Claude-specific guidance is historical unless reactivated |
 
 `docs/agent_protocol.md` was absorbed into `AGENTS.md`, `memory/`, and `skills/` during Phase 2 Batch 1 and archived at `archive/superseded/agent_protocol.md`.
 
 `docs/company_operations_overview.md` was absorbed into `memory/` and relevant `skills/` during Phase 2 Batch 2 and archived at `archive/superseded/company_operations_overview.md`.
+
+`docs/ai_operating_interface_guide.md` was absorbed into `memory/`, relevant `skills/`, and archive notes during Phase 2 Batch 3 and archived at `archive/superseded/ai_operating_interface_guide.md`.
 
 ## Write Policy
 Respect `MINIBIOTA_WRITE_MODE` from Brain when available:

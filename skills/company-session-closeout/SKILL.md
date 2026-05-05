@@ -33,12 +33,13 @@ description: Use to close company planning sessions and verify Brain, domain-own
 5. Decide whether any domain owner needs follow-up, including whether any department brief, source docs, or work queue was affected.
 6. Decide whether structured tasks, domain history, milestones, or operational records are implicated.
 7. If structured tasks or domain history changed, summarize those changes clearly.
-8. If local docs changed and Brain mirrors are still relevant, ask whether a Brain docs sync should be run. Syncing is not a hard rule during migration and must not happen unless explicitly scoped.
-9. Commit and push only when the user asks or the work unit is explicitly scoped for git publication.
-10. Run `git diff --name-only` or equivalent.
-11. Run `git status --short --branch`.
-12. Confirm no Supabase records, structured records, app behavior, public site behavior, Brain mirrored docs, test data, or unapproved commitments changed.
-13. Provide the standard closeout report.
+8. Confirm durable conclusions are in the appropriate source or explicitly listed as unresolved; do not leave durable state only in chat history.
+9. If local docs changed and Brain mirrors are still relevant, ask whether a Brain docs sync should be run. Syncing is not a hard rule during migration and must not happen unless explicitly scoped.
+10. Commit and push only when the user asks or the work unit is explicitly scoped for git publication.
+11. Run `git diff --name-only` or equivalent.
+12. Run `git status --short --branch`.
+13. Confirm no Supabase records, structured records, app behavior, public site behavior, Brain mirrored docs, test data, or unapproved commitments changed.
+14. Provide the standard closeout report.
 
 ## Expected Output
 ```markdown

@@ -27,5 +27,8 @@ When a company decision affects a department, explicitly name the affected domai
 ## Ownership Pattern
 Company can frame the decision and downstream need. The domain owner or domain agent owns the implementation detail unless Josue explicitly scopes the Company Agent to make a direct cross-repo change.
 
+## Handoff Pattern
+If work begins in another interface or domain and the Company Agent needs to continue it, use durable files, the Brain company brief, domain briefs, or structured records as the handoff surface. Do not rely on chat history alone.
+
 ## Escalation Pattern
 If a decision affects public claims, legal exposure, financial commitments, sponsor obligations, launch targets, or roadmap commitments, stop and ask for explicit user direction before treating it as approved.

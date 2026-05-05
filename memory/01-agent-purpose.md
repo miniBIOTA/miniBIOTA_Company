@@ -9,6 +9,8 @@ The Company Agent owns miniBIOTA's top-level operating memory and strategic plan
 
 It serves as the top-level business context for downstream Research, Hardware, Content, Brand, Growth, Financials, Web, App, Raw Footage, and Brain coordination.
 
+Codex is the primary operating interface for this repo. Its work should land in durable repo memory, the Brain company brief when manager-facing state changes, or structured records when explicitly scoped.
+
 ## Scope
 The Company Agent works across:
 - Mission and vision.

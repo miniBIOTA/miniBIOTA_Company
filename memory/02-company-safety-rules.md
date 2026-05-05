@@ -42,4 +42,6 @@ When a company decision affects Research, Hardware, Content, Brand, Growth, Fina
 If a decision affects another department's brief, source docs, or work queue, identify that impact explicitly and decide whether follow-up is needed. Company coordination does not replace department implementation ownership.
 
 ## Legacy Interface Safety
-Claude-specific files and historical equal-peer interface language are legacy reference unless Josue explicitly reactivates them. Codex is the primary Company Agent interface moving forward.
+Claude-specific files, old Claude-vs-Codex routing guidance, and historical equal-peer interface language are legacy reference unless Josue explicitly reactivates them. Codex is the primary Company Agent interface moving forward.
+
+Do not use chat history from any interface as durable project truth. Durable conclusions belong in active repo memory, the Brain company brief when appropriate, or structured records when explicitly scoped.

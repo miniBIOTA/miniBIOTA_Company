@@ -35,7 +35,8 @@ description: Use when company work affects multiple domains and needs downstream
 6. Separate company coordination from domain implementation ownership.
 7. Flag dependencies, blockers, sequencing constraints, and approval needs.
 8. Identify whether Brain company brief or domain-owner follow-up is needed.
-9. Present a concise coordination plan.
+9. Identify the durable handoff surface for each downstream owner: domain brief, domain repo memory, source doc, structured record, or explicit follow-up note.
+10. Present a concise coordination plan.
 
 ## Expected Output
 - Cross-domain impact map.
@@ -43,6 +44,7 @@ description: Use when company work affects multiple domains and needs downstream
 - Sequencing recommendation.
 - Risks, blockers, and unresolved questions.
 - Brain brief, memory, domain follow-up, or structured-record implications.
+- Durable handoff surface for affected domains.
 
 ## Write And Approval Rules
 - Ask before editing memory unless explicitly scoped.

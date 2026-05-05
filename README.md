@@ -27,7 +27,7 @@ Remaining migration-era company docs live here. Brain mirrors them read-only int
 
 `M:\miniBIOTA\miniBIOTA_Brain\1. Company Operations\docs\`
 
-During migration, active Company Agent rules live in `AGENTS.md`, `memory/`, and `skills/`. Legacy docs remain available only as migration-era reference unless a current entry point says otherwise.
+During migration, active Company Agent rules live in `AGENTS.md`, `memory/`, and `skills/`. Archived legacy docs are historical context only unless a current entry point says otherwise.
 
 ## GitHub
 

@@ -26,5 +26,11 @@ Phase 2 Batch 2 absorbed `docs/company_operations_overview.md` into active Compa
 - The superseded overview was archived at `archive/superseded/company_operations_overview.md`.
 - Current-state claims from the overview were preserved only where already consistent with active memory or Brain brief context; roadmap and task-priority language remains framed as planning gaps or items needing Josue review, not commitments.
 
+## Phase 2 Batch 3 - AI Operating Interface Guide Absorption
+Phase 2 Batch 3 absorbed `docs/ai_operating_interface_guide.md` into active Company Agent memory and relevant skills:
+- Durable source-of-truth and handoff principles now live in `memory/06-source-of-truth-rules.md`, `memory/07-recurring-decisions.md`, and closeout/update-memory workflows.
+- Claude-specific routing, equal-peer interface assumptions, and old workflow language were archived as historical context only.
+- The superseded guide was archived at `archive/superseded/ai_operating_interface_guide.md`.
+
 ## Explicit Non-Changes
-No Supabase records, structured records, app behavior, public site behavior, Brain mirrored docs, Brain company brief, test data, business commitments, public promises, financial commitments, launch targets, legal decisions, sponsor obligations, or roadmap commitments were changed by Phase 1, Phase 2 Batch 1, or Phase 2 Batch 2.
+No Supabase records, structured records, app behavior, public site behavior, Brain mirrored docs, Brain company brief, test data, business commitments, public promises, financial commitments, launch targets, legal decisions, sponsor obligations, or roadmap commitments were changed by Phase 1, Phase 2 Batch 1, Phase 2 Batch 2, or Phase 2 Batch 3.

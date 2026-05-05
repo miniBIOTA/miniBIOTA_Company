@@ -30,13 +30,14 @@ description: Use to promote durable company decisions, governance rules, strateg
 
 ## Workflow
 1. Identify the proposed durable fact, rule, decision, or constraint.
-2. Check existing memory for duplication or conflict.
-3. Decide the correct destination: `AGENTS.md`, a `memory/*.md` file, a skill, skill reference, Brain company brief, Supabase, or `memory/inbox.md`.
-4. Check whether the candidate belongs in active memory or should remain in `memory/inbox.md` as unapproved or unresolved.
-5. Ask before editing memory unless the user explicitly scoped the edit.
-6. Write the smallest durable update that preserves current/planned/proposed/aspirational distinctions.
-7. Read changed files end to end.
-8. Report whether Brain brief, domain owners, or structured records are implicated.
+2. If the input came from chat history or another interface, verify it against durable files, the Brain company brief, domain briefs, or structured records before treating it as source truth.
+3. Check existing memory for duplication or conflict.
+4. Decide the correct destination: `AGENTS.md`, a `memory/*.md` file, a skill, skill reference, Brain company brief, Supabase, or `memory/inbox.md`.
+5. Check whether the candidate belongs in active memory or should remain in `memory/inbox.md` as unapproved or unresolved.
+6. Ask before editing memory unless the user explicitly scoped the edit.
+7. Write the smallest durable update that preserves current/planned/proposed/aspirational distinctions.
+8. Read changed files end to end.
+9. Report whether Brain brief, domain owners, or structured records are implicated.
 
 ## Expected Output
 - Destination decision.

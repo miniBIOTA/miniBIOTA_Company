@@ -36,6 +36,7 @@ description: Use for company-level decisions, governance choices, sequencing dec
 7. Check whether the decision affects another department's brief, source docs, or work queue.
 8. Provide the decision, rationale, assumptions, downstream next steps, and any unresolved risks.
 9. Decide whether the result should update `memory/`, Brain company brief, domain follow-up notes, or structured records.
+10. If the decision came from another interface or prior conversation, ground it in durable files, briefs, or structured records before treating it as current truth.
 
 ## Expected Output
 - Decision or recommendation.

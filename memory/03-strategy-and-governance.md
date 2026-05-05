@@ -27,7 +27,7 @@ The Company Agent maintains the top-level coordination layer. Brain holds the ma
 
 No executive persona framing is used. Company memory should remain operational, source-grounded, and practical.
 
-Historical Brain overview language used topic-based knowledge folders and equal-peer Claude/Codex language. Current Company architecture is Codex-primary and uses `AGENTS.md`, `memory/`, `skills/`, `skills/*/reference/`, and `archive/` as the active local structure.
+Historical Brain overview and AI-interface language used topic-based knowledge folders and equal-peer Claude/Codex routing. Current Company architecture is Codex-primary and uses `AGENTS.md`, `memory/`, `skills/`, `skills/*/reference/`, and `archive/` as the active local structure.
 
 ## Brain Brief Update Rules
 Update the Brain company brief when manager-facing strategy state changes, including:

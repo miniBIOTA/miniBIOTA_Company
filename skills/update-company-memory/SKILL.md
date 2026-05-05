@@ -25,8 +25,10 @@ description: Use to promote durable company decisions, governance rules, strateg
 - `memory/inbox.md`
 
 ## Required Docs Or Reference Files
-- Relevant `docs/` files only when checking whether old migration material already contains the rule.
+- Relevant memory files and skill reference files.
 - Brain company brief if the memory change affects manager-facing strategy state.
+- Relevant domain briefs when domain-specific current strategy state matters.
+- Archive files only for historical context or duplication checks against superseded material.
 
 ## Workflow
 1. Identify the proposed durable fact, rule, decision, or constraint.
@@ -57,4 +59,4 @@ description: Use to promote durable company decisions, governance rules, strateg
 - Do not store unapproved commitments as approved facts.
 - Do not duplicate rules across many memory files without a clear reason.
 - Do not turn chat-only ideas into durable company truth without scope or approval.
-- Do not archive or delete legacy docs unless a migration phase explicitly asks for it.
+- Do not archive or delete legacy material unless a migration phase explicitly asks for it.

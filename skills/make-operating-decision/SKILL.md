@@ -23,7 +23,9 @@ description: Use for company-level decisions, governance choices, sequencing dec
 
 ## Required Docs Or Reference Files
 - Brain company brief when the decision depends on strategy-level current state.
-- Relevant `docs/` files only while migration-era exact reference remains there.
+- Relevant memory files and skill reference files.
+- Relevant domain briefs when domain-specific current strategy state matters.
+- Archive files only for historical context.
 - Supabase read checks only if current structured tasks, milestones, domain history, or operational records matter.
 
 ## Workflow

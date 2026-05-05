@@ -23,9 +23,7 @@ This repo reports to the Strategy Agent through:
 
 `M:\miniBIOTA\miniBIOTA_Brain\1. Company Operations\company_brief.md`
 
-Original migration-era company docs have been absorbed into `memory/`, `skills/`, skill reference files, or `archive/`. Brain may still contain older read-only mirrors at:
-
-`M:\miniBIOTA\miniBIOTA_Brain\1. Company Operations\docs\`
+Original migration-era company docs have been absorbed into `memory/`, `skills/`, skill reference files, or `archive/`. Brain mirrored docs may exist as older read-only artifacts, but they are not active workflow authorities.
 
 Active Company Agent rules live in `AGENTS.md`, `memory/`, and `skills/`. Roadmap exact reference lives in `skills/review-roadmap-implications/reference/strategic-roadmap.md`. Archived legacy docs are historical context only unless a current entry point says otherwise.
 

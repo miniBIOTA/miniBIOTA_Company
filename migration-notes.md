@@ -7,11 +7,13 @@ Phase 1 created the initial Company Agent architecture:
 - `skills/review-roadmap-implications/reference/` for roadmap-specific reference material during migration.
 - Updated `AGENTS.md` routing for the new architecture.
 
-## What Stayed In Place
-Old docs were not archived, deleted, or moved. The `docs/` folder remains available as temporary migration-era source material.
+## What Stayed In Place During Phase 1
+During Phase 1, old docs were not archived, deleted, or moved. Phase 2 later absorbed those docs into active architecture or archive.
 
-## Future Migration Phases
-Future phases should absorb useful material from `docs/` into `memory/` or `skills/*/reference/`, then archive superseded docs only when explicitly scoped and approved.
+## Final Structure After Phase 2
+Company docs have now been absorbed into `memory/`, `skills/`, skill reference files, and `archive/superseded/`. The `docs/` folder is empty/superseded and has no active workflow authority.
+
+Next recommended step after this cleanup is the Team tab update.
 
 ## Phase 2 Batch 1 - Agent Protocol Absorption
 Phase 2 Batch 1 absorbed `docs/agent_protocol.md` into active Company Agent architecture:

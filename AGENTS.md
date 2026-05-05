@@ -10,8 +10,7 @@ Codex is the primary operating interface for this repo. Durable company memory b
 - `memory/` contains durable company purpose, strategy context, governance rules, roadmap principles, cross-domain relationship rules, recurring decisions, and migration inbox notes.
 - `skills/` contains active task playbooks for repeatable company workflows.
 - `skills/*/reference/` contains exact strategy/reference material when a skill needs it.
-- `docs/` is temporary migration source material. Phase 2 has absorbed the original Company docs into `memory/`, `skills/`, `skills/*/reference/`, and `archive/`; do not add new durable operating truth there unless a later phase explicitly keeps `docs/`.
-- `archive/` is the future destination for historical or superseded material. Do not move or archive legacy files until a migration phase explicitly asks for it.
+- `archive/superseded/` contains historical docs only. Do not use archive files as active operating instructions.
 
 ## Tech Stack
 - Markdown vault as durable company and strategy memory.
@@ -36,7 +35,7 @@ If working manually:
 4. Use the matching `skills/*/SKILL.md` playbook when the request matches a repeatable company workflow.
 5. Read `M:\miniBIOTA\miniBIOTA_Brain\_system\agent_memory.md` when Brain-wide operating context or write mode may matter.
 6. Read `M:\miniBIOTA\miniBIOTA_Brain\1. Company Operations\company_brief.md` for strategy-level current state.
-7. Use `docs/` only during migration if exact reference material has not yet been absorbed into `memory/` or `skills/*/reference/`.
+7. Use `skills/*/reference/` for exact workflow reference material.
 8. Use Supabase only when current structured tasks, domain history, milestones, or operational records matter.
 
 For roadmap work, use `skills/review-roadmap-implications/SKILL.md`, `memory/04-roadmap-and-priorities.md`, and `skills/review-roadmap-implications/reference/strategic-roadmap.md`.
@@ -52,7 +51,7 @@ Use this hierarchy when sources disagree:
 4. Relevant `skills/*/SKILL.md` playbooks for active workflow rules.
 5. Brain `company_brief.md` for manager-facing strategy-level current state.
 6. Supabase for structured/queryable tasks, domain history, milestones, and operational records when those records are relevant.
-7. Local `docs/` files for migration-era reference only if material has not yet been absorbed.
+7. `skills/*/reference/` files for exact workflow reference material.
 8. Brain mirrored docs and compiled exports as reference artifacts only.
 
 Chat history and private model memory are never source of truth. Durable project memory belongs in Markdown in this repo, in the Brain company brief, or in Supabase when it is structured data.
@@ -83,7 +82,7 @@ Update that brief at session end when any of these changed:
 
 Do not push full planning drafts or detailed department-specific work into the Brain brief. Keep detailed company work in this repo and structured records in Supabase.
 
-Do not edit Brain mirrored docs directly. Source docs live in this repo while migration is in progress and are mirrored read-only into `M:\miniBIOTA\miniBIOTA_Brain\1. Company Operations\docs\` by Brain `sync_docs.ps1`.
+Do not edit Brain mirrored docs directly. After the Company restructure, active Company Agent behavior lives in this repo's `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`; Brain mirrors are historical/reference artifacts unless explicitly scoped otherwise.
 
 ## Current Memory Map
 | File | Purpose |
@@ -143,7 +142,7 @@ For company planning/ops sessions:
 - Verify current structured tasks, milestones, finance-sensitive assumptions, or domain status before making time-sensitive recommendations.
 - Report any live checks that could not run because of sandbox, auth, or network restrictions.
 - If structured tasks or domain history changed, summarize those changes clearly.
-- If local docs changed and Brain mirrors are still relevant, ask whether a Brain docs sync should be run. Syncing Brain mirrors is not a hard Company closeout rule during migration because the active architecture is moving to `AGENTS.md`, `memory/`, and `skills/`, and this repo must not update Brain mirrored docs unless explicitly scoped.
+- If active Company architecture changes in a way that affects manager-facing state, decide whether the Brain company brief needs an update. Do not sync Brain mirrored docs unless explicitly scoped.
 - Commit and push only when the user asks or the work unit is explicitly scoped for git publication. Do not make commit/push a hard closeout rule.
 
 ## Session Closeout Report
@@ -163,4 +162,4 @@ Unresolved questions:
 - item or "None"
 ```
 
-If local docs changed in a way the Strategy Agent needs, update the Brain company brief before closing unless the user explicitly defers it. During migration sessions that only change local agent architecture, do not update the Brain brief unless manager-facing strategy state changed.
+If local Company architecture or planning changed in a way the Strategy Agent needs, update the Brain company brief before closing unless the user explicitly defers it. During migration sessions that only change local agent architecture, do not update the Brain brief unless manager-facing strategy state changed.

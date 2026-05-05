@@ -29,7 +29,7 @@ description: Use to close company planning sessions and verify Brain, domain-own
 1. Identify every file changed in the session.
 2. Read every new or changed doc end to end.
 3. Decide whether Brain company brief needs an update.
-4. Decide whether company-level priorities, risks, planning gaps, roadmap gaps, business-planning gaps, governance, or cross-domain sequencing changed.
+4. Decide whether company-level priorities, risks, planning gaps, roadmap gaps, roadmap commitments, business-planning gaps, governance, or cross-domain sequencing changed.
 5. Decide whether any domain owner needs follow-up, including whether any department brief, source docs, or work queue was affected.
 6. Decide whether structured tasks, domain history, milestones, or operational records are implicated.
 7. If structured tasks or domain history changed, summarize those changes clearly.
@@ -58,6 +58,7 @@ Unresolved questions:
 
 ## Write And Approval Rules
 - Update Brain company brief only when manager-facing strategy state changed and the user has not deferred it.
+- Treat approved roadmap changes as manager-facing strategy state changes unless Josue explicitly defers Brain brief updates.
 - Do not write to Supabase or structured records unless explicitly asked.
 - Do not sync or edit Brain mirrored docs unless explicitly scoped.
 - Do not commit or push unless explicitly scoped.

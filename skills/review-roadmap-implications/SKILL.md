@@ -27,30 +27,33 @@ description: Use when a milestone, project, deadline, quarterly plan, or five-ye
 - `memory/07-recurring-decisions.md`
 
 ## Required Docs Or Reference Files
-- `docs/strategic_roadmap.md` while the exact roadmap remains in `docs/`.
+- `skills/review-roadmap-implications/reference/strategic-roadmap.md`
 - `skills/review-roadmap-implications/reference/README.md` for migration status.
 - Brain company brief for strategy-level current state.
 - Supabase read checks only when current structured milestones, tasks, or operational records matter.
 
 ## Workflow
 1. Identify the roadmap item, milestone, project, deadline, or planning horizon.
-2. Separate confirmed milestones, approved priorities, proposed roadmap changes, and aspirational roadmap.
-3. Check whether the request would create or imply a launch target, roadmap commitment, financial commitment, sponsor obligation, or public promise.
-4. If current structured state matters, verify tasks, milestones, or domain status before making time-sensitive recommendations.
-5. Identify affected domains and feasibility inputs needed from each.
-6. Identify whether the roadmap implication affects another department's brief, source docs, or work queue.
-7. Describe implications, dependencies, risks, and decision points.
-8. State clearly whether anything is proposed or approved.
+2. Read the exact roadmap reference when the request depends on roadmap contents.
+3. Separate confirmed milestones, approved priorities, proposed roadmap changes, placeholders, and aspirational roadmap.
+4. Treat blank quarters and sparse future-year sections as placeholders, not commitments.
+5. Check whether the request would create or imply a launch target, roadmap commitment, financial commitment, sponsor obligation, or public promise.
+6. If current structured state matters, verify tasks, milestones, or domain status before making time-sensitive recommendations.
+7. Identify affected domains and feasibility inputs needed from each.
+8. Identify whether the roadmap implication affects another department's brief, source docs, or work queue.
+9. Describe implications, dependencies, risks, and decision points.
+10. State clearly whether anything is proposed or approved.
 
 ## Expected Output
 - Roadmap implication summary.
 - Confirmed vs proposed vs aspirational distinction.
+- Placeholder vs commitment distinction.
 - Affected domains and dependencies.
 - Risks, blockers, and approval needs.
 - Recommended next decision or planning step.
 
 ## Write And Approval Rules
-- Do not update `docs/strategic_roadmap.md`, memory, Brain, or structured records unless explicitly scoped.
+- Do not update the roadmap reference, memory, Brain, or structured records unless explicitly scoped.
 - Ask before editing memory unless the user explicitly asked for a memory update.
 - Do not write to Supabase unless explicitly asked.
 - Follow `MINIBIOTA_WRITE_MODE`.
@@ -59,4 +62,5 @@ description: Use when a milestone, project, deadline, quarterly plan, or five-ye
 - Do not create roadmap commitments.
 - Do not invent launch dates or deadlines.
 - Do not convert a proposed plan into an approved milestone.
+- Do not convert sparse placeholders into approved roadmap items.
 - Do not make financial, legal, sponsor, or public commitments.

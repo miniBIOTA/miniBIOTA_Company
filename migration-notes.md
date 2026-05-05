@@ -32,5 +32,12 @@ Phase 2 Batch 3 absorbed `docs/ai_operating_interface_guide.md` into active Comp
 - Claude-specific routing, equal-peer interface assumptions, and old workflow language were archived as historical context only.
 - The superseded guide was archived at `archive/superseded/ai_operating_interface_guide.md`.
 
+## Phase 2 Batch 4 - Strategic Roadmap Reference Move
+Phase 2 Batch 4 handled `docs/strategic_roadmap.md` as exact roadmap reference material:
+- Exact roadmap entries moved to `skills/review-roadmap-implications/reference/strategic-roadmap.md`.
+- The old docs copy was archived at `archive/superseded/strategic_roadmap.md`.
+- Durable roadmap rules now emphasize that sparse future quarters and blank sections are placeholders, not commitments.
+- No roadmap entries were approved, changed into commitments, or expanded beyond the migrated reference.
+
 ## Explicit Non-Changes
-No Supabase records, structured records, app behavior, public site behavior, Brain mirrored docs, Brain company brief, test data, business commitments, public promises, financial commitments, launch targets, legal decisions, sponsor obligations, or roadmap commitments were changed by Phase 1, Phase 2 Batch 1, Phase 2 Batch 2, or Phase 2 Batch 3.
+No Supabase records, structured records, app behavior, public site behavior, Brain mirrored docs, Brain company brief, test data, business commitments, public promises, financial commitments, launch targets, legal decisions, sponsor obligations, or roadmap commitments were changed by Phase 1, Phase 2 Batch 1, Phase 2 Batch 2, Phase 2 Batch 3, or Phase 2 Batch 4.

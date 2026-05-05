@@ -10,14 +10,14 @@ Codex is the primary operating interface for this repo. Durable company memory b
 - `memory/` contains durable company purpose, strategy context, governance rules, roadmap principles, cross-domain relationship rules, recurring decisions, and migration inbox notes.
 - `skills/` contains active task playbooks for repeatable company workflows.
 - `skills/*/reference/` contains exact strategy/reference material when a skill needs it.
-- `docs/` is temporary migration source material. Do not add new durable operating truth there unless a later phase explicitly keeps `docs/`.
+- `docs/` is temporary migration source material. Phase 2 has absorbed the original Company docs into `memory/`, `skills/`, `skills/*/reference/`, and `archive/`; do not add new durable operating truth there unless a later phase explicitly keeps `docs/`.
 - `archive/` is the future destination for historical or superseded material. Do not move or archive legacy files until a migration phase explicitly asks for it.
 
 ## Tech Stack
 - Markdown vault as durable company and strategy memory.
 - Company memory under `memory/`.
 - Company workflow playbooks under `skills/`.
-- Temporary company reference docs under `docs/` during migration.
+- Roadmap exact reference under `skills/review-roadmap-implications/reference/`.
 - Brain strategy brief at `M:\miniBIOTA\miniBIOTA_Brain\1. Company Operations\company_brief.md`.
 - Supabase, via `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py`, for tasks, domain history, milestones, and structured operational records when the work requires current structured state.
 
@@ -36,10 +36,10 @@ If working manually:
 4. Use the matching `skills/*/SKILL.md` playbook when the request matches a repeatable company workflow.
 5. Read `M:\miniBIOTA\miniBIOTA_Brain\_system\agent_memory.md` when Brain-wide operating context or write mode may matter.
 6. Read `M:\miniBIOTA\miniBIOTA_Brain\1. Company Operations\company_brief.md` for strategy-level current state.
-7. Use `docs/` only during migration or when exact reference material has not yet been absorbed into `memory/` or `skills/*/reference/`.
+7. Use `docs/` only during migration if exact reference material has not yet been absorbed into `memory/` or `skills/*/reference/`.
 8. Use Supabase only when current structured tasks, domain history, milestones, or operational records matter.
 
-For roadmap work, use `skills/review-roadmap-implications/SKILL.md`, `memory/04-roadmap-and-priorities.md`, and `docs/strategic_roadmap.md` while the roadmap source remains in `docs/`.
+For roadmap work, use `skills/review-roadmap-implications/SKILL.md`, `memory/04-roadmap-and-priorities.md`, and `skills/review-roadmap-implications/reference/strategic-roadmap.md`.
 
 Historical AI-interface guidance has been archived at `archive/superseded/ai_operating_interface_guide.md`. Treat Claude-specific routing as legacy unless the user explicitly reactivates it.
 
@@ -52,7 +52,7 @@ Use this hierarchy when sources disagree:
 4. Relevant `skills/*/SKILL.md` playbooks for active workflow rules.
 5. Brain `company_brief.md` for manager-facing strategy-level current state.
 6. Supabase for structured/queryable tasks, domain history, milestones, and operational records when those records are relevant.
-7. Local `docs/` files for detailed migration-era reference that has not yet been absorbed.
+7. Local `docs/` files for migration-era reference only if material has not yet been absorbed.
 8. Brain mirrored docs and compiled exports as reference artifacts only.
 
 Chat history and private model memory are never source of truth. Durable project memory belongs in Markdown in this repo, in the Brain company brief, or in Supabase when it is structured data.
@@ -107,16 +107,16 @@ Do not edit Brain mirrored docs directly. Source docs live in this repo while mi
 | `skills/update-company-memory/SKILL.md` | Promote durable decisions, governance rules, strategy rules, or recurring constraints into memory |
 | `skills/company-session-closeout/SKILL.md` | Close company planning sessions and decide whether Brain, domains, or structured records are implicated |
 
-## Temporary Docs During Migration
-| File | Contents |
-|---|---|
-| `docs/strategic_roadmap.md` | Quarterly and five-year milestone planning |
+## Migration Notes For Former Docs
+Original Company docs have been absorbed into active architecture or archived during Phase 2. The exact roadmap reference now lives at `skills/review-roadmap-implications/reference/strategic-roadmap.md`.
 
 `docs/agent_protocol.md` was absorbed into `AGENTS.md`, `memory/`, and `skills/` during Phase 2 Batch 1 and archived at `archive/superseded/agent_protocol.md`.
 
 `docs/company_operations_overview.md` was absorbed into `memory/` and relevant `skills/` during Phase 2 Batch 2 and archived at `archive/superseded/company_operations_overview.md`.
 
 `docs/ai_operating_interface_guide.md` was absorbed into `memory/`, relevant `skills/`, and archive notes during Phase 2 Batch 3 and archived at `archive/superseded/ai_operating_interface_guide.md`.
+
+`docs/strategic_roadmap.md` was moved into `skills/review-roadmap-implications/reference/strategic-roadmap.md` during Phase 2 Batch 4 and archived at `archive/superseded/strategic_roadmap.md`.
 
 ## Write Policy
 Respect `MINIBIOTA_WRITE_MODE` from Brain when available:

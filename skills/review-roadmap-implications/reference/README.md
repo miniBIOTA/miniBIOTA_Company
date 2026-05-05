@@ -4,6 +4,6 @@ last_updated: 2026-05-05
 ---
 # Roadmap Reference Migration Note
 
-This reference folder exists for the roadmap review skill. During Phase 1, the exact roadmap source remains `docs/strategic_roadmap.md`.
+This reference folder exists for the roadmap review skill. During Phase 2 Batch 4, the exact roadmap source moved here from `docs/strategic_roadmap.md`.
 
-Future migration phases should either move exact roadmap reference material into this folder or promote durable roadmap principles into `memory/04-roadmap-and-priorities.md`, then archive superseded docs only when explicitly approved.
+Use `strategic-roadmap.md` as the exact roadmap reference. Treat blank quarters and sparse future-year sections as placeholders, not commitments. Promote durable roadmap principles into `memory/04-roadmap-and-priorities.md`; keep exact roadmap entries here unless a future batch explicitly changes the roadmap structure.

@@ -9,6 +9,7 @@ This folder holds historical or superseded Company Agent material that has been 
 - `superseded/agent_protocol.md` was absorbed during Phase 2 Batch 1.
 - `superseded/company_operations_overview.md` was absorbed during Phase 2 Batch 2.
 - `superseded/ai_operating_interface_guide.md` was absorbed during Phase 2 Batch 3.
+- `superseded/strategic_roadmap.md` was moved into roadmap skill reference during Phase 2 Batch 4.
 
 ## Rules
 - Do not use archive files as active operating instructions.

@@ -11,5 +11,4 @@ Use this file as a temporary holding area for:
 - Migration notes that need later absorption into memory, skills, reference, or archive.
 
 ## Open Inbox Items
-- Future migration phases should review `docs/strategic_roadmap.md` for absorption into `memory/` or `skills/*/reference/`.
-- Decide whether any old Company docs should remain as active docs after migration, or whether `docs/` should disappear entirely.
+- Decide whether the empty `docs/` folder should be removed in a future cleanup batch, if git or local tooling still leaves it present.

@@ -23,6 +23,7 @@ description: Use when company work affects multiple domains and needs downstream
 
 ## Required Docs Or Reference Files
 - Brain company brief for strategy-level current state.
+- `skills/coordinate-cross-domain-priorities/reference/operation-living-atlas-plan.md` when Operation Living Atlas, historical backfill, ecological knowledge graph coordination, source packets, or multi-agent backfill work is in scope.
 - Relevant domain briefs or docs only when domain-specific current state is needed.
 - Supabase read checks only when current structured tasks, milestones, or domain history matter.
 

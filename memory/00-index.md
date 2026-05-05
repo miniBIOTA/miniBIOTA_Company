@@ -30,6 +30,12 @@ Use memory for stable company context. Use skills for repeatable workflows. Use 
 | `07-recurring-decisions.md` | Durable recurring decisions and constraints |
 | `inbox.md` | Temporary holding area for migration notes and candidate durable memory |
 
+## Skill References
+| File | Use |
+|---|---|
+| `skills/coordinate-cross-domain-priorities/reference/operation-living-atlas-plan.md` | Operation Living Atlas cross-domain backfill, source packet, publicness tier, and ecological knowledge graph coordination plan |
+| `skills/review-roadmap-implications/reference/strategic-roadmap.md` | Exact roadmap reference |
+
 ## Migration Status
 Phase 1 created the memory and skill architecture. Phase 2 Batch 1 absorbed `docs/agent_protocol.md` into `AGENTS.md`, `memory/`, and `skills/`, then archived it at `archive/superseded/agent_protocol.md`. Phase 2 Batch 2 absorbed `docs/company_operations_overview.md` into `memory/` and relevant `skills/`, then archived it at `archive/superseded/company_operations_overview.md`. Phase 2 Batch 3 absorbed `docs/ai_operating_interface_guide.md` into memory, skills, and archive notes, then archived it at `archive/superseded/ai_operating_interface_guide.md`. Phase 2 Batch 4 moved exact roadmap reference material from `docs/strategic_roadmap.md` into `skills/review-roadmap-implications/reference/strategic-roadmap.md`, then archived the source doc at `archive/superseded/strategic_roadmap.md`.
 

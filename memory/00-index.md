@@ -26,6 +26,7 @@ Use memory for stable company context. Use skills for repeatable workflows. Use 
 | `03-strategy-and-governance.md` | Mission, vision, governance, operating model, and decision principles |
 | `04-roadmap-and-priorities.md` | Roadmap status, planning principles, priorities, and milestone handling |
 | `05-cross-domain-relationships.md` | Domain relationship map and downstream owner expectations |
+| `05-database-access.md` | Company database access boundaries, owned/read/write tables, and Brain reporting expectations |
 | `06-source-of-truth-rules.md` | Source hierarchy, Brain relationship, docs migration, and Supabase boundaries |
 | `07-recurring-decisions.md` | Durable recurring decisions and constraints |
 | `inbox.md` | Temporary holding area for migration notes and candidate durable memory |

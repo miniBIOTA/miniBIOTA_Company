@@ -6,7 +6,7 @@ The Company Agent is read-only by default for Supabase. It uses structured recor
 
 - Database access needed: Yes, limited.
 - Default mode: Read-only.
-- MCP: Disabled by default. Do not add active `.mcp.json` or `.vscode/mcp.json`.
+- MCP: Brain has broad Supabase MCP read awareness. This domain may use MCP read access for relevant company context, but should escalate cross-domain interpretation to Brain.
 - Preferred path: Brain helper functions in `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py`.
 - Secrets: Local environment variables or ignored local config only.
 

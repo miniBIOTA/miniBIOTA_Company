@@ -27,14 +27,14 @@ Always keep these categories separate:
 - Aspirational roadmap: future-facing direction that is not yet a commitment.
 
 ## Structured Records
-Do not write to Supabase or change structured records unless the user explicitly asks for that write. Reading structured records is allowed only when current tasks, domain history, milestones, or operational records matter to the request.
+Do not write to Supabase or change structured records unless the user explicitly asks for that write. Reading structured records is allowed only when current tasks, milestones, or operational records matter to the request.
 
 Do not create test data.
 
 ## Public And App Surfaces
 Do not change app behavior or public site behavior from this repo unless the user explicitly asks for that exact cross-repo work.
 
-Do not update Brain mirrored docs directly.
+Do not edit, sync, or recreate retired Brain docs mirrors.
 
 ## Cross-Domain Safety
 When a company decision affects Research, Hardware, Content, Brand, Growth, Financials, Web, App, Raw Footage, or Brain, name the affected domain and what it needs next. Do not silently convert company planning into a department mandate.

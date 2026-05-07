@@ -18,7 +18,7 @@ Codex is the primary operating interface for this repo. Durable company memory b
 - Company workflow playbooks under `skills/`.
 - Roadmap exact reference under `skills/review-roadmap-implications/reference/`.
 - Brain strategy brief at `M:\miniBIOTA\miniBIOTA_Brain\1. miniBIOTA_Company\company_brief.md`.
-- Supabase, via `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py`, for tasks, domain history, milestones, and structured operational records when the work requires current structured state.
+- Supabase, via `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py`, for tasks, milestones, and structured operational records when the work requires current structured state.
 
 ## Startup Sequence
 For a full Codex bootstrap, run:
@@ -36,7 +36,7 @@ If working manually:
 5. Read `M:\miniBIOTA\miniBIOTA_Brain\_system\agent_memory.md` when Brain-wide operating context or write mode may matter.
 6. Read `M:\miniBIOTA\miniBIOTA_Brain\1. miniBIOTA_Company\company_brief.md` for strategy-level current state.
 7. Use `skills/*/reference/` for exact workflow reference material.
-8. Use Supabase only when current structured tasks, domain history, milestones, or operational records matter.
+8. Use Supabase only when current structured tasks, milestones, or operational records matter.
 
 For roadmap work, use `skills/review-roadmap-implications/SKILL.md`, `memory/04-roadmap-and-priorities.md`, and `skills/review-roadmap-implications/reference/strategic-roadmap.md`.
 
@@ -50,7 +50,7 @@ Use this hierarchy when sources disagree:
 3. `memory/` for durable company purpose, strategy, governance, roadmap principles, cross-domain relationships, source-of-truth rules, and recurring decisions.
 4. Relevant `skills/*/SKILL.md` playbooks for active workflow rules.
 5. Brain `company_brief.md` for manager-facing strategy-level current state.
-6. Supabase for structured/queryable tasks, domain history, milestones, and operational records when those records are relevant.
+6. Supabase for structured/queryable tasks, milestones, and operational records when those records are relevant.
 7. `skills/*/reference/` files for exact workflow reference material.
 8. Brain company brief and compiled exports as reference artifacts only.
 
@@ -82,7 +82,7 @@ Update that brief at session end when any of these changed:
 
 Do not push full planning drafts or detailed department-specific work into the Brain brief. Keep detailed company work in this repo and structured records in Supabase.
 
-Do not edit Brain mirrored docs directly. After the Company restructure, Brain no longer keeps a Company docs mirror; active Company Agent behavior lives in this repo's `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
+Brain no longer keeps an active Company docs mirror after the Company restructure. Active Company Agent behavior lives in this repo's `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`. Do not edit, sync, or recreate retired Brain docs mirrors.
 
 ## Current Memory Map
 | File | Purpose |
@@ -128,21 +128,21 @@ Respect `MINIBIOTA_WRITE_MODE` from Brain when available:
 
 For this repo, tell the user what files you intend to change before editing. Preserve user changes and keep edits scoped to the active request.
 
-Do not update Brain mirrored docs, Supabase records, structured records, app behavior, public site behavior, test data, business commitments, public promises, financial commitments, launch targets, legal decisions, sponsor obligations, or roadmap commitments unless the user explicitly asks for that exact action.
+Do not edit, sync, or recreate retired Brain docs mirrors, or update Supabase records, structured records, app behavior, public site behavior, test data, business commitments, public promises, financial commitments, launch targets, legal decisions, sponsor obligations, or roadmap commitments unless the user explicitly asks for that exact action.
 
 ## Verification
 For documentation-only sessions:
 - Read every new or changed doc end to end.
 - Run `git diff --name-only` or equivalent.
 - Run `git status --short --branch`.
-- Confirm no app behavior, database records, structured records, public site behavior, or Brain mirrored docs changed.
+- Confirm no app behavior, database records, structured records, public site behavior, or retired Brain docs mirrors changed.
 - Confirm no business commitments, public promises, financial commitments, launch targets, legal decisions, sponsor obligations, or roadmap commitments were created.
 
 For company planning/ops sessions:
 - Verify current structured tasks, milestones, finance-sensitive assumptions, or domain status before making time-sensitive recommendations.
 - Report any live checks that could not run because of sandbox, auth, or network restrictions.
-- If structured tasks or domain history changed, summarize those changes clearly.
-- If active Company architecture changes in a way that affects manager-facing state, decide whether the Brain company brief needs an update. Do not sync Brain mirrored docs unless explicitly scoped.
+- If structured tasks, durable context, milestones, or operational records changed, summarize those changes clearly.
+- If active Company architecture changes in a way that affects manager-facing state, decide whether the Brain company brief needs an update. Do not sync or recreate retired Brain docs mirrors.
 - Commit and push only when the user asks or the work unit is explicitly scoped for git publication. Do not make commit/push a hard closeout rule.
 
 ## Session Closeout Report

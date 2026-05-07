@@ -52,7 +52,7 @@ description: Use to promote durable company decisions, governance rules, strateg
 - Must check duplication before writing memory.
 - Ask before editing memory unless explicitly scoped by the user.
 - Do not write to Supabase or structured records unless explicitly asked.
-- Do not update Brain mirrored docs.
+- Do not edit, sync, or recreate retired Brain docs mirrors.
 - Follow `MINIBIOTA_WRITE_MODE`.
 
 ## Do-Not-Do Boundaries

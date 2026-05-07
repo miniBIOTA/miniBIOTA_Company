@@ -11,7 +11,7 @@ Use this order when sources disagree:
 3. `memory/` for durable company purpose, strategy, governance, roadmap principles, cross-domain relationships, and recurring decisions.
 4. Relevant `skills/*/SKILL.md` files for repeatable workflow rules.
 5. Brain `company_brief.md` for manager-facing strategy-level current state.
-6. Supabase for structured/queryable tasks, domain history, milestones, and operational records when relevant.
+6. Supabase for structured/queryable tasks, milestones, and operational records when relevant.
 7. `skills/*/reference/` files for exact workflow reference material.
 8. Brain company brief and compiled exports as reference artifacts only.
 
@@ -29,7 +29,7 @@ Old Claude-specific routing guidance is historical. Codex is the active Company 
 - `skills/*/reference/`: exact workflow reference material, including `skills/review-roadmap-implications/reference/strategic-roadmap.md`.
 - `archive/superseded/`: historical docs only; do not use archive files as active operating instructions.
 - Brain company brief: strategy-level current state and manager-facing summary.
-- Supabase: structured records only when current tasks, domain history, milestones, or operational records matter.
+- Supabase: structured records only when current tasks, milestones, or operational records matter.
 
 ## Supabase Boundaries
 Tasks are structured records in the Supabase `tasks` table and are queryable by domain when current operating state matters. Do not recreate task state in Markdown as an active source of truth. Do not write to Supabase unless explicitly scoped.
@@ -41,4 +41,4 @@ Original Company docs have been absorbed into `memory/`, `skills/`, skill refere
 Do not write to Supabase or structured records unless explicitly asked. If a recommendation depends on current structured state, verify it before answering in depth and report any live-check limitation.
 
 ## Brain Mirrors
-Do not edit Brain mirrored docs directly. Brain no longer keeps a Company docs mirror after the Company restructure; active workflow authority lives in this repo memory/skills architecture.
+Brain no longer keeps an active Company docs mirror after the Company restructure. Active workflow authority lives in this repo memory/skills architecture. Do not edit, sync, or recreate retired Brain docs mirrors.

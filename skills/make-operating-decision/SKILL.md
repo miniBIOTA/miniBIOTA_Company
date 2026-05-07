@@ -26,7 +26,7 @@ description: Use for company-level decisions, governance choices, sequencing dec
 - Relevant memory files and skill reference files.
 - Relevant domain briefs when domain-specific current strategy state matters.
 - Archive files only for historical context.
-- Supabase read checks only if current structured tasks, milestones, domain history, or operational records matter.
+- Supabase read checks only if current structured tasks, milestones, or operational records matter.
 
 ## Workflow
 1. Restate the decision being made and the scope of authority.

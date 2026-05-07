@@ -1,6 +1,6 @@
 # Company Database Access Responsibilities
 
-The Company Agent is read-only by default for Supabase. It uses structured records only when current operational state, tasks, decisions, milestones, or domain history matter.
+The Company Agent is read-only by default for Supabase. It uses structured records only when current operational state, tasks, decisions, or milestones matter.
 
 ## Access Model
 
@@ -15,8 +15,8 @@ The Company Agent is read-only by default for Supabase. It uses structured recor
 | Category | Tables |
 |---|---|
 | Owned | None exclusively documented |
-| Read-only | `tasks`, `domain_history`, milestones or company operational records when present |
-| Controlled write | `tasks`, `domain_history`, approved decisions, milestones, and history records through helpers |
+| Read-only | `tasks`, milestones or company operational records when present |
+| Controlled write | `tasks`, approved decisions, milestones, and durable context through repo/vault updates |
 | Admin/migration | None by default |
 
 ## Approval Boundary

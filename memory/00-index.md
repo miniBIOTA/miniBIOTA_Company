@@ -1,13 +1,13 @@
 ---
 title: Company Memory Index
-last_updated: 2026-05-05
+last_updated: 2026-05-09
 ---
 # Company Memory Index
 
 ## Purpose
 This folder is the durable Company Agent memory layer for miniBIOTA strategy, governance, roadmap principles, cross-domain coordination, source-of-truth rules, and recurring operating decisions.
 
-Use memory for stable company context. Use skills for repeatable workflows. Use skill reference folders for exact workflow reference material. Use docs only if future migration material appears and has not yet been absorbed.
+Use memory for stable company context. Use skills for repeatable workflows. Use skill reference folders for exact workflow reference material. Use App Planner/Supabase for live Company project/task status. Use docs only if future migration material appears and has not yet been absorbed.
 
 ## Load Order
 1. Read `AGENTS.md`.
@@ -16,7 +16,18 @@ Use memory for stable company context. Use skills for repeatable workflows. Use 
 4. Load the matching `skills/*/SKILL.md` playbook when the request matches an active workflow.
 5. Use `skills/*/reference/` for exact workflow reference material.
 6. Use the Brain company brief for manager-facing strategy-level current state.
-7. Use Supabase only when current structured records matter.
+7. Use App Planner/Supabase only when current structured projects, tasks, milestones, or operational records matter.
+
+## Planner Routing
+App Planner/Supabase is the live Company work queue when current Company project or task status matters. Company Planner records live under `work_domains.key = company_ops` / `domain_id = 1` in `work_projects` and `tasks`.
+
+Current Company work projects:
+- `Business Plan & Operating Model`
+- `Roadmap & Quarterly Objectives`
+- `AI & Knowledge Infrastructure`
+- `Operation Living Atlas Coordination`
+
+Use Planner for actionable work status, blockers, scheduling, task/project links, and completion checks. Use Markdown memory and skill references for company strategy, governance, roadmap principles, decisions, context, and operating rules.
 
 ## Memory Files
 | File | Use |
@@ -26,7 +37,7 @@ Use memory for stable company context. Use skills for repeatable workflows. Use 
 | `03-strategy-and-governance.md` | Mission, vision, governance, operating model, and decision principles |
 | `04-roadmap-and-priorities.md` | Roadmap status, planning principles, priorities, and milestone handling |
 | `05-cross-domain-relationships.md` | Domain relationship map and downstream owner expectations |
-| `05-database-access.md` | Company database access boundaries, owned/read/write tables, and Brain reporting expectations |
+| `05-database-access.md` | Company database and Planner access boundaries, domain key, owned/read/write tables, and Brain reporting expectations |
 | `06-source-of-truth-rules.md` | Source hierarchy, Brain relationship, docs migration, and Supabase boundaries |
 | `07-recurring-decisions.md` | Durable recurring decisions and constraints |
 | `inbox.md` | Temporary holding area for migration notes and candidate durable memory |

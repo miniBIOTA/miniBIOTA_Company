@@ -1,6 +1,6 @@
 ---
 title: Roadmap And Priorities
-last_updated: 2026-05-05
+last_updated: 2026-05-09
 ---
 # Roadmap And Priorities
 
@@ -18,6 +18,7 @@ The exact migrated roadmap reference lives at `skills/review-roadmap-implication
 - Expand the roadmap beyond Q1 2026 into decision-ready quarterly objectives.
 - Coordinate cross-domain priorities without replacing department source-of-truth systems.
 - Review migrated task priorities and quarter targets with Josue before treating them as approved.
+- Use App Planner/Supabase for live Company task/project status under `company_ops`; do not treat Planner workflow status as a roadmap commitment or public/business commitment.
 
 ## Known Risks And Gaps
 - Roadmap detail is mostly unfilled after the first confirmed milestone, limiting strategic visibility.
@@ -33,6 +34,7 @@ The exact migrated roadmap reference lives at `skills/review-roadmap-implication
 - Check current structured tasks, milestones, finance-sensitive assumptions, or domain status before time-sensitive roadmap recommendations.
 - Treat deadlines and launch windows as commitments only when Josue explicitly approves them.
 - Use domain owners to validate implementation feasibility before making company-level sequencing feel final.
+- Treat Planner project/task status as operational workflow state. A Planner task can show planned, active, blocked, done, or archived work without creating or proving a roadmap commitment, launch target, financial commitment, sponsor obligation, public promise, or legal decision.
 
 ## Migration Reference
 During Phase 2 Batch 4, exact roadmap material moved from `docs/strategic_roadmap.md` to `skills/review-roadmap-implications/reference/strategic-roadmap.md`. Use `skills/review-roadmap-implications/SKILL.md` for milestone, deadline, quarterly plan, or five-year roadmap questions.

@@ -5,6 +5,8 @@
 
 Codex is the primary operating interface for this repo. Durable company memory belongs in this repo's Markdown architecture, in the Brain company brief when it is manager-facing strategy state, or in Supabase when the record is structured.
 
+App Planner/Supabase is the live Company work queue when current Company project or task status matters. Company-owned Planner records live under `work_domains.key = company_ops` / `domain_id = 1` in `work_projects` and `tasks`. Markdown may keep strategy, context, decisions, references, and operating rules, but it must not compete with Planner as the active Company task-status source.
+
 ## Active Architecture
 - `AGENTS.md` contains hard operating rules, startup/routing, source-of-truth order, write policy, company safety rules, and closeout format.
 - `memory/` contains durable company purpose, strategy context, governance rules, roadmap principles, cross-domain relationship rules, recurring decisions, and migration inbox notes.
@@ -18,7 +20,7 @@ Codex is the primary operating interface for this repo. Durable company memory b
 - Company workflow playbooks under `skills/`.
 - Roadmap exact reference under `skills/review-roadmap-implications/reference/`.
 - Brain strategy brief at `M:\miniBIOTA\miniBIOTA_Brain\1. miniBIOTA_Company\company_brief.md`.
-- Supabase, via `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py`, for tasks, milestones, and structured operational records when the work requires current structured state.
+- Supabase/App Planner, via `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py` or approved read paths, for `work_domains`, `work_projects`, `tasks`, milestones, and structured operational records when the work requires current structured state.
 
 ## Startup Sequence
 For a full Codex bootstrap, run:
@@ -36,7 +38,7 @@ If working manually:
 5. Read `M:\miniBIOTA\miniBIOTA_Brain\_system\agent_memory.md` when Brain-wide operating context or write mode may matter.
 6. Read `M:\miniBIOTA\miniBIOTA_Brain\1. miniBIOTA_Company\company_brief.md` for strategy-level current state.
 7. Use `skills/*/reference/` for exact workflow reference material.
-8. Use Supabase only when current structured tasks, milestones, or operational records matter.
+8. Use Supabase/App Planner only when current structured projects, tasks, milestones, or operational records matter.
 
 For roadmap work, use `skills/review-roadmap-implications/SKILL.md`, `memory/04-roadmap-and-priorities.md`, and `skills/review-roadmap-implications/reference/strategic-roadmap.md`.
 
@@ -50,7 +52,7 @@ Use this hierarchy when sources disagree:
 3. `memory/` for durable company purpose, strategy, governance, roadmap principles, cross-domain relationships, source-of-truth rules, and recurring decisions.
 4. Relevant `skills/*/SKILL.md` playbooks for active workflow rules.
 5. Brain `company_brief.md` for manager-facing strategy-level current state.
-6. Supabase for structured/queryable tasks, milestones, and operational records when those records are relevant.
+6. Supabase/App Planner for structured/queryable projects, tasks, milestones, and operational records when those records are relevant.
 7. `skills/*/reference/` files for exact workflow reference material.
 8. Brain company brief and compiled exports as reference artifacts only.
 
@@ -66,6 +68,16 @@ Chat history and private model memory are never source of truth. Durable project
 - When decisions affect multiple departments, identify downstream owners and what each domain needs next.
 - Treat Claude-specific files as legacy reference unless the user explicitly reactivates them. Codex is the primary interface moving forward.
 - Do not write to Supabase, change structured records, change app behavior, or change public site behavior unless the user explicitly asks for that specific action.
+- Creating, editing, linking, scheduling, completing, reopening, archiving, or deleting Planner projects/tasks are live Supabase writes and require explicit user approval.
+
+## Planner / Project Management
+- App Planner/Supabase is the live Company work queue for actionable Company projects and tasks.
+- Company Planner work lives under `work_domains.key = company_ops` / `domain_id = 1`.
+- Current Company work projects are `Business Plan & Operating Model`, `Roadmap & Quarterly Objectives`, `AI & Knowledge Infrastructure`, and `Operation Living Atlas Coordination`.
+- Read Planner projects/tasks when choosing next Company work, checking blockers, or verifying completion status.
+- At closeout, if completed work maps clearly to an open Planner task, ask whether to mark that task done unless the user explicitly asked for that live task update.
+- Company planning coordinates cross-domain work, but domain-owned implementation queues remain in their domain repos and Planner domains.
+- Planner project/task create, edit, status, done/reopen, archive, delete, project-link, subtask, schedule, or recurrence changes are live Supabase writes and require explicit user approval.
 
 ## Brain Relationship
 This repo reports to the Strategy Agent through:
@@ -93,6 +105,7 @@ Brain no longer keeps an active Company docs mirror after the Company restructur
 | `memory/03-strategy-and-governance.md` | Mission, vision, governance, and operating principles |
 | `memory/04-roadmap-and-priorities.md` | Roadmap principles, current roadmap state, and priority rules |
 | `memory/05-cross-domain-relationships.md` | Domain relationship map and downstream owner rules |
+| `memory/05-database-access.md` | Company database and Planner access boundaries |
 | `memory/06-source-of-truth-rules.md` | Source hierarchy and structured-record rules |
 | `memory/07-recurring-decisions.md` | Durable decisions and recurring constraints |
 | `memory/inbox.md` | Temporary parking lot for migration questions and unsorted memory candidates |
@@ -139,7 +152,7 @@ For documentation-only sessions:
 - Confirm no business commitments, public promises, financial commitments, launch targets, legal decisions, sponsor obligations, or roadmap commitments were created.
 
 For company planning/ops sessions:
-- Verify current structured tasks, milestones, finance-sensitive assumptions, or domain status before making time-sensitive recommendations.
+- Verify current structured projects, tasks, milestones, finance-sensitive assumptions, or domain status before making time-sensitive recommendations.
 - Report any live checks that could not run because of sandbox, auth, or network restrictions.
 - If structured tasks, durable context, milestones, or operational records changed, summarize those changes clearly.
 - If active Company architecture changes in a way that affects manager-facing state, decide whether the Brain company brief needs an update. Do not sync or recreate retired Brain docs mirrors.

@@ -1,6 +1,6 @@
 ---
 title: Source Of Truth Rules
-last_updated: 2026-05-05
+last_updated: 2026-05-09
 ---
 # Source Of Truth Rules
 
@@ -11,7 +11,7 @@ Use this order when sources disagree:
 3. `memory/` for durable company purpose, strategy, governance, roadmap principles, cross-domain relationships, and recurring decisions.
 4. Relevant `skills/*/SKILL.md` files for repeatable workflow rules.
 5. Brain `company_brief.md` for manager-facing strategy-level current state.
-6. Supabase for structured/queryable tasks, milestones, and operational records when relevant.
+6. Supabase/App Planner for structured/queryable projects, tasks, milestones, and operational records when relevant.
 7. `skills/*/reference/` files for exact workflow reference material.
 8. Brain company brief and compiled exports as reference artifacts only.
 
@@ -29,10 +29,18 @@ Old Claude-specific routing guidance is historical. Codex is the active Company 
 - `skills/*/reference/`: exact workflow reference material, including `skills/review-roadmap-implications/reference/strategic-roadmap.md`.
 - `archive/superseded/`: historical docs only; do not use archive files as active operating instructions.
 - Brain company brief: strategy-level current state and manager-facing summary.
-- Supabase: structured records only when current tasks, milestones, or operational records matter.
+- Supabase/App Planner: structured records only when current projects, tasks, milestones, or operational records matter.
 
 ## Supabase Boundaries
-Tasks are structured records in the Supabase `tasks` table and are queryable by domain when current operating state matters. Do not recreate task state in Markdown as an active source of truth. Do not write to Supabase unless explicitly scoped.
+Company projects and tasks are structured records in App Planner/Supabase. Company-owned Planner records live under `work_domains.key = company_ops` / `domain_id = 1` in `work_projects` and `tasks`. Do not recreate task state in Markdown as an active source of truth. Do not write to Supabase unless explicitly scoped.
+
+Planner project/task create, edit, status, done/reopen, archive, delete, project-link, subtask, schedule, or recurrence changes are live Supabase writes and require explicit user approval.
+
+## Planner Versus Commitments
+Planner workflow state is operational task/project status. It does not create roadmap commitments, public promises, business commitments, launch targets, financial commitments, sponsor obligations, or legal decisions. Those require explicit user approval and the appropriate strategy or domain source update.
+
+## Domain Ownership
+Company coordinates planning and cross-domain sequencing. It does not replace domain-owned implementation queues, source docs, codebases, briefs, or structured records. When a Company Planner task depends on domain execution, identify the downstream owner and durable handoff surface.
 
 ## Docs Status
 Original Company docs have been absorbed into `memory/`, `skills/`, skill reference files, or `archive/superseded/`. No active Company docs remain as workflow authorities. If a future exact-reference need appears, place it in the relevant `skills/*/reference/` folder unless explicitly scoped otherwise.

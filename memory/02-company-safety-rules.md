@@ -1,6 +1,6 @@
 ---
 title: Company Safety Rules
-last_updated: 2026-05-05
+last_updated: 2026-05-09
 ---
 # Company Safety Rules
 
@@ -30,6 +30,8 @@ Always keep these categories separate:
 Do not write to Supabase or change structured records unless the user explicitly asks for that write. Reading structured records is allowed only when current tasks, milestones, or operational records matter to the request.
 
 Do not create test data.
+
+Planner project/task create, edit, status, done/reopen, archive, delete, linking, subtask, scheduling, or recurrence changes are live Supabase writes. Ask for explicit user approval before making any of those changes unless the user has already specifically requested that write.
 
 ## Public And App Surfaces
 Do not change app behavior or public site behavior from this repo unless the user explicitly asks for that exact cross-repo work.

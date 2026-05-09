@@ -1,6 +1,8 @@
 # miniBIOTA Company
 
-Company operations, strategic planning, governance, roadmap, and cross-domain coordination vault for miniBIOTA.
+Company operations, strategic planning, Programs/Operations governance, roadmap cadence, dependency mapping, review rhythm, and cross-domain coordination vault for miniBIOTA.
+
+Company owns active cross-domain operating coordination for miniBIOTA. Brain remains protocol, registry, briefs/exports, archive, and transition guardrail. App owns Planner runtime behavior, schema, UI, and Supabase-backed workflow implementation.
 
 ## Start
 
@@ -25,7 +27,7 @@ This repo reports to the Strategy Agent through:
 
 Original migration-era company docs have been absorbed into `memory/`, `skills/`, skill reference files, or `archive/`. Brain no longer keeps a Company docs mirror; active Company detail lives here.
 
-Active Company Agent rules live in `AGENTS.md`, `memory/`, and `skills/`. Roadmap exact reference lives in `skills/review-roadmap-implications/reference/strategic-roadmap.md`. Archived legacy docs are historical context only unless a current entry point says otherwise.
+Active Company Agent rules live in `AGENTS.md`, `memory/`, and `skills/`. Roadmap exact reference lives in `skills/review-roadmap-implications/reference/strategic-roadmap.md`. Operating review rhythm lives in `skills/run-operating-review/SKILL.md`. Archived legacy docs are historical context only unless a current entry point says otherwise.
 
 ## GitHub
 

@@ -31,6 +31,13 @@ Old Claude-specific routing guidance is historical. Codex is the active Company 
 - Brain company brief: strategy-level current state and manager-facing summary.
 - Supabase/App Planner: structured records only when current projects, tasks, milestones, or operational records matter.
 
+## Operating Ownership Split
+Company is the active owner for cross-domain operating coordination: planning strategy, Programs/Operations governance, roadmap cadence, dependency mapping, cross-domain operating memory, and review rhythm.
+
+Brain remains the protocol, registry, brief/export, archive, and transition guardrail layer. Brain company brief is the manager-facing summary, not the detailed operating workspace.
+
+App owns Planner runtime behavior, schema, UI, and Supabase-backed workflow implementation. Company owns how Company uses Planner for strategy, governance, cadence, and coordination.
+
 ## Supabase Boundaries
 Company projects and tasks are structured records in App Planner/Supabase. Company-owned Planner records live under `work_domains.key = company_ops` / `domain_id = 1` in `work_projects` and `tasks`. Do not recreate task state in Markdown as an active source of truth. Do not write to Supabase unless explicitly scoped.
 

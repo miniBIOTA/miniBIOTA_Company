@@ -2,6 +2,8 @@
 
 The Company Agent is read-only by default for Supabase. It uses structured records only when current operational state, Planner projects/tasks, decisions, milestones, or domain status matter.
 
+Company owns Planner strategy, Programs/Operations governance, roadmap cadence, dependency mapping, and review rhythm for Company work. App owns Planner runtime behavior, schema, UI, and Supabase-backed workflow implementation.
+
 ## Access Model
 
 - Database access needed: Yes, limited.
@@ -33,6 +35,7 @@ Company work is managed in App Planner through Supabase `work_projects` and `tas
 - Creating projects/tasks, linking tasks to projects, adding subtasks, changing workflow status, marking done/reopened, scheduling, changing recurrence, or archiving are live operational writes.
 - At closeout, offer to update Planner task status when completed work maps clearly to an open Company Planner task, but ask before writing unless the user explicitly requested the update.
 - Company Planner records coordinate company-level planning. They do not replace domain-owned implementation queues or domain source-of-truth records.
+- Do not treat Planner schema, UI, runtime behavior, or Supabase workflow implementation as Company-owned implementation work. Route those to App unless Josue explicitly scopes a cross-repo App change.
 
 ## Brain Reporting
 

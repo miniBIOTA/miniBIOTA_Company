@@ -11,6 +11,10 @@ description: Use to promote durable company decisions, governance rules, strateg
 - "add this to company memory"
 - "promote this decision"
 - "save this operating rule"
+- "cross-domain operating memory"
+- "dependency map"
+- "review rhythm"
+- "roadmap cadence"
 - "this should be a recurring decision"
 
 ## Required Memory Files
@@ -31,15 +35,16 @@ description: Use to promote durable company decisions, governance rules, strateg
 - Archive files only for historical context or duplication checks against superseded material.
 
 ## Workflow
-1. Identify the proposed durable fact, rule, decision, or constraint.
+1. Identify the proposed durable fact, rule, decision, dependency, review outcome, cadence rule, or constraint.
 2. If the input came from chat history or another interface, verify it against durable files, the Brain company brief, domain briefs, or structured records before treating it as source truth.
 3. Check existing memory for duplication or conflict.
 4. Decide the correct destination: `AGENTS.md`, a `memory/*.md` file, a skill, skill reference, Brain company brief, Supabase, or `memory/inbox.md`.
 5. Check whether the candidate belongs in active memory or should remain in `memory/inbox.md` as unapproved or unresolved.
 6. Ask before editing memory unless the user explicitly scoped the edit.
 7. Write the smallest durable update that preserves current/planned/proposed/aspirational distinctions.
-8. Read changed files end to end.
-9. Report whether Brain brief, domain owners, or structured records are implicated.
+8. For cross-domain operating memory, identify affected domains, downstream owners, handoff surfaces, and whether the item belongs in Company memory, Brain company brief, domain memory, or structured records.
+9. Read changed files end to end.
+10. Report whether Brain brief, domain owners, or structured records are implicated.
 
 ## Expected Output
 - Destination decision.

@@ -1,6 +1,6 @@
 ---
 name: make-operating-decision
-description: Use for company-level decisions, governance choices, sequencing decisions, and cross-domain operating judgments.
+description: Use for company-level decisions, Programs/Operations governance choices, sequencing decisions, and cross-domain operating judgments.
 ---
 # Make Operating Decision
 
@@ -9,6 +9,8 @@ description: Use for company-level decisions, governance choices, sequencing dec
 - "what should the company do"
 - "operating decision"
 - "governance choice"
+- "Programs/Operations governance"
+- "program governance"
 - "sequencing decision"
 - "company-level judgment"
 - "which path should we take"
@@ -31,12 +33,12 @@ description: Use for company-level decisions, governance choices, sequencing dec
 ## Workflow
 1. Restate the decision being made and the scope of authority.
 2. Separate current state, planned state, proposed options, and aspirational roadmap.
-3. Identify affected domains and downstream owners.
+3. Identify affected domains, downstream owners, dependencies, and review timing.
 4. Identify whether the decision touches a company-level priority, risk, planning gap, business-planning gap, roadmap gap, or governance principle.
 5. Check whether the decision would imply a business commitment, public promise, financial commitment, launch target, legal decision, sponsor obligation, or roadmap commitment.
 6. If the decision touches roadmap sequencing, use `skills/review-roadmap-implications/SKILL.md` and distinguish placeholders from approved roadmap commitments.
 7. If the decision requires explicit approval, frame it as a recommendation or option until Josue approves it.
-8. Check whether the decision affects another department's brief, source docs, or work queue.
+8. Check whether the decision affects another department's brief, source docs, work queue, or dependency map.
 9. Provide the decision, rationale, assumptions, downstream next steps, and any unresolved risks.
 10. Decide whether the result should update `memory/`, Brain company brief, domain follow-up notes, or structured records.
 11. If the decision came from another interface or prior conversation, ground it in durable files, briefs, or structured records before treating it as current truth.
@@ -45,6 +47,7 @@ description: Use for company-level decisions, governance choices, sequencing dec
 - Decision or recommendation.
 - Current/planned/proposed/aspirational separation.
 - Affected domains and downstream owners.
+- Dependency map implications and review timing.
 - Risks, assumptions, and approval needs.
 - Memory, Brain, domain, or structured-record implications.
 

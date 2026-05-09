@@ -1,6 +1,6 @@
 ---
 name: company-session-closeout
-description: Use to close company planning sessions and verify Brain, domain-owner, and structured-record implications.
+description: Use to close company planning sessions and verify Brain, domain-owner, dependency-map, review-rhythm, and structured-record implications.
 ---
 # Company Session Closeout
 
@@ -30,17 +30,18 @@ description: Use to close company planning sessions and verify Brain, domain-own
 2. Read every new or changed doc end to end.
 3. Decide whether Brain company brief needs an update.
 4. Decide whether company-level priorities, risks, planning gaps, roadmap gaps, roadmap commitments, business-planning gaps, governance, or cross-domain sequencing changed.
-5. Decide whether any domain owner needs follow-up, including whether any department brief, source docs, or work queue was affected.
-6. Decide whether structured projects/tasks, milestones, durable memory, or operational records are implicated.
-7. If work completed in the session maps clearly to an open Company Planner task, ask whether to mark it done unless the user explicitly approved that live Planner update.
-8. If structured projects/tasks, durable memory, milestones, or operational records changed, summarize those changes clearly.
-9. Confirm durable conclusions are in the appropriate source or explicitly listed as unresolved; do not leave durable state only in chat history.
-10. If local docs changed and manager-facing strategy state changed, update or flag the Brain company brief. Brain docs mirrors are retired for Company and should not be synced or recreated.
-11. Commit and push only when the user asks or the work unit is explicitly scoped for git publication.
-12. Run `git diff --name-only` or equivalent.
-13. Run `git status --short --branch`.
-14. Confirm no Supabase records, structured records, app behavior, public site behavior, retired Brain docs mirrors, test data, or unapproved commitments changed.
-15. Provide the standard closeout report.
+5. Decide whether the dependency map, Programs/Operations governance, roadmap cadence, or operating review rhythm changed.
+6. Decide whether any domain owner needs follow-up, including whether any department brief, source docs, or work queue was affected.
+7. Decide whether structured projects/tasks, milestones, durable memory, or operational records are implicated.
+8. If work completed in the session maps clearly to an open Company Planner task, ask whether to mark it done unless the user explicitly approved that live Planner update.
+9. If structured projects/tasks, durable memory, milestones, or operational records changed, summarize those changes clearly.
+10. Confirm durable conclusions are in the appropriate source or explicitly listed as unresolved; do not leave durable state only in chat history.
+11. If local docs changed and manager-facing strategy state changed, update or flag the Brain company brief. Brain docs mirrors are retired for Company and should not be synced or recreated.
+12. Commit and push only when the user asks or the work unit is explicitly scoped for git publication.
+13. Run `git diff --name-only` or equivalent.
+14. Run `git status --short --branch`.
+15. Confirm no Supabase records, structured records, app behavior, public site behavior, retired Brain docs mirrors, test data, or unapproved commitments changed.
+16. Provide the standard closeout report.
 
 ## Expected Output
 ```markdown

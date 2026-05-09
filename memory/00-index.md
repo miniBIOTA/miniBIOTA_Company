@@ -7,6 +7,8 @@ last_updated: 2026-05-09
 ## Purpose
 This folder is the durable Company Agent memory layer for miniBIOTA strategy, governance, roadmap principles, cross-domain coordination, source-of-truth rules, and recurring operating decisions.
 
+Company owns active cross-domain operating coordination for miniBIOTA: planning strategy, Programs/Operations governance, roadmap cadence, dependency mapping, cross-domain operating memory, and review rhythm. Brain remains protocol, registry, briefs/exports, archive, and transition guardrail. App owns Planner runtime behavior, schema, UI, and Supabase-backed workflow implementation.
+
 Use memory for stable company context. Use skills for repeatable workflows. Use skill reference folders for exact workflow reference material. Use App Planner/Supabase for live Company project/task status. Use docs only if future migration material appears and has not yet been absorbed.
 
 ## Load Order
@@ -27,7 +29,9 @@ Current Company work projects:
 - `AI & Knowledge Infrastructure`
 - `Operation Living Atlas Coordination`
 
-Use Planner for actionable work status, blockers, scheduling, task/project links, and completion checks. Use Markdown memory and skill references for company strategy, governance, roadmap principles, decisions, context, and operating rules.
+Use Planner for actionable work status, blockers, scheduling, task/project links, and completion checks. Use Markdown memory and skill references for company strategy, Programs/Operations governance, roadmap cadence, dependency maps, decisions, context, review rhythm, and operating rules.
+
+Company owns Planner strategy and governance for Company work. App owns the Planner runtime, schema, UI, and Supabase-backed workflow implementation. Do not write live Planner/Supabase records unless explicitly approved.
 
 ## Memory Files
 | File | Use |
@@ -47,6 +51,16 @@ Use Planner for actionable work status, blockers, scheduling, task/project links
 |---|---|
 | `skills/coordinate-cross-domain-priorities/reference/operation-living-atlas-plan.md` | Operation Living Atlas cross-domain backfill, source packet, publicness tier, and ecological knowledge graph coordination plan |
 | `skills/review-roadmap-implications/reference/strategic-roadmap.md` | Exact roadmap reference |
+
+## Active Company Workflows
+| Skill | Use |
+|---|---|
+| `skills/make-operating-decision/SKILL.md` | Company-level operating decisions and governance choices |
+| `skills/coordinate-cross-domain-priorities/SKILL.md` | Cross-domain priority coordination, dependency mapping, and downstream owner routing |
+| `skills/review-roadmap-implications/SKILL.md` | Roadmap, milestone, quarterly objective, and cadence review |
+| `skills/run-operating-review/SKILL.md` | Operating review rhythm, dependency-map refresh, and Programs/Operations review |
+| `skills/update-company-memory/SKILL.md` | Durable memory promotion |
+| `skills/company-session-closeout/SKILL.md` | Session closeout and Brain/domain/structured-record implication checks |
 
 ## Migration Status
 Phase 1 created the memory and skill architecture. Phase 2 Batch 1 absorbed `docs/agent_protocol.md` into `AGENTS.md`, `memory/`, and `skills/`, then archived it at `archive/superseded/agent_protocol.md`. Phase 2 Batch 2 absorbed `docs/company_operations_overview.md` into `memory/` and relevant `skills/`, then archived it at `archive/superseded/company_operations_overview.md`. Phase 2 Batch 3 absorbed `docs/ai_operating_interface_guide.md` into memory, skills, and archive notes, then archived it at `archive/superseded/ai_operating_interface_guide.md`. Phase 2 Batch 4 moved exact roadmap reference material from `docs/strategic_roadmap.md` into `skills/review-roadmap-implications/reference/strategic-roadmap.md`, then archived the source doc at `archive/superseded/strategic_roadmap.md`.

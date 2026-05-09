@@ -1,6 +1,6 @@
 ---
 name: coordinate-cross-domain-priorities
-description: Use when company work affects multiple domains and needs downstream owner coordination.
+description: Use when company work affects multiple domains and needs downstream owner coordination, dependency mapping, or Programs/Operations governance.
 ---
 # Coordinate Cross-Domain Priorities
 
@@ -10,6 +10,10 @@ description: Use when company work affects multiple domains and needs downstream
 - "across departments"
 - "who needs to do what"
 - "downstream owners"
+- "dependency map"
+- "dependencies"
+- "Programs/Operations"
+- "program governance"
 - "priorities across"
 - "Research, Hardware, Content, Brand, Growth, Financials, Web, App, Raw Footage, or Brain"
 
@@ -22,7 +26,7 @@ description: Use when company work affects multiple domains and needs downstream
 - `memory/07-recurring-decisions.md`
 
 ## Required Docs Or Reference Files
-- Brain company brief for strategy-level current state.
+- Brain company brief for manager-facing strategy-level current state.
 - `skills/coordinate-cross-domain-priorities/reference/operation-living-atlas-plan.md` when Operation Living Atlas, historical backfill, ecological knowledge graph coordination, source packets, or multi-agent backfill work is in scope.
 - Relevant domain briefs or docs only when domain-specific current state is needed.
 - Supabase read checks only when current structured tasks, milestones, or operational records matter.
@@ -34,15 +38,18 @@ description: Use when company work affects multiple domains and needs downstream
 4. For each affected domain, identify why it is implicated and what it needs next.
 5. Identify whether any department brief, source docs, or work queue is affected.
 6. Separate company coordination from domain implementation ownership.
-7. Flag dependencies, blockers, sequencing constraints, and approval needs.
-8. Identify whether Brain company brief or domain-owner follow-up is needed.
-9. Identify the durable handoff surface for each downstream owner: domain brief, domain repo memory, source doc, structured record, or explicit follow-up note.
-10. Present a concise coordination plan.
+7. Build or refresh the dependency map: upstream inputs, downstream owners, blockers, sequencing constraints, approval needs, handoff surfaces, and review timing.
+8. Distinguish Company-owned planning strategy and Programs/Operations governance from App-owned Planner runtime/schema/UI and domain-owned execution.
+9. Identify whether Brain company brief or domain-owner follow-up is needed.
+10. Identify the durable handoff surface for each downstream owner: domain brief, domain repo memory, source doc, structured record, or explicit follow-up note.
+11. Present a concise coordination plan.
 
 ## Expected Output
 - Cross-domain impact map.
+- Dependency map.
 - Downstream owners and next needs.
 - Sequencing recommendation.
+- Review rhythm or next review point when relevant.
 - Risks, blockers, and unresolved questions.
 - Brain brief, memory, domain follow-up, or structured-record implications.
 - Durable handoff surface for affected domains.

@@ -1,7 +1,9 @@
 # miniBIOTA Company - Codex Agent Entry Point
 
 ## What This Repo Is
-`miniBIOTA_Company` is the company operations, strategic planning, governance, roadmap, and cross-domain coordination vault for miniBIOTA. It owns the top-level operating context that guides Research, Hardware, Content, Brand, Growth, Financials, Web, App, Raw Footage, and Brain coordination.
+`miniBIOTA_Company` is the company operations, strategic planning, governance, roadmap, and cross-domain coordination vault for miniBIOTA. It owns the active cross-domain operating coordination layer that guides Research, Hardware, Content, Brand, Growth, Financials, Web, App, Raw Footage, and Brain coordination.
+
+Company owns planning strategy, Programs/Operations governance, roadmap cadence, dependency mapping, cross-domain operating memory, and operating review rhythm. Brain remains the protocol, registry, brief/export, archive, and transition guardrail layer. App owns Planner runtime behavior, schema, UI, and Supabase-backed workflow implementation.
 
 Codex is the primary operating interface for this repo. Durable company memory belongs in this repo's Markdown architecture, in the Brain company brief when it is manager-facing strategy state, or in Supabase when the record is structured.
 
@@ -10,7 +12,7 @@ App Planner/Supabase is the live Company work queue when current Company project
 ## Active Architecture
 - `AGENTS.md` contains hard operating rules, startup/routing, source-of-truth order, write policy, company safety rules, and closeout format.
 - `memory/` contains durable company purpose, strategy context, governance rules, roadmap principles, cross-domain relationship rules, recurring decisions, and migration inbox notes.
-- `skills/` contains active task playbooks for repeatable company workflows.
+- `skills/` contains active task playbooks for repeatable company workflows, including operating decisions, roadmap review, cross-domain coordination, memory updates, operating review rhythm, and session closeout.
 - `skills/*/reference/` contains exact strategy/reference material when a skill needs it.
 - `archive/superseded/` contains historical docs only. Do not use archive files as active operating instructions.
 
@@ -20,7 +22,7 @@ App Planner/Supabase is the live Company work queue when current Company project
 - Company workflow playbooks under `skills/`.
 - Roadmap exact reference under `skills/review-roadmap-implications/reference/`.
 - Brain strategy brief at `M:\miniBIOTA\miniBIOTA_Brain\1. miniBIOTA_Company\company_brief.md`.
-- Supabase/App Planner, via `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py` or approved read paths, for `work_domains`, `work_projects`, `tasks`, milestones, and structured operational records when the work requires current structured state.
+- Supabase/App Planner, via `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py` or approved read paths, for `work_domains`, `work_projects`, `tasks`, milestones, and structured operational records when the work requires current structured state. App owns the Planner runtime, schema, UI, and implementation details.
 
 ## Startup Sequence
 For a full Codex bootstrap, run:
@@ -41,6 +43,8 @@ If working manually:
 8. Use Supabase/App Planner only when current structured projects, tasks, milestones, or operational records matter.
 
 For roadmap work, use `skills/review-roadmap-implications/SKILL.md`, `memory/04-roadmap-and-priorities.md`, and `skills/review-roadmap-implications/reference/strategic-roadmap.md`.
+
+For Company operating reviews, cadence checks, dependency-map refreshes, or Programs/Operations rhythm work, use `skills/run-operating-review/SKILL.md`.
 
 Historical AI-interface guidance has been archived at `archive/superseded/ai_operating_interface_guide.md`. Treat Claude-specific routing as legacy unless the user explicitly reactivates it.
 
@@ -65,6 +69,7 @@ Chat history and private model memory are never source of truth. Durable project
 - Keep current state, planned state, proposed changes, and aspirational roadmap separate.
 - Keep mission, vision, roadmap, governance, and operating priorities separate from domain-specific implementation details.
 - Company planning coordinates departments; it does not replace their source-of-truth docs, briefs, codebases, or structured records.
+- Company owns the cross-domain planning strategy, dependency map, Programs/Operations governance, roadmap cadence, operating memory, and review rhythm; this does not transfer implementation ownership away from domain agents.
 - When decisions affect multiple departments, identify downstream owners and what each domain needs next.
 - Treat Claude-specific files as legacy reference unless the user explicitly reactivates them. Codex is the primary interface moving forward.
 - Do not write to Supabase, change structured records, change app behavior, or change public site behavior unless the user explicitly asks for that specific action.
@@ -73,6 +78,7 @@ Chat history and private model memory are never source of truth. Durable project
 ## Planner / Project Management
 - App Planner/Supabase is the live Company work queue for actionable Company projects and tasks.
 - Company Planner work lives under `work_domains.key = company_ops` / `domain_id = 1`.
+- Company owns Planner strategy and governance for Company work; App owns Planner runtime behavior, schema, UI, and Supabase-backed workflow implementation.
 - Current Company work projects are `Business Plan & Operating Model`, `Roadmap & Quarterly Objectives`, `AI & Knowledge Infrastructure`, and `Operation Living Atlas Coordination`.
 - Read Planner projects/tasks when choosing next Company work, checking blockers, or verifying completion status.
 - At closeout, if completed work maps clearly to an open Planner task, ask whether to mark that task done unless the user explicitly asked for that live task update.
@@ -94,7 +100,7 @@ Update that brief at session end when any of these changed:
 
 Do not push full planning drafts or detailed department-specific work into the Brain brief. Keep detailed company work in this repo and structured records in Supabase.
 
-Brain no longer keeps an active Company docs mirror after the Company restructure. Active Company Agent behavior lives in this repo's `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`. Do not edit, sync, or recreate retired Brain docs mirrors.
+Brain no longer keeps an active Company docs mirror after the Company restructure. Active Company Agent behavior lives in this repo's `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`. Do not edit, sync, or recreate retired Brain docs mirrors. Brain remains the protocol, registry, brief/export, archive, and transition guardrail layer while Company owns active cross-domain operating coordination.
 
 ## Current Memory Map
 | File | Purpose |
@@ -114,9 +120,10 @@ Brain no longer keeps an active Company docs mirror after the Company restructur
 | Skill | Use When |
 |---|---|
 | `skills/make-operating-decision/SKILL.md` | Company-level decision, governance choice, sequencing decision, or cross-domain operating judgment |
-| `skills/coordinate-cross-domain-priorities/SKILL.md` | Work affects multiple domains or needs downstream owner coordination |
-| `skills/review-roadmap-implications/SKILL.md` | Milestone, project, deadline, quarterly plan, or five-year roadmap question |
+| `skills/coordinate-cross-domain-priorities/SKILL.md` | Work affects multiple domains or needs downstream owner coordination, dependency mapping, or Programs/Operations governance |
+| `skills/review-roadmap-implications/SKILL.md` | Milestone, project, deadline, quarterly plan, roadmap cadence, or five-year roadmap question |
 | `skills/update-company-memory/SKILL.md` | Promote durable decisions, governance rules, strategy rules, or recurring constraints into memory |
+| `skills/run-operating-review/SKILL.md` | Company operating review, cadence check, dependency map refresh, or Programs/Operations rhythm |
 | `skills/company-session-closeout/SKILL.md` | Close company planning sessions and decide whether Brain, domains, or structured records are implicated |
 
 ## Migration Notes For Former Docs

@@ -1,6 +1,6 @@
 ---
 title: Strategy And Governance
-last_updated: 2026-05-05
+last_updated: 2026-05-09
 ---
 # Strategy And Governance
 
@@ -18,16 +18,30 @@ Current design priorities include climate control precision, atmospheric sealing
 ## Governance Principles
 - Strategy should guide domain work without replacing domain ownership.
 - Decisions should become durable in repo memory, the Brain company brief, or structured records depending on the record type.
-- Company-level planning should identify affected domains, downstream owners, dependencies, and open questions.
+- Company-level planning should identify affected domains, downstream owners, dependencies, review timing, and open questions.
 - Business plan, roadmap, public positioning, funding, and hardware sequencing must stay aligned.
 - Current state, approved plans, proposals, and aspiration must remain distinct.
 
 ## Operating Model
-The Company Agent maintains the top-level coordination layer. Brain holds the manager-facing strategy brief. Domains maintain detailed source-of-truth context in their own repos, memory, skills, docs, codebases, and structured records.
+The Company Agent maintains the active cross-domain operating coordination layer. Company owns planning strategy, Programs/Operations governance, roadmap cadence, dependency mapping, cross-domain operating memory, and operating review rhythm.
+
+Brain holds protocol, registry, manager-facing briefs/exports, archive, and transition guardrails. Domains maintain detailed source-of-truth context in their own repos, memory, skills, docs, codebases, and structured records. App owns Planner runtime behavior, schema, UI, and Supabase-backed workflow implementation.
 
 No executive persona framing is used. Company memory should remain operational, source-grounded, and practical.
 
 Historical Brain overview and AI-interface language used topic-based knowledge folders and equal-peer Claude/Codex routing. Current Company architecture is Codex-primary and uses `AGENTS.md`, `memory/`, `skills/`, `skills/*/reference/`, and `archive/` as the active local structure.
+
+## Programs/Operations Governance
+Company governs cross-domain programs by defining:
+- The company-level objective, decision boundary, and review cadence.
+- The affected domains, downstream owners, dependencies, blockers, and handoff surfaces.
+- The difference between Company-owned planning work and domain-owned implementation.
+- The durable memory destination for decisions, review outcomes, and recurring constraints.
+
+Programs/Operations governance does not create public, financial, legal, sponsor, launch, or roadmap commitments by itself. Those still require explicit Josue approval and the appropriate source-of-truth update.
+
+## Review Rhythm
+Company should run operating reviews when planning cadence, dependency state, roadmap sequencing, or cross-domain program health matters. Reviews should refresh the dependency map, identify blocked or stale decisions, distinguish Planner workflow status from roadmap commitments, and decide whether Brain or domain briefs need concise manager-facing updates.
 
 ## Brain Brief Update Rules
 Update the Brain company brief when manager-facing strategy state changes, including:

@@ -18,11 +18,16 @@ last_updated: 2026-05-09
 - Commit/push is not a hard closeout rule. Brain docs sync no longer mirrors Company docs; active Company context lives in this repo memory/skills architecture, and git publication should remain user-directed.
 - No executive persona framing is used for Company memory or planning.
 - App Planner/Supabase is the live Company work queue when current Company project/task status matters.
+- Company is the active cross-domain operating coordination owner for planning strategy, Programs/Operations governance, roadmap cadence, dependency mapping, cross-domain operating memory, and review rhythm.
+- Brain remains protocol, registry, briefs/exports, archive, and transition guardrail.
+- App owns Planner runtime behavior, schema, UI, and Supabase-backed workflow implementation.
 - Company Planner records live under `work_domains.key = company_ops` / `domain_id = 1`.
 - Current Company Planner projects are `Business Plan & Operating Model`, `Roadmap & Quarterly Objectives`, `AI & Knowledge Infrastructure`, and `Operation Living Atlas Coordination`.
 - Planner `work_projects` and `tasks` are the structured source for Company task/project state when current operating status matters; do not recreate task truth in Markdown.
 - Planner project/task writes are live Supabase writes and require explicit approval.
 - Company Planner coordination does not replace domain-owned implementation queues.
+- Roadmap cadence and operating review rhythm are Company-owned coordination functions; they do not create roadmap commitments, launch targets, or public promises without explicit approval.
+- Dependency maps are Company operating memory and should identify affected domains, downstream owners, blockers, handoff surfaces, and review timing.
 - Cross-interface and cross-agent handoffs must use durable files, briefs, or structured records as the handoff surface. Chat history alone is not enough.
 - Sparse roadmap placeholders are not commitments. Roadmap commitments require explicit approval.
 

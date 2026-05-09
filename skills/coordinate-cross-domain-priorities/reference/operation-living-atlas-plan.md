@@ -2,7 +2,7 @@
 id: operation_living_atlas_plan
 title: Operation Living Atlas Plan
 domain: company_operations
-last_updated: 2026-05-01
+last_updated: 2026-05-09
 tags: [operation-living-atlas, backfill, species, chronicles, observations, media, multi-agent]
 ---
 # Operation Living Atlas
@@ -25,16 +25,17 @@ This is not just a website content cleanup. It is the process of building miniBI
 
 ## Operating Model
 
-Brain is the program coordination layer. Domain agents contribute in parallel:
+Company is the program coordination layer. Domain agents contribute in parallel:
 
 | Agent | Owns |
 |---|---|
-| Brain / Strategy | Overall plan, priorities, record routing, cross-domain coordination, source-of-truth discipline |
+| Company | Overall plan, priorities, record routing, Programs/Operations governance, dependency mapping, review rhythm, cross-domain coordination, source-of-truth discipline |
 | Research | Species histories, ecological interpretation, interaction mapping, confidence language, public/private judgment support |
 | Content | Pipeline-by-pipeline extraction, transcript/video context, story arcs, publish chronology |
 | Web | Public rendering rules, chronicle relationship display, SEO/public page behavior |
-| App | Future data-entry and review workflow if the process needs an operator UI |
+| App | Planner/runtime support, schema/UI implementation, and future data-entry or review workflow if the process needs an operator UI |
 | Raw Footage | Media discovery, photo/video evidence selection, tagging readiness |
+| Brain | Protocol, registry, briefs/exports, archive, and transition guardrails |
 
 ## Source Of Truth
 
@@ -208,6 +209,7 @@ Open questions:
    - Mark status.
    - Record unresolved questions.
    - Create follow-up tasks only for actionable next work.
+   - Refresh the Company dependency map and next review point when coordination changed.
 
 ## Statuses
 
@@ -244,6 +246,7 @@ This arc should become the model packet for future backfill work.
 - What is the minimum image/caption quality for public species galleries?
 - How much historical uncertainty can appear publicly, and how should it be phrased?
 - Should the desktop app eventually include a dedicated Living Atlas review workflow?
+- What cadence should Company use for packet review, dependency refresh, and cross-domain blocker checks?
 
 ## Guardrails
 
@@ -262,4 +265,3 @@ Use these handoff packets for parallel work:
 - `0. Agent Exports/operation_living_atlas_content_handoff.md`
 - `0. Agent Exports/operation_living_atlas_web_handoff.md`
 - `0. Agent Exports/operation_living_atlas_app_handoff.md`
-

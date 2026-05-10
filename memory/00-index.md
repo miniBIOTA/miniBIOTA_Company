@@ -1,24 +1,55 @@
----
+﻿---
 title: Company Memory Index
-last_updated: 2026-05-09
+last_updated: 2026-05-10
 ---
 # Company Memory Index
 
 ## Purpose
 This folder is the durable Company Agent memory layer for miniBIOTA strategy, governance, roadmap principles, cross-domain coordination, source-of-truth rules, and recurring operating decisions.
 
-Company owns active cross-domain operating coordination for miniBIOTA: planning strategy, Programs/Operations governance, roadmap cadence, dependency mapping, cross-domain operating memory, and review rhythm. Brain remains protocol, registry, briefs/exports, archive, and transition guardrail. App owns Planner runtime behavior, schema, UI, and Supabase-backed workflow implementation.
+Company owns active cross-domain operating coordination for miniBIOTA: planning strategy, Programs/Operations governance, roadmap cadence, dependency mapping, cross-domain operating memory, review rhythm, active repo/domain routing through `_system/agent_repo_registry.md`, active Company reports, and active Company exports. Brain keeps historical protocol, Brain-side registry references, retired briefs/exports, archive, recovery context, and retirement provenance during probation. App owns Planner runtime behavior, schema, UI, and Supabase-backed workflow implementation.
 
 Use memory for stable company context. Use skills for repeatable workflows. Use skill reference folders for exact workflow reference material. Use App Planner/Supabase for live Company project/task status. Use docs only if future migration material appears and has not yet been absorbed.
 
 ## Load Order
 1. Read `AGENTS.md`.
-2. Read this index.
-3. Load the smallest relevant memory files for the active request.
-4. Load the matching `skills/*/SKILL.md` playbook when the request matches an active workflow.
-5. Use `skills/*/reference/` for exact workflow reference material.
-6. Use the Brain company brief for manager-facing strategy-level current state.
-7. Use App Planner/Supabase only when current structured projects, tasks, milestones, or operational records matter.
+2. Read `COMPANY_AGENT_PROTOCOL.md`.
+3. Read this index.
+4. Read `_system/agent_repo_registry.md` when the task touches domain routing, reporting paths, risk levels, Supabase responsibilities, or Brain retirement migration.
+5. Read `_system/database_awareness.md` and `memory/11-helper-and-database-awareness-migration.md` when the task touches Supabase helper migration, MCP/database awareness, or retired Brain helper provenance.
+6. Read `memory/12-brain-skills-migration.md` when the task touches Brain skill migration or Company playbook replacements.
+7. Read `memory/15-brain-archive-freeze-plan.md` when the task touches Brain archive freeze, freeze-readiness scans, archive-only labels, or final Brain retirement gates.
+8. Read `memory/16-brain-retirement-probation.md` when the task touches probation tracking, attempted Brain usage, missing replacements, or Phase 11 exit criteria.
+9. Read `memory/17-phase-11-company-operating-review-2026-05-09.md` when the task needs the first Phase 11 operating-review evidence item or its dependency-map snapshot.
+10. Read `memory/18-phase-11-operation-living-atlas-update-2026-05-09.md` when the task needs the first Phase 11 Program/Operation update evidence item or its dependency-map snapshot.
+11. Read `memory/19-phase-11-domain-closeout-batch-2026-05-10.md` when the task needs the Phase 11 three-domain closeout evidence item or the Brand/Content/Growth old-habit patch notes.
+12. Read `memory/20-phase-11-active-reference-scan-2026-05-10.md` when the task needs the Phase 11 active-reference scan evidence item or old-habit patch notes from Financials, Research, Web, Company, Hardware, and App.
+13. Read `memory/21-phase-11-planner-strategy-session-2026-05-10.md` when the task needs the Phase 11 Planner/project-management strategy evidence item.
+14. Read `memory/22-phase-11-supabase-read-awareness-2026-05-10.md` when the task needs the Phase 11 Supabase read-awareness evidence item or the current read-access limitation.
+15. Load the smallest relevant memory files for the active request.
+16. Load the matching `skills/*/SKILL.md` playbook when the request matches an active workflow.
+17. Use `skills/*/reference/` for exact workflow reference material.
+18. Use `0. Agent Exports\miniBIOTA_master_context.md` for broad Company cold starts, cross-domain architecture work, or unclear requests.
+19. Use the Company report for manager-facing strategy-level current state when needed.
+20. Use App Planner/Supabase only when current structured projects, tasks, milestones, or operational records matter.
+
+## Registry Routing
+
+Company-owned repo/domain routing lives at `_system/agent_repo_registry.md`. Use it for active repo paths, domain roles, entry points, reporting-path transition state, risk levels, and Supabase responsibility boundaries.
+
+Phase 3 created Company-owned reports under `domains/`; Phase 10 activated them as the normal Company reporting targets. Brain domain overview/brief folders are historical/archive lookup only.
+
+## Domain Reporting
+
+Active Company domain reports live under `domains/`. Use `domains/README.md` for the active path map and historical Brain provenance.
+
+## Export Routing
+
+Active Company exports live under `0. Agent Exports/` and are generated by `0. Agent Exports/build_company_exports.ps1` or the compatibility wrapper `build_ceo_exports.ps1`. They read Company `domains/` reports only. Brain exports are historical/archive artifacts after Phase 10 reporting activation.
+
+## Database Awareness
+
+Company database-awareness routing lives in `_system/database_awareness.md`. Phase 5 helper ownership and migration planning lives in `memory/11-helper-and-database-awareness-migration.md`. Brain `_system/minibiota_tools.py` is retired from normal workflows; do not copy it into Company unchanged.
 
 ## Planner Routing
 App Planner/Supabase is the live Company work queue when current Company project or task status matters. Company Planner records live under `work_domains.key = company_ops` / `domain_id = 1` in `work_projects` and `tasks`.
@@ -41,9 +72,24 @@ Company owns Planner strategy and governance for Company work. App owns the Plan
 | `03-strategy-and-governance.md` | Mission, vision, governance, operating model, and decision principles |
 | `04-roadmap-and-priorities.md` | Roadmap status, planning principles, priorities, and milestone handling |
 | `05-cross-domain-relationships.md` | Domain relationship map and downstream owner expectations |
-| `05-database-access.md` | Company database and Planner access boundaries, domain key, owned/read/write tables, and Brain reporting expectations |
-| `06-source-of-truth-rules.md` | Source hierarchy, Brain relationship, docs migration, and Supabase boundaries |
+| `05-database-access.md` | Company database and Planner access boundaries, domain key, owned/read/write tables, and transition reporting expectations |
+| `06-source-of-truth-rules.md` | Source hierarchy, transition relationship, docs migration, and Supabase boundaries |
 | `07-recurring-decisions.md` | Durable recurring decisions and constraints |
+| `08-agent-operating-architecture.md` | Company/Brain/App/domain ownership model during Brain retirement |
+| `09-source-of-truth-and-routing.md` | Company-level source hierarchy, request routing, conflict handling, and Brain transition references |
+| `10-cross-domain-operating-model.md` | Program/Operation, project, task, dependency, downstream owner, and review-rhythm model |
+| `11-helper-and-database-awareness-migration.md` | Phase 5 Brain helper ownership map, MCP/database-awareness routing, and helper migration plan |
+| `12-brain-skills-migration.md` | Phase 6 Brain skill classification and Company playbook replacement map |
+| `13-domain-agent-migration.md` | Phase 7 standard domain-agent migration prompt, checklist, and batch order |
+| `14-raw-footage-and-definitions-ownership.md` | Phase 9 Raw Footage and Definitions ownership split, active routing, and live-write boundaries |
+| `15-brain-archive-freeze-plan.md` | Phase 10 Brain archive freeze criteria, blocker classes, verification scans, retained-readable surfaces, and approval gates |
+| `16-brain-retirement-probation.md` | Phase 11 probation tracker, required events, Brain usage log, issue list, and exit criteria |
+| `17-phase-11-company-operating-review-2026-05-09.md` | First Phase 11 Company operating-review evidence item, dependency-map snapshot, and Brain usage classification |
+| `18-phase-11-operation-living-atlas-update-2026-05-09.md` | First Phase 11 cross-domain Program/Operation update evidence item, Operation Living Atlas dependency-map snapshot, and Brain usage classification |
+| `19-phase-11-domain-closeout-batch-2026-05-10.md` | Phase 11 three-domain closeout evidence item for Brand, Content, and Growth, plus old-habit Brain fallback wording patches |
+| `20-phase-11-active-reference-scan-2026-05-10.md` | Phase 11 active-reference scan evidence item, residual-match classification, and old-habit patch notes for Financials, Research, Web, Company, Hardware, and App |
+| `21-phase-11-planner-strategy-session-2026-05-10.md` | Phase 11 Planner/project-management strategy evidence item, Company/App ownership check, and no-write strategy conclusions |
+| `22-phase-11-supabase-read-awareness-2026-05-10.md` | Phase 11 Supabase read-awareness evidence item, GET-only table visibility check, and RLS/protected-read limitation |
 | `inbox.md` | Temporary holding area for migration notes and candidate durable memory |
 
 ## Skill References
@@ -59,10 +105,18 @@ Company owns Planner strategy and governance for Company work. App owns the Plan
 | `skills/coordinate-cross-domain-priorities/SKILL.md` | Cross-domain priority coordination, dependency mapping, and downstream owner routing |
 | `skills/review-roadmap-implications/SKILL.md` | Roadmap, milestone, quarterly objective, and cadence review |
 | `skills/run-operating-review/SKILL.md` | Operating review rhythm, dependency-map refresh, and Programs/Operations review |
+| `skills/route-cross-domain-request/SKILL.md` | Route unclear ownership across Company, Brain, App, and domain repos |
+| `skills/process-new-knowledge/SKILL.md` | Route new information, corrections, decisions, and migration facts to the correct durable home |
 | `skills/update-company-memory/SKILL.md` | Durable memory promotion |
+| `skills/company-session-start/SKILL.md` | Company session bootstrap and light-context loading |
 | `skills/company-session-closeout/SKILL.md` | Session closeout and Brain/domain/structured-record implication checks |
+| `skills/update-domain-report/SKILL.md` | Company domain reporting candidate updates during transition |
+| `skills/planner-task-review/SKILL.md` | App Planner/Supabase task implication review with approval gates |
+| `skills/sync-domain-context/SKILL.md` | Verify, route, or migrate domain context between Brain, Company, and domain repos |
+| `skills/route-chronicle-candidate/SKILL.md` | Route possible public chronicle candidates to Content/Research ownership |
+| `skills/route-public-web-simplification/SKILL.md` | Route public-only Web simplification through Company/Web/App boundaries |
 
 ## Migration Status
 Phase 1 created the memory and skill architecture. Phase 2 Batch 1 absorbed `docs/agent_protocol.md` into `AGENTS.md`, `memory/`, and `skills/`, then archived it at `archive/superseded/agent_protocol.md`. Phase 2 Batch 2 absorbed `docs/company_operations_overview.md` into `memory/` and relevant `skills/`, then archived it at `archive/superseded/company_operations_overview.md`. Phase 2 Batch 3 absorbed `docs/ai_operating_interface_guide.md` into memory, skills, and archive notes, then archived it at `archive/superseded/ai_operating_interface_guide.md`. Phase 2 Batch 4 moved exact roadmap reference material from `docs/strategic_roadmap.md` into `skills/review-roadmap-implications/reference/strategic-roadmap.md`, then archived the source doc at `archive/superseded/strategic_roadmap.md`.
 
-No active Company docs remain after Phase 2 Batch 4. Future migration phases should use `memory/`, `skills/`, `skills/*/reference/`, and `archive/` unless a new exact-reference need is explicitly scoped.
+No active Company docs remain after Phase 2 Batch 4. Brain retirement Phase 1 added `COMPANY_AGENT_PROTOCOL.md`, `memory/08-agent-operating-architecture.md`, `memory/09-source-of-truth-and-routing.md`, `memory/10-cross-domain-operating-model.md`, `skills/route-cross-domain-request/SKILL.md`, and `skills/process-new-knowledge/SKILL.md` as Company-owned top-level operating coordination surfaces. Brain retirement Phase 2 added `_system/agent_repo_registry.md` as the Company-owned active routing map. Brain retirement Phase 3 created `domains/` reports copied from Brain domain overview/brief files. Brain retirement Phase 4 created Company export tooling and generated exports under `0. Agent Exports/`. Brain retirement Phase 5 created helper/database-awareness migration planning without moving helper code. Brain retirement Phase 6 added Company skill equivalents and a skill migration map without disabling Brain skills or updating domain agents. Brain retirement Phase 7 completed active domain repo doc migrations, Phase 8 completed docs-only Planner/Programs alignment, Phase 9 completed Raw Footage and Definitions ownership routing, and Phase 10 applied archive-freeze warnings and active-routing replacements without deleting, moving, or physically archiving Brain. Phase 11 probation tracking lives in `memory/16-brain-retirement-probation.md`; its first Company operating-review evidence item lives in `memory/17-phase-11-company-operating-review-2026-05-09.md`, its first Program/Operation update evidence item lives in `memory/18-phase-11-operation-living-atlas-update-2026-05-09.md`, its three-domain closeout evidence item lives in `memory/19-phase-11-domain-closeout-batch-2026-05-10.md`, its first active-reference scan evidence item lives in `memory/20-phase-11-active-reference-scan-2026-05-10.md`, its Planner/project-management strategy evidence item lives in `memory/21-phase-11-planner-strategy-session-2026-05-10.md`, and its Supabase read-awareness evidence item lives in `memory/22-phase-11-supabase-read-awareness-2026-05-10.md`. Future migration phases should use `memory/`, `skills/`, `skills/*/reference/`, `_system/agent_repo_registry.md`, and `archive/` unless a new exact-reference need is explicitly scoped.

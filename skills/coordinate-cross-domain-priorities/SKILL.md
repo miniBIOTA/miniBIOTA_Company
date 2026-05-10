@@ -1,4 +1,4 @@
----
+﻿---
 name: coordinate-cross-domain-priorities
 description: Use when company work affects multiple domains and needs downstream owner coordination, dependency mapping, or Programs/Operations governance.
 ---
@@ -26,9 +26,9 @@ description: Use when company work affects multiple domains and needs downstream
 - `memory/07-recurring-decisions.md`
 
 ## Required Docs Or Reference Files
-- Brain company brief for manager-facing strategy-level current state.
+- Company report for manager-facing strategy-level current state.
 - `skills/coordinate-cross-domain-priorities/reference/operation-living-atlas-plan.md` when Operation Living Atlas, historical backfill, ecological knowledge graph coordination, source packets, or multi-agent backfill work is in scope.
-- Relevant domain briefs or docs only when domain-specific current state is needed.
+- Relevant Company/domain reports or domain docs only when domain-specific current state is needed.
 - Supabase read checks only when current structured tasks, milestones, or operational records matter.
 
 ## Workflow
@@ -38,9 +38,9 @@ description: Use when company work affects multiple domains and needs downstream
 4. For each affected domain, identify why it is implicated and what it needs next.
 5. Identify whether any department brief, source docs, or work queue is affected.
 6. Separate company coordination from domain implementation ownership.
-7. Build or refresh the dependency map: upstream inputs, downstream owners, blockers, sequencing constraints, approval needs, handoff surfaces, and review timing.
-8. Distinguish Company-owned planning strategy and Programs/Operations governance from App-owned Planner runtime/schema/UI and domain-owned execution.
-9. Identify whether Brain company brief or domain-owner follow-up is needed.
+7. Build or refresh the dependency map: upstream inputs, downstream owners, project owner/lead distinctions, blockers, sequencing constraints, approval needs, handoff surfaces, and review timing.
+8. Distinguish Company-owned planning strategy, Programs/Operations lifecycle, and governance semantics from App-owned Planner runtime/schema/UI and domain-owned execution.
+9. Identify whether Company report, domain-owner follow-up, Brain archive/retirement notes, or structured-record follow-up is needed.
 10. Identify the durable handoff surface for each downstream owner: domain brief, domain repo memory, source doc, structured record, or explicit follow-up note.
 11. Present a concise coordination plan.
 
@@ -51,7 +51,7 @@ description: Use when company work affects multiple domains and needs downstream
 - Sequencing recommendation.
 - Review rhythm or next review point when relevant.
 - Risks, blockers, and unresolved questions.
-- Brain brief, memory, domain follow-up, or structured-record implications.
+- Company report, memory, domain follow-up, Brain archive/retirement, or structured-record implications.
 - Durable handoff surface for affected domains.
 
 ## Write And Approval Rules

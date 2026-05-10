@@ -24,7 +24,7 @@ description: Use for company-level decisions, Programs/Operations governance cho
 - `memory/07-recurring-decisions.md`
 
 ## Required Docs Or Reference Files
-- Brain company brief when the decision depends on strategy-level current state.
+- Company report when the decision depends on strategy-level current state.
 - Relevant memory files and skill reference files.
 - Relevant domain briefs when domain-specific current strategy state matters.
 - Archive files only for historical context.
@@ -40,7 +40,7 @@ description: Use for company-level decisions, Programs/Operations governance cho
 7. If the decision requires explicit approval, frame it as a recommendation or option until Josue approves it.
 8. Check whether the decision affects another department's brief, source docs, work queue, or dependency map.
 9. Provide the decision, rationale, assumptions, downstream next steps, and any unresolved risks.
-10. Decide whether the result should update `memory/`, Brain company brief, domain follow-up notes, or structured records.
+10. Decide whether the result should update `memory/`, Company reports, domain follow-up notes, or structured records.
 11. If the decision came from another interface or prior conversation, ground it in durable files, briefs, or structured records before treating it as current truth.
 
 ## Expected Output
@@ -49,11 +49,11 @@ description: Use for company-level decisions, Programs/Operations governance cho
 - Affected domains and downstream owners.
 - Dependency map implications and review timing.
 - Risks, assumptions, and approval needs.
-- Memory, Brain, domain, or structured-record implications.
+- Memory, Company report, domain, or structured-record implications.
 
 ## Write And Approval Rules
 - Ask before editing memory unless the user explicitly scoped the edit.
-- Do not update Brain company brief unless manager-facing state changed and the user has not deferred it.
+- Do not update Company reports unless manager-facing state changed and the user has not deferred it. Brain reports are historical/archive lookup only.
 - Do not write to Supabase or structured records unless explicitly asked.
 - Follow `MINIBIOTA_WRITE_MODE`.
 

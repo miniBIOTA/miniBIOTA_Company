@@ -1,11 +1,11 @@
----
+﻿---
 title: Cross-Domain Relationships
 last_updated: 2026-05-09
 ---
 # Cross-Domain Relationships
 
 ## Coordination Rule
-When company work affects more than one domain, identify the affected domains, downstream owners, what each domain needs next, and whether the Brain company brief needs to change.
+When company work affects more than one domain, identify the affected domains, downstream owners, what each domain needs next, and whether the Company report needs to change.
 
 Company strategy provides the top-level business context for downstream execution. It should align operations, funding, storytelling, hardware development, brand/public language, web presentation, app workflows, and research truth without replacing domain ownership.
 
@@ -23,7 +23,7 @@ Company Planner tasks may coordinate cross-domain planning, decisions, and follo
 - Web: public source-of-truth surfaces, conversion paths, strategic presentation, and public claims.
 - App: Planner runtime behavior, schema, UI, Supabase-backed workflow implementation, internal operating tools, structured data workflows, dashboards, monitoring, and workflow support.
 - Raw Footage: archival evidence, media source material, proof assets, and documentary history.
-- Brain: protocol, registry, manager-facing briefs/exports, archive, and transition guardrails.
+- Brain: historical protocol, Brain-side registry references, retired briefs/exports, archive, recovery context, and retirement provenance during probation.
 
 ## Department Impact Rule
 When a company decision affects a department, explicitly name the affected domain and what it needs to do next. If the decision affects a department's brief, source docs, or work queue, call that out separately from implementation recommendations.
@@ -33,15 +33,15 @@ Company can frame the decision and downstream need. The domain owner or domain a
 
 If Company Planner contains a task that affects another domain, treat it as a coordination task unless the task explicitly says Company owns the implementation. Identify the downstream owner and durable handoff surface before treating the work as complete.
 
-Company owns cross-domain operating memory. Durable dependency changes, review outcomes, program governance rules, and recurring coordination constraints should land in Company memory or the Brain company brief when manager-facing strategy state changes. Domain-specific implementation detail should land in the relevant domain repo, domain brief, or structured record.
+Company owns cross-domain operating memory. Durable dependency changes, review outcomes, program governance rules, and recurring coordination constraints should land in Company memory or the Company report when manager-facing strategy state changes. Domain-specific implementation detail should land in the relevant domain repo, domain brief, or structured record.
 
 ## Brain And App Boundary
-Brain remains the guardrail layer for protocol, registry, briefs/exports, archive, and transition context. It is not the active owner of ongoing cross-domain planning cadence once Company memory and skills cover the workflow.
+Brain remains archive/recovery context and retirement provenance during probation. It is not the active owner of ongoing cross-domain planning cadence.
 
 App owns Planner runtime behavior, schema, UI, and Supabase-backed workflow implementation. Company owns how Planner is used for Company operating strategy, program governance, and review cadence. Changes to Planner records remain live Supabase writes and require explicit approval.
 
 ## Handoff Pattern
-If work begins in another interface or domain and the Company Agent needs to continue it, use durable files, the Brain company brief, domain briefs, or structured records as the handoff surface. Do not rely on chat history alone.
+If work begins in another interface or domain and the Company Agent needs to continue it, use durable files, the Company report, domain reports, or structured records as the handoff surface. Do not rely on chat history alone.
 
 ## Escalation Pattern
 If a decision affects public claims, legal exposure, financial commitments, sponsor obligations, launch targets, or roadmap commitments, stop and ask for explicit user direction before treating it as approved.

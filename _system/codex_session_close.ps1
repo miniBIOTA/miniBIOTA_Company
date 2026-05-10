@@ -1,26 +1,31 @@
-$ErrorActionPreference = "Stop"
+﻿$ErrorActionPreference = "Continue"
 
-$repoRoot = Split-Path -Parent $PSScriptRoot
-$brainRoot = "M:\miniBIOTA\miniBIOTA_Brain"
+$scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$repoRoot = Split-Path -Parent $scriptRoot
+$companyRoot = "M:\miniBIOTA\miniBIOTA_Company"
+$companyOverview = Join-Path $companyRoot "domains\company\company_overview.md"
+$companyBrief = Join-Path $companyRoot "domains\company\company_brief.md"
 
-Write-Host "miniBIOTA Company Codex closeout"
-Write-Host "Repo: $repoRoot"
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
-Push-Location $repoRoot
+Write-Host "== miniBIOTA Company Codex Session Close =="
+Write-Host "Repo:   $repoRoot"
+Write-Host "Report: $companyBrief"
 Write-Host ""
-Write-Host "Company repo status:"
-git status --short --branch
-Pop-Location
 
-if (Test-Path "$brainRoot\1. miniBIOTA_Company\company_brief.md") {
-    Write-Host "Company brief exists: $brainRoot\1. miniBIOTA_Company\company_brief.md"
+Set-Location $repoRoot
+Write-Host "Git status:"
+if (Test-Path (Join-Path $repoRoot ".git")) {
+    git status --short --branch
 } else {
-    Write-Host "Company brief missing at expected path."
+    Write-Host "Git repository not initialized in this folder."
 }
-
 Write-Host ""
-Write-Host "Closeout reminder:"
-Write-Host "- Read changed files, memory, skills, references, or archive notes end to end."
-Write-Host "- Decide whether Brain company_brief.md needs an update when manager-facing state changed."
-Write-Host "- Verify tasks/domain status for current operating claims."
-Write-Host "- Commit and push when the work unit is complete and git publication is scoped."
+
+Write-Host "Closeout reminders:"
+Write-Host "- Promote durable rules, decisions, corrections, and recurring hazards into local memory/playbooks."
+Write-Host "- Update or flag Company reporting when manager-facing Company state changed: $companyBrief"
+Write-Host "- Keep detailed implementation context in this repo's memory, skills, references, code, and structured records."
+Write-Host "- Brain is historical/archive lookup only unless a transition plan explicitly asks for it."
+Write-Host "- Do not write Planner/Supabase records, business commitments, public promises, financial commitments, legal decisions, or roadmap commitments without explicit approval."
+Write-Host "- Run the smallest meaningful verification and report changed files."

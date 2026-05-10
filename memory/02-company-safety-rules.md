@@ -1,4 +1,4 @@
----
+﻿---
 title: Company Safety Rules
 last_updated: 2026-05-09
 ---
@@ -21,7 +21,7 @@ Recommendations, options, drafts, and proposed sequencing must be labeled as suc
 
 ## State Separation
 Always keep these categories separate:
-- Current state: already true or verified in the repo, Brain brief, docs, or structured records.
+- Current state: already true or verified in the repo, Company report, domain reports, docs, or structured records.
 - Planned state: explicitly approved plan or active documented priority.
 - Proposed change: suggestion under consideration.
 - Aspirational roadmap: future-facing direction that is not yet a commitment.
@@ -46,4 +46,4 @@ If a decision affects another department's brief, source docs, or work queue, id
 ## Legacy Interface Safety
 Claude-specific files, old Claude-vs-Codex routing guidance, and historical equal-peer interface language are legacy reference unless Josue explicitly reactivates them. Codex is the primary Company Agent interface moving forward.
 
-Do not use chat history from any interface as durable project truth. Durable conclusions belong in active repo memory, the Brain company brief when appropriate, or structured records when explicitly scoped.
+Do not use chat history from any interface as durable project truth. Durable conclusions belong in active repo memory, the Company report when appropriate, or structured records when explicitly scoped. Historical Brain briefs are archive lookup only during probation.

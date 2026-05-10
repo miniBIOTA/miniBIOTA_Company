@@ -1,4 +1,4 @@
-# Company Database Access Responsibilities
+﻿# Company Database Access Responsibilities
 
 The Company Agent is read-only by default for Supabase. It uses structured records only when current operational state, Planner projects/tasks, decisions, milestones, or domain status matter.
 
@@ -8,8 +8,8 @@ Company owns Planner strategy, Programs/Operations governance, roadmap cadence, 
 
 - Database access needed: Yes, limited.
 - Default mode: Read-only.
-- MCP: Brain has broad Supabase MCP read awareness. This domain may use MCP read access for relevant company context, but should escalate cross-domain interpretation to Brain.
-- Preferred path: Brain helper functions in `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py`.
+- MCP/read-only awareness is preferred for current schema, table, relationship, log, advisor, and broad database context. Use Company `_system/agent_repo_registry.md` for ownership/risk routing and `_system/database_awareness.md` for Phase 5 transition rules.
+- Preferred path: MCP/read-only awareness first. Use MCP/read-only awareness and Company/domain-owned helpers; Brain helper functions are retired from normal workflows.
 - Secrets: Local environment variables or ignored local config only.
 
 ## Table Responsibilities
@@ -37,10 +37,14 @@ Company work is managed in App Planner through Supabase `work_projects` and `tas
 - Company Planner records coordinate company-level planning. They do not replace domain-owned implementation queues or domain source-of-truth records.
 - Do not treat Planner schema, UI, runtime behavior, or Supabase workflow implementation as Company-owned implementation work. Route those to App unless Josue explicitly scopes a cross-repo App change.
 
-## Brain Reporting
+## Transition Reporting
 
-At session close, update Brain when company state changes:
+At session close, update or flag the Company report only when manager-facing Company state changes:
 
-- `M:\miniBIOTA\miniBIOTA_Brain\1. miniBIOTA_Company\company_brief.md`
+- `M:\miniBIOTA\miniBIOTA_Company\domains\company\company_brief.md`
 
-Report durable decisions, roadmap changes, governance changes, cross-domain priorities, and risks back to Brain. Detailed local context stays in this repo.
+Detailed local context stays in this repo. Company reports and exports are the active reporting path; Brain briefs are historical/archive lookup during probation.
+
+## Helper Migration
+
+Phase 5 helper ownership and migration planning lives in `memory/11-helper-and-database-awareness-migration.md`. Do not copy Brain `_system/minibiota_tools.py` into Company unchanged; it is Brain-rooted and mixes Company, Research, Content, Financials, Growth, Web, App, Raw Footage, and Brain vault helper surfaces.

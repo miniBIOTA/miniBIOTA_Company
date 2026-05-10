@@ -32,7 +32,7 @@ description: Use when a milestone, project, deadline, quarterly plan, roadmap ca
 ## Required Docs Or Reference Files
 - `skills/review-roadmap-implications/reference/strategic-roadmap.md`
 - `skills/review-roadmap-implications/reference/README.md` for migration status.
-- Brain company brief for strategy-level current state.
+- Company report for strategy-level current state.
 - Supabase read checks only when current structured milestones, tasks, or operational records matter.
 
 ## Workflow
@@ -58,7 +58,7 @@ description: Use when a milestone, project, deadline, quarterly plan, roadmap ca
 - Recommended next decision or planning step.
 
 ## Write And Approval Rules
-- Do not update the roadmap reference, memory, Brain, or structured records unless explicitly scoped.
+- Do not update the roadmap reference, memory, Company reports, Brain archive notes, or structured records unless explicitly scoped.
 - Ask before editing memory unless the user explicitly asked for a memory update.
 - Do not write to Supabase unless explicitly asked.
 - Follow `MINIBIOTA_WRITE_MODE`.

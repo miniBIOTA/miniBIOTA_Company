@@ -22,7 +22,9 @@ description: Use to close company planning sessions and verify Brain, domain-own
 
 ## Required Docs Or Reference Files
 - Brain company brief when deciding whether manager-facing strategy state changed.
-- Relevant docs, memory, or skills that changed during the session.
+- Relevant docs, memory, domain reports, or skills that changed during the session.
+- Company domain reports under `domains/` when manager-facing domain state or reporting paths changed.
+- Company export files under `0. Agent Exports/` when broad context or executive synthesis changed.
 - Supabase/App Planner read checks only if structured projects/tasks, milestones, durable memory, or operational records were implicated.
 
 ## Workflow
@@ -33,15 +35,18 @@ description: Use to close company planning sessions and verify Brain, domain-own
 5. Decide whether the dependency map, Programs/Operations governance, roadmap cadence, or operating review rhythm changed.
 6. Decide whether any domain owner needs follow-up, including whether any department brief, source docs, or work queue was affected.
 7. Decide whether structured projects/tasks, milestones, durable memory, or operational records are implicated.
-8. If work completed in the session maps clearly to an open Company Planner task, ask whether to mark it done unless the user explicitly approved that live Planner update.
-9. If structured projects/tasks, durable memory, milestones, or operational records changed, summarize those changes clearly.
-10. Confirm durable conclusions are in the appropriate source or explicitly listed as unresolved; do not leave durable state only in chat history.
-11. If local docs changed and manager-facing strategy state changed, update or flag the Brain company brief. Brain docs mirrors are retired for Company and should not be synced or recreated.
-12. Commit and push only when the user asks or the work unit is explicitly scoped for git publication.
-13. Run `git diff --name-only` or equivalent.
-14. Run `git status --short --branch`.
-15. Confirm no Supabase records, structured records, app behavior, public site behavior, retired Brain docs mirrors, test data, or unapproved commitments changed.
-16. Provide the standard closeout report.
+8. Run `skills/planner-task-review/SKILL.md` when completed work or surfaced follow-up may map to App Planner/Supabase tasks.
+9. Run `skills/route-chronicle-candidate/SKILL.md` when the session produced a possible public chronicle candidate.
+10. If work completed in the session maps clearly to an open Company Planner task, ask whether to mark it done unless the user explicitly approved that live Planner update.
+11. If structured projects/tasks, durable memory, milestones, or operational records changed, summarize those changes clearly.
+12. Confirm durable conclusions are in the appropriate source or explicitly listed as unresolved; do not leave durable state only in chat history.
+13. If local docs changed and manager-facing strategy state changed, update or flag the Brain company brief. Brain docs mirrors are retired for Company and should not be synced or recreated.
+14. If `domains/` reports changed, rebuild Company exports with `powershell -ExecutionPolicy Bypass -File "0. Agent Exports\build_company_exports.ps1"`.
+15. Commit and push only when the user asks or the work unit is explicitly scoped for git publication.
+16. Run `git diff --name-only` or equivalent.
+17. Run `git status --short --branch`.
+18. Confirm no Supabase records, structured records, app behavior, public site behavior, retired Brain docs mirrors, test data, or unapproved commitments changed.
+19. Provide the standard closeout report.
 
 ## Expected Output
 ```markdown

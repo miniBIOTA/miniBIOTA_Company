@@ -1,4 +1,4 @@
----
+﻿---
 title: Source Of Truth Rules
 last_updated: 2026-05-09
 ---
@@ -8,33 +8,37 @@ last_updated: 2026-05-09
 Use this order when sources disagree:
 1. User direction in the current session.
 2. `AGENTS.md` for hard Company Agent operating rules.
-3. `memory/` for durable company purpose, strategy, governance, roadmap principles, cross-domain relationships, and recurring decisions.
-4. Relevant `skills/*/SKILL.md` files for repeatable workflow rules.
-5. Brain `company_brief.md` for manager-facing strategy-level current state.
-6. Supabase/App Planner for structured/queryable projects, tasks, milestones, and operational records when relevant.
-7. `skills/*/reference/` files for exact workflow reference material.
-8. Brain company brief and compiled exports as reference artifacts only.
+3. `COMPANY_AGENT_PROTOCOL.md` for Company-level operating protocol.
+4. `_system/agent_repo_registry.md` for active repo/domain routing, risk levels, reporting-path transition state, and Supabase responsibility boundaries.
+5. `memory/` for durable company purpose, strategy, governance, roadmap principles, cross-domain relationships, and recurring decisions.
+6. Relevant `skills/*/SKILL.md` files for repeatable workflow rules.
+7. Company `domains/company/company_brief.md` for manager-facing strategy-level current state.
+8. Supabase/App Planner for structured/queryable projects, tasks, milestones, and operational records when relevant.
+9. `skills/*/reference/` files for exact workflow reference material.
+10. Historical Brain company brief and compiled Brain exports as archive reference artifacts only.
 
 Chat history and private model memory are never durable project truth.
 
 ## AI Interface And Handoff Rules
-Treat the repo, Brain brief, domain briefs, and structured records as the real memory. If work moves between interfaces or agents, write durable conclusions back to the appropriate source before treating the handoff as complete.
+Treat the repo, Company report, domain reports, and structured records as the real memory. If work moves between interfaces or agents, write durable conclusions back to the appropriate source before treating the handoff as complete.
 
 Old Claude-specific routing guidance is historical. Codex is the active Company Agent interface for repo-heavy execution, direct file changes, scripts, tooling, and multi-step implementation work in this repo.
 
 ## Final Structure
 - `AGENTS.md`: hard operating rules, startup/routing, source-of-truth order, write policy, safety rules, and closeout format.
+- `COMPANY_AGENT_PROTOCOL.md`: Company-owned top-level operating protocol.
+- `_system/agent_repo_registry.md`: active repo/domain routing, reporting-path transition state, risk levels, and Supabase responsibility boundaries.
 - `memory/`: durable company context, governance rules, roadmap principles, cross-domain relationships, source boundaries, and recurring decisions.
 - `skills/`: active repeatable Company Agent workflows.
 - `skills/*/reference/`: exact workflow reference material, including `skills/review-roadmap-implications/reference/strategic-roadmap.md`.
 - `archive/superseded/`: historical docs only; do not use archive files as active operating instructions.
-- Brain company brief: strategy-level current state and manager-facing summary.
+- Company report: manager-facing strategy-level summary under `domains/company/company_brief.md`.
 - Supabase/App Planner: structured records only when current projects, tasks, milestones, or operational records matter.
 
 ## Operating Ownership Split
 Company is the active owner for cross-domain operating coordination: planning strategy, Programs/Operations governance, roadmap cadence, dependency mapping, cross-domain operating memory, and review rhythm.
 
-Brain remains the protocol, registry, brief/export, archive, and transition guardrail layer. Brain company brief is the manager-facing summary, not the detailed operating workspace.
+Company owns the active repo/domain routing registry. Brain remains history/recovery, retired brief/export archive, and retirement-provenance context during probation. Historical Brain briefs are archive lookup only, not the detailed operating workspace.
 
 App owns Planner runtime behavior, schema, UI, and Supabase-backed workflow implementation. Company owns how Company uses Planner for strategy, governance, cadence, and coordination.
 

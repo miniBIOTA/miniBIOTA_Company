@@ -1,4 +1,4 @@
----
+﻿---
 id: operation_living_atlas_plan
 title: Operation Living Atlas Plan
 domain: company_operations
@@ -35,7 +35,7 @@ Company is the program coordination layer. Domain agents contribute in parallel:
 | Web | Public rendering rules, chronicle relationship display, SEO/public page behavior |
 | App | Planner/runtime support, schema/UI implementation, and future data-entry or review workflow if the process needs an operator UI |
 | Raw Footage | Media discovery, photo/video evidence selection, tagging readiness |
-| Brain | Protocol, registry, briefs/exports, archive, and transition guardrails |
+| Brain | Archive/recovery context and retirement provenance only during Phase 11 probation |
 
 ## Source Of Truth
 
@@ -44,7 +44,7 @@ Use this hierarchy during Operation Living Atlas:
 1. Current user direction.
 2. This plan.
 3. Supabase structured records.
-4. Domain briefs and domain docs.
+4. Company/domain reports and domain docs.
 5. Existing observations, content pipeline records, chronicles, and media records.
 6. Historical notes, transcripts, photos, and memory.
 

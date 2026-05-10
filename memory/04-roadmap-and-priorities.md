@@ -1,4 +1,4 @@
----
+﻿---
 title: Roadmap And Priorities
 last_updated: 2026-05-09
 ---
@@ -42,7 +42,7 @@ Company owns the roadmap review cadence. A roadmap review should:
 - Reconcile confirmed milestones, approved priorities, proposed changes, placeholders, and aspirational items.
 - Refresh dependencies across Research, Hardware, Content, Brand, Growth, Financials, Web, App, Raw Footage, and Brain.
 - Identify missing feasibility inputs, finance-sensitive assumptions, public-claim risks, and approval gates.
-- Decide what belongs in Company memory, the Brain company brief, domain follow-up, or Planner status checks.
+- Decide what belongs in Company memory, the Company report, domain follow-up, or Planner status checks.
 
 Roadmap cadence is an operating rhythm, not a commitment mechanism. Quarterly objectives, deadlines, launch windows, and public promises become commitments only when Josue explicitly approves them.
 

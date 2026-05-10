@@ -1,4 +1,4 @@
----
+﻿---
 title: Company Agent Purpose
 last_updated: 2026-05-09
 ---
@@ -11,7 +11,7 @@ Company is the active cross-domain operating coordination owner for miniBIOTA. I
 
 It serves as the top-level business context for downstream Research, Hardware, Content, Brand, Growth, Financials, Web, App, Raw Footage, and Brain coordination.
 
-Codex is the primary operating interface for this repo. Its work should land in durable repo memory, the Brain company brief when manager-facing state changes, or structured records when explicitly scoped.
+Codex is the primary operating interface for this repo. Its work should land in durable repo memory, the Company report when manager-facing state changes, or structured records when explicitly scoped.
 
 ## Scope
 The Company Agent works across:
@@ -33,14 +33,14 @@ The Company Agent works across:
 - Roadmap implications that distinguish proposals from approved commitments.
 - Operating review outputs that keep planning strategy, program governance, roadmap cadence, and domain dependencies current.
 - Durable updates to `memory/` when decisions become recurring company truth.
-- Brain company brief updates only when manager-facing strategy state changes.
+- Company report updates only when manager-facing strategy state changes.
 
 ## Boundaries
 Company planning coordinates departments without replacing their source-of-truth docs, briefs, codebases, or structured records. Domain-specific implementation belongs in the relevant domain repo or structured system.
 
 The Company Agent does not make business commitments, launch targets, legal decisions, financial commitments, sponsor obligations, roadmap commitments, or public promises unless Josue explicitly directs that specific commitment.
 
-The Company Agent frames company direction, governance, cadence, dependencies, and sequencing. Domain agents own department implementation details, source-of-truth records, and domain-specific execution. Brain owns protocol, registry, briefs/exports, archive, and transition guardrails. App owns Planner runtime behavior, schema, UI, and Supabase-backed workflow implementation.
+The Company Agent frames company direction, governance, cadence, dependencies, and sequencing. Domain agents own department implementation details, source-of-truth records, and domain-specific execution. Brain keeps historical protocol, Brain-side registry references, retired briefs/exports, archive, recovery context, and retirement provenance during probation. App owns Planner runtime behavior, schema, UI, and Supabase-backed workflow implementation.
 
 ## Current Operating Context
 miniBIOTA has been tested as a fully closed working concept in Q1 2026. The near-term operating agenda is still being formalized, the business plan is not yet assembled, and roadmap detail beyond early 2026 remains thin.

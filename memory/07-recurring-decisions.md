@@ -1,4 +1,4 @@
----
+﻿---
 title: Recurring Decisions
 last_updated: 2026-05-09
 ---
@@ -13,13 +13,13 @@ last_updated: 2026-05-09
 - `docs/ai_operating_interface_guide.md` was absorbed into active memory and skills during Phase 2 Batch 3 and archived at `archive/superseded/ai_operating_interface_guide.md`.
 - `docs/strategic_roadmap.md` was moved into `skills/review-roadmap-implications/reference/strategic-roadmap.md` during Phase 2 Batch 4 and archived at `archive/superseded/strategic_roadmap.md`.
 - No active Company docs remain after Phase 2 Batch 4.
-- Brain company brief updates are for manager-facing state changes, not every working note.
+- Company report updates are for manager-facing state changes, not every working note.
 - Company planning must identify downstream domains when decisions affect Research, Hardware, Content, Brand, Growth, Financials, Web, App, Raw Footage, or Brain.
 - Commit/push is not a hard closeout rule. Brain docs sync no longer mirrors Company docs; active Company context lives in this repo memory/skills architecture, and git publication should remain user-directed.
 - No executive persona framing is used for Company memory or planning.
 - App Planner/Supabase is the live Company work queue when current Company project/task status matters.
-- Company is the active cross-domain operating coordination owner for planning strategy, Programs/Operations governance, roadmap cadence, dependency mapping, cross-domain operating memory, and review rhythm.
-- Brain remains protocol, registry, briefs/exports, archive, and transition guardrail.
+- Company is the active cross-domain operating coordination owner for planning strategy, Programs/Operations governance, roadmap cadence, dependency mapping, cross-domain operating memory, review rhythm, and active repo/domain routing through `_system/agent_repo_registry.md`.
+- Brain keeps history/recovery context, retired brief/export archive, and retirement provenance during probation.
 - App owns Planner runtime behavior, schema, UI, and Supabase-backed workflow implementation.
 - Company Planner records live under `work_domains.key = company_ops` / `domain_id = 1`.
 - Current Company Planner projects are `Business Plan & Operating Model`, `Roadmap & Quarterly Objectives`, `AI & Knowledge Infrastructure`, and `Operation Living Atlas Coordination`.

@@ -1,4 +1,4 @@
----
+﻿---
 id: phase_11_dependency_risk_closeout_2026_05_10
 title: Phase 11 Dependency Risk Closeout - YouTube Extraction And Planner Reads
 domain: company
@@ -34,28 +34,29 @@ This was a Company coordination session. It did not run live imports, write Supa
 
 `YouTube_Extraction` is no longer an active Brain-helper dependency for normal operation.
 
-Current state:
+Current state after user clarification:
 
-- The live import script is blocked by an immediate runtime guard before any import can run.
-- The guard explicitly says the legacy Content import tool no longer imports Brain helpers and must be moved or rebuilt under `miniBIOTA_Content` with an approved Content helper before live Supabase writes.
-- `pipeline_questions.md`, draft JSON, transcript CSVs, and extraction outputs are historical/source artifacts for a future Content-owned import workflow, not active Company or Brain operating tools.
-- The remaining work is a Content implementation follow-up, not a reason to reactivate Brain helper code.
+- The tool is retired historical extraction/backfill tooling.
+- The historical channel transcript backfill is complete, and new videos are documented as they are posted.
+- `main.py` is intentionally fail-closed and no longer contains an embedded OpenAI API key.
+- `pipeline_questions.md`, draft JSON, transcript CSVs, and extraction outputs are retained only as historical/source artifacts.
+- No Content-owned import replacement is needed unless the user explicitly reactivates extraction/import work later.
 
-## Content-Owned Replacement Route
+## Retirement Route
 
-The replacement path is:
+The retirement path is:
 
-1. Content owns the workflow and helper for YouTube transcript-to-`content_pipeline` import/reconciliation.
-2. The rebuilt workflow should live in `M:\miniBIOTA\miniBIOTA_Content` or another explicitly Content-owned tool surface, not in Brain.
-3. App remains owner of Planner/runtime/schema/UI and Supabase implementation details.
-4. Company may coordinate dependencies and read status for sequencing, but should not own Content pipeline writes.
-5. Research should be consulted when species, biome, or ecological interpretation IDs are uncertain.
-6. Live Supabase writes require explicit user approval after source inspection, duplicate/empty-table checks, and a clear batch plan.
+1. Keep `M:\miniBIOTA\YouTube_Extraction` available only for historical transcript/source-artifact lookup.
+2. Do not run live YouTube extraction, OpenAI transcription, or Content pipeline import from this folder.
+3. Do not migrate this tool into Content unless the user explicitly reactivates the workflow.
+4. If reactivated later, rebuild it as a Content-owned workflow with environment-based secrets, source inspection, duplicate checks, and explicit approval before live writes.
+5. Research should be consulted only if future reactivation involves species, biome, or ecological interpretation IDs.
 
-Minimum replacement requirements:
+Minimum reactivation requirements:
 
 - No import from `M:\miniBIOTA\miniBIOTA_Brain\_system\minibiota_tools.py`.
 - No Brain `.env`, Brain root, or Brain write policy dependency.
+- No hardcoded API keys or secrets.
 - Content-owned environment and approval gates.
 - Read-only validation before writes.
 - Idempotency or duplicate protection before inserting into `content_pipeline`.
@@ -82,7 +83,7 @@ Brain usage classification: Explicit transition maintenance.
 
 Reason: The user explicitly asked to continue Phase 11 Brain retirement probation and named Brain-helper replacement risks. Active routing and documentation updates were made in Company. Brain helper code was not used as an active dependency.
 
-`YouTube_Extraction` classification: Known replacement routed to Content; not an open Brain dependency after this closeout.
+`YouTube_Extraction` classification: Retired historical tooling; not an open Brain dependency and not a pending Content migration after user clarification.
 
 Planner/Supabase read-path classification: Access limitation managed; future current-status reads have a safe Company/App/MCP route and do not require Brain.
 
@@ -90,7 +91,8 @@ Planner/Supabase read-path classification: Access limitation managed; future cur
 
 The remaining Brain-retirement dependency risk is closed at the Company coordination layer:
 
-- `YouTube_Extraction` is routed to Content-owned helper/workflow implementation before any live import can resume.
+- `YouTube_Extraction` is retired historical tooling and `main.py` has been fail-closed with the embedded OpenAI key removed.
 - Planner/Supabase current-status reads are routed through MCP, Company protected reads for Company coordination, or the App-owned protected bridge.
 
-Content implementation and any future live import remain separate approval-gated work.
+No Content implementation or future live import is pending unless the user explicitly reactivates extraction/import work.
+

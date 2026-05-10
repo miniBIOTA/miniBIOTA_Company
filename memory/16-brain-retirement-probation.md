@@ -63,7 +63,7 @@ A Phase 11 baseline active-blocker phrase scan excluded generated Company export
 | `miniBIOTA_Growth` | 0 | Clear. |
 | `miniBIOTA_Web` | 0 | Clear. |
 | `miniBIOTA_App` | 0 | Clear. |
-| `YouTube_Extraction` | 0 | Clear; ownership is Content, and legacy live import is blocked until rebuilt with Content-owned helpers. |
+| `YouTube_Extraction` | 0 | Clear; retired historical tooling. No active Content migration is needed unless the user later reactivates extraction/import work. |
 
 ## Brain Usage Log
 
@@ -78,7 +78,8 @@ A Phase 11 baseline active-blocker phrase scan excluded generated Company export
 | 2026-05-10 | User approved scoped read-only Supabase inspection | Supabase read-awareness session | Explicit transition maintenance | Created `memory/22-phase-11-supabase-read-awareness-2026-05-10.md`; marked the Supabase read-awareness event complete; verified GET-only Planner/Programs endpoints with publishable key and documented RLS/protected-read limitations; no live Planner/Supabase records changed. |
 | 2026-05-10 | Brain-to-Company parity cleanup continued from the retirement thread | App Team source-pack and App active-doc cleanup | Explicit transition maintenance | Patched App Team static reference data and App active docs so active manager-facing state routes to Company reports and Brain is historical/archive lookup only. No Planner records, app runtime behavior, schema, Storage, telemetry, public site behavior, or Brain archive files changed. |
 | 2026-05-10 | User approved live metadata cleanup after Brain ownership residue was found | `chronicles_staging` Supabase comment cleanup | Explicit transition maintenance | Applied metadata-only comments for `public.chronicles_staging` and `public.chronicles_staging.suggestion_reason` so live DB documentation no longer identifies Brain as chronicle-staging owner. No rows, policies, constraints, Planner records, app behavior, public site behavior, or Brain archive files changed. |
-| 2026-05-10 | User asked to close remaining active dependency risks from Company | `YouTube_Extraction` helper route and Planner/Supabase current-status reads | Explicit transition maintenance | Created `memory/23-phase-11-dependency-risk-closeout-2026-05-10.md`; routed the YouTube import replacement through Content-owned helper/workflow ownership and clarified MCP/Company/App protected-read paths for Planner/Supabase current-status checks. No live imports, Planner/Supabase writes, migrations, App runtime changes, public site behavior changes, Brain file changes, or commitments changed. |
+| 2026-05-10 | User asked to close remaining active dependency risks from Company | `YouTube_Extraction` helper route and Planner/Supabase current-status reads | Explicit transition maintenance | Created `memory/23-phase-11-dependency-risk-closeout-2026-05-10.md`; initially routed any future YouTube import replacement through Content-owned workflow ownership and clarified MCP/Company/App protected-read paths for Planner/Supabase current-status checks. No live imports, Planner/Supabase writes, migrations, App runtime changes, public site behavior changes, Brain file changes, or commitments changed. |
+| 2026-05-10 | User clarified the old YouTube extraction backfill is no longer needed | `YouTube_Extraction` retirement and secret neutralization | Explicit transition maintenance | Marked `YouTube_Extraction` as retired historical tooling, added a README, fail-closed `main.py`, and removed the embedded OpenAI API key from the script. No live extraction, Content import, Planner/Supabase write, migration, App runtime change, public site behavior change, Brain file change, or commitment changed. |
 
 Classification values:
 
@@ -91,7 +92,7 @@ Classification values:
 
 | Issue | Classification | Owner | Status | Next action |
 |---|---|---|---|---|
-| `YouTube_Extraction` live import cannot run after Brain helper retirement | Known replacement routed | Content | Closed as Brain dependency 2026-05-10 | Replacement route is Content-owned helper/workflow implementation before any live Supabase write; source artifacts remain historical/import inputs, and future Content implementation still requires explicit approval before live writes. |
+| `YouTube_Extraction` live import cannot run after Brain helper retirement | Retired historical tooling | Content archive/provenance only | Closed 2026-05-10 | User clarified the historical extraction/backfill is complete and no future import is needed. `main.py` is fail-closed, the embedded OpenAI key was removed, and the folder is retained only for historical transcript/source-artifact lookup unless explicitly reactivated. |
 | Brand closeout/startup docs still treated Brain as fallback manager-facing reporting | Old habit | Brand | Closed 2026-05-10 | Patched Brand active docs to route manager-facing state to Company reports and Brain to historical/archive lookup only. |
 | Content closeout/startup docs still treated Brain as fallback manager-facing reporting | Old habit | Content | Closed 2026-05-10 | Patched Content active docs to route manager-facing state to Company reports and Brain to historical/archive lookup only. |
 | Growth closeout/startup docs still treated Brain as fallback manager-facing reporting | Old habit | Growth | Closed 2026-05-10 | Patched Growth active docs to route manager-facing state to Company reports and Brain to historical/archive lookup only. |
@@ -128,4 +129,5 @@ Phase 11 is complete when:
 
 ## Recommended Next Work
 
-Continue normal Company/domain work from Company and the relevant domain repos through the rest of the probation window. All required Phase 11 evidence items are now recorded, and the remaining Brain-retirement dependency risks have Company-level routes. Content implementation of the YouTube import replacement remains separate approval-gated domain work. After each meaningful session, update this tracker if Brain was used or if a workflow attempted to use Brain as active coordination.
+Continue normal Company/domain work from Company and the relevant domain repos through the rest of the probation window. All required Phase 11 evidence items are now recorded, and the remaining Brain-retirement dependency risks have Company-level routes. `YouTube_Extraction` is retired historical tooling, not a pending Content migration, unless the user explicitly reactivates extraction/import work. After each meaningful session, update this tracker if Brain was used or if a workflow attempted to use Brain as active coordination.
+

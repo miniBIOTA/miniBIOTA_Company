@@ -1,4 +1,4 @@
----
+﻿---
 title: Helper And Database Awareness Migration
 last_updated: 2026-05-10
 ---
@@ -50,7 +50,7 @@ Do not copy this file into Company unchanged unless the root semantics are delib
 | Brain vault writes and Markdown task mutation | `append_to_vault_file`, `append_under_heading`, `add_task_under_heading`, `update_task_status` | Retire or rewrite for Company only after source-of-truth review | Do not migrate as-is. Markdown task mutation conflicts with Planner task truth. | High |
 | Observations and chronicle staging | `log_observation`, `get_recent_observations`, `promote_observation`, `list_chronicles_staging`, `add_chronicles_staging`, `approve_staged_chronicle`, `reject_staged_chronicle` | Research + Content; Web for public rendering only | Split by workflow. Writes need explicit approval and domain owner routing. | High |
 | Content pipeline | `get_pipeline_chain`, `list_content_pipeline`, `get_pipeline_transcript`, `get_content_pipeline_item`, `create_content_pipeline_item`, `update_content_pipeline_item` | Content | Keep Content-owned. Company may inspect for cross-domain sequencing but should not own writes. | Medium/High |
-| YouTube transcript extraction/import | `YouTube_Extraction` source artifacts and legacy `reconcile_and_import.py` live import | Content, with App schema/runtime awareness and Research claim/ID review when needed | Treat existing external tool output as source/import material only. Rebuild or move the import workflow under Content-owned helper code before any live `content_pipeline` write. Do not reactivate Brain helper imports. | High |
+| YouTube transcript extraction/import | `YouTube_Extraction` historical source artifacts and retired scripts | None active; Content only if explicitly reactivated | Treat existing external tool output as historical/source material only. The extraction backfill is complete, new videos are documented as posted, and no Content helper migration is pending. If reactivated later, rebuild under Content-owned helper/workflow code with no Brain imports and no hardcoded secrets. | Medium |
 | Announcements | `list_announcements`, `add_announcement`, `toggle_announcement` | Web + Brand + Content, with App/runtime as needed | Do not move into Company active writes. Public behavior requires explicit approval. | High |
 | Content calendar and source map | `list_content_calendar`, `read_calendar_source_map`, `get_content_calendar_entry`, `create_content_calendar_entry`, `update_content_calendar_entry`, `replace_calendar_source_map` and private calendar-link helpers | Content + App Planner/runtime | Reads may inform Company planning. Writes are domain/App workflow writes requiring approval. | High |
 | Web file helpers | `list_web_directory`, `read_web_file`, `write_web_file` | Web | Do not move to Company. Web implementation belongs in Web repo. | High |
@@ -94,7 +94,7 @@ A future Company helper module should not include:
 - App schema/runtime helpers.
 - Web file writes.
 - Content publish/calendar writes unless explicitly scoped with Content/App ownership.
-- YouTube transcript-to-`content_pipeline` live imports; those belong to Content-owned helper/workflow implementation with explicit approval gates.
+- YouTube transcript-to-`content_pipeline` live imports from retired `YouTube_Extraction`; no migration is pending unless the user explicitly reactivates extraction/import work, and any reactivation belongs to Content-owned helper/workflow implementation with explicit approval gates.
 - Raw SQL or migrations.
 
 ## Activation Criteria For Moving Code
@@ -114,3 +114,5 @@ Phase 5 created the ownership map and safety plan. The first Company helper path
 Next likely phases:
 - Domain-owned helper additions where each owner accepts the scope.
 - App-owned helper hardening only if future App runtime work exposes a gap in the existing `supabase-rest` IPC bridge.
+
+

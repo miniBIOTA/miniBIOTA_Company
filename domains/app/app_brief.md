@@ -4,8 +4,8 @@ title: App Operations Brief
 domain: app_operations
 last_updated: 2026-05-09
 tags: [app, electron, operations, planner, strategy-brief]
-reporting_status: company_candidate
-reporting_phase: brain_retirement_phase_3
+reporting_status: company_active
+reporting_phase: phase_10_reporting_active
 source_repo: miniBIOTA_Brain
 source_path: "M:\\miniBIOTA\\miniBIOTA_Brain\\11. miniBIOTA_App\\app_brief.md"
 copied_on: 2026-05-09
@@ -424,8 +424,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Domain Reference
 
 Full app repo: `M:\miniBIOTA\miniBIOTA_App\`
-Brain brief: `11. miniBIOTA_App\app_brief.md`
-Brain overview: `11. miniBIOTA_App\app_overview.md`
+Historical Brain brief: `11. miniBIOTA_App\app_brief.md`
+Historical Brain overview: `11. miniBIOTA_App\app_overview.md`
 
 Brain no longer mirrors App docs. Load active App detail from the source repo:
 

@@ -1,4 +1,4 @@
-﻿---
+---
 id: company_brief
 title: Company Operations Brief
 domain: company_operations
@@ -80,7 +80,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - All required Phase 11 evidence items are now recorded, but Company must continue the planned 2 to 4 week probation window before final Brain retirement.
 - Company must keep the operating review rhythm alive so dependency maps,
   roadmap cadence, and Programs/Operations governance stay current without
-  sliding back into Brain-owned planning.
+  sliding back into the retired Brain planning model.
 
 ## Cross-Domain Notes
 

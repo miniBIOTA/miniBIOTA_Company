@@ -4,8 +4,8 @@ title: 2. miniBIOTA_Financials
 domain: financials
 last_updated: 2026-05-09
 tags: [finance, budget, revenue, debt, opex, taxes]
-reporting_status: company_candidate
-reporting_phase: brain_retirement_phase_3
+reporting_status: company_active
+reporting_phase: phase_10_reporting_active
 source_repo: miniBIOTA_Brain
 source_path: "M:\\miniBIOTA\\miniBIOTA_Brain\\2. miniBIOTA_Financials\\financials_overview.md"
 copied_on: 2026-05-09
@@ -133,7 +133,7 @@ Open items in priority order:
 
 ## Files In This Folder
 
-**Brain-owned (strategic view — edit here):**
+**Company-owned active strategic view:**
 - `financials_overview.md` — this file
 
 **Financials Agent-owned (edit in `M:\miniBIOTA\miniBIOTA_Financials\`):**

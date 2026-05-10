@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Master Context
 
-- Generated: 2026-05-09 22:33:35 -04:00
+- Generated: 2026-05-10 07:24:21 -04:00
 - Source contract: Company `domains/` reports are included below.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 - Format: portable Markdown with Obsidian wiki-links normalized or removed.
@@ -67,7 +67,7 @@
 - Task priorities and quarter targets were assigned by Brain Agent during migration and need Josue's review.
 - Company must keep the operating review rhythm alive so dependency maps,
   roadmap cadence, and Programs/Operations governance stay current without
-  sliding back into Brain-owned planning.
+  sliding back into the retired Brain planning model.
 
 ## Files In This Folder
 - `company_brief.md` - active Company manager-facing report.
@@ -159,7 +159,7 @@
 - All required Phase 11 evidence items are now recorded, but Company must continue the planned 2 to 4 week probation window before final Brain retirement.
 - Company must keep the operating review rhythm alive so dependency maps,
   roadmap cadence, and Programs/Operations governance stay current without
-  sliding back into Brain-owned planning.
+  sliding back into the retired Brain planning model.
 
 ## Cross-Domain Notes
 
@@ -327,7 +327,7 @@ Open items in priority order:
 
 ## Files In This Folder
 
-**Brain-owned (strategic view â€” edit here):**
+**Company-owned active strategic view:**
 - `financials_overview.md` â€” this file
 
 **Financials Agent-owned (edit in `M:\miniBIOTA\miniBIOTA_Financials\`):**
@@ -482,8 +482,8 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
 - Macroalgae dominance, Mesostoma predation, ostracod population decline, ghost shrimp juvenile recruitment, and sea urchin establishment remain active ecological uncertainties.
 
 ## Files In This Folder
-- `research_brief.md` - current Research Agent manager-facing brief for Brain sessions.
-- `research_overview.md` - canonical Brain overview for Research / Ecosystem & Data.
+- `research_brief.md` - active Company manager-facing report brief for Research.
+- `research_overview.md` - active Company overview for Research / Ecosystem & Data.
 
 ## Source Repo
 - Research source repo: `M:\miniBIOTA\miniBIOTA_Research\`
@@ -566,8 +566,8 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
 ## Domain Reference
 
 Full research repo: `M:\miniBIOTA\miniBIOTA_Research\`
-Brain brief: `3. miniBIOTA_Research\research_brief.md`
-Brain overview: `3. miniBIOTA_Research\research_overview.md`
+Historical Brain brief: `3. miniBIOTA_Research\research_brief.md`
+Historical Brain overview: `3. miniBIOTA_Research\research_overview.md`
 
 | File | Contents |
 |---|---|
@@ -625,8 +625,8 @@ Brain overview: `3. miniBIOTA_Research\research_overview.md`
 - Public copy, sponsor language, campaign promises, pricing, launch, legal, scientific, and product claims need claim-safety review before approval.
 
 ## Files In This Folder
-- `brand_brief.md` - current Brand Agent manager-facing brief for Brain sessions.
-- `brand_overview.md` - canonical Brain overview for Brand & Marketing.
+- `brand_brief.md` - active Company manager-facing report brief for Brand.
+- `brand_overview.md` - active Company overview for Brand & Marketing.
 
 ## Source Repo
 - Brand source repo: `M:\miniBIOTA\miniBIOTA_Brand\`
@@ -697,7 +697,7 @@ Brain overview: `3. miniBIOTA_Research\research_overview.md`
 
 ## Domain Reference
 
-Brain brief: `4. miniBIOTA_Brand\brand_brief.md`
+Historical Brain brief: `4. miniBIOTA_Brand\brand_brief.md`
 Full brand repo: `M:\miniBIOTA\miniBIOTA_Brand\`
 
 Brain no longer mirrors Brand docs. Load active Brand detail from the source repo:
@@ -708,7 +708,7 @@ Brain no longer mirrors Brand docs. Load active Brand detail from the source rep
 | `memory/00-index.md` | Memory index, read order, migration status, and skill routing |
 | `memory/01-agent-purpose.md` | Brand Agent scope, responsibilities, and boundaries |
 | `memory/02-brand-safety-and-claims-rules.md` | Public claim safety, approvals, and prohibited inventions |
-| `memory/03-source-of-truth-and-brain-relationship.md` | Source hierarchy, Brain brief, docs migration, and Supabase boundaries |
+| `memory/03-source-of-truth-and-brain-relationship.md` | Source hierarchy, Company reporting, Brain archive relationship, docs migration, and Supabase boundaries |
 | `memory/04-mission-vision-and-positioning.md` | Mission, vision, design trajectory, and positioning summary |
 | `memory/05-voice-tone-and-public-copy-rules.md` | Public voice, tone, copy rules, and style constraints |
 | `memory/06-distribution-and-channel-model.md` | Announcement sequencing, channel roles, and reach strategy |
@@ -815,10 +815,10 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
 
 ## Files In This Folder
 
-**Brain-owned (edit here):**
-- `content_production_overview.md` - this file; Brain's strategic view of the content domain
+**Company-owned active overview:**
+- `content_production_overview.md` - this file; Company active strategic view of the content domain
 
-**Content Agent-owned (read-only in Brain; edit in `M:\miniBIOTA\miniBIOTA_Content\`):**
+**Content Agent-owned active detail (edit in `M:\miniBIOTA\miniBIOTA_Content\`):**
 - `content_brief.md` - current operational state maintained by the Content Agent
 - `AGENTS.md` - active Content Agent entry point
 - `memory/` - durable content memory and routing
@@ -1003,8 +1003,8 @@ Brain no longer keeps a Content `docs\` mirror after the memory/skills migration
 - Airtight closure is not yet achieved; passive air leakage remains across multiple biomes.
 
 ## Files In This Folder
-- `hardware_brief.md` - current Hardware Agent manager-facing brief for Brain sessions.
-- `hardware_overview.md` - canonical Brain overview for Hardware / Engineering.
+- `hardware_brief.md` - active Company manager-facing report brief for Hardware.
+- `hardware_overview.md` - active Company overview for Hardware / Engineering.
 
 ## Source Repo
 - Hardware source repo: `M:\miniBIOTA\miniBIOTA_Hardware\`
@@ -1080,8 +1080,8 @@ These are the canonical public-facing names for all engineered systems. All agen
 ## Domain Reference
 
 Active Hardware Agent context: `M:\miniBIOTA\miniBIOTA_Hardware\`
-Brain brief: `6. miniBIOTA_Hardware\hardware_brief.md`
-Brain overview: `6. miniBIOTA_Hardware\hardware_overview.md`
+Historical Brain brief: `6. miniBIOTA_Hardware\hardware_brief.md`
+Historical Brain overview: `6. miniBIOTA_Hardware\hardware_overview.md`
 
 Load order for detailed Hardware work:
 1. `AGENTS.md`
@@ -1162,8 +1162,8 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
 - Revenue projections and campaign plans must be checked against current financial and audience data before execution.
 
 ## Files In This Folder
-- `growth_brief.md` - current Growth Agent manager-facing brief for Brain sessions.
-- `growth_overview.md` - canonical Brain overview for Partners & Sales / Growth.
+- `growth_brief.md` - active Company manager-facing report brief for Growth.
+- `growth_overview.md` - active Company overview for Partners & Sales / Growth.
 
 ## Source Repo
 - Growth source repo: `M:\miniBIOTA\miniBIOTA_Growth\`
@@ -1198,7 +1198,7 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
   2026-05-09. The Growth Agent has verified and tightened local Planner wiring
   using the Hardware/App/Company/Financials rollout pattern; no live Planner
   records, partner records, CRM records, outreach state, pricing, campaign
-  commitments, app behavior, website behavior, or Brain brief changes were made
+  commitments, app behavior, website behavior, or historical Brain brief changes were made
   during that local wiring verification.
 - No formal partner pipeline, pricing structure, sponsorship tiers, media kit, or CRM-style cadence is fully operational yet.
 
@@ -1255,7 +1255,7 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
 
 ## Domain Reference
 
-Brain brief: `7. miniBIOTA_Growth\growth_brief.md`
+Historical Brain brief: `7. miniBIOTA_Growth\growth_brief.md`
 Full growth repo: `M:\miniBIOTA\miniBIOTA_Growth\`
 
 Brain no longer mirrors Growth docs. Load active Growth detail from the source repo:
@@ -1542,7 +1542,7 @@ These match the system IDs used throughout the rest of the app (observations, st
 - The "Biological Startup" voice should remain technically precise, accessible, ecological, and maker-clear.
 
 ## Priorities
-- Keep Web memory and Brain records aligned with the public-only, local-first telemetry and control architecture.
+- Keep Web memory and active Company Web reports aligned with the public-only, local-first telemetry and control architecture.
 - Use App Planner/Supabase for live Web task status; keep Markdown focused on architecture, rules, scope, and decisions.
 - Continue active UX Lab work through Planner project `40`; use `/ux-lab` for UX states, interaction rules, page patterns, and journeys while keeping development routes out of production navigation.
 - Complete the App/Hardware coordinator-to-website telemetry handoff so public observability renders real coordinator, upstream, setpoint, and node state.
@@ -1558,8 +1558,8 @@ These match the system IDs used throughout the rest of the app (observations, st
 - Engineering system pages still need real system images to replace placeholders.
 
 ## Files In This Folder
-- `web_brief.md` - current Web Agent manager-facing brief for Brain sessions.
-- `web_overview.md` - canonical Brain overview for Web / Digital Presence.
+- `web_brief.md` - active Company manager-facing report brief for Web.
+- `web_overview.md` - active Company overview for Web / Digital Presence.
 
 ## Source Repo
 - Web source repo: `M:\miniBIOTA\miniBIOTA_Web\`
@@ -1589,7 +1589,7 @@ These match the system IDs used throughout the rest of the app (observations, st
 - App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`. Current Web projects are IDs `36` through `42`, and Web docs now route actionable task status to Planner instead of Markdown task lists.
 
 ## Active Priorities
-- Keep web memory and Brain brief aligned with the public-only, local-first telemetry and control architecture.
+- Keep Web memory and the Company Web report aligned with the public-only, local-first telemetry and control architecture.
 - Continue the active UX Interaction Lab scope in App Planner project `40`; the first live `/biosphere#biosphere-ecosystem-map` application pass is stabilized, reusable state patterns are defined in `/ux-lab` and first applied to `/species`, the first shared EEL state-preset promotion pass is complete, `/chronicles` has its first archive state/accessibility pass, shared detail tab/accordion semantics are tightened across core detail pages, `/ux-lab` now includes first-pass journey maps and tighter keyboard/modal preview contracts, and local route/lint/full-test/HTTP smoke checks are green. Next Web UX work should focus on owner/design review, real browser/mobile visual QA when tooling is available, or a separately scoped live-surface application while keeping `/ux-lab` and `/ui-kitchen-sink` development-gated and out of production navigation.
 - Complete the desktop-app/coordinator-to-website telemetry handoff so public observability can render real coordinator, upstream, setpoint, and node state.
 - Establish a repeatable sync path from newsletter capture to an external email platform.
@@ -1635,7 +1635,7 @@ These match the system IDs used throughout the rest of the app (observations, st
 - Engineering system pages still need real system images to replace placeholders.
 
 ## Cross-Domain Notes
-- **Brain/Strategy:** Brain should load `M:\miniBIOTA\miniBIOTA_Web\AGENTS.md`, `memory/00-index.md`, relevant memory files, local playbooks, and exact playbook references for detailed Web context.
+- **Company/Web Strategy:** Company owns active Web strategy reporting and cross-domain coordination through this report, while detailed Web context lives in `M:\miniBIOTA\miniBIOTA_Web\AGENTS.md`, `memory/00-index.md`, relevant memory files, local playbooks, and exact playbook references. Brain is archive/provenance lookup only during retirement probation.
 - **App:** The Electron app owns private operator/admin workflows, telemetry producer handoff work, and the App Planner runtime used as Web's live work queue.
 - **Hardware:** Public telemetry depends on local-first coordinator, node freshness, upstream status, and setpoint read models. Check Hardware context before changing live telemetry assumptions.
 - **Content:** Chronicles and public story surfaces depend on Content records and publishing closeout decisions.
@@ -1645,8 +1645,8 @@ These match the system IDs used throughout the rest of the app (observations, st
 ## Domain Reference
 
 Active Web Agent context: `M:\miniBIOTA\miniBIOTA_Web\`
-Brain brief: `9. miniBIOTA_Web\web_brief.md`
-Brain overview: `9. miniBIOTA_Web\web_overview.md`
+Historical Brain brief: `9. miniBIOTA_Web\web_brief.md`
+Historical Brain overview: `9. miniBIOTA_Web\web_overview.md`
 
 Load order for detailed Web work:
 1. `AGENTS.md`
@@ -1655,7 +1655,7 @@ Load order for detailed Web work:
 4. Matching `skills\*\SKILL.md`
 5. Exact references under `skills\*\reference\`
 6. Current code and tests when implementation behavior matters
-7. Supabase through the Brain tool layer when current structured records matter
+7. Supabase MCP/read-only awareness and App/domain-owned approved helpers when current structured records matter
 
 Brain no longer keeps a Web `docs\` mirror after the memory/skills migration.
 
@@ -1824,8 +1824,8 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   verification before daily reliance.
 
 ## Files In This Folder
-- `app_brief.md` - current App Agent manager-facing brief for Brain sessions.
-- `app_overview.md` - canonical Brain overview for App Operations.
+- `app_brief.md` - active Company manager-facing report brief for App.
+- `app_overview.md` - active Company overview for App Operations.
 
 ## Source Repo
 - App source repo: `M:\miniBIOTA\miniBIOTA_App\`
@@ -2252,8 +2252,8 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 ## Domain Reference
 
 Full app repo: `M:\miniBIOTA\miniBIOTA_App\`
-Brain brief: `11. miniBIOTA_App\app_brief.md`
-Brain overview: `11. miniBIOTA_App\app_overview.md`
+Historical Brain brief: `11. miniBIOTA_App\app_brief.md`
+Historical Brain overview: `11. miniBIOTA_App\app_overview.md`
 
 Brain no longer mirrors App docs. Load active App detail from the source repo:
 

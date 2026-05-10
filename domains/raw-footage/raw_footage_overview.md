@@ -4,8 +4,8 @@ title: 8. Raw Footage
 domain: raw_footage
 last_updated: 2026-04-23
 tags: [raw-footage, media-assets, storage, tagging, retrieval, supabase, media-library]
-reporting_status: company_candidate
-reporting_phase: brain_retirement_phase_3
+reporting_status: company_active
+reporting_phase: phase_10_reporting_active
 source_repo: miniBIOTA_Brain
 source_path: "M:\\miniBIOTA\\miniBIOTA_Brain\\8. Raw Footage\\raw_footage_overview.md"
 copied_on: 2026-05-09

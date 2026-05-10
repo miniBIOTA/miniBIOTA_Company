@@ -4,8 +4,8 @@ title: Financials Brief
 domain: financials
 last_updated: 2026-05-09
 tags: [finance, budget, revenue, debt, brief]
-reporting_status: company_candidate
-reporting_phase: brain_retirement_phase_3
+reporting_status: company_active
+reporting_phase: phase_10_reporting_active
 source_repo: miniBIOTA_Brain
 source_path: "M:\\miniBIOTA\\miniBIOTA_Brain\\2. miniBIOTA_Financials\\financials_brief.md"
 copied_on: 2026-05-09

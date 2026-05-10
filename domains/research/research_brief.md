@@ -4,8 +4,8 @@ title: Research Brief
 domain: ecosystem_and_data
 last_updated: 2026-05-09
 tags: [research, ecosystem, species, biomes, planner, strategy-brief]
-reporting_status: company_candidate
-reporting_phase: brain_retirement_phase_3
+reporting_status: company_active
+reporting_phase: phase_10_reporting_active
 source_repo: miniBIOTA_Brain
 source_path: "M:\\miniBIOTA\\miniBIOTA_Brain\\3. miniBIOTA_Research\\research_brief.md"
 copied_on: 2026-05-09
@@ -79,8 +79,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Domain Reference
 
 Full research repo: `M:\miniBIOTA\miniBIOTA_Research\`
-Brain brief: `3. miniBIOTA_Research\research_brief.md`
-Brain overview: `3. miniBIOTA_Research\research_overview.md`
+Historical Brain brief: `3. miniBIOTA_Research\research_brief.md`
+Historical Brain overview: `3. miniBIOTA_Research\research_overview.md`
 
 | File | Contents |
 |---|---|

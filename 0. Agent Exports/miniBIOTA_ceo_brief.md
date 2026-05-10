@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Executive Brief
 
-- Generated: 2026-05-09 22:33:35 -04:00
+- Generated: 2026-05-10 07:24:21 -04:00
 - Purpose: Company-side synthesis of domain reports.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 
@@ -164,7 +164,7 @@
 - Web context now uses the repo-native memory/skills architecture in `M:\miniBIOTA\miniBIOTA_Web\`.
 
 ### Priorities
-- Keep Web memory and Brain records aligned with the public-only, local-first telemetry and control architecture.
+- Keep Web memory and active Company Web reports aligned with the public-only, local-first telemetry and control architecture.
 - Use App Planner/Supabase for live Web task status; keep Markdown focused on architecture, rules, scope, and decisions.
 - Continue active UX Lab work through Planner project `40`; use `/ux-lab` for UX states, interaction rules, page patterns, and journeys while keeping development routes out of production navigation.
 
@@ -221,7 +221,7 @@
 - 6. miniBIOTA_Hardware: Next action - Complete sealing and infrastructure upgrades to reach airtight closed-system standard. Gap - Biomes 2-5 have SHT31 wiring, water-damage, and connection-quality risks until the rewire is complete.
 - 7. miniBIOTA_Growth: Next action - Turn scattered commercial signals into a working operating model covering sponsorships, speaking, audience support, course pre-sale, affiliate-backed resources, and crowdfunding. Gap - Without an explicit commercial system, public interest can accumulate without conversion.
 - 8. Raw Footage: Next action - No immediate action recorded. Gap - No explicit gap recorded.
-- 9. miniBIOTA_Web: Next action - Keep Web memory and Brain records aligned with the public-only, local-first telemetry and control architecture. Gap - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
+- 9. miniBIOTA_Web: Next action - Keep Web memory and active Company Web reports aligned with the public-only, local-first telemetry and control architecture. Gap - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
 - 10. Definitions: Next action - Keep glossary terminology synchronized with canonical source notes across all domains. Gap - If glossary language lags behind hardware architecture, downstream use may assume centralized pump control or outdated sensor/network standards.
 - 11. miniBIOTA_App: Next action - Continue consolidating story-source execution and project-management behavior into the unified Planner workflow. Gap - Supabase secret-key access would be a major security risk if exposed outside the internal app.
 

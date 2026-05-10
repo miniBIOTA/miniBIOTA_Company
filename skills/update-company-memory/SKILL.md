@@ -30,27 +30,27 @@ description: Use to promote durable company decisions, governance rules, strateg
 
 ## Required Docs Or Reference Files
 - Relevant memory files and skill reference files.
-- Brain company brief if the memory change affects manager-facing strategy state.
-- Relevant domain briefs when domain-specific current strategy state matters.
+- Company report under `domains/company/company_brief.md` if the memory change affects manager-facing strategy state.
+- Relevant Company domain reports and active domain repo sources when domain-specific current strategy state matters.
 - Archive files only for historical context or duplication checks against superseded material.
 
 ## Workflow
 1. Identify the proposed durable fact, rule, decision, dependency, review outcome, cadence rule, or constraint.
-2. If the input came from chat history or another interface, verify it against durable files, the Brain company brief, domain briefs, or structured records before treating it as source truth.
+2. If the input came from chat history or another interface, verify it against durable files, Company reports, active domain repo sources, or structured records before treating it as source truth.
 3. Check existing memory for duplication or conflict.
-4. Decide the correct destination: `AGENTS.md`, a `memory/*.md` file, a skill, skill reference, Brain company brief, Supabase, or `memory/inbox.md`.
+4. Decide the correct destination: `AGENTS.md`, a `memory/*.md` file, a skill, skill reference, Company report, Supabase, or `memory/inbox.md`.
 5. Check whether the candidate belongs in active memory or should remain in `memory/inbox.md` as unapproved or unresolved.
 6. Ask before editing memory unless the user explicitly scoped the edit.
 7. Write the smallest durable update that preserves current/planned/proposed/aspirational distinctions.
-8. For cross-domain operating memory, identify affected domains, downstream owners, handoff surfaces, and whether the item belongs in Company memory, Brain company brief, domain memory, or structured records.
+8. For cross-domain operating memory, identify affected domains, downstream owners, handoff surfaces, and whether the item belongs in Company memory, the Company report, domain memory, or structured records.
 9. Read changed files end to end.
-10. Report whether Brain brief, domain owners, or structured records are implicated.
+10. Report whether the Company report, Brain archive/provenance, domain owners, or structured records are implicated.
 
 ## Expected Output
 - Destination decision.
 - Files changed or proposed.
 - Duplication/conflict check result.
-- Brain, domain, or structured-record implications.
+- Company report, Brain archive/provenance, domain, or structured-record implications.
 - Any unresolved questions.
 
 ## Write And Approval Rules

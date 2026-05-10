@@ -4,8 +4,8 @@ title: Hardware Brief
 domain: engineering_and_hardware
 last_updated: 2026-05-10
 tags: [engineering, hardware, controls, sensors, strategy-brief]
-reporting_status: company_candidate
-reporting_phase: brain_retirement_phase_3
+reporting_status: company_active
+reporting_phase: phase_10_reporting_active
 source_repo: miniBIOTA_Brain
 source_path: "M:\\miniBIOTA\\miniBIOTA_Brain\\6. miniBIOTA_Hardware\\hardware_brief.md"
 copied_on: 2026-05-09
@@ -71,8 +71,8 @@ These are the canonical public-facing names for all engineered systems. All agen
 ## Domain Reference
 
 Active Hardware Agent context: `M:\miniBIOTA\miniBIOTA_Hardware\`
-Brain brief: `6. miniBIOTA_Hardware\hardware_brief.md`
-Brain overview: `6. miniBIOTA_Hardware\hardware_overview.md`
+Historical Brain brief: `6. miniBIOTA_Hardware\hardware_brief.md`
+Historical Brain overview: `6. miniBIOTA_Hardware\hardware_overview.md`
 
 Load order for detailed Hardware work:
 1. `AGENTS.md`

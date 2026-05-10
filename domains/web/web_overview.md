@@ -4,8 +4,8 @@ title: 9. miniBIOTA_Web
 domain: web_and_digital_presence
 last_updated: 2026-05-09
 tags: [web, public-site, flask, telemetry, public-only, design-system, planner]
-reporting_status: company_candidate
-reporting_phase: brain_retirement_phase_3
+reporting_status: company_active
+reporting_phase: phase_10_reporting_active
 source_repo: miniBIOTA_Brain
 source_path: "M:\\miniBIOTA\\miniBIOTA_Brain\\9. miniBIOTA_Web\\web_overview.md"
 copied_on: 2026-05-09
@@ -35,7 +35,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - The "Biological Startup" voice should remain technically precise, accessible, ecological, and maker-clear.
 
 ## Priorities
-- Keep Web memory and Brain records aligned with the public-only, local-first telemetry and control architecture.
+- Keep Web memory and active Company Web reports aligned with the public-only, local-first telemetry and control architecture.
 - Use App Planner/Supabase for live Web task status; keep Markdown focused on architecture, rules, scope, and decisions.
 - Continue active UX Lab work through Planner project `40`; use `/ux-lab` for UX states, interaction rules, page patterns, and journeys while keeping development routes out of production navigation.
 - Complete the App/Hardware coordinator-to-website telemetry handoff so public observability renders real coordinator, upstream, setpoint, and node state.
@@ -51,8 +51,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Engineering system pages still need real system images to replace placeholders.
 
 ## Files In This Folder
-- `web_brief.md` - current Web Agent manager-facing brief for Brain sessions.
-- `web_overview.md` - canonical Brain overview for Web / Digital Presence.
+- `web_brief.md` - active Company manager-facing report brief for Web.
+- `web_overview.md` - active Company overview for Web / Digital Presence.
 
 ## Source Repo
 - Web source repo: `M:\miniBIOTA\miniBIOTA_Web\`

@@ -4,8 +4,8 @@ title: 7. miniBIOTA_Growth
 domain: partners_and_sales
 last_updated: 2026-05-09
 tags: [partnerships, sales, sponsorships, business-development, outreach]
-reporting_status: company_candidate
-reporting_phase: brain_retirement_phase_3
+reporting_status: company_active
+reporting_phase: phase_10_reporting_active
 source_repo: miniBIOTA_Brain
 source_path: "M:\\miniBIOTA\\miniBIOTA_Brain\\7. miniBIOTA_Growth\\growth_overview.md"
 copied_on: 2026-05-09
@@ -57,8 +57,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Revenue projections and campaign plans must be checked against current financial and audience data before execution.
 
 ## Files In This Folder
-- `growth_brief.md` - current Growth Agent manager-facing brief for Brain sessions.
-- `growth_overview.md` - canonical Brain overview for Partners & Sales / Growth.
+- `growth_brief.md` - active Company manager-facing report brief for Growth.
+- `growth_overview.md` - active Company overview for Partners & Sales / Growth.
 
 ## Source Repo
 - Growth source repo: `M:\miniBIOTA\miniBIOTA_Growth\`

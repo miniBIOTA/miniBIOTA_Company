@@ -1,11 +1,11 @@
-﻿---
+---
 id: web_brief
 title: Web & Digital Presence Brief
 domain: web_and_digital_presence
 last_updated: 2026-05-10
 tags: [website, digital-presence, information-architecture, ui, telemetry, strategy-brief]
-reporting_status: company_candidate
-reporting_phase: brain_retirement_phase_3
+reporting_status: company_active
+reporting_phase: phase_10_reporting_active
 source_repo: miniBIOTA_Brain
 source_path: "M:\\miniBIOTA\\miniBIOTA_Brain\\9. miniBIOTA_Web\\web_brief.md"
 copied_on: 2026-05-09
@@ -26,7 +26,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`. Current Web projects are IDs `36` through `42`, and Web docs now route actionable task status to Planner instead of Markdown task lists.
 
 ## Active Priorities
-- Keep web memory and Brain brief aligned with the public-only, local-first telemetry and control architecture.
+- Keep Web memory and the Company Web report aligned with the public-only, local-first telemetry and control architecture.
 - Continue the active UX Interaction Lab scope in App Planner project `40`; the first live `/biosphere#biosphere-ecosystem-map` application pass is stabilized, reusable state patterns are defined in `/ux-lab` and first applied to `/species`, the first shared EEL state-preset promotion pass is complete, `/chronicles` has its first archive state/accessibility pass, shared detail tab/accordion semantics are tightened across core detail pages, `/ux-lab` now includes first-pass journey maps and tighter keyboard/modal preview contracts, and local route/lint/full-test/HTTP smoke checks are green. Next Web UX work should focus on owner/design review, real browser/mobile visual QA when tooling is available, or a separately scoped live-surface application while keeping `/ux-lab` and `/ui-kitchen-sink` development-gated and out of production navigation.
 - Complete the desktop-app/coordinator-to-website telemetry handoff so public observability can render real coordinator, upstream, setpoint, and node state.
 - Establish a repeatable sync path from newsletter capture to an external email platform.
@@ -72,7 +72,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Engineering system pages still need real system images to replace placeholders.
 
 ## Cross-Domain Notes
-- **Brain/Strategy:** Brain should load `M:\miniBIOTA\miniBIOTA_Web\AGENTS.md`, `memory/00-index.md`, relevant memory files, local playbooks, and exact playbook references for detailed Web context.
+- **Company/Web Strategy:** Company owns active Web strategy reporting and cross-domain coordination through this report, while detailed Web context lives in `M:\miniBIOTA\miniBIOTA_Web\AGENTS.md`, `memory/00-index.md`, relevant memory files, local playbooks, and exact playbook references. Brain is archive/provenance lookup only during retirement probation.
 - **App:** The Electron app owns private operator/admin workflows, telemetry producer handoff work, and the App Planner runtime used as Web's live work queue.
 - **Hardware:** Public telemetry depends on local-first coordinator, node freshness, upstream status, and setpoint read models. Check Hardware context before changing live telemetry assumptions.
 - **Content:** Chronicles and public story surfaces depend on Content records and publishing closeout decisions.
@@ -82,8 +82,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Domain Reference
 
 Active Web Agent context: `M:\miniBIOTA\miniBIOTA_Web\`
-Brain brief: `9. miniBIOTA_Web\web_brief.md`
-Brain overview: `9. miniBIOTA_Web\web_overview.md`
+Historical Brain brief: `9. miniBIOTA_Web\web_brief.md`
+Historical Brain overview: `9. miniBIOTA_Web\web_overview.md`
 
 Load order for detailed Web work:
 1. `AGENTS.md`
@@ -92,7 +92,7 @@ Load order for detailed Web work:
 4. Matching `skills\*\SKILL.md`
 5. Exact references under `skills\*\reference\`
 6. Current code and tests when implementation behavior matters
-7. Supabase through the Brain tool layer when current structured records matter
+7. Supabase MCP/read-only awareness and App/domain-owned approved helpers when current structured records matter
 
 Brain no longer keeps a Web `docs\` mirror after the memory/skills migration.
 

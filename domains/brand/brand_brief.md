@@ -4,8 +4,8 @@ title: Brand & Marketing Brief
 domain: brand_and_marketing
 last_updated: 2026-05-09
 tags: [brand, marketing, messaging, planner, strategy-brief]
-reporting_status: company_candidate
-reporting_phase: brain_retirement_phase_3
+reporting_status: company_active
+reporting_phase: phase_10_reporting_active
 source_repo: miniBIOTA_Brain
 source_path: "M:\\miniBIOTA\\miniBIOTA_Brain\\4. miniBIOTA_Brand\\brand_brief.md"
 copied_on: 2026-05-09
@@ -66,7 +66,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Domain Reference
 
-Brain brief: `4. miniBIOTA_Brand\brand_brief.md`
+Historical Brain brief: `4. miniBIOTA_Brand\brand_brief.md`
 Full brand repo: `M:\miniBIOTA\miniBIOTA_Brand\`
 
 Brain no longer mirrors Brand docs. Load active Brand detail from the source repo:
@@ -77,7 +77,7 @@ Brain no longer mirrors Brand docs. Load active Brand detail from the source rep
 | `memory/00-index.md` | Memory index, read order, migration status, and skill routing |
 | `memory/01-agent-purpose.md` | Brand Agent scope, responsibilities, and boundaries |
 | `memory/02-brand-safety-and-claims-rules.md` | Public claim safety, approvals, and prohibited inventions |
-| `memory/03-source-of-truth-and-brain-relationship.md` | Source hierarchy, Brain brief, docs migration, and Supabase boundaries |
+| `memory/03-source-of-truth-and-brain-relationship.md` | Source hierarchy, Company reporting, Brain archive relationship, docs migration, and Supabase boundaries |
 | `memory/04-mission-vision-and-positioning.md` | Mission, vision, design trajectory, and positioning summary |
 | `memory/05-voice-tone-and-public-copy-rules.md` | Public voice, tone, copy rules, and style constraints |
 | `memory/06-distribution-and-channel-model.md` | Announcement sequencing, channel roles, and reach strategy |

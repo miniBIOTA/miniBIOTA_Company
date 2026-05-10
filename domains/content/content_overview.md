@@ -4,8 +4,8 @@ title: 5. miniBIOTA_Content
 domain: content_production
 last_updated: 2026-05-09
 tags: [content, storytelling, publishing, media-production, workflow, pipeline]
-reporting_status: company_candidate
-reporting_phase: brain_retirement_phase_3
+reporting_status: company_active
+reporting_phase: phase_10_reporting_active
 source_repo: miniBIOTA_Brain
 source_path: "M:\\miniBIOTA\\miniBIOTA_Brain\\5. miniBIOTA_Content\\content_production_overview.md"
 copied_on: 2026-05-09
@@ -99,10 +99,10 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
 
 ## Files In This Folder
 
-**Brain-owned (edit here):**
-- `content_production_overview.md` - this file; Brain's strategic view of the content domain
+**Company-owned active overview:**
+- `content_production_overview.md` - this file; Company active strategic view of the content domain
 
-**Content Agent-owned (read-only in Brain; edit in `M:\miniBIOTA\miniBIOTA_Content\`):**
+**Content Agent-owned active detail (edit in `M:\miniBIOTA\miniBIOTA_Content\`):**
 - `content_brief.md` - current operational state maintained by the Content Agent
 - `AGENTS.md` - active Content Agent entry point
 - `memory/` - durable content memory and routing

@@ -4,8 +4,8 @@ title: 6. miniBIOTA_Hardware
 domain: engineering_and_hardware
 last_updated: 2026-05-09
 tags: [hardware, engineering, controls, telemetry, sensors, enclosure]
-reporting_status: company_candidate
-reporting_phase: brain_retirement_phase_3
+reporting_status: company_active
+reporting_phase: phase_10_reporting_active
 source_repo: miniBIOTA_Brain
 source_path: "M:\\miniBIOTA\\miniBIOTA_Brain\\6. miniBIOTA_Hardware\\hardware_overview.md"
 copied_on: 2026-05-09
@@ -47,8 +47,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Airtight closure is not yet achieved; passive air leakage remains across multiple biomes.
 
 ## Files In This Folder
-- `hardware_brief.md` - current Hardware Agent manager-facing brief for Brain sessions.
-- `hardware_overview.md` - canonical Brain overview for Hardware / Engineering.
+- `hardware_brief.md` - active Company manager-facing report brief for Hardware.
+- `hardware_overview.md` - active Company overview for Hardware / Engineering.
 
 ## Source Repo
 - Hardware source repo: `M:\miniBIOTA\miniBIOTA_Hardware\`

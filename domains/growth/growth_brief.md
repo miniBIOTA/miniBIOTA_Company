@@ -4,8 +4,8 @@ title: Growth Brief
 domain: partners_and_sales
 last_updated: 2026-05-09
 tags: [growth, partners, sales, sponsorships, strategy-brief]
-reporting_status: company_candidate
-reporting_phase: brain_retirement_phase_3
+reporting_status: company_active
+reporting_phase: phase_10_reporting_active
 source_repo: miniBIOTA_Brain
 source_path: "M:\\miniBIOTA\\miniBIOTA_Brain\\7. miniBIOTA_Growth\\growth_brief.md"
 copied_on: 2026-05-09
@@ -29,7 +29,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   2026-05-09. The Growth Agent has verified and tightened local Planner wiring
   using the Hardware/App/Company/Financials rollout pattern; no live Planner
   records, partner records, CRM records, outreach state, pricing, campaign
-  commitments, app behavior, website behavior, or Brain brief changes were made
+  commitments, app behavior, website behavior, or historical Brain brief changes were made
   during that local wiring verification.
 - No formal partner pipeline, pricing structure, sponsorship tiers, media kit, or CRM-style cadence is fully operational yet.
 
@@ -86,7 +86,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Domain Reference
 
-Brain brief: `7. miniBIOTA_Growth\growth_brief.md`
+Historical Brain brief: `7. miniBIOTA_Growth\growth_brief.md`
 Full growth repo: `M:\miniBIOTA\miniBIOTA_Growth\`
 
 Brain no longer mirrors Growth docs. Load active Growth detail from the source repo:

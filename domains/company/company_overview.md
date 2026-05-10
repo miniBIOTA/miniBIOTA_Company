@@ -1,4 +1,4 @@
-﻿---
+---
 id: company_operations
 title: 1. miniBIOTA_Company
 domain: company_operations
@@ -65,7 +65,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Task priorities and quarter targets were assigned by Brain Agent during migration and need Josue's review.
 - Company must keep the operating review rhythm alive so dependency maps,
   roadmap cadence, and Programs/Operations governance stay current without
-  sliding back into Brain-owned planning.
+  sliding back into the retired Brain planning model.
 
 ## Files In This Folder
 - `company_brief.md` - active Company manager-facing report.

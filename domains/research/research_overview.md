@@ -4,8 +4,8 @@ title: 3. miniBIOTA_Research
 domain: ecosystem_and_data
 last_updated: 2026-05-09
 tags: [research, ecosystem, species, biomes, observations, food-web, planner]
-reporting_status: company_candidate
-reporting_phase: brain_retirement_phase_3
+reporting_status: company_active
+reporting_phase: phase_10_reporting_active
 source_repo: miniBIOTA_Brain
 source_path: "M:\\miniBIOTA\\miniBIOTA_Brain\\3. miniBIOTA_Research\\research_overview.md"
 copied_on: 2026-05-09
@@ -52,8 +52,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Macroalgae dominance, Mesostoma predation, ostracod population decline, ghost shrimp juvenile recruitment, and sea urchin establishment remain active ecological uncertainties.
 
 ## Files In This Folder
-- `research_brief.md` - current Research Agent manager-facing brief for Brain sessions.
-- `research_overview.md` - canonical Brain overview for Research / Ecosystem & Data.
+- `research_brief.md` - active Company manager-facing report brief for Research.
+- `research_overview.md` - active Company overview for Research / Ecosystem & Data.
 
 ## Source Repo
 - Research source repo: `M:\miniBIOTA\miniBIOTA_Research\`

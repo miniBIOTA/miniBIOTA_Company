@@ -4,8 +4,8 @@ title: Content Production Brief
 domain: content_production
 last_updated: 2026-05-09
 tags: [content, production, strategy-brief]
-reporting_status: company_candidate
-reporting_phase: brain_retirement_phase_3
+reporting_status: company_active
+reporting_phase: phase_10_reporting_active
 source_repo: miniBIOTA_Brain
 source_path: "M:\\miniBIOTA\\miniBIOTA_Brain\\5. miniBIOTA_Content\\content_brief.md"
 copied_on: 2026-05-09

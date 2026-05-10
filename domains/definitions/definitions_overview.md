@@ -4,8 +4,8 @@ title: 10. Definitions
 domain: definitions
 last_updated: 2026-04-03
 tags: [glossary, definitions, terminology, operations, engineering]
-reporting_status: company_candidate
-reporting_phase: brain_retirement_phase_3
+reporting_status: company_active
+reporting_phase: phase_10_reporting_active
 source_repo: miniBIOTA_Brain
 source_path: "M:\\miniBIOTA\\miniBIOTA_Brain\\10. Definitions\\definitions_overview.md"
 copied_on: 2026-05-09

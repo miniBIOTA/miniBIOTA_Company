@@ -1,6 +1,6 @@
 ---
 title: Helper And Database Awareness Migration
-last_updated: 2026-05-09
+last_updated: 2026-05-10
 ---
 # Helper And Database Awareness Migration
 
@@ -14,12 +14,14 @@ Company target direction: keep broad database awareness Company-routed, keep imp
 
 ## Phase 5 Status
 
-Phase 5 is complete as an inventory and migration plan. Helper code has not moved yet.
+Phase 5 is complete as an inventory and migration plan. On 2026-05-10, Company added the first scoped Company-owned helper implementation at `_system/company_supabase.py`.
 
 Current state:
 - Supabase MCP remains the preferred broad database-awareness layer.
-- Brain `_system/minibiota_tools.py` remains the active fallback/helper module during transition.
+- Brain `_system/minibiota_tools.py` is archive/recovery context only during probation.
 - Company owns routing, ownership classification, and approval boundaries for future helper migration.
+- Company owns `_system/company_supabase.py` for sanitized env status, protected Supabase reads, and approval-gated Company Planner `work_projects` / `tasks` helper writes.
+- App already owns its runtime protected bridge through `main.js` `supabase-rest` IPC and `js/shared/api-client.js`; use that path for App runtime behavior instead of Company helper code.
 - Domain-specific write helpers should move only after each owner accepts the scope.
 
 ## Root Coupling Found
@@ -56,20 +58,32 @@ Do not copy this file into Company unchanged unless the root semantics are delib
 ## Migration Recommendations
 
 1. Keep MCP read-only awareness as the preferred path for broad Supabase schema/table/log/advisor context.
-2. Create a small Company helper only for Company-owned needs: write policy reporting, Company Planner read helpers, and export/reporting checks.
+2. Keep Company helper scope limited to Company-owned needs: write policy reporting, Company Planner read helpers, approved Company Planner write helpers, and export/reporting checks.
 3. Split domain writes into domain-owned helper modules rather than one Company mega-helper.
 4. Preserve explicit approval for all Supabase writes, Planner writes, raw SQL, migrations, schema changes, destructive writes, service-role actions, storage/admin actions, and live-control paths.
 5. Do not migrate Brain vault write helpers as-is. Company uses `domains/`, `memory/`, `skills/`, exports, and Planner; Markdown task helpers are not a long-term task source.
-6. Keep Brain helper available as a historical/archive lookup until all domain references are updated in Phase 7.
-7. Add Company/local MCP setup notes before moving any helper that depends on database awareness.
+6. Keep Brain helper available only as historical/archive lookup unless explicit recovery work is scoped.
+7. Add Company/local MCP setup notes before moving any broader helper that depends on database awareness.
 
-## Candidate Company Helper Scope
+## Active Company Helper Scope
 
-A future Company helper module may include:
-- `get_write_mode` / `describe_write_policy` with Company root semantics.
-- Read-only Company Planner helpers for `work_domains`, `work_projects`, and `tasks` filtered to `company_ops`.
+Implemented at `_system/company_supabase.py`:
+
+- `get_write_mode` and sanitized `env_status` with Company root semantics.
+- Protected read helpers for Company Planner domain, projects, tasks, and generic table reads.
+- Approval-gated Company Planner helper writes for `work_projects` and `tasks`.
+- No CLI write commands; writes require importing the helper and passing `allow_write=True` plus a specific `approval_note`.
+- New Company records are forced to `domain_id = 1`; update helpers filter by `domain_id = 1`.
+
+The helper uses only the Python standard library and the ignored Company `.env` file.
+
+## Candidate Future Helper Scope
+
+Future Company helper additions may include:
 - Read-only table/schema awareness wrappers that prefer MCP and clearly label fallback snapshots.
 - Export/report validation helpers for `domains/` and `0. Agent Exports/`.
+- Additional Company-owned structured records only after ownership and approval gates are documented.
+- Cross-repo coordination notes that point to existing domain/App helper surfaces without absorbing their implementation.
 
 A future Company helper module should not include:
 - Research species/observation writes.
@@ -92,8 +106,8 @@ Move helper code only when:
 
 ## Phase 5 Closeout
 
-Phase 5 does not activate a Company helper path. It creates the ownership map and safety plan needed before code movement.
+Phase 5 created the ownership map and safety plan. The first Company helper path was activated on 2026-05-10 as `_system/company_supabase.py`.
 
 Next likely phases:
-- Phase 6: migrate Brain skills that are still useful.
-- Phase 7: update domain agents and helper references after reporting/export/helper decisions are ready.
+- Domain-owned helper additions where each owner accepts the scope.
+- App-owned helper hardening only if future App runtime work exposes a gap in the existing `supabase-rest` IPC bridge.

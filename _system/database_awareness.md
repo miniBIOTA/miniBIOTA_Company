@@ -5,7 +5,9 @@ Supabase MCP/read-only awareness is the preferred Company database-awareness lay
 ## Current Transition State
 
 - Brain `_system/minibiota_tools.py` is retired from normal workflows after Phase 10 reporting activation.
-- Company does not yet own a copied helper module.
+- Company now owns a scoped helper module at `_system/company_supabase.py` for sanitized env status, protected Supabase reads, and approval-gated Company Planner helper writes.
+- Company has a local ignored workspace MCP config at `.vscode/mcp.json` for Supabase's hosted MCP server with `read_only=true` and database/debugging/development/docs features.
+- Codex global MCP registration for `supabase` was added and OAuth login completed on 2026-05-10. Already-running Codex sessions may still show no MCP resources until the agent/session is restarted.
 - Phase 5 created `memory/11-helper-and-database-awareness-migration.md` as the helper ownership and migration plan.
 - Brain helper paths are archive/recovery lookup only; use MCP/read-only awareness and Company/domain-owned helpers for normal workflows.
 
@@ -13,7 +15,7 @@ Supabase MCP/read-only awareness is the preferred Company database-awareness lay
 
 1. Use Supabase MCP or approved read-only paths for live schema/table/relationship/log/advisor awareness.
 2. Use Company `_system/agent_repo_registry.md` to map tables and records back to domain owners, risk levels, and approval boundaries.
-3. Use MCP/read-only awareness and Company/domain-owned helpers for typed reads or explicitly approved helper writes; inspect Brain helper code only for historical/recovery context.
+3. Use MCP/read-only awareness and Company/domain-owned helpers for typed reads or explicitly approved helper writes. For Company Planner records, `_system/company_supabase.py` is the active Company helper.
 4. Route domain-specific writes to the owning domain before acting.
 
 ## Approval Boundary
@@ -35,4 +37,6 @@ Secrets must remain in local environment variables, ignored local config, OAuth,
 
 ## Company Helper Rule
 
-Do not copy Brain `minibiota_tools.py` into Company unchanged. It is Brain-rooted and mixes multiple domain write surfaces. Any future Company helper must be intentionally scoped, owner-mapped, and verified without test writes.
+Do not copy Brain `minibiota_tools.py` into Company unchanged. It is Brain-rooted and mixes multiple domain write surfaces. Company helper access must stay intentionally scoped, owner-mapped, and verified without test writes.
+
+The active Company helper is `_system/company_supabase.py`; its companion note is `_system/company_supabase.md`.

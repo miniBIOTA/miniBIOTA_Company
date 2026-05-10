@@ -2,14 +2,15 @@
 Company-owned Supabase helper for miniBIOTA coordination.
 
 This module replaces Brain-rooted helper access for Company workflows. It is
-read-oriented by default and only exposes Company-scoped Planner writes behind
-explicit per-call approval flags. It uses only the Python standard library so a
-fresh Codex session can run it without installing packages.
+read-oriented by default and exposes live writes/deletes only behind explicit
+per-call approval flags. It uses only the Python standard library so a fresh
+Codex session can run it without installing packages.
 """
 
 from __future__ import annotations
 
 import argparse
+import fnmatch
 import json
 import os
 import re
@@ -176,8 +177,6 @@ def _require_write_approval(
         raise HelperError("Supabase write blocked: pass allow_write=True only after explicit user approval.")
     if not approval_note or len(approval_note.strip()) < 8:
         raise HelperError("Supabase write blocked: provide a specific approval_note for audit context.")
-    if table not in {"work_projects", "tasks"}:
-        raise HelperError("Company helper writes are limited to Company Planner work_projects and tasks.")
 
 
 def request_json(
@@ -223,6 +222,63 @@ def read_table(
     protected: bool = True,
 ) -> Any:
     return request_json("GET", table, select=select, filters=filters, limit=limit, order=order, protected=protected)
+
+
+def insert_rows(
+    table: str,
+    payload: dict[str, Any] | list[dict[str, Any]],
+    *,
+    allow_write: bool,
+    approval_note: str,
+) -> Any:
+    return request_json(
+        "POST",
+        table,
+        payload=payload,
+        protected=True,
+        allow_write=allow_write,
+        approval_note=approval_note,
+    )
+
+
+def update_rows(
+    table: str,
+    filters: list[str],
+    payload: dict[str, Any],
+    *,
+    allow_write: bool,
+    approval_note: str,
+) -> Any:
+    if not filters:
+        raise HelperError("Refusing table update without at least one filter.")
+    return request_json(
+        "PATCH",
+        table,
+        filters=filters,
+        payload=payload,
+        protected=True,
+        allow_write=allow_write,
+        approval_note=approval_note,
+    )
+
+
+def delete_rows(
+    table: str,
+    filters: list[str],
+    *,
+    allow_write: bool,
+    approval_note: str,
+) -> Any:
+    if not filters:
+        raise HelperError("Refusing table delete without at least one filter.")
+    return request_json(
+        "DELETE",
+        table,
+        filters=filters,
+        protected=True,
+        allow_write=allow_write,
+        approval_note=approval_note,
+    )
 
 
 def company_domain() -> Any:
@@ -316,6 +372,106 @@ def update_company_project(
     )
 
 
+def _resolve_repo_path(relative_path: str, *, must_exist: bool = False) -> Path:
+    if not relative_path or Path(relative_path).is_absolute():
+        raise HelperError("Use a non-empty repo-relative path.")
+    candidate = (REPO_ROOT / relative_path).resolve()
+    root = REPO_ROOT.resolve()
+    if candidate != root and root not in candidate.parents:
+        raise HelperError(f"Path escapes Company repo: {relative_path!r}")
+    if must_exist and not candidate.exists():
+        raise HelperError(f"Path does not exist: {relative_path}")
+    return candidate
+
+
+def _require_file_write_approval(action: str, relative_path: str, allow_write: bool, approval_note: str | None) -> None:
+    mode = get_write_mode()
+    if mode == "read-only":
+        raise HelperError(f"{action} blocked because MINIBIOTA_WRITE_MODE is read-only.")
+    if not allow_write:
+        raise HelperError(f"{action} blocked for {relative_path}: pass allow_write=True only after explicit user approval.")
+    if not approval_note or len(approval_note.strip()) < 8:
+        raise HelperError(f"{action} blocked for {relative_path}: provide a specific approval_note.")
+
+
+def list_company_files(pattern: str = "*", limit: int = 100) -> dict[str, Any]:
+    limit = max(1, min(int(limit), 1000))
+    ignored_parts = {".git", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache"}
+    matches: list[str] = []
+    for path in REPO_ROOT.rglob("*"):
+        if len(matches) >= limit:
+            break
+        if not path.is_file():
+            continue
+        relative = path.relative_to(REPO_ROOT)
+        if any(part in ignored_parts for part in relative.parts):
+            continue
+        rel = relative.as_posix()
+        if fnmatch.fnmatch(rel, pattern):
+            matches.append(rel)
+    return {"repo_root": str(REPO_ROOT), "pattern": pattern, "count": len(matches), "files": matches}
+
+
+def read_company_file(relative_path: str, max_chars: int = 12000) -> dict[str, Any]:
+    path = _resolve_repo_path(relative_path, must_exist=True)
+    if not path.is_file():
+        raise HelperError(f"Path is not a file: {relative_path}")
+    text = path.read_text(encoding="utf-8-sig", errors="replace")
+    max_chars = max(1, int(max_chars))
+    return {
+        "path": path.relative_to(REPO_ROOT).as_posix(),
+        "chars": len(text),
+        "truncated": len(text) > max_chars,
+        "content": text[:max_chars],
+    }
+
+
+def write_company_file(
+    relative_path: str,
+    content: str,
+    *,
+    overwrite: bool = False,
+    allow_write: bool,
+    approval_note: str,
+) -> dict[str, Any]:
+    _require_file_write_approval("file write", relative_path, allow_write, approval_note)
+    path = _resolve_repo_path(relative_path)
+    if path.exists() and not overwrite:
+        raise HelperError(f"File exists and overwrite=False: {relative_path}")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+    return {"status": "written", "path": path.relative_to(REPO_ROOT).as_posix(), "chars": len(content)}
+
+
+def append_company_file(
+    relative_path: str,
+    content: str,
+    *,
+    allow_write: bool,
+    approval_note: str,
+) -> dict[str, Any]:
+    _require_file_write_approval("file append", relative_path, allow_write, approval_note)
+    path = _resolve_repo_path(relative_path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as handle:
+        handle.write(content)
+    return {"status": "appended", "path": path.relative_to(REPO_ROOT).as_posix(), "chars": len(content)}
+
+
+def delete_company_file(
+    relative_path: str,
+    *,
+    allow_write: bool,
+    approval_note: str,
+) -> dict[str, Any]:
+    _require_file_write_approval("file delete", relative_path, allow_write, approval_note)
+    path = _resolve_repo_path(relative_path, must_exist=True)
+    if not path.is_file():
+        raise HelperError(f"Refusing to delete non-file path: {relative_path}")
+    path.unlink()
+    return {"status": "deleted", "path": relative_path}
+
+
 def _print_json(value: Any) -> None:
     print(json.dumps(value, indent=2, sort_keys=True))
 
@@ -342,6 +498,14 @@ def main(argv: list[str] | None = None) -> int:
     read.add_argument("--order")
     read.add_argument("--publishable", action="store_true", help="Use the publishable key instead of protected secret-key reads.")
 
+    files = sub.add_parser("list-files")
+    files.add_argument("--pattern", default="*")
+    files.add_argument("--limit", type=int, default=100)
+
+    file_read = sub.add_parser("read-file")
+    file_read.add_argument("path")
+    file_read.add_argument("--max-chars", type=int, default=12000)
+
     args = parser.parse_args(argv)
     try:
         if args.command == "env-status":
@@ -363,6 +527,10 @@ def main(argv: list[str] | None = None) -> int:
                     protected=not args.publishable,
                 )
             )
+        elif args.command == "list-files":
+            _print_json(list_company_files(pattern=args.pattern, limit=args.limit))
+        elif args.command == "read-file":
+            _print_json(read_company_file(args.path, max_chars=args.max_chars))
         return 0
     except HelperError as exc:
         print(f"ERROR: {exc}", file=sys.stderr)

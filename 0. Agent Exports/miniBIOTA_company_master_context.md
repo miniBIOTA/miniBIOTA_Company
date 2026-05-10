@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Master Context
 
-- Generated: 2026-05-10 07:24:21 -04:00
+- Generated: 2026-05-10 08:57:12 -04:00
 - Source contract: Company `domains/` reports are included below.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 - Format: portable Markdown with Obsidian wiki-links normalized or removed.
@@ -129,6 +129,7 @@
 
 ## Recent Milestones
 
+- **2026-05-10:** Phase 11 closed the remaining Company-level Brain dependency risks. `YouTube_Extraction` is routed to Content-owned helper/workflow implementation before any future live `content_pipeline` import, and Planner/Supabase current-status reads are routed through Supabase MCP, Company protected reads for Company Planner coordination, or App-owned protected bridge/tooling. No live imports, Planner/Supabase writes, migrations, App runtime changes, public site behavior changes, Brain file changes, or commitments changed.
 - **2026-05-10:** Phase 11 completed the Supabase read-awareness evidence item with an approved GET-only inspection of Planner/Programs endpoints. The publishable key reached `work_domains`, `work_projects`, `tasks`, `work_programs`, and `work_program_projects`, but RLS exposed zero rows; direct secret-key REST was rejected. Future current-status reads should use Supabase MCP or the protected App read bridge. No live Planner/Supabase records, migrations, app behavior, public site behavior, or commitments changed.
 - **2026-05-10:** Phase 11 completed the Planner/project-management strategy evidence item as a docs-only Company/App ownership review. Company confirmed it can govern Planner strategy, Programs/Operations semantics, roadmap cadence, and project-management sequencing from Company and App active docs while App remains runtime/schema/UI owner. No live Planner/Supabase records, migrations, app behavior, public site behavior, or commitments changed.
 - **2026-05-10:** Phase 11 continued with three-domain closeout evidence for Brand, Content, and Growth, then an active-reference scan across Company and active domain repos. Old-habit Brain fallback wording was patched in active Financials, Research, Web, Company, Hardware, and App documentation/playbooks. Brain remained archive/provenance context only; no live Planner/Supabase records, migrations, app behavior, public site behavior, or commitments changed.
@@ -157,6 +158,7 @@
 - Q2 goals are not yet defined in the active roadmap reference at `M:\miniBIOTA\miniBIOTA_Company\skills\review-roadmap-implications\reference\strategic-roadmap.md`.
 - Company-level decisions can blur with department implementation unless ownership is explicitly assigned.
 - All required Phase 11 evidence items are now recorded, but Company must continue the planned 2 to 4 week probation window before final Brain retirement.
+- The YouTube transcript import replacement is routed to Content, but future implementation and any live `content_pipeline` import remain approval-gated domain work.
 - Company must keep the operating review rhythm alive so dependency maps,
   roadmap cadence, and Programs/Operations governance stay current without
   sliding back into the retired Brain planning model.
@@ -166,6 +168,7 @@
 - **Research:** Scientific claims and ecological feasibility should be grounded in Supabase and Research docs.
 - **Hardware:** Roadmap and business planning should reflect climate control, sensor expansion, enclosure, telemetry, and estuary feasibility.
 - **Content:** Strategy depends on story arc, publishing cadence, proof assets, and public narrative.
+- **Content:** Future YouTube transcript-to-`content_pipeline` import/reconciliation is Content-owned helper/workflow work; Company only coordinates sequencing and approval boundaries.
 - **Brand:** Mission, vision, public language, and company narrative must remain aligned.
 - **Growth:** Business plan, sponsorships, campaigns, and public commitments depend on Company decisions.
 - **Financials:** Roadmap and business plan must reflect runway, debt pressure, revenue baseline, taxes, and spending decisions.

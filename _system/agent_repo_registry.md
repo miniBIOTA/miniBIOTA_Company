@@ -36,6 +36,12 @@ This registry does not authorize live writes. Raw SQL, migrations, destructive w
 | Raw Footage | Historical Brain source: `M:\miniBIOTA\miniBIOTA_Brain\8. Raw Footage\raw_footage_overview.md` | Active Company routing: `domains\raw-footage\raw_footage_overview.md` | Media evidence/proof context and raw footage overview | Company owns proof/archive strategy; App owns Media Library runtime/schema/indexing; Content owns production use; Research owns ecological interpretation | Medium | Phase 9 owner split documented |
 | Definitions | Historical Brain source: `M:\miniBIOTA\miniBIOTA_Brain\10. Definitions\definitions_overview.md`; `glossary.md` | Active Company routing: `domains\definitions\definitions_overview.md`; `domains\definitions\glossary.md` | Shared vocabulary across ecology, engineering, product, content, and operations | Company owns central glossary; domains own specialized extensions and corrections | Medium | Phase 9 Company owner documented |
 
+## External Tools With Active Ownership Routing
+
+| Tool | Local path | Active owner | Current status | Allowed use during Phase 11 | Not allowed without approval |
+|---|---|---|---|---|---|
+| YouTube Extraction | `M:\miniBIOTA\YouTube_Extraction` | Content | Source/import artifacts only; legacy live import is blocked until rebuilt under Content-owned helper/workflow ownership | Historical transcript/extraction source review and Content import planning | Brain helper imports, live `content_pipeline` writes, Supabase writes, App/runtime changes, public behavior changes |
+
 ## Supabase Responsibility Map
 
 | Repo | Owned tables, if known | Read-only tables, if known | Controlled-write tables, if known | Migration/admin permissions |
@@ -69,13 +75,14 @@ If a repo lacks one of these commands, treat that as a coordination bug and upda
 - Use domain repos for domain implementation truth, domain memory, domain skills, code, and domain-owned structured records.
 - Use Brain only for transition guardrails still explicitly in scope, historical lookup, archive/recovery context, and the Brain retirement plan.
 - Use Supabase/App Planner for current structured project/task/record state when it matters.
+- Use Content-owned helper/workflow implementation for any future YouTube transcript-to-`content_pipeline` import. Company may coordinate ownership and sequencing, but does not own Content pipeline writes.
 - Use Company exports under `0. Agent Exports/` for broad Company cold starts and cross-domain operating context; Brain exports are historical/archive artifacts.
 - Do not write live records without explicit approval.
 - Domain agents now use Company reporting paths for normal reporting after Phase 10 activation. Brain brief paths are historical/archive lookup only.
 
 ## Phase Status
 
-As of 2026-05-09:
+As of 2026-05-10:
 
 - Phase 0 inventory exists in Brain at `memory/13-brain-retirement-phase-0-inventory.md`.
 - Phase 1 Company protocol surfaces exist in Company.
@@ -87,7 +94,7 @@ As of 2026-05-09:
 - Phase 7 active domain repo doc migrations are complete and Phase 10 reporting activation updated domain startup/closeout surfaces to Company reporting paths. Raw Footage and Definitions owner/path decisions are complete as Phase 9 docs-only routing.
 - Phase 8 docs-only Planner/Programs alignment is complete: Company owns Program/Operation governance semantics, owner/lead, dependency/blocker, lifecycle, review cadence, and closeout rules; App owns Planner runtime/schema/UI. Live Planner record verification or writes remain approval-gated follow-up.
 - Phase 9 docs-only Raw Footage and Definitions ownership routing is complete: Raw Footage uses Company/App/Content/Research split ownership; Definitions uses Company central glossary with domain-specific extension paths. Brain copies are transition/history until archive freeze.
-- Phase 10 archive-freeze edits are active: Company reports are normal reporting targets, Brain startup/closeout helpers are archive-only, App Team presents Brain as archive/recovery context, `YouTube_Extraction` ownership is Content, and Brain helper code is retired from normal workflows. Brain has not been physically moved or deleted. Phase 11 probation is active and tracked in `memory/16-brain-retirement-probation.md`.
+- Phase 10 archive-freeze edits are active: Company reports are normal reporting targets, Brain startup/closeout helpers are archive-only, App Team presents Brain as archive/recovery context, `YouTube_Extraction` ownership is Content, and Brain helper code is retired from normal workflows. Phase 11 has since routed the YouTube import replacement through Content-owned helper/workflow ownership before any live `content_pipeline` write. Brain has not been physically moved or deleted. Phase 11 probation is active and tracked in `memory/16-brain-retirement-probation.md`.
 
 ## Notes
 

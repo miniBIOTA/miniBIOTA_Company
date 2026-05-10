@@ -18,6 +18,17 @@ Supabase MCP/read-only awareness is the preferred Company database-awareness lay
 3. Use MCP/read-only awareness and Company/domain-owned helpers for typed reads or explicitly approved helper writes. For Company Planner records, `_system/company_supabase.py` is the active Company helper.
 4. Route domain-specific writes to the owning domain before acting.
 
+## Planner Current-Status Reads
+
+Use this order when current Planner/Supabase status matters:
+
+1. Supabase MCP/read-only awareness when available in the active session.
+2. Company `_system/company_supabase.py` protected reads for Company Planner coordination under `work_domains.key = company_ops` / `domain_id = 1`.
+3. App-owned protected bridge/tooling when the read depends on App runtime behavior or internal protected access. App owns `main.js` `supabase-rest` IPC and renderer routing through `js/shared/api-client.js`.
+4. Publishable-key REST only for reachability or RLS visibility checks, not as proof of current Planner status.
+
+Do not use Brain helper code or unsafe direct secret-key REST as the normal current-status read path.
+
 ## Approval Boundary
 
 Explicit user approval is required for:

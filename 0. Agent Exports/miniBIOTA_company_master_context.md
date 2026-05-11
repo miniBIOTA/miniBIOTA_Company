@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Master Context
 
-- Generated: 2026-05-11 16:30:36 -04:00
+- Generated: 2026-05-11 17:58:10 -04:00
 - Source contract: Company `domains/` reports are included below.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 - Format: portable Markdown with Obsidian wiki-links normalized or removed.
@@ -1117,7 +1117,7 @@ Brain no longer keeps a Content `docs\` mirror after the memory/skills migration
 - App Monitoring tab (Phase 4) is live as of 2026-04-25: real-time telemetry for all 6 biomes via direct MQTT to Electron.
 - First read-only Wyse-side telemetry coordinator is deployed on the Dell Wyse and running as `minibiota-telemetry.service`; it subscribes to local MQTT for sensor biomes 2-5 and upserts the website-compatible Supabase `telemetry_snapshot` singleton row `id=1` about every 15 seconds. It does not write history rows or control commands.
 - Hardware rewire planned for biomes 2-5 to resolve SHT31 wiring, water-damage, and connection-quality faults. Connector standard remains open; XT30 power and JST-XH 2.54mm signal connectors are candidates, not settled requirements.
-- Hardware repo now uses the federated memory/skills architecture plus a `0. Hardware Systems/` documentation layer: `AGENTS.md`, biome folders, `0. Hardware Systems/`, `memory/`, `skills/`, `skills/*/reference/`, `services/`, `deploy/`, and `_system/` helpers. The old `docs/` mirror pattern is retired. Hardware project management now lives in App Planner/Supabase under Engineering / `Engineering & Hardware` projects and tasks.
+- Hardware repo now uses the federated memory/skills architecture plus a `0. Hardware Systems/` documentation layer: `AGENTS.md`, biome folders, `0. Hardware Systems/`, `memory/`, `skills/`, `skills/*/reference/`, `services/`, `deploy/`, and `_system/` helpers. The old `docs/` mirror pattern is retired. Hardware project management should route to the Hardware domain/owner in App Planner/Supabase. Any remaining Engineering / `Engineering & Hardware` Planner labels are legacy routing labels that need approved Planner cleanup rather than active ownership language.
 
 ## Active Priorities
 - Complete sealing and infrastructure upgrades to reach airtight closed-system standard.
@@ -1127,7 +1127,7 @@ Brain no longer keeps a Content `docs\` mirror after the memory/skills migration
 
 ## Recent Milestones
 - 2026-05-11: Deployed the read-only Wyse telemetry coordinator as a persistent user service with SSH maintenance access, live MQTT ingestion, local debug snapshot output, and successful Supabase `telemetry_snapshot` row `id=1` upserts for website live monitoring.
-- 2026-05-09: Organized Hardware project management in App Planner/Supabase: 8 Engineering & Hardware work projects now track 72 linked Hardware tasks, including existing biome/system work and documentation follow-ups.
+- 2026-05-09: Organized Hardware project management in App Planner/Supabase: 8 legacy Engineering / `Engineering & Hardware` work projects track 72 linked Hardware tasks, including existing biome/system work and documentation follow-ups. Current routing should treat these as Hardware-owned Planner records until approved Planner cleanup renames or remaps the legacy labels.
 - 2026-05-09: Created the Hardware `0. Hardware Systems/` documentation layer for the six canonical public systems: Climate System, Rain System, Lighting System, Wave & Tide System, Control System, and Enclosure.
 - 2026-05-09: Added exact `biome_hardware.md` hardware specifications for Biomes 2-5 in the Hardware repo, including shared sensor-node BOM, power architecture, GPIO map, current sensor/display status, and open connector/fusing/wire-color items.
 - 2026-05-05: Brain Hardware folder converted to the repo-named memory/skills pattern. Brain folder is now `6. miniBIOTA_Hardware`; active detailed context is `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`; tracked Hardware `docs/` files were removed after migration; Brain `sync_docs.ps1` no longer mirrors Hardware docs and removes stale Brain Hardware docs if present.
@@ -1631,16 +1631,13 @@ These match the system IDs used throughout the rest of the app (observations, st
 - Use App Planner/Supabase for live Web task status; keep Markdown focused on architecture, rules, scope, and decisions.
 - Continue active UX Lab work through Planner project `40`; use `/ux-lab` for UX states, interaction rules, page patterns, and journeys while keeping development routes out of production navigation.
 - Keep the now-connected App/Hardware coordinator-to-website telemetry handoff production-verified, public-safe, and read-only.
-- Continue the cleaned Web Planner roadmap: About/supporters, Patreon acknowledgments, Substack signup/list migration, weekly newsletter assembly, events/news/chronicles product passes, engineering images, telemetry hardening, and species-card data polish.
-- Establish a repeatable sync path from newsletter capture to an external email platform.
-- Replace engineering system placeholder images with real system imagery when available.
-- Develop later content/product passes for `/events`, `/news`, and `/chronicles`.
+- Work through the cleaned Web Planner roadmap: About/supporters and Patreon acknowledgment content, Substack signup/list migration and weekly newsletter assembly, events/news/chronicles product passes, engineering imagery, telemetry hardening, and species-card data polish.
 
 ## Risks / Gaps
 - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
 - Public telemetry now depends on the App/Hardware coordinator producer staying healthy and aligned with the public read-only contract.
 - Planner records can organize Web work, but they do not authorize production navigation, public claims, private/admin surfaces, or runtime behavior changes by themselves.
-- The owner roadmap is now captured in Planner, but several tasks still need source assets, copy, policy decisions, or cross-domain input before implementation.
+- The owner roadmap is captured in Planner, but several tasks still need source assets, copy, policy decisions, or cross-domain input before implementation.
 - `/events`, `/news`, and `/chronicles` remain active public routes but need later content/product development.
 - Engineering system pages still need real system images to replace placeholders.
 
@@ -1673,18 +1670,18 @@ These match the system IDs used throughout the rest of the app (observations, st
 - Telemetry architecture is local-first. The public site now consumes the live read-only telemetry snapshot through `/api/telemetry/overview` and `/live-monitoring`; it must not imply direct pump switching or centralized actuator control.
 - Web Agent context now uses the repo-native memory/skills architecture in `M:\miniBIOTA\miniBIOTA_Web\`: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an active Web `docs/` mirror. `_system/sync_docs.ps1` removes stale `9. miniBIOTA_Web\docs` if it appears.
-- App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`. Current Web projects are IDs `36` through `42`, and Web docs now route actionable task status to Planner instead of Markdown task lists.
+- App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`. Current active Web projects are IDs `36` through `41` plus `57`, legacy/internal project `42` is archived, and Web docs route actionable task status to Planner instead of Markdown task lists.
 
 ## Active Priorities
 - Keep Web memory and the Company Web report aligned with the public-only, local-first telemetry and control architecture.
 - Continue the active UX Interaction Lab scope in App Planner project `40`; the first live `/biosphere#biosphere-ecosystem-map` application pass is stabilized, reusable state patterns are defined in `/ux-lab` and first applied to `/species`, the first shared EEL state-preset promotion pass is complete, `/chronicles` has its first archive state/accessibility pass, shared detail tab/accordion semantics are tightened across core detail pages, `/ux-lab` now includes first-pass journey maps and tighter keyboard/modal preview contracts, and local route/lint/full-test/HTTP smoke checks are green. Next Web UX work should focus on owner/design review, real browser/mobile visual QA when tooling is available, or a separately scoped live-surface application while keeping `/ux-lab` and `/ui-kitchen-sink` development-gated and out of production navigation.
 - Keep the now-connected desktop-app/coordinator-to-website telemetry handoff production-verified, public-safe, and read-only.
-- Establish a repeatable sync path from newsletter capture to an external email platform.
-- Replace engineering system placeholder images with real system imagery when available.
-- Develop later content/product passes for /events, /news, and /chronicles.
+- Work through the cleaned Web Planner roadmap: About/supporters and Patreon acknowledgment content, Substack signup/list migration and weekly newsletter assembly, events/news/chronicles product passes, engineering imagery, telemetry hardening, and species-card data polish.
 - Build Operation Living Web, the Ecosystem Relationship Graph architecture, as a public species-to-biome-to-biosphere relationship experience; Web architecture is now ready to pause, with broad food-web curation routed to the Research Agent via the Web repo handoff packet.
 
 ## Recent Milestones
+- 2026-05-11: Completed a Web Planner cleanup with owner approval. Stale completed work was closed, legacy/internal project `42` was archived, active Web project routing now includes `36` through `41` plus `57`, and owner-written roadmap items were captured under the active project set.
+- 2026-05-11: Species cards now display `Last seen` from canonical `date_last_observed`. The change was tested, deployed, production-smoked on `/species`, and Planner task `36:355` was marked done with owner-approved status update.
 - 2026-05-11: Live public telemetry is connected. The Hardware/Wyse coordinator now publishes the read-only Supabase snapshot consumed by `/api/telemetry/overview` and `/live-monitoring`; the public page renders sensor biomes 2-5 while preserving the public/private boundary around pump, liquid, command, and control data.
 - 2026-05-10: Continued the UX Interaction Lab definition pass with first-pass journey maps and tighter dev-gated interaction-preview contracts. `/ux-lab` now covers species discovery, biome understanding, public telemetry inspection, chronicle reading, relationship exploration, gap recovery, tab/mode keyboard behavior, and modal focus review. No live public page behavior, database, schema, Planner, production navigation, admin surface, telemetry control/runtime, or graph engine changed.
 - 2026-05-10: Completed a practical QA closeout for the UX Interaction Lab/UI System continuation. Local HTTP smoke checks passed for `/chronicles`, `/species`, `/biosphere`, and filtered Ecosystem Map URLs; compile checks, full tests, route contracts, and relevant token lints passed. In-app browser automation was unavailable because the required browser Node REPL tool was not exposed in the session. No database, schema, Planner, production navigation, admin surface, telemetry control/runtime, or graph engine changed.
@@ -1719,6 +1716,7 @@ These match the system IDs used throughout the rest of the app (observations, st
 ## Known Risks & Blockers
 - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
 - Public telemetry now depends on the App/Hardware coordinator producer staying healthy and aligned with the public read-only contract.
+- The cleaned Web roadmap still needs source assets and cross-domain inputs for About/supporter recognition, Substack/list migration, weekly newsletter process design, events/news/chronicles content strategy, and engineering imagery.
 - `/events`, `/news`, and `/chronicles` remain active public routes but need later content/product development.
 - Engineering system pages still need real system images to replace placeholders.
 
@@ -1760,7 +1758,7 @@ Brain no longer keeps a Web `docs\` mirror after the memory/skills migration.
 | `skills\update-ui-system\SKILL.md` | Shared UI and design-system workflow |
 | `skills\work-with-public-telemetry\SKILL.md` | Public telemetry workflow |
 | `skills\close-web-session\SKILL.md` | Closeout workflow |
-| `skills\*\reference\` | Exact archived-detail references for playbooks |
+| `skills\*\reference\` | Exact supporting references for playbooks |
 
 ---
 
@@ -1822,12 +1820,12 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 
 ## Scope
 - Owns the internal Electron desktop app used for miniBIOTA operations.
-- Provides operator workflows for Planner, financials, CRM, roadmap, team reference, Site Admin, media management, and monitoring.
+- Provides operator workflows for Planner, financials, CRM, roadmap, Prompt Library, Site Admin, media management, and monitoring.
 - Remains an internal secret-key-capable tool, not a public product or public website surface.
 
 ## Current State
 - `miniBIOTA_App` is the active desktop operator surface for miniBIOTA.
-- Active tabs are Planner, Financials, CRM, Roadmap, Team, Site Admin, and Monitoring.
+- Active tabs are Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, and Monitoring.
 - Planner project-manager schema foundation is live after migration 007, and
   former top-level Weekly Checklist and Tasks behavior has been consolidated
   into Planner replacement surfaces.
@@ -1844,6 +1842,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Monitoring reads direct MQTT telemetry from the local biome network when connected to `mB2.4`.
 - Site Admin supports species, biosphere, biome, chronicle, announcement, staging, and media-library workflows.
 - Media Library/tagging, Species-style media search/filtering, and backend WebP image upload pipeline are implemented in the app.
+- Prompt Library has replaced the old static Team reference surface. Migration 012 was applied successfully by the user on 2026-05-11, making `prompt_library` live for reusable prompt records and future workflow-template use.
 - The app source repo now uses repo-local memory and skills as active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
 
@@ -1851,6 +1850,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - The app uses Supabase publishable keys in renderer/browser-facing config and secret keys only in Electron main-process services or local admin tooling. Internal renderer REST helpers route through an Electron IPC bridge when secret-key access is needed, without exposing the secret key to browser code.
 - Public website surfaces should remain read-only observability; operator/admin workflows belong in the desktop app.
 - Planner is the main production workflow surface for story sources, project planning, scheduled content, and ordinary tasks.
+- Prompt Library stores reusable prompts in `prompt_library`; prompt create, edit, favorite, archive, and restore actions are live Supabase writes.
 - Planner is the intended unified project-management surface. The live schema
   now includes `work_domains`, `work_projects`, task project-management fields,
   an optional `content_calendar.work_project_id` bridge, and the
@@ -1896,6 +1896,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Keep secret-key access internal-only and avoid public exposure of app behavior.
 - Verify packaged build behavior for Sharp/WebP image uploads when packaging resumes.
 - Keep App memory and skill references current as architecture, schema assumptions, and safety rules change.
+- Smoke test Prompt Library create/edit/copy/archive flows after launching the app, now that migration 012 is applied.
 - Use App Planner/Supabase for live App task status; keep Markdown focused on
   context, operating rules, architecture notes, and playbooks.
 
@@ -1911,6 +1912,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Planner Programs/Operations schema and live Program records are live, but
   Program UI create/edit/link behavior still needs interactive smoke
   verification before daily reliance.
+- Prompt Library schema is live after migration 012, but create/edit/copy/archive flows still need interactive app smoke verification before daily reliance.
 
 ## Files In This Folder
 - `app_brief.md` - active Company manager-facing report brief for App.
@@ -1938,7 +1940,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 
 - `miniBIOTA_App` is the internal Electron desktop app for miniBIOTA operations.
 - The app is an operator surface, not a public product. It uses Supabase publishable keys in renderer/browser-facing config and secret keys only in Electron main-process services or local admin tooling. Internal renderer REST helpers route through an Electron IPC bridge when secret-key access is needed, without exposing the secret key to browser code.
-- Active tabs: Planner, Financials, CRM, Roadmap, Team, Site Admin, and Monitoring. Former top-level Weekly Checklist and Tasks behavior has been consolidated into Planner.
+- Active tabs: Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, and Monitoring. Former top-level Weekly Checklist and Tasks behavior has been consolidated into Planner.
 - Monitoring tab is live for direct MQTT telemetry from the local biome network when on `mB2.4`.
 - Site Admin includes species, biosphere, biome, chronicle, announcement, and staging workflows.
 - Media Library/tagging and backend WebP image upload pipeline are implemented in the app.
@@ -1958,6 +1960,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   2026-05-09. The App Agent has verified and tightened local Planner wiring
   using the Hardware pilot pattern; no live Planner records were changed during
   that local wiring verification.
+- Prompt Library has replaced the old static Team reference surface. Migration 012 was applied successfully by the user on 2026-05-11, making the `prompt_library` table live for reusable prompt records. Prompt create, edit, favorite, archive, and restore actions are live Supabase writes through the internal app REST path.
 - `miniBIOTA_App` now has repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
 
@@ -1974,6 +1977,8 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Continue using the app for financials, Planner/content production, CRM, media tagging, and monitoring workflows.
 
 ## Recent Milestones
+
+- **2026-05-11:** The old static Team reference tab was replaced by a Supabase-backed Prompt Library. The app now exposes Prompt Library in navigation with search, category filters, copy, create/edit modal, favorite, archive, and restore behavior over the new prompt_library table. Migration 012 was applied successfully by the user on 2026-05-11. The old static Team data file was retired from the renderer manifest. Prompt records are now live operational records; no prompt records were seeded or written during the App implementation session.
 
 - **2026-05-11:** Planner Calendar Week/Month was refined to stay schedule-first after live Company-agent scheduling exposed calendar clutter. Generic `work_projects` now render as single milestone cards on `target_date`, or `start_date` only when no target exists, instead of filling every day between `start_date` and `target_date`. Top-level parent tasks with children no longer render from their own `scheduled_date`/`span_end_date`; they appear only on dates where `taskSubtasksForCalendarDate(parent, dateStr)` returns child work. When such a parent card appears, the scheduled child task title is the primary visible title and the parent/container title appears as context. Company-agent scheduling guidance: use Programs/work_projects for structure and deadlines, but schedule concrete subtasks for daily calendar work. This was a renderer/docs update only; no live Planner records, schema, migrations, Storage, telemetry, MQTT, CRM, Financials, Site Admin, Monitoring, or app data writes changed.
 - **2026-05-11:** Planner content production scheduling was updated so scheduled content does not need duplicate generic tasks. The intended model is: `content_calendar` remains the blue content identity/due-date card, a linked content-domain `work_project` can hold execution context, and one teal parent production task with subtasks represents the actual production work. The Production tab can create/attach that task structure from the format template; legacy checklist state remains a fallback for unconverted entries. Today, Tasks, Week, and Month now group scheduled child tasks under their parent production task and show day-specific child work. Parent production tasks cannot be marked Done while open subtasks remain, and moving required production work later than the linked content date pushes the content scheduled date forward. Live records touched during the approved setup: `content_calendar.id = 13`, `work_projects.id = 62`, `tasks.id = 247`, and subtasks `tasks.id = 248-261`.
@@ -2328,6 +2333,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Planner Programs/Operations schema and live Program records exist after
   migration 010, but Program UI create/edit/link behavior still needs
   interactive smoke verification before daily reliance.
+- Prompt Library schema is live after migration 012, but create/edit/copy/archive flows still need interactive app smoke verification before daily reliance.
 
 ## Cross-Domain Notes
 
@@ -2339,6 +2345,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   every day in their date range, and parent task containers with scheduled
   children render the child task as the primary title only on dates with child
   work.
+- **All domains:** Prompt Library now stores reusable prompt records in `prompt_library`. These prompts can mature into workflow templates, but create/edit/favorite/archive/restore actions are live app data writes and should be treated as operational records.
 - **All domains:** App Planner/Supabase is the shared project/task runtime for
   domain-agent rollout. App's own work lives under the App domain, while each
   domain agent still owns its local wiring verification before being called

@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Executive Brief
 
-- Generated: 2026-05-11 16:30:36 -04:00
+- Generated: 2026-05-11 17:58:10 -04:00
 - Purpose: Company-side synthesis of domain reports.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 
@@ -198,7 +198,7 @@
 
 ### Current Status
 - `miniBIOTA_App` is the active desktop operator surface for miniBIOTA.
-- Active tabs are Planner, Financials, CRM, Roadmap, Team, Site Admin, and Monitoring.
+- Active tabs are Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, and Monitoring.
 - Planner project-manager schema foundation is live after migration 007, and former top-level Weekly Checklist and Tasks behavior has been consolidated into Planner replacement surfaces.
 
 ### Priorities

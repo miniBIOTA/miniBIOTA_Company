@@ -2,7 +2,7 @@
 id: content_production
 title: 5. miniBIOTA_Content
 domain: content_production
-last_updated: 2026-05-09
+last_updated: 2026-05-11
 tags: [content, storytelling, publishing, media-production, workflow, pipeline]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -43,6 +43,13 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   ordinary Content work. They do not replace `content_calendar`, Planner source
   maps, story beats, story threads, open loops, `content_pipeline`,
   chronicles, publish closeout, or active video project docs.
+- **Scheduled production model:** In App Planner, `content_calendar` is the teal
+  content identity, due-date, and closeout record. A linked Content-domain work
+  project plus one blue parent production task and subtasks is the execution
+  schedule. Do not create duplicate generic production tasks when a calendar
+  entry already exists; attach the work project and production task, generate
+  subtasks from the format template, and keep the content scheduled date on or
+  after required production work.
 
 ## Active Production
 - **Lake Post-Seal longform (pipeline 338):** Published 2026-04-17. Project doc archived at `M:\miniBIOTA\miniBIOTA_Content\video_projects\archive\2026-04_biome_lake-post-seal.md`.
@@ -79,7 +86,7 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
 
 ## Priorities
 - Sea urchin intro short was published May 4 as pipeline 351, Mottled Shore Crab short May 6 as pipeline 352, and producer-diversity/Caulerpa short May 7 as pipeline 353. Loop 9 is advanced, not resolved; shorts loop 17 tracks whether the variegated sea urchin survives and keeps eating Graceful redweed; shorts loop 18 tracks whether Green Feather Alga spreads too much and needs removal.
-- Story beats schema has been applied and initial sea urchin beats seeded; `intervention` is now an allowed `story_beats.beat_type`, and beat 17 uses it. App Planner support for Story Beats as a source type is still pending.
+- Story beats schema has been applied and initial sea urchin beats seeded; `intervention` is now an allowed `story_beats.beat_type`, and beat 17 uses it. App Planner now supports Story Beats as a source type for Planner production source maps.
 - Ghost shrimp larvae follow-up moved to May 12 so the May 5-9 calendar can stay focused on the seagrass longform buildup.
 - Longform seagrass succession continuation is targeted for 2026-05-09 and still needs title/footage/script decisions.
 - Historical `content_pipeline` backfill still needs `format`, `platform_urls`, `source_observation_id`, `notes`, and `parent_pipeline_id` populated where applicable.

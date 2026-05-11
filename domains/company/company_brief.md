@@ -50,6 +50,12 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-11:** Company absorbed the latest App Planner content production
+  model into Company/Content operating guidance: teal `content_calendar`
+  records are content identity, due-date, and closeout truth; linked
+  Content-domain work projects plus blue parent production tasks and subtasks
+  are execution schedule truth. No live Planner/Supabase records, app behavior,
+  public site behavior, public commitments, or roadmap commitments changed.
 - **2026-05-11:** Company Planner review confirmed all 243 Planner tasks across domains are linked to projects and no tasks point to missing project records. Company activated `Roadmap & Quarterly Objectives` and `Operation Living Atlas Coordination` as the next strategic low-hanging projects with explicit user approval. No tasks, roadmap commitments, public commitments, app behavior, or public site behavior changed.
 - **2026-05-11:** Company cleaned active memory by moving completed Phase 11 evidence logs from `memory/17` through `memory/23` into `archive/superseded/phase-11-evidence/`. `memory/16-brain-retirement-probation.md` remains the active Phase 11 summary; detailed evidence logs are retained for audit/provenance lookup only.
 - **2026-05-10:** Phase 11 closed the remaining Company-level Brain dependency risks. `YouTube_Extraction` is retired historical extraction/backfill tooling after user clarification, `main.py` is fail-closed with the embedded OpenAI key removed, and Planner/Supabase current-status reads are routed through Supabase MCP, Company protected reads for Company Planner coordination, or App-owned protected bridge/tooling. No live imports, Planner/Supabase writes, migrations, App runtime changes, public site behavior changes, Brain file changes, or commitments changed.
@@ -91,6 +97,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - **Research:** Scientific claims and ecological feasibility should be grounded in Supabase and Research docs.
 - **Hardware:** Roadmap and business planning should reflect climate control, sensor expansion, enclosure, telemetry, and estuary feasibility.
 - **Content:** Strategy depends on story arc, publishing cadence, proof assets, and public narrative.
+- **Content:** Scheduled production planning should use the App Planner model
+  where `content_calendar` is the teal content identity/due/close record and
+  the linked Content-domain work project, blue parent production task, and
+  subtasks are the execution schedule. Avoid duplicate generic production
+  tasks when a content entry already exists.
 - **Content:** `YouTube_Extraction` is retired historical tooling; no YouTube transcript-to-`content_pipeline` import migration is pending unless the user explicitly reactivates it. Any reactivation would be Content-owned and approval-gated.
 - **Brand:** Mission, vision, public language, and company narrative must remain aligned.
 - **Growth:** Business plan, sponsorships, campaigns, and public commitments depend on Company decisions.

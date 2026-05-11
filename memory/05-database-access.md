@@ -35,6 +35,7 @@ Company work is managed in App Planner through Supabase `work_projects` and `tas
 - Creating projects/tasks, linking tasks to projects, adding subtasks, changing workflow status, marking done/reopened, scheduling, changing recurrence, or archiving are live operational writes.
 - At closeout, offer to update Planner task status when completed work maps clearly to an open Company Planner task, but ask before writing unless the user explicitly requested the update.
 - Company Planner records coordinate company-level planning. They do not replace domain-owned implementation queues or domain source-of-truth records.
+- Scheduled Content production uses a two-layer Planner model: `content_calendar` is the teal content identity, due-date, and closeout record, while the linked Content-domain work project, blue parent production task, and subtasks are the execution schedule. Agents should attach to existing calendar entries instead of creating duplicate generic production tasks, generate production subtasks from the relevant format template, and keep the content scheduled date from appearing earlier than required production work.
 - Do not treat Planner schema, UI, runtime behavior, or Supabase workflow implementation as Company-owned implementation work. Route those to App unless Josue explicitly scopes a cross-repo App change.
 
 ## Transition Reporting

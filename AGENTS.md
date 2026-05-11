@@ -102,6 +102,7 @@ Chat history and private model memory are never source of truth. Durable project
 - Read Planner projects/tasks when choosing next Company work, checking blockers, or verifying completion status.
 - At closeout, if completed work maps clearly to an open Planner task, ask whether to mark that task done unless the user explicitly asked for that live task update.
 - Company planning coordinates cross-domain work, but domain-owned implementation queues remain in their domain repos and Planner domains.
+- For scheduled Content production, treat `content_calendar` as the teal content identity, due-date, and closeout record; treat the linked Content-domain work project, blue parent production task, and subtasks as the execution schedule. Do not create duplicate generic "produce a short/video" tasks when a content calendar entry already exists. For agent-managed production planning, create or attach the work project and parent production task, generate subtasks from the format template, schedule subtasks across days, and move the content scheduled date forward when required production subtasks move later than that date, with explicit approval for any live Planner/Supabase writes.
 - Planner project/task create, edit, status, done/reopen, archive, delete, project-link, subtask, schedule, or recurrence changes are live Supabase writes and require explicit user approval.
 
 ## Transition Relationship

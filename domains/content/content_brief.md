@@ -2,7 +2,7 @@
 id: content_brief
 title: Content Production Brief
 domain: content_production
-last_updated: 2026-05-09
+last_updated: 2026-05-11
 tags: [content, production, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -29,7 +29,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - **Active platforms:** YouTube (25k), Instagram (62k), Facebook (~20k), TikTok (~20k), Patreon
 - **Revenue:** ~$460/mo average (YouTube, Facebook, Ko-fi)
 - **Shorts:** Daily routine active - 6 shorts published this week (pipelines 348, 349, 350, 351, 352, 353)
-- **Content calendar:** Live in Electron app (board, week, month views)
+- **Content calendar:** Live in Electron app (board, week, month views). In the
+  current production model, `content_calendar` is the teal content identity,
+  due-date, and closeout record; the linked Content-domain work project, blue
+  parent production task, and subtasks are the execution schedule.
 - **Ordinary task/work-project layer:** Planner-integrated under
   `work_domains.key = content` / `domain_id = 5`: 5 Content work projects
   track 6 ordinary Content tasks, with 0 unlinked open Content tasks after
@@ -41,7 +44,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Active Priorities
 
 - Sea urchin intro short published May 4 as pipeline 351. Mottled Shore Crab self-correction short published May 6 as pipeline 352. Producer-diversity plant/Caulerpa short published May 7 as pipeline 353. May 8 amphipod surge short remains the next planned short for the May 9 seagrass longform buildup. Scorched Mussels removed from this week's shorts lineup; the standalone sea urchin near-failure/recovery short was eliminated and folded into the May 9 longform.
-- Story beats schema applied and initial sea urchin beats seeded; `intervention` is now an allowed `story_beats.beat_type`, and beat 17 uses it. App Planner support for Story Beats as a source type is still pending.
+- Story beats schema applied and initial sea urchin beats seeded; `intervention` is now an allowed `story_beats.beat_type`, and beat 17 uses it. App Planner now supports Story Beats as a source type for production source maps.
 - Ghost shrimp larvae follow-up moved to May 12 so the May 5-9 calendar can stay focused on the seagrass longform buildup.
 - Longform target 2026-05-09 - seagrass succession sequel; Planner/calendar id 3 now matches project doc and is no longer framed as Grant Field Trip.
 - Historical `content_pipeline` backfill still needed: older records need `format`, `platform_urls`, `source_observation_id`, `notes`, and `parent_pipeline_id` populated where applicable
@@ -51,6 +54,14 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   chronicles, publish closeout, and active project docs.
 
 ## Recent Milestones
+- **2026-05-11:** App Planner content production scheduling now separates teal
+  content due/close records from blue execution tasks. Scheduled content should
+  not get duplicate generic "produce a short/video" tasks when a
+  `content_calendar` entry already exists; agent-managed planning should attach
+  or create the Content work project and parent production task, generate
+  template subtasks, schedule them across days, and move the content scheduled
+  date forward when required production subtasks move later than the content
+  date.
 - **2026-05-09:** Ordinary Content tasks were organized in App
   Planner/Supabase: 5 Content work projects now track Operation Living Atlas
   backfill, public history/retired biomes, story beats/source maps,
@@ -113,8 +124,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - **Hardware:** Biomes 2Ã¢â‚¬â€œ5 hardware rewire (XT30 + JST-XH) is planned but unscheduled. May require temporary tank downtime. Coordinate with Hardware Agent before scheduling filming sessions that depend on biomes 2Ã¢â‚¬â€œ5.
 - **Ecology:** `story_threads` and `open_loops` are the production queue - always query these before selecting the next video topic. Loop 9 (sea urchin question) is advanced by the sea urchin introduction and later survival/feeding evidence; long-term macroalgae impact remains unresolved.
 - **App:** App Planner/Supabase is the shared project/task runtime for
-  ordinary Content work status. App also owns Planner runtime behavior, while
-  Content owns story, production, source-map, and publish-closeout decisions.
+  ordinary Content work status and scheduled content production planning. App
+  owns Planner runtime behavior; Content owns story, production, source-map,
+  and publish-closeout decisions. The teal `content_calendar` record remains
+  content identity/due/close truth, while the linked Content work project and
+  blue task hierarchy carry execution scheduling.
 
 ## Domain Reference
 

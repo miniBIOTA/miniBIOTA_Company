@@ -39,6 +39,13 @@ description: Use during Company closeout or planning when completed work or foll
 - Leave buffer when the day contains production work, website/app implementation, telemetry, live-system work, or decision review. Do not fill every open slot just because Planner can hold it.
 - Read back scheduled tasks after any approved scheduling write and summarize the calendar entries by date, time, task, domain, and task id.
 
+## Scheduled Content Production Planning
+- Treat `content_calendar` as the teal content identity, due-date, and closeout record.
+- Treat the linked Content-domain work project, blue parent production task, and subtasks as the execution schedule.
+- Do not create duplicate generic "produce a short/video" tasks when a content entry already exists.
+- For agent-managed production planning, create or attach the content work project and parent production task, generate subtasks from the format template, and schedule subtasks across days.
+- If a required production subtask moves later than the content scheduled date, propose moving the content scheduled date forward so the content card does not appear due before execution work is done. This is a live Planner/Supabase write and requires explicit approval unless Josue already approved that exact update.
+
 ## Canonical Task Store
 Tasks live in App Planner/Supabase, not Markdown task lists. Markdown may preserve strategy, context, decisions, and operating rules; it must not compete with Planner as task status truth.
 

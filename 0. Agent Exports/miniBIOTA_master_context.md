@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Master Context
 
-- Generated: 2026-05-10 21:31:21 -04:00
+- Generated: 2026-05-11 09:29:32 -04:00
 - Source contract: Company `domains/` reports are included below.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 - Format: portable Markdown with Obsidian wiki-links normalized or removed.
@@ -129,6 +129,12 @@
 
 ## Recent Milestones
 
+- **2026-05-11:** Company absorbed the latest App Planner content production
+  model into Company/Content operating guidance: teal `content_calendar`
+  records are content identity, due-date, and closeout truth; linked
+  Content-domain work projects plus blue parent production tasks and subtasks
+  are execution schedule truth. No live Planner/Supabase records, app behavior,
+  public site behavior, public commitments, or roadmap commitments changed.
 - **2026-05-11:** Company Planner review confirmed all 243 Planner tasks across domains are linked to projects and no tasks point to missing project records. Company activated `Roadmap & Quarterly Objectives` and `Operation Living Atlas Coordination` as the next strategic low-hanging projects with explicit user approval. No tasks, roadmap commitments, public commitments, app behavior, or public site behavior changed.
 - **2026-05-11:** Company cleaned active memory by moving completed Phase 11 evidence logs from `memory/17` through `memory/23` into `archive/superseded/phase-11-evidence/`. `memory/16-brain-retirement-probation.md` remains the active Phase 11 summary; detailed evidence logs are retained for audit/provenance lookup only.
 - **2026-05-10:** Phase 11 closed the remaining Company-level Brain dependency risks. `YouTube_Extraction` is retired historical extraction/backfill tooling after user clarification, `main.py` is fail-closed with the embedded OpenAI key removed, and Planner/Supabase current-status reads are routed through Supabase MCP, Company protected reads for Company Planner coordination, or App-owned protected bridge/tooling. No live imports, Planner/Supabase writes, migrations, App runtime changes, public site behavior changes, Brain file changes, or commitments changed.
@@ -170,6 +176,11 @@
 - **Research:** Scientific claims and ecological feasibility should be grounded in Supabase and Research docs.
 - **Hardware:** Roadmap and business planning should reflect climate control, sensor expansion, enclosure, telemetry, and estuary feasibility.
 - **Content:** Strategy depends on story arc, publishing cadence, proof assets, and public narrative.
+- **Content:** Scheduled production planning should use the App Planner model
+  where `content_calendar` is the teal content identity/due/close record and
+  the linked Content-domain work project, blue parent production task, and
+  subtasks are the execution schedule. Avoid duplicate generic production
+  tasks when a content entry already exists.
 - **Content:** `YouTube_Extraction` is retired historical tooling; no YouTube transcript-to-`content_pipeline` import migration is pending unless the user explicitly reactivates it. Any reactivation would be Content-owned and approval-gated.
 - **Brand:** Mission, vision, public language, and company narrative must remain aligned.
 - **Growth:** Business plan, sponsorships, campaigns, and public commitments depend on Company decisions.
@@ -764,6 +775,13 @@ Brain no longer mirrors Brand docs. Load active Brand detail from the source rep
   ordinary Content work. They do not replace `content_calendar`, Planner source
   maps, story beats, story threads, open loops, `content_pipeline`,
   chronicles, publish closeout, or active video project docs.
+- **Scheduled production model:** In App Planner, `content_calendar` is the teal
+  content identity, due-date, and closeout record. A linked Content-domain work
+  project plus one blue parent production task and subtasks is the execution
+  schedule. Do not create duplicate generic production tasks when a calendar
+  entry already exists; attach the work project and production task, generate
+  subtasks from the format template, and keep the content scheduled date on or
+  after required production work.
 
 ## Active Production
 - **Lake Post-Seal longform (pipeline 338):** Published 2026-04-17. Project doc archived at `M:\miniBIOTA\miniBIOTA_Content\video_projects\archive\2026-04_biome_lake-post-seal.md`.
@@ -800,7 +818,7 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
 
 ## Priorities
 - Sea urchin intro short was published May 4 as pipeline 351, Mottled Shore Crab short May 6 as pipeline 352, and producer-diversity/Caulerpa short May 7 as pipeline 353. Loop 9 is advanced, not resolved; shorts loop 17 tracks whether the variegated sea urchin survives and keeps eating Graceful redweed; shorts loop 18 tracks whether Green Feather Alga spreads too much and needs removal.
-- Story beats schema has been applied and initial sea urchin beats seeded; `intervention` is now an allowed `story_beats.beat_type`, and beat 17 uses it. App Planner support for Story Beats as a source type is still pending.
+- Story beats schema has been applied and initial sea urchin beats seeded; `intervention` is now an allowed `story_beats.beat_type`, and beat 17 uses it. App Planner now supports Story Beats as a source type for Planner production source maps.
 - Ghost shrimp larvae follow-up moved to May 12 so the May 5-9 calendar can stay focused on the seagrass longform buildup.
 - Longform seagrass succession continuation is targeted for 2026-05-09 and still needs title/footage/script decisions.
 - Historical `content_pipeline` backfill still needs `format`, `platform_urls`, `source_observation_id`, `notes`, and `parent_pipeline_id` populated where applicable.
@@ -856,7 +874,10 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
 - **Active platforms:** YouTube (25k), Instagram (62k), Facebook (~20k), TikTok (~20k), Patreon
 - **Revenue:** ~$460/mo average (YouTube, Facebook, Ko-fi)
 - **Shorts:** Daily routine active - 6 shorts published this week (pipelines 348, 349, 350, 351, 352, 353)
-- **Content calendar:** Live in Electron app (board, week, month views)
+- **Content calendar:** Live in Electron app (board, week, month views). In the
+  current production model, `content_calendar` is the teal content identity,
+  due-date, and closeout record; the linked Content-domain work project, blue
+  parent production task, and subtasks are the execution schedule.
 - **Ordinary task/work-project layer:** Planner-integrated under
   `work_domains.key = content` / `domain_id = 5`: 5 Content work projects
   track 6 ordinary Content tasks, with 0 unlinked open Content tasks after
@@ -868,7 +889,7 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
 ## Active Priorities
 
 - Sea urchin intro short published May 4 as pipeline 351. Mottled Shore Crab self-correction short published May 6 as pipeline 352. Producer-diversity plant/Caulerpa short published May 7 as pipeline 353. May 8 amphipod surge short remains the next planned short for the May 9 seagrass longform buildup. Scorched Mussels removed from this week's shorts lineup; the standalone sea urchin near-failure/recovery short was eliminated and folded into the May 9 longform.
-- Story beats schema applied and initial sea urchin beats seeded; `intervention` is now an allowed `story_beats.beat_type`, and beat 17 uses it. App Planner support for Story Beats as a source type is still pending.
+- Story beats schema applied and initial sea urchin beats seeded; `intervention` is now an allowed `story_beats.beat_type`, and beat 17 uses it. App Planner now supports Story Beats as a source type for production source maps.
 - Ghost shrimp larvae follow-up moved to May 12 so the May 5-9 calendar can stay focused on the seagrass longform buildup.
 - Longform target 2026-05-09 - seagrass succession sequel; Planner/calendar id 3 now matches project doc and is no longer framed as Grant Field Trip.
 - Historical `content_pipeline` backfill still needed: older records need `format`, `platform_urls`, `source_observation_id`, `notes`, and `parent_pipeline_id` populated where applicable
@@ -878,6 +899,14 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
   chronicles, publish closeout, and active project docs.
 
 ## Recent Milestones
+- **2026-05-11:** App Planner content production scheduling now separates teal
+  content due/close records from blue execution tasks. Scheduled content should
+  not get duplicate generic "produce a short/video" tasks when a
+  `content_calendar` entry already exists; agent-managed planning should attach
+  or create the Content work project and parent production task, generate
+  template subtasks, schedule them across days, and move the content scheduled
+  date forward when required production subtasks move later than the content
+  date.
 - **2026-05-09:** Ordinary Content tasks were organized in App
   Planner/Supabase: 5 Content work projects now track Operation Living Atlas
   backfill, public history/retired biomes, story beats/source maps,
@@ -940,8 +969,11 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
 - **Hardware:** Biomes 2ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“5 hardware rewire (XT30 + JST-XH) is planned but unscheduled. May require temporary tank downtime. Coordinate with Hardware Agent before scheduling filming sessions that depend on biomes 2ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“5.
 - **Ecology:** `story_threads` and `open_loops` are the production queue - always query these before selecting the next video topic. Loop 9 (sea urchin question) is advanced by the sea urchin introduction and later survival/feeding evidence; long-term macroalgae impact remains unresolved.
 - **App:** App Planner/Supabase is the shared project/task runtime for
-  ordinary Content work status. App also owns Planner runtime behavior, while
-  Content owns story, production, source-map, and publish-closeout decisions.
+  ordinary Content work status and scheduled content production planning. App
+  owns Planner runtime behavior; Content owns story, production, source-map,
+  and publish-closeout decisions. The teal `content_calendar` record remains
+  content identity/due/close truth, while the linked Content work project and
+  blue task hierarchy carry execution scheduling.
 
 ## Domain Reference
 
@@ -1793,9 +1825,15 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   actions and New Task preselection for the current project/domain.
 - Planner content projects can be assigned to active general work projects
   through `content_calendar.work_project_id`, with linked project context shown
-  in Planner board/calendar surfaces.
+  in Planner board/calendar surfaces. Scheduled content production now uses the
+  teal `content_calendar` card as the content due/close marker and a blue
+  parent production task with subtasks as the execution schedule.
 - Planner week/month calendar views show general work project date spans from
-  `work_projects.start_date` through `target_date`.
+  `work_projects.start_date` through `target_date`. Scheduled production
+  subtasks are grouped under their parent production task and show day-specific
+  work, so multi-day content production remains connected to the same project.
+- Planner week/month calendar views start on Sunday; Week renders Sunday
+  through Saturday and Month uses a Sunday-first grid.
 - Planner Today includes initial weekly planning prompts that prefill recurring
   task candidates for longform selection, short-opportunity review, and Sunday
   close.
@@ -1822,8 +1860,8 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Packaged build behavior with Sharp/native dependencies should be verified before relying on distributable builds.
 - Monitoring setpoint/control writes affect the live biosphere and require explicit confirmation before changes.
 - Supabase migrations and schema assumptions must be checked before app write paths are changed.
-- New Planner task hierarchy paths need interactive smoke testing before they
-  are treated as fully proven in daily use.
+- New Planner task hierarchy and content production scheduling paths need
+  interactive smoke testing before they are treated as fully proven in daily use.
 - Planner Programs/Operations schema and first Program records are live, but
   Program UI create/edit/link behavior still needs interactive smoke
   verification before daily reliance.
@@ -1890,6 +1928,10 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Continue using the app for financials, Planner/content production, CRM, media tagging, and monitoring workflows.
 
 ## Recent Milestones
+
+- **2026-05-11:** Planner content production scheduling was updated so scheduled content does not need duplicate generic tasks. The intended model is: `content_calendar` remains the teal content identity/due-date card, a linked content-domain `work_project` can hold execution context, and one blue parent production task with subtasks represents the actual production work. The Production tab can create/attach that task structure from the format template; legacy checklist state remains a fallback for unconverted entries. Today, Tasks, Week, and Month now group scheduled child tasks under their parent production task and show day-specific child work. Parent production tasks cannot be marked Done while open subtasks remain, and moving required production work later than the linked content date pushes the content scheduled date forward. Live records touched during the approved setup: `content_calendar.id = 13`, `work_projects.id = 62`, `tasks.id = 247`, and subtasks `tasks.id = 248-261`.
+
+- **2026-05-11:** Planner Calendar week/month start-day behavior was aligned to Sunday. Week view now renders Sunday through Saturday, and Month view uses a Sunday-first header and Sunday-anchored grid. This was a local renderer display update only; no Planner records, schema, migrations, Storage, telemetry, MQTT, CRM, Financials, Site Admin, Monitoring, or live app actions changed, and Electron visual smoke verification was not run.
 
 - **2026-05-09:** Planner Programs UI was visually tightened so Programs read as cross-domain operation containers, linked projects read as domain-owned lanes, and task previews remain subordinate action rows. Planner source species filtering now uses a compact search-driven selector instead of rendering the full species chip wall by default. This was a local renderer/CSS behavior update only; no Planner records, schema, migrations, Storage, telemetry, MQTT, CRM, Financials, Site Admin, Monitoring, or live app actions changed, and Electron visual smoke verification remains pending.
 
@@ -2243,7 +2285,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 
 - **Website:** Public website should remain read-only observability. Operator/admin workflows belong in the desktop app.
 - **Website:** Field Observer sessions are intended to update `species.date_last_observed` only after a reviewed session save so the public website can show "seen today" immediately without auto-changing curated population fields.
-- **Content:** Planner is now the app production surface for story sources and scheduled content. Calendar entries use join-table links to story beats, story threads, open loops, and direct observations; thread and loop legacy array fields remain during transition. Migration 007 adds the live general project-management layer, content projects can now be assigned to general work projects through `content_calendar.work_project_id`, tasks can be organized under parent tasks through `tasks.parent_task_id`, and work project date spans appear in Planner calendar views.
+- **Content:** Planner is now the app production surface for story sources and scheduled content. Calendar entries use join-table links to story beats, story threads, open loops, and direct observations; thread and loop legacy array fields remain during transition. Migration 007 adds the live general project-management layer, content projects can now be assigned to general work projects through `content_calendar.work_project_id`, tasks can be organized under parent tasks through `tasks.parent_task_id`, and work project date spans appear in Planner calendar views. For scheduled content production, the Company agent should treat the teal `content_calendar` entry as the content due/close record and the blue parent production task plus subtasks as the execution schedule. When a required production subtask moves later than the content date, the content date should move later too.
 - **All domains:** App Planner/Supabase is the shared project/task runtime for
   domain-agent rollout. App's own work lives under the App domain, while each
   domain agent still owns its local wiring verification before being called

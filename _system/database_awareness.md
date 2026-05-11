@@ -15,7 +15,7 @@ Supabase MCP/read-only awareness is the preferred Company database-awareness lay
 
 1. Use Supabase MCP or approved read-only paths for live schema/table/relationship/log/advisor awareness.
 2. Use Company `_system/agent_repo_registry.md` to map tables and records back to domain owners, risk levels, and approval boundaries.
-3. Use MCP/read-only awareness and Company/domain-owned helpers for typed reads or explicitly approved helper writes. For Company Planner records, `_system/company_supabase.py` is the active Company helper.
+3. Use MCP/read-only awareness and Company/domain-owned helpers for typed reads, explicitly approved helper writes, or ordinary own-domain Planner writes after standing domain project-manager delegation is granted. For Company Planner records, `_system/company_supabase.py` is the active Company helper.
 4. Route domain-specific writes to the owning domain before acting.
 
 ## Planner Current-Status Reads
@@ -33,7 +33,7 @@ Do not use Brain helper code or unsafe direct secret-key REST as the normal curr
 
 Explicit user approval is required for:
 - Supabase writes.
-- Planner project/task writes.
+- Planner project/task writes outside current-session approval or explicitly granted standing domain project-manager delegation.
 - Raw SQL.
 - Migrations and schema changes.
 - Destructive writes or deletes.

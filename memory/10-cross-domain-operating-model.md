@@ -34,6 +34,18 @@ A Task is a concrete unit of work. Task status lives in App Planner/Supabase whe
 
 Parent tasks may be useful as deliverable containers, but the daily Planner calendar should be driven by scheduled child tasks when those children exist. In Week/Month views, parent containers with scheduled children should appear only on dates with child work and should emphasize the child task title first, with the parent title as context.
 
+### Domain Agent Project Manager Pattern
+
+Each active domain agent may operate as the project manager for work inside its own Planner domain once Josue explicitly grants standing project-management delegation for that domain or for all active domains.
+
+Domain project-manager authority means the agent may propose, create, update, schedule, complete, reopen, archive, and reorganize ordinary `work_projects` and `tasks` that belong to its own `work_domains` record, using the approved shared Planner/Supabase write path. The agent does not need its own Supabase key. The technical credential should remain in an App-owned, MCP-owned, local-helper, OAuth, or ignored-environment path; the record's `domain_id`, owner/lead fields, project links, and task metadata identify the work owner.
+
+This delegation does not authorize cross-domain writes, Programs/Operations writes, schema changes, migrations, service-role/admin actions, destructive writes, public website behavior changes, app runtime behavior changes, firmware/live-control changes, financial record writes, content publish closeout writes, CRM/sponsor commitment writes, or any public, sponsor, partner, legal, financial, launch, campaign, pricing, or roadmap commitment. Those remain approval-gated by their normal owner and source of truth.
+
+Until standing delegation is explicitly granted, existing repo rules remain in force: Planner writes are live Supabase writes and require explicit approval unless the user requested the exact write in the current session.
+
+When delegation is granted, each domain agent should still state intended Planner changes before writing, read back changed records after writes, keep changes scoped to its own domain, and report changed Planner records at closeout. If a task or project belongs to another domain, the agent should hand it off instead of editing it directly.
+
 ### Dependency
 
 A dependency is an input or decision one owner needs before another owner can safely continue. Dependencies should name the upstream owner, downstream owner, needed input, and durable handoff surface.
@@ -103,8 +115,8 @@ Explicit user approval is required before Company treats any of these as approve
 - Sponsor obligations.
 - Launch targets.
 - Roadmap commitments.
-- Supabase writes.
-- Planner writes.
+- Supabase writes outside an approved scoped helper or standing delegation.
+- Planner writes outside explicit current-session approval or standing domain project-manager delegation.
 - Schema changes or migrations.
 - App behavior changes.
 - Website behavior changes.

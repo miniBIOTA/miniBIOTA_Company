@@ -12,7 +12,7 @@ This registry owns repo/domain responsibility, active routing, reporting-path tr
 
 It is not live schema truth. Use Supabase MCP or approved read paths for current tables, columns, relationships, logs, advisors, and records. Do not expand this file into a complete table-by-table schema map. If recurring database audits become necessary, generate a separate schema report from live Supabase/MCP plus this registry and treat that report as an audit snapshot.
 
-This registry does not authorize live writes. Raw SQL, migrations, destructive writes, deletes, schema changes, service-role actions, Planner writes, and live-control paths require explicit user approval.
+This registry does not authorize live writes by itself. Raw SQL, migrations, destructive writes, deletes, schema changes, service-role actions, live-control paths, and Planner writes outside current-session approval or explicitly granted standing domain project-manager delegation require explicit user approval.
 
 ## Active Agent Repos
 
@@ -43,6 +43,10 @@ This registry does not authorize live writes. Raw SQL, migrations, destructive w
 | YouTube Extraction | `M:\miniBIOTA\YouTube_Extraction` | None active; Content only if reactivated | Retired historical extraction/backfill tooling; `main.py` is fail-closed and the embedded OpenAI key was removed | Historical transcript/extraction source review only | Running extraction/import, hardcoded secrets, Brain helper imports, live `content_pipeline` writes, Supabase writes, App/runtime changes, public behavior changes |
 
 ## Supabase Responsibility Map
+
+Domain agents do not need separate Supabase keys for Planner project-management work. Use one approved shared technical write path, such as App-owned runtime/tooling, MCP/OAuth, ignored local environment, or scoped domain helpers that do not commit secrets. Record ownership comes from `work_domains`, `domain_id`, project/task owner or lead fields, and domain source-of-truth rules.
+
+When Josue grants standing project-management delegation, a domain agent may manage ordinary `work_projects` and `tasks` inside its own Planner domain through the approved shared write path. That delegation does not authorize cross-domain record writes, Programs/Operations writes, schema changes, migrations, raw SQL, service-role/admin actions, destructive writes, domain-owned structured records outside ordinary Planner work, app/runtime behavior changes, website behavior changes, firmware/live-control changes, or public/sponsor/legal/financial/launch/pricing/campaign/roadmap commitments. Until standing delegation is granted, Planner writes remain approval-gated live Supabase writes.
 
 | Repo | Owned tables, if known | Read-only tables, if known | Controlled-write tables, if known | Migration/admin permissions |
 |---|---|---|---|---|
@@ -77,7 +81,7 @@ If a repo lacks one of these commands, treat that as a coordination bug and upda
 - Use Supabase/App Planner for current structured project/task/record state when it matters.
 - Treat `YouTube_Extraction` as retired historical tooling. If the user later reactivates YouTube transcript-to-`content_pipeline` import work, use a Content-owned helper/workflow implementation; Company may coordinate ownership and sequencing, but does not own Content pipeline writes.
 - Use Company exports under `0. Agent Exports/` for broad Company cold starts and cross-domain operating context; Brain exports are historical/archive artifacts.
-- Do not write live records without explicit approval.
+- Do not write live records without explicit approval, except ordinary own-domain Planner project/task writes after Josue explicitly grants standing domain project-manager delegation.
 - Domain agents now use Company reporting paths for normal reporting after Phase 10 activation. Brain brief paths are historical/archive lookup only.
 
 ## Phase Status

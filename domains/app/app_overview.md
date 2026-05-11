@@ -1,4 +1,4 @@
-﻿---
+---
 id: app_operations
 title: 11. miniBIOTA_App
 domain: app_operations
@@ -17,12 +17,12 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Scope
 - Owns the internal Electron desktop app used for miniBIOTA operations.
-- Provides operator workflows for Planner, financials, CRM, roadmap, team reference, Site Admin, media management, and monitoring.
+- Provides operator workflows for Planner, financials, CRM, roadmap, Prompt Library, Site Admin, media management, and monitoring.
 - Remains an internal secret-key-capable tool, not a public product or public website surface.
 
 ## Current State
 - `miniBIOTA_App` is the active desktop operator surface for miniBIOTA.
-- Active tabs are Planner, Financials, CRM, Roadmap, Team, Site Admin, and Monitoring.
+- Active tabs are Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, and Monitoring.
 - Planner project-manager schema foundation is live after migration 007, and
   former top-level Weekly Checklist and Tasks behavior has been consolidated
   into Planner replacement surfaces.
@@ -39,6 +39,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Monitoring reads direct MQTT telemetry from the local biome network when connected to `mB2.4`.
 - Site Admin supports species, biosphere, biome, chronicle, announcement, staging, and media-library workflows.
 - Media Library/tagging, Species-style media search/filtering, and backend WebP image upload pipeline are implemented in the app.
+- Prompt Library has replaced the old static Team reference surface. Migration 012 was applied successfully by the user on 2026-05-11, making `prompt_library` live for reusable prompt records and future workflow-template use.
 - The app source repo now uses repo-local memory and skills as active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
 
@@ -46,6 +47,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - The app uses Supabase publishable keys in renderer/browser-facing config and secret keys only in Electron main-process services or local admin tooling. Internal renderer REST helpers route through an Electron IPC bridge when secret-key access is needed, without exposing the secret key to browser code.
 - Public website surfaces should remain read-only observability; operator/admin workflows belong in the desktop app.
 - Planner is the main production workflow surface for story sources, project planning, scheduled content, and ordinary tasks.
+- Prompt Library stores reusable prompts in `prompt_library`; prompt create, edit, favorite, archive, and restore actions are live Supabase writes.
 - Planner is the intended unified project-management surface. The live schema
   now includes `work_domains`, `work_projects`, task project-management fields,
   an optional `content_calendar.work_project_id` bridge, and the
@@ -91,6 +93,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Keep secret-key access internal-only and avoid public exposure of app behavior.
 - Verify packaged build behavior for Sharp/WebP image uploads when packaging resumes.
 - Keep App memory and skill references current as architecture, schema assumptions, and safety rules change.
+- Smoke test Prompt Library create/edit/copy/archive flows after launching the app, now that migration 012 is applied.
 - Use App Planner/Supabase for live App task status; keep Markdown focused on
   context, operating rules, architecture notes, and playbooks.
 
@@ -106,6 +109,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Planner Programs/Operations schema and live Program records are live, but
   Program UI create/edit/link behavior still needs interactive smoke
   verification before daily reliance.
+- Prompt Library schema is live after migration 012, but create/edit/copy/archive flows still need interactive app smoke verification before daily reliance.
 
 ## Files In This Folder
 - `app_brief.md` - active Company manager-facing report brief for App.

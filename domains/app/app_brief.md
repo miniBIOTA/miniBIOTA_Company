@@ -1,4 +1,4 @@
-﻿---
+---
 id: app_brief
 title: App Operations Brief
 domain: app_operations
@@ -21,7 +21,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 - `miniBIOTA_App` is the internal Electron desktop app for miniBIOTA operations.
 - The app is an operator surface, not a public product. It uses Supabase publishable keys in renderer/browser-facing config and secret keys only in Electron main-process services or local admin tooling. Internal renderer REST helpers route through an Electron IPC bridge when secret-key access is needed, without exposing the secret key to browser code.
-- Active tabs: Planner, Financials, CRM, Roadmap, Team, Site Admin, and Monitoring. Former top-level Weekly Checklist and Tasks behavior has been consolidated into Planner.
+- Active tabs: Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, and Monitoring. Former top-level Weekly Checklist and Tasks behavior has been consolidated into Planner.
 - Monitoring tab is live for direct MQTT telemetry from the local biome network when on `mB2.4`.
 - Site Admin includes species, biosphere, biome, chronicle, announcement, and staging workflows.
 - Media Library/tagging and backend WebP image upload pipeline are implemented in the app.
@@ -41,6 +41,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   2026-05-09. The App Agent has verified and tightened local Planner wiring
   using the Hardware pilot pattern; no live Planner records were changed during
   that local wiring verification.
+- Prompt Library has replaced the old static Team reference surface. Migration 012 was applied successfully by the user on 2026-05-11, making the `prompt_library` table live for reusable prompt records. Prompt create, edit, favorite, archive, and restore actions are live Supabase writes through the internal app REST path.
 - `miniBIOTA_App` now has repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
 
@@ -57,6 +58,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Continue using the app for financials, Planner/content production, CRM, media tagging, and monitoring workflows.
 
 ## Recent Milestones
+
+- **2026-05-11:** The old static Team reference tab was replaced by a Supabase-backed Prompt Library. The app now exposes Prompt Library in navigation with search, category filters, copy, create/edit modal, favorite, archive, and restore behavior over the new prompt_library table. Migration 012 was applied successfully by the user on 2026-05-11. The old static Team data file was retired from the renderer manifest. Prompt records are now live operational records; no prompt records were seeded or written during the App implementation session.
 
 - **2026-05-11:** Planner Calendar Week/Month was refined to stay schedule-first after live Company-agent scheduling exposed calendar clutter. Generic `work_projects` now render as single milestone cards on `target_date`, or `start_date` only when no target exists, instead of filling every day between `start_date` and `target_date`. Top-level parent tasks with children no longer render from their own `scheduled_date`/`span_end_date`; they appear only on dates where `taskSubtasksForCalendarDate(parent, dateStr)` returns child work. When such a parent card appears, the scheduled child task title is the primary visible title and the parent/container title appears as context. Company-agent scheduling guidance: use Programs/work_projects for structure and deadlines, but schedule concrete subtasks for daily calendar work. This was a renderer/docs update only; no live Planner records, schema, migrations, Storage, telemetry, MQTT, CRM, Financials, Site Admin, Monitoring, or app data writes changed.
 - **2026-05-11:** Planner content production scheduling was updated so scheduled content does not need duplicate generic tasks. The intended model is: `content_calendar` remains the blue content identity/due-date card, a linked content-domain `work_project` can hold execution context, and one teal parent production task with subtasks represents the actual production work. The Production tab can create/attach that task structure from the format template; legacy checklist state remains a fallback for unconverted entries. Today, Tasks, Week, and Month now group scheduled child tasks under their parent production task and show day-specific child work. Parent production tasks cannot be marked Done while open subtasks remain, and moving required production work later than the linked content date pushes the content scheduled date forward. Live records touched during the approved setup: `content_calendar.id = 13`, `work_projects.id = 62`, `tasks.id = 247`, and subtasks `tasks.id = 248-261`.
@@ -411,6 +414,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Planner Programs/Operations schema and live Program records exist after
   migration 010, but Program UI create/edit/link behavior still needs
   interactive smoke verification before daily reliance.
+- Prompt Library schema is live after migration 012, but create/edit/copy/archive flows still need interactive app smoke verification before daily reliance.
 
 ## Cross-Domain Notes
 
@@ -422,6 +426,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   every day in their date range, and parent task containers with scheduled
   children render the child task as the primary title only on dates with child
   work.
+- **All domains:** Prompt Library now stores reusable prompt records in `prompt_library`. These prompts can mature into workflow templates, but create/edit/favorite/archive/restore actions are live app data writes and should be treated as operational records.
 - **All domains:** App Planner/Supabase is the shared project/task runtime for
   domain-agent rollout. App's own work lives under the App domain, while each
   domain agent still owns its local wiring verification before being called

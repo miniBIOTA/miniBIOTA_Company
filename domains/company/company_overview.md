@@ -25,9 +25,9 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - The near-term operating agenda is still being formalized; the business plan is not yet assembled.
 - Strategic roadmap detail is thin beyond early 2026. Q2 goals are not yet defined.
 - Company project management is now organized in App Planner/Supabase under
-  `work_domains.key = company_ops` / `domain_id = 1`: 4 Company work projects
-  track 7 Company tasks, with 0 unlinked open Company tasks after readback on
-  2026-05-09.
+  `work_domains.key = company_ops` / `domain_id = 1`: 5 Company work projects
+  track 21 Company tasks, with active Company coordination now including the
+  `Aquatic Club Talk Program Coordination` project for the 2026-06-13 talk.
 - `miniBIOTA_Company` now uses repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Company `docs/` mirror; use the source repo's memory/skills structure for detailed Company Agent context.
 - Company is the active owner for cross-domain operating coordination, active domain reports, and active Company exports. Brain is archive/recovery context and retirement provenance during Phase 11 probation.

@@ -60,10 +60,18 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   Financials. No app runtime behavior, website behavior, schema, public
   promises, sponsor commitments, financial commitments, legal decisions, or
   roadmap commitments changed.
+- **2026-05-11:** Company/App clarified the Planner calendar semantics exposed
+  by the Aquatic Club setup: Programs are umbrellas, projects are domain-owned
+  containers/deadline records, and daily Week/Month work should come from
+  scheduled tasks/subtasks. App fixed Week/Month rendering so generic project
+  spans do not flood daily cells and parent task containers render child-first
+  only on dates with scheduled child work. No database records, schema,
+  migrations, website behavior, public commitments, sponsor commitments,
+  financial commitments, or roadmap commitments changed in the rendering pass.
 - **2026-05-11:** Company absorbed the latest App Planner content production
-  model into Company/Content operating guidance: teal `content_calendar`
+  model into Company/Content operating guidance: blue `content_calendar`
   records are content identity, due-date, and closeout truth; linked
-  Content-domain work projects plus blue parent production tasks and subtasks
+  Content-domain work projects plus teal parent production tasks and subtasks
   are execution schedule truth. No live Planner/Supabase records, app behavior,
   public site behavior, public commitments, or roadmap commitments changed.
 - **2026-05-11:** Company Planner review confirmed all 243 Planner tasks across domains are linked to projects and no tasks point to missing project records. Company activated `Roadmap & Quarterly Objectives` and `Operation Living Atlas Coordination` as the next strategic low-hanging projects with explicit user approval. No tasks, roadmap commitments, public commitments, app behavior, or public site behavior changed.
@@ -76,7 +84,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - **2026-05-09:** Operation Living Atlas was reviewed as the first Phase 11 cross-domain Program/Operation update. Company refreshed the dependency map, confirmed Brain is archive/provenance context only for this workflow, and left structured writes, App workflow changes, and public site behavior untouched.
 - **2026-05-09:** Company local docs, memory, and skills were updated so Company explicitly owns active cross-domain operating coordination: planning strategy, Programs/Operations governance, roadmap cadence, dependency mapping, cross-domain operating memory, and review rhythm. Brain is archive/recovery context and retirement provenance during probation; App remains owner of Planner runtime/schema/UI. No live Planner/Supabase records were changed.
 - **2026-05-09:** Company project management was organized in App
-  Planner/Supabase: 4 Company work projects now track business planning,
+  Planner/Supabase. At that point, four Company work projects tracked business planning,
   roadmap/quarterly objectives, AI and knowledge infrastructure, and Operation
   Living Atlas coordination. Existing Company tasks were linked, one missing
   roadmap-review task was added, and readback confirmed 0 unlinked open Company
@@ -119,8 +127,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - **Content:** Aquatic Club talk support owns the TED-style talk arc, script,
   deck, proof-media selection, rehearsal ladder, and Q&A preparation.
 - **Content:** Scheduled production planning should use the App Planner model
-  where `content_calendar` is the teal content identity/due/close record and
-  the linked Content-domain work project, blue parent production task, and
+  where `content_calendar` is the blue content identity/due/close record and
+  the linked Content-domain work project, teal parent production task, and
   subtasks are the execution schedule. Avoid duplicate generic production
   tasks when a content entry already exists.
 - **Content:** `YouTube_Extraction` is retired historical tooling; no YouTube transcript-to-`content_pipeline` import migration is pending unless the user explicitly reactivates it. Any reactivation would be Content-owned and approval-gated.
@@ -146,6 +154,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   Company work status. Company owns planning strategy, program governance,
   operating cadence, and cross-domain coordination; App owns Planner runtime
   behavior, schema, UI, and Supabase-backed workflow implementation.
+- **App:** Planner Week/Month should remain a readable daily action schedule:
+  generic project spans should not flood daily cells, and parent task
+  containers with scheduled children should render child-first only on dates
+  with child work.
 - **Brain:** Brain is archive/recovery context and retirement provenance during Phase 11 probation. Active operating coordination, reporting, exports, and routing live in Company and the relevant domain repos.
 - **Raw Footage:** Archival media supports company proof, documentary history, and public communication.
 

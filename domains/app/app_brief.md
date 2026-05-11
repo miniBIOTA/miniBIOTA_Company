@@ -1,4 +1,4 @@
----
+﻿---
 id: app_brief
 title: App Operations Brief
 domain: app_operations
@@ -32,9 +32,9 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   wiring now uses live domains, project assignment, workflow status, multi-day
   task spans, Today and Tasks task surfaces, an initial general Projects view
   with linked task/content detail, content calendar assignment into the general
-  work-project layer, task hierarchy UI through `parent_task_id`, general
-  project date spans in week/month calendar views, and initial weekly planning
-  prompts in Planner Today. Migration 010 was applied successfully by the user on 2026-05-09, making the cross-domain Programs/Operations layer live with `work_programs` and `work_program_projects`. First live Program records now exist for `Operation Living Atlas` (`work_programs.id = 1`) and `Operation Living Web` (`work_programs.id = 2`), with domain-owned projects linked through `work_program_projects`.
+  work-project layer, task hierarchy UI through `parent_task_id`, project
+  milestone/context rendering in week/month calendar views, and initial weekly
+  planning prompts in Planner Today. Migration 010 was applied successfully by the user on 2026-05-09, making the cross-domain Programs/Operations layer live with `work_programs` and `work_program_projects`. Live Program records now include `Operation Living Atlas` (`work_programs.id = 1`), `Operation Living Web` (`work_programs.id = 2`), and `Aquatic Club Talk Readiness` (`work_programs.id = 3`), with domain-owned projects linked through `work_program_projects`.
 - App project management is now Planner-integrated under
   `work_domains.key = app` / `domain_id = 9`: 7 App work projects track 16
   linked App tasks, with 0 unlinked open App tasks after readback on
@@ -58,7 +58,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
-- **2026-05-11:** Planner content production scheduling was updated so scheduled content does not need duplicate generic tasks. The intended model is: `content_calendar` remains the teal content identity/due-date card, a linked content-domain `work_project` can hold execution context, and one blue parent production task with subtasks represents the actual production work. The Production tab can create/attach that task structure from the format template; legacy checklist state remains a fallback for unconverted entries. Today, Tasks, Week, and Month now group scheduled child tasks under their parent production task and show day-specific child work. Parent production tasks cannot be marked Done while open subtasks remain, and moving required production work later than the linked content date pushes the content scheduled date forward. Live records touched during the approved setup: `content_calendar.id = 13`, `work_projects.id = 62`, `tasks.id = 247`, and subtasks `tasks.id = 248-261`.
+- **2026-05-11:** Planner Calendar Week/Month was refined to stay schedule-first after live Company-agent scheduling exposed calendar clutter. Generic `work_projects` now render as single milestone cards on `target_date`, or `start_date` only when no target exists, instead of filling every day between `start_date` and `target_date`. Top-level parent tasks with children no longer render from their own `scheduled_date`/`span_end_date`; they appear only on dates where `taskSubtasksForCalendarDate(parent, dateStr)` returns child work. When such a parent card appears, the scheduled child task title is the primary visible title and the parent/container title appears as context. Company-agent scheduling guidance: use Programs/work_projects for structure and deadlines, but schedule concrete subtasks for daily calendar work. This was a renderer/docs update only; no live Planner records, schema, migrations, Storage, telemetry, MQTT, CRM, Financials, Site Admin, Monitoring, or app data writes changed.
+- **2026-05-11:** Planner content production scheduling was updated so scheduled content does not need duplicate generic tasks. The intended model is: `content_calendar` remains the blue content identity/due-date card, a linked content-domain `work_project` can hold execution context, and one teal parent production task with subtasks represents the actual production work. The Production tab can create/attach that task structure from the format template; legacy checklist state remains a fallback for unconverted entries. Today, Tasks, Week, and Month now group scheduled child tasks under their parent production task and show day-specific child work. Parent production tasks cannot be marked Done while open subtasks remain, and moving required production work later than the linked content date pushes the content scheduled date forward. Live records touched during the approved setup: `content_calendar.id = 13`, `work_projects.id = 62`, `tasks.id = 247`, and subtasks `tasks.id = 248-261`.
 
 - **2026-05-11:** Planner Calendar week/month start-day behavior was aligned to Sunday. Week view now renders Sunday through Saturday, and Month view uses a Sunday-first header and Sunday-anchored grid. This was a local renderer display update only; no Planner records, schema, migrations, Storage, telemetry, MQTT, CRM, Financials, Site Admin, Monitoring, or live app actions changed, and Electron visual smoke verification was not run.
 
@@ -404,9 +405,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Monitoring setpoint/control writes affect the live biosphere and require explicit confirmation before changes.
 - App source repo memory and skills must stay current as app architecture, schema assumptions, safety rules, and workflow playbooks change.
 - Field Observer authenticated catalog reads are enabled through migration 009. Signed release APK generation and any live sighting saves remain unverified and require explicit approval before use against production data.
-- New Planner task hierarchy paths need interactive smoke testing before they
-  are treated as fully proven in daily use.
-- Planner Programs/Operations schema and first live Program records exist after
+- New Planner task hierarchy paths have now been visually smoke tested for the
+  Aquatic Club Week-view case, but broader daily-use coverage across Today,
+  Month, Timeline, and content production remains worth watching.
+- Planner Programs/Operations schema and live Program records exist after
   migration 010, but Program UI create/edit/link behavior still needs
   interactive smoke verification before daily reliance.
 
@@ -414,7 +416,12 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 - **Website:** Public website should remain read-only observability. Operator/admin workflows belong in the desktop app.
 - **Website:** Field Observer sessions are intended to update `species.date_last_observed` only after a reviewed session save so the public website can show "seen today" immediately without auto-changing curated population fields.
-- **Content:** Planner is now the app production surface for story sources and scheduled content. Calendar entries use join-table links to story beats, story threads, open loops, and direct observations; thread and loop legacy array fields remain during transition. Migration 007 adds the live general project-management layer, content projects can now be assigned to general work projects through `content_calendar.work_project_id`, tasks can be organized under parent tasks through `tasks.parent_task_id`, and work project date spans appear in Planner calendar views. For scheduled content production, the Company agent should treat the teal `content_calendar` entry as the content due/close record and the blue parent production task plus subtasks as the execution schedule. When a required production subtask moves later than the content date, the content date should move later too.
+- **Content:** Planner is now the app production surface for story sources and scheduled content. Calendar entries use join-table links to story beats, story threads, open loops, and direct observations; thread and loop legacy array fields remain during transition. Migration 007 adds the live general project-management layer, content projects can now be assigned to general work projects through `content_calendar.work_project_id`, and tasks can be organized under parent tasks through `tasks.parent_task_id`. For scheduled content production, the Company agent should treat the blue `content_calendar` entry as the content due/close record and the teal parent production task plus subtasks as the execution schedule. When a required production subtask moves later than the content date, the content date should move later too.
+- **Planner:** Week/Month should read as daily action schedules. Generic
+  `work_projects` provide milestone/context visibility instead of flooding
+  every day in their date range, and parent task containers with scheduled
+  children render the child task as the primary title only on dates with child
+  work.
 - **All domains:** App Planner/Supabase is the shared project/task runtime for
   domain-agent rollout. App's own work lives under the App domain, while each
   domain agent still owns its local wiring verification before being called

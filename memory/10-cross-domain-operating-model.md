@@ -1,6 +1,6 @@
 ﻿---
 title: Cross-Domain Operating Model
-last_updated: 2026-05-09
+last_updated: 2026-05-11
 ---
 # Cross-Domain Operating Model
 
@@ -26,9 +26,13 @@ A Project is a domain-owned execution unit. It may participate in one or more Pr
 
 A project owner is the domain or agent accountable for execution. A project lead is the person or agent coordinating day-to-day movement. In solo sessions these may be the same, but docs should keep the distinction visible when cross-domain work depends on handoffs.
 
+Project dates can carry start, deadline, or milestone context, but they should not be used merely to force daily calendar visibility. For cross-domain prep programs, keep the project as the domain-owned container and use scheduled tasks or subtasks for actual day-by-day work.
+
 ### Task
 
 A Task is a concrete unit of work. Task status lives in App Planner/Supabase when structured tracking matters. Markdown can explain context, but should not compete with task status.
+
+Parent tasks may be useful as deliverable containers, but the daily Planner calendar should be driven by scheduled child tasks when those children exist. In Week/Month views, parent containers with scheduled children should appear only on dates with child work and should emphasize the child task title first, with the parent title as context.
 
 ### Dependency
 
@@ -55,8 +59,9 @@ For cross-domain work:
 7. Choose durable handoff surfaces.
 8. Check `_system/agent_repo_registry.md` for repo path, reporting-path transition state, risk level, and database ownership when routing matters.
 9. Decide whether Planner records need reads or approved writes.
-10. Set the review rhythm or next check point.
-11. Record durable coordination rules in Company memory when they become recurring truth.
+10. When planning a calendarized program, separate umbrella, project container, parent deliverable, and scheduled work-block records before writing Planner records.
+11. Set the review rhythm or next check point.
+12. Record durable coordination rules in Company memory when they become recurring truth.
 
 ## Program Lifecycle
 

@@ -43,9 +43,9 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   ordinary Content work. They do not replace `content_calendar`, Planner source
   maps, story beats, story threads, open loops, `content_pipeline`,
   chronicles, publish closeout, or active video project docs.
-- **Scheduled production model:** In App Planner, `content_calendar` is the teal
+- **Scheduled production model:** In App Planner, `content_calendar` is the blue
   content identity, due-date, and closeout record. A linked Content-domain work
-  project plus one blue parent production task and subtasks is the execution
+  project plus one teal parent production task and subtasks is the execution
   schedule. Do not create duplicate generic production tasks when a calendar
   entry already exists; attach the work project and production task, generate
   subtasks from the format template, and keep the content scheduled date on or

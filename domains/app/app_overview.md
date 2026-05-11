@@ -1,4 +1,4 @@
----
+﻿---
 id: app_operations
 title: 11. miniBIOTA_App
 domain: app_operations
@@ -28,9 +28,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   into Planner replacement surfaces.
 - Planner Programs/Operations schema is live after migration 010, adding
   `work_programs` and `work_program_projects` as the cross-domain umbrella
-  layer above domain-owned projects. First live Program records now exist for
-  `Operation Living Atlas` (`work_programs.id = 1`) and `Operation Living Web`
-  (`work_programs.id = 2`), with domain-owned projects linked through
+  layer above domain-owned projects. Live Program records now include
+  `Operation Living Atlas` (`work_programs.id = 1`), `Operation Living Web`
+  (`work_programs.id = 2`), and `Aquatic Club Talk Readiness`
+  (`work_programs.id = 3`), with domain-owned projects linked through
   `work_program_projects`.
 - App project management is now organized in App Planner/Supabase under the
   App domain: 7 App work projects track 16 linked App tasks, with 0 unlinked
@@ -69,15 +70,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   domain filtering, create/edit/archive, and workflow status movement.
 - Work project modals show linked tasks and content entries, with quick open
   actions and New Task preselection for the current project/domain.
-- Planner content projects can be assigned to active general work projects
-  through `content_calendar.work_project_id`, with linked project context shown
-  in Planner board/calendar surfaces. Scheduled content production now uses the
-  teal `content_calendar` card as the content due/close marker and a blue
-  parent production task with subtasks as the execution schedule.
-- Planner week/month calendar views show general work project date spans from
-  `work_projects.start_date` through `target_date`. Scheduled production
-  subtasks are grouped under their parent production task and show day-specific
-  work, so multi-day content production remains connected to the same project.
+- Planner content projects can be assigned to active general work projects through `content_calendar.work_project_id`, with linked project context shown in Planner board/calendar surfaces. Scheduled content production now uses the blue `content_calendar` card as the content due/close marker and a teal parent production task with subtasks as the execution schedule.
+- Planner Week/Month calendar views are schedule-first. Generic work projects render as single milestone cards on `target_date`, or `start_date` when no target exists, instead of spanning every day. Parent tasks with children appear only on dates with scheduled child work, and the child task title is the primary visible calendar title while the parent/container title remains context.
 - Planner week/month calendar views start on Sunday; Week renders Sunday
   through Saturday and Month uses a Sunday-first grid.
 - Planner Today includes initial weekly planning prompts that prefill recurring
@@ -106,9 +100,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Packaged build behavior with Sharp/native dependencies should be verified before relying on distributable builds.
 - Monitoring setpoint/control writes affect the live biosphere and require explicit confirmation before changes.
 - Supabase migrations and schema assumptions must be checked before app write paths are changed.
-- New Planner task hierarchy and content production scheduling paths need
-  interactive smoke testing before they are treated as fully proven in daily use.
-- Planner Programs/Operations schema and first Program records are live, but
+- Planner task hierarchy has been visually smoke tested for the Aquatic Club
+  Week-view case, but broader Today, Month, Timeline, and content-production
+  daily-use coverage remains worth watching.
+- Planner Programs/Operations schema and live Program records are live, but
   Program UI create/edit/link behavior still needs interactive smoke
   verification before daily reliance.
 

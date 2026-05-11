@@ -71,9 +71,13 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   actions and New Task preselection for the current project/domain.
 - Planner content projects can be assigned to active general work projects
   through `content_calendar.work_project_id`, with linked project context shown
-  in Planner board/calendar surfaces.
+  in Planner board/calendar surfaces. Scheduled content production now uses the
+  teal `content_calendar` card as the content due/close marker and a blue
+  parent production task with subtasks as the execution schedule.
 - Planner week/month calendar views show general work project date spans from
-  `work_projects.start_date` through `target_date`.
+  `work_projects.start_date` through `target_date`. Scheduled production
+  subtasks are grouped under their parent production task and show day-specific
+  work, so multi-day content production remains connected to the same project.
 - Planner week/month calendar views start on Sunday; Week renders Sunday
   through Saturday and Month uses a Sunday-first grid.
 - Planner Today includes initial weekly planning prompts that prefill recurring
@@ -102,8 +106,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Packaged build behavior with Sharp/native dependencies should be verified before relying on distributable builds.
 - Monitoring setpoint/control writes affect the live biosphere and require explicit confirmation before changes.
 - Supabase migrations and schema assumptions must be checked before app write paths are changed.
-- New Planner task hierarchy paths need interactive smoke testing before they
-  are treated as fully proven in daily use.
+- New Planner task hierarchy and content production scheduling paths need
+  interactive smoke testing before they are treated as fully proven in daily use.
 - Planner Programs/Operations schema and first Program records are live, but
   Program UI create/edit/link behavior still needs interactive smoke
   verification before daily reliance.

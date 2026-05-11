@@ -49,17 +49,13 @@ If working manually:
 6. Read `memory/12-brain-skills-migration.md` when the task touches Brain skill migration or Company playbook replacements.
 7. Read `memory/15-brain-archive-freeze-plan.md` when the task touches Brain archive freeze, freeze-readiness scans, archive-only labels, or final Brain retirement gates.
 8. Read `memory/16-brain-retirement-probation.md` when the task touches probation tracking, attempted Brain usage, missing replacements, or Phase 11 exit criteria.
-9. Read `memory/17-phase-11-company-operating-review-2026-05-09.md` when the task needs the first Phase 11 operating-review evidence item or its dependency-map snapshot.
-10. Read `memory/18-phase-11-operation-living-atlas-update-2026-05-09.md` when the task needs the first Phase 11 Program/Operation update evidence item or its dependency-map snapshot.
-11. Read `memory/19-phase-11-domain-closeout-batch-2026-05-10.md` when the task needs the Phase 11 three-domain closeout evidence item.
-12. Read `memory/20-phase-11-active-reference-scan-2026-05-10.md` when the task needs the Phase 11 active-reference scan evidence item.
-13. Read `memory/21-phase-11-planner-strategy-session-2026-05-10.md` when the task needs the Phase 11 Planner/project-management strategy evidence item.
-14. Load the lightest relevant `memory/*.md` files for the request.
-15. Use the matching `skills/*/SKILL.md` playbook when the request matches a repeatable company workflow.
-16. Read Brain `_system/agent_memory.md` only for historical, archive, transition, or recovery lookup.
-17. Read `M:\miniBIOTA\miniBIOTA_Company\domains\company\company_brief.md` for manager-facing strategy-level current state.
-18. Use `skills/*/reference/` for exact workflow reference material.
-19. Use Supabase/App Planner only when current structured projects, tasks, milestones, or operational records matter.
+9. Load the lightest relevant `memory/*.md` files for the request.
+10. Use the matching `skills/*/SKILL.md` playbook when the request matches a repeatable company workflow.
+11. Read archived Phase 11 evidence under `archive/superseded/phase-11-evidence/` only for audit/provenance lookup.
+12. Read Brain `_system/agent_memory.md` only for historical, archive, transition, or recovery lookup.
+13. Read `M:\miniBIOTA\miniBIOTA_Company\domains\company\company_brief.md` for manager-facing strategy-level current state.
+14. Use `skills/*/reference/` for exact workflow reference material.
+15. Use Supabase/App Planner only when current structured projects, tasks, milestones, or operational records matter.
 
 For broad Company cold starts, cross-domain architecture work, or unclear requests, use `0. Agent Exports\miniBIOTA_master_context.md` after the startup files. This is a Company-generated export built from active `domains/` reports; Brain exports are historical/archive artifacts.
 
@@ -146,12 +142,8 @@ Brain no longer keeps an active Company docs mirror after the Company restructur
 | `memory/14-raw-footage-and-definitions-ownership.md` | Phase 9 Raw Footage and Definitions ownership split, active routing, and live-write boundaries |
 | `memory/15-brain-archive-freeze-plan.md` | Phase 10 Brain archive freeze criteria, blocker classes, verification scans, retained-readable surfaces, and approval gates |
 | `memory/16-brain-retirement-probation.md` | Phase 11 probation tracker, required events, Brain usage log, issue list, and exit criteria |
-| `memory/17-phase-11-company-operating-review-2026-05-09.md` | First Phase 11 Company operating-review evidence item, dependency-map snapshot, and Brain usage classification |
-| `memory/18-phase-11-operation-living-atlas-update-2026-05-09.md` | First Phase 11 cross-domain Program/Operation update evidence item, Operation Living Atlas dependency-map snapshot, and Brain usage classification |
-| `memory/19-phase-11-domain-closeout-batch-2026-05-10.md` | Phase 11 three-domain closeout evidence item for Brand, Content, and Growth |
-| `memory/20-phase-11-active-reference-scan-2026-05-10.md` | Phase 11 active-reference scan evidence item and old-habit patch notes |
-| `memory/21-phase-11-planner-strategy-session-2026-05-10.md` | Phase 11 Planner/project-management strategy evidence item |
 | `memory/inbox.md` | Temporary parking lot for migration questions and unsorted memory candidates |
+| `archive/superseded/phase-11-evidence/` | Completed Phase 11 evidence logs retained for audit/provenance only |
 | `domains/README.md` | Active Company domain reporting map and Brain archive provenance |
 | `0. Agent Exports/README.md` | Active Company export tooling and generated export rules |
 

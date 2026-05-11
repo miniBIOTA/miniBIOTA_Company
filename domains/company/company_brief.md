@@ -2,7 +2,7 @@
 id: company_brief
 title: Company Operations Brief
 domain: company_operations
-last_updated: 2026-05-10
+last_updated: 2026-05-11
 tags: [company, operations, strategy, roadmap, strategy-brief]
 reporting_status: active
 reporting_phase: brain_retirement_phase_11_probation
@@ -27,10 +27,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - The near-term operating agenda is still being formalized. The business plan is not yet assembled, and Q2+ roadmap detail remains thin.
 - Company project management is now Planner-integrated under
   `work_domains.key = company_ops` / `domain_id = 1`: 4 Company work projects
-  track 7 Company tasks, with 0 unlinked open Company tasks after readback on
-  2026-05-09. The Company Agent has verified and tightened local Planner
-  wiring using the Hardware/App rollout pattern; no live Planner records were
-  changed during that local wiring verification.
+  track 10 Company tasks, with 0 unlinked Planner tasks after readback on
+  2026-05-11. `Roadmap & Quarterly Objectives` and `Operation Living Atlas
+  Coordination` are active; `Business Plan & Operating Model` and `AI &
+  Knowledge Infrastructure` remain planned.
 - Codex is the primary operating interface moving forward. Previous interface-specific guidance is archived as legacy context only.
 
 ## Active Priorities
@@ -50,6 +50,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-11:** Company Planner review confirmed all 243 Planner tasks across domains are linked to projects and no tasks point to missing project records. Company activated `Roadmap & Quarterly Objectives` and `Operation Living Atlas Coordination` as the next strategic low-hanging projects with explicit user approval. No tasks, roadmap commitments, public commitments, app behavior, or public site behavior changed.
+- **2026-05-11:** Company cleaned active memory by moving completed Phase 11 evidence logs from `memory/17` through `memory/23` into `archive/superseded/phase-11-evidence/`. `memory/16-brain-retirement-probation.md` remains the active Phase 11 summary; detailed evidence logs are retained for audit/provenance lookup only.
 - **2026-05-10:** Phase 11 closed the remaining Company-level Brain dependency risks. `YouTube_Extraction` is retired historical extraction/backfill tooling after user clarification, `main.py` is fail-closed with the embedded OpenAI key removed, and Planner/Supabase current-status reads are routed through Supabase MCP, Company protected reads for Company Planner coordination, or App-owned protected bridge/tooling. No live imports, Planner/Supabase writes, migrations, App runtime changes, public site behavior changes, Brain file changes, or commitments changed.
 - **2026-05-10:** Phase 11 completed the Supabase read-awareness evidence item with an approved GET-only inspection of Planner/Programs endpoints. The publishable key reached `work_domains`, `work_projects`, `tasks`, `work_programs`, and `work_program_projects`, but RLS exposed zero rows; direct secret-key REST was rejected. Future current-status reads should use Supabase MCP or the protected App read bridge. No live Planner/Supabase records, migrations, app behavior, public site behavior, or commitments changed.
 - **2026-05-10:** Phase 11 completed the Planner/project-management strategy evidence item as a docs-only Company/App ownership review. Company confirmed it can govern Planner strategy, Programs/Operations semantics, roadmap cadence, and project-management sequencing from Company and App active docs while App remains runtime/schema/UI owner. No live Planner/Supabase records, migrations, app behavior, public site behavior, or commitments changed.

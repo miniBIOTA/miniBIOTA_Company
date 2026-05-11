@@ -2,7 +2,7 @@
 id: hardware_overview
 title: 6. miniBIOTA_Hardware
 domain: engineering_and_hardware
-last_updated: 2026-05-09
+last_updated: 2026-05-11
 tags: [hardware, engineering, controls, telemetry, sensors, enclosure]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -20,10 +20,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Provides technical grounding for App Monitoring, Web telemetry, Content/Brand terminology, Research measurement gaps, and Company roadmap planning.
 
 ## Current State
+- As of 2026-05-11, the Wyse is remotely maintainable over SSH from Josue's PC and runs Mosquitto plus the read-only telemetry coordinator on the Opal network at `192.168.8.228`.
 - The biosphere is a fully closed working concept, but airtight closure is not yet achieved.
 - All 6 biome ESP32 nodes have live firmware; OTA is operational going forward.
 - Biomes 2-5 report through the App Monitoring tab; Biome 1 has no sensors and Biome 6 is wave-motor-only.
-- A first read-only Wyse telemetry coordinator producer exists in `miniBIOTA_Hardware/services/telemetry_coordinator.py`.
+- The first read-only Wyse telemetry coordinator is deployed and running as `minibiota-telemetry.service`, upserting Supabase `telemetry_snapshot` row `id=1` about every 15 seconds for website live monitoring.
 - Hardware rewire is planned for biomes 2-5 to resolve sensor wiring, water-damage, and connection-quality faults; connector standard remains open.
 - The source repo now uses repo-local biome folders, `0. Hardware Systems/`, memory, and skills as active detailed context: `AGENTS.md`, biome folders, `0. Hardware Systems/`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Hardware `docs/` mirror; use the source repo's biome folders, `0. Hardware Systems/`, memory, and skills structure for detailed Hardware Agent context.
@@ -37,13 +38,13 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Priorities
 - Complete sealing and infrastructure upgrades to reach airtight closed-system standard.
 - Execute biomes 2-5 rewire to resolve sensor faults and stabilize readings.
-- Deploy/configure the read-only Wyse telemetry coordinator with Supabase `telemetry_snapshot` access.
+- Validate public website rendering against the live Supabase `telemetry_snapshot` row and keep historical telemetry/command queues deferred until explicitly scoped.
 - Keep Hardware durable detail in source repo biome folders, `0. Hardware Systems/`, memory, playbooks, and skill references.
 
 ## Risks / Gaps
 - Biomes 2-5 have SHT31 wiring, water-damage, and connection-quality risks until the rewire is complete.
 - Biome 1 has no sensors and remains expected-offline until hardware is installed.
-- Wyse deployment, Supabase credentials, and `telemetry_snapshot` access must be confirmed before public live telemetry is treated as active.
+- Website-side rendering and stale/offline handling should be validated against the live `telemetry_snapshot`; history logging and command queues remain deferred.
 - Airtight closure is not yet achieved; passive air leakage remains across multiple biomes.
 
 ## Files In This Folder
@@ -60,6 +61,6 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - `_system/sync_docs.ps1` keeps Hardware docs mirroring disabled and removes any stale `6. miniBIOTA_Hardware\docs` folder if it appears.
 
 ## Vault Sync Status
-- Last verified: 2026-05-09
+- Last verified: 2026-05-11
 - Known divergences: no active Hardware docs mirror remains in Brain.
 - Next sync check: use Hardware repo biome folders, `0. Hardware Systems/`, memory, and skills directly when Hardware detail is needed.

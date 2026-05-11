@@ -2,7 +2,7 @@
 id: hardware_brief
 title: Hardware Brief
 domain: engineering_and_hardware
-last_updated: 2026-05-10
+last_updated: 2026-05-11
 tags: [engineering, hardware, controls, sensors, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -22,17 +22,18 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - All 6 biome ESP32 nodes have live firmware (USB flashed 2026-04-25; OTA operational going forward).
 - Biomes 2-5: Sensor/controller hardware is documented in each biome folder. Biome 2 and 3 atmosphere SHT31 modules are unreliable, Biome 4 biome SHT31 appears water damaged and its biome screen is off, and Biome 5 is mostly working with a humidity display artifact. Biome 1: no sensors (expected offline). Biome 6: wave-motor-only.
 - App Monitoring tab (Phase 4) is live as of 2026-04-25: real-time telemetry for all 6 biomes via direct MQTT to Electron.
-- First read-only Wyse-side telemetry coordinator producer exists in `miniBIOTA_Hardware/services/telemetry_coordinator.py`; it subscribes to local MQTT for sensor biomes 2-5 and publishes the website-compatible `telemetry_snapshot` singleton to Supabase or optional local JSON. It does not write history rows or control commands.
+- First read-only Wyse-side telemetry coordinator is deployed on the Dell Wyse and running as `minibiota-telemetry.service`; it subscribes to local MQTT for sensor biomes 2-5 and upserts the website-compatible Supabase `telemetry_snapshot` singleton row `id=1` about every 15 seconds. It does not write history rows or control commands.
 - Hardware rewire planned for biomes 2-5 to resolve SHT31 wiring, water-damage, and connection-quality faults. Connector standard remains open; XT30 power and JST-XH 2.54mm signal connectors are candidates, not settled requirements.
 - Hardware repo now uses the federated memory/skills architecture plus a `0. Hardware Systems/` documentation layer: `AGENTS.md`, biome folders, `0. Hardware Systems/`, `memory/`, `skills/`, `skills/*/reference/`, `services/`, `deploy/`, and `_system/` helpers. The old `docs/` mirror pattern is retired. Hardware project management now lives in App Planner/Supabase under Engineering / `Engineering & Hardware` projects and tasks.
 
 ## Active Priorities
 - Complete sealing and infrastructure upgrades to reach airtight closed-system standard.
 - Execute biomes 2-5 hardware rewire to resolve wiring faults, replace damaged SHT31 modules where needed, and stabilize sensor readings.
-- Deploy/configure the first read-only Wyse telemetry coordinator on the Dell Wyse, including service env vars and Supabase `telemetry_snapshot` row access. History logging and command queues remain deferred. See `miniBIOTA_Hardware/skills/telemetry-coordinator/reference/telemetry-pipeline-plan.md`.
+- Validate website rendering against the live Supabase `telemetry_snapshot` row now produced by the Wyse coordinator. History logging and command queues remain deferred. See `miniBIOTA_Hardware/skills/telemetry-coordinator/reference/telemetry-pipeline-plan.md`.
 - Keep Hardware durable detail in repo-local biome folders, `0. Hardware Systems/`, memory, playbooks, and skill references. Use App Planner/Supabase for Hardware work tracking and task completion status. Company carries active strategy-level Hardware reporting and cross-domain coordination; Brain is historical/archive lookup only.
 
 ## Recent Milestones
+- 2026-05-11: Deployed the read-only Wyse telemetry coordinator as a persistent user service with SSH maintenance access, live MQTT ingestion, local debug snapshot output, and successful Supabase `telemetry_snapshot` row `id=1` upserts for website live monitoring.
 - 2026-05-09: Organized Hardware project management in App Planner/Supabase: 8 Engineering & Hardware work projects now track 72 linked Hardware tasks, including existing biome/system work and documentation follow-ups.
 - 2026-05-09: Created the Hardware `0. Hardware Systems/` documentation layer for the six canonical public systems: Climate System, Rain System, Lighting System, Wave & Tide System, Control System, and Enclosure.
 - 2026-05-09: Added exact `biome_hardware.md` hardware specifications for Biomes 2-5 in the Hardware repo, including shared sensor-node BOM, power architecture, GPIO map, current sensor/display status, and open connector/fusing/wire-color items.
@@ -45,7 +46,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Known Risks & Blockers
 - Biomes 2-5 have SHT31 wiring, water-damage, and connection-quality risks; rewire resolves this but is not yet scheduled.
 - Biome 1 has no sensors and will remain offline until hardware is installed.
-- Wyse deployment, Supabase credentials, and `telemetry_snapshot` table availability still need to be confirmed before the public website can receive live coordinator data.
+- Website rendering and stale/offline handling still need final Web-side validation against the live `telemetry_snapshot` row. Historical telemetry and command queues remain deferred.
 - Airtight closure not yet achieved; passive air leakage still present across multiple biomes.
 - Brain and downstream agents must stop looking for Hardware detail in `6. miniBIOTA_Hardware/docs/`; that mirror is intentionally removed.
 
@@ -53,7 +54,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - During the biomes 2-5 sensor/controller rewire, tanks may need to go offline temporarily; flag to Content Production before scheduling.
 - Hardware Agent should consult App Planner tasks/projects when choosing next work and should offer to mark Planner tasks done when completed work maps clearly to an open task.
 - Biome status (healthy/stale/offline) is now visible in real-time via the Electron app; relevant for ecology tracking sessions.
-- The public website can now consume the coordinator's read-only `telemetry_snapshot` row once the Wyse service is deployed and credentials/table access are configured.
+- The public website can now consume the coordinator's read-only Supabase `telemetry_snapshot` row `id=1`; Web should validate `/api/telemetry/overview` and `/live-monitoring` rendering against the live payload.
 - Standardized system names below are canonical for all content, brand, and partner communications.
 
 ## Standardized System Names

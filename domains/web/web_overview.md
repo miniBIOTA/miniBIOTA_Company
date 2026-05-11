@@ -39,16 +39,13 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Use App Planner/Supabase for live Web task status; keep Markdown focused on architecture, rules, scope, and decisions.
 - Continue active UX Lab work through Planner project `40`; use `/ux-lab` for UX states, interaction rules, page patterns, and journeys while keeping development routes out of production navigation.
 - Keep the now-connected App/Hardware coordinator-to-website telemetry handoff production-verified, public-safe, and read-only.
-- Continue the cleaned Web Planner roadmap: About/supporters, Patreon acknowledgments, Substack signup/list migration, weekly newsletter assembly, events/news/chronicles product passes, engineering images, telemetry hardening, and species-card data polish.
-- Establish a repeatable sync path from newsletter capture to an external email platform.
-- Replace engineering system placeholder images with real system imagery when available.
-- Develop later content/product passes for `/events`, `/news`, and `/chronicles`.
+- Work through the cleaned Web Planner roadmap: About/supporters and Patreon acknowledgment content, Substack signup/list migration and weekly newsletter assembly, events/news/chronicles product passes, engineering imagery, telemetry hardening, and species-card data polish.
 
 ## Risks / Gaps
 - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
 - Public telemetry now depends on the App/Hardware coordinator producer staying healthy and aligned with the public read-only contract.
 - Planner records can organize Web work, but they do not authorize production navigation, public claims, private/admin surfaces, or runtime behavior changes by themselves.
-- The owner roadmap is now captured in Planner, but several tasks still need source assets, copy, policy decisions, or cross-domain input before implementation.
+- The owner roadmap is captured in Planner, but several tasks still need source assets, copy, policy decisions, or cross-domain input before implementation.
 - `/events`, `/news`, and `/chronicles` remain active public routes but need later content/product development.
 - Engineering system pages still need real system images to replace placeholders.
 

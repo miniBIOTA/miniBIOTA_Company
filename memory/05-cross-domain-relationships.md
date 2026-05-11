@@ -35,17 +35,23 @@ If Company Planner contains a task that affects another domain, treat it as a co
 
 Company owns cross-domain operating memory. Durable dependency changes, review outcomes, program governance rules, and recurring coordination constraints should land in Company memory or the Company report when manager-facing strategy state changes. Domain-specific implementation detail should land in the relevant domain repo, domain brief, or structured record.
 
-## CRM Ownership Pattern
+## Growth CRM Role Pattern
 
 Customer Relationship Management is a shared Growth/App surface.
 
-Growth owns CRM as a business function: customer, partner, sponsor, donor, supporter, and opportunity meaning; relationship strategy; outreach cadence; lifecycle stages; pipeline definitions; commercial follow-up priorities; and approval discipline for sponsor, pricing, public, legal, financial, campaign, or roadmap commitments.
+The Growth Agent should understand CRM as part of its own commercial operating system, not merely as an app feature. Growth owns the meaning of the relationships: customers, partners, sponsors, donors, supporters, collaborators, event contacts, leads, and opportunities. Growth defines who belongs in the CRM, why they matter, what relationship stage they are in, what follow-up is appropriate, and what commercial or community context should be preserved.
+
+Growth owns CRM strategy and operating rules: lifecycle stages, opportunity categories, outreach cadence, follow-up priority, relationship health, sponsor/partner fit, audience-support paths, speaking/event follow-up, campaign warmup, and the distinction between lead, active conversation, committed relationship, and archived/no-fit contact.
+
+Growth also owns CRM commitment discipline. CRM notes, stages, and next actions must not imply approved sponsor obligations, pricing, public promises, legal decisions, financial commitments, campaign dates, launch targets, or roadmap commitments unless Josue explicitly approved those commitments through the proper source of truth.
 
 App owns CRM as software: the internal CRM tab, UI behavior, database/runtime integration, schema and migration implementation when scoped, Supabase-backed create/read/update workflows, AppAPI/service-role paths, renderer modules, validation, smoke tests, and operator ergonomics.
 
 Company owns the cross-domain boundary: deciding when CRM work affects Growth strategy, App implementation, Brand language, Web intake, Financials revenue assumptions, Content proof assets, or Company-level governance. Company may define handoffs and dependency maps, but it does not replace Growth as commercial owner or App as runtime owner.
 
-When building CRM in App, use Growth as the source of truth for relationship stages, opportunity categories, follow-up rules, public/sponsor language needs, and commercial priority. Use App as the source of truth for how those concepts are implemented safely in the desktop app and Supabase-backed workflows. Any live CRM, partner, sponsor, Planner, schema, migration, app behavior, public claim, sponsor obligation, pricing, campaign, financial, legal, launch, or roadmap change remains approval-gated by its normal owner.
+Before App builds or expands CRM behavior, Growth should provide the role model App is implementing: contact types, relationship stages, opportunity fields, follow-up rules, priority signals, sponsor-safe language needs, and the minimum useful workflow for the operator. App should then translate those Growth-owned concepts into safe desktop app behavior and Supabase-backed workflows.
+
+Any live CRM, partner, sponsor, Planner, schema, migration, app behavior, public claim, sponsor obligation, pricing, campaign, financial, legal, launch, or roadmap change remains approval-gated by its normal owner.
 
 ## Brain And App Boundary
 Brain remains archive/recovery context and retirement provenance during probation. It is not the active owner of ongoing cross-domain planning cadence.

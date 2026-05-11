@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Executive Brief
 
-- Generated: 2026-05-11 09:29:32 -04:00
+- Generated: 2026-05-11 15:14:46 -04:00
 - Purpose: Company-side synthesis of domain reports.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 
@@ -108,19 +108,19 @@
 **Summary:** Owns the physical biosphere system, closure model, control network, firmware, telemetry producer path, sensor topology, and hardware safety rules. ESP32 nodes own local thermostat hysteresis and pump switching.
 
 ### Current Status
+- As of 2026-05-11, the Wyse is remotely maintainable over SSH from Josue's PC and runs Mosquitto plus the read-only telemetry coordinator on the Opal network at `192.168.8.228`.
 - The biosphere is a fully closed working concept, but airtight closure is not yet achieved.
 - All 6 biome ESP32 nodes have live firmware; OTA is operational going forward.
-- Biomes 2-5 report through the App Monitoring tab; Biome 1 has no sensors and Biome 6 is wave-motor-only.
 
 ### Priorities
 - Complete sealing and infrastructure upgrades to reach airtight closed-system standard.
 - Execute biomes 2-5 rewire to resolve sensor faults and stabilize readings.
-- Deploy/configure the read-only Wyse telemetry coordinator with Supabase `telemetry_snapshot` access.
+- Maintain public website telemetry against the live Supabase `telemetry_snapshot` row and keep historical telemetry/command queues deferred until explicitly scoped.
 
 ### Risks / Gaps
 - Biomes 2-5 have SHT31 wiring, water-damage, and connection-quality risks until the rewire is complete.
 - Biome 1 has no sensors and remains expected-offline until hardware is installed.
-- Wyse deployment, Supabase credentials, and `telemetry_snapshot` access must be confirmed before public live telemetry is treated as active.
+- Website telemetry is reading the live `telemetry_snapshot`; stale/offline handling and public-safe payload semantics should continue to be monitored. History logging and command queues remain deferred.
 
 ## 7. miniBIOTA_Growth
 
@@ -160,7 +160,7 @@
 
 ### Current Status
 - The site is public-only; legacy Flask admin has been removed from active web code.
-- Public telemetry consumes read-only snapshot state through `/api/telemetry/overview` and `/live-monitoring`.
+- Public telemetry consumes the live read-only Supabase snapshot through `/api/telemetry/overview` and `/live-monitoring`.
 - Web context now uses the repo-native memory/skills architecture in `M:\miniBIOTA\miniBIOTA_Web\`.
 
 ### Priorities
@@ -170,7 +170,7 @@
 
 ### Risks / Gaps
 - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
-- Public telemetry depends on the App/Hardware coordinator producer path for real live data.
+- Public telemetry now depends on the App/Hardware coordinator producer staying healthy and aligned with the public read-only contract.
 - Planner records can organize Web work, but they do not authorize production navigation, public claims, private/admin surfaces, or runtime behavior changes by themselves.
 
 ## 10. Definitions

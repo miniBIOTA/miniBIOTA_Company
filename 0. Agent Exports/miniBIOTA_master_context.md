@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Master Context
 
-- Generated: 2026-05-11 09:29:32 -04:00
+- Generated: 2026-05-11 15:14:46 -04:00
 - Source contract: Company `domains/` reports are included below.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 - Format: portable Markdown with Obsidian wiki-links normalized or removed.
@@ -103,18 +103,20 @@
 - `miniBIOTA_Company` now uses repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Company `docs/` mirror. Use the source repo's memory/skills structure for detailed Company Agent context.
 - miniBIOTA has already been tested as a fully closed working concept in Q1 2026.
+- A new Company-led cross-domain readiness program, `Aquatic Club Talk Readiness`, is active for Josue's 45-minute Aquatic Club of Pasco County talk on 2026-06-13 at 12:00 PM. Planner Program `work_programs.id = 3` links Company, Content, Brand, Research/Ecosystem, Hardware, Web, Growth/Sales, App, and Financials projects with scheduled parent tasks and subtasks through 2026-06-14.
 - The near-term operating agenda is still being formalized. The business plan is not yet assembled, and Q2+ roadmap detail remains thin.
 - Company project management is now Planner-integrated under
-  `work_domains.key = company_ops` / `domain_id = 1`: 4 Company work projects
-  track 10 Company tasks, with 0 unlinked Planner tasks after readback on
-  2026-05-11. `Roadmap & Quarterly Objectives` and `Operation Living Atlas
-  Coordination` are active; `Business Plan & Operating Model` and `AI &
-  Knowledge Infrastructure` remain planned.
+  `work_domains.key = company_ops` / `domain_id = 1`: 5 Company work projects
+  track 21 Company tasks after the Aquatic Club talk setup on 2026-05-11.
+  `Roadmap & Quarterly Objectives`, `Operation Living Atlas Coordination`, and
+  `Aquatic Club Talk Program Coordination` are active; `Business Plan &
+  Operating Model` and `AI & Knowledge Infrastructure` remain planned.
 - Codex is the primary operating interface moving forward. Previous interface-specific guidance is archived as legacy context only.
 
 ## Active Priorities
 
 - Coordinate **Operation Living Atlas**, the cross-domain historical backfill and ecological knowledge-graph program. Source plan: `M:\miniBIOTA\miniBIOTA_Company\skills\coordinate-cross-domain-priorities\reference\operation-living-atlas-plan.md`. First model arc: Lake Post-Seal / Flagfish / Daphnia / Ghost Shrimp.
+- Coordinate **Aquatic Club Talk Readiness** as the near-term public-readiness forcing function for the 2026-06-13 talk. The program's goal is to prepare a polished 45-minute talk while producing reusable brand, content, web, proof, and sponsor-readiness assets without creating unapproved public, sponsor, financial, or roadmap commitments.
 - Build a business plan that aligns operations, funding, storytelling, and hardware development.
 - Expand the roadmap beyond Q1 2026 into decision-ready quarterly objectives.
 - Define Q2 goals and review migrated task priorities with Josue.
@@ -129,6 +131,14 @@
 
 ## Recent Milestones
 
+- **2026-05-11:** Company created the live Planner Program `Aquatic Club Talk
+  Readiness` (`work_programs.id = 3`) for Josue's 2026-06-13 12:00 PM
+  Aquatic Club of Pasco County talk. The approved Planner setup added 9 linked
+  domain projects, 13 parent tasks, and 70 scheduled subtasks across Company,
+  Content, Brand, Research/Ecosystem, Hardware, Web, Growth/Sales, App, and
+  Financials. No app runtime behavior, website behavior, schema, public
+  promises, sponsor commitments, financial commitments, legal decisions, or
+  roadmap commitments changed.
 - **2026-05-11:** Company absorbed the latest App Planner content production
   model into Company/Content operating guidance: teal `content_calendar`
   records are content identity, due-date, and closeout truth; linked
@@ -165,6 +175,10 @@
 - Core business planning is not yet documented in a single operating plan.
 - Q2 goals are not yet defined in the active roadmap reference at `M:\miniBIOTA\miniBIOTA_Company\skills\review-roadmap-implications\reference\strategic-roadmap.md`.
 - Company-level decisions can blur with department implementation unless ownership is explicitly assigned.
+- The Aquatic Club talk creates a hard near-term readiness window through
+  2026-06-13. Talk, website, sponsor, and follow-up assets need tight claim
+  safety and commitment boundaries so public enthusiasm does not become an
+  accidental sponsor, financial, launch, or roadmap promise.
 - All required Phase 11 evidence items are now recorded, but Company must continue the planned 2 to 4 week probation window before final Brain retirement.
 - `YouTube_Extraction` is retired historical tooling, not a pending Content import migration; any future reactivation would be separate approval-gated Content work.
 - Company must keep the operating review rhythm alive so dependency maps,
@@ -174,8 +188,15 @@
 ## Cross-Domain Notes
 
 - **Research:** Scientific claims and ecological feasibility should be grounded in Supabase and Research docs.
+- **Research:** Aquatic Club talk support includes ecological claim review,
+  uncertainty labels, and Q&A-safe wording before the final deck/script lock.
 - **Hardware:** Roadmap and business planning should reflect climate control, sensor expansion, enclosure, telemetry, and estuary feasibility.
+- **Hardware:** Aquatic Club talk support includes engineering proof points,
+  current-vs-future boundaries, telemetry/sensor visuals, and live-system
+  safety discipline.
 - **Content:** Strategy depends on story arc, publishing cadence, proof assets, and public narrative.
+- **Content:** Aquatic Club talk support owns the TED-style talk arc, script,
+  deck, proof-media selection, rehearsal ladder, and Q&A preparation.
 - **Content:** Scheduled production planning should use the App Planner model
   where `content_calendar` is the teal content identity/due/close record and
   the linked Content-domain work project, blue parent production task, and
@@ -183,10 +204,23 @@
   tasks when a content entry already exists.
 - **Content:** `YouTube_Extraction` is retired historical tooling; no YouTube transcript-to-`content_pipeline` import migration is pending unless the user explicitly reactivates it. Any reactivation would be Content-owned and approval-gated.
 - **Brand:** Mission, vision, public language, and company narrative must remain aligned.
+- **Brand:** Aquatic Club talk support owns title/tagline, audience promise,
+  speaker bio, visual tone, CTA copy, and sponsor-safe wording.
 - **Growth:** Business plan, sponsorships, campaigns, and public commitments depend on Company decisions.
+- **Growth:** Aquatic Club talk support owns sponsor hypothesis, audience
+  follow-up sequencing, partner/sponsor brief drafts, and post-talk outreach
+  preparation, with all sponsor commitments still approval-gated.
 - **Financials:** Roadmap and business plan must reflect runway, debt pressure, revenue baseline, taxes, and spending decisions.
+- **Financials:** Aquatic Club talk support may provide cost awareness and
+  sponsor ask guardrails; draft numbers are planning inputs, not commitments.
 - **Web:** Public site remains the public source of truth and should express company direction clearly.
+- **Web:** Aquatic Club talk support owns the public QR destination, about/proof
+  updates, and contact/newsletter/sponsor-interest CTA path, subject to
+  separate website implementation approval.
 - **App:** Internal tools should support operating workflows and structured records without becoming public product scope by accident.
+- **App:** Aquatic Club talk support is internal Planner/media access and
+  backup support only; no App runtime behavior changed from the Planner record
+  creation.
 - **App:** App Planner/Supabase is the shared project/task/program runtime for
   Company work status. Company owns planning strategy, program governance,
   operating cadence, and cross-domain coordination; App owns Planner runtime
@@ -1013,10 +1047,11 @@ Brain no longer keeps a Content `docs\` mirror after the memory/skills migration
 - Provides technical grounding for App Monitoring, Web telemetry, Content/Brand terminology, Research measurement gaps, and Company roadmap planning.
 
 ## Current State
+- As of 2026-05-11, the Wyse is remotely maintainable over SSH from Josue's PC and runs Mosquitto plus the read-only telemetry coordinator on the Opal network at `192.168.8.228`.
 - The biosphere is a fully closed working concept, but airtight closure is not yet achieved.
 - All 6 biome ESP32 nodes have live firmware; OTA is operational going forward.
 - Biomes 2-5 report through the App Monitoring tab; Biome 1 has no sensors and Biome 6 is wave-motor-only.
-- A first read-only Wyse telemetry coordinator producer exists in `miniBIOTA_Hardware/services/telemetry_coordinator.py`.
+- The first read-only Wyse telemetry coordinator is deployed and running as `minibiota-telemetry.service`, upserting Supabase `telemetry_snapshot` row `id=1` about every 15 seconds for website live monitoring.
 - Hardware rewire is planned for biomes 2-5 to resolve sensor wiring, water-damage, and connection-quality faults; connector standard remains open.
 - The source repo now uses repo-local biome folders, `0. Hardware Systems/`, memory, and skills as active detailed context: `AGENTS.md`, biome folders, `0. Hardware Systems/`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Hardware `docs/` mirror; use the source repo's biome folders, `0. Hardware Systems/`, memory, and skills structure for detailed Hardware Agent context.
@@ -1030,13 +1065,13 @@ Brain no longer keeps a Content `docs\` mirror after the memory/skills migration
 ## Priorities
 - Complete sealing and infrastructure upgrades to reach airtight closed-system standard.
 - Execute biomes 2-5 rewire to resolve sensor faults and stabilize readings.
-- Deploy/configure the read-only Wyse telemetry coordinator with Supabase `telemetry_snapshot` access.
+- Maintain public website telemetry against the live Supabase `telemetry_snapshot` row and keep historical telemetry/command queues deferred until explicitly scoped.
 - Keep Hardware durable detail in source repo biome folders, `0. Hardware Systems/`, memory, playbooks, and skill references.
 
 ## Risks / Gaps
 - Biomes 2-5 have SHT31 wiring, water-damage, and connection-quality risks until the rewire is complete.
 - Biome 1 has no sensors and remains expected-offline until hardware is installed.
-- Wyse deployment, Supabase credentials, and `telemetry_snapshot` access must be confirmed before public live telemetry is treated as active.
+- Website telemetry is reading the live `telemetry_snapshot`; stale/offline handling and public-safe payload semantics should continue to be monitored. History logging and command queues remain deferred.
 - Airtight closure is not yet achieved; passive air leakage remains across multiple biomes.
 
 ## Files In This Folder
@@ -1053,7 +1088,7 @@ Brain no longer keeps a Content `docs\` mirror after the memory/skills migration
 - `_system/sync_docs.ps1` keeps Hardware docs mirroring disabled and removes any stale `6. miniBIOTA_Hardware\docs` folder if it appears.
 
 ## Vault Sync Status
-- Last verified: 2026-05-09
+- Last verified: 2026-05-11
 - Known divergences: no active Hardware docs mirror remains in Brain.
 - Next sync check: use Hardware repo biome folders, `0. Hardware Systems/`, memory, and skills directly when Hardware detail is needed.
 
@@ -1068,17 +1103,18 @@ Brain no longer keeps a Content `docs\` mirror after the memory/skills migration
 - All 6 biome ESP32 nodes have live firmware (USB flashed 2026-04-25; OTA operational going forward).
 - Biomes 2-5: Sensor/controller hardware is documented in each biome folder. Biome 2 and 3 atmosphere SHT31 modules are unreliable, Biome 4 biome SHT31 appears water damaged and its biome screen is off, and Biome 5 is mostly working with a humidity display artifact. Biome 1: no sensors (expected offline). Biome 6: wave-motor-only.
 - App Monitoring tab (Phase 4) is live as of 2026-04-25: real-time telemetry for all 6 biomes via direct MQTT to Electron.
-- First read-only Wyse-side telemetry coordinator producer exists in `miniBIOTA_Hardware/services/telemetry_coordinator.py`; it subscribes to local MQTT for sensor biomes 2-5 and publishes the website-compatible `telemetry_snapshot` singleton to Supabase or optional local JSON. It does not write history rows or control commands.
+- First read-only Wyse-side telemetry coordinator is deployed on the Dell Wyse and running as `minibiota-telemetry.service`; it subscribes to local MQTT for sensor biomes 2-5 and upserts the website-compatible Supabase `telemetry_snapshot` singleton row `id=1` about every 15 seconds. It does not write history rows or control commands.
 - Hardware rewire planned for biomes 2-5 to resolve SHT31 wiring, water-damage, and connection-quality faults. Connector standard remains open; XT30 power and JST-XH 2.54mm signal connectors are candidates, not settled requirements.
 - Hardware repo now uses the federated memory/skills architecture plus a `0. Hardware Systems/` documentation layer: `AGENTS.md`, biome folders, `0. Hardware Systems/`, `memory/`, `skills/`, `skills/*/reference/`, `services/`, `deploy/`, and `_system/` helpers. The old `docs/` mirror pattern is retired. Hardware project management now lives in App Planner/Supabase under Engineering / `Engineering & Hardware` projects and tasks.
 
 ## Active Priorities
 - Complete sealing and infrastructure upgrades to reach airtight closed-system standard.
 - Execute biomes 2-5 hardware rewire to resolve wiring faults, replace damaged SHT31 modules where needed, and stabilize sensor readings.
-- Deploy/configure the first read-only Wyse telemetry coordinator on the Dell Wyse, including service env vars and Supabase `telemetry_snapshot` row access. History logging and command queues remain deferred. See `miniBIOTA_Hardware/skills/telemetry-coordinator/reference/telemetry-pipeline-plan.md`.
+- Maintain the live website telemetry path now reading the Wyse-produced Supabase `telemetry_snapshot` row. History logging and command queues remain deferred. See `miniBIOTA_Hardware/skills/telemetry-coordinator/reference/telemetry-pipeline-plan.md`.
 - Keep Hardware durable detail in repo-local biome folders, `0. Hardware Systems/`, memory, playbooks, and skill references. Use App Planner/Supabase for Hardware work tracking and task completion status. Company carries active strategy-level Hardware reporting and cross-domain coordination; Brain is historical/archive lookup only.
 
 ## Recent Milestones
+- 2026-05-11: Deployed the read-only Wyse telemetry coordinator as a persistent user service with SSH maintenance access, live MQTT ingestion, local debug snapshot output, and successful Supabase `telemetry_snapshot` row `id=1` upserts for website live monitoring.
 - 2026-05-09: Organized Hardware project management in App Planner/Supabase: 8 Engineering & Hardware work projects now track 72 linked Hardware tasks, including existing biome/system work and documentation follow-ups.
 - 2026-05-09: Created the Hardware `0. Hardware Systems/` documentation layer for the six canonical public systems: Climate System, Rain System, Lighting System, Wave & Tide System, Control System, and Enclosure.
 - 2026-05-09: Added exact `biome_hardware.md` hardware specifications for Biomes 2-5 in the Hardware repo, including shared sensor-node BOM, power architecture, GPIO map, current sensor/display status, and open connector/fusing/wire-color items.
@@ -1091,7 +1127,7 @@ Brain no longer keeps a Content `docs\` mirror after the memory/skills migration
 ## Known Risks & Blockers
 - Biomes 2-5 have SHT31 wiring, water-damage, and connection-quality risks; rewire resolves this but is not yet scheduled.
 - Biome 1 has no sensors and will remain offline until hardware is installed.
-- Wyse deployment, Supabase credentials, and `telemetry_snapshot` table availability still need to be confirmed before the public website can receive live coordinator data.
+- Website telemetry is receiving the live `telemetry_snapshot` row; continue monitoring stale/offline handling and public-safe payload semantics. Historical telemetry and command queues remain deferred.
 - Airtight closure not yet achieved; passive air leakage still present across multiple biomes.
 - Brain and downstream agents must stop looking for Hardware detail in `6. miniBIOTA_Hardware/docs/`; that mirror is intentionally removed.
 
@@ -1099,7 +1135,7 @@ Brain no longer keeps a Content `docs\` mirror after the memory/skills migration
 - During the biomes 2-5 sensor/controller rewire, tanks may need to go offline temporarily; flag to Content Production before scheduling.
 - Hardware Agent should consult App Planner tasks/projects when choosing next work and should offer to mark Planner tasks done when completed work maps clearly to an open task.
 - Biome status (healthy/stale/offline) is now visible in real-time via the Electron app; relevant for ecology tracking sessions.
-- The public website can now consume the coordinator's read-only `telemetry_snapshot` row once the Wyse service is deployed and credentials/table access are configured.
+- The public website now consumes the coordinator's read-only Supabase `telemetry_snapshot` row `id=1`; Hardware keeps the payload public-safe, including `target_temperature_c: null` for unset targets.
 - Standardized system names below are canonical for all content, brand, and partner communications.
 
 ## Standardized System Names
@@ -1566,7 +1602,7 @@ These match the system IDs used throughout the rest of the app (observations, st
 
 ## Current State
 - The site is public-only; legacy Flask admin has been removed from active web code.
-- Public telemetry consumes read-only snapshot state through `/api/telemetry/overview` and `/live-monitoring`.
+- Public telemetry consumes the live read-only Supabase snapshot through `/api/telemetry/overview` and `/live-monitoring`.
 - Web context now uses the repo-native memory/skills architecture in `M:\miniBIOTA\miniBIOTA_Web\`.
 - Brain no longer keeps a Web `docs/` mirror; use the source repo's memory/skills/reference structure for detailed Web context.
 - App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`, with current Web project records `36` through `42`.
@@ -1582,14 +1618,14 @@ These match the system IDs used throughout the rest of the app (observations, st
 - Keep Web memory and active Company Web reports aligned with the public-only, local-first telemetry and control architecture.
 - Use App Planner/Supabase for live Web task status; keep Markdown focused on architecture, rules, scope, and decisions.
 - Continue active UX Lab work through Planner project `40`; use `/ux-lab` for UX states, interaction rules, page patterns, and journeys while keeping development routes out of production navigation.
-- Complete the App/Hardware coordinator-to-website telemetry handoff so public observability renders real coordinator, upstream, setpoint, and node state.
+- Keep the now-connected App/Hardware coordinator-to-website telemetry handoff production-verified, public-safe, and read-only.
 - Establish a repeatable sync path from newsletter capture to an external email platform.
 - Replace engineering system placeholder images with real system imagery when available.
 - Develop later content/product passes for `/events`, `/news`, and `/chronicles`.
 
 ## Risks / Gaps
 - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
-- Public telemetry depends on the App/Hardware coordinator producer path for real live data.
+- Public telemetry now depends on the App/Hardware coordinator producer staying healthy and aligned with the public read-only contract.
 - Planner records can organize Web work, but they do not authorize production navigation, public claims, private/admin surfaces, or runtime behavior changes by themselves.
 - `/events`, `/news`, and `/chronicles` remain active public routes but need later content/product development.
 - Engineering system pages still need real system images to replace placeholders.
@@ -1620,7 +1656,7 @@ These match the system IDs used throughout the rest of the app (observations, st
 ## System State
 - The site is a public-only Flask website and Railway-hosted application. It owns public biosphere, biome, species, engineering, chronicle, news, events, FAQ, newsletter, poll, and read-only telemetry surfaces.
 - The legacy Flask admin surface has been removed from active web code. Forward operator/admin workflows belong in the Electron desktop app, not the public website.
-- Telemetry architecture is local-first. The public site consumes read-only telemetry snapshot state through `/api/telemetry/overview` and `/live-monitoring`; it must not imply direct pump switching or centralized actuator control.
+- Telemetry architecture is local-first. The public site now consumes the live read-only telemetry snapshot through `/api/telemetry/overview` and `/live-monitoring`; it must not imply direct pump switching or centralized actuator control.
 - Web Agent context now uses the repo-native memory/skills architecture in `M:\miniBIOTA\miniBIOTA_Web\`: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an active Web `docs/` mirror. `_system/sync_docs.ps1` removes stale `9. miniBIOTA_Web\docs` if it appears.
 - App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`. Current Web projects are IDs `36` through `42`, and Web docs now route actionable task status to Planner instead of Markdown task lists.
@@ -1628,13 +1664,14 @@ These match the system IDs used throughout the rest of the app (observations, st
 ## Active Priorities
 - Keep Web memory and the Company Web report aligned with the public-only, local-first telemetry and control architecture.
 - Continue the active UX Interaction Lab scope in App Planner project `40`; the first live `/biosphere#biosphere-ecosystem-map` application pass is stabilized, reusable state patterns are defined in `/ux-lab` and first applied to `/species`, the first shared EEL state-preset promotion pass is complete, `/chronicles` has its first archive state/accessibility pass, shared detail tab/accordion semantics are tightened across core detail pages, `/ux-lab` now includes first-pass journey maps and tighter keyboard/modal preview contracts, and local route/lint/full-test/HTTP smoke checks are green. Next Web UX work should focus on owner/design review, real browser/mobile visual QA when tooling is available, or a separately scoped live-surface application while keeping `/ux-lab` and `/ui-kitchen-sink` development-gated and out of production navigation.
-- Complete the desktop-app/coordinator-to-website telemetry handoff so public observability can render real coordinator, upstream, setpoint, and node state.
+- Keep the now-connected desktop-app/coordinator-to-website telemetry handoff production-verified, public-safe, and read-only.
 - Establish a repeatable sync path from newsletter capture to an external email platform.
 - Replace engineering system placeholder images with real system imagery when available.
 - Develop later content/product passes for /events, /news, and /chronicles.
 - Build Operation Living Web, the Ecosystem Relationship Graph architecture, as a public species-to-biome-to-biosphere relationship experience; Web architecture is now ready to pause, with broad food-web curation routed to the Research Agent via the Web repo handoff packet.
 
 ## Recent Milestones
+- 2026-05-11: Live public telemetry is connected. The Hardware/Wyse coordinator now publishes the read-only Supabase snapshot consumed by `/api/telemetry/overview` and `/live-monitoring`; the public page renders sensor biomes 2-5 while preserving the public/private boundary around pump, liquid, command, and control data.
 - 2026-05-10: Continued the UX Interaction Lab definition pass with first-pass journey maps and tighter dev-gated interaction-preview contracts. `/ux-lab` now covers species discovery, biome understanding, public telemetry inspection, chronicle reading, relationship exploration, gap recovery, tab/mode keyboard behavior, and modal focus review. No live public page behavior, database, schema, Planner, production navigation, admin surface, telemetry control/runtime, or graph engine changed.
 - 2026-05-10: Completed a practical QA closeout for the UX Interaction Lab/UI System continuation. Local HTTP smoke checks passed for `/chronicles`, `/species`, `/biosphere`, and filtered Ecosystem Map URLs; compile checks, full tests, route contracts, and relevant token lints passed. In-app browser automation was unavailable because the required browser Node REPL tool was not exposed in the session. No database, schema, Planner, production navigation, admin surface, telemetry control/runtime, or graph engine changed.
 - 2026-05-10: Applied the first shared detail-disclosure contract pass across species, biome, engineering, and biosphere pages. Tabs now expose explicit tab/panel relationships with synchronized hidden state, and detail accordions expose owned panels with aria-hidden state through shared behavior. Route contract and relevant token lints passed. No database, schema, Planner, production navigation, admin surface, telemetry control/runtime, or graph engine changed.
@@ -1647,7 +1684,7 @@ These match the system IDs used throughout the rest of the app (observations, st
 - 2026-05-09: Continued Planner task 206 by making the /ux-lab tabs, filter/search, and accordion previews interactive for design review. This remains development-only UX Lab behavior; no live public page behavior changed.
 - 2026-05-09: Started the /ux-lab polish pass with a current-pass overview, section jump navigation, and an interactive Operation Living Web list/graph/detail mode preview. With owner approval, Planner task 206 was created for continuing UX Lab visual hierarchy polish and priority interactive previews. No live public route behavior or Ecosystem Map behavior changed.
 - 2026-05-09: Created Planner task 205 under UX Interaction Lab project 40 and added first-pass Operation Living Web graph/list UX definitions to the dev-gated /ux-lab surface. The pass defines list-first progressive enhancement, sparse graph states, relationship status weighting, species/resource node distinction, selected node/edge detail, cross-page continuity, and Research-reviewed boundaries. With owner approval, Planner task 205 was marked done after implementation and verification. No live Ecosystem Map behavior changed.
-- 2026-05-09: Added FAQ/About page-pattern preview to the dev-gated /ux-lab surface and applied the first telemetry UX pass to /live-monitoring. Live monitoring now announces refresh state, handles malformed/unavailable refreshes with public-safe language, and preserves last valid public values; public telemetry remains read-only and still depends on the App/Hardware producer path for real live data.
+- 2026-05-09: Added FAQ/About page-pattern preview to the dev-gated /ux-lab surface and applied the first telemetry UX pass to /live-monitoring. Live monitoring now announces refresh state, handles malformed/unavailable refreshes with public-safe language, and preserves last valid public values. At that point public telemetry still depended on the App/Hardware producer path; the live handoff was later connected on 2026-05-11.
 - 2026-05-09: Added first-pass accessibility QA and component-promotion rules to the dev-gated /ux-lab surface. No live route behavior, public navigation, telemetry runtime, or public data behavior changed.
 - 2026-05-09: Added first-pass page-pattern previews to the dev-gated /ux-lab surface for index, detail, archive feed, monitoring dashboard, and graph explorer layouts. No live route behavior, public navigation, telemetry runtime, or public data behavior changed.
 - 2026-05-09: Added first-pass interaction pattern previews to the dev-gated /ux-lab surface for tabs, filters/search, accordions, gallery/modal behavior, telemetry refresh, form messaging, timelines, and graph controls. With owner approval, Planner task `187` was marked done. No live route behavior, public navigation, telemetry runtime, or public data behavior changed.
@@ -1667,7 +1704,7 @@ These match the system IDs used throughout the rest of the app (observations, st
 
 ## Known Risks & Blockers
 - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
-- Public telemetry still depends on the App/Hardware coordinator producer path for real live data.
+- Public telemetry now depends on the App/Hardware coordinator producer staying healthy and aligned with the public read-only contract.
 - `/events`, `/news`, and `/chronicles` remain active public routes but need later content/product development.
 - Engineering system pages still need real system images to replace placeholders.
 

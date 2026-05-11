@@ -24,18 +24,20 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - `miniBIOTA_Company` now uses repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Company `docs/` mirror. Use the source repo's memory/skills structure for detailed Company Agent context.
 - miniBIOTA has already been tested as a fully closed working concept in Q1 2026.
+- A new Company-led cross-domain readiness program, `Aquatic Club Talk Readiness`, is active for Josue's 45-minute Aquatic Club of Pasco County talk on 2026-06-13 at 12:00 PM. Planner Program `work_programs.id = 3` links Company, Content, Brand, Research/Ecosystem, Hardware, Web, Growth/Sales, App, and Financials projects with scheduled parent tasks and subtasks through 2026-06-14.
 - The near-term operating agenda is still being formalized. The business plan is not yet assembled, and Q2+ roadmap detail remains thin.
 - Company project management is now Planner-integrated under
-  `work_domains.key = company_ops` / `domain_id = 1`: 4 Company work projects
-  track 10 Company tasks, with 0 unlinked Planner tasks after readback on
-  2026-05-11. `Roadmap & Quarterly Objectives` and `Operation Living Atlas
-  Coordination` are active; `Business Plan & Operating Model` and `AI &
-  Knowledge Infrastructure` remain planned.
+  `work_domains.key = company_ops` / `domain_id = 1`: 5 Company work projects
+  track 21 Company tasks after the Aquatic Club talk setup on 2026-05-11.
+  `Roadmap & Quarterly Objectives`, `Operation Living Atlas Coordination`, and
+  `Aquatic Club Talk Program Coordination` are active; `Business Plan &
+  Operating Model` and `AI & Knowledge Infrastructure` remain planned.
 - Codex is the primary operating interface moving forward. Previous interface-specific guidance is archived as legacy context only.
 
 ## Active Priorities
 
 - Coordinate **Operation Living Atlas**, the cross-domain historical backfill and ecological knowledge-graph program. Source plan: `M:\miniBIOTA\miniBIOTA_Company\skills\coordinate-cross-domain-priorities\reference\operation-living-atlas-plan.md`. First model arc: Lake Post-Seal / Flagfish / Daphnia / Ghost Shrimp.
+- Coordinate **Aquatic Club Talk Readiness** as the near-term public-readiness forcing function for the 2026-06-13 talk. The program's goal is to prepare a polished 45-minute talk while producing reusable brand, content, web, proof, and sponsor-readiness assets without creating unapproved public, sponsor, financial, or roadmap commitments.
 - Build a business plan that aligns operations, funding, storytelling, and hardware development.
 - Expand the roadmap beyond Q1 2026 into decision-ready quarterly objectives.
 - Define Q2 goals and review migrated task priorities with Josue.
@@ -50,6 +52,14 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-11:** Company created the live Planner Program `Aquatic Club Talk
+  Readiness` (`work_programs.id = 3`) for Josue's 2026-06-13 12:00 PM
+  Aquatic Club of Pasco County talk. The approved Planner setup added 9 linked
+  domain projects, 13 parent tasks, and 70 scheduled subtasks across Company,
+  Content, Brand, Research/Ecosystem, Hardware, Web, Growth/Sales, App, and
+  Financials. No app runtime behavior, website behavior, schema, public
+  promises, sponsor commitments, financial commitments, legal decisions, or
+  roadmap commitments changed.
 - **2026-05-11:** Company absorbed the latest App Planner content production
   model into Company/Content operating guidance: teal `content_calendar`
   records are content identity, due-date, and closeout truth; linked
@@ -86,6 +96,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Core business planning is not yet documented in a single operating plan.
 - Q2 goals are not yet defined in the active roadmap reference at `M:\miniBIOTA\miniBIOTA_Company\skills\review-roadmap-implications\reference\strategic-roadmap.md`.
 - Company-level decisions can blur with department implementation unless ownership is explicitly assigned.
+- The Aquatic Club talk creates a hard near-term readiness window through
+  2026-06-13. Talk, website, sponsor, and follow-up assets need tight claim
+  safety and commitment boundaries so public enthusiasm does not become an
+  accidental sponsor, financial, launch, or roadmap promise.
 - All required Phase 11 evidence items are now recorded, but Company must continue the planned 2 to 4 week probation window before final Brain retirement.
 - `YouTube_Extraction` is retired historical tooling, not a pending Content import migration; any future reactivation would be separate approval-gated Content work.
 - Company must keep the operating review rhythm alive so dependency maps,
@@ -95,8 +109,15 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Cross-Domain Notes
 
 - **Research:** Scientific claims and ecological feasibility should be grounded in Supabase and Research docs.
+- **Research:** Aquatic Club talk support includes ecological claim review,
+  uncertainty labels, and Q&A-safe wording before the final deck/script lock.
 - **Hardware:** Roadmap and business planning should reflect climate control, sensor expansion, enclosure, telemetry, and estuary feasibility.
+- **Hardware:** Aquatic Club talk support includes engineering proof points,
+  current-vs-future boundaries, telemetry/sensor visuals, and live-system
+  safety discipline.
 - **Content:** Strategy depends on story arc, publishing cadence, proof assets, and public narrative.
+- **Content:** Aquatic Club talk support owns the TED-style talk arc, script,
+  deck, proof-media selection, rehearsal ladder, and Q&A preparation.
 - **Content:** Scheduled production planning should use the App Planner model
   where `content_calendar` is the teal content identity/due/close record and
   the linked Content-domain work project, blue parent production task, and
@@ -104,10 +125,23 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   tasks when a content entry already exists.
 - **Content:** `YouTube_Extraction` is retired historical tooling; no YouTube transcript-to-`content_pipeline` import migration is pending unless the user explicitly reactivates it. Any reactivation would be Content-owned and approval-gated.
 - **Brand:** Mission, vision, public language, and company narrative must remain aligned.
+- **Brand:** Aquatic Club talk support owns title/tagline, audience promise,
+  speaker bio, visual tone, CTA copy, and sponsor-safe wording.
 - **Growth:** Business plan, sponsorships, campaigns, and public commitments depend on Company decisions.
+- **Growth:** Aquatic Club talk support owns sponsor hypothesis, audience
+  follow-up sequencing, partner/sponsor brief drafts, and post-talk outreach
+  preparation, with all sponsor commitments still approval-gated.
 - **Financials:** Roadmap and business plan must reflect runway, debt pressure, revenue baseline, taxes, and spending decisions.
+- **Financials:** Aquatic Club talk support may provide cost awareness and
+  sponsor ask guardrails; draft numbers are planning inputs, not commitments.
 - **Web:** Public site remains the public source of truth and should express company direction clearly.
+- **Web:** Aquatic Club talk support owns the public QR destination, about/proof
+  updates, and contact/newsletter/sponsor-interest CTA path, subject to
+  separate website implementation approval.
 - **App:** Internal tools should support operating workflows and structured records without becoming public product scope by accident.
+- **App:** Aquatic Club talk support is internal Planner/media access and
+  backup support only; no App runtime behavior changed from the Planner record
+  creation.
 - **App:** App Planner/Supabase is the shared project/task/program runtime for
   Company work status. Company owns planning strategy, program governance,
   operating cadence, and cross-domain coordination; App owns Planner runtime

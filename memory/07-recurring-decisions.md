@@ -1,6 +1,6 @@
 ﻿---
 title: Recurring Decisions
-last_updated: 2026-05-09
+last_updated: 2026-05-11
 ---
 # Recurring Decisions
 
@@ -26,6 +26,9 @@ last_updated: 2026-05-09
 - Planner `work_projects` and `tasks` are the structured source for Company task/project state when current operating status matters; do not recreate task truth in Markdown.
 - Planner project/task writes are live Supabase writes and require explicit approval.
 - Company Planner coordination does not replace domain-owned implementation queues.
+- When Josue refers to "my calendar" in Company planning sessions, interpret it as the calendar view inside the miniBIOTA App Planner tab unless he specifies an external calendar.
+- Daily scheduling should combine strategic priority judgment with realistic capacity planning. The Company Agent should protect the day from overloading by choosing a small number of meaningful work blocks, preserving buffer time, and naming why each task fits the current company priorities.
+- Scheduling a task onto the Planner calendar is a live Planner/Supabase write. Read current Planner state when task fit, duplication, or domain ownership matters; ask for explicit approval before creating or scheduling tasks unless Josue has already clearly approved that exact scheduling action.
 - Roadmap cadence and operating review rhythm are Company-owned coordination functions; they do not create roadmap commitments, launch targets, or public promises without explicit approval.
 - Dependency maps are Company operating memory and should identify affected domains, downstream owners, blockers, handoff surfaces, and review timing.
 - Cross-interface and cross-agent handoffs must use durable files, briefs, or structured records as the handoff surface. Chat history alone is not enough.

@@ -1,6 +1,6 @@
 ﻿---
 title: Roadmap And Priorities
-last_updated: 2026-05-09
+last_updated: 2026-05-11
 ---
 # Roadmap And Priorities
 
@@ -20,6 +20,7 @@ The exact migrated roadmap reference lives at `skills/review-roadmap-implication
 - Coordinate cross-domain priorities without replacing department source-of-truth systems.
 - Review migrated task priorities and quarter targets with Josue before treating them as approved.
 - Use App Planner/Supabase for live Company task/project status under `company_ops`; do not treat Planner workflow status as a roadmap commitment or public/business commitment.
+- Use daily Planner scheduling as a strategy tool: choose work that advances active priorities, respect domain ownership, avoid packing the day past realistic capacity, and leave buffer for creative, technical, and operational spillover.
 
 ## Known Risks And Gaps
 - Roadmap detail is mostly unfilled after the first confirmed milestone, limiting strategic visibility.
@@ -33,6 +34,7 @@ The exact migrated roadmap reference lives at `skills/review-roadmap-implication
 - Treat checked items as completed only when the roadmap explicitly marks them complete or another source verifies completion.
 - Treat unchecked roadmap entries as planned or proposed context only when another active source confirms their status.
 - Check current structured tasks, milestones, finance-sensitive assumptions, or domain status before time-sensitive roadmap recommendations.
+- When planning a specific day, verify current Planner task state if task selection, scheduling, blockers, or duplication matter.
 - Treat deadlines and launch windows as commitments only when Josue explicitly approves them.
 - Use domain owners to validate implementation feasibility before making company-level sequencing feel final.
 - Treat Planner project/task status as operational workflow state. A Planner task can show planned, active, blocked, done, or archived work without creating or proving a roadmap commitment, launch target, financial commitment, sponsor obligation, public promise, or legal decision.

@@ -2,7 +2,7 @@
 id: app_operations
 title: 11. miniBIOTA_App
 domain: app_operations
-last_updated: 2026-05-09
+last_updated: 2026-05-11
 tags: [app, electron, operations, planner, monitoring, internal-tools]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -74,6 +74,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   in Planner board/calendar surfaces.
 - Planner week/month calendar views show general work project date spans from
   `work_projects.start_date` through `target_date`.
+- Planner week/month calendar views start on Sunday; Week renders Sunday
+  through Saturday and Month uses a Sunday-first grid.
 - Planner Today includes initial weekly planning prompts that prefill recurring
   task candidates for longform selection, short-opportunity review, and Sunday
   close.

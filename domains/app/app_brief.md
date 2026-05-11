@@ -2,7 +2,7 @@
 id: app_brief
 title: App Operations Brief
 domain: app_operations
-last_updated: 2026-05-09
+last_updated: 2026-05-11
 tags: [app, electron, operations, planner, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -57,6 +57,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Continue using the app for financials, Planner/content production, CRM, media tagging, and monitoring workflows.
 
 ## Recent Milestones
+
+- **2026-05-11:** Planner Calendar week/month start-day behavior was aligned to Sunday. Week view now renders Sunday through Saturday, and Month view uses a Sunday-first header and Sunday-anchored grid. This was a local renderer display update only; no Planner records, schema, migrations, Storage, telemetry, MQTT, CRM, Financials, Site Admin, Monitoring, or live app actions changed, and Electron visual smoke verification was not run.
 
 - **2026-05-09:** Planner Programs UI was visually tightened so Programs read as cross-domain operation containers, linked projects read as domain-owned lanes, and task previews remain subordinate action rows. Planner source species filtering now uses a compact search-driven selector instead of rendering the full species chip wall by default. This was a local renderer/CSS behavior update only; no Planner records, schema, migrations, Storage, telemetry, MQTT, CRM, Financials, Site Admin, Monitoring, or live app actions changed, and Electron visual smoke verification remains pending.
 

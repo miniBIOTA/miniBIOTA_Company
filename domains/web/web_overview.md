@@ -2,7 +2,7 @@
 id: web_overview
 title: 9. miniBIOTA_Web
 domain: web_and_digital_presence
-last_updated: 2026-05-09
+last_updated: 2026-05-11
 tags: [web, public-site, flask, telemetry, public-only, design-system, planner]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -22,7 +22,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Current State
 - The site is public-only; legacy Flask admin has been removed from active web code.
-- Public telemetry consumes read-only snapshot state through `/api/telemetry/overview` and `/live-monitoring`.
+- Public telemetry consumes the live read-only Supabase snapshot through `/api/telemetry/overview` and `/live-monitoring`.
 - Web context now uses the repo-native memory/skills architecture in `M:\miniBIOTA\miniBIOTA_Web\`.
 - Brain no longer keeps a Web `docs/` mirror; use the source repo's memory/skills/reference structure for detailed Web context.
 - App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`, with current Web project records `36` through `42`.
@@ -38,14 +38,14 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Keep Web memory and active Company Web reports aligned with the public-only, local-first telemetry and control architecture.
 - Use App Planner/Supabase for live Web task status; keep Markdown focused on architecture, rules, scope, and decisions.
 - Continue active UX Lab work through Planner project `40`; use `/ux-lab` for UX states, interaction rules, page patterns, and journeys while keeping development routes out of production navigation.
-- Complete the App/Hardware coordinator-to-website telemetry handoff so public observability renders real coordinator, upstream, setpoint, and node state.
+- Keep the now-connected App/Hardware coordinator-to-website telemetry handoff production-verified, public-safe, and read-only.
 - Establish a repeatable sync path from newsletter capture to an external email platform.
 - Replace engineering system placeholder images with real system imagery when available.
 - Develop later content/product passes for `/events`, `/news`, and `/chronicles`.
 
 ## Risks / Gaps
 - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
-- Public telemetry depends on the App/Hardware coordinator producer path for real live data.
+- Public telemetry now depends on the App/Hardware coordinator producer staying healthy and aligned with the public read-only contract.
 - Planner records can organize Web work, but they do not authorize production navigation, public claims, private/admin surfaces, or runtime behavior changes by themselves.
 - `/events`, `/news`, and `/chronicles` remain active public routes but need later content/product development.
 - Engineering system pages still need real system images to replace placeholders.

@@ -29,7 +29,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Active Priorities
 - Complete sealing and infrastructure upgrades to reach airtight closed-system standard.
 - Execute biomes 2-5 hardware rewire to resolve wiring faults, replace damaged SHT31 modules where needed, and stabilize sensor readings.
-- Validate website rendering against the live Supabase `telemetry_snapshot` row now produced by the Wyse coordinator. History logging and command queues remain deferred. See `miniBIOTA_Hardware/skills/telemetry-coordinator/reference/telemetry-pipeline-plan.md`.
+- Maintain the live website telemetry path now reading the Wyse-produced Supabase `telemetry_snapshot` row. History logging and command queues remain deferred. See `miniBIOTA_Hardware/skills/telemetry-coordinator/reference/telemetry-pipeline-plan.md`.
 - Keep Hardware durable detail in repo-local biome folders, `0. Hardware Systems/`, memory, playbooks, and skill references. Use App Planner/Supabase for Hardware work tracking and task completion status. Company carries active strategy-level Hardware reporting and cross-domain coordination; Brain is historical/archive lookup only.
 
 ## Recent Milestones
@@ -46,7 +46,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Known Risks & Blockers
 - Biomes 2-5 have SHT31 wiring, water-damage, and connection-quality risks; rewire resolves this but is not yet scheduled.
 - Biome 1 has no sensors and will remain offline until hardware is installed.
-- Website rendering and stale/offline handling still need final Web-side validation against the live `telemetry_snapshot` row. Historical telemetry and command queues remain deferred.
+- Website telemetry is receiving the live `telemetry_snapshot` row; continue monitoring stale/offline handling and public-safe payload semantics. Historical telemetry and command queues remain deferred.
 - Airtight closure not yet achieved; passive air leakage still present across multiple biomes.
 - Brain and downstream agents must stop looking for Hardware detail in `6. miniBIOTA_Hardware/docs/`; that mirror is intentionally removed.
 
@@ -54,7 +54,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - During the biomes 2-5 sensor/controller rewire, tanks may need to go offline temporarily; flag to Content Production before scheduling.
 - Hardware Agent should consult App Planner tasks/projects when choosing next work and should offer to mark Planner tasks done when completed work maps clearly to an open task.
 - Biome status (healthy/stale/offline) is now visible in real-time via the Electron app; relevant for ecology tracking sessions.
-- The public website can now consume the coordinator's read-only Supabase `telemetry_snapshot` row `id=1`; Web should validate `/api/telemetry/overview` and `/live-monitoring` rendering against the live payload.
+- The public website now consumes the coordinator's read-only Supabase `telemetry_snapshot` row `id=1`; Hardware keeps the payload public-safe, including `target_temperature_c: null` for unset targets.
 - Standardized system names below are canonical for all content, brand, and partner communications.
 
 ## Standardized System Names

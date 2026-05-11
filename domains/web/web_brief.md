@@ -2,7 +2,7 @@
 id: web_brief
 title: Web & Digital Presence Brief
 domain: web_and_digital_presence
-last_updated: 2026-05-10
+last_updated: 2026-05-11
 tags: [website, digital-presence, information-architecture, ui, telemetry, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -20,7 +20,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## System State
 - The site is a public-only Flask website and Railway-hosted application. It owns public biosphere, biome, species, engineering, chronicle, news, events, FAQ, newsletter, poll, and read-only telemetry surfaces.
 - The legacy Flask admin surface has been removed from active web code. Forward operator/admin workflows belong in the Electron desktop app, not the public website.
-- Telemetry architecture is local-first. The public site consumes read-only telemetry snapshot state through `/api/telemetry/overview` and `/live-monitoring`; it must not imply direct pump switching or centralized actuator control.
+- Telemetry architecture is local-first. The public site now consumes the live read-only telemetry snapshot through `/api/telemetry/overview` and `/live-monitoring`; it must not imply direct pump switching or centralized actuator control.
 - Web Agent context now uses the repo-native memory/skills architecture in `M:\miniBIOTA\miniBIOTA_Web\`: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an active Web `docs/` mirror. `_system/sync_docs.ps1` removes stale `9. miniBIOTA_Web\docs` if it appears.
 - App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`. Current Web projects are IDs `36` through `42`, and Web docs now route actionable task status to Planner instead of Markdown task lists.
@@ -28,13 +28,14 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Active Priorities
 - Keep Web memory and the Company Web report aligned with the public-only, local-first telemetry and control architecture.
 - Continue the active UX Interaction Lab scope in App Planner project `40`; the first live `/biosphere#biosphere-ecosystem-map` application pass is stabilized, reusable state patterns are defined in `/ux-lab` and first applied to `/species`, the first shared EEL state-preset promotion pass is complete, `/chronicles` has its first archive state/accessibility pass, shared detail tab/accordion semantics are tightened across core detail pages, `/ux-lab` now includes first-pass journey maps and tighter keyboard/modal preview contracts, and local route/lint/full-test/HTTP smoke checks are green. Next Web UX work should focus on owner/design review, real browser/mobile visual QA when tooling is available, or a separately scoped live-surface application while keeping `/ux-lab` and `/ui-kitchen-sink` development-gated and out of production navigation.
-- Complete the desktop-app/coordinator-to-website telemetry handoff so public observability can render real coordinator, upstream, setpoint, and node state.
+- Keep the now-connected desktop-app/coordinator-to-website telemetry handoff production-verified, public-safe, and read-only.
 - Establish a repeatable sync path from newsletter capture to an external email platform.
 - Replace engineering system placeholder images with real system imagery when available.
 - Develop later content/product passes for /events, /news, and /chronicles.
 - Build Operation Living Web, the Ecosystem Relationship Graph architecture, as a public species-to-biome-to-biosphere relationship experience; Web architecture is now ready to pause, with broad food-web curation routed to the Research Agent via the Web repo handoff packet.
 
 ## Recent Milestones
+- 2026-05-11: Live public telemetry is connected. The Hardware/Wyse coordinator now publishes the read-only Supabase snapshot consumed by `/api/telemetry/overview` and `/live-monitoring`; the public page renders sensor biomes 2-5 while preserving the public/private boundary around pump, liquid, command, and control data.
 - 2026-05-10: Continued the UX Interaction Lab definition pass with first-pass journey maps and tighter dev-gated interaction-preview contracts. `/ux-lab` now covers species discovery, biome understanding, public telemetry inspection, chronicle reading, relationship exploration, gap recovery, tab/mode keyboard behavior, and modal focus review. No live public page behavior, database, schema, Planner, production navigation, admin surface, telemetry control/runtime, or graph engine changed.
 - 2026-05-10: Completed a practical QA closeout for the UX Interaction Lab/UI System continuation. Local HTTP smoke checks passed for `/chronicles`, `/species`, `/biosphere`, and filtered Ecosystem Map URLs; compile checks, full tests, route contracts, and relevant token lints passed. In-app browser automation was unavailable because the required browser Node REPL tool was not exposed in the session. No database, schema, Planner, production navigation, admin surface, telemetry control/runtime, or graph engine changed.
 - 2026-05-10: Applied the first shared detail-disclosure contract pass across species, biome, engineering, and biosphere pages. Tabs now expose explicit tab/panel relationships with synchronized hidden state, and detail accordions expose owned panels with aria-hidden state through shared behavior. Route contract and relevant token lints passed. No database, schema, Planner, production navigation, admin surface, telemetry control/runtime, or graph engine changed.
@@ -47,7 +48,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - 2026-05-09: Continued Planner task 206 by making the /ux-lab tabs, filter/search, and accordion previews interactive for design review. This remains development-only UX Lab behavior; no live public page behavior changed.
 - 2026-05-09: Started the /ux-lab polish pass with a current-pass overview, section jump navigation, and an interactive Operation Living Web list/graph/detail mode preview. With owner approval, Planner task 206 was created for continuing UX Lab visual hierarchy polish and priority interactive previews. No live public route behavior or Ecosystem Map behavior changed.
 - 2026-05-09: Created Planner task 205 under UX Interaction Lab project 40 and added first-pass Operation Living Web graph/list UX definitions to the dev-gated /ux-lab surface. The pass defines list-first progressive enhancement, sparse graph states, relationship status weighting, species/resource node distinction, selected node/edge detail, cross-page continuity, and Research-reviewed boundaries. With owner approval, Planner task 205 was marked done after implementation and verification. No live Ecosystem Map behavior changed.
-- 2026-05-09: Added FAQ/About page-pattern preview to the dev-gated /ux-lab surface and applied the first telemetry UX pass to /live-monitoring. Live monitoring now announces refresh state, handles malformed/unavailable refreshes with public-safe language, and preserves last valid public values; public telemetry remains read-only and still depends on the App/Hardware producer path for real live data.
+- 2026-05-09: Added FAQ/About page-pattern preview to the dev-gated /ux-lab surface and applied the first telemetry UX pass to /live-monitoring. Live monitoring now announces refresh state, handles malformed/unavailable refreshes with public-safe language, and preserves last valid public values. At that point public telemetry still depended on the App/Hardware producer path; the live handoff was later connected on 2026-05-11.
 - 2026-05-09: Added first-pass accessibility QA and component-promotion rules to the dev-gated /ux-lab surface. No live route behavior, public navigation, telemetry runtime, or public data behavior changed.
 - 2026-05-09: Added first-pass page-pattern previews to the dev-gated /ux-lab surface for index, detail, archive feed, monitoring dashboard, and graph explorer layouts. No live route behavior, public navigation, telemetry runtime, or public data behavior changed.
 - 2026-05-09: Added first-pass interaction pattern previews to the dev-gated /ux-lab surface for tabs, filters/search, accordions, gallery/modal behavior, telemetry refresh, form messaging, timelines, and graph controls. With owner approval, Planner task `187` was marked done. No live route behavior, public navigation, telemetry runtime, or public data behavior changed.
@@ -67,7 +68,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Known Risks & Blockers
 - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
-- Public telemetry still depends on the App/Hardware coordinator producer path for real live data.
+- Public telemetry now depends on the App/Hardware coordinator producer staying healthy and aligned with the public read-only contract.
 - `/events`, `/news`, and `/chronicles` remain active public routes but need later content/product development.
 - Engineering system pages still need real system images to replace placeholders.
 

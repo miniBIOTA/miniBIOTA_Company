@@ -38,13 +38,13 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Priorities
 - Complete sealing and infrastructure upgrades to reach airtight closed-system standard.
 - Execute biomes 2-5 rewire to resolve sensor faults and stabilize readings.
-- Validate public website rendering against the live Supabase `telemetry_snapshot` row and keep historical telemetry/command queues deferred until explicitly scoped.
+- Maintain public website telemetry against the live Supabase `telemetry_snapshot` row and keep historical telemetry/command queues deferred until explicitly scoped.
 - Keep Hardware durable detail in source repo biome folders, `0. Hardware Systems/`, memory, playbooks, and skill references.
 
 ## Risks / Gaps
 - Biomes 2-5 have SHT31 wiring, water-damage, and connection-quality risks until the rewire is complete.
 - Biome 1 has no sensors and remains expected-offline until hardware is installed.
-- Website-side rendering and stale/offline handling should be validated against the live `telemetry_snapshot`; history logging and command queues remain deferred.
+- Website telemetry is reading the live `telemetry_snapshot`; stale/offline handling and public-safe payload semantics should continue to be monitored. History logging and command queues remain deferred.
 - Airtight closure is not yet achieved; passive air leakage remains across multiple biomes.
 
 ## Files In This Folder

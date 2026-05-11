@@ -114,7 +114,7 @@ Brain no longer keeps a Web `docs\` mirror after the memory/skills migration.
 | `skills\update-ui-system\SKILL.md` | Shared UI and design-system workflow |
 | `skills\work-with-public-telemetry\SKILL.md` | Public telemetry workflow |
 | `skills\close-web-session\SKILL.md` | Closeout workflow |
-| `skills\*\reference\` | Exact archived-detail references for playbooks |
+| `skills\*\reference\` | Exact supporting references for playbooks |
 
 
 

@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Executive Brief
 
-- Generated: 2026-05-12 06:57:38 -04:00
+- Generated: 2026-05-12 12:45:59 -04:00
 - Purpose: Company-side synthesis of domain reports.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 
@@ -17,17 +17,17 @@
 ### Current Status
 - miniBIOTA has already been tested as a fully closed working concept in Q1 2026.
 - Operation Living Atlas is active as the coordinated backfill program for published content, species histories, chronicles, observations, media, and ecological relationships.
-- The near-term operating agenda is still being formalized; the business plan is not yet assembled.
+- Q2 2026 now has one approved strategic focus: execute a great Aquatic Club of Pasco County talk on 2026-06-13 and make the supporting assets, data, proof, web/social presence, and follow-up paths strong enough that the talk becomes the successful wrap-up of Q2. The business plan is not yet assembled, and Q3+ roadmap detail remains thin.
 
 ### Priorities
+- Coordinate Aquatic Club Talk Readiness as the Q2 strategic forcing function. Remaining Q2 work should stack toward the talk unless urgent operations require otherwise. The talk should help people buy into the miniBIOTA story, feel emotionally connected to the project, understand why the build matters, make their own novel connections, and leave with curiosity, awe, and a sense of future possibilities.
 - Coordinate Operation Living Atlas across Company, Research, Content, Web, App, and Raw Footage. Source plan: `M:\miniBIOTA\miniBIOTA_Company\skills\coordinate-cross-domain-priorities\reference\operation-living-atlas-plan.md`; first model arc: Lake Post-Seal / Flagfish / Daphnia / Ghost Shrimp.
 - Build a business plan that aligns operations, funding, storytelling, and hardware development.
-- Complete the content strategy and story arc so public communication matches the current stage of the project.
 
 ### Risks / Gaps
-- The roadmap is mostly unfilled after the first confirmed milestone, limiting strategic visibility.
+- The roadmap is mostly unfilled after the Q2 talk focus, limiting Q3+ strategic visibility.
 - Core business planning is not yet documented in a single operating plan.
-- Q2 goals are not yet defined in `M:\miniBIOTA\miniBIOTA_Company\skills\review-roadmap-implications\reference\strategic-roadmap.md`.
+- Post-talk Q3+ quarterly objectives and task priorities still need a later review after the Aquatic Club talk window.
 
 ## 2. miniBIOTA_Financials
 
@@ -213,7 +213,7 @@
 
 ## Cross-Domain Next Actions
 
-- 1. miniBIOTA_Company: Next action - Coordinate Operation Living Atlas across Company, Research, Content, Web, App, and Raw Footage. Source plan: `M:\miniBIOTA\miniBIOTA_Company\skills\coordinate-cross-domain-priorities\reference\operation-living-atlas-plan.md`; first model arc: Lake Post-Seal / Flagfish / Daphnia / Ghost Shrimp. Gap - The roadmap is mostly unfilled after the first confirmed milestone, limiting strategic visibility.
+- 1. miniBIOTA_Company: Next action - Coordinate Aquatic Club Talk Readiness as the Q2 strategic forcing function. Remaining Q2 work should stack toward the talk unless urgent operations require otherwise. The talk should help people buy into the miniBIOTA story, feel emotionally connected to the project, understand why the build matters, make their own novel connections, and leave with curiosity, awe, and a sense of future possibilities. Gap - The roadmap is mostly unfilled after the Q2 talk focus, limiting Q3+ strategic visibility.
 - 2. miniBIOTA_Financials: Next action - No immediate action recorded. Gap - No cash balance / runway visibility yet â€” highest structural gap. April 30 snapshot planned.
 - 3. miniBIOTA_Research: Next action - Keep species counts, observation totals, thread/loop state, and population status synchronized with Supabase. Gap - Ecology docs can drift quickly because live observations and Supabase records are updated often.
 - 4. miniBIOTA_Brand: Next action - Turn the mission and vision into reusable messaging pillars, founder narrative, and external positioning language. Gap - Brand documentation is still too sparse to support consistent execution across web, content, events, and fundraising.

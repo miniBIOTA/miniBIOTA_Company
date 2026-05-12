@@ -33,11 +33,17 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   `work_domains`, `work_projects`, project-management fields on `tasks`, and
   an optional `content_calendar.work_project_id` link. Initial Planner task UI
   wiring now uses live domains, project assignment, workflow status, multi-day
-  task spans, Today and Tasks task surfaces, an initial general Projects view
-  with linked task/content detail, content calendar assignment into the general
-  work-project layer, task hierarchy UI through `parent_task_id`, project
-  milestone/context rendering in week/month calendar views, and initial weekly
-  planning prompts in Planner Today. Migration 010 was applied successfully by the user on 2026-05-09, making the cross-domain Programs/Operations layer live with `work_programs` and `work_program_projects`. Live Program records now include `Operation Living Atlas` (`work_programs.id = 1`), `Operation Living Web` (`work_programs.id = 2`), and `Aquatic Club Talk Readiness` (`work_programs.id = 3`), with domain-owned projects linked through `work_program_projects`.
+  task spans, due-date deadlines, Today and Tasks task surfaces, an initial
+  general Projects view with linked task/content detail, content calendar
+  assignment into the general work-project layer, task hierarchy UI through
+  `parent_task_id`, project milestone/context rendering in calendar views, and
+  initial weekly planning prompts in Planner Today. Migration 010 was applied
+  successfully by the user on 2026-05-09, making the cross-domain
+  Programs/Operations layer live with `work_programs` and
+  `work_program_projects`. Live Program records now include `Operation Living
+  Atlas` (`work_programs.id = 1`), `Operation Living Web` (`work_programs.id =
+  2`), and `Aquatic Club Talk Readiness` (`work_programs.id = 3`), with
+  domain-owned projects linked through `work_program_projects`.
 - App project management is now Planner-integrated under
   `work_domains.key = app` / `domain_id = 9`. After the 2026-05-12
   cross-domain cleanup, App has 10 total work projects, 9 non-archived projects,
@@ -63,6 +69,15 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-12:** App added Planner parent/container deadline support using
+  `tasks.due_date` without migrations or live Planner record writes. The task
+  modal, save paths, task cards, Today, Timeline, Week, Month, task board,
+  project detail, quick edit controls, and linked content-date push guard now
+  separate parent/container due dates from scheduled work occurrences. Today
+  and Timeline now lead parent/container cards with the scheduled child task
+  when child work caused the parent to appear. No database records, schema,
+  migrations, Storage, telemetry, public site behavior, or Planner records were
+  changed by the App implementation.
 - **2026-05-12:** Company applied approved App Planner cleanup from the
   cross-domain task relevance review: completed and archived stale App Agent
   wiring project `11`, made task `279` a due-only Aquatic Club support
@@ -436,7 +451,9 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   `work_projects` provide milestone/context visibility instead of flooding
   every day in their date range, and parent task containers with scheduled
   children render the child task as the primary title only on dates with child
-  work.
+  work. Parent/container task deadlines belong in `tasks.due_date`; scheduled
+  date, scheduled time, and span end date should represent concrete work
+  occurrences.
 - **All domains:** Prompt Library now stores reusable prompt records in `prompt_library`. These prompts can mature into workflow templates, but create/edit/favorite/archive/restore actions are live app data writes and should be treated as operational records.
 - **All domains:** App Planner/Supabase is the shared project/task runtime for
   domain-agent rollout. App's own work lives under the App domain, while each

@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Master Context
 
-- Generated: 2026-05-12 06:57:38 -04:00
+- Generated: 2026-05-12 12:45:59 -04:00
 - Source contract: Company `domains/` reports are included below.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 - Format: portable Markdown with Obsidian wiki-links normalized or removed.
@@ -24,8 +24,11 @@
 ## Current State
 - miniBIOTA has already been tested as a fully closed working concept in Q1 2026.
 - Operation Living Atlas is active as the coordinated backfill program for published content, species histories, chronicles, observations, media, and ecological relationships.
-- The near-term operating agenda is still being formalized; the business plan is not yet assembled.
-- Strategic roadmap detail is thin beyond early 2026. Q2 goals are not yet defined.
+- Q2 2026 now has one approved strategic focus: execute a great Aquatic Club of
+  Pasco County talk on 2026-06-13 and make the supporting assets, data, proof,
+  web/social presence, and follow-up paths strong enough that the talk becomes
+  the successful wrap-up of Q2. The business plan is not yet assembled, and
+  Q3+ roadmap detail remains thin.
 - Company project management is now organized in App Planner/Supabase under
   `work_domains.key = company_ops` / `domain_id = 1`: 5 Company work projects
   track 21 Company tasks, with active Company coordination now including the
@@ -49,11 +52,18 @@
   Supabase-backed behavior.
 
 ## Priorities
+- Coordinate Aquatic Club Talk Readiness as the Q2 strategic forcing function.
+  Remaining Q2 work should stack toward the talk unless urgent operations
+  require otherwise. The talk should help people buy into the miniBIOTA story,
+  feel emotionally connected to the project, understand why the build matters,
+  make their own novel connections, and leave with curiosity, awe, and a sense
+  of future possibilities.
 - Coordinate Operation Living Atlas across Company, Research, Content, Web, App, and Raw Footage. Source plan: `M:\miniBIOTA\miniBIOTA_Company\skills\coordinate-cross-domain-priorities\reference\operation-living-atlas-plan.md`; first model arc: Lake Post-Seal / Flagfish / Daphnia / Ghost Shrimp.
 - Build a business plan that aligns operations, funding, storytelling, and hardware development.
 - Complete the content strategy and story arc so public communication matches the current stage of the project.
 - Finish species card coverage and finalize species information for public-facing use.
-- Expand the roadmap beyond Q1 2026 into decision-ready quarterly objectives.
+- Expand the roadmap beyond Q2 2026 into decision-ready quarterly objectives
+  after the talk window.
 - Use App Planner/Supabase for live Company task status while keeping Markdown
   focused on strategy, governance, roadmap context, operating rules, and
   cross-domain coordination.
@@ -61,10 +71,14 @@
   planning stays with Company without duplicating domain repos.
 
 ## Risks / Gaps
-- The roadmap is mostly unfilled after the first confirmed milestone, limiting strategic visibility.
+- The roadmap is mostly unfilled after the Q2 talk focus, limiting Q3+
+  strategic visibility.
 - Core business planning is not yet documented in a single operating plan.
-- Q2 goals are not yet defined in `M:\miniBIOTA\miniBIOTA_Company\skills\review-roadmap-implications\reference\strategic-roadmap.md`.
-- Task priorities and quarter targets were assigned by Brain Agent during migration and need Josue's review.
+- Post-talk Q3+ quarterly objectives and task priorities still need a later
+  review after the Aquatic Club talk window.
+- Talk readiness is at risk if the rough script is delayed, rehearsal time is
+  squeezed, the slide deck is not ready, or social profile/banner/photo updates
+  are not coordinated into the public-readiness path.
 - Company must keep the operating review rhythm alive so dependency maps,
   roadmap cadence, and Programs/Operations governance stay current without
   sliding back into the retired Brain planning model.
@@ -104,7 +118,12 @@
 - Brain no longer keeps a Company `docs/` mirror. Use the source repo's memory/skills structure for detailed Company Agent context.
 - miniBIOTA has already been tested as a fully closed working concept in Q1 2026.
 - A new Company-led cross-domain readiness program, `Aquatic Club Talk Readiness`, is active for Josue's 45-minute Aquatic Club of Pasco County talk on 2026-06-13 at 12:00 PM. Planner Program `work_programs.id = 3` links Company, Content, Brand, Research/Ecosystem, Hardware, Web, Growth/Sales, App, and Financials projects with scheduled parent tasks and subtasks through 2026-06-14.
-- The near-term operating agenda is still being formalized. The business plan is not yet assembled, and Q2+ roadmap detail remains thin.
+- Q2 2026 now has one approved strategic focus: execute a great Aquatic Club
+  of Pasco County talk on 2026-06-13 and use the supporting assets, data,
+  proof, web/social presence, and follow-up paths as the successful wrap-up of
+  Q2. This is an internal readiness focus, not a launch promise, sponsor
+  commitment, financial commitment, or public roadmap commitment. The business
+  plan is not yet assembled, and Q3+ roadmap detail remains thin.
 - Company project management is now Planner-integrated under
   `work_domains.key = company_ops` / `domain_id = 1`: 5 Company work projects
   track 21 Company tasks after the Aquatic Club talk setup on 2026-05-11.
@@ -115,11 +134,21 @@
 
 ## Active Priorities
 
-- Coordinate **Operation Living Atlas**, the cross-domain historical backfill and ecological knowledge-graph program. Source plan: `M:\miniBIOTA\miniBIOTA_Company\skills\coordinate-cross-domain-priorities\reference\operation-living-atlas-plan.md`. First model arc: Lake Post-Seal / Flagfish / Daphnia / Ghost Shrimp.
 - Coordinate **Aquatic Club Talk Readiness** as the near-term public-readiness forcing function for the 2026-06-13 talk. The program's goal is to prepare a polished 45-minute talk while producing reusable brand, content, web, proof, and sponsor-readiness assets without creating unapproved public, sponsor, financial, or roadmap commitments.
+- Use the talk as the Q2 strategic filter: remaining Q2 work should stack as
+  another brick layer toward the talk unless urgent operations require
+  otherwise. The talk should help people buy into the miniBIOTA story, feel
+  emotionally connected to the project, understand the big picture of what the
+  build means and why it matters, make their own novel connections, and leave
+  with curiosity, awe, and a sense of the project's future possibilities.
+- Create a clear support path after the talk. Direct support is best, a channel
+  follow is the minimum useful action, and general networking contacts are a
+  valuable middle ground. Any sponsor, financial, public, or offer language
+  remains approval-gated.
+- Coordinate **Operation Living Atlas**, the cross-domain historical backfill and ecological knowledge-graph program. Source plan: `M:\miniBIOTA\miniBIOTA_Company\skills\coordinate-cross-domain-priorities\reference\operation-living-atlas-plan.md`. First model arc: Lake Post-Seal / Flagfish / Daphnia / Ghost Shrimp.
 - Build a business plan that aligns operations, funding, storytelling, and hardware development.
-- Expand the roadmap beyond Q1 2026 into decision-ready quarterly objectives.
-- Define Q2 goals and review migrated task priorities with Josue.
+- Expand the roadmap beyond Q2 2026 into decision-ready quarterly objectives
+  after the talk window.
 - Use App Planner/Supabase as the live Company work queue while keeping
   roadmap commitments, public promises, financial commitments, and governance
   decisions approval-gated.
@@ -131,6 +160,15 @@
 
 ## Recent Milestones
 
+- **2026-05-12:** Josue approved the Q2 strategic framing: the rest of Q2
+  should culminate in executing a great 2026-06-13 Aquatic Club talk. Supporting
+  scripts, deck, proof media, claim review, web/QR/follow-up paths, social
+  profile refreshes, organized data/assets, direct support options, channel
+  follows, and networking paths should build toward that talk. The readiness
+  definition is not satisfied if rehearsal is insufficient or the slide deck is
+  not ready, and a rough script is needed as soon as possible so rehearsal can
+  begin. No public, sponsor, financial, legal, launch, or roadmap commitment was
+  created.
 - **2026-05-12:** Company finished the remaining reporting/readback follow-up
   from the cross-domain Planner cleanup. Active Company domain briefs for
   Brand, Content, Research/Ecosystem, Hardware, Growth/Sales, Financials, Web,
@@ -267,14 +305,19 @@
 
 ## Known Risks & Blockers
 
-- Roadmap detail is mostly unfilled after the first confirmed milestone, limiting strategic visibility.
+- Roadmap detail is mostly unfilled after the Q2 Aquatic Club talk focus,
+  limiting Q3+ strategic visibility.
 - Core business planning is not yet documented in a single operating plan.
-- Q2 goals are not yet defined in the active roadmap reference at `M:\miniBIOTA\miniBIOTA_Company\skills\review-roadmap-implications\reference\strategic-roadmap.md`.
+- Post-talk Q3+ goals are not yet defined in the active roadmap reference at
+  `M:\miniBIOTA\miniBIOTA_Company\skills\review-roadmap-implications\reference\strategic-roadmap.md`.
 - Company-level decisions can blur with department implementation unless ownership is explicitly assigned.
 - The Aquatic Club talk creates a hard near-term readiness window through
   2026-06-13. Talk, website, sponsor, and follow-up assets need tight claim
   safety and commitment boundaries so public enthusiasm does not become an
   accidental sponsor, financial, launch, or roadmap promise.
+- Talk readiness is at risk if the rough script is delayed, rehearsal time is
+  squeezed, the slide deck is not ready, or social profile/banner/photo updates
+  are not coordinated into the public-readiness path.
 - All required Phase 11 evidence items are now recorded, but Company must continue the planned 2 to 4 week probation window before final Brain retirement.
 - `YouTube_Extraction` is retired historical tooling, not a pending Content import migration; any future reactivation would be separate approval-gated Content work.
 - Company must keep the operating review rhythm alive so dependency maps,
@@ -306,6 +349,8 @@
 - **Content:** Strategy depends on story arc, publishing cadence, proof assets, and public narrative.
 - **Content:** Aquatic Club talk support owns the TED-style talk arc, script,
   deck, proof-media selection, rehearsal ladder, and Q&A preparation.
+- **Content:** The rough talk script is needed as soon as possible so Josue can
+  begin rehearsing early.
 - **Content:** Scheduled production planning should use the App Planner model
   where `content_calendar` is the blue content identity/due/close record and
   the linked Content-domain work project, teal parent production task, and
@@ -315,6 +360,9 @@
 - **Brand:** Mission, vision, public language, and company narrative must remain aligned.
 - **Brand:** Aquatic Club talk support owns title/tagline, audience promise,
   speaker bio, visual tone, CTA copy, and sponsor-safe wording.
+- **Brand:** Talk readiness now includes a marketing/social profile refresh:
+  better descriptions, details, photos, and banner images for visible social
+  accounts before the talk window.
 - **Growth:** Business plan, sponsorships, campaigns, and public commitments depend on Company decisions.
 - **Growth:** Aquatic Club talk support owns sponsor hypothesis, audience
   follow-up sequencing, partner/sponsor brief drafts, and post-talk outreach
@@ -2032,6 +2080,9 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Planner task UI supports parent-child task hierarchy through
   `tasks.parent_task_id`, with nested subtasks visible in Planner Tasks and work
   project detail panels.
+- Planner task UI now separates parent/container deadlines from scheduled work:
+  `tasks.due_date` is the deadline/target field, while `scheduled_date`,
+  `scheduled_time`, and `span_end_date` represent work occurrences.
 - Planner has an initial Today task surface for scheduled/spanning, overdue,
   blocked, and active unscheduled work.
 - Planner has an initial Tasks board grouped by workflow status with domain
@@ -2041,7 +2092,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Work project modals show linked tasks and content entries, with quick open
   actions and New Task preselection for the current project/domain.
 - Planner content projects can be assigned to active general work projects through `content_calendar.work_project_id`, with linked project context shown in Planner board/calendar surfaces. Scheduled content production now uses the blue `content_calendar` card as the content due/close marker and a teal parent production task with subtasks as the execution schedule.
-- Planner Week/Month calendar views are schedule-first. Generic work projects render as single milestone cards on `target_date`, or `start_date` when no target exists, instead of spanning every day. Parent tasks with children appear only on dates with scheduled child work, and the child task title is the primary visible calendar title while the parent/container title remains context.
+- Planner Week/Month calendar views are schedule-first. Generic work projects render as single milestone cards on `target_date`, or `start_date` when no target exists, instead of spanning every day. Parent tasks with children appear only on dates with scheduled child work, and the child task title is the primary visible calendar title while the parent/container title remains context. Today and Timeline follow the same child-led display model for parent/container cards.
 - Planner week/month calendar views start on Sunday; Week renders Sunday
   through Saturday and Month uses a Sunday-first grid.
 - Planner Today includes initial weekly planning prompts that prefill recurring
@@ -2072,8 +2123,9 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Monitoring setpoint/control writes affect the live biosphere and require explicit confirmation before changes.
 - Supabase migrations and schema assumptions must be checked before app write paths are changed.
 - Planner task hierarchy has been visually smoke tested for the Aquatic Club
-  Week-view case, but broader Today, Month, Timeline, and content-production
-  daily-use coverage remains worth watching.
+  Week-view case, and parent/container due-date support has been added, but
+  broader daily-use coverage across Planner task creation, Today, Timeline,
+  Month, and content production remains worth watching.
 - Planner Programs/Operations schema and live Program records are live, but
   Program UI create/edit/link behavior still needs interactive smoke
   verification before daily reliance.
@@ -2117,11 +2169,17 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   `work_domains`, `work_projects`, project-management fields on `tasks`, and
   an optional `content_calendar.work_project_id` link. Initial Planner task UI
   wiring now uses live domains, project assignment, workflow status, multi-day
-  task spans, Today and Tasks task surfaces, an initial general Projects view
-  with linked task/content detail, content calendar assignment into the general
-  work-project layer, task hierarchy UI through `parent_task_id`, project
-  milestone/context rendering in week/month calendar views, and initial weekly
-  planning prompts in Planner Today. Migration 010 was applied successfully by the user on 2026-05-09, making the cross-domain Programs/Operations layer live with `work_programs` and `work_program_projects`. Live Program records now include `Operation Living Atlas` (`work_programs.id = 1`), `Operation Living Web` (`work_programs.id = 2`), and `Aquatic Club Talk Readiness` (`work_programs.id = 3`), with domain-owned projects linked through `work_program_projects`.
+  task spans, due-date deadlines, Today and Tasks task surfaces, an initial
+  general Projects view with linked task/content detail, content calendar
+  assignment into the general work-project layer, task hierarchy UI through
+  `parent_task_id`, project milestone/context rendering in calendar views, and
+  initial weekly planning prompts in Planner Today. Migration 010 was applied
+  successfully by the user on 2026-05-09, making the cross-domain
+  Programs/Operations layer live with `work_programs` and
+  `work_program_projects`. Live Program records now include `Operation Living
+  Atlas` (`work_programs.id = 1`), `Operation Living Web` (`work_programs.id =
+  2`), and `Aquatic Club Talk Readiness` (`work_programs.id = 3`), with
+  domain-owned projects linked through `work_program_projects`.
 - App project management is now Planner-integrated under
   `work_domains.key = app` / `domain_id = 9`. After the 2026-05-12
   cross-domain cleanup, App has 10 total work projects, 9 non-archived projects,
@@ -2147,6 +2205,15 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 
 ## Recent Milestones
 
+- **2026-05-12:** App added Planner parent/container deadline support using
+  `tasks.due_date` without migrations or live Planner record writes. The task
+  modal, save paths, task cards, Today, Timeline, Week, Month, task board,
+  project detail, quick edit controls, and linked content-date push guard now
+  separate parent/container due dates from scheduled work occurrences. Today
+  and Timeline now lead parent/container cards with the scheduled child task
+  when child work caused the parent to appear. No database records, schema,
+  migrations, Storage, telemetry, public site behavior, or Planner records were
+  changed by the App implementation.
 - **2026-05-12:** Company applied approved App Planner cleanup from the
   cross-domain task relevance review: completed and archived stale App Agent
   wiring project `11`, made task `279` a due-only Aquatic Club support
@@ -2520,7 +2587,9 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   `work_projects` provide milestone/context visibility instead of flooding
   every day in their date range, and parent task containers with scheduled
   children render the child task as the primary title only on dates with child
-  work.
+  work. Parent/container task deadlines belong in `tasks.due_date`; scheduled
+  date, scheduled time, and span end date should represent concrete work
+  occurrences.
 - **All domains:** Prompt Library now stores reusable prompt records in `prompt_library`. These prompts can mature into workflow templates, but create/edit/favorite/archive/restore actions are live app data writes and should be treated as operational records.
 - **All domains:** App Planner/Supabase is the shared project/task runtime for
   domain-agent rollout. App's own work lives under the App domain, while each

@@ -67,6 +67,9 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Planner task UI supports parent-child task hierarchy through
   `tasks.parent_task_id`, with nested subtasks visible in Planner Tasks and work
   project detail panels.
+- Planner task UI now separates parent/container deadlines from scheduled work:
+  `tasks.due_date` is the deadline/target field, while `scheduled_date`,
+  `scheduled_time`, and `span_end_date` represent work occurrences.
 - Planner has an initial Today task surface for scheduled/spanning, overdue,
   blocked, and active unscheduled work.
 - Planner has an initial Tasks board grouped by workflow status with domain
@@ -76,7 +79,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Work project modals show linked tasks and content entries, with quick open
   actions and New Task preselection for the current project/domain.
 - Planner content projects can be assigned to active general work projects through `content_calendar.work_project_id`, with linked project context shown in Planner board/calendar surfaces. Scheduled content production now uses the blue `content_calendar` card as the content due/close marker and a teal parent production task with subtasks as the execution schedule.
-- Planner Week/Month calendar views are schedule-first. Generic work projects render as single milestone cards on `target_date`, or `start_date` when no target exists, instead of spanning every day. Parent tasks with children appear only on dates with scheduled child work, and the child task title is the primary visible calendar title while the parent/container title remains context.
+- Planner Week/Month calendar views are schedule-first. Generic work projects render as single milestone cards on `target_date`, or `start_date` when no target exists, instead of spanning every day. Parent tasks with children appear only on dates with scheduled child work, and the child task title is the primary visible calendar title while the parent/container title remains context. Today and Timeline follow the same child-led display model for parent/container cards.
 - Planner week/month calendar views start on Sunday; Week renders Sunday
   through Saturday and Month uses a Sunday-first grid.
 - Planner Today includes initial weekly planning prompts that prefill recurring
@@ -107,8 +110,9 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Monitoring setpoint/control writes affect the live biosphere and require explicit confirmation before changes.
 - Supabase migrations and schema assumptions must be checked before app write paths are changed.
 - Planner task hierarchy has been visually smoke tested for the Aquatic Club
-  Week-view case, but broader Today, Month, Timeline, and content-production
-  daily-use coverage remains worth watching.
+  Week-view case, and parent/container due-date support has been added, but
+  broader daily-use coverage across Planner task creation, Today, Timeline,
+  Month, and content production remains worth watching.
 - Planner Programs/Operations schema and live Program records are live, but
   Program UI create/edit/link behavior still needs interactive smoke
   verification before daily reliance.

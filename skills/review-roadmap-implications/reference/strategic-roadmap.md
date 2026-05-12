@@ -2,7 +2,7 @@
 id: strategic_roadmap_reference
 title: Strategic Roadmap Reference
 domain: company_operations
-last_updated: 2026-05-05
+last_updated: 2026-05-12
 source: ../../../archive/superseded/strategic_roadmap.md
 ---
 # Strategic Roadmap Reference
@@ -22,7 +22,7 @@ Use this as reference material for roadmap analysis. Blank quarters and sparse f
 - Finalize the information and look for the species cards.
 
 ## Q2
-- Placeholder: no approved goals listed.
+- Approved strategic focus: execute a great Aquatic Club of Pasco County talk on 2026-06-13 and make the supporting assets, data, proof, web/social presence, and follow-up paths strong enough that the talk becomes the successful wrap-up of Q2. This focus does not create a launch promise, sponsor commitment, financial commitment, or public roadmap commitment.
 
 ## Q3
 - Placeholder: no approved goals listed.

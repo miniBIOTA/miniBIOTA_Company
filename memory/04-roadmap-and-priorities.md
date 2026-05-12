@@ -1,32 +1,35 @@
 ﻿---
 title: Roadmap And Priorities
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 ---
 # Roadmap And Priorities
 
 ## Current Roadmap State
 The roadmap is thin beyond early 2026. The first confirmed milestone is that miniBIOTA was tested as a fully closed working concept in Q1 2026.
 
-Q2 goals are not yet defined in the exact roadmap reference. Treat this as an active planning gap, not as permission to invent quarterly commitments.
+Q2 2026 now has one approved strategic focus: execute a great Aquatic Club of Pasco County talk on 2026-06-13 and make the supporting assets, data, proof, web/social presence, and follow-up paths strong enough that the talk becomes the successful wrap-up of Q2. This is an internal strategic focus and readiness target, not a launch promise, sponsor commitment, financial commitment, or public roadmap commitment.
 
 The exact migrated roadmap reference lives at `skills/review-roadmap-implications/reference/strategic-roadmap.md`.
 
 ## Active Priorities
+- Execute the Aquatic Club talk as the defining Q2 strategic goal. The talk should help people buy into the miniBIOTA story, feel emotionally connected to the project, understand the big picture of what the build means and why it matters, make their own novel connections, and leave with curiosity, awe, and a sense of the project's future possibilities.
+- Stack remaining Q2 work as "another brick layer" toward the talk: scripts, deck, proof media, claim safety, web/QR/follow-up surfaces, social profile refreshes, support paths, sponsor-safe language, rehearsal, and organized data/assets should all build toward showcasing miniBIOTA well.
 - Build a business plan that aligns operations, funding, storytelling, and hardware development.
 - Complete the content strategy and story arc so public communication matches the current stage of the project.
 - Finish species card coverage and finalize species information for public-facing use.
-- Expand the roadmap beyond Q1 2026 into decision-ready quarterly objectives.
+- Expand the roadmap beyond Q2 2026 into decision-ready quarterly objectives after the talk window.
 - Own roadmap cadence as a Company operating function: review roadmap gaps, dependency state, and quarterly objective readiness without inventing commitments.
 - Coordinate cross-domain priorities without replacing department source-of-truth systems.
-- Review migrated task priorities and quarter targets with Josue before treating them as approved.
 - Use App Planner/Supabase for live Company task/project status under `company_ops`; do not treat Planner workflow status as a roadmap commitment or public/business commitment.
 - Use daily Planner scheduling as a strategy tool: choose work that advances active priorities, respect domain ownership, avoid packing the day past realistic capacity, and leave buffer for creative, technical, and operational spillover.
 
 ## Known Risks And Gaps
 - Roadmap detail is mostly unfilled after the first confirmed milestone, limiting strategic visibility.
 - Core business planning is not yet documented in a single operating plan.
-- Q2 goals are not yet defined; this is an active planning gap.
-- Migrated task priorities and quarter targets need Josue's review before they are treated as approved current priorities.
+- Q2 has an approved focus, but post-talk Q3+ quarterly objectives remain thin.
+- The talk is not ready if rehearsal is insufficient or the slide deck is not ready.
+- A rough script is needed as soon as possible so rehearsal can begin early.
+- Brand/marketing follow-up is needed for better social media descriptions, details, photos, and banner images before the talk window.
 
 ## Roadmap Principles
 - Distinguish confirmed milestones, active priorities, proposed changes, and aspirational roadmap.
@@ -36,6 +39,7 @@ The exact migrated roadmap reference lives at `skills/review-roadmap-implication
 - Check current structured tasks, milestones, finance-sensitive assumptions, or domain status before time-sensitive roadmap recommendations.
 - When planning a specific day, verify current Planner task state if task selection, scheduling, blockers, or duplication matter.
 - Treat deadlines and launch windows as commitments only when Josue explicitly approves them.
+- Treat the Aquatic Club talk as the Q2 forcing function. Work outside urgent operations should support the talk unless Josue explicitly reprioritizes it.
 - Use domain owners to validate implementation feasibility before making company-level sequencing feel final.
 - Treat Planner project/task status as operational workflow state. A Planner task can show planned, active, blocked, done, or archived work without creating or proving a roadmap commitment, launch target, financial commitment, sponsor obligation, public promise, or legal decision.
 

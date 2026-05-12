@@ -24,7 +24,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - `miniBIOTA_Company` now uses repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Company `docs/` mirror. Use the source repo's memory/skills structure for detailed Company Agent context.
 - miniBIOTA has already been tested as a fully closed working concept in Q1 2026.
-- A new Company-led cross-domain readiness program, `Aquatic Club Talk Readiness`, is active for Josue's 45-minute Aquatic Club of Pasco County talk on 2026-06-13 at 12:00 PM. Planner Program `work_programs.id = 3` links Company, Content, Brand, Research/Ecosystem, Hardware, Web, Growth/Sales, App, and Financials projects with scheduled parent tasks and subtasks through 2026-06-14.
+- A new Company-led cross-domain readiness program, `Aquatic Club Talk Readiness`, is active for Josue's 45-minute Aquatic Club of Pasco County talk on 2026-06-13 at 12:00 PM. Planner Program `work_programs.id = 3` links Company, Content, Brand, Research/Ecosystem, Hardware, Web, Growth/Sales, App, and Financials projects with due-only parent/container tasks and scheduled child work through 2026-06-14.
 - Q2 2026 now has one approved strategic focus: execute a great Aquatic Club
   of Pasco County talk on 2026-06-13 and use the supporting assets, data,
   proof, web/social presence, and follow-up paths as the successful wrap-up of
@@ -67,6 +67,16 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-12:** Company applied Josue's approved Aquatic Club schedule
+  tightening pass. Planner parent/container tasks for the talk are now due-only
+  records, scheduled daily work remains on child tasks, supporting Hardware,
+  Web, Growth/Sales, App, Financials, and Brand social-profile projects are
+  active or linked into the talk readiness program, and new rough-script,
+  rehearsal, rough-deck, and QR-destination schedule items were added. Duplicate
+  rehearsal task `377` was deleted while canonical rehearsal task `373` remains
+  scheduled for 2026-05-20 at 4:00 PM. No public, sponsor, financial, legal,
+  launch, roadmap, app-runtime, website-behavior, or schema commitment was
+  created.
 - **2026-05-12:** Josue approved the Q2 strategic framing: the rest of Q2
   should culminate in executing a great 2026-06-13 Aquatic Club talk. Supporting
   scripts, deck, proof media, claim review, web/QR/follow-up paths, social

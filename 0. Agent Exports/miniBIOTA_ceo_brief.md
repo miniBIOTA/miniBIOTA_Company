@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Executive Brief
 
-- Generated: 2026-05-12 12:45:59 -04:00
+- Generated: 2026-05-12 13:15:00 -04:00
 - Purpose: Company-side synthesis of domain reports.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 

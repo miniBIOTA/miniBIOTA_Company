@@ -1,6 +1,6 @@
 ﻿---
 title: Recurring Decisions
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 ---
 # Recurring Decisions
 
@@ -32,6 +32,8 @@ last_updated: 2026-05-11
 - For cross-domain readiness work, use Planner `work_programs` as the umbrella, `work_projects` as domain-owned containers/deadline records, and scheduled `tasks` or subtasks as the actual daily calendar work. Do not set project `start_date` only to make a project visible across a prep window.
 - Planner Week/Month should read as a daily action schedule: `content_calendar` entries appear on their scheduled/due date; scheduled tasks/subtasks appear on their actual scheduled date/time; generic `work_projects` should appear only as compact milestone context, not daily span cards. Parent task containers with scheduled children should render child-first and only on dates where child work is scheduled.
 - Scheduled Content production in Planner uses `content_calendar` as the blue content identity, due-date, and closeout record. The linked Content-domain work project, teal parent production task, and subtasks are the execution schedule. Do not create duplicate generic "produce a short/video" tasks when a content calendar entry already exists; attach/create the work project and parent production task, generate subtasks from the format template, schedule subtasks across days, and keep the content scheduled date on or after required production work.
+- Financials Planner completion checks must verify the appropriate financial source tables before marking setup/readback tasks done. For close/revenue questions, check the monthly close and cash receipt layer as well as `revenue_streams`; `revenue_streams` alone may not prove whether an earned-period or deposited-cash close task is complete.
+- As of the 2026-05-12 Planner cleanup, task rows support operational statuses such as `open` and `done`, while project archive state uses project archive fields. If a duplicate task must be removed from active work without losing provenance, administratively close it only with explicit notes naming the retained canonical task and clarifying that no physical/public/financial/action work was completed by the cleanup itself.
 - Roadmap cadence and operating review rhythm are Company-owned coordination functions; they do not create roadmap commitments, launch targets, or public promises without explicit approval.
 - Dependency maps are Company operating memory and should identify affected domains, downstream owners, blockers, handoff surfaces, and review timing.
 - Cross-interface and cross-agent handoffs must use durable files, briefs, or structured records as the handoff surface. Chat history alone is not enough.

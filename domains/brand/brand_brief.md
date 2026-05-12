@@ -2,7 +2,7 @@
 id: brand_brief
 title: Brand & Marketing Brief
 domain: brand_and_marketing
-last_updated: 2026-05-09
+last_updated: 2026-05-12
 tags: [brand, marketing, messaging, planner, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -25,7 +25,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Foundational mission and vision language is established and migrated into the Brand repo memory/skills architecture.
 - Reach and distribution strategy is established for Substack, Reddit, press, podcast circuit, YouTube Community, Discord, Ko-fi, Open Collective, and future native comments.
 - Operational marketing assets are still thin: reusable messaging pillars, founder narrative, campaign templates, and outreach-ready pitch materials need deeper development.
-- App Planner/Supabase is the live Brand work queue under `work_domains.key = brand` / `domain_id = 4`. Current Brand projects are IDs `49` through `56`, and Brand docs now route actionable task status to Planner instead of Markdown task lists.
+- App Planner/Supabase is the live Brand work queue under
+  `work_domains.key = brand` / `domain_id = 4`. After the 2026-05-12
+  cross-domain cleanup, Brand has 9 active work projects, 1 archived merge
+  cleanup project, and 46 open Brand task/checklist rows. Brand docs route
+  actionable task status to Planner instead of Markdown task lists.
 - Planner tracks work only. Brand memory and skills remain the source for positioning, voice, claim safety, channel rules, support/sponsor boundaries, and approved-versus-draft language context.
 
 ## Active Priorities
@@ -39,6 +43,12 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-12:** Company applied approved Brand Planner cleanup from the
+  cross-domain task relevance review: Brand now has a `Core Messaging & Public
+  Identity System` project, `Speaking Track & Event Outreach`, merged
+  `Earned Media & Guest Outreach`, cleaned-up approval-gated task wording, and
+  scheduled/target-only work that keeps public posts, sends, support-platform
+  configuration, and sponsor/public claims approval-gated.
 - **2026-05-09:** Brand Planner integration wiring completed in Brand docs/memory/playbooks following the Hardware pilot pattern. App Planner/Supabase is now documented as the live Brand work queue, closeout asks whether completed work maps to Planner tasks before marking anything done, and the Planner/Markdown boundary is explicit: Planner tracks actionable work, while Brand memory and skills govern positioning, voice, claim safety, channel rules, support/sponsor boundaries, and approved-versus-draft language context. No public copy, sponsor promises, campaign commitments, partner commitments, launch/pricing/legal/scientific claims, website behavior, app behavior, public channels, Supabase records, Planner records, schema, migrations, or Brain docs were changed by the Brand Agent wiring pass.
 - **2026-05-05:** Brain Brand & Marketing folder converted to the same repo-named memory/skills pattern as Financials, Company, Content, and App. Brain folder is now `4. miniBIOTA_Brand`; the stale Brand docs mirror was removed; active detailed sources are `M:\miniBIOTA\miniBIOTA_Brand\AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`. `_system/sync_docs.ps1` now keeps Brand docs mirroring disabled and removes any stale `4. miniBIOTA_Brand\docs` folder if it appears.
 - **2026-04-30:** `miniBIOTA_Brand` created as dedicated Brand Agent workspace and initialized for Codex-first operation with `AGENTS.md`, the original agent protocol material, Codex session helpers, root `.gitignore`, and README. GitHub: `https://github.com/miniBIOTA/miniBIOTA_Brand`.

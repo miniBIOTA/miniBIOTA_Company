@@ -2,7 +2,7 @@
 id: financials_brief
 title: Financials Brief
 domain: financials
-last_updated: 2026-05-09
+last_updated: 2026-05-12
 tags: [finance, budget, revenue, debt, brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -32,11 +32,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 | Cash position | $282.35 business cash plus $13,177.78 personal runway support as of 2026-05-02 |
 
 Financials project management is now Planner-integrated under
-`work_domains.key = financials` / `domain_id = 2`: 6 Financials work projects
-track 14 Financials tasks, with 0 unlinked open Financials tasks after readback
-on 2026-05-09. The Financials Agent has verified and tightened local Planner
-wiring using the Hardware/App/Company rollout pattern; no live Planner records
-or financial records were changed during that local wiring verification.
+`work_domains.key = financials` / `domain_id = 2`. After the 2026-05-12
+cross-domain cleanup and financial readback, Financials has 7 active work
+projects and 20 task rows (15 open, 5 done). Planner remains task-status truth;
+financial tables and close records remain balance/revenue/expense truth.
 
 ## Active Priorities
 
@@ -51,6 +50,12 @@ truth remains in financial tables and close records, not Planner task text.
 
 ## Recent Milestones
 
+- **2026-05-12:** Company applied approved Financials Planner cleanup and
+  readback. Tasks `96` and `97` were marked complete after verifying
+  `account_balance_snapshots`, `expense_transactions`, and `planned_purchases`.
+  Task `99` was then marked complete after Josue confirmed April financials
+  were entered and readback confirmed monthly close `id=1` is closed for
+  `close_month = 2026-04-01` with April cash receipts entered.
 - **2026-05-09:** Financials project management was organized in App
   Planner/Supabase: 6 Financials work projects now track revenue/targets,
   operating burn/utilities, debt/liabilities, tax/deduction support, monthly

@@ -2,7 +2,7 @@
 id: content_brief
 title: Content Production Brief
 domain: content_production
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 tags: [content, production, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -21,7 +21,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 | Title | Format | Status | Project Doc |
 |-------|--------|--------|-------------|
-| [Working Title - The Seagrass Meadow Started Fighting Back] | Longform | Development - restructured as seagrass succession sequel; Grant field trip reduced to supporting sequence; target publish 2026-05-09 | `video_projects/active/2026-04_biosphere_grant-field-trip.md` |
+| [Working Title - The Seagrass Meadow Started Fighting Back] | Longform | Development - restructured as seagrass succession sequel; Grant field trip reduced to supporting sequence; Planner target 2026-05-14 | `video_projects/active/2026-04_biosphere_grant-field-trip.md` |
 
 ## Current Production State
 
@@ -30,23 +30,21 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - **Revenue:** ~$460/mo average (YouTube, Facebook, Ko-fi)
 - **Shorts:** Daily routine active - 6 shorts published this week (pipelines 348, 349, 350, 351, 352, 353)
 - **Content calendar:** Live in Electron app (board, week, month views). In the
-  current production model, `content_calendar` is the teal content identity,
-  due-date, and closeout record; the linked Content-domain work project, blue
+  current production model, `content_calendar` is the blue content identity,
+  due-date, and closeout record; the linked Content-domain work project, teal
   parent production task, and subtasks are the execution schedule.
 - **Ordinary task/work-project layer:** Planner-integrated under
-  `work_domains.key = content` / `domain_id = 5`: 5 Content work projects
-  track 6 ordinary Content tasks, with 0 unlinked open Content tasks after
-  readback on 2026-05-09. The Content Agent has verified and tightened local
-  Planner wiring using the Hardware/App/Company/Financials/Growth rollout
-  pattern; no live Planner records or content production records were changed
-  during that local wiring verification.
+  `work_domains.key = content` / `domain_id = 5`. After the 2026-05-12
+  cross-domain cleanup, Content has 8 active work projects and 48 task/checklist
+  rows (46 open, 2 done), including active short/longform production and
+  Aquatic Club talk support.
 
 ## Active Priorities
 
-- Sea urchin intro short published May 4 as pipeline 351. Mottled Shore Crab self-correction short published May 6 as pipeline 352. Producer-diversity plant/Caulerpa short published May 7 as pipeline 353. May 8 amphipod surge short remains the next planned short for the May 9 seagrass longform buildup. Scorched Mussels removed from this week's shorts lineup; the standalone sea urchin near-failure/recovery short was eliminated and folded into the May 9 longform.
+- Sea urchin intro short published May 4 as pipeline 351. Mottled Shore Crab self-correction short published May 6 as pipeline 352. Producer-diversity plant/Caulerpa short published May 7 as pipeline 353. The amphipod surge short is the active May 12 production item, and the seagrass succession longform is now planned through the dedicated 2026-05-14 Planner project.
 - Story beats schema applied and initial sea urchin beats seeded; `intervention` is now an allowed `story_beats.beat_type`, and beat 17 uses it. App Planner now supports Story Beats as a source type for production source maps.
-- Ghost shrimp larvae follow-up moved to May 12 so the May 5-9 calendar can stay focused on the seagrass longform buildup.
-- Longform target 2026-05-09 - seagrass succession sequel; Planner/calendar id 3 now matches project doc and is no longer framed as Grant Field Trip.
+- Ghost shrimp larvae follow-up remains queued after the current seagrass/amphipod production window.
+- Longform target 2026-05-14 - seagrass succession sequel; Planner/calendar id 3 now matches project doc and is no longer framed as Grant Field Trip.
 - Historical `content_pipeline` backfill still needed: older records need `format`, `platform_urls`, `source_observation_id`, `notes`, and `parent_pipeline_id` populated where applicable
 - Use App Planner/Supabase as the live ordinary Content work queue while
   preserving the distinction between ordinary tasks, `content_calendar`,
@@ -54,6 +52,13 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   chronicles, publish closeout, and active project docs.
 
 ## Recent Milestones
+- **2026-05-12:** Company applied approved Content Planner cleanup from the
+  cross-domain task relevance review: created the dedicated seagrass longform
+  work project for `[Working Title] The Seagrass Meadow Started Fighting Back`,
+  aligned the amphipod short project owner/target to Content and 2026-05-12,
+  relinked task `213` under the first Source Packet task, and scheduled/targeted
+  production, Aquatic Club, and Operation Living Atlas work without changing
+  publish status or content records.
 - **2026-05-11:** App Planner content production scheduling now separates teal
   content due/close records from blue execution tasks. Scheduled content should
   not get duplicate generic "produce a short/video" tasks when a

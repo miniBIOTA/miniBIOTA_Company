@@ -52,6 +52,76 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-12:** Company finished the remaining reporting/readback follow-up
+  from the cross-domain Planner cleanup. Active Company domain briefs for
+  Brand, Content, Research/Ecosystem, Hardware, Growth/Sales, Financials, Web,
+  and App now reflect current Planner counts and the May 12 cleanup state.
+  Financials tasks `96` and `97` were marked complete after readback verified
+  account-balance snapshots plus planned-purchase expense closeout links; task
+  `99` was marked complete after Josue confirmed April financials were entered
+  and readback confirmed monthly close `id=1` is closed for April.
+- **2026-05-12:** Company resolved the remaining cross-domain Planner cleanup
+  questions from the task relevance review. Planner now has the App wiring
+  project `11` completed/archived, App task `279` converted to a due-only
+  Aquatic Club support container, App task `166` nested under `165`, Hardware
+  task `161` completed as an already-verified runtime check, Hardware project
+  `74` (`Future Sensor Expansion`) created for tasks `48` and `80`, optional
+  Web/App/Content project metadata aligned, `Operation Living Web` kept as a
+  distinct workstream name, and duplicate Hardware sealing tasks `55`, `63`,
+  `69`, and `74` administratively closed as duplicates while their canonical
+  sealing tasks remain open. No app runtime, website, firmware, schema,
+  finance-record, physical hardware, public, sponsor, legal, launch, or roadmap
+  commitment changes were made.
+- **2026-05-12:** Company applied the approved Batch 6 defer/target-only pass
+  from the cross-domain task relevance review. Planner now has review-target
+  due dates for 166 open deferred tasks across Brand, Content, Research/
+  Ecosystem, Hardware, Growth/Sales, Financials, Web, and App without placing
+  those tasks on the daily calendar. The targets keep deferred public action,
+  physical hardware, finance-sensitive, app/schema, live-control, outreach,
+  and long-horizon work visible while preserving approval gates. No scheduling,
+  task completion/archive, app runtime, website, firmware, schema,
+  finance-record, public, sponsor, legal, launch, or roadmap commitment changes
+  were made.
+- **2026-05-12:** Company applied the approved Batch 5 strategic scheduling
+  pass from the cross-domain task relevance review. Planner now has dates for
+  54 cleaned-up task rows across Content, App, Financials, Hardware, Web,
+  Growth/Sales, Research/Ecosystem, and Brand. The schedule protects the
+  Aquatic Club talk hard window by putting immediate production/readiness work
+  first, supporting Hardware/Web/Growth/Financials checks through the talk
+  window, and placing Brand outreach research plus Operation Living Atlas/Web
+  relationship work after the 2026-06-13 talk. Scheduling notes preserve
+  separate approval gates for sends, publishing, live-control, finance-sensitive
+  writes, public claims, sponsor commitments, and roadmap commitments. No task
+  completion/archive, app runtime, website, firmware, schema, finance-record,
+  public, sponsor, legal, launch, or roadmap commitment changes were made.
+- **2026-05-12:** Company applied the approved Batch 4 task title/split/relink
+  cleanup from the cross-domain task relevance review. Planner task wording now
+  separates draft/research/decision work from send/apply/configure/platform
+  action work across Brand, Content, Research/Ecosystem, Hardware, Growth/Sales,
+  Financials, Web, and App. The cleanup updated 54 existing task rows and
+  created 16 unscheduled, approval-gated split follow-up tasks. No strategic
+  scheduling, task completion/archive, app runtime, website, firmware, schema,
+  finance-record, public, sponsor, legal, launch, or roadmap commitment changes
+  were made.
+- **2026-05-12:** Company applied the approved Batch 3 project-structure
+  cleanup from the cross-domain task relevance review. Planner now has a Brand
+  `Core Messaging & Public Identity System` project, merged Brand earned-media
+  project, safer Growth sponsor/CRM project names, active Research Aquatic Club
+  claim-review project, clearer Hardware rewire and long-horizon option names,
+  and a dedicated Content project for `[Working Title] The Seagrass Meadow
+  Started Fighting Back` with target `2026-05-14`. No task scheduling,
+  completion/archive outside the Brand project merge, app runtime, website,
+  firmware, schema, finance-record, public, sponsor, legal, launch, or roadmap
+  commitment changes were made.
+- **2026-05-12:** Company applied the approved Batch 2 Planner ownership and
+  handoff cleanup from the cross-domain task relevance review. Legacy Hardware
+  projects `1` through `8` and their tasks were moved from
+  `domain_id = 6` / Engineering to `domain_id = 10` / Hardware, and
+  handoff/clarification notes were added to cross-domain CRM, sponsor-pipeline,
+  website/platform, SQL/apply, live-control, and QR/contact-capture tasks. No
+  scheduling, completion/archive, project rename, app runtime, website,
+  firmware, schema, finance-record, public, sponsor, legal, launch, or roadmap
+  commitment changes were made.
 - **2026-05-12:** Company documented the standing domain project-manager
   delegation model across Company and active domain repos. Domain agents may
   manage ordinary own-domain Planner `work_projects` and `tasks` through an
@@ -67,9 +137,9 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   cross-domain boundary and escalation governance.
 - **2026-05-12:** Company replaced active Hardware project-management ownership
   wording that still used the legacy Engineering / `Engineering & Hardware`
-  label. Current routing treats Hardware as the owner; any remaining Engineering
-  labels in live Planner records are legacy labels requiring a separate approved
-  Planner cleanup pass. No Planner/Supabase records were changed.
+  label. Current routing treats Hardware as the owner; a later approved Planner
+  cleanup pass remapped the legacy Engineering-owned Hardware projects/tasks to
+  the Hardware domain.
 - **2026-05-11:** Company created the live Planner Program `Aquatic Club Talk
   Readiness` (`work_programs.id = 3`) for Josue's 2026-06-13 12:00 PM
   Aquatic Club of Pasco County talk. The approved Planner setup added 9 linked
@@ -131,9 +201,16 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Company must keep the operating review rhythm alive so dependency maps,
   roadmap cadence, and Programs/Operations governance stay current without
   sliding back into the retired Brain planning model.
-- Live Planner records may still carry legacy Engineering /
-  `Engineering & Hardware` labels until an approved cleanup pass remaps them to
-  the current Hardware ownership language.
+- Hardware Planner ownership has been remapped away from the legacy Engineering
+  domain for projects `1` through `8`; duplicate sealing rows have been closed
+  administratively while canonical Hardware sealing tasks remain open and
+  approval-gated for any physical work.
+- Cross-domain Planner cleanup has completed ownership, project-structure,
+  task title/split/relink, first strategic scheduling, defer/target-only,
+  completion/container, optional project-decision, and duplicate-cleanup passes.
+  Remaining risk is ordinary domain follow-through: execution tasks still need
+  their domain-specific prerequisites, approvals, and readbacks before public,
+  physical, finance-sensitive, schema, live-control, sponsor, or roadmap work.
 - The standing domain project-manager delegation model is documented, but the
   shared Planner/Supabase write path remains an App-owned implementation and
   operating-surface dependency before agents can rely on it operationally.

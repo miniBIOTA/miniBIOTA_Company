@@ -39,11 +39,12 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   milestone/context rendering in week/month calendar views, and initial weekly
   planning prompts in Planner Today. Migration 010 was applied successfully by the user on 2026-05-09, making the cross-domain Programs/Operations layer live with `work_programs` and `work_program_projects`. Live Program records now include `Operation Living Atlas` (`work_programs.id = 1`), `Operation Living Web` (`work_programs.id = 2`), and `Aquatic Club Talk Readiness` (`work_programs.id = 3`), with domain-owned projects linked through `work_program_projects`.
 - App project management is now Planner-integrated under
-  `work_domains.key = app` / `domain_id = 9`: 7 App work projects track 16
-  linked App tasks, with 0 unlinked open App tasks after readback on
-  2026-05-09. The App Agent has verified and tightened local Planner wiring
-  using the Hardware pilot pattern; no live Planner records were changed during
-  that local wiring verification.
+  `work_domains.key = app` / `domain_id = 9`. After the 2026-05-12
+  cross-domain cleanup, App has 10 total work projects, 9 non-archived projects,
+  and 26 task rows (23 open, 3 done). Project `11` is completed/archived as
+  stale wiring work, and active App Planner work is now concentrated in runtime,
+  sources/workflow polish, Field Observer, media reliability, monitoring,
+  Supabase/storage safety, and Aquatic Club support.
 - Prompt Library has replaced the old static Team reference surface. Migration 012 was applied successfully by the user on 2026-05-11, making the `prompt_library` table live for reusable prompt records. Prompt create, edit, favorite, archive, and restore actions are live Supabase writes through the internal app REST path.
 - `miniBIOTA_App` now has repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
@@ -62,6 +63,13 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-12:** Company applied approved App Planner cleanup from the
+  cross-domain task relevance review: completed and archived stale App Agent
+  wiring project `11`, made task `279` a due-only Aquatic Club support
+  container, nested domain-filter smoke task `166` under hierarchy smoke task
+  `165`, and renamed project `10` to `Planner Sources, Content Workflow &
+  Recurring Task Polish`. No app runtime, schema, Storage, telemetry, or UI
+  behavior changed.
 - **2026-05-11:** The old static Team reference tab was replaced by a Supabase-backed Prompt Library. The app now exposes Prompt Library in navigation with search, category filters, copy, create/edit modal, favorite, archive, and restore behavior over the new prompt_library table. Migration 012 was applied successfully by the user on 2026-05-11. The old static Team data file was retired from the renderer manifest. Prompt records are now live operational records; no prompt records were seeded or written during the App implementation session.
 
 - **2026-05-11:** Planner Calendar Week/Month was refined to stay schedule-first after live Company-agent scheduling exposed calendar clutter. Generic `work_projects` now render as single milestone cards on `target_date`, or `start_date` only when no target exists, instead of filling every day between `start_date` and `target_date`. Top-level parent tasks with children no longer render from their own `scheduled_date`/`span_end_date`; they appear only on dates where `taskSubtasksForCalendarDate(parent, dateStr)` returns child work. When such a parent card appears, the scheduled child task title is the primary visible title and the parent/container title appears as context. Company-agent scheduling guidance: use Programs/work_projects for structure and deadlines, but schedule concrete subtasks for daily calendar work. This was a renderer/docs update only; no live Planner records, schema, migrations, Storage, telemetry, MQTT, CRM, Financials, Site Admin, Monitoring, or app data writes changed.

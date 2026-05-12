@@ -2,7 +2,7 @@
 id: research_brief
 title: Research Brief
 domain: ecosystem_and_data
-last_updated: 2026-05-09
+last_updated: 2026-05-12
 tags: [research, ecosystem, species, biomes, planner, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -24,7 +24,12 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - The repo currently lives at `M:\miniBIOTA\miniBIOTA_Research\` and pushes to GitHub repo `https://github.com/miniBIOTA/miniBIOTA_Research`.
 - Existing Brain Ecosystem & Data docs have been absorbed into Research repo memory, skills, and skill references.
 - Supabase remains the source of truth for structured species, observations, story threads, open loops, chronicles, and related ecological records.
-- App Planner/Supabase is the live Research/Ecosystem work queue under `work_domains.key = ecosystem` / `domain_id = 3`. Current Research projects are IDs `43` through `48`, and Research docs now route actionable task status to Planner instead of Markdown task lists.
+- App Planner/Supabase is the live Research/Ecosystem work queue under
+  `work_domains.key = ecosystem` / `domain_id = 3`. After the 2026-05-12
+  cross-domain cleanup, Research has 9 active work projects and 38 task rows
+  (37 open, 1 done), including core projects `43` through `48`, Operation
+  Living Web/Atlas support projects `58` and `60`, and Aquatic Club claim
+  review project `66`.
 - Planner tracks work only. Supabase structured records remain ecological truth, and Markdown remains the evidence, uncertainty, interpretation, and handoff context layer.
 - As of the migrated overview dated 2026-04-30: 170 species records, 239 observations, and 29 active story threads are documented. Verify live Supabase before treating those numbers as current.
 
@@ -40,6 +45,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-12:** Company applied approved Research/Ecosystem Planner cleanup:
+  Aquatic Club claim-review project `66` is active, task `221` now belongs
+  under Operation Living Atlas Evidence Integrity, dated task wording was
+  cleaned up, and long-running ID/outcome tasks remain target-only or
+  dependency-gated rather than daily-scheduled.
 - **2026-05-09:** Research Planner integration wiring completed in Research docs/memory/playbooks following the Hardware pilot pattern. App Planner/Supabase is now documented as the live Research/Ecosystem work queue, closeout asks whether completed work maps to Planner tasks before marking anything done, and the Planner/Supabase/Markdown boundary is explicit: Planner tracks work, Supabase owns structured ecological truth, and Markdown preserves evidence, uncertainty, interpretation, and handoff context. No species, biome, observation, story-thread, open-loop, chronicle, ecological link, website, app, schema, migration, telemetry, public content, Supabase, or Planner records were changed by the Research Agent wiring pass.
 - **2026-04-30:** `miniBIOTA_Research` created as dedicated Research Agent workspace and initialized for Codex-first operation with `AGENTS.md`, `docs/agent_protocol.md`, Codex session helpers, root `.gitignore`, and README. GitHub: `https://github.com/miniBIOTA/miniBIOTA_Research`.
 - **2026-05-05:** Brain Research folder converted to the repo-named memory/skills pattern. Brain folder is now `3. miniBIOTA_Research`; the old copied detail docs and docs mirror were removed; active detailed sources are `M:\miniBIOTA\miniBIOTA_Research\AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.

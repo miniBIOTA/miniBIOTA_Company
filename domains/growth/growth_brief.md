@@ -28,13 +28,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   opportunity context, sponsor/partner/customer commitment discipline, and
   outreach cadence. App owns CRM software/runtime/schema/UI implementation.
 - Growth project management is now Planner-integrated under
-  `work_domains.key = sales` / `domain_id = 7`: 5 Growth work projects track
-  13 Growth tasks, with 0 unlinked open Growth tasks after readback on
-  2026-05-09. The Growth Agent has verified and tightened local Planner wiring
-  using the Hardware/App/Company/Financials rollout pattern; no live Planner
-  records, partner records, CRM records, outreach state, pricing, campaign
-  commitments, app behavior, website behavior, or historical Brain brief changes were made
-  during that local wiring verification.
+  `work_domains.key = sales` / `domain_id = 7`. After the 2026-05-12
+  cross-domain cleanup, Growth has 6 active work projects and 23 task rows
+  (22 open, 1 done), including Aquatic Club sponsorship/follow-up support.
+  Planner tracks work status; outreach, pricing, CRM implementation, sponsor
+  commitments, campaign dates, and public claims remain approval-gated.
 - No formal partner pipeline, pricing structure, sponsorship tiers, media kit, or CRM-style cadence is fully operational yet.
 
 ## Active Priorities
@@ -50,6 +48,12 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-12:** Company applied approved Growth Planner cleanup from the
+  cross-domain task relevance review: Growth project names now distinguish
+  sponsorship research/approved outreach from live sending, CRM relationship
+  model ownership from App implementation, and Aquatic Club follow-up assets
+  from approval to contact anyone. Direct sponsor/apply/send tasks remain
+  approval-gated.
 - **2026-05-09:** Growth project management was organized in App
   Planner/Supabase: 5 Growth work projects now track commercial assets,
   sponsorship outreach, audience support/revenue sequencing, CRM/relationship

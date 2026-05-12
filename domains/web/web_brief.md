@@ -23,7 +23,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Telemetry architecture is local-first. The public site now consumes the live read-only telemetry snapshot through `/api/telemetry/overview` and `/live-monitoring`; it must not imply direct pump switching or centralized actuator control.
 - Web Agent context now uses the repo-native memory/skills architecture in `M:\miniBIOTA\miniBIOTA_Web\`: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an active Web `docs/` mirror. `_system/sync_docs.ps1` removes stale `9. miniBIOTA_Web\docs` if it appears.
-- App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`. Current active Web projects are IDs `36` through `41` plus `57`, legacy/internal project `42` is archived, and Web docs route actionable task status to Planner instead of Markdown task lists.
+- App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`. After the 2026-05-12 cross-domain cleanup, current active Web projects are IDs `36` through `41` plus `57` and Aquatic Club project `68`; legacy/internal project `42` is archived. Web has 8 non-archived work projects and 62 task rows (29 open, 33 done), and Web docs route actionable task status to Planner instead of Markdown task lists.
 
 ## Active Priorities
 - Keep Web memory and the Company Web report aligned with the public-only, local-first telemetry and control architecture.
@@ -33,6 +33,12 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Build Operation Living Web, the Ecosystem Relationship Graph architecture, as a public species-to-biome-to-biosphere relationship experience; Web architecture is now ready to pause, with broad food-web curation routed to the Research Agent via the Web repo handoff packet.
 
 ## Recent Milestones
+- 2026-05-12: Company applied approved Web Planner cleanup from the
+  cross-domain task relevance review: project `36` is now `Public Site Core &
+  About/Proof Page`, project `38` is now `Community, Events & Revenue
+  Conversion Surfaces`, Patreon/supporter acknowledgment work is grouped under
+  the About/supporter surface, and SQL/apply/member-community/course tasks
+  remain clarified or approval-gated before implementation.
 - 2026-05-11: Completed a Web Planner cleanup with owner approval. Stale completed work was closed, legacy/internal project `42` was archived, active Web project routing now includes `36` through `41` plus `57`, and owner-written roadmap items were captured under the active project set.
 - 2026-05-11: Species cards now display `Last seen` from canonical `date_last_observed`. The change was tested, deployed, production-smoked on `/species`, and Planner task `36:355` was marked done with owner-approved status update.
 - 2026-05-11: Live public telemetry is connected. The Hardware/Wyse coordinator now publishes the read-only Supabase snapshot consumed by `/api/telemetry/overview` and `/live-monitoring`; the public page renders sensor biomes 2-5 while preserving the public/private boundary around pump, liquid, command, and control data.

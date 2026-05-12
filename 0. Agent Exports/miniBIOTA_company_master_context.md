@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Master Context
 
-- Generated: 2026-05-11 21:01:04 -04:00
+- Generated: 2026-05-12 06:57:38 -04:00
 - Source contract: Company `domains/` reports are included below.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 - Format: portable Markdown with Obsidian wiki-links normalized or removed.
@@ -131,6 +131,76 @@
 
 ## Recent Milestones
 
+- **2026-05-12:** Company finished the remaining reporting/readback follow-up
+  from the cross-domain Planner cleanup. Active Company domain briefs for
+  Brand, Content, Research/Ecosystem, Hardware, Growth/Sales, Financials, Web,
+  and App now reflect current Planner counts and the May 12 cleanup state.
+  Financials tasks `96` and `97` were marked complete after readback verified
+  account-balance snapshots plus planned-purchase expense closeout links; task
+  `99` was marked complete after Josue confirmed April financials were entered
+  and readback confirmed monthly close `id=1` is closed for April.
+- **2026-05-12:** Company resolved the remaining cross-domain Planner cleanup
+  questions from the task relevance review. Planner now has the App wiring
+  project `11` completed/archived, App task `279` converted to a due-only
+  Aquatic Club support container, App task `166` nested under `165`, Hardware
+  task `161` completed as an already-verified runtime check, Hardware project
+  `74` (`Future Sensor Expansion`) created for tasks `48` and `80`, optional
+  Web/App/Content project metadata aligned, `Operation Living Web` kept as a
+  distinct workstream name, and duplicate Hardware sealing tasks `55`, `63`,
+  `69`, and `74` administratively closed as duplicates while their canonical
+  sealing tasks remain open. No app runtime, website, firmware, schema,
+  finance-record, physical hardware, public, sponsor, legal, launch, or roadmap
+  commitment changes were made.
+- **2026-05-12:** Company applied the approved Batch 6 defer/target-only pass
+  from the cross-domain task relevance review. Planner now has review-target
+  due dates for 166 open deferred tasks across Brand, Content, Research/
+  Ecosystem, Hardware, Growth/Sales, Financials, Web, and App without placing
+  those tasks on the daily calendar. The targets keep deferred public action,
+  physical hardware, finance-sensitive, app/schema, live-control, outreach,
+  and long-horizon work visible while preserving approval gates. No scheduling,
+  task completion/archive, app runtime, website, firmware, schema,
+  finance-record, public, sponsor, legal, launch, or roadmap commitment changes
+  were made.
+- **2026-05-12:** Company applied the approved Batch 5 strategic scheduling
+  pass from the cross-domain task relevance review. Planner now has dates for
+  54 cleaned-up task rows across Content, App, Financials, Hardware, Web,
+  Growth/Sales, Research/Ecosystem, and Brand. The schedule protects the
+  Aquatic Club talk hard window by putting immediate production/readiness work
+  first, supporting Hardware/Web/Growth/Financials checks through the talk
+  window, and placing Brand outreach research plus Operation Living Atlas/Web
+  relationship work after the 2026-06-13 talk. Scheduling notes preserve
+  separate approval gates for sends, publishing, live-control, finance-sensitive
+  writes, public claims, sponsor commitments, and roadmap commitments. No task
+  completion/archive, app runtime, website, firmware, schema, finance-record,
+  public, sponsor, legal, launch, or roadmap commitment changes were made.
+- **2026-05-12:** Company applied the approved Batch 4 task title/split/relink
+  cleanup from the cross-domain task relevance review. Planner task wording now
+  separates draft/research/decision work from send/apply/configure/platform
+  action work across Brand, Content, Research/Ecosystem, Hardware, Growth/Sales,
+  Financials, Web, and App. The cleanup updated 54 existing task rows and
+  created 16 unscheduled, approval-gated split follow-up tasks. No strategic
+  scheduling, task completion/archive, app runtime, website, firmware, schema,
+  finance-record, public, sponsor, legal, launch, or roadmap commitment changes
+  were made.
+- **2026-05-12:** Company applied the approved Batch 3 project-structure
+  cleanup from the cross-domain task relevance review. Planner now has a Brand
+  `Core Messaging & Public Identity System` project, merged Brand earned-media
+  project, safer Growth sponsor/CRM project names, active Research Aquatic Club
+  claim-review project, clearer Hardware rewire and long-horizon option names,
+  and a dedicated Content project for `[Working Title] The Seagrass Meadow
+  Started Fighting Back` with target `2026-05-14`. No task scheduling,
+  completion/archive outside the Brand project merge, app runtime, website,
+  firmware, schema, finance-record, public, sponsor, legal, launch, or roadmap
+  commitment changes were made.
+- **2026-05-12:** Company applied the approved Batch 2 Planner ownership and
+  handoff cleanup from the cross-domain task relevance review. Legacy Hardware
+  projects `1` through `8` and their tasks were moved from
+  `domain_id = 6` / Engineering to `domain_id = 10` / Hardware, and
+  handoff/clarification notes were added to cross-domain CRM, sponsor-pipeline,
+  website/platform, SQL/apply, live-control, and QR/contact-capture tasks. No
+  scheduling, completion/archive, project rename, app runtime, website,
+  firmware, schema, finance-record, public, sponsor, legal, launch, or roadmap
+  commitment changes were made.
 - **2026-05-12:** Company documented the standing domain project-manager
   delegation model across Company and active domain repos. Domain agents may
   manage ordinary own-domain Planner `work_projects` and `tasks` through an
@@ -146,9 +216,9 @@
   cross-domain boundary and escalation governance.
 - **2026-05-12:** Company replaced active Hardware project-management ownership
   wording that still used the legacy Engineering / `Engineering & Hardware`
-  label. Current routing treats Hardware as the owner; any remaining Engineering
-  labels in live Planner records are legacy labels requiring a separate approved
-  Planner cleanup pass. No Planner/Supabase records were changed.
+  label. Current routing treats Hardware as the owner; a later approved Planner
+  cleanup pass remapped the legacy Engineering-owned Hardware projects/tasks to
+  the Hardware domain.
 - **2026-05-11:** Company created the live Planner Program `Aquatic Club Talk
   Readiness` (`work_programs.id = 3`) for Josue's 2026-06-13 12:00 PM
   Aquatic Club of Pasco County talk. The approved Planner setup added 9 linked
@@ -210,9 +280,16 @@
 - Company must keep the operating review rhythm alive so dependency maps,
   roadmap cadence, and Programs/Operations governance stay current without
   sliding back into the retired Brain planning model.
-- Live Planner records may still carry legacy Engineering /
-  `Engineering & Hardware` labels until an approved cleanup pass remaps them to
-  the current Hardware ownership language.
+- Hardware Planner ownership has been remapped away from the legacy Engineering
+  domain for projects `1` through `8`; duplicate sealing rows have been closed
+  administratively while canonical Hardware sealing tasks remain open and
+  approval-gated for any physical work.
+- Cross-domain Planner cleanup has completed ownership, project-structure,
+  task title/split/relink, first strategic scheduling, defer/target-only,
+  completion/container, optional project-decision, and duplicate-cleanup passes.
+  Remaining risk is ordinary domain follow-through: execution tasks still need
+  their domain-specific prerequisites, approvals, and readbacks before public,
+  physical, finance-sensitive, schema, live-control, sponsor, or roadmap work.
 - The standing domain project-manager delegation model is documented, but the
   shared Planner/Supabase write path remains an App-owned implementation and
   operating-surface dependency before agents can rely on it operationally.
@@ -453,11 +530,10 @@ Open items in priority order:
 | Cash position | $282.35 business cash plus $13,177.78 personal runway support as of 2026-05-02 |
 
 Financials project management is now Planner-integrated under
-`work_domains.key = financials` / `domain_id = 2`: 6 Financials work projects
-track 14 Financials tasks, with 0 unlinked open Financials tasks after readback
-on 2026-05-09. The Financials Agent has verified and tightened local Planner
-wiring using the Hardware/App/Company rollout pattern; no live Planner records
-or financial records were changed during that local wiring verification.
+`work_domains.key = financials` / `domain_id = 2`. After the 2026-05-12
+cross-domain cleanup and financial readback, Financials has 7 active work
+projects and 20 task rows (15 open, 5 done). Planner remains task-status truth;
+financial tables and close records remain balance/revenue/expense truth.
 
 ## Active Priorities
 
@@ -472,6 +548,12 @@ truth remains in financial tables and close records, not Planner task text.
 
 ## Recent Milestones
 
+- **2026-05-12:** Company applied approved Financials Planner cleanup and
+  readback. Tasks `96` and `97` were marked complete after verifying
+  `account_balance_snapshots`, `expense_transactions`, and `planned_purchases`.
+  Task `99` was then marked complete after Josue confirmed April financials
+  were entered and readback confirmed monthly close `id=1` is closed for
+  `close_month = 2026-04-01` with April cash receipts entered.
 - **2026-05-09:** Financials project management was organized in App
   Planner/Supabase: 6 Financials work projects now track revenue/targets,
   operating burn/utilities, debt/liabilities, tax/deduction support, monthly
@@ -601,7 +683,12 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
 - The repo currently lives at `M:\miniBIOTA\miniBIOTA_Research\` and pushes to GitHub repo `https://github.com/miniBIOTA/miniBIOTA_Research`.
 - Existing Brain Ecosystem & Data docs have been absorbed into Research repo memory, skills, and skill references.
 - Supabase remains the source of truth for structured species, observations, story threads, open loops, chronicles, and related ecological records.
-- App Planner/Supabase is the live Research/Ecosystem work queue under `work_domains.key = ecosystem` / `domain_id = 3`. Current Research projects are IDs `43` through `48`, and Research docs now route actionable task status to Planner instead of Markdown task lists.
+- App Planner/Supabase is the live Research/Ecosystem work queue under
+  `work_domains.key = ecosystem` / `domain_id = 3`. After the 2026-05-12
+  cross-domain cleanup, Research has 9 active work projects and 38 task rows
+  (37 open, 1 done), including core projects `43` through `48`, Operation
+  Living Web/Atlas support projects `58` and `60`, and Aquatic Club claim
+  review project `66`.
 - Planner tracks work only. Supabase structured records remain ecological truth, and Markdown remains the evidence, uncertainty, interpretation, and handoff context layer.
 - As of the migrated overview dated 2026-04-30: 170 species records, 239 observations, and 29 active story threads are documented. Verify live Supabase before treating those numbers as current.
 
@@ -617,6 +704,11 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
 
 ## Recent Milestones
 
+- **2026-05-12:** Company applied approved Research/Ecosystem Planner cleanup:
+  Aquatic Club claim-review project `66` is active, task `221` now belongs
+  under Operation Living Atlas Evidence Integrity, dated task wording was
+  cleaned up, and long-running ID/outcome tasks remain target-only or
+  dependency-gated rather than daily-scheduled.
 - **2026-05-09:** Research Planner integration wiring completed in Research docs/memory/playbooks following the Hardware pilot pattern. App Planner/Supabase is now documented as the live Research/Ecosystem work queue, closeout asks whether completed work maps to Planner tasks before marking anything done, and the Planner/Supabase/Markdown boundary is explicit: Planner tracks work, Supabase owns structured ecological truth, and Markdown preserves evidence, uncertainty, interpretation, and handoff context. No species, biome, observation, story-thread, open-loop, chronicle, ecological link, website, app, schema, migration, telemetry, public content, Supabase, or Planner records were changed by the Research Agent wiring pass.
 - **2026-04-30:** `miniBIOTA_Research` created as dedicated Research Agent workspace and initialized for Codex-first operation with `AGENTS.md`, `docs/agent_protocol.md`, Codex session helpers, root `.gitignore`, and README. GitHub: `https://github.com/miniBIOTA/miniBIOTA_Research`.
 - **2026-05-05:** Brain Research folder converted to the repo-named memory/skills pattern. Brain folder is now `3. miniBIOTA_Research`; the old copied detail docs and docs mirror were removed; active detailed sources are `M:\miniBIOTA\miniBIOTA_Research\AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
@@ -746,7 +838,11 @@ Historical Brain overview: `3. miniBIOTA_Research\research_overview.md`
 - Foundational mission and vision language is established and migrated into the Brand repo memory/skills architecture.
 - Reach and distribution strategy is established for Substack, Reddit, press, podcast circuit, YouTube Community, Discord, Ko-fi, Open Collective, and future native comments.
 - Operational marketing assets are still thin: reusable messaging pillars, founder narrative, campaign templates, and outreach-ready pitch materials need deeper development.
-- App Planner/Supabase is the live Brand work queue under `work_domains.key = brand` / `domain_id = 4`. Current Brand projects are IDs `49` through `56`, and Brand docs now route actionable task status to Planner instead of Markdown task lists.
+- App Planner/Supabase is the live Brand work queue under
+  `work_domains.key = brand` / `domain_id = 4`. After the 2026-05-12
+  cross-domain cleanup, Brand has 9 active work projects, 1 archived merge
+  cleanup project, and 46 open Brand task/checklist rows. Brand docs route
+  actionable task status to Planner instead of Markdown task lists.
 - Planner tracks work only. Brand memory and skills remain the source for positioning, voice, claim safety, channel rules, support/sponsor boundaries, and approved-versus-draft language context.
 
 ## Active Priorities
@@ -760,6 +856,12 @@ Historical Brain overview: `3. miniBIOTA_Research\research_overview.md`
 
 ## Recent Milestones
 
+- **2026-05-12:** Company applied approved Brand Planner cleanup from the
+  cross-domain task relevance review: Brand now has a `Core Messaging & Public
+  Identity System` project, `Speaking Track & Event Outreach`, merged
+  `Earned Media & Guest Outreach`, cleaned-up approval-gated task wording, and
+  scheduled/target-only work that keeps public posts, sends, support-platform
+  configuration, and sponsor/public claims approval-gated.
 - **2026-05-09:** Brand Planner integration wiring completed in Brand docs/memory/playbooks following the Hardware pilot pattern. App Planner/Supabase is now documented as the live Brand work queue, closeout asks whether completed work maps to Planner tasks before marking anything done, and the Planner/Markdown boundary is explicit: Planner tracks actionable work, while Brand memory and skills govern positioning, voice, claim safety, channel rules, support/sponsor boundaries, and approved-versus-draft language context. No public copy, sponsor promises, campaign commitments, partner commitments, launch/pricing/legal/scientific claims, website behavior, app behavior, public channels, Supabase records, Planner records, schema, migrations, or Brain docs were changed by the Brand Agent wiring pass.
 - **2026-05-05:** Brain Brand & Marketing folder converted to the same repo-named memory/skills pattern as Financials, Company, Content, and App. Brain folder is now `4. miniBIOTA_Brand`; the stale Brand docs mirror was removed; active detailed sources are `M:\miniBIOTA\miniBIOTA_Brand\AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`. `_system/sync_docs.ps1` now keeps Brand docs mirroring disabled and removes any stale `4. miniBIOTA_Brand\docs` folder if it appears.
 - **2026-04-30:** `miniBIOTA_Brand` created as dedicated Brand Agent workspace and initialized for Codex-first operation with `AGENTS.md`, the original agent protocol material, Codex session helpers, root `.gitignore`, and README. GitHub: `https://github.com/miniBIOTA/miniBIOTA_Brand`.
@@ -940,7 +1042,7 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
 
 | Title | Format | Status | Project Doc |
 |-------|--------|--------|-------------|
-| [Working Title - The Seagrass Meadow Started Fighting Back] | Longform | Development - restructured as seagrass succession sequel; Grant field trip reduced to supporting sequence; target publish 2026-05-09 | `video_projects/active/2026-04_biosphere_grant-field-trip.md` |
+| [Working Title - The Seagrass Meadow Started Fighting Back] | Longform | Development - restructured as seagrass succession sequel; Grant field trip reduced to supporting sequence; Planner target 2026-05-14 | `video_projects/active/2026-04_biosphere_grant-field-trip.md` |
 
 ## Current Production State
 
@@ -949,23 +1051,21 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
 - **Revenue:** ~$460/mo average (YouTube, Facebook, Ko-fi)
 - **Shorts:** Daily routine active - 6 shorts published this week (pipelines 348, 349, 350, 351, 352, 353)
 - **Content calendar:** Live in Electron app (board, week, month views). In the
-  current production model, `content_calendar` is the teal content identity,
-  due-date, and closeout record; the linked Content-domain work project, blue
+  current production model, `content_calendar` is the blue content identity,
+  due-date, and closeout record; the linked Content-domain work project, teal
   parent production task, and subtasks are the execution schedule.
 - **Ordinary task/work-project layer:** Planner-integrated under
-  `work_domains.key = content` / `domain_id = 5`: 5 Content work projects
-  track 6 ordinary Content tasks, with 0 unlinked open Content tasks after
-  readback on 2026-05-09. The Content Agent has verified and tightened local
-  Planner wiring using the Hardware/App/Company/Financials/Growth rollout
-  pattern; no live Planner records or content production records were changed
-  during that local wiring verification.
+  `work_domains.key = content` / `domain_id = 5`. After the 2026-05-12
+  cross-domain cleanup, Content has 8 active work projects and 48 task/checklist
+  rows (46 open, 2 done), including active short/longform production and
+  Aquatic Club talk support.
 
 ## Active Priorities
 
-- Sea urchin intro short published May 4 as pipeline 351. Mottled Shore Crab self-correction short published May 6 as pipeline 352. Producer-diversity plant/Caulerpa short published May 7 as pipeline 353. May 8 amphipod surge short remains the next planned short for the May 9 seagrass longform buildup. Scorched Mussels removed from this week's shorts lineup; the standalone sea urchin near-failure/recovery short was eliminated and folded into the May 9 longform.
+- Sea urchin intro short published May 4 as pipeline 351. Mottled Shore Crab self-correction short published May 6 as pipeline 352. Producer-diversity plant/Caulerpa short published May 7 as pipeline 353. The amphipod surge short is the active May 12 production item, and the seagrass succession longform is now planned through the dedicated 2026-05-14 Planner project.
 - Story beats schema applied and initial sea urchin beats seeded; `intervention` is now an allowed `story_beats.beat_type`, and beat 17 uses it. App Planner now supports Story Beats as a source type for production source maps.
-- Ghost shrimp larvae follow-up moved to May 12 so the May 5-9 calendar can stay focused on the seagrass longform buildup.
-- Longform target 2026-05-09 - seagrass succession sequel; Planner/calendar id 3 now matches project doc and is no longer framed as Grant Field Trip.
+- Ghost shrimp larvae follow-up remains queued after the current seagrass/amphipod production window.
+- Longform target 2026-05-14 - seagrass succession sequel; Planner/calendar id 3 now matches project doc and is no longer framed as Grant Field Trip.
 - Historical `content_pipeline` backfill still needed: older records need `format`, `platform_urls`, `source_observation_id`, `notes`, and `parent_pipeline_id` populated where applicable
 - Use App Planner/Supabase as the live ordinary Content work queue while
   preserving the distinction between ordinary tasks, `content_calendar`,
@@ -973,6 +1073,13 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
   chronicles, publish closeout, and active project docs.
 
 ## Recent Milestones
+- **2026-05-12:** Company applied approved Content Planner cleanup from the
+  cross-domain task relevance review: created the dedicated seagrass longform
+  work project for `[Working Title] The Seagrass Meadow Started Fighting Back`,
+  aligned the amphipod short project owner/target to Content and 2026-05-12,
+  relinked task `213` under the first Source Packet task, and scheduled/targeted
+  production, Aquatic Club, and Operation Living Atlas work without changing
+  publish status or content records.
 - **2026-05-11:** App Planner content production scheduling now separates teal
   content due/close records from blue execution tasks. Scheduled content should
   not get duplicate generic "produce a short/video" tasks when a
@@ -1145,7 +1252,7 @@ Brain no longer keeps a Content `docs\` mirror after the memory/skills migration
 - App Monitoring tab (Phase 4) is live as of 2026-04-25: real-time telemetry for all 6 biomes via direct MQTT to Electron.
 - First read-only Wyse-side telemetry coordinator is deployed on the Dell Wyse and running as `minibiota-telemetry.service`; it subscribes to local MQTT for sensor biomes 2-5 and upserts the website-compatible Supabase `telemetry_snapshot` singleton row `id=1` about every 15 seconds. It does not write history rows or control commands.
 - Hardware rewire planned for biomes 2-5 to resolve SHT31 wiring, water-damage, and connection-quality faults. Connector standard remains open; XT30 power and JST-XH 2.54mm signal connectors are candidates, not settled requirements.
-- Hardware repo now uses the federated memory/skills architecture plus a `0. Hardware Systems/` documentation layer: `AGENTS.md`, biome folders, `0. Hardware Systems/`, `memory/`, `skills/`, `skills/*/reference/`, `services/`, `deploy/`, and `_system/` helpers. The old `docs/` mirror pattern is retired. Hardware project management should route to the Hardware domain/owner in App Planner/Supabase. Any remaining Engineering / `Engineering & Hardware` Planner labels are legacy routing labels that need approved Planner cleanup rather than active ownership language.
+- Hardware repo now uses the federated memory/skills architecture plus a `0. Hardware Systems/` documentation layer: `AGENTS.md`, biome folders, `0. Hardware Systems/`, `memory/`, `skills/`, `skills/*/reference/`, `services/`, `deploy/`, and `_system/` helpers. The old `docs/` mirror pattern is retired. Hardware project management routes to the Hardware domain/owner in App Planner/Supabase. After the 2026-05-12 cross-domain cleanup, Hardware has 10 active work projects and 82 task rows (77 open, 5 done); the legacy Engineering domain has 0 projects and 0 tasks.
 
 ## Active Priorities
 - Complete sealing and infrastructure upgrades to reach airtight closed-system standard.
@@ -1154,8 +1261,18 @@ Brain no longer keeps a Content `docs\` mirror after the memory/skills migration
 - Keep Hardware durable detail in repo-local biome folders, `0. Hardware Systems/`, memory, playbooks, and skill references. Use App Planner/Supabase for Hardware work tracking and task completion status. Company carries active strategy-level Hardware reporting and cross-domain coordination; Brain is historical/archive lookup only.
 
 ## Recent Milestones
+- 2026-05-12: Company applied approved Hardware Planner cleanup from the
+  cross-domain task relevance review. Legacy Engineering-owned Hardware
+  projects `1` through `8` and their tasks now live under Hardware
+  `domain_id = 10`; project `4` is `Biomes 2-5 Sensor/Controller Rewire &
+  Reliability`; project `8` is `Long Horizon Closed-System Options`; new
+  project `74` is `Future Sensor Expansion` for Biome 1/6 sensor expansion;
+  duplicate sealing tasks `55`, `63`, `69`, and `74` were administratively
+  closed as duplicates while canonical sealing tasks remain open; task `161`
+  was completed as an already-verified runtime check. No firmware, MQTT,
+  live-control, schema, physical work, or deployment behavior changed.
 - 2026-05-11: Deployed the read-only Wyse telemetry coordinator as a persistent user service with SSH maintenance access, live MQTT ingestion, local debug snapshot output, and successful Supabase `telemetry_snapshot` row `id=1` upserts for website live monitoring.
-- 2026-05-09: Organized Hardware project management in App Planner/Supabase: 8 legacy Engineering / `Engineering & Hardware` work projects track 72 linked Hardware tasks, including existing biome/system work and documentation follow-ups. Current routing should treat these as Hardware-owned Planner records until approved Planner cleanup renames or remaps the legacy labels.
+- 2026-05-09: Organized Hardware project management in App Planner/Supabase: 8 legacy Engineering / `Engineering & Hardware` work projects tracked 72 linked Hardware tasks, including existing biome/system work and documentation follow-ups. This legacy routing note was superseded by the 2026-05-12 approved Planner cleanup that moved those records to the Hardware domain.
 - 2026-05-09: Created the Hardware `0. Hardware Systems/` documentation layer for the six canonical public systems: Climate System, Rain System, Lighting System, Wave & Tide System, Control System, and Enclosure.
 - 2026-05-09: Added exact `biome_hardware.md` hardware specifications for Biomes 2-5 in the Hardware repo, including shared sensor-node BOM, power architecture, GPIO map, current sensor/display status, and open connector/fusing/wire-color items.
 - 2026-05-05: Brain Hardware folder converted to the repo-named memory/skills pattern. Brain folder is now `6. miniBIOTA_Hardware`; active detailed context is `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`; tracked Hardware `docs/` files were removed after migration; Brain `sync_docs.ps1` no longer mirrors Hardware docs and removes stale Brain Hardware docs if present.
@@ -1313,13 +1430,11 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
   opportunity context, sponsor/partner/customer commitment discipline, and
   outreach cadence. App owns CRM software/runtime/schema/UI implementation.
 - Growth project management is now Planner-integrated under
-  `work_domains.key = sales` / `domain_id = 7`: 5 Growth work projects track
-  13 Growth tasks, with 0 unlinked open Growth tasks after readback on
-  2026-05-09. The Growth Agent has verified and tightened local Planner wiring
-  using the Hardware/App/Company/Financials rollout pattern; no live Planner
-  records, partner records, CRM records, outreach state, pricing, campaign
-  commitments, app behavior, website behavior, or historical Brain brief changes were made
-  during that local wiring verification.
+  `work_domains.key = sales` / `domain_id = 7`. After the 2026-05-12
+  cross-domain cleanup, Growth has 6 active work projects and 23 task rows
+  (22 open, 1 done), including Aquatic Club sponsorship/follow-up support.
+  Planner tracks work status; outreach, pricing, CRM implementation, sponsor
+  commitments, campaign dates, and public claims remain approval-gated.
 - No formal partner pipeline, pricing structure, sponsorship tiers, media kit, or CRM-style cadence is fully operational yet.
 
 ## Active Priorities
@@ -1335,6 +1450,12 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
 
 ## Recent Milestones
 
+- **2026-05-12:** Company applied approved Growth Planner cleanup from the
+  cross-domain task relevance review: Growth project names now distinguish
+  sponsorship research/approved outreach from live sending, CRM relationship
+  model ownership from App implementation, and Aquatic Club follow-up assets
+  from approval to contact anyone. Direct sponsor/apply/send tasks remain
+  approval-gated.
 - **2026-05-09:** Growth project management was organized in App
   Planner/Supabase: 5 Growth work projects now track commercial assets,
   sponsorship outreach, audience support/revenue sequencing, CRM/relationship
@@ -1705,7 +1826,7 @@ These match the system IDs used throughout the rest of the app (observations, st
 - Telemetry architecture is local-first. The public site now consumes the live read-only telemetry snapshot through `/api/telemetry/overview` and `/live-monitoring`; it must not imply direct pump switching or centralized actuator control.
 - Web Agent context now uses the repo-native memory/skills architecture in `M:\miniBIOTA\miniBIOTA_Web\`: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an active Web `docs/` mirror. `_system/sync_docs.ps1` removes stale `9. miniBIOTA_Web\docs` if it appears.
-- App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`. Current active Web projects are IDs `36` through `41` plus `57`, legacy/internal project `42` is archived, and Web docs route actionable task status to Planner instead of Markdown task lists.
+- App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`. After the 2026-05-12 cross-domain cleanup, current active Web projects are IDs `36` through `41` plus `57` and Aquatic Club project `68`; legacy/internal project `42` is archived. Web has 8 non-archived work projects and 62 task rows (29 open, 33 done), and Web docs route actionable task status to Planner instead of Markdown task lists.
 
 ## Active Priorities
 - Keep Web memory and the Company Web report aligned with the public-only, local-first telemetry and control architecture.
@@ -1715,6 +1836,12 @@ These match the system IDs used throughout the rest of the app (observations, st
 - Build Operation Living Web, the Ecosystem Relationship Graph architecture, as a public species-to-biome-to-biosphere relationship experience; Web architecture is now ready to pause, with broad food-web curation routed to the Research Agent via the Web repo handoff packet.
 
 ## Recent Milestones
+- 2026-05-12: Company applied approved Web Planner cleanup from the
+  cross-domain task relevance review: project `36` is now `Public Site Core &
+  About/Proof Page`, project `38` is now `Community, Events & Revenue
+  Conversion Surfaces`, Patreon/supporter acknowledgment work is grouped under
+  the About/supporter surface, and SQL/apply/member-community/course tasks
+  remain clarified or approval-gated before implementation.
 - 2026-05-11: Completed a Web Planner cleanup with owner approval. Stale completed work was closed, legacy/internal project `42` was archived, active Web project routing now includes `36` through `41` plus `57`, and owner-written roadmap items were captured under the active project set.
 - 2026-05-11: Species cards now display `Last seen` from canonical `date_last_observed`. The change was tested, deployed, production-smoked on `/species`, and Planner task `36:355` was marked done with owner-approved status update.
 - 2026-05-11: Live public telemetry is connected. The Hardware/Wyse coordinator now publishes the read-only Supabase snapshot consumed by `/api/telemetry/overview` and `/live-monitoring`; the public page renders sensor biomes 2-5 while preserving the public/private boundary around pump, liquid, command, and control data.
@@ -1996,11 +2123,12 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   milestone/context rendering in week/month calendar views, and initial weekly
   planning prompts in Planner Today. Migration 010 was applied successfully by the user on 2026-05-09, making the cross-domain Programs/Operations layer live with `work_programs` and `work_program_projects`. Live Program records now include `Operation Living Atlas` (`work_programs.id = 1`), `Operation Living Web` (`work_programs.id = 2`), and `Aquatic Club Talk Readiness` (`work_programs.id = 3`), with domain-owned projects linked through `work_program_projects`.
 - App project management is now Planner-integrated under
-  `work_domains.key = app` / `domain_id = 9`: 7 App work projects track 16
-  linked App tasks, with 0 unlinked open App tasks after readback on
-  2026-05-09. The App Agent has verified and tightened local Planner wiring
-  using the Hardware pilot pattern; no live Planner records were changed during
-  that local wiring verification.
+  `work_domains.key = app` / `domain_id = 9`. After the 2026-05-12
+  cross-domain cleanup, App has 10 total work projects, 9 non-archived projects,
+  and 26 task rows (23 open, 3 done). Project `11` is completed/archived as
+  stale wiring work, and active App Planner work is now concentrated in runtime,
+  sources/workflow polish, Field Observer, media reliability, monitoring,
+  Supabase/storage safety, and Aquatic Club support.
 - Prompt Library has replaced the old static Team reference surface. Migration 012 was applied successfully by the user on 2026-05-11, making the `prompt_library` table live for reusable prompt records. Prompt create, edit, favorite, archive, and restore actions are live Supabase writes through the internal app REST path.
 - `miniBIOTA_App` now has repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
@@ -2019,6 +2147,13 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 
 ## Recent Milestones
 
+- **2026-05-12:** Company applied approved App Planner cleanup from the
+  cross-domain task relevance review: completed and archived stale App Agent
+  wiring project `11`, made task `279` a due-only Aquatic Club support
+  container, nested domain-filter smoke task `166` under hierarchy smoke task
+  `165`, and renamed project `10` to `Planner Sources, Content Workflow &
+  Recurring Task Polish`. No app runtime, schema, Storage, telemetry, or UI
+  behavior changed.
 - **2026-05-11:** The old static Team reference tab was replaced by a Supabase-backed Prompt Library. The app now exposes Prompt Library in navigation with search, category filters, copy, create/edit modal, favorite, archive, and restore behavior over the new prompt_library table. Migration 012 was applied successfully by the user on 2026-05-11. The old static Team data file was retired from the renderer manifest. Prompt records are now live operational records; no prompt records were seeded or written during the App implementation session.
 
 - **2026-05-11:** Planner Calendar Week/Month was refined to stay schedule-first after live Company-agent scheduling exposed calendar clutter. Generic `work_projects` now render as single milestone cards on `target_date`, or `start_date` only when no target exists, instead of filling every day between `start_date` and `target_date`. Top-level parent tasks with children no longer render from their own `scheduled_date`/`span_end_date`; they appear only on dates where `taskSubtasksForCalendarDate(parent, dateStr)` returns child work. When such a parent card appears, the scheduled child task title is the primary visible title and the parent/container title appears as context. Company-agent scheduling guidance: use Programs/work_projects for structure and deadlines, but schedule concrete subtasks for daily calendar work. This was a renderer/docs update only; no live Planner records, schema, migrations, Storage, telemetry, MQTT, CRM, Financials, Site Admin, Monitoring, or app data writes changed.

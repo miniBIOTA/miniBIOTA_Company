@@ -2,7 +2,7 @@
 id: hardware_brief
 title: Hardware Brief
 domain: engineering_and_hardware
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 tags: [engineering, hardware, controls, sensors, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -24,7 +24,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - App Monitoring tab (Phase 4) is live as of 2026-04-25: real-time telemetry for all 6 biomes via direct MQTT to Electron.
 - First read-only Wyse-side telemetry coordinator is deployed on the Dell Wyse and running as `minibiota-telemetry.service`; it subscribes to local MQTT for sensor biomes 2-5 and upserts the website-compatible Supabase `telemetry_snapshot` singleton row `id=1` about every 15 seconds. It does not write history rows or control commands.
 - Hardware rewire planned for biomes 2-5 to resolve SHT31 wiring, water-damage, and connection-quality faults. Connector standard remains open; XT30 power and JST-XH 2.54mm signal connectors are candidates, not settled requirements.
-- Hardware repo now uses the federated memory/skills architecture plus a `0. Hardware Systems/` documentation layer: `AGENTS.md`, biome folders, `0. Hardware Systems/`, `memory/`, `skills/`, `skills/*/reference/`, `services/`, `deploy/`, and `_system/` helpers. The old `docs/` mirror pattern is retired. Hardware project management should route to the Hardware domain/owner in App Planner/Supabase. Any remaining Engineering / `Engineering & Hardware` Planner labels are legacy routing labels that need approved Planner cleanup rather than active ownership language.
+- Hardware repo now uses the federated memory/skills architecture plus a `0. Hardware Systems/` documentation layer: `AGENTS.md`, biome folders, `0. Hardware Systems/`, `memory/`, `skills/`, `skills/*/reference/`, `services/`, `deploy/`, and `_system/` helpers. The old `docs/` mirror pattern is retired. Hardware project management routes to the Hardware domain/owner in App Planner/Supabase. After the 2026-05-12 cross-domain cleanup, Hardware has 10 active work projects and 82 task rows (77 open, 5 done); the legacy Engineering domain has 0 projects and 0 tasks.
 
 ## Active Priorities
 - Complete sealing and infrastructure upgrades to reach airtight closed-system standard.
@@ -33,8 +33,18 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Keep Hardware durable detail in repo-local biome folders, `0. Hardware Systems/`, memory, playbooks, and skill references. Use App Planner/Supabase for Hardware work tracking and task completion status. Company carries active strategy-level Hardware reporting and cross-domain coordination; Brain is historical/archive lookup only.
 
 ## Recent Milestones
+- 2026-05-12: Company applied approved Hardware Planner cleanup from the
+  cross-domain task relevance review. Legacy Engineering-owned Hardware
+  projects `1` through `8` and their tasks now live under Hardware
+  `domain_id = 10`; project `4` is `Biomes 2-5 Sensor/Controller Rewire &
+  Reliability`; project `8` is `Long Horizon Closed-System Options`; new
+  project `74` is `Future Sensor Expansion` for Biome 1/6 sensor expansion;
+  duplicate sealing tasks `55`, `63`, `69`, and `74` were administratively
+  closed as duplicates while canonical sealing tasks remain open; task `161`
+  was completed as an already-verified runtime check. No firmware, MQTT,
+  live-control, schema, physical work, or deployment behavior changed.
 - 2026-05-11: Deployed the read-only Wyse telemetry coordinator as a persistent user service with SSH maintenance access, live MQTT ingestion, local debug snapshot output, and successful Supabase `telemetry_snapshot` row `id=1` upserts for website live monitoring.
-- 2026-05-09: Organized Hardware project management in App Planner/Supabase: 8 legacy Engineering / `Engineering & Hardware` work projects track 72 linked Hardware tasks, including existing biome/system work and documentation follow-ups. Current routing should treat these as Hardware-owned Planner records until approved Planner cleanup renames or remaps the legacy labels.
+- 2026-05-09: Organized Hardware project management in App Planner/Supabase: 8 legacy Engineering / `Engineering & Hardware` work projects tracked 72 linked Hardware tasks, including existing biome/system work and documentation follow-ups. This legacy routing note was superseded by the 2026-05-12 approved Planner cleanup that moved those records to the Hardware domain.
 - 2026-05-09: Created the Hardware `0. Hardware Systems/` documentation layer for the six canonical public systems: Climate System, Rain System, Lighting System, Wave & Tide System, Control System, and Enclosure.
 - 2026-05-09: Added exact `biome_hardware.md` hardware specifications for Biomes 2-5 in the Hardware repo, including shared sensor-node BOM, power architecture, GPIO map, current sensor/display status, and open connector/fusing/wire-color items.
 - 2026-05-05: Brain Hardware folder converted to the repo-named memory/skills pattern. Brain folder is now `6. miniBIOTA_Hardware`; active detailed context is `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`; tracked Hardware `docs/` files were removed after migration; Brain `sync_docs.ps1` no longer mirrors Hardware docs and removes stale Brain Hardware docs if present.

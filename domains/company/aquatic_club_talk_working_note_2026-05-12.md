@@ -3,7 +3,7 @@ title: Aquatic Club Talk Working Note
 date: 2026-05-12
 status: draft
 related_program: Aquatic Club Talk Readiness
-related_tasks: [282, 309, 290]
+related_tasks: [282, 309, 290, 310]
 ---
 # Aquatic Club Talk Working Note
 
@@ -225,3 +225,38 @@ The working recommendation is to proceed with:
 - Thesis: **miniBIOTA is a living, engineered biosphere that makes ecology visible on a human scale, turning a room-sized build into a way for people to feel the complexity, fragility, resilience, and possibility of living systems.**
 - Opening emotional move: begin with wonder, then reveal the system's difficulty and meaning.
 
+## Pulled Forward Task 310: One-Liner And 30-Second Explanation
+
+### Recommended One-Liner
+
+miniBIOTA is a living, engineered biosphere that makes ecology visible by turning a room-sized aquatic system into a tiny world people can watch, learn from, and help grow.
+
+Why it works: it says what miniBIOTA is, keeps the scale human, names the emotional/educational purpose, and leaves room for support without sounding like a pitch deck.
+
+### Shorter One-Liner Options
+
+- miniBIOTA is a tiny living world built to make ecology visible.
+- miniBIOTA turns an engineered biosphere into a living story people can follow.
+- miniBIOTA is a room-sized living model that helps people see how ecosystems work.
+- miniBIOTA makes the hidden drama of ecology visible on a human scale.
+- miniBIOTA is not just an aquarium; it is a living system built to reveal how ecosystems form, struggle, and adapt.
+
+### 30-Second Explanation
+
+miniBIOTA is a room-sized living biosphere I built to make ecology visible. At first glance, it may look like an aquarium, but it is really an engineered living system where water, atmosphere, plants, animals, microbes, sensors, and daily observations all interact. The point is not just to keep something alive in a box. The point is to create a small world people can actually watch closely enough to feel how complex, fragile, resilient, and surprising living systems are. My hope is that people leave curious, emotionally connected, and wondering what else we could learn if ecology felt this close.
+
+### More Conversational Version
+
+miniBIOTA is my attempt to build a tiny living world that helps people see ecology up close. It started with aquarium and biosphere ideas, but it has become something bigger: a real living system with organisms, engineering, observations, failures, surprises, and stories. I am trying to make ecological complexity feel less abstract. If people can see a small ecosystem change, struggle, recover, and surprise them, maybe they can connect more deeply with the larger systems we all depend on.
+
+### Sponsor-Adjacent Version
+
+miniBIOTA is a living, engineered biosphere and public storytelling project that makes ecology visible on a human scale. It combines aquatic life, environmental design, observation, media, and education into a system people can follow over time. The goal is to help audiences feel connected to ecological complexity while building a platform that can grow through community attention, partnerships, and direct support.
+
+### Claim-Safe Version
+
+miniBIOTA is an engineered living system designed to help people observe ecological relationships at a human scale. It is not a complete model of Earth, and it is still developing, but it has already become a working way to document how organisms, water, atmosphere, hardware, and human decisions interact inside a closed-system concept.
+
+### Current Recommendation
+
+Use the recommended one-liner for general introductions and the 30-second explanation as the default talk opener. Keep the sponsor-adjacent version available for follow-up conversations, not as the main stage framing.

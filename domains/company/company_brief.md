@@ -67,6 +67,19 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-12:** Company advanced Aquatic Club talk execution ahead of
+  schedule. Tasks `282`, `309`, `290`, `310`, `283`, and `291` were completed
+  with approved Planner updates; pulled-forward work was moved onto the
+  2026-05-12 calendar, and the next near-term schedule was adjusted to reflect
+  actual completion. Company created or updated a working talk note, dependency
+  map, and selected working opening, then incorporated Gemini and Claude side
+  drafts supplied during the session. The strongest opening direction now
+  starts from the Aquatic Club audience's lived experience with closed and
+  semi-closed systems, then widens to miniBIOTA as a living system that
+  "behaves like a place." This remains draft language requiring Brand, Content,
+  Research, and Hardware review before final use; no public, sponsor, financial,
+  legal, launch, roadmap, app-runtime, website-behavior, or schema commitment
+  was created.
 - **2026-05-12:** Company applied Josue's approved Aquatic Club schedule
   tightening pass. Planner parent/container tasks for the talk are now due-only
   records, scheduled daily work remains on child tasks, supporting Hardware,

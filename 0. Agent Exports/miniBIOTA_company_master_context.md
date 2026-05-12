@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Master Context
 
-- Generated: 2026-05-12 13:15:00 -04:00
+- Generated: 2026-05-12 19:17:11 -04:00
 - Source contract: Company `domains/` reports are included below.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 - Format: portable Markdown with Obsidian wiki-links normalized or removed.
@@ -160,6 +160,19 @@
 
 ## Recent Milestones
 
+- **2026-05-12:** Company advanced Aquatic Club talk execution ahead of
+  schedule. Tasks `282`, `309`, `290`, `310`, `283`, and `291` were completed
+  with approved Planner updates; pulled-forward work was moved onto the
+  2026-05-12 calendar, and the next near-term schedule was adjusted to reflect
+  actual completion. Company created or updated a working talk note, dependency
+  map, and selected working opening, then incorporated Gemini and Claude side
+  drafts supplied during the session. The strongest opening direction now
+  starts from the Aquatic Club audience's lived experience with closed and
+  semi-closed systems, then widens to miniBIOTA as a living system that
+  "behaves like a place." This remains draft language requiring Brand, Content,
+  Research, and Hardware review before final use; no public, sponsor, financial,
+  legal, launch, roadmap, app-runtime, website-behavior, or schema commitment
+  was created.
 - **2026-05-12:** Company applied Josue's approved Aquatic Club schedule
   tightening pass. Planner parent/container tasks for the talk are now due-only
   records, scheduled daily work remains on child tasks, supporting Hardware,
@@ -1054,8 +1067,8 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
 - Sea urchin intro short was published May 4 as pipeline 351, Mottled Shore Crab short May 6 as pipeline 352, and producer-diversity/Caulerpa short May 7 as pipeline 353. Loop 9 is advanced, not resolved; shorts loop 17 tracks whether the variegated sea urchin survives and keeps eating Graceful redweed; shorts loop 18 tracks whether Green Feather Alga spreads too much and needs removal.
 - Story beats schema has been applied and initial sea urchin beats seeded; `intervention` is now an allowed `story_beats.beat_type`, and beat 17 uses it. App Planner now supports Story Beats as a source type for Planner production source maps.
 - Ghost shrimp larvae follow-up moved to May 12 so the May 5-9 calendar can stay focused on the seagrass longform buildup.
-- Longform seagrass succession continuation is targeted for 2026-05-09 and still needs title/footage/script decisions.
-- Historical `content_pipeline` backfill still needs `format`, `platform_urls`, `source_observation_id`, `notes`, and `parent_pipeline_id` populated where applicable.
+- Longform seagrass succession continuation is targeted for 2026-05-14 through the dedicated Planner project and still needs final title/footage/script decisions.
+- Historical `content_pipeline` backfill no longer includes the published chronicle link/editorial cleanup or short URL normalization pass; remaining follow-up is deeper source/routing review plus `source_observation_id`, `notes`, and `parent_pipeline_id` where applicable.
 - Build newsletter template and weekly dispatch workflow.
 - Define Patreon tier structure and Discord community rules.
 - Use App Planner/Supabase for live ordinary Content task status while keeping
@@ -1124,13 +1137,28 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
 - Story beats schema applied and initial sea urchin beats seeded; `intervention` is now an allowed `story_beats.beat_type`, and beat 17 uses it. App Planner now supports Story Beats as a source type for production source maps.
 - Ghost shrimp larvae follow-up remains queued after the current seagrass/amphipod production window.
 - Longform target 2026-05-14 - seagrass succession sequel; Planner/calendar id 3 now matches project doc and is no longer framed as Grant Field Trip.
-- Historical `content_pipeline` backfill still needed: older records need `format`, `platform_urls`, `source_observation_id`, `notes`, and `parent_pipeline_id` populated where applicable
+- Historical `content_pipeline` backfill no longer includes the published chronicle link/editorial cleanup or short URL normalization pass; remaining follow-up is deeper source/routing review plus `source_observation_id`, `notes`, and `parent_pipeline_id` where applicable.
 - Use App Planner/Supabase as the live ordinary Content work queue while
   preserving the distinction between ordinary tasks, `content_calendar`,
   source maps, story beats, story threads, open loops, pipeline records,
   chronicles, publish closeout, and active project docs.
 
 ## Recent Milestones
+- **2026-05-12:** Aquatic Club talk drafting produced a durable writing
+  preference for Content handoff. Josue prefers scripts and public narrative
+  drafts that start from concrete lived or observable moments, respect the
+  audience's existing knowledge, and earn meaning through tension, surprise,
+  realization, and specific miniBIOTA detail rather than opening with abstract
+  project explanation or generic inspiration language. The selected talk
+  opening direction should still pass Brand, Research, and Hardware review
+  before final use.
+- **2026-05-12:** Published content public-history cleanup completed. Source-linked
+  chronicle records are structurally linked and published, the editorial
+  boilerplate audit is clear across 342 linked chronicles, key species/biome
+  routing corrections were applied from transcript review, Southern Lubber
+  Grasshopper was added for the relevant external observation, Duckweed was
+  linked to both Freshwater Lake and Lakeshore, and all published short URLs
+  were normalized for correct public Shorts playback.
 - **2026-05-12:** Company applied approved Content Planner cleanup from the
   cross-domain task relevance review: created the dedicated seagrass longform
   work project for `[Working Title] The Seagrass Meadow Started Fighting Back`,
@@ -1175,29 +1203,29 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
 
 - **2026-05-04:** Brain Content folder converted to the same memory/skills pattern as Financials. Brain folder is now `5. miniBIOTA_Content`, stale `docs/` mirror files were removed, and active detailed sources are `AGENTS.md`, `memory/`, `skills/`, `skills/*/reference/`, and `video_projects/` in `M:\miniBIOTA\miniBIOTA_Content\`.
 - **2026-05-04:** Content repo first-pass memory + local playbook architecture added. AGENTS.md now routes through memory/00-index.md; new repo-local playbooks cover daily observation logging, short creation, and weekly story planning. Existing docs were not moved.
-- **2026-05-04:** Short #4 published Ã¢â‚¬â€ "I Added Sea Urchins to Fight the Algae" (pipeline 351, YouTube: https://youtube.com/shorts/NeYzSX-vSL0). Closeout completed: calendar id 6 published, species chronicle 31 written, beats 1-2 published/seen in short, loop 9 advanced, and new open loop 17 seeded for sea urchin survival and continued Graceful redweed grazing.
+- **2026-05-04:** Short #4 published - "I Added Sea Urchins to Fight the Algae" (pipeline 351, YouTube: https://youtube.com/shorts/NeYzSX-vSL0). Closeout completed: calendar id 6 published, species chronicle 31 written, beats 1-2 published/seen in short, loop 9 advanced, and new open loop 17 seeded for sea urchin survival and continued Graceful redweed grazing.
 - **2026-05-04:** Initial story beats seeded for the sea urchin arc (thread 27): intro, acclimation redweed proof, near-failure, survival, and in-system grazing evidence. Beats 1-2 are tied to calendar id 6; beats 3-5 remain available for follow-up stories. App UI support still pending.
 - **2026-05-04:** Story beats workflow documented in Content repo (docs/story_beats_workflow.md) with schema source at _system/story_beats_schema.sql. Beats are now defined as named story turns inside threads, bridging observations to Planner projects, open loops, and published pipeline records. Supabase tables were applied manually; App UI support and app-owned migration history are pending.
 - **2026-05-04:** Added DaVinci Start Routine to Content repo (docs/davinci_production_tracker.md). When Josue says he is getting started in DaVinci, Content Agent should provide Resolve project, timeline, export filename, thumbnail text, and the minimal shorts setup checklist from the active Planner entry.
 - **2026-05-04:** Added Codex story writing guide in Content repo (docs/story_writing_guide.md) and linked it from the shorts workflow. Future script sessions should check audience knowledge first, avoid known AI-writing tells, and save durable voice/style lessons from Josue's corrections.
-- **2026-05-01:** Short #3 published ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â "The ghost shrimp had offspring" (pipeline 350, YouTube: https://youtube.com/shorts/97y0G2p7Wms). Ghost shrimp (species 67) in Lake biome (biome 1). Closeout completed: pipeline record created, calendar id 11 published, open loop 3 advanced, observation 207 linked/promoted, species chronicle 29 written.
+- **2026-05-01:** Short #3 published - "The ghost shrimp had offspring" (pipeline 350, YouTube: https://youtube.com/shorts/97y0G2p7Wms). Ghost shrimp (species 67) in Lake biome (biome 1). Closeout completed: pipeline record created, calendar id 11 published, open loop 3 advanced, observation 207 linked/promoted, species chronicle 29 written.
 - **2026-05-01:** Content publish closeout workflow updated for the Chronicle Relationship Model. Future chronicle sessions must identify the primary chronicle owner, one video-embed owner, major impacts, context links, and any secondary impact chronicle rows before writing public chronicle records.
 - **2026-05-01:** Planner integration docs updated with Codex database execution notes: always read Planner records from Supabase before metadata edits, use read/write/readback, avoid PowerShell `python -c` for multiline video copy, and track the need for dedicated `content_calendar` helper functions.
 - **2026-05-01:** Added DaVinci production tracker for organizing many videos in different edit stages, connecting App Planner entries to Resolve projects/templates, and tracking process improvements.
 - **2026-05-01:** Content workflow updated with a description species naming rule: keep descriptions short, but include common and scientific names for every featured species, including context species that materially explain the story.
 - **2026-04-30:** `miniBIOTA_Content` initialized for Codex and GitHub operation. Added `AGENTS.md`, `docs/agent_protocol.md`, Codex session helpers, `.gitignore`, and README; initialized local git repository and pushed initial `main` branch to `https://github.com/miniBIOTA/miniBIOTA_Content`.
-- **2026-04-29:** Short #2 published ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â "This snail carries marine nutrients back onto land." (pipeline 349, YouTube: https://youtube.com/shorts/Nt60b0Td6lY). Eastern Melampus (species 176). Full closeout completed: pipeline record, calendar id 5 published, open loop 16 seeded (Eastern Melampus establishment and reproduction), obs 224 linked, species record updated with ecological_role and microhabitat_preference, chronicles 27 (biome) and 28 (species) written.
-- **2026-04-28:** Short #1 published ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â "Grass is taking over the Marine Shore Biome" (pipeline 348, YouTube: https://youtube.com/shorts/mJaxOrhstJI). Full closeout completed: pipeline record, content calendar updated, open loop 15 seeded (Gulf marsh crab establishment), species records updated for ids 174/175/176/141, chronicles 25-26 written. First full short closeout process run end-to-end.
-- **2026-04-28:** Longform direction set ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â seagrass meadow succession continuation from pipeline 3 ("The Un Eaten"). Coastal biome focus (biomes 5+6). Target publish 2026-05-03. Direction flexible, working title TBD. 4 shorts arc planned: (1) problem/field trip setup, (2) Eastern Melampus, (3) Scorched Mussels, (4) Gulf marsh crab as week's star. Sea urchins introduced 2026-04-26 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â both dead by 2026-04-28, cause unknown, removed from story. New DB records: obs 233ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“234, story thread 29 (slipper snails), open loops 13ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“14, pipeline 25 biome corrected.
-- **2026-04-27:** Hardware upgrade complete ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â MSI SHADOW RTX 5060 Ti 16GB installed (replaces GTX 1660), ASUS ProArt PA279CRV 27" 4K installed as center editing monitor (replaces Acer). Monitor calibrated for SDR editing: sRGB mode, NVIDIA 10 bpc Full range. DaVinci confirmed on CUDA with neural engine optimization.
+- **2026-04-29:** Short #2 published - "This snail carries marine nutrients back onto land." (pipeline 349, YouTube: https://youtube.com/shorts/Nt60b0Td6lY). Eastern Melampus (species 176). Full closeout completed: pipeline record, calendar id 5 published, open loop 16 seeded (Eastern Melampus establishment and reproduction), obs 224 linked, species record updated with ecological_role and microhabitat_preference, chronicles 27 (biome) and 28 (species) written.
+- **2026-04-28:** Short #1 published - "Grass is taking over the Marine Shore Biome" (pipeline 348, YouTube: https://youtube.com/shorts/mJaxOrhstJI). Full closeout completed: pipeline record, content calendar updated, open loop 15 seeded (Gulf marsh crab establishment), species records updated for ids 174/175/176/141, chronicles 25-26 written. First full short closeout process run end-to-end.
+- **2026-04-28:** Longform direction set - seagrass meadow succession continuation from pipeline 3 ("The Un Eaten"). Coastal biome focus (biomes 5+6). Target publish 2026-05-03. Direction flexible, working title TBD. 4 shorts arc planned: (1) problem/field trip setup, (2) Eastern Melampus, (3) Scorched Mussels, (4) Gulf marsh crab as week's star. Sea urchins introduced 2026-04-26 - both dead by 2026-04-28, cause unknown, removed from story. New DB records: obs 233-234, story thread 29 (slipper snails), open loops 13-14, pipeline 25 biome corrected.
+- **2026-04-27:** Hardware upgrade complete - MSI SHADOW RTX 5060 Ti 16GB installed (replaces GTX 1660), ASUS ProArt PA279CRV 27" 4K installed as center editing monitor (replaces Acer). Monitor calibrated for SDR editing: sRGB mode, NVIDIA 10 bpc Full range. DaVinci confirmed on CUDA with neural engine optimization.
 - **2026-04-27:** miniBIOTA_Content repo created as dedicated Content Agent workspace. Production docs and video project files moved out of the previous Brain Content Production folder into the Content repo. Content brief and Brain mirror established.
-- **2026-04-24:** Grant Field Trip video spine confirmed (B+C hybrid). Story notes written. 14 field trip observations logged (ids 214ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“227). Content calendar entry id=3.
-- **2026-04-17:** Lake Post-Seal longform published (pipeline 338). URL: https://youtu.be/lgmPWX9e-A0. Open loops 1ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“4, 7 seeded.
+- **2026-04-24:** Grant Field Trip video spine confirmed (B+C hybrid). Story notes written. 14 field trip observations logged (ids 214-227). Content calendar entry id=3.
+- **2026-04-17:** Lake Post-Seal longform published (pipeline 338). URL: https://youtu.be/lgmPWX9e-A0. Open loops 1-4, 7 seeded.
 
 ## Known Risks & Blockers
 
 - Longform working title still provisional; dried lake bed sequence and Grant role need footage review before scripting begins
-- Seagrass meadow macroalgae problem unresolved ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â loop 9 is advanced by sea urchin introduction, loop 17 tracks whether the remaining urchin survives and keeps grazing Graceful redweed, and loop 18 tracks whether Green Feather Alga spreads too much and needs removal
+- Seagrass meadow macroalgae problem unresolved - loop 9 is advanced by sea urchin introduction, loop 17 tracks whether the remaining urchin survives and keeps grazing Graceful redweed, and loop 18 tracks whether Green Feather Alga spreads too much and needs removal
 - Historical `content_pipeline` metadata backfill incomplete for older records
 - Shorts routine established but still building consistency - 6 shorts published this week
 - Newsletter workflow not yet built
@@ -1205,7 +1233,12 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
 
 ## Cross-Domain Notes
 
-- **Hardware:** Biomes 2ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“5 hardware rewire (XT30 + JST-XH) is planned but unscheduled. May require temporary tank downtime. Coordinate with Hardware Agent before scheduling filming sessions that depend on biomes 2ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“5.
+- **Company:** Aquatic Club talk writing should preserve the learned preference
+  for concrete observed/lived moments first, then meaning. For scripts and
+  spoken drafts, use the pattern: concrete moment, tension or surprise, what
+  Josue realized, why it matters, and what question it opens next. Keep the
+  writing spoken, specific, and human while preserving claim-safety boundaries.
+- **Hardware:** Biomes 2-5 hardware rewire (XT30 + JST-XH) is planned but unscheduled. May require temporary tank downtime. Coordinate with Hardware Agent before scheduling filming sessions that depend on biomes 2-5.
 - **Ecology:** `story_threads` and `open_loops` are the production queue - always query these before selecting the next video topic. Loop 9 (sea urchin question) is advanced by the sea urchin introduction and later survival/feeding evidence; long-term macroalgae impact remains unresolved.
 - **App:** App Planner/Supabase is the shared project/task runtime for
   ordinary Content work status and scheduled content production planning. App
@@ -1837,6 +1870,7 @@ These match the system IDs used throughout the rest of the app (observations, st
 ## Key Facts
 - Telemetry architecture is local-first and must not imply direct pump switching or centralized actuator control.
 - Public pages should express the biosphere, biomes, species, engineering systems, and chronicles as the durable public record.
+- Chronicle short-form video playback uses `media_type='short'` plus `/shorts/` URLs for vertical Shorts rendering.
 - Operator/admin workflows belong in `miniBIOTA_App`, not the public site.
 - The "Biological Startup" voice should remain technically precise, accessible, ecological, and maker-clear.
 
@@ -1894,6 +1928,11 @@ These match the system IDs used throughout the rest of the app (observations, st
 - Build Operation Living Web, the Ecosystem Relationship Graph architecture, as a public species-to-biome-to-biosphere relationship experience; Web architecture is now ready to pause, with broad food-web curation routed to the Research Agent via the Web repo handoff packet.
 
 ## Recent Milestones
+- 2026-05-12: Short-form chronicle playback was corrected across data and
+  rendering. All published short records and linked short chronicles now use
+  `/shorts/` URLs with `media_type='short'`, and the Web renderer now treats
+  structured short media as vertical playback even if a future import uses a
+  standard YouTube watch URL.
 - 2026-05-12: Company applied approved Web Planner cleanup from the
   cross-domain task relevance review: project `36` is now `Public Site Core &
   About/Proof Page`, project `38` is now `Community, Events & Revenue
@@ -2044,6 +2083,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Remains an internal secret-key-capable tool, not a public product or public website surface.
 
 ## Current State
+- CRM relationship-system migration 013 is live after user-applied Supabase SQL on 2026-05-12. It added 33 additive tables beside the legacy CRM tables, with read-only verification showing all new tables empty and legacy counts unchanged. The CRM tab now includes a read-only Relationship view for schema/table counts and review queues through the internal main-process secret-key bridge.
 - `miniBIOTA_App` is the active desktop operator surface for miniBIOTA.
 - Active tabs are Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, and Monitoring.
 - Planner project-manager schema foundation is live after migration 007, and
@@ -2067,6 +2107,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
 
 ## Key Facts
+- CRM relationship-system tables from migration 013 are live, RLS-enabled, and policy-free; first runtime access must use the internal main-process secret-key bridge. No legacy CRM records have been backfilled into the new tables.
 - The app uses Supabase publishable keys in renderer/browser-facing config and secret keys only in Electron main-process services or local admin tooling. Internal renderer REST helpers route through an Electron IPC bridge when secret-key access is needed, without exposing the secret key to browser code.
 - Public website surfaces should remain read-only observability; operator/admin workflows belong in the desktop app.
 - App owns CRM as software/runtime/schema/UI implementation. Growth owns CRM
@@ -2115,6 +2156,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   combine with type, year, and unreviewed filters.
 
 ## Priorities
+- Continue the staged CRM relationship-system UI: expand the read-only Relationship summary into People, Organizations, Opportunities, Interactions, Next Actions, Review, Agent Inbox, and reporting surfaces before any write or backfill workflows.
 - Continue consolidating story-source execution and project-management behavior into the unified Planner workflow.
 - Verify the first Planner Programs/Operations records in the App UI, then
   continue Planner Sources polish, beat closeout ergonomics, and recurring-task
@@ -2127,6 +2169,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   context, operating rules, architecture notes, and playbooks.
 
 ## Risks / Gaps
+- CRM migration 013 created live RLS-protected tables with no policies. Any publishable-key policy design, legacy backfill, or CRM write workflow must be separately approved and tested.
 - Supabase secret-key access would be a major security risk if exposed outside the internal app.
 - Real admin image upload to Supabase Storage still needs careful live verification when that work resumes.
 - Packaged build behavior with Sharp/native dependencies should be verified before relying on distributable builds.
@@ -2171,6 +2214,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - App owns CRM as software/runtime/schema/UI implementation. Growth owns CRM
   relationship meaning, lifecycle strategy, follow-up rules, opportunity
   context, and commercial commitment discipline.
+- CRM relationship-system migration 013 is live after user-applied Supabase SQL on 2026-05-12. It added 33 additive tables beside `crm_contacts`, `crm_activities`, and `partner_opportunities`; App read-only verification confirmed all 33 new tables exist, all are empty, and legacy counts remain `crm_contacts = 0`, `crm_activities = 0`, `partner_opportunities = 5`. The first read-only CRM Relationship view now summarizes those table counts and review queues through the internal main-process secret-key bridge.
 - Monitoring tab is live for direct MQTT telemetry from the local biome network when on `mB2.4`.
 - Site Admin includes species, biosphere, biome, chronicle, announcement, and staging workflows.
 - Media Library/tagging and backend WebP image upload pipeline are implemented in the app.
@@ -2203,6 +2247,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 
 ## Active Priorities
 
+- Continue the staged CRM upgrade from the applied relationship-system foundation: expand the read-only Relationship view into People, Organizations, Interactions, Next Actions, Review, Agent Inbox, and reporting surfaces before any write/backfill workflows.
 - Continue consolidating story-source execution and project management into the unified Planner workflow, with remaining work focused on Planner Programs/Operations UI smoke verification, Planner Sources polish, beat closeout ergonomics, recurring-task calendar integration, and smoke-testing the Planner replacement surfaces.
 - Use App Planner/Supabase as the live App work queue, and keep App docs/memory
   wired so App sessions read current projects/tasks and ask before marking
@@ -2215,6 +2260,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 
 ## Recent Milestones
 
+- **2026-05-12:** CRM relationship-system schema foundation was applied and verified. Growth approved the schema semantics; existing CRM rows were exported to `C:\tmp\miniBIOTA-crm-pre-013-2026-05-12\`; Josue ran `migrations/013_crm_relationship_system.sql` in Supabase SQL Editor; App read-only verification confirmed all 33 new CRM tables exist and are empty, while legacy counts remained `crm_contacts = 0`, `crm_activities = 0`, `partner_opportunities = 5`. App then added a read-only CRM Relationship view that uses the internal main-process secret-key bridge for RLS-protected table counts and review queues. No CRM records were created, edited, deleted, archived, migrated, backfilled, or used as test records.
 - **2026-05-12:** App added Planner parent/container deadline support using
   `tasks.due_date` without migrations or live Planner record writes. The task
   modal, save paths, task cards, Today, Timeline, Week, Month, task board,
@@ -2574,6 +2620,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 
 ## Known Risks & Blockers
 
+- CRM relationship-system tables are live with RLS enabled and no policies. Runtime access must stay on the internal main-process secret-key bridge unless a separate RLS policy pass is approved; backfill from legacy CRM rows remains a separate reviewed migration/write task.
 - The app has Supabase secret-key access in main-process/local tooling; accidental public or renderer exposure would be a security risk.
 - Real admin image upload to Supabase Storage still needs careful live verification with approval if not already completed.
 - Packaged build behavior with Sharp/native dependencies should be verified before relying on distributable `.exe` builds.
@@ -2607,9 +2654,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   Planner-ready. Programs/Operations are cross-domain umbrellas above projects;
   they coordinate domain-owned projects without overriding domain
   source-of-truth, approval rules, or task/project ownership.
-- **Growth:** Growth owns CRM as a commercial relationship system; App owns the
-  CRM operator surface, Supabase-backed workflow implementation, validation,
-  and runtime behavior when CRM features are scoped.
+- **Growth:** Growth owns CRM as a commercial relationship system; App owns the`n  CRM operator surface, Supabase-backed workflow implementation, validation,`n  and runtime behavior when CRM features are scoped. Migration 013 is live as`n  the additive relationship-system foundation, but relationship records,`n  backfills, outreach, approvals, and commitments still require separately`n  scoped Growth/App approval.
 - **Financials:** Financials tab reads `revenue_streams`, `operating_expenses`, `liabilities`, and `planned_purchases`.
 - **Hardware:** Monitoring tab reads live biome MQTT data and may later integrate Supabase telemetry snapshot fallback and setpoint controls.
 - **Ecosystem/Data:** Species and chronicle admin changes in the app affect public ecology records. Field Observer sighting counts/details should remain history datapoints; curated species population fields remain manually maintained.

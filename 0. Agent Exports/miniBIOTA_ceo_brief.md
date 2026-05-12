@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Executive Brief
 
-- Generated: 2026-05-12 13:15:00 -04:00
+- Generated: 2026-05-12 19:17:11 -04:00
 - Purpose: Company-side synthesis of domain reports.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 
@@ -194,22 +194,22 @@
 
 ## 11. miniBIOTA_App
 
-**Summary:** Owns the internal Electron desktop app used for miniBIOTA operations. The app uses Supabase publishable keys in renderer/browser-facing config and secret keys only in Electron main-process services or local admin tooling. Internal renderer REST helpers route through an Electron IPC bridge when secret-key access is needed, without exposing the secret key to browser code.
+**Summary:** Owns the internal Electron desktop app used for miniBIOTA operations. CRM relationship-system tables from migration 013 are live, RLS-enabled, and policy-free; first runtime access must use the internal main-process secret-key bridge. No legacy CRM records have been backfilled into the new tables.
 
 ### Current Status
+- CRM relationship-system migration 013 is live after user-applied Supabase SQL on 2026-05-12. It added 33 additive tables beside the legacy CRM tables, with read-only verification showing all new tables empty and legacy counts unchanged. The CRM tab now includes a read-only Relationship view for schema/table counts and review queues through the internal main-process secret-key bridge.
 - `miniBIOTA_App` is the active desktop operator surface for miniBIOTA.
 - Active tabs are Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, and Monitoring.
-- Planner project-manager schema foundation is live after migration 007, and former top-level Weekly Checklist and Tasks behavior has been consolidated into Planner replacement surfaces.
 
 ### Priorities
+- Continue the staged CRM relationship-system UI: expand the read-only Relationship summary into People, Organizations, Opportunities, Interactions, Next Actions, Review, Agent Inbox, and reporting surfaces before any write or backfill workflows.
 - Continue consolidating story-source execution and project-management behavior into the unified Planner workflow.
 - Verify the first Planner Programs/Operations records in the App UI, then continue Planner Sources polish, beat closeout ergonomics, and recurring-task calendar integration.
-- Keep secret-key access internal-only and avoid public exposure of app behavior.
 
 ### Risks / Gaps
+- CRM migration 013 created live RLS-protected tables with no policies. Any publishable-key policy design, legacy backfill, or CRM write workflow must be separately approved and tested.
 - Supabase secret-key access would be a major security risk if exposed outside the internal app.
 - Real admin image upload to Supabase Storage still needs careful live verification when that work resumes.
-- Packaged build behavior with Sharp/native dependencies should be verified before relying on distributable builds.
 
 ## Cross-Domain Next Actions
 
@@ -223,5 +223,5 @@
 - 8. Raw Footage: Next action - No immediate action recorded. Gap - No explicit gap recorded.
 - 9. miniBIOTA_Web: Next action - Keep Web memory and active Company Web reports aligned with the public-only, local-first telemetry and control architecture. Gap - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
 - 10. Definitions: Next action - Keep glossary terminology synchronized with canonical source notes across all domains. Gap - If glossary language lags behind hardware architecture, downstream use may assume centralized pump control or outdated sensor/network standards.
-- 11. miniBIOTA_App: Next action - Continue consolidating story-source execution and project-management behavior into the unified Planner workflow. Gap - Supabase secret-key access would be a major security risk if exposed outside the internal app.
+- 11. miniBIOTA_App: Next action - Continue the staged CRM relationship-system UI: expand the read-only Relationship summary into People, Organizations, Opportunities, Interactions, Next Actions, Review, Agent Inbox, and reporting surfaces before any write or backfill workflows. Gap - CRM migration 013 created live RLS-protected tables with no policies. Any publishable-key policy design, legacy backfill, or CRM write workflow must be separately approved and tested.
 

@@ -52,6 +52,14 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   chronicles, publish closeout, and active project docs.
 
 ## Recent Milestones
+- **2026-05-12:** Aquatic Club talk drafting produced a durable writing
+  preference for Content handoff. Josue prefers scripts and public narrative
+  drafts that start from concrete lived or observable moments, respect the
+  audience's existing knowledge, and earn meaning through tension, surprise,
+  realization, and specific miniBIOTA detail rather than opening with abstract
+  project explanation or generic inspiration language. The selected talk
+  opening direction should still pass Brand, Research, and Hardware review
+  before final use.
 - **2026-05-12:** Published content public-history cleanup completed. Source-linked
   chronicle records are structurally linked and published, the editorial
   boilerplate audit is clear across 342 linked chronicles, key species/biome
@@ -133,6 +141,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Cross-Domain Notes
 
+- **Company:** Aquatic Club talk writing should preserve the learned preference
+  for concrete observed/lived moments first, then meaning. For scripts and
+  spoken drafts, use the pattern: concrete moment, tension or surprise, what
+  Josue realized, why it matters, and what question it opens next. Keep the
+  writing spoken, specific, and human while preserving claim-safety boundaries.
 - **Hardware:** Biomes 2-5 hardware rewire (XT30 + JST-XH) is planned but unscheduled. May require temporary tank downtime. Coordinate with Hardware Agent before scheduling filming sessions that depend on biomes 2-5.
 - **Ecology:** `story_threads` and `open_loops` are the production queue - always query these before selecting the next video topic. Loop 9 (sea urchin question) is advanced by the sea urchin introduction and later survival/feeding evidence; long-term macroalgae impact remains unresolved.
 - **App:** App Planner/Supabase is the shared project/task runtime for

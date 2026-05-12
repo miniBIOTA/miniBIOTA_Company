@@ -27,7 +27,7 @@ The opening should not begin by explaining that miniBIOTA is "not just an aquari
 
 ## Selected Opening Hook
 
-Everyone in this room already knows that a closed system is a different animal from an open one.
+Everyone in this room already knows that a closed system behaves differently than an open one.
 
 You know what it feels like when the chemistry starts moving somewhere you did not ask it to go. You know the patience it takes to watch a system drift and decide whether to intervene or wait. You know that in a closed system, nothing really disappears. Everything cycles. Everything that goes in becomes part of what comes next, either as a problem or, if the biology cooperates, as part of the solution.
 
@@ -37,7 +37,7 @@ That is what being alive inside a box actually looks like.
 
 ## Selected 2-3 Minute Opening Passage
 
-Everyone in this room already knows that a closed system is a different animal from an open one.
+Everyone in this room already knows that a closed system behaves differently than an open one.
 
 You know what it feels like when the chemistry starts moving somewhere you did not ask it to go. You know the patience it takes to watch a system drift and decide whether to intervene or wait. You know that in a closed system, nothing really disappears. Everything cycles. Everything that goes in becomes part of what comes next, either as a problem or, if the biology cooperates, as part of the solution.
 
@@ -83,7 +83,7 @@ It does not answer every question. It makes better questions visible.
 
 ## Shorter Spoken Version
 
-Everyone in this room already knows that a closed system is a different animal from an open one.
+Everyone in this room already knows that a closed system behaves differently than an open one.
 
 You know what it feels like when chemistry drifts, when waste becomes part of the next problem, when an organism shows up somewhere unexpected, or when the system starts doing something you did not plan.
 
@@ -117,9 +117,8 @@ Use this as the current selected opening direction. Do not finalize it until:
 
 The strongest core to preserve is:
 
-> Everyone in this room already knows that a closed system is a different animal from an open one.
+> Everyone in this room already knows that a closed system behaves differently than an open one.
 >
 > miniBIOTA starts from that same truth and pushes it into a bigger question.
 >
 > It no longer feels like a display. It behaves like a place.
-

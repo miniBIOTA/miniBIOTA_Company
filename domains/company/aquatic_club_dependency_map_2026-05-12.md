@@ -1,7 +1,7 @@
 ---
 title: Aquatic Club Talk Dependency Map
 date: 2026-05-12
-status: draft
+status: updated-draft
 related_program_id: 3
 related_task: 283
 ---
@@ -62,7 +62,7 @@ These are draft defaults. Brand and Content can refine them, but they should not
 
 ### Phase 1: Message Spine And Dependency Map
 
-Status: underway.
+Status: drafted, with the selected opening now captured separately.
 
 Completed or drafted:
 - Program success criteria and readiness definition.
@@ -74,7 +74,7 @@ Completed or drafted:
 
 Immediate next work:
 - Company should use this map to guide agent handoffs.
-- Brand and Content should refine the title, one-liner, audience promise, opening hook, and first script structure without over-polishing too early.
+- Brand and Content should review the selected opening, refine the title, one-liner, audience promise, act map, and first rough script without over-polishing too early.
 
 ### Phase 2: Brand + Content Pair
 
@@ -88,7 +88,7 @@ Brand needs:
 - Start visual tone for slides: credible, alive, engineered, accessible.
 
 Content needs:
-- Turn the working thesis into the opening hook.
+- Use the selected opening as the current starting point, then tune cadence and act structure.
 - Map the talk into acts: origin, proof, living system, future, invitation.
 - Prepare rough rehearsal script v0 before the full deck is ready.
 - Keep proof-media needs visible early enough for App/Hardware/Web support.
@@ -100,7 +100,7 @@ Best first questions for Brand:
 - What lines should be avoided because they sound like a sponsor promise, product launch, or overclaim?
 
 Best first questions for Content:
-- What is the strongest opening scene or image for the first 60 seconds?
+- Does the selected opening make the Aquatic Club audience feel recognized before the frame widens?
 - Where does the audience first realize this is bigger than an aquarium?
 - Which proof moments are essential for the first rough script?
 - What can Josue rehearse now before the deck exists?
@@ -187,7 +187,7 @@ Best first questions for App:
 The rough script and act map should come before heavy slide design. Otherwise the deck can become busy before the story is stable.
 
 Near-term dependency:
-- Brand/Content refine the working title, one-liner, opening hook, and act map.
+- Brand/Content refine the working title, one-liner, selected opening, and act map.
 - Content assembles rough rehearsal script v0.
 - Rehearsal begins before full visual polish.
 
@@ -254,7 +254,7 @@ Mitigations:
 
 Recommended order:
 
-1. **Brand + Content** for message spine, title, opening hook, act map, and rough script.
+1. **Brand + Content** for message spine, title, selected opening, act map, and rough script.
 2. **Research + Hardware** for proof, uncertainty, claim safety, and current-vs-future boundaries.
 3. **Web + Growth** for QR destination, follow path, networking/support capture, and post-talk sequence.
 4. **Financials** when sponsor/support language needs numbers or risk guardrails.
@@ -273,4 +273,3 @@ At that review, check:
 - Are Research and Hardware review inputs ready to request?
 - Is rehearsal starting early enough?
 - Is the QR/support path still on track?
-

@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Master Context
 
-- Generated: 2026-05-11 20:56:09 -04:00
+- Generated: 2026-05-11 21:01:04 -04:00
 - Source contract: Company `domains/` reports are included below.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 - Format: portable Markdown with Obsidian wiki-links normalized or removed.
@@ -1235,7 +1235,7 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
 
 ## Scope
 - Defines how miniBIOTA turns public interest, technical credibility, and storytelling into durable business support.
-- Covers sponsorships, partner outreach, speaking and event opportunities, audience-support conversion paths, campaign planning, crowdfunding, and the systems used to track them.
+- Covers sponsorships, partner outreach, speaking and event opportunities, audience-support conversion paths, campaign planning, crowdfunding, Customer Relationship Management as a commercial operating function, and the systems used to track them.
 
 ## Current State
 - This function is still early, but it is no longer blank: the vault already contains commercial signals across operations, brand, financials, web, and content documentation.
@@ -1252,6 +1252,9 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
 - Commercial readiness depends on aligning business planning, brand positioning, content proof, current financial reality, and public conversion surfaces.
 - The brand is already framed to attract audiences, partners, donors, sponsors, and media attention.
 - The `/build` route is intended for affiliate-backed hardware and resource content.
+- Growth owns CRM relationship meaning, lifecycle stages, follow-up strategy,
+  opportunity context, and sponsor/partner/customer commitment discipline. App
+  owns CRM software/runtime/schema/UI implementation.
 - No partner pipeline, pricing structure, sponsorship tiers, or CRM-style operating cadence is fully operational yet.
 - Growth Agent wiring now treats App Planner/Supabase as the live Growth work
   queue. Growth sessions should read Planner projects/tasks when planning work,
@@ -1305,6 +1308,10 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
 - `miniBIOTA_Growth` now uses repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Growth `docs/` mirror. Use the source repo's memory/skills structure for detailed Growth Agent context.
 - The commercial function is early but no longer blank: documented surfaces include `/donate`, `/events`, `/build`, newsletter signup routes, Patreon/Ko-fi support, sponsorships, course pre-sale, Kickstarter, merch, and speaking/event opportunities.
+- Growth owns Customer Relationship Management as a commercial operating
+  function: contact meaning, relationship lifecycle, follow-up strategy,
+  opportunity context, sponsor/partner/customer commitment discipline, and
+  outreach cadence. App owns CRM software/runtime/schema/UI implementation.
 - Growth project management is now Planner-integrated under
   `work_domains.key = sales` / `domain_id = 7`: 5 Growth work projects track
   13 Growth tasks, with 0 unlinked open Growth tasks after readback on
@@ -1364,7 +1371,7 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
 - **App:** Internal operator/admin surfaces stay separate from public growth messaging unless explicitly scoped.
 - **App:** App Planner/Supabase is the shared project/task runtime for Growth
   work status. Growth owns commercial strategy and relationship context; App
-  owns Planner/CRM runtime behavior.
+  owns Planner/CRM runtime behavior, schema, UI, and implementation.
 
 ## Domain Reference
 
@@ -1877,6 +1884,9 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 ## Key Facts
 - The app uses Supabase publishable keys in renderer/browser-facing config and secret keys only in Electron main-process services or local admin tooling. Internal renderer REST helpers route through an Electron IPC bridge when secret-key access is needed, without exposing the secret key to browser code.
 - Public website surfaces should remain read-only observability; operator/admin workflows belong in the desktop app.
+- App owns CRM as software/runtime/schema/UI implementation. Growth owns CRM
+  relationship meaning, lifecycle strategy, follow-up rules, opportunity
+  context, and commercial commitment discipline.
 - Planner is the main production workflow surface for story sources, project planning, scheduled content, and ordinary tasks.
 - Prompt Library stores reusable prompts in `prompt_library`; prompt create, edit, favorite, archive, and restore actions are live Supabase writes.
 - Planner is the intended unified project-management surface. The live schema
@@ -1969,6 +1979,9 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - `miniBIOTA_App` is the internal Electron desktop app for miniBIOTA operations.
 - The app is an operator surface, not a public product. It uses Supabase publishable keys in renderer/browser-facing config and secret keys only in Electron main-process services or local admin tooling. Internal renderer REST helpers route through an Electron IPC bridge when secret-key access is needed, without exposing the secret key to browser code.
 - Active tabs: Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, and Monitoring. Former top-level Weekly Checklist and Tasks behavior has been consolidated into Planner.
+- App owns CRM as software/runtime/schema/UI implementation. Growth owns CRM
+  relationship meaning, lifecycle strategy, follow-up rules, opportunity
+  context, and commercial commitment discipline.
 - Monitoring tab is live for direct MQTT telemetry from the local biome network when on `mB2.4`.
 - Site Admin includes species, biosphere, biome, chronicle, announcement, and staging workflows.
 - Media Library/tagging and backend WebP image upload pipeline are implemented in the app.
@@ -2380,6 +2393,9 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   Planner-ready. Programs/Operations are cross-domain umbrellas above projects;
   they coordinate domain-owned projects without overriding domain
   source-of-truth, approval rules, or task/project ownership.
+- **Growth:** Growth owns CRM as a commercial relationship system; App owns the
+  CRM operator surface, Supabase-backed workflow implementation, validation,
+  and runtime behavior when CRM features are scoped.
 - **Financials:** Financials tab reads `revenue_streams`, `operating_expenses`, `liabilities`, and `planned_purchases`.
 - **Hardware:** Monitoring tab reads live biome MQTT data and may later integrate Supabase telemetry snapshot fallback and setpoint controls.
 - **Ecosystem/Data:** Species and chronicle admin changes in the app affect public ecology records. Field Observer sighting counts/details should remain history datapoints; curated species population fields remain manually maintained.

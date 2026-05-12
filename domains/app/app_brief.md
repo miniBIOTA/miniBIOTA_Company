@@ -2,7 +2,7 @@
 id: app_brief
 title: App Operations Brief
 domain: app_operations
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 tags: [app, electron, operations, planner, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -22,6 +22,9 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - `miniBIOTA_App` is the internal Electron desktop app for miniBIOTA operations.
 - The app is an operator surface, not a public product. It uses Supabase publishable keys in renderer/browser-facing config and secret keys only in Electron main-process services or local admin tooling. Internal renderer REST helpers route through an Electron IPC bridge when secret-key access is needed, without exposing the secret key to browser code.
 - Active tabs: Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, and Monitoring. Former top-level Weekly Checklist and Tasks behavior has been consolidated into Planner.
+- App owns CRM as software/runtime/schema/UI implementation. Growth owns CRM
+  relationship meaning, lifecycle strategy, follow-up rules, opportunity
+  context, and commercial commitment discipline.
 - Monitoring tab is live for direct MQTT telemetry from the local biome network when on `mB2.4`.
 - Site Admin includes species, biosphere, biome, chronicle, announcement, and staging workflows.
 - Media Library/tagging and backend WebP image upload pipeline are implemented in the app.
@@ -433,6 +436,9 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   Planner-ready. Programs/Operations are cross-domain umbrellas above projects;
   they coordinate domain-owned projects without overriding domain
   source-of-truth, approval rules, or task/project ownership.
+- **Growth:** Growth owns CRM as a commercial relationship system; App owns the
+  CRM operator surface, Supabase-backed workflow implementation, validation,
+  and runtime behavior when CRM features are scoped.
 - **Financials:** Financials tab reads `revenue_streams`, `operating_expenses`, `liabilities`, and `planned_purchases`.
 - **Hardware:** Monitoring tab reads live biome MQTT data and may later integrate Supabase telemetry snapshot fallback and setpoint controls.
 - **Ecosystem/Data:** Species and chronicle admin changes in the app affect public ecology records. Field Observer sighting counts/details should remain history datapoints; curated species population fields remain manually maintained.

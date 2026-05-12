@@ -2,7 +2,7 @@
 id: app_operations
 title: 11. miniBIOTA_App
 domain: app_operations
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 tags: [app, electron, operations, planner, monitoring, internal-tools]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -46,6 +46,9 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Key Facts
 - The app uses Supabase publishable keys in renderer/browser-facing config and secret keys only in Electron main-process services or local admin tooling. Internal renderer REST helpers route through an Electron IPC bridge when secret-key access is needed, without exposing the secret key to browser code.
 - Public website surfaces should remain read-only observability; operator/admin workflows belong in the desktop app.
+- App owns CRM as software/runtime/schema/UI implementation. Growth owns CRM
+  relationship meaning, lifecycle strategy, follow-up rules, opportunity
+  context, and commercial commitment discipline.
 - Planner is the main production workflow surface for story sources, project planning, scheduled content, and ordinary tasks.
 - Prompt Library stores reusable prompts in `prompt_library`; prompt create, edit, favorite, archive, and restore actions are live Supabase writes.
 - Planner is the intended unified project-management surface. The live schema

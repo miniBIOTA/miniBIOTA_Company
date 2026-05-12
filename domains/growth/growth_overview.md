@@ -2,7 +2,7 @@
 id: partners_and_sales
 title: 7. miniBIOTA_Growth
 domain: partners_and_sales
-last_updated: 2026-05-09
+last_updated: 2026-05-12
 tags: [partnerships, sales, sponsorships, business-development, outreach]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -17,7 +17,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Scope
 - Defines how miniBIOTA turns public interest, technical credibility, and storytelling into durable business support.
-- Covers sponsorships, partner outreach, speaking and event opportunities, audience-support conversion paths, campaign planning, crowdfunding, and the systems used to track them.
+- Covers sponsorships, partner outreach, speaking and event opportunities, audience-support conversion paths, campaign planning, crowdfunding, Customer Relationship Management as a commercial operating function, and the systems used to track them.
 
 ## Current State
 - This function is still early, but it is no longer blank: the vault already contains commercial signals across operations, brand, financials, web, and content documentation.
@@ -34,6 +34,9 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Commercial readiness depends on aligning business planning, brand positioning, content proof, current financial reality, and public conversion surfaces.
 - The brand is already framed to attract audiences, partners, donors, sponsors, and media attention.
 - The `/build` route is intended for affiliate-backed hardware and resource content.
+- Growth owns CRM relationship meaning, lifecycle stages, follow-up strategy,
+  opportunity context, and sponsor/partner/customer commitment discipline. App
+  owns CRM software/runtime/schema/UI implementation.
 - No partner pipeline, pricing structure, sponsorship tiers, or CRM-style operating cadence is fully operational yet.
 - Growth Agent wiring now treats App Planner/Supabase as the live Growth work
   queue. Growth sessions should read Planner projects/tasks when planning work,

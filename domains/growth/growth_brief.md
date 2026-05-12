@@ -2,7 +2,7 @@
 id: growth_brief
 title: Growth Brief
 domain: partners_and_sales
-last_updated: 2026-05-09
+last_updated: 2026-05-12
 tags: [growth, partners, sales, sponsorships, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -23,6 +23,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - `miniBIOTA_Growth` now uses repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Growth `docs/` mirror. Use the source repo's memory/skills structure for detailed Growth Agent context.
 - The commercial function is early but no longer blank: documented surfaces include `/donate`, `/events`, `/build`, newsletter signup routes, Patreon/Ko-fi support, sponsorships, course pre-sale, Kickstarter, merch, and speaking/event opportunities.
+- Growth owns Customer Relationship Management as a commercial operating
+  function: contact meaning, relationship lifecycle, follow-up strategy,
+  opportunity context, sponsor/partner/customer commitment discipline, and
+  outreach cadence. App owns CRM software/runtime/schema/UI implementation.
 - Growth project management is now Planner-integrated under
   `work_domains.key = sales` / `domain_id = 7`: 5 Growth work projects track
   13 Growth tasks, with 0 unlinked open Growth tasks after readback on
@@ -82,7 +86,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - **App:** Internal operator/admin surfaces stay separate from public growth messaging unless explicitly scoped.
 - **App:** App Planner/Supabase is the shared project/task runtime for Growth
   work status. Growth owns commercial strategy and relationship context; App
-  owns Planner/CRM runtime behavior.
+  owns Planner/CRM runtime behavior, schema, UI, and implementation.
 
 ## Domain Reference
 

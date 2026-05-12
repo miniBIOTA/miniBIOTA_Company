@@ -1,4 +1,4 @@
----
+﻿---
 id: app_brief
 title: App Operations Brief
 domain: app_operations
@@ -25,6 +25,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - App owns CRM as software/runtime/schema/UI implementation. Growth owns CRM
   relationship meaning, lifecycle strategy, follow-up rules, opportunity
   context, and commercial commitment discipline.
+- CRM relationship-system migration 013 is live after user-applied Supabase SQL on 2026-05-12. It added 33 additive tables beside `crm_contacts`, `crm_activities`, and `partner_opportunities`; App read-only verification confirmed all 33 new tables exist, all are empty, and legacy counts remain `crm_contacts = 0`, `crm_activities = 0`, `partner_opportunities = 5`. The first read-only CRM Relationship view now summarizes those table counts and review queues through the internal main-process secret-key bridge.
 - Monitoring tab is live for direct MQTT telemetry from the local biome network when on `mB2.4`.
 - Site Admin includes species, biosphere, biome, chronicle, announcement, and staging workflows.
 - Media Library/tagging and backend WebP image upload pipeline are implemented in the app.
@@ -57,6 +58,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Active Priorities
 
+- Continue the staged CRM upgrade from the applied relationship-system foundation: expand the read-only Relationship view into People, Organizations, Interactions, Next Actions, Review, Agent Inbox, and reporting surfaces before any write/backfill workflows.
 - Continue consolidating story-source execution and project management into the unified Planner workflow, with remaining work focused on Planner Programs/Operations UI smoke verification, Planner Sources polish, beat closeout ergonomics, recurring-task calendar integration, and smoke-testing the Planner replacement surfaces.
 - Use App Planner/Supabase as the live App work queue, and keep App docs/memory
   wired so App sessions read current projects/tasks and ask before marking
@@ -69,6 +71,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-12:** CRM relationship-system schema foundation was applied and verified. Growth approved the schema semantics; existing CRM rows were exported to `C:\tmp\miniBIOTA-crm-pre-013-2026-05-12\`; Josue ran `migrations/013_crm_relationship_system.sql` in Supabase SQL Editor; App read-only verification confirmed all 33 new CRM tables exist and are empty, while legacy counts remained `crm_contacts = 0`, `crm_activities = 0`, `partner_opportunities = 5`. App then added a read-only CRM Relationship view that uses the internal main-process secret-key bridge for RLS-protected table counts and review queues. No CRM records were created, edited, deleted, archived, migrated, backfilled, or used as test records.
 - **2026-05-12:** App added Planner parent/container deadline support using
   `tasks.due_date` without migrations or live Planner record writes. The task
   modal, save paths, task cards, Today, Timeline, Week, Month, task board,
@@ -428,6 +431,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Known Risks & Blockers
 
+- CRM relationship-system tables are live with RLS enabled and no policies. Runtime access must stay on the internal main-process secret-key bridge unless a separate RLS policy pass is approved; backfill from legacy CRM rows remains a separate reviewed migration/write task.
 - The app has Supabase secret-key access in main-process/local tooling; accidental public or renderer exposure would be a security risk.
 - Real admin image upload to Supabase Storage still needs careful live verification with approval if not already completed.
 - Packaged build behavior with Sharp/native dependencies should be verified before relying on distributable `.exe` builds.
@@ -461,9 +465,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   Planner-ready. Programs/Operations are cross-domain umbrellas above projects;
   they coordinate domain-owned projects without overriding domain
   source-of-truth, approval rules, or task/project ownership.
-- **Growth:** Growth owns CRM as a commercial relationship system; App owns the
-  CRM operator surface, Supabase-backed workflow implementation, validation,
-  and runtime behavior when CRM features are scoped.
+- **Growth:** Growth owns CRM as a commercial relationship system; App owns the`n  CRM operator surface, Supabase-backed workflow implementation, validation,`n  and runtime behavior when CRM features are scoped. Migration 013 is live as`n  the additive relationship-system foundation, but relationship records,`n  backfills, outreach, approvals, and commitments still require separately`n  scoped Growth/App approval.
 - **Financials:** Financials tab reads `revenue_streams`, `operating_expenses`, `liabilities`, and `planned_purchases`.
 - **Hardware:** Monitoring tab reads live biome MQTT data and may later integrate Supabase telemetry snapshot fallback and setpoint controls.
 - **Ecosystem/Data:** Species and chronicle admin changes in the app affect public ecology records. Field Observer sighting counts/details should remain history datapoints; curated species population fields remain manually maintained.
@@ -503,3 +505,5 @@ Brain no longer mirrors App docs. Load active App detail from the source repo:
 | `skills/image-pipeline-review/reference/image-pipeline.md` | WebP, Sharp, Supabase Storage, rollback, and packaging guidance |
 | `skills/app-doc-closeout/SKILL.md` | Playbook for deciding whether App memory/Brain updates are required at closeout |
 | `skills/update-app-memory/SKILL.md` | Playbook for promoting durable App decisions, hazards, and architecture rules into memory |
+
+

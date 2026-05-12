@@ -2,7 +2,7 @@
 id: web_overview
 title: 9. miniBIOTA_Web
 domain: web_and_digital_presence
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 tags: [web, public-site, flask, telemetry, public-only, design-system, planner]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -31,6 +31,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Key Facts
 - Telemetry architecture is local-first and must not imply direct pump switching or centralized actuator control.
 - Public pages should express the biosphere, biomes, species, engineering systems, and chronicles as the durable public record.
+- Chronicle short-form video playback uses `media_type='short'` plus `/shorts/` URLs for vertical Shorts rendering.
 - Operator/admin workflows belong in `miniBIOTA_App`, not the public site.
 - The "Biological Startup" voice should remain technically precise, accessible, ecological, and maker-clear.
 

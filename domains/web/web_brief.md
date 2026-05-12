@@ -2,7 +2,7 @@
 id: web_brief
 title: Web & Digital Presence Brief
 domain: web_and_digital_presence
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 tags: [website, digital-presence, information-architecture, ui, telemetry, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -33,6 +33,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Build Operation Living Web, the Ecosystem Relationship Graph architecture, as a public species-to-biome-to-biosphere relationship experience; Web architecture is now ready to pause, with broad food-web curation routed to the Research Agent via the Web repo handoff packet.
 
 ## Recent Milestones
+- 2026-05-12: Short-form chronicle playback was corrected across data and
+  rendering. All published short records and linked short chronicles now use
+  `/shorts/` URLs with `media_type='short'`, and the Web renderer now treats
+  structured short media as vertical playback even if a future import uses a
+  standard YouTube watch URL.
 - 2026-05-12: Company applied approved Web Planner cleanup from the
   cross-domain task relevance review: project `36` is now `Public Site Core &
   About/Proof Page`, project `38` is now `Community, Events & Revenue

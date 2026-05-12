@@ -1,4 +1,4 @@
----
+﻿---
 id: app_operations
 title: 11. miniBIOTA_App
 domain: app_operations
@@ -21,6 +21,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Remains an internal secret-key-capable tool, not a public product or public website surface.
 
 ## Current State
+- CRM relationship-system migration 013 is live after user-applied Supabase SQL on 2026-05-12. It added 33 additive tables beside the legacy CRM tables, with read-only verification showing all new tables empty and legacy counts unchanged. The CRM tab now includes a read-only Relationship view for schema/table counts and review queues through the internal main-process secret-key bridge.
 - `miniBIOTA_App` is the active desktop operator surface for miniBIOTA.
 - Active tabs are Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, and Monitoring.
 - Planner project-manager schema foundation is live after migration 007, and
@@ -44,6 +45,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
 
 ## Key Facts
+- CRM relationship-system tables from migration 013 are live, RLS-enabled, and policy-free; first runtime access must use the internal main-process secret-key bridge. No legacy CRM records have been backfilled into the new tables.
 - The app uses Supabase publishable keys in renderer/browser-facing config and secret keys only in Electron main-process services or local admin tooling. Internal renderer REST helpers route through an Electron IPC bridge when secret-key access is needed, without exposing the secret key to browser code.
 - Public website surfaces should remain read-only observability; operator/admin workflows belong in the desktop app.
 - App owns CRM as software/runtime/schema/UI implementation. Growth owns CRM
@@ -92,6 +94,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   combine with type, year, and unreviewed filters.
 
 ## Priorities
+- Continue the staged CRM relationship-system UI: expand the read-only Relationship summary into People, Organizations, Opportunities, Interactions, Next Actions, Review, Agent Inbox, and reporting surfaces before any write or backfill workflows.
 - Continue consolidating story-source execution and project-management behavior into the unified Planner workflow.
 - Verify the first Planner Programs/Operations records in the App UI, then
   continue Planner Sources polish, beat closeout ergonomics, and recurring-task
@@ -104,6 +107,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   context, operating rules, architecture notes, and playbooks.
 
 ## Risks / Gaps
+- CRM migration 013 created live RLS-protected tables with no policies. Any publishable-key policy design, legacy backfill, or CRM write workflow must be separately approved and tested.
 - Supabase secret-key access would be a major security risk if exposed outside the internal app.
 - Real admin image upload to Supabase Storage still needs careful live verification when that work resumes.
 - Packaged build behavior with Sharp/native dependencies should be verified before relying on distributable builds.
@@ -133,3 +137,4 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Last verified: 2026-05-09
 - Known divergences: no active App docs mirror remains in Brain.
 - Next sync check: use App repo memory/skills directly when App detail is needed.
+

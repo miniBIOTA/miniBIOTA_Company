@@ -2,7 +2,7 @@
 id: content_production
 title: 5. miniBIOTA_Content
 domain: content_production
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 tags: [content, storytelling, publishing, media-production, workflow, pipeline]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -88,8 +88,8 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
 - Sea urchin intro short was published May 4 as pipeline 351, Mottled Shore Crab short May 6 as pipeline 352, and producer-diversity/Caulerpa short May 7 as pipeline 353. Loop 9 is advanced, not resolved; shorts loop 17 tracks whether the variegated sea urchin survives and keeps eating Graceful redweed; shorts loop 18 tracks whether Green Feather Alga spreads too much and needs removal.
 - Story beats schema has been applied and initial sea urchin beats seeded; `intervention` is now an allowed `story_beats.beat_type`, and beat 17 uses it. App Planner now supports Story Beats as a source type for Planner production source maps.
 - Ghost shrimp larvae follow-up moved to May 12 so the May 5-9 calendar can stay focused on the seagrass longform buildup.
-- Longform seagrass succession continuation is targeted for 2026-05-09 and still needs title/footage/script decisions.
-- Historical `content_pipeline` backfill still needs `format`, `platform_urls`, `source_observation_id`, `notes`, and `parent_pipeline_id` populated where applicable.
+- Longform seagrass succession continuation is targeted for 2026-05-14 through the dedicated Planner project and still needs final title/footage/script decisions.
+- Historical `content_pipeline` backfill no longer includes the published chronicle link/editorial cleanup or short URL normalization pass; remaining follow-up is deeper source/routing review plus `source_observation_id`, `notes`, and `parent_pipeline_id` where applicable.
 - Build newsletter template and weekly dispatch workflow.
 - Define Patreon tier structure and Discord community rules.
 - Use App Planner/Supabase for live ordinary Content task status while keeping

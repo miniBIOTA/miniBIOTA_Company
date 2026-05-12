@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Master Context
 
-- Generated: 2026-05-11 17:58:10 -04:00
+- Generated: 2026-05-11 20:56:09 -04:00
 - Source contract: Company `domains/` reports are included below.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 - Format: portable Markdown with Obsidian wiki-links normalized or removed.
@@ -131,6 +131,24 @@
 
 ## Recent Milestones
 
+- **2026-05-12:** Company documented the standing domain project-manager
+  delegation model across Company and active domain repos. Domain agents may
+  manage ordinary own-domain Planner `work_projects` and `tasks` through an
+  approved shared Planner/Supabase write path once delegation is granted; agents
+  do not need separate Supabase keys. Approval gates remain for cross-domain
+  records, Programs/Operations governance, schema/migrations, App runtime, Web
+  public behavior, Hardware live controls, Financials records, Content publish
+  closeout, CRM/sponsor/partner commitments, and public/legal/financial/launch/
+  pricing/campaign/roadmap commitments.
+- **2026-05-12:** Company clarified Customer Relationship Management ownership:
+  Growth owns CRM relationship strategy, lifecycle meaning, follow-up rules, and
+  business commitments; App owns CRM software/runtime/schema/UI; Company owns
+  cross-domain boundary and escalation governance.
+- **2026-05-12:** Company replaced active Hardware project-management ownership
+  wording that still used the legacy Engineering / `Engineering & Hardware`
+  label. Current routing treats Hardware as the owner; any remaining Engineering
+  labels in live Planner records are legacy labels requiring a separate approved
+  Planner cleanup pass. No Planner/Supabase records were changed.
 - **2026-05-11:** Company created the live Planner Program `Aquatic Club Talk
   Readiness` (`work_programs.id = 3`) for Josue's 2026-06-13 12:00 PM
   Aquatic Club of Pasco County talk. The approved Planner setup added 9 linked
@@ -192,6 +210,12 @@
 - Company must keep the operating review rhythm alive so dependency maps,
   roadmap cadence, and Programs/Operations governance stay current without
   sliding back into the retired Brain planning model.
+- Live Planner records may still carry legacy Engineering /
+  `Engineering & Hardware` labels until an approved cleanup pass remaps them to
+  the current Hardware ownership language.
+- The standing domain project-manager delegation model is documented, but the
+  shared Planner/Supabase write path remains an App-owned implementation and
+  operating-surface dependency before agents can rely on it operationally.
 
 ## Cross-Domain Notes
 
@@ -218,6 +242,10 @@
 - **Growth:** Aquatic Club talk support owns sponsor hypothesis, audience
   follow-up sequencing, partner/sponsor brief drafts, and post-talk outreach
   preparation, with all sponsor commitments still approval-gated.
+- **Growth:** Growth owns Customer Relationship Management as a business
+  function: relationship lifecycle, contact meaning, follow-up strategy,
+  segmentation, and sponsor/partner/customer commitment discipline. App owns
+  any CRM software/runtime/schema/UI implementation.
 - **Financials:** Roadmap and business plan must reflect runway, debt pressure, revenue baseline, taxes, and spending decisions.
 - **Financials:** Aquatic Club talk support may provide cost awareness and
   sponsor ask guardrails; draft numbers are planning inputs, not commitments.

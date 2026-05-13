@@ -2,7 +2,7 @@
 id: operation_living_atlas_plan
 title: Operation Living Atlas Plan
 domain: company_operations
-last_updated: 2026-05-09
+last_updated: 2026-05-12
 tags: [operation-living-atlas, backfill, species, chronicles, observations, media, multi-agent]
 ---
 # Operation Living Atlas
@@ -239,9 +239,25 @@ Start with the Lake Post-Seal arc because it already proved the relationship mod
 
 This arc should become the model packet for future backfill work.
 
+## Kickoff Decision - 2026-05-12
+
+The first active kickoff confirmed the Lake Post-Seal arc as the model packet and confirmed the order of operations:
+
+1. Source packet first.
+2. Evidence extraction second.
+3. Publicness-tier routing third.
+4. Research validation and uncertainty labeling before public-facing claims.
+5. Proposed structured writes only after the packet is coherent.
+6. Explicit approval before any Supabase, Planner, App, Web, public-surface, or schema write.
+7. Readback and public rendering review after approved writes.
+
+For the pilot, do not create a dedicated Living Atlas queue table. Use Markdown source packets plus existing Planner tasks until the first packet proves whether a structured queue or App workflow is necessary.
+
+Revisit a dedicated queue table only if multiple packets run at once, handoffs become hard to trust, packet status needs filtering or assignment, proposed writes need a structured approval queue, or the manual workflow proves useful but too slow. If needed later, App owns schema/runtime implementation while Company defines governance semantics and Research/Content/Web define their domain-owned fields and review needs.
+
 ## Strategic Questions To Answer Early
 
-- Should Operation Living Atlas use a new Supabase queue table, or are Markdown packets plus existing tasks enough for now?
+- Should Operation Living Atlas use a new Supabase queue table, or are Markdown packets plus existing tasks enough for now? Kickoff answer for pilot: Markdown packets plus existing Planner tasks are enough for now; revisit after the first model packet.
 - Which species records are public-ready versus research-only?
 - What is the minimum image/caption quality for public species galleries?
 - How much historical uncertainty can appear publicly, and how should it be phrased?

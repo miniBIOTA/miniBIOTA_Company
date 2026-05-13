@@ -67,6 +67,18 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-12:** Company ran the Operation Living Atlas kickoff and confirmed
+  the workflow, agent lanes, first Lake Post-Seal model packet, and queue-table
+  posture. The first packet should proceed from source packet to evidence
+  extraction, publicness routing, Research validation, proposed writes,
+  approval-gated structured updates, readback, and public rendering review.
+  Lake Post-Seal / pipeline 338 / chronicle 30 remains the model packet, with
+  Flagfish, Ghost Shrimp, Daphnia, freshwater amphipods, copepods, Slough
+  Crayfish, and supporting media as the first bounded scope. A dedicated Living
+  Atlas queue table is deferred until the manual packet proves real workflow
+  friction. No Planner/Supabase records, App workflow, website behavior, public
+  claims, schema, public promises, sponsor commitments, financial commitments,
+  legal decisions, launch targets, or roadmap commitments changed.
 - **2026-05-12:** Company advanced Aquatic Club talk execution ahead of
   schedule. Tasks `282`, `309`, `290`, `310`, `283`, and `291` were completed
   with approved Planner updates; pulled-forward work was moved onto the

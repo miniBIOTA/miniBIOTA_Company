@@ -2,7 +2,7 @@
 id: web_brief
 title: Web & Digital Presence Brief
 domain: web_and_digital_presence
-last_updated: 2026-05-12
+last_updated: 2026-05-13
 tags: [website, digital-presence, information-architecture, ui, telemetry, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -20,7 +20,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## System State
 - The site is a public-only Flask website and Railway-hosted application. It owns public biosphere, biome, species, engineering, chronicle, news, events, FAQ, newsletter, poll, and read-only telemetry surfaces.
 - The legacy Flask admin surface has been removed from active web code. Forward operator/admin workflows belong in the Electron desktop app, not the public website.
-- Telemetry architecture is local-first. The public site now consumes the live read-only telemetry snapshot through `/api/telemetry/overview` and `/live-monitoring`; it must not imply direct pump switching or centralized actuator control.
+- Telemetry architecture is local-first. The public site now consumes the live read-only telemetry snapshot through `/api/telemetry/overview`, `/live-monitoring`, and biome detail weather panels; it must not imply direct pump switching or centralized actuator control.
 - Web Agent context now uses the repo-native memory/skills architecture in `M:\miniBIOTA\miniBIOTA_Web\`: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an active Web `docs/` mirror. `_system/sync_docs.ps1` removes stale `9. miniBIOTA_Web\docs` if it appears.
 - App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`. After the 2026-05-12 cross-domain cleanup, current active Web projects are IDs `36` through `41` plus `57` and Aquatic Club project `68`; legacy/internal project `42` is archived. Web has 8 non-archived work projects and 62 task rows (29 open, 33 done), and Web docs route actionable task status to Planner instead of Markdown task lists.
@@ -28,11 +28,27 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Active Priorities
 - Keep Web memory and the Company Web report aligned with the public-only, local-first telemetry and control architecture.
 - Continue the active UX Interaction Lab scope in App Planner project `40`; the first live `/biosphere#biosphere-ecosystem-map` application pass is stabilized, reusable state patterns are defined in `/ux-lab` and first applied to `/species`, the first shared EEL state-preset promotion pass is complete, `/chronicles` has its first archive state/accessibility pass, shared detail tab/accordion semantics are tightened across core detail pages, `/ux-lab` now includes first-pass journey maps and tighter keyboard/modal preview contracts, and local route/lint/full-test/HTTP smoke checks are green. Next Web UX work should focus on owner/design review, real browser/mobile visual QA when tooling is available, or a separately scoped live-surface application while keeping `/ux-lab` and `/ui-kitchen-sink` development-gated and out of production navigation.
-- Keep the now-connected desktop-app/coordinator-to-website telemetry handoff production-verified, public-safe, and read-only.
+- Keep the now-connected desktop-app/coordinator-to-website telemetry handoff production-verified, public-safe, and read-only, including the new biome weather presentation.
 - Work through the cleaned Web Planner roadmap: About/supporters and Patreon acknowledgment content, Substack signup/list migration and weekly newsletter assembly, events/news/chronicles product passes, engineering imagery, telemetry hardening, and species-card data polish.
+- Support website-related public expectation-setting with a soft
+  build-in-public posture. The website can be shown as an in-progress public
+  layer for species, interactions, ecosystem history, and telemetry, but should
+  not be framed as a finished launch or complete telemetry experience unless
+  Josue explicitly approves that scope.
 - Build Operation Living Web, the Ecosystem Relationship Graph architecture, as a public species-to-biome-to-biosphere relationship experience; Web architecture is now ready to pause, with broad food-web curation routed to the Research Agent via the Web repo handoff packet.
 
 ## Recent Milestones
+- 2026-05-13: Public biome detail pages now render live atmosphere and biome telemetry as paired weather context. Hardware/Wyse publishes the read-only node set to Supabase, and Web presents Atmosphere Weather before Biome Weather with Web-derived public status chips while preserving the no-actuator boundary.
+- 2026-05-13: Company/Web/Content public-framing guidance was aligned for the
+  website announcement idea. The preferred posture is a soft build-in-public
+  update rather than a high-profile launch event, because the site is still a
+  months-scale build and some telemetry may be incomplete while sensors need
+  replacement. Public copy may point toward the larger goal of making six years
+  of species, interactions, ecosystem history, and biome telemetry explorable,
+  but should clearly distinguish current site progress from unfinished future
+  depth. No website behavior, Planner/Supabase records, app behavior, publish
+  records, launch date, sponsor commitment, financial commitment, legal
+  decision, or roadmap commitment changed.
 - 2026-05-12: Short-form chronicle playback was corrected across data and
   rendering. All published short records and linked short chronicles now use
   `/shorts/` URLs with `media_type='short'`, and the Web renderer now treats
@@ -83,12 +99,21 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - The cleaned Web roadmap still needs source assets and cross-domain inputs for About/supporter recognition, Substack/list migration, weekly newsletter process design, events/news/chronicles content strategy, and engineering imagery.
 - `/events`, `/news`, and `/chronicles` remain active public routes but need later content/product development.
 - Engineering system pages still need real system images to replace placeholders.
+- Public expectation-setting is a near-term risk if website content sends
+  viewers to an unfinished page without context. Incomplete telemetry, sensor
+  replacement needs, species-card photo/data polish, and still-developing
+  interaction/history surfaces should be named as in-progress rather than
+  implied as launch-complete.
 
 ## Cross-Domain Notes
 - **Company/Web Strategy:** Company owns active Web strategy reporting and cross-domain coordination through this report, while detailed Web context lives in `M:\miniBIOTA\miniBIOTA_Web\AGENTS.md`, `memory/00-index.md`, relevant memory files, local playbooks, and exact playbook references. Brain is archive/provenance lookup only during retirement probation.
 - **App:** The Electron app owns private operator/admin workflows, telemetry producer handoff work, and the App Planner runtime used as Web's live work queue.
 - **Hardware:** Public telemetry depends on local-first coordinator, node freshness, upstream status, and setpoint read models. Check Hardware context before changing live telemetry assumptions.
 - **Content:** Chronicles and public story surfaces depend on Content records and publishing closeout decisions.
+- **Content:** Website-related audience updates should explain the slower
+  content cadence and invite viewers into the build without creating a launch
+  promise. The Content Agent owns the story and post sequence; Web owns the
+  public site implementation and current capability truth.
 - **Research:** Scientific and ecological claims must reflect structured ecological truth.
 - **Brand:** Public copy should keep the "Biological Startup" voice: technical precision, accessible ecology, and maker clarity.
 

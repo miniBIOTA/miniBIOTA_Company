@@ -2,7 +2,7 @@
 id: content_brief
 title: Content Production Brief
 domain: content_production
-last_updated: 2026-05-12
+last_updated: 2026-05-13
 tags: [content, production, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -44,6 +44,13 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Sea urchin intro short published May 4 as pipeline 351. Mottled Shore Crab self-correction short published May 6 as pipeline 352. Producer-diversity plant/Caulerpa short published May 7 as pipeline 353. The amphipod surge short is the active May 12 production item, and the seagrass succession longform is now planned through the dedicated 2026-05-14 Planner project.
 - Story beats schema applied and initial sea urchin beats seeded; `intervention` is now an allowed `story_beats.beat_type`, and beat 17 uses it. App Planner now supports Story Beats as a source type for production source maps.
 - Ghost shrimp larvae follow-up remains queued after the current seagrass/amphipod production window.
+- Website-related audience re-entry is now a near-term content strategy
+  candidate: acknowledge that posting has slowed, explain that Josue is
+  building the public website layer for miniBIOTA, and frame the site as an
+  in-progress build rather than a finished launch. The amphipod surge short has
+  only been scripted and remains flexible; it can be delayed, reframed as an
+  example of the interactions the website should eventually make trackable, or
+  dropped from the immediate lineup.
 - Longform target 2026-05-14 - seagrass succession sequel; Planner/calendar id 3 now matches project doc and is no longer framed as Grant Field Trip.
 - Historical `content_pipeline` backfill no longer includes the published chronicle link/editorial cleanup or short URL normalization pass; remaining follow-up is deeper source/routing review plus `source_observation_id`, `notes`, and `parent_pipeline_id` where applicable.
 - Use App Planner/Supabase as the live ordinary Content work queue while
@@ -52,6 +59,15 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   chronicles, publish closeout, and active project docs.
 
 ## Recent Milestones
+- **2026-05-13:** Company/Content strategy aligned around a possible website
+  update short and supporting posts. The preferred posture is a soft
+  build-in-public announcement, not a high-profile launch event: content can
+  explain that publishing has slowed because Josue is building the public
+  website layer for six years of miniBIOTA species, interactions, ecosystem
+  history, and telemetry, while clearly saying the site is unfinished and some
+  telemetry/features remain in progress. No `content_calendar`, Planner,
+  publish, database, website behavior, app behavior, launch-date, sponsor,
+  financial, legal, or roadmap commitment changed.
 - **2026-05-12:** Aquatic Club talk drafting produced a durable writing
   preference for Content handoff. Josue prefers scripts and public narrative
   drafts that start from concrete lived or observable moments, respect the
@@ -136,6 +152,9 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Seagrass meadow macroalgae problem unresolved - loop 9 is advanced by sea urchin introduction, loop 17 tracks whether the remaining urchin survives and keeps grazing Graceful redweed, and loop 18 tracks whether Green Feather Alga spreads too much and needs removal
 - Historical `content_pipeline` metadata backfill incomplete for older records
 - Shorts routine established but still building consistency - 6 shorts published this week
+- Website/update short strategy needs Content Agent lineup review before any
+  calendar or publishing changes: the announcement/update post may replace or
+  precede the amphipod short, but no live content records have been changed.
 - Newsletter workflow not yet built
 - Instagram 62k audience not being systematically converted to Patreon
 
@@ -146,6 +165,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   spoken drafts, use the pattern: concrete moment, tension or surprise, what
   Josue realized, why it matters, and what question it opens next. Keep the
   writing spoken, specific, and human while preserving claim-safety boundaries.
+- **Company/Web:** Website-related shorts and posts should set expectations:
+  the website is already showing the direction of the project, but it is still
+  under construction. Public copy should separate current visible progress from
+  future goals such as complete current-living species cards, deeper six-year
+  history, interaction tracking, and full biome telemetry coverage.
 - **Hardware:** Biomes 2-5 hardware rewire (XT30 + JST-XH) is planned but unscheduled. May require temporary tank downtime. Coordinate with Hardware Agent before scheduling filming sessions that depend on biomes 2-5.
 - **Ecology:** `story_threads` and `open_loops` are the production queue - always query these before selecting the next video topic. Loop 9 (sea urchin question) is advanced by the sea urchin introduction and later survival/feeding evidence; long-term macroalgae impact remains unresolved.
 - **App:** App Planner/Supabase is the shared project/task runtime for

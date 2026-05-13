@@ -53,6 +53,12 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   valuable middle ground. Any sponsor, financial, public, or offer language
   remains approval-gated.
 - Coordinate **Operation Living Atlas**, the cross-domain historical backfill and ecological knowledge-graph program. Source plan: `M:\miniBIOTA\miniBIOTA_Company\skills\coordinate-cross-domain-priorities\reference\operation-living-atlas-plan.md`. First model arc: Lake Post-Seal / Flagfish / Daphnia / Ghost Shrimp.
+- Coordinate website-related public communication as a soft build-in-public
+  update, not a high-profile launch event, until launch scope/readiness is
+  explicitly approved. Current public framing should acknowledge slower content
+  cadence, explain that the website is becoming the public layer for species,
+  interactions, ecosystem history, and telemetry, and state clearly that the
+  site remains in progress.
 - Build a business plan that aligns operations, funding, storytelling, and hardware development.
 - Expand the roadmap beyond Q2 2026 into decision-ready quarterly objectives
   after the talk window.
@@ -67,6 +73,17 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-13:** Company aligned the website/content announcement posture:
+  the next public communication should explain that content has slowed because
+  Josue is building the public website layer for miniBIOTA, while avoiding a
+  high-profile launch event or launch date until readiness is explicitly
+  approved. The longer-term public vision is to make six years of species,
+  system interactions, ecosystem history, and biome telemetry explorable, but
+  current messaging should separate visible in-progress website progress from
+  unfinished features, telemetry gaps, sensor replacement needs, and future
+  interactive depth. No Planner/Supabase records, website behavior, public
+  posts, launch targets, roadmap commitments, sponsor commitments, financial
+  commitments, or legal decisions changed.
 - **2026-05-13:** Company decided the first Operation Living Atlas model
   packet does not yet justify a dedicated Supabase queue table. The Lake
   Post-Seal packet reached `verified_with_caveats` after Content source,
@@ -272,6 +289,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Talk readiness is at risk if the rough script is delayed, rehearsal time is
   squeezed, the slide deck is not ready, or social profile/banner/photo updates
   are not coordinated into the public-readiness path.
+- Website-related audience re-entry has expectation-setting risk: the site is
+  promising enough to show, but a high-profile launch frame could overstate
+  polish or telemetry completeness while some features remain in progress and
+  some biome sensor data may depend on hardware replacement.
 - All required Phase 11 evidence items are now recorded, but Company must continue the planned 2 to 4 week probation window before final Brain retirement.
 - `YouTube_Extraction` is retired historical tooling, not a pending Content import migration; any future reactivation would be separate approval-gated Content work.
 - Company must keep the operating review rhythm alive so dependency maps,
@@ -305,6 +326,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   deck, proof-media selection, rehearsal ladder, and Q&A preparation.
 - **Content:** The rough talk script is needed as soon as possible so Josue can
   begin rehearsing early.
+- **Content:** Website-related shorts/posts should be treated as an audience
+  re-entry and build-in-public update: recognize the slower posting cadence,
+  explain the public website layer being built, and avoid implying a finished
+  launch, hard launch date, complete six-year archive, or complete telemetry
+  coverage unless explicitly approved.
 - **Content:** Scheduled production planning should use the App Planner model
   where `content_calendar` is the blue content identity/due/close record and
   the linked Content-domain work project, teal parent production task, and
@@ -329,6 +355,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - **Financials:** Aquatic Club talk support may provide cost awareness and
   sponsor ask guardrails; draft numbers are planning inputs, not commitments.
 - **Web:** Public site remains the public source of truth and should express company direction clearly.
+- **Web:** Website readiness and public expectation-setting are now a
+  cross-domain communication concern. The site may be shown as in-progress, but
+  public messaging should distinguish current visible features from future
+  species-card polish, broader interaction history, six-year archive depth, and
+  telemetry completeness.
 - **Web:** Aquatic Club talk support owns the public QR destination, about/proof
   updates, and contact/newsletter/sponsor-interest CTA path, subject to
   separate website implementation approval.

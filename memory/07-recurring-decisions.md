@@ -41,6 +41,7 @@ last_updated: 2026-05-13
 - Cross-interface and cross-agent handoffs must use durable files, briefs, or structured records as the handoff surface. Chat history alone is not enough.
 - Operation Living Atlas should continue with Markdown source packets, Research validation notes, Company coordination notes, and existing Planner tasks until approval/write/readback friction or multiple concurrent packets proves the need for an App-owned Supabase queue table or private review workflow.
 - Sparse roadmap placeholders are not commitments. Roadmap commitments require explicit approval.
+- Website-related public content should use soft build-in-public framing until Josue explicitly approves a launch event or launch date. If the website is unfinished, has incomplete telemetry, or depends on pending sensor replacement or data polish, public copy should say that plainly and separate what is visible now from the longer-term goal of making six years of species, interactions, ecosystem history, and biome telemetry explorable.
 
 ## Recurring Constraints
 - Do not create business commitments, public promises, financial commitments, launch targets, legal decisions, sponsor obligations, or roadmap commitments without explicit user direction.

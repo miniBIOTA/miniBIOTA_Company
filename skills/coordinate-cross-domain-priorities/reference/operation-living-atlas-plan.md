@@ -2,7 +2,7 @@
 id: operation_living_atlas_plan
 title: Operation Living Atlas Plan
 domain: company_operations
-last_updated: 2026-05-12
+last_updated: 2026-05-13
 tags: [operation-living-atlas, backfill, species, chronicles, observations, media, multi-agent]
 ---
 # Operation Living Atlas
@@ -255,9 +255,19 @@ For the pilot, do not create a dedicated Living Atlas queue table. Use Markdown 
 
 Revisit a dedicated queue table only if multiple packets run at once, handoffs become hard to trust, packet status needs filtering or assignment, proposed writes need a structured approval queue, or the manual workflow proves useful but too slow. If needed later, App owns schema/runtime implementation while Company defines governance semantics and Research/Content/Web define their domain-owned fields and review needs.
 
+## Queue Table Decision - 2026-05-13
+
+After the first Lake Post-Seal model packet reached `verified_with_caveats`, Company decided not to create a dedicated Operation Living Atlas Supabase queue table yet.
+
+Markdown source packets plus Research validation notes and existing Planner tasks were sufficient for one packet to move through source review, evidence extraction, publicness routing, Research validation, proposed-write preparation, media evidence review, link/evidence verification, and packet closeout without losing the core handoff state.
+
+The first packet did expose friction: handoffs were chat-heavy, proposed write bundles have not yet gone through an approval/write/readback cycle, observations `170-178` are not directly linked by `observations.pipeline_id = 338` or `observations.chronicle_id = 30`, follow-up cleanup may be needed for observations `193`, `194`, and `206`, some still candidates are filesystem evidence but not indexed `media_assets`, and Daphnia/Ghost Shrimp/Mesostoma media remain gated.
+
+Those are approval, cleanup, and media-indexing issues, not enough evidence yet for App-owned schema work. Revisit the queue-table question after the first approval-bundle/write-review cycle or when multiple packets are active at once.
+
 ## Strategic Questions To Answer Early
 
-- Should Operation Living Atlas use a new Supabase queue table, or are Markdown packets plus existing tasks enough for now? Kickoff answer for pilot: Markdown packets plus existing Planner tasks are enough for now; revisit after the first model packet.
+- Should Operation Living Atlas use a new Supabase queue table, or are Markdown packets plus existing tasks enough for now? Current answer after the first model packet: no dedicated queue table yet; continue Markdown packets plus Planner and revisit after approval/write-cycle friction or multiple concurrent packets.
 - Which species records are public-ready versus research-only?
 - What is the minimum image/caption quality for public species galleries?
 - How much historical uncertainty can appear publicly, and how should it be phrased?

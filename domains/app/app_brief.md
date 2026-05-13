@@ -2,7 +2,7 @@
 id: app_brief
 title: App Operations Brief
 domain: app_operations
-last_updated: 2026-05-12
+last_updated: 2026-05-13
 tags: [app, electron, operations, planner, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -70,6 +70,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Continue using the app for financials, Planner/content production, CRM, media tagging, and monitoring workflows.
 
 ## Recent Milestones
+
+- **2026-05-13:** Planner task hierarchy inspection was tightened after daily use showed completed subtasks could be visible but hard to open from Today and parent tasks. Today subtask rows now open the child task directly while drawer summaries still avoid accidental parent-card opens. The task modal now shows linked parent/child task rows with direct open actions, and its form layout constrains long project/parent labels to avoid horizontal modal scroll. This was a local renderer/CSS update only; no database records, schema, migrations, Storage, telemetry, MQTT, CRM, Financials, Site Admin, Monitoring, or live app actions changed, and Electron visual smoke verification was not run.
 
 - **2026-05-12:** CRM relationship-system schema foundation was applied and verified. Growth approved the schema semantics; existing CRM rows were exported to `C:\tmp\miniBIOTA-crm-pre-013-2026-05-12\`; Josue ran `migrations/013_crm_relationship_system.sql` in Supabase SQL Editor; App read-only verification confirmed all 33 new CRM tables exist and are empty, while legacy counts remained `crm_contacts = 0`, `crm_activities = 0`, `partner_opportunities = 5`. App then added a read-only CRM Relationship view that uses the internal main-process secret-key bridge for RLS-protected table counts and review queues. No CRM records were created, edited, deleted, archived, migrated, backfilled, or used as test records.
 - **2026-05-12:** App added Planner parent/container deadline support using
@@ -438,9 +440,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Monitoring setpoint/control writes affect the live biosphere and require explicit confirmation before changes.
 - App source repo memory and skills must stay current as app architecture, schema assumptions, safety rules, and workflow playbooks change.
 - Field Observer authenticated catalog reads are enabled through migration 009. Signed release APK generation and any live sighting saves remain unverified and require explicit approval before use against production data.
-- New Planner task hierarchy paths have now been visually smoke tested for the
-  Aquatic Club Week-view case, but broader daily-use coverage across Today,
-  Month, Timeline, and content production remains worth watching.
+- Planner task hierarchy paths have now been visually smoke tested for the
+  Aquatic Club Week-view case, and Today/task-modal hierarchy inspection was
+  tightened on 2026-05-13, but broader daily-use coverage across Month,
+  Timeline, content production, and live creation/edit flows remains worth
+  watching.
 - Planner Programs/Operations schema and live Program records exist after
   migration 010, but Program UI create/edit/link behavior still needs
   interactive smoke verification before daily reliance.
@@ -505,5 +509,7 @@ Brain no longer mirrors App docs. Load active App detail from the source repo:
 | `skills/image-pipeline-review/reference/image-pipeline.md` | WebP, Sharp, Supabase Storage, rollback, and packaging guidance |
 | `skills/app-doc-closeout/SKILL.md` | Playbook for deciding whether App memory/Brain updates are required at closeout |
 | `skills/update-app-memory/SKILL.md` | Playbook for promoting durable App decisions, hazards, and architecture rules into memory |
+
+
 
 

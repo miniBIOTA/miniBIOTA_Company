@@ -120,4 +120,4 @@ Create the first Operation Living Atlas Source Packet for pipeline 338 / chronic
 
 Company should review the resulting packet before Research validation and before any structured write proposal.
 
-Company task `208` should remain open. It should be decided only after the model packet workflow has been worked enough to answer whether Markdown plus Planner is sufficient or whether a dedicated Supabase queue table is needed.
+Company task `208` reached its decision point after Content task `214` closed the packet as verified with caveats and Research task `222` verified the link/evidence map. The Company decision on 2026-05-13 is: do not create a dedicated Living Atlas Supabase queue table yet. Continue with Markdown packets plus existing Planner tasks, and revisit after approval/write-cycle friction is proven or multiple packets are active at once.

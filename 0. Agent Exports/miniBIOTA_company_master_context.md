@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Master Context
 
-- Generated: 2026-05-12 20:24:07 -04:00
+- Generated: 2026-05-13 06:57:26 -04:00
 - Source contract: Company `domains/` reports are included below.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 - Format: portable Markdown with Obsidian wiki-links normalized or removed.
@@ -160,6 +160,18 @@
 
 ## Recent Milestones
 
+- **2026-05-13:** Company decided the first Operation Living Atlas model
+  packet does not yet justify a dedicated Supabase queue table. The Lake
+  Post-Seal packet reached `verified_with_caveats` after Content source,
+  evidence, routing, proposed-write, media, and closeout work plus Research
+  uncertainty and link/evidence verification. Markdown packets, Research notes,
+  Company coordination notes, and existing Planner tasks are sufficient for
+  the next bounded packet or approval-bundle pass. Revisit App-owned queue or
+  workflow work only after approval/write-cycle friction is proven or multiple
+  packets are active at once. No App schema, Supabase ecological records,
+  media records, public website behavior, public claims, sponsor commitments,
+  financial commitments, legal decisions, launch targets, or roadmap
+  commitments changed.
 - **2026-05-12:** Company ran the Operation Living Atlas kickoff and confirmed
   the workflow, agent lanes, first Lake Post-Seal model packet, and queue-table
   posture. The first packet should proceed from source packet to evidence
@@ -2141,8 +2153,9 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   assignment, workflow status, blocked reason, completion timestamp, and
   multi-day task spans.
 - Planner task UI supports parent-child task hierarchy through
-  `tasks.parent_task_id`, with nested subtasks visible in Planner Tasks and work
-  project detail panels.
+  `tasks.parent_task_id`, with nested subtasks visible in Planner Tasks, work
+  project detail panels, Planner Today child-task drawers, and task modal
+  parent/child relationship panels.
 - Planner task UI now separates parent/container deadlines from scheduled work:
   `tasks.due_date` is the deadline/target field, while `scheduled_date`,
   `scheduled_time`, and `span_end_date` represent work occurrences.
@@ -2188,9 +2201,10 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Monitoring setpoint/control writes affect the live biosphere and require explicit confirmation before changes.
 - Supabase migrations and schema assumptions must be checked before app write paths are changed.
 - Planner task hierarchy has been visually smoke tested for the Aquatic Club
-  Week-view case, and parent/container due-date support has been added, but
-  broader daily-use coverage across Planner task creation, Today, Timeline,
-  Month, and content production remains worth watching.
+  Week-view case; parent/container due-date support and Today/task-modal
+  hierarchy inspection are in place. Broader daily-use coverage across Planner
+  task creation, Timeline, Month, and content production remains worth
+  watching.
 - Planner Programs/Operations schema and live Program records are live, but
   Program UI create/edit/link behavior still needs interactive smoke
   verification before daily reliance.
@@ -2271,6 +2285,8 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Continue using the app for financials, Planner/content production, CRM, media tagging, and monitoring workflows.
 
 ## Recent Milestones
+
+- **2026-05-13:** Planner task hierarchy inspection was tightened after daily use showed completed subtasks could be visible but hard to open from Today and parent tasks. Today subtask rows now open the child task directly while drawer summaries still avoid accidental parent-card opens. The task modal now shows linked parent/child task rows with direct open actions, and its form layout constrains long project/parent labels to avoid horizontal modal scroll. This was a local renderer/CSS update only; no database records, schema, migrations, Storage, telemetry, MQTT, CRM, Financials, Site Admin, Monitoring, or live app actions changed, and Electron visual smoke verification was not run.
 
 - **2026-05-12:** CRM relationship-system schema foundation was applied and verified. Growth approved the schema semantics; existing CRM rows were exported to `C:\tmp\miniBIOTA-crm-pre-013-2026-05-12\`; Josue ran `migrations/013_crm_relationship_system.sql` in Supabase SQL Editor; App read-only verification confirmed all 33 new CRM tables exist and are empty, while legacy counts remained `crm_contacts = 0`, `crm_activities = 0`, `partner_opportunities = 5`. App then added a read-only CRM Relationship view that uses the internal main-process secret-key bridge for RLS-protected table counts and review queues. No CRM records were created, edited, deleted, archived, migrated, backfilled, or used as test records.
 - **2026-05-12:** App added Planner parent/container deadline support using
@@ -2639,9 +2655,11 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Monitoring setpoint/control writes affect the live biosphere and require explicit confirmation before changes.
 - App source repo memory and skills must stay current as app architecture, schema assumptions, safety rules, and workflow playbooks change.
 - Field Observer authenticated catalog reads are enabled through migration 009. Signed release APK generation and any live sighting saves remain unverified and require explicit approval before use against production data.
-- New Planner task hierarchy paths have now been visually smoke tested for the
-  Aquatic Club Week-view case, but broader daily-use coverage across Today,
-  Month, Timeline, and content production remains worth watching.
+- Planner task hierarchy paths have now been visually smoke tested for the
+  Aquatic Club Week-view case, and Today/task-modal hierarchy inspection was
+  tightened on 2026-05-13, but broader daily-use coverage across Month,
+  Timeline, content production, and live creation/edit flows remains worth
+  watching.
 - Planner Programs/Operations schema and live Program records exist after
   migration 010, but Program UI create/edit/link behavior still needs
   interactive smoke verification before daily reliance.

@@ -2,7 +2,7 @@
 id: company_brief
 title: Company Operations Brief
 domain: company_operations
-last_updated: 2026-05-12
+last_updated: 2026-05-13
 tags: [company, operations, strategy, roadmap, strategy-brief]
 reporting_status: active
 reporting_phase: brain_retirement_phase_11_probation
@@ -67,6 +67,18 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-13:** Company decided the first Operation Living Atlas model
+  packet does not yet justify a dedicated Supabase queue table. The Lake
+  Post-Seal packet reached `verified_with_caveats` after Content source,
+  evidence, routing, proposed-write, media, and closeout work plus Research
+  uncertainty and link/evidence verification. Markdown packets, Research notes,
+  Company coordination notes, and existing Planner tasks are sufficient for
+  the next bounded packet or approval-bundle pass. Revisit App-owned queue or
+  workflow work only after approval/write-cycle friction is proven or multiple
+  packets are active at once. No App schema, Supabase ecological records,
+  media records, public website behavior, public claims, sponsor commitments,
+  financial commitments, legal decisions, launch targets, or roadmap
+  commitments changed.
 - **2026-05-12:** Company ran the Operation Living Atlas kickoff and confirmed
   the workflow, agent lanes, first Lake Post-Seal model packet, and queue-table
   posture. The first packet should proceed from source packet to evidence

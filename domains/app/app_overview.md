@@ -2,7 +2,7 @@
 id: app_operations
 title: 11. miniBIOTA_App
 domain: app_operations
-last_updated: 2026-05-12
+last_updated: 2026-05-13
 tags: [app, electron, operations, planner, monitoring, internal-tools]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -67,8 +67,9 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   assignment, workflow status, blocked reason, completion timestamp, and
   multi-day task spans.
 - Planner task UI supports parent-child task hierarchy through
-  `tasks.parent_task_id`, with nested subtasks visible in Planner Tasks and work
-  project detail panels.
+  `tasks.parent_task_id`, with nested subtasks visible in Planner Tasks, work
+  project detail panels, Planner Today child-task drawers, and task modal
+  parent/child relationship panels.
 - Planner task UI now separates parent/container deadlines from scheduled work:
   `tasks.due_date` is the deadline/target field, while `scheduled_date`,
   `scheduled_time`, and `span_end_date` represent work occurrences.
@@ -114,9 +115,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Monitoring setpoint/control writes affect the live biosphere and require explicit confirmation before changes.
 - Supabase migrations and schema assumptions must be checked before app write paths are changed.
 - Planner task hierarchy has been visually smoke tested for the Aquatic Club
-  Week-view case, and parent/container due-date support has been added, but
-  broader daily-use coverage across Planner task creation, Today, Timeline,
-  Month, and content production remains worth watching.
+  Week-view case; parent/container due-date support and Today/task-modal
+  hierarchy inspection are in place. Broader daily-use coverage across Planner
+  task creation, Timeline, Month, and content production remains worth
+  watching.
 - Planner Programs/Operations schema and live Program records are live, but
   Program UI create/edit/link behavior still needs interactive smoke
   verification before daily reliance.
@@ -137,4 +139,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Last verified: 2026-05-09
 - Known divergences: no active App docs mirror remains in Brain.
 - Next sync check: use App repo memory/skills directly when App detail is needed.
+
+
+
 

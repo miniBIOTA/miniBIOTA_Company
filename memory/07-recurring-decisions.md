@@ -1,6 +1,6 @@
 ﻿---
 title: Recurring Decisions
-last_updated: 2026-05-12
+last_updated: 2026-05-13
 ---
 # Recurring Decisions
 
@@ -39,6 +39,7 @@ last_updated: 2026-05-12
 - Roadmap cadence and operating review rhythm are Company-owned coordination functions; they do not create roadmap commitments, launch targets, or public promises without explicit approval.
 - Dependency maps are Company operating memory and should identify affected domains, downstream owners, blockers, handoff surfaces, and review timing.
 - Cross-interface and cross-agent handoffs must use durable files, briefs, or structured records as the handoff surface. Chat history alone is not enough.
+- Operation Living Atlas should continue with Markdown source packets, Research validation notes, Company coordination notes, and existing Planner tasks until approval/write/readback friction or multiple concurrent packets proves the need for an App-owned Supabase queue table or private review workflow.
 - Sparse roadmap placeholders are not commitments. Roadmap commitments require explicit approval.
 
 ## Recurring Constraints

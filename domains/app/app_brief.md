@@ -26,7 +26,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   relationship meaning, lifecycle strategy, follow-up rules, opportunity
   context, and commercial commitment discipline.
 - CRM relationship-system migration 013 is live after user-applied Supabase SQL on 2026-05-12. It added 33 additive tables beside `crm_contacts`, `crm_activities`, and `partner_opportunities`; App read-only verification confirmed all 33 new tables exist, all are empty, and legacy counts remain `crm_contacts = 0`, `crm_activities = 0`, `partner_opportunities = 5`. The first read-only CRM Relationship view now summarizes those table counts and review queues through the internal main-process secret-key bridge.
-- Monitoring tab is live for direct MQTT telemetry from the local biome network when on `mB2.4`.
+- Monitoring tab is live for direct MQTT telemetry from the local biome network when on `mB2.4`; it now displays internal-only heat-exchanger/liquid temperature (`liq_t`) and pump run percentage (`pump_pct`) for sensor biomes 2-5 without adding those fields to Web/public telemetry.
 - Site Admin includes species, biosphere, biome, chronicle, announcement, and staging workflows.
 - Media Library/tagging and backend WebP image upload pipeline are implemented in the app.
 - A private Android Field Observer companion scaffold now exists under `mobile/field-observer/` for photo-first biome sighting sessions. Migration 008 has been applied successfully in Supabase and adds `species_sighting_sessions`, `species_sightings`, and `save_species_sighting_session(...)`. Migration 009 has also been applied successfully and grants the signed-in mobile operator read access to `biomes`, `species`, and `species_images`. Capacitor dependencies are installed, the Android project has been generated, the local Android build toolchain is installed, debug APK builds pass, and the mobile shell uses Supabase Auth plus publishable-key access rather than secret keys. The field UI now uses in-system, not-in-system, and not-listed language while preserving the RPC's stable `seen`, `not_seen`, and `unknown_organism` values. The mobile web code is split into ordered plain-script modules for shared state/helpers, API/Auth/data, filters, rendering, session saves, and bootstrap; mobile styles are split by ownership into ordered CSS imports. Local check and preview scripts validate/load the mobile web shell before APK reinstall.
@@ -70,6 +70,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Continue using the app for financials, Planner/content production, CRM, media tagging, and monitoring workflows.
 
 ## Recent Milestones
+
+- **2026-05-13:** Monitoring now surfaces Hardware's internal live MQTT fields for sensor biomes 2-5: heat-exchanger/liquid temperature from `liq_t` and pump run percentage from `pump_pct`. This was an App/operator-only renderer label/display closeout over the existing MQTT payload; no Supabase records, schema, migrations, Storage, MQTT subscriptions, telemetry controls, setpoints, public Web telemetry, or live app actions changed.
 
 - **2026-05-13:** Planner task hierarchy inspection was tightened after daily use showed completed subtasks could be visible but hard to open from Today and parent tasks. Today subtask rows now open the child task directly while drawer summaries still avoid accidental parent-card opens. The task modal now shows linked parent/child task rows with direct open actions, and its form layout constrains long project/parent labels to avoid horizontal modal scroll. This was a local renderer/CSS update only; no database records, schema, migrations, Storage, telemetry, MQTT, CRM, Financials, Site Admin, Monitoring, or live app actions changed, and Electron visual smoke verification was not run.
 
@@ -471,7 +473,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   source-of-truth, approval rules, or task/project ownership.
 - **Growth:** Growth owns CRM as a commercial relationship system; App owns the`n  CRM operator surface, Supabase-backed workflow implementation, validation,`n  and runtime behavior when CRM features are scoped. Migration 013 is live as`n  the additive relationship-system foundation, but relationship records,`n  backfills, outreach, approvals, and commitments still require separately`n  scoped Growth/App approval.
 - **Financials:** Financials tab reads `revenue_streams`, `operating_expenses`, `liabilities`, and `planned_purchases`.
-- **Hardware:** Monitoring tab reads live biome MQTT data and may later integrate Supabase telemetry snapshot fallback and setpoint controls.
+- **Hardware:** Monitoring tab reads live biome MQTT data. Internal App/operator display includes `liq_t` heat-exchanger/liquid temperature and `pump_pct` pump run percentage for sensor biomes 2-5; those fields should remain out of Web/public telemetry unless separately scoped. Monitoring may later integrate Supabase telemetry snapshot fallback and setpoint controls.
 - **Ecosystem/Data:** Species and chronicle admin changes in the app affect public ecology records. Field Observer sighting counts/details should remain history datapoints; curated species population fields remain manually maintained.
 
 ## Domain Reference

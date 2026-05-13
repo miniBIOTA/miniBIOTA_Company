@@ -2,7 +2,7 @@
 id: hardware_brief
 title: Hardware Brief
 domain: engineering_and_hardware
-last_updated: 2026-05-12
+last_updated: 2026-05-13
 tags: [engineering, hardware, controls, sensors, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -21,18 +21,20 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - The biosphere is a fully closed working concept, but airtight closure is not yet achieved. Minor passive air leakage and several biome rebuild and sealing tasks remain open.
 - All 6 biome ESP32 nodes have live firmware (USB flashed 2026-04-25; OTA operational going forward).
 - Biomes 2-5: Sensor/controller hardware is documented in each biome folder. Biome 2 and 3 atmosphere SHT31 modules are unreliable, Biome 4 biome SHT31 appears water damaged and its biome screen is off, and Biome 5 is mostly working with a humidity display artifact. Biome 1: no sensors (expected offline). Biome 6: wave-motor-only.
-- App Monitoring tab (Phase 4) is live as of 2026-04-25: real-time telemetry for all 6 biomes via direct MQTT to Electron.
-- First read-only Wyse-side telemetry coordinator is deployed on the Dell Wyse and running as `minibiota-telemetry.service`; it subscribes to local MQTT for sensor biomes 2-5 and upserts the website-compatible Supabase `telemetry_snapshot` singleton row `id=1` about every 15 seconds. It does not write history rows or control commands.
+- App Monitoring tab (Phase 4) is live as of 2026-04-25: real-time telemetry for all 6 biomes via direct MQTT to Electron. As of 2026-05-13, the App already consumes `liq_t` and `pump_pct` from live MQTT and labels them as internal hardware telemetry.
+- First read-only Wyse-side telemetry coordinator is deployed on the Dell Wyse and running as `minibiota-telemetry.service`; it subscribes to local MQTT for sensor biomes 2-5, upserts the website-compatible Supabase `telemetry_snapshot` singleton row `id=1` about every 15 seconds, and writes internal `biome_telemetry` history rows about every minute for climate/control analysis. It does not publish control commands.
 - Hardware rewire planned for biomes 2-5 to resolve SHT31 wiring, water-damage, and connection-quality faults. Connector standard remains open; XT30 power and JST-XH 2.54mm signal connectors are candidates, not settled requirements.
 - Hardware repo now uses the federated memory/skills architecture plus a `0. Hardware Systems/` documentation layer: `AGENTS.md`, biome folders, `0. Hardware Systems/`, `memory/`, `skills/`, `skills/*/reference/`, `services/`, `deploy/`, and `_system/` helpers. The old `docs/` mirror pattern is retired. Hardware project management routes to the Hardware domain/owner in App Planner/Supabase. After the 2026-05-12 cross-domain cleanup, Hardware has 10 active work projects and 82 task rows (77 open, 5 done); the legacy Engineering domain has 0 projects and 0 tasks.
 
 ## Active Priorities
 - Complete sealing and infrastructure upgrades to reach airtight closed-system standard.
 - Execute biomes 2-5 hardware rewire to resolve wiring faults, replace damaged SHT31 modules where needed, and stabilize sensor readings.
-- Maintain the live website telemetry path now reading the Wyse-produced Supabase `telemetry_snapshot` row. History logging and command queues remain deferred. See `miniBIOTA_Hardware/skills/telemetry-coordinator/reference/telemetry-pipeline-plan.md`.
+- Maintain the live website telemetry path now reading the Wyse-produced Supabase `telemetry_snapshot` row, and monitor the new internal `biome_telemetry` history path for climate/control analysis. Command queues remain deferred. See `miniBIOTA_Hardware/skills/telemetry-coordinator/reference/telemetry-pipeline-plan.md`.
 - Keep Hardware durable detail in repo-local biome folders, `0. Hardware Systems/`, memory, playbooks, and skill references. Use App Planner/Supabase for Hardware work tracking and task completion status. Company carries active strategy-level Hardware reporting and cross-domain coordination; Brain is historical/archive lookup only.
 
 ## Recent Milestones
+- 2026-05-13: Expanded the read-only Wyse telemetry coordinator and Supabase telemetry schema. Public `telemetry_snapshot` now includes the website-expected atmosphere sensor nodes for biomes 2-5 while keeping pump, liquid/heat-exchanger, relay, command, and actuator fields out of the public payload. Internal `biome_telemetry` history is live for biomes 2-5 at about one-minute cadence with biome air, atmosphere air, liquid/heat-exchanger temperature, pump percentage, and target temperature fields for climate/control analysis. No firmware, MQTT publishing, setpoint command queue, pump/relay/actuator control, or public Web display contract for pump/liquid data was added.
+- 2026-05-13: App Monitoring confirmed the operator surface already consumes live MQTT `liq_t` and `pump_pct`; App labels were updated to present those cards as internal hardware telemetry. Hardware did not need another data-path, schema, MQTT, or public Web contract change.
 - 2026-05-12: Company applied approved Hardware Planner cleanup from the
   cross-domain task relevance review. Legacy Engineering-owned Hardware
   projects `1` through `8` and their tasks now live under Hardware
@@ -56,7 +58,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Known Risks & Blockers
 - Biomes 2-5 have SHT31 wiring, water-damage, and connection-quality risks; rewire resolves this but is not yet scheduled.
 - Biome 1 has no sensors and will remain offline until hardware is installed.
-- Website telemetry is receiving the live `telemetry_snapshot` row; continue monitoring stale/offline handling and public-safe payload semantics. Historical telemetry and command queues remain deferred.
+- Website telemetry is receiving the live `telemetry_snapshot` row; continue monitoring stale/offline handling and public-safe payload semantics. Internal `biome_telemetry` history is live for analysis; command queues remain deferred.
 - Airtight closure not yet achieved; passive air leakage still present across multiple biomes.
 - Brain and downstream agents must stop looking for Hardware detail in `6. miniBIOTA_Hardware/docs/`; that mirror is intentionally removed.
 
@@ -64,7 +66,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - During the biomes 2-5 sensor/controller rewire, tanks may need to go offline temporarily; flag to Content Production before scheduling.
 - Hardware Agent should consult App Planner tasks/projects when choosing next work and should offer to mark Planner tasks done when completed work maps clearly to an open task.
 - Biome status (healthy/stale/offline) is now visible in real-time via the Electron app; relevant for ecology tracking sessions.
-- The public website now consumes the coordinator's read-only Supabase `telemetry_snapshot` row `id=1`; Hardware keeps the payload public-safe, including `target_temperature_c: null` for unset targets.
+- The public website now consumes the coordinator's read-only Supabase `telemetry_snapshot` row `id=1`; Hardware keeps the payload public-safe, including `target_temperature_c: null` for unset targets. App Monitoring may show pump percentage and liquid/heat-exchanger temperature from live MQTT as internal operator telemetry, and those fields are stored in internal `biome_telemetry`; they are not exposed publicly without a separate Web contract decision.
 - Standardized system names below are canonical for all content, brand, and partner communications.
 
 ## Standardized System Names

@@ -37,7 +37,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - App project management is now organized in App Planner/Supabase under the
   App domain: 7 App work projects track 16 linked App tasks, with 0 unlinked
   open App tasks after readback on 2026-05-09.
-- Monitoring reads direct MQTT telemetry from the local biome network when connected to `mB2.4`.
+- Monitoring reads direct MQTT telemetry from the local biome network when connected to `mB2.4`, including internal-only heat-exchanger/liquid temperature (`liq_t`) and pump run percentage (`pump_pct`) display for sensor biomes 2-5.
 - Site Admin supports species, biosphere, biome, chronicle, announcement, staging, and media-library workflows.
 - Media Library/tagging, Species-style media search/filtering, and backend WebP image upload pipeline are implemented in the app.
 - Prompt Library has replaced the old static Team reference surface. Migration 012 was applied successfully by the user on 2026-05-11, making `prompt_library` live for reusable prompt records and future workflow-template use.
@@ -53,6 +53,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   context, and commercial commitment discipline.
 - Planner is the main production workflow surface for story sources, project planning, scheduled content, and ordinary tasks.
 - Prompt Library stores reusable prompts in `prompt_library`; prompt create, edit, favorite, archive, and restore actions are live Supabase writes.
+- Monitoring internal hardware fields `liq_t` and `pump_pct` are App/operator-only displays over the existing MQTT payload and should not be added to Web/public telemetry without separate scope and approval.
 - Planner is the intended unified project-management surface. The live schema
   now includes `work_domains`, `work_projects`, task project-management fields,
   an optional `content_calendar.work_project_id` bridge, and the

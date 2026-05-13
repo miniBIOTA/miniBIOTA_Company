@@ -25,7 +25,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - App owns CRM as software/runtime/schema/UI implementation. Growth owns CRM
   relationship meaning, lifecycle strategy, follow-up rules, opportunity
   context, and commercial commitment discipline.
-- CRM relationship-system migration 013 is live after user-applied Supabase SQL on 2026-05-12. It added 33 additive tables beside `crm_contacts`, `crm_activities`, and `partner_opportunities`; App read-only verification confirmed all 33 new tables exist, all are empty, and legacy counts remain `crm_contacts = 0`, `crm_activities = 0`, `partner_opportunities = 5`. The first read-only CRM Relationship view now summarizes those table counts and review queues through the internal main-process secret-key bridge.
+- CRM relationship-system migration 013 is live after user-applied Supabase SQL on 2026-05-12. It added 33 additive tables beside `crm_contacts`, `crm_activities`, and `partner_opportunities`; App read-only verification confirmed all 33 new tables exist, all are empty, and legacy counts remain `crm_contacts = 0`, `crm_activities = 0`, `partner_opportunities = 5`. The first read-only CRM Relationship view now summarizes those table counts and review queues through the internal main-process secret-key bridge. Migration 014 is also live as of 2026-05-13, adding flexible labeled contact links to legacy CRM contacts through `crm_contact_links`.
 - Monitoring tab is live for direct MQTT telemetry from the local biome network when on `mB2.4`; it now displays internal-only heat-exchanger/liquid temperature (`liq_t`) and pump run percentage (`pump_pct`) for sensor biomes 2-5 without adding those fields to Web/public telemetry.
 - Site Admin includes species, biosphere, biome, chronicle, announcement, and staging workflows.
 - Media Library/tagging and backend WebP image upload pipeline are implemented in the app.
@@ -70,6 +70,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Continue using the app for financials, Planner/content production, CRM, media tagging, and monitoring workflows.
 
 ## Recent Milestones
+
+- **2026-05-13:** CRM Contacts gained flexible labeled links through migration `014_crm_contact_links.sql` and App UI support in the contact modal/detail view. Contacts can now store only the links they actually have, such as Website, YouTube, Facebook, or other freeform labels, instead of requiring a fixed social-platform column list. Grant Eder's YouTube link was moved from notes into `crm_contact_links` after the user applied the migration. This changed App CRM schema/runtime behavior and one approved CRM contact record; no outreach execution, partner/sponsor commitments, Planner records, public site behavior, Storage, telemetry, or pricing/public claims changed.
 
 - **2026-05-13:** Monitoring now surfaces Hardware's internal live MQTT fields for sensor biomes 2-5: heat-exchanger/liquid temperature from `liq_t` and pump run percentage from `pump_pct`. This was an App/operator-only renderer label/display closeout over the existing MQTT payload; no Supabase records, schema, migrations, Storage, MQTT subscriptions, telemetry controls, setpoints, public Web telemetry, or live app actions changed.
 
@@ -435,7 +437,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Known Risks & Blockers
 
-- CRM relationship-system tables are live with RLS enabled and no policies. Runtime access must stay on the internal main-process secret-key bridge unless a separate RLS policy pass is approved; backfill from legacy CRM rows remains a separate reviewed migration/write task.
+- CRM relationship-system tables are live with RLS enabled and no policies. Runtime access must stay on the internal main-process secret-key bridge unless a separate RLS policy pass is approved; backfill from legacy CRM rows remains a separate reviewed migration/write task. Legacy CRM contact links now use `crm_contact_links` after migration 014; additional link writes remain live CRM data changes.
 - The app has Supabase secret-key access in main-process/local tooling; accidental public or renderer exposure would be a security risk.
 - Real admin image upload to Supabase Storage still needs careful live verification with approval if not already completed.
 - Packaged build behavior with Sharp/native dependencies should be verified before relying on distributable `.exe` builds.

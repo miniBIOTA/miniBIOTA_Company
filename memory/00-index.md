@@ -1,6 +1,6 @@
 ﻿---
 title: Company Memory Index
-last_updated: 2026-05-11
+last_updated: 2026-05-13
 ---
 # Company Memory Index
 
@@ -54,6 +54,8 @@ Current Company work projects:
 - `Roadmap & Quarterly Objectives`
 - `AI & Knowledge Infrastructure`
 - `Operation Living Atlas Coordination`
+- `Aquatic Club Talk Program Coordination`
+- `Operation Living Intelligence Coordination`
 
 Use Planner for actionable work status, blockers, scheduling, task/project links, and completion checks. Use Markdown memory and skill references for company strategy, Programs/Operations governance, roadmap cadence, dependency maps, decisions, context, review rhythm, and operating rules.
 
@@ -87,6 +89,9 @@ Completed Phase 11 evidence logs were moved out of active memory on 2026-05-11. 
 | File | Use |
 |---|---|
 | `skills/coordinate-cross-domain-priorities/reference/operation-living-atlas-plan.md` | Operation Living Atlas cross-domain backfill, source packet, publicness tier, and ecological knowledge graph coordination plan |
+| `skills/coordinate-cross-domain-priorities/reference/operation-living-intelligence-plan.md` | Active-planning Operation Living Intelligence data-stack plan for Markdown, Supabase, graph, vector, analytics warehouse, visual AI, cache, automation, and agent routing coordination |
+| `skills/coordinate-cross-domain-priorities/reference/operation-living-intelligence-data-projection-matrix.md` | Detailed Operation Living Intelligence source-to-derived-layer projection matrix for Supabase, Memgraph, pgvector, analytics, telemetry, media, Planner, CRM, Financials, and agent routing |
+| `domains/company/operation_living_intelligence_supabase_schema_audit_2026-05-13.md` | First read-only live Supabase schema audit for Operation Living Intelligence, including all 108 exposed public-schema tables/views, RPC/storage surfaces, deltas, and implementation-time audit gate |
 | `skills/review-roadmap-implications/reference/strategic-roadmap.md` | Exact roadmap reference |
 
 ## Active Company Workflows

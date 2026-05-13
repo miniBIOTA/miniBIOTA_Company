@@ -32,11 +32,23 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   commitment, financial commitment, or public roadmap commitment. The business
   plan is not yet assembled, and Q3+ roadmap detail remains thin.
 - Company project management is now Planner-integrated under
-  `work_domains.key = company_ops` / `domain_id = 1`: 5 Company work projects
-  track 21 Company tasks after the Aquatic Club talk setup on 2026-05-11.
-  `Roadmap & Quarterly Objectives`, `Operation Living Atlas Coordination`, and
-  `Aquatic Club Talk Program Coordination` are active; `Business Plan &
-  Operating Model` and `AI & Knowledge Infrastructure` remain planned.
+  `work_domains.key = company_ops` / `domain_id = 1`: 6 Company work projects
+  track 28 Company tasks after the Operation Living Intelligence schema-audit
+  gate was added on 2026-05-13. `Roadmap & Quarterly Objectives`, `Operation Living Atlas
+  Coordination`, `Aquatic Club Talk Program Coordination`, and `Operation
+  Living Intelligence Coordination` are active; `Business Plan & Operating
+  Model` and `AI & Knowledge Infrastructure` remain planned.
+- **Operation Living Intelligence** is now the approved name and active
+  Company planning program for miniBIOTA's long-term agent data stack:
+  Markdown/Supabase continuity, graph intelligence, vector retrieval,
+  analytics warehousing, visual AI/local model workflows, cache/runtime memory,
+  automation, and cross-domain agent routing. Planner Program
+  `work_programs.id = 4` now links Company, App, Research/Ecosystem, Content,
+  Web, Growth/Sales, and Financials projects plus existing overlapping
+  Aquatic Club, Atlas, Web, AI Infrastructure, App media, and Supabase-safety
+  projects. This is operating coordination only; no schema, App runtime,
+  public site, paid-service, local model install, automated-write, or
+  source-of-truth cutover has been approved by the plan itself.
 - Codex is the primary operating interface moving forward. Previous interface-specific guidance is archived as legacy context only.
 
 ## Active Priorities
@@ -53,6 +65,14 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   valuable middle ground. Any sponsor, financial, public, or offer language
   remains approval-gated.
 - Coordinate **Operation Living Atlas**, the cross-domain historical backfill and ecological knowledge-graph program. Source plan: `M:\miniBIOTA\miniBIOTA_Company\skills\coordinate-cross-domain-priorities\reference\operation-living-atlas-plan.md`. First model arc: Lake Post-Seal / Flagfish / Daphnia / Ghost Shrimp.
+- Coordinate **Operation Living Intelligence** as the architecture program for
+  making agents work more like a real cross-domain team. The program should
+  keep current Markdown/Supabase/Planner workflows live while building derived
+  graph, vector, analytics, visual AI, cache, and automation layers behind
+  readiness gates. Default kickoff is graph-first through the Lake Post-Seal
+  Living Atlas packet, with analytics and visual AI inventory as planning
+  sidecars. The live Program should remain unscheduled parent/container work
+  until timing is reviewed against Aquatic Club Talk Readiness.
 - Coordinate website-related public communication as a soft build-in-public
   update, not a high-profile launch event, until launch scope/readiness is
   explicitly approved. Current public framing should acknowledge slower content
@@ -73,6 +93,59 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-13:** Company completed the first read-only live Supabase schema
+  audit for Operation Living Intelligence. The audit found 108 public-schema
+  tables/views exposed through OpenAPI, one exposed RPC
+  (`save_species_sighting_session`), and two public Storage buckets
+  (`images` and `chronicles-images`). Company documented every exposed
+  table/view by domain and updated the projection matrix deltas for broader
+  CRM, Financials, Research, Web/App, and Planner surfaces. Planner task
+  `409` was created under Operation Living Intelligence project `75` as the
+  implementation-time schema/data audit gate before any first export/import.
+  No schema, App behavior, public site behavior, export job, import job, sync
+  automation, paid service, public commitment, sponsor commitment, financial
+  commitment, legal decision, launch target, or roadmap commitment changed.
+- **2026-05-13:** With Josue's explicit approval, Company created the live
+  Planner Program **Operation Living Intelligence** (`work_programs.id = 4`)
+  after checking the Content production/local-compute source and App
+  media-folder/media-library source. The approved setup created seven new
+  domain-owned projects: Company `75`, App `76`, Research/Ecosystem `77`,
+  Content `78`, Web `79`, Growth/Sales `80`, and Financials `81`; linked ten
+  existing overlapping projects as dependencies/support/review lanes; and
+  created unscheduled parent/container tasks `380` through `408`. Aquatic Club
+  Talk Readiness remains the protected 2026-06-13 hard-window priority. No
+  schema, App behavior, media records, website behavior, paid subscriptions,
+  local model installs, automated agent jobs, public commitments, sponsor
+  commitments, financial commitments, legal decisions, launch targets, or
+  roadmap commitments changed.
+- **2026-05-13:** Josue selected **YouTube analytics first** for the Operation
+  Living Intelligence analytics lane and **Memgraph** for the graph pilot
+  direction. Company also recommended keeping biome telemetry in
+  Supabase/Postgres for now rather than adding a separate time-series database
+  during the first buildout. These are planning/architecture choices only; no
+  YouTube API, analytics warehouse, Memgraph install, telemetry database,
+  schema, App behavior, Hardware behavior, paid subscription, local service,
+  public site behavior, automated job, or live telemetry behavior changed.
+- **2026-05-13:** Company scoped the Operation Living Intelligence data
+  projection matrix for species, observations, Content pipeline, chronicles,
+  media, Planner, YouTube analytics, telemetry, CRM, Financials, Memgraph,
+  pgvector, and analytics layers. The scoping decision is projection-first:
+  canonical Supabase/domain/Markdown sources stay in place while derived graph,
+  vector, analytics, and visual-AI layers are built as rebuildable helper
+  systems. No export job, import job, sync automation, schema change, database
+  migration, App behavior, public site behavior, paid service, or live record
+  write was approved by the matrix.
+- **2026-05-13:** Company named and activated planning for **Operation Living
+  Intelligence**, the cross-domain agent data-stack program. The documented
+  strategy keeps Markdown/Supabase/Planner workflows live while derived graph,
+  vector, analytics warehouse, visual AI/local model, cache/runtime memory, and
+  automation layers are piloted behind readiness gates. The strongest kickoff
+  path is graph-first using the Lake Post-Seal Living Atlas packet, with
+  analytics and visual AI inventory as planning sidecars. No live database
+  records, Planner records, schema, app behavior, website behavior, paid
+  subscriptions, automated agent writes, public commitments, sponsor
+  commitments, financial commitments, legal decisions, launch targets, or
+  roadmap commitments changed.
 - **2026-05-13:** Company aligned the website/content announcement posture:
   the next public communication should explain that content has slowed because
   Josue is building the public website layer for miniBIOTA, while avoiding a
@@ -311,6 +384,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - The standing domain project-manager delegation model is documented, but the
   shared Planner/Supabase write path remains an App-owned implementation and
   operating-surface dependency before agents can rely on it operationally.
+- Operation Living Intelligence creates a large architecture surface area. The
+  main risks are premature tool adoption, competing sources of truth, agent
+  write overreach, visual AI false positives, local model operations burden,
+  paid-service creep, and cutting over before derived systems prove they are
+  accurate, rebuildable, secure, cost-aware, and useful.
 
 ## Cross-Domain Notes
 
@@ -375,6 +453,30 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   generic project spans should not flood daily cells, and parent task
   containers with scheduled children should render child-first only on dates
   with child work.
+- **App:** Operation Living Intelligence will need App-owned implementation
+  planning for safe tool bridges, sync/import jobs, graph/vector/analytics
+  connectors, local visual model integration, queue/cache/runtime support,
+  automation logs, readback, fallback, and any future operator UI.
+- **Research:** Operation Living Intelligence should strengthen ecological
+  claim provenance, graph ontology, uncertainty labels, and visual evidence
+  review without allowing AI-derived annotations to become public claims before
+  review.
+- **Content:** Operation Living Intelligence should improve retrieval of
+  source packets, scripts, transcripts, media evidence, story arcs, and
+  performance feedback while preserving the content calendar and publishing
+  approval boundaries.
+- **Raw Footage:** Operation Living Intelligence should eventually support
+  local visual AI workflows for video/image description, candidate tags,
+  event/clip notes, OCR, and media-to-claim evidence routing, with outputs
+  treated as candidate annotations until reviewed.
+- **Growth:** Operation Living Intelligence analytics should eventually connect
+  YouTube, website, QR, social, newsletter/support, event, and CRM/funnel
+  signals so Growth can interpret audience movement without creating sponsor,
+  financial, or public commitments by inference.
+- **Financials:** Operation Living Intelligence paid tools should be reviewed
+  before recurring adoption; free/local pilots are preferred, but paid tools may
+  be justified when they clearly improve reliability, speed, accuracy,
+  maintainability, security, or team-like usefulness.
 - **Brain:** Brain is archive/recovery context and retirement provenance during Phase 11 probation. Active operating coordination, reporting, exports, and routing live in Company and the relevant domain repos.
 - **Raw Footage:** Archival media supports company proof, documentary history, and public communication.
 
@@ -399,6 +501,9 @@ Brain no longer mirrors Company docs. Load active Company detail from the source
 | `skills/make-operating-decision/SKILL.md` | Playbook for company-level decisions and operating judgments |
 | `skills/coordinate-cross-domain-priorities/SKILL.md` | Playbook for cross-domain sequencing and downstream owner coordination |
 | `skills/coordinate-cross-domain-priorities/reference/operation-living-atlas-plan.md` | Operation Living Atlas cross-domain backfill and ecological knowledge-graph plan |
+| `skills/coordinate-cross-domain-priorities/reference/operation-living-intelligence-plan.md` | Operation Living Intelligence agent data-stack architecture plan |
+| `skills/coordinate-cross-domain-priorities/reference/operation-living-intelligence-data-projection-matrix.md` | Operation Living Intelligence source-to-derived-layer projection matrix and platform ledger |
+| `domains/company/operation_living_intelligence_supabase_schema_audit_2026-05-13.md` | First read-only live Supabase schema audit for Operation Living Intelligence |
 | `skills/review-roadmap-implications/SKILL.md` | Playbook for milestone, project, deadline, quarterly plan, and roadmap questions |
 | `skills/review-roadmap-implications/reference/strategic-roadmap.md` | Exact roadmap reference |
 | `skills/run-operating-review/SKILL.md` | Playbook for Company operating reviews, dependency-map refreshes, Programs/Operations governance, and roadmap cadence checks |

@@ -98,7 +98,7 @@ Chat history and private model memory are never source of truth. Durable project
 - App Planner/Supabase is the live Company work queue for actionable Company projects and tasks.
 - Company Planner work lives under `work_domains.key = company_ops` / `domain_id = 1`.
 - Company owns Planner strategy and governance for Company work; App owns Planner runtime behavior, schema, UI, and Supabase-backed workflow implementation.
-- Current Company work projects are `Business Plan & Operating Model`, `Roadmap & Quarterly Objectives`, `AI & Knowledge Infrastructure`, `Operation Living Atlas Coordination`, and `Aquatic Club Talk Program Coordination`.
+- Current Company work projects are `Business Plan & Operating Model`, `Roadmap & Quarterly Objectives`, `AI & Knowledge Infrastructure`, `Operation Living Atlas Coordination`, `Aquatic Club Talk Program Coordination`, and `Operation Living Intelligence Coordination`.
 - Read Planner projects/tasks when choosing next Company work, checking blockers, or verifying completion status.
 - At closeout, if completed work maps clearly to an open Planner task, ask whether to mark that task done unless the user explicitly asked for that live task update.
 - Company planning coordinates cross-domain work, but domain-owned implementation queues remain in their domain repos and Planner domains.

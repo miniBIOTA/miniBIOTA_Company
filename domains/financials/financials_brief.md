@@ -2,7 +2,7 @@
 id: financials_brief
 title: Financials Brief
 domain: financials
-last_updated: 2026-05-12
+last_updated: 2026-05-13
 tags: [finance, budget, revenue, debt, brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -33,8 +33,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 Financials project management is now Planner-integrated under
 `work_domains.key = financials` / `domain_id = 2`. After the 2026-05-12
-cross-domain cleanup and financial readback, Financials has 7 active work
-projects and 20 task rows (15 open, 5 done). Planner remains task-status truth;
+cross-domain cleanup and financial readback, Financials has 8 active work
+projects and 25 task rows (20 open, 5 done). Planner remains task-status truth;
 financial tables and close records remain balance/revenue/expense truth.
 
 ## Active Priorities
@@ -42,14 +42,15 @@ financial tables and close records remain balance/revenue/expense truth.
 Planner/Supabase is the live Financials work queue for task status. Financial
 truth remains in financial tables and close records, not Planner task text.
 
-1. Review pending/needs-review Google $20 charge from 2026-04-28, likely final Claude/Anthropic charge before cancellation.
+1. Collect May/current bank and card statements for spending visibility; Planner task `410` is scheduled for 2026-05-14.
 2. Capture utility cost estimates for biome operations
-3. Document tax obligations and filing requirements
-4. Build debt payoff projection (avalanche method)
-5. Build 3–6 month cash flow projection using the new cash/runway snapshots
+3. Verify and update debt balances, minimum payments, and APRs
+4. Document tax obligations and filing requirements
+5. Build 3-6 month cash flow projection using current statements, cash snapshots, burn, debt payments, and planned purchases
 
 ## Recent Milestones
 
+- **2026-05-13:** Financials added and applied a statement reconciliation layer for full card visibility without polluting miniBIOTA expense totals. January-April 2026 AmEx Business Green Rewards Card statements are now represented in `statement_import_batches` with 72 statement rows, 4 statement document metadata records, and 12 recurring classification rules. User review resolved all initially open Amazon, Walmart, Home Depot, and points-adjustment rows; remaining open statement-review count was verified as zero. The April Google/Claude charge was confirmed as Anthropic/Claude, and Planner task `410` was created for 2026-05-14 to collect May/current bank and card statements.
 - **2026-05-12:** Company applied approved Financials Planner cleanup and
   readback. Tasks `96` and `97` were marked complete after verifying
   `account_balance_snapshots`, `expense_transactions`, and `planned_purchases`.
@@ -80,7 +81,8 @@ truth remains in financial tables and close records, not Planner task text.
 
 - Utility costs not captured in operating expenses.
 - Tax obligations not documented.
-- One Apr 28 $20 Google charge is included as pending/needs-review because it likely represents the final Claude/Anthropic charge, but the statement descriptor needs final confirmation.
+- May/current bank and card activity still needs to be collected before current-month spending visibility and runway forecasting are reliable.
+- Planner tasks `182` and `378` appear substantively resolved from the 2026-05-13 Financials session but still need explicit approval before being marked done.
 
 ## Cross-Domain Notes
 

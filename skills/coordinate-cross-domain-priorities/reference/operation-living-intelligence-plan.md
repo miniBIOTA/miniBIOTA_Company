@@ -1,0 +1,1336 @@
+---
+id: operation_living_intelligence_plan
+title: Operation Living Intelligence Plan
+domain: company_operations
+last_updated: 2026-05-13
+tags: [operation-living-intelligence, ai-infrastructure, databases, analytics, graph, vector, agents, cross-domain]
+status: active_planning
+---
+# Operation Living Intelligence
+
+Operation Living Intelligence is the Company-approved name and active planning program for building miniBIOTA's long-term agent data stack: the coordinated system of Markdown memory, Supabase operational records, graph intelligence, vector retrieval, analytics warehousing, optional agent runtime memory, automation, visual AI, local models, and cross-domain agent routing.
+
+This is an active planning and architecture document. It does not approve live database writes, schema changes, migrations, paid subscriptions, public website changes, app runtime changes, automated agent execution, local model installation, or structured record changes. Those require explicit approval through the normal Company/App/domain gates.
+
+## Purpose
+
+miniBIOTA is accumulating several kinds of knowledge that do not belong in one database:
+
+- Durable strategy, governance, decisions, and agent instructions.
+- Live operational records such as Planner projects, tasks, programs, content calendar items, domain records, and workflow statuses.
+- Ecological history, species relationships, event timelines, provenance, media evidence, and public-safe claim paths.
+- Searchable text, notes, drafts, transcripts, source packets, and content archives.
+- YouTube, website, social, newsletter, support, and agent-performance analytics.
+- Short-lived agent context, cache, queue state, and session/runtime memory.
+- Image and video understanding, media indexing, visual evidence review, and local vision-language model workflows.
+- Future automated agents that can monitor, summarize, draft, route, and propose work with human approval where required.
+
+The goal of Operation Living Intelligence is to make these systems work together as one coherent agent operating layer without turning any single database into a confused source of truth.
+
+## Core Operating Principle
+
+Use each system for the kind of truth it is best at.
+
+```text
+Markdown = memory and meaning
+Supabase/Postgres = operational truth
+Graph database = relationships and provenance
+Vector search = semantic retrieval
+Analytics warehouse = performance history and trend analysis
+Redis/cache = temporary runtime memory
+Local/visual AI = media understanding and private model execution
+Agents = routed access, synthesis, and approved actions
+```
+
+The system should feel simple to the operator: ask an agent a question, let the agent route to the right sources, then receive a grounded answer with evidence, uncertainty, downstream owners, and approval needs.
+
+## Current State
+
+- Company already uses a Markdown vault for durable Company memory, governance, reports, skills, and cross-domain coordination.
+- App Planner/Supabase is the live structured work queue for Company and domain work.
+- Supabase/Postgres is already the strongest current source for operational records, Planner status, app-backed workflows, and structured tables.
+- Operation Living Atlas has already proven the need for relationship-aware ecological knowledge: species, events, observations, media, claims, publicness tiers, source packets, and uncertainty labels.
+- Existing guidance says not to create a dedicated Living Atlas queue table until manual packet flow or multiple concurrent packets prove the need.
+- The emerging question is broader than Living Atlas: how should miniBIOTA coordinate all AI, database, analytics, and agent-memory infrastructure over time?
+- Josue approved **Operation Living Intelligence** as the program name on 2026-05-13 and directed Company to plan for every beneficial database/AI system while blending the current workflow with staged buildout.
+
+## Operation Name
+
+Use **Operation Living Intelligence**. Josue approved this name on 2026-05-13.
+
+Rationale:
+
+- It fits the existing naming pattern beside Operation Living Atlas and Operation Living Web.
+- It is broad enough to include AI agents, knowledge graphs, analytics, retrieval, and database routing.
+- It does not imply a public launch, product promise, or immediate technical migration.
+- It frames the work as an internal operating intelligence layer, not just a tool purchase.
+
+Possible alternate names if Josue wants a different feel:
+
+- Operation Data Nervous System.
+- Operation Agent Memory Stack.
+- Operation Intelligence Layer.
+- Operation Living Data Spine.
+
+## Kickoff Decision - 2026-05-13
+
+Josue approved the name **Operation Living Intelligence** and directed Company to plan the full beneficial system stack across agent domains.
+
+Kickoff posture:
+
+1. Use a graph-first kickoff because Operation Living Atlas already has a concrete Lake Post-Seal packet that can test relationship reasoning, provenance, publicness, and claim safety.
+2. Keep current Markdown/Supabase/Planner workflows live while new systems are built in parallel.
+3. Treat analytics warehouse, retrieval, visual AI/local model, cache/runtime, and automation work as sidecar planning during the first graph pilot.
+4. Build the agent routing matrix before giving agents new write-capable tools.
+5. Prefer free/local pilots first, but choose paid tools when they clearly produce the best overall outcome.
+6. Treat all live database writes, schema changes, App runtime work, public website changes, paid subscriptions, automated scheduled jobs, and local model installs as separate approval-gated implementation steps.
+
+Follow-up decisions:
+
+- On 2026-05-13, Josue chose **YouTube analytics first** for the analytics warehouse lane.
+- On 2026-05-13, Josue chose **Memgraph** for the graph pilot direction.
+- On 2026-05-13, Company recommended keeping biome telemetry in Supabase/Postgres for now instead of adding a separate time-series database during the first Operation Living Intelligence buildout.
+
+## Source Checks - 2026-05-13
+
+Josue clarified that local hardware information should be checked through the Content agent, and that the media folder is used by the App agent.
+
+Verified operating facts:
+
+- Content production setup currently records DaVinci Resolve Studio 20.3.2 Build 9 on Windows 11 Pro, with an MSI SHADOW RTX 5060 Ti 16GB GPU and CUDA enabled.
+- Content production setup records the active media storage as a 10TB WD Red Plus HDD, with backup drive purchase still a high-priority gap.
+- App runtime defaults media indexing to `M:\miniBIOTA\miniBIOTA_Files\8. Raw Footage\Photos & Videos`.
+- App runtime owns the media indexing/reindexing path through the Media Library tooling, including thumbnail access and Supabase-backed media records.
+- App media library schema contains `media_assets`, species/biome/system/chronicle link tables, tag tables, and media project tables.
+
+Routing implication:
+
+- Content owns production workstation and editing/runtime assumptions for local visual AI feasibility.
+- App owns media indexing, Media Library schema, review-state/write paths, and any local model integration that touches App runtime or Supabase-backed media records.
+- Raw Footage remains source-media provenance and file-organization context.
+- Research reviews ecological/species claims produced from visual AI.
+- Company coordinates the cross-domain sequence and approval gates.
+
+Detailed data projection scope:
+
+- The table/source-level projection matrix for species, observations, Content pipeline, chronicles, media assets, Planner records, YouTube analytics, telemetry, CRM, Financials, Memgraph, pgvector, and analytics now lives at `skills/coordinate-cross-domain-priorities/reference/operation-living-intelligence-data-projection-matrix.md`.
+- Use that matrix before implementing any export, import, sync, Memgraph graph, vector index, analytics warehouse, or writeback flow.
+- A first read-only live Supabase schema audit was completed on 2026-05-13 and documented at `domains/company/operation_living_intelligence_supabase_schema_audit_2026-05-13.md`. It found 108 public-schema tables/views, one exposed RPC, and two public Storage buckets, and it confirmed that CRM and Financials need especially cautious projection boundaries.
+- Planner task `409` is the implementation-time gate to rerun a deeper Supabase schema/data audit before the first Operation Living Intelligence export/import.
+
+## Decision Boundary
+
+Operation Living Intelligence may define:
+
+- Which data system owns which kind of truth.
+- Which domain owns implementation and review for each data layer.
+- How agents should route reads, proposed writes, approvals, and closeout.
+- Which pilots should be run before paid services or schema changes.
+- What success looks like before scaling beyond a pilot.
+
+Operation Living Intelligence does not by itself authorize:
+
+- Supabase writes.
+- Planner project/task/program writes.
+- Raw SQL.
+- Database migrations or schema changes.
+- Neo4j, Memgraph, Pinecone, Qdrant, Weaviate, Milvus, ChromaDB, MongoDB Atlas, Redis, MotherDuck, BigQuery, Databricks, TiDB, Azure Cosmos DB, or other paid service subscriptions.
+- Public website behavior changes.
+- App runtime behavior changes.
+- Financial commitments.
+- Sponsor commitments.
+- Launch dates or roadmap commitments.
+
+## Recommended Architecture
+
+### Layer Map
+
+| Layer | Primary Tool | Role | Source Of Truth? | Owner |
+|---|---|---|---|---|
+| Durable operating memory | Markdown vaults | Strategy, governance, agent rules, domain briefs, decisions, source packets, review notes | Yes, for narrative/operating context | Company and domain repos |
+| Operational database | Supabase/Postgres | Planner, tasks, programs, content calendar, app records, statuses, structured workflow records | Yes, for live operational state | App runtime; domain-owned records |
+| Basic vector retrieval | Supabase pgvector first | Semantic search across selected structured text and embeddings | Derived/search layer unless table is canonical | App for implementation; domains for content |
+| Dedicated vector DB | Qdrant, Pinecone, Weaviate, Chroma, Milvus only if needed | Higher-scale or specialized retrieval, filtering, hybrid search, large embedding collections | Derived/search layer | App/AI infrastructure |
+| Graph intelligence | Neo4j or Memgraph | Species, observations, events, claims, media, provenance, dependencies, multi-hop reasoning | Initially derived; possible future canonical graph only by approval | Company governance; Research/App implementation |
+| Analytics warehouse | MotherDuck/DuckDB or BigQuery first | YouTube, website, social, email, support, CRM funnel, agent telemetry, trend analysis | Derived analytical history | Growth, Content, Web, Company; App/data implementation |
+| Short-term agent memory/cache | Redis or equivalent | Session state, queues, cache, locks, recent retrieval context | No, temporary runtime state | App/AI infrastructure |
+| Visual AI/media intelligence | Local VLMs such as Qwen2.5-VL-7B where appropriate; cloud multimodal models when approved | Image/video understanding, media captions, visual evidence extraction, object/event localization, rough clip notes, structured media metadata | Derived review layer unless approved as media metadata | Raw Footage, Content, Research, App |
+| Automation/orchestration | App-owned workers, schedulers, queues, and agent tool bridges | Recurring checks, import jobs, retrieval refreshes, drift checks, report generation, proposed-task bundles | No, execution layer | App implementation; Company governance |
+| Enterprise/lakehouse option | Databricks Lakehouse/Lakebase later | Enterprise analytics, governance, large-scale data lake, privacy/security controls | Future option only | Not needed by default |
+| Distributed SQL option | TiDB/TiDB Cloud later | HTAP SQL + vector search if starting a new scalable operational DB | Not recommended as current replacement | Not needed by default |
+
+### First Recommendation
+
+Do not sunset any Supabase tables at the start.
+
+Start with:
+
+1. Keep Markdown and Supabase exactly in their current roles.
+2. Add a local or free-tier graph pilot for Operation Living Atlas relationship intelligence.
+3. Add analytics warehouse planning for YouTube/website/social performance, but do not implement until data sources and reporting questions are defined.
+4. Use Supabase/pgvector for first-pass semantic retrieval before adopting a dedicated vector database.
+5. Add Redis/cache only when agent workflows need queueing, speed, or temporary state.
+6. Add a visual AI/media intelligence pilot after the graph and data-source inventory clarify which media evidence needs extraction.
+7. Keep all current workflows operational while derived layers are built, tested, and compared. Do not switch agents or domains to a new system until it passes readiness criteria.
+
+## Candidate Platform Coverage
+
+Operation Living Intelligence should evaluate every major data-system category that could materially help miniBIOTA, but it should not install or pay for every category automatically. Each platform earns adoption by solving a real workflow better than the current stack.
+
+| Category | Candidate Platforms | Best Use | Initial Posture |
+|---|---|---|---|
+| Current operational database | Supabase/Postgres | Planner, App workflows, content calendar, Research/App structured records, current state | Keep as system of record |
+| Postgres vector layer | Supabase pgvector, plain PostgreSQL + pgvector | First-pass embeddings, semantic search near existing records | Use before a separate vector DB if sufficient |
+| Distributed SQL/HTAP | TiDB / TiDB Cloud | Unified SQL + vector + analytical workloads at larger scale | Evaluate later; do not replace Supabase now |
+| Managed vector DB | Pinecone | Fully managed RAG retrieval and long-term vector memory | Defer until pgvector/local retrieval is insufficient |
+| Filtering-heavy vector DB | Qdrant | Semantic search with strong metadata filtering and payload constraints | Strong candidate if source/publicness filters become central |
+| Hybrid vector/keyword DB | Weaviate | Hybrid semantic + keyword search and RAG workflows | Candidate if hybrid search becomes core |
+| Massive vector scale | Milvus | Very large embedding collections | Defer until scale demands it |
+| Local vector prototyping | ChromaDB | Local experiments and quick RAG prototypes | Good for prototypes, not assumed production |
+| Document + vector database | MongoDB Atlas Vector Search | JSON/document-centric agent memory and retrieval | Evaluate only if document-first workflows outgrow Postgres/Markdown |
+| Graph database | Neo4j, Memgraph | Living Atlas relationships, provenance, claims, species/events/media graph | First active pilot category |
+| Short-term memory/cache | Redis | Agent session state, queues, cache, locks, temporary memory | Add only when runtime automation needs it |
+| Analytics warehouse | MotherDuck/DuckDB, BigQuery | YouTube, website, QR, social, newsletter, CRM/funnel, agent telemetry analytics | Inventory first; pilot after graph or in parallel docs-only |
+| Enterprise lakehouse | Databricks Lakehouse / Lakebase | Enterprise governance, security, large-scale analytics, data sovereignty | Defer unless scale/security needs justify it |
+| Globally distributed app DB | Azure Cosmos DB | Resilient, multi-model, cloud-scale app memory in Azure ecosystems | Defer unless Azure-centered agent infrastructure appears |
+| Visual/local AI runtime | Qwen2.5-VL-7B candidate, later best-fit local VLMs | Image/video understanding, media evidence extraction, candidate annotations | Plan now; pilot after media test set and hardware review |
+| Automation/orchestration | App-owned workers, queues, schedulers, MCP/tool bridges | Recurring reports, sync jobs, proposed-write bundles, drift checks | Design early; enable only after approval |
+
+Adoption rule:
+
+- Keep a platform out of production until it has a job that existing Markdown/Supabase/App workflows cannot do well enough.
+- Prefer one excellent tool per category over overlapping tools with unclear ownership.
+- Keep experimental systems rebuildable from canonical sources.
+- Do not let "AI database" branding override source-of-truth discipline.
+
+## Build Strategy
+
+### Parallel Build, Then Controlled Cutover
+
+The current Markdown + Supabase + Planner workflow should keep operating while Operation Living Intelligence is built.
+
+Use this posture:
+
+```text
+Current workflow stays live
+        |
+        v
+New systems read/copy approved data
+        |
+        v
+Pilots prove value in parallel
+        |
+        v
+Agents compare old vs new answers
+        |
+        v
+Human approval for any source-of-truth change
+        |
+        v
+Limited domain cutover only after readiness gates pass
+```
+
+Do not create a "big bang" migration. The safer path is a shadow/parallel system:
+
+- Supabase and Markdown remain the source-of-truth surfaces during buildout.
+- Graph, vector, analytics, visual AI, and cache layers start read-only or derived.
+- Agents may use new layers for recommendations only until the layer proves accuracy and routing discipline.
+- Writeback into canonical sources remains approval-gated.
+- Each domain turns on new workflows only after its owner confirms the benefit, risks, and handoff rules.
+
+### Readiness Gates
+
+A new system can move from pilot to operational use only when:
+
+- It has a named owner.
+- It has a clear source-of-truth relationship.
+- It can be rebuilt or audited from canonical sources.
+- It preserves provenance, public/private boundaries, and confidence labels.
+- Agents know when to use it and when not to use it.
+- It has a rollback/fallback path to current Markdown/Supabase workflows.
+- It has cost visibility.
+- It has security and credential rules.
+- It has passed a domain-specific evaluation set.
+- It does not create unapproved public, financial, sponsor, legal, launch, or roadmap commitments.
+
+### Human-Team Standard
+
+The long-term goal is for the agent system to behave like a strong human team:
+
+- Specialists know their domain.
+- Specialists know when to ask another domain.
+- Work is traceable.
+- Notes become durable.
+- Decisions are not lost in chat.
+- Claims are evidence-backed.
+- Tasks are routed to the right owner.
+- Costs and risks are visible before action.
+- Automation handles repetitive work while humans approve consequential moves.
+
+The system should prioritize reliability, traceability, and domain discipline over novelty.
+
+## Live Planner Program Strategy
+
+Operation Living Intelligence is now a live Planner Program, but it should not displace the current Q2 operating order.
+
+Recommended posture:
+
+1. Keep `Operation Living Intelligence` live as Company-led Program `work_programs.id = 4`.
+2. Keep `Aquatic Club Talk Readiness` as the protected near-term hard-window priority through the 2026-06-13 talk and 2026-06-14 closeout.
+3. Use `Operation Living Atlas` as the first graph/retrieval proof case because the Lake Post-Seal packet already exposes the relationship, provenance, evidence, media, and publicness problems this stack is meant to solve.
+4. Keep `Operation Living Web` downstream: it should consume curated graph/Atlas outputs after Research/Web/App review, not drive the first architecture build.
+5. Link existing overlapping projects into the new Program as dependencies or supporting lanes rather than duplicating their tasks.
+6. Create new domain-owned projects only where the new intelligence stack needs a distinct work lane.
+7. Use due-only parent/container tasks for the sequential order of operation. Add scheduled child tasks only after the domain owner confirms timing.
+
+### Recommended Program Links
+
+Initial new projects, created on 2026-05-13:
+
+| Domain | Project | Role |
+|---|---|---|
+| Company | Operation Living Intelligence Coordination (`work_project_id = 75`) | Lead |
+| App | Operation Living Intelligence App Bridges & Agent Router (`work_project_id = 76`) | Member |
+| Research/Ecosystem | Operation Living Intelligence Graph Ontology & Evidence Model (`work_project_id = 77`) | Member |
+| Content | Operation Living Intelligence Source Inventory & Visual AI Readiness (`work_project_id = 78`) | Member |
+| Web | Operation Living Intelligence Public Data & Analytics Surfaces (`work_project_id = 79`) | Supporting |
+| Growth/Sales | Operation Living Intelligence Analytics Warehouse Pilot (`work_project_id = 80`) | Member |
+| Financials | Operation Living Intelligence Cost & Subscription Review (`work_project_id = 81`) | Review |
+
+Recommended existing project links:
+
+| Existing Project | Link Role | Reason |
+|---|---|---|
+| AI & Knowledge Infrastructure | Dependency | Prior knowledge-infrastructure work and agent-access precedent |
+| Operation Living Atlas Coordination | Dependency | First proof case and source-packet workflow |
+| Operation Living Atlas Backfill | Dependency | Content source packets and historical evidence |
+| Operation Living Atlas Evidence Integrity | Dependency | Research validation and evidence-link rules |
+| Operation Living Atlas Review Workflow Support | Supporting | App workflow candidate after packet friction is proven |
+| Operation Living Web Review Workflow Support | Supporting | Future private relationship-review workflow |
+| Site Admin & Media Workflow Reliability | Supporting | App-owned media library reliability and media review paths |
+| Supabase, Storage & Secret-Key Safety | Review | Schema, credential, and write-safety gate |
+| Aquatic Club Talk Program Coordination | Dependency | Protects the current hard-window operating priority |
+
+### Sequential Work Order
+
+Use this order for Planner parent tasks. Only the first Company coordination lane should be active immediately; most implementation lanes should stay planned until after Aquatic Club Talk closeout unless a task directly reduces current friction.
+
+| Order | Phase | Default Timing | Primary Owner | Output |
+|---|---|---|---|---|
+| 0 | Live Program setup | Now | Company | Program record, linked projects, no-cutover rule |
+| 1 | Source and routing map | Now/light work | Company + App + Content | Data-access matrix, agent routing map, source-of-truth map |
+| 2 | Existing operation mesh | Now/light work | Company | Confirm how Aquatic Club, Living Atlas, Living Web, and AI Infrastructure overlap |
+| 3 | Graph-first pilot design | Before heavy build | Company + Research + App | Neo4j/Memgraph pilot spec, ontology, sample packet questions |
+| 4 | Content/source inventory | Light before talk; deeper after | Content | Source packet, transcript, production-note, and media-evidence inventory rules |
+| 5 | App bridge design | Mostly after talk | App | Read-only graph/vector/analytics client design, secret rules, local model boundary |
+| 6 | Visual AI readiness | Mostly after talk | Content + App + Research | Small media test set, hardware feasibility, annotation review path |
+| 7 | Analytics warehouse pilot design | After protected talk work | Growth + Web + Company | YouTube/website/QR/social/source list and first dashboard questions |
+| 8 | Paid/free tool decision | Before subscription | Financials + Company + App | Cost review and recommendation for Neo4j/Memgraph/vector/warehouse tools |
+| 9 | Read-only pilot build | After approval | App + domain owners | Derived graph/retrieval/analytics pilot with readback |
+| 10 | Controlled writeback/cutover review | After pilot proof | Company + App + domains | Decision on whether any workflow moves beyond read-only |
+
+### First Planner Task Set
+
+The first approved Planner setup created tasks in this shape so the live Program works like a real operating team without overloading current work. Tasks `380` through `408` are parent/container records with no scheduled dates.
+
+Company lead project:
+
+- Stage 0: Create the live Operation Living Intelligence Program and link overlapping operations.
+- Stage 1: Finalize source-of-truth, domain-owner, and agent-routing matrix.
+- Stage 2: Mesh Operation Living Intelligence with Aquatic Club Talk, Operation Living Atlas, Operation Living Web, and AI & Knowledge Infrastructure.
+- Stage 3: Approve graph-first pilot scope and success criteria before any graph import.
+- Stage 4: Run weekly or biweekly Operation Living Intelligence review during pilot planning.
+- Stage 5: Decide which lanes may move from planning to implementation after Aquatic Club Talk closeout.
+
+App project:
+
+- Map App-owned Planner, Supabase bridge, media library, storage, secret-key, and indexing boundaries.
+- Design read-only access pattern for graph, vector, analytics, and media-intelligence layers.
+- Design the agent router/tool registry needed to decide which agent queries which system.
+- Design local visual-model worker boundary without changing App runtime yet.
+- Define approval/readback requirements for any future App schema, media metadata, or writeback path.
+
+Research project:
+
+- Define the first graph ontology for species, biomes, observations, events, claims, media, source packets, publicness, confidence, and reviews.
+- Convert the Lake Post-Seal model packet into graph-candidate relationships without making canonical writes.
+- Define how graph paths preserve evidence, uncertainty, inferred-vs-observed status, and Research review status.
+- Evaluate whether graph traversal improves at least 7 of the 10 pilot questions.
+
+Content project:
+
+- Inventory source packets, transcripts, scripts, production notes, footage references, and hardware/local compute assumptions that should be retrievable.
+- Confirm which source materials are safe to index, which are internal-only, and which need publicness labels.
+- Select a small visual AI test set after App confirms the media-folder/indexing boundary.
+- Document how candidate visual annotations return to Content/Research review before any metadata write.
+
+Web project:
+
+- Define which public surfaces could eventually consume curated graph/Atlas outputs.
+- Define website analytics events or exports needed for the analytics warehouse pilot.
+- Keep public rendering read-only and Research-reviewed until explicit Web implementation approval.
+
+Growth/Sales project:
+
+- Inventory YouTube, website, QR, social, support, newsletter, and CRM signals that should feed analytics.
+- Define first performance questions, especially around Aquatic Club follow-up and content-to-website movement.
+- Keep sponsor, outreach, pricing, and CRM commitments approval-gated.
+
+Financials project:
+
+- Track expected free/local options versus paid options by category.
+- Review the Neo4j Aura paid threshold against local Memgraph and Aura Free after the graph pilot scope is known.
+- Review vector, warehouse, and automation costs only after each layer has a proven job.
+- Approve no recurring subscription without a concrete benefit, owner, and rollback plan.
+
+## System Roles In Detail
+
+### Markdown Vaults
+
+Use Markdown for:
+
+- Company operating strategy.
+- Governance rules.
+- Source-of-truth rules.
+- Domain briefs and reports.
+- Agent instructions and playbooks.
+- Human-readable source packets.
+- Research validation notes.
+- Proposed data model notes.
+- Decision logs before they become structured records.
+
+Do not use Markdown as:
+
+- A competing live task-status system.
+- A replacement for Supabase records where structured state already exists.
+- A hidden place for public, financial, sponsor, legal, launch, or roadmap commitments.
+
+### Supabase/Postgres
+
+Use Supabase for:
+
+- Planner `work_domains`, `work_projects`, `tasks`, `work_programs`, and related workflow tables.
+- Content calendar and pipeline records.
+- Research species, observations, biomes, chronicles, and ecological structured records.
+- App runtime records.
+- Public website read surfaces when already implemented.
+- CRM, media, or admin records when approved and App-owned.
+- Transactional state where "what is current?" matters.
+
+Do not move out of Supabase during the pilot:
+
+- Planner tasks/projects/programs.
+- Task status.
+- Content calendar records.
+- App runtime tables.
+- Approval-gated operational records.
+- Domain-owned structured records that already serve the app.
+
+Supabase remains the default system of record for live structured state.
+
+### Graph Database
+
+Use a graph database for relationship intelligence:
+
+- Species connected to observations.
+- Observations connected to media.
+- Claims connected to evidence.
+- Public-facing claims connected to review status.
+- Events connected to before/after ecological states.
+- Chronicles connected to species, systems, source packets, and media.
+- Domain dependencies connected to owners, blockers, and handoff surfaces.
+- Talk/web/content assets connected to proof and claim safety.
+
+Candidate tools:
+
+- Neo4j AuraDB: polished managed option, strong graph ecosystem, GraphRAG support, likely paid if it becomes daily infrastructure.
+- Memgraph Community: cheaper/free local or self-hosted option, Cypher-style graph work, good candidate for lower-cost experimentation.
+
+Initial graph posture:
+
+- Derived layer, not canonical write target.
+- Import approved or clearly labeled data from Supabase and Markdown.
+- Proposed graph changes should flow back to the source-of-truth system after approval.
+- Publicness and uncertainty labels must travel with graph records.
+
+### Vector Search
+
+Use vector search for semantic retrieval:
+
+- "Find notes similar to this question."
+- "Find transcript sections that mention Daphnia bloom."
+- "Find prior captions in this voice."
+- "Find source packets related to sealing, opacity, or fish removal."
+- "Find content drafts about public website framing."
+
+Recommended order:
+
+1. Use Supabase/pgvector first because Postgres is already in the stack.
+2. Use Qdrant if filtering-heavy semantic search becomes painful.
+3. Use Pinecone if a fully managed vector DB is worth paying for.
+4. Use Weaviate if hybrid semantic/keyword retrieval becomes a core workflow.
+5. Use Chroma for quick local prototypes only.
+6. Use Milvus only if embedding volume becomes very large.
+
+Vector search should not replace graph relationships. It retrieves likely relevant material; the graph explains how evidence, claims, species, events, and owners connect.
+
+### Analytics Warehouse
+
+Use an analytics warehouse for performance and trend analysis:
+
+- YouTube video and channel analytics.
+- Website analytics.
+- QR code and campaign landing-page performance.
+- Social post/channel performance.
+- Newsletter/support/contact conversion.
+- Talk/event follow-up outcomes.
+- Sponsor/CRM funnel metrics, once Growth/App define CRM structures.
+- Agent workflow telemetry, such as tasks completed, retrieval quality, approval-cycle time, and handoff friction.
+
+Candidate tools:
+
+- MotherDuck/DuckDB: lightweight, SQL-friendly, good for solo/company analytics and lower operational complexity.
+- BigQuery: strong fit if Google Analytics and YouTube become the center of reporting.
+- Supabase/Postgres: acceptable for light early analytics, but not ideal as the long-term warehouse.
+- Databricks Lakehouse/Lakebase: likely overkill until enterprise-scale governance, security, and data-sovereignty needs appear.
+- MotherDuck or BigQuery should be evaluated before Databricks for miniBIOTA's current size.
+
+Analytics warehouse records are generally derived analytical history, not operational truth. They should answer "what happened over time?" rather than "what task is current?"
+
+### Redis Or Runtime Cache
+
+Use Redis only when needed for:
+
+- Short-term agent session state.
+- Queue state.
+- Job status.
+- Cache for expensive retrieval or graph queries.
+- Locks to prevent duplicate agent writes.
+- Temporary tool results.
+
+Do not use Redis for:
+
+- Durable ecological memory.
+- Source-of-truth records.
+- Permanent decisions.
+- Financial records.
+- Public claim state.
+
+### Visual AI And Local Models
+
+Use visual AI for media understanding and evidence extraction:
+
+- Image description and tagging.
+- Video scene/event detection.
+- Rough clip summaries.
+- Species or object candidate detection.
+- Text/OCR extraction from screenshots, slides, labels, forms, and charts.
+- Media-to-claim support review.
+- Bounding boxes, points, or structured coordinate outputs when a model supports them.
+- Draft metadata for App Media Library or Raw Footage workflows.
+
+At the time of this plan, Qwen2.5-VL-7B-Instruct is a candidate local/open model for visual workflows. Its public model card describes image understanding, video understanding, visual-agent behavior, localization outputs such as boxes/points, and structured outputs. Treat the specific model choice as time-sensitive: App/AI infrastructure should verify the best current local model before implementation.
+
+Initial visual AI posture:
+
+- Local-first when privacy, cost, or raw media volume matters.
+- Cloud multimodal models only when approved and when local quality or hardware is insufficient.
+- Outputs are candidate annotations until reviewed by the owning domain.
+- Do not publish AI-derived media claims without Research/Content/Web review.
+- Do not write media metadata back to Supabase/App records without approval.
+
+Visual AI belongs near Raw Footage, Content, Research, and App:
+
+- Raw Footage owns archival source/proof context.
+- Content owns production use and story framing.
+- Research owns ecological interpretation and species/claim safety.
+- App owns media tooling, local model integration, batch processing, and metadata write paths when scoped.
+
+### Automation And Autonomous Agents
+
+Use automation to reduce repetitive work, not to bypass approval.
+
+Candidate automated workflows:
+
+- Nightly or manual source indexing.
+- Vector index refresh after docs change.
+- Graph drift checks against Supabase IDs and Markdown paths.
+- Analytics imports and weekly summaries.
+- Media pre-indexing and candidate tagging.
+- Agent-generated proposed task bundles.
+- Claim-review queues that identify missing evidence or stale uncertainty labels.
+- Reminder/review reports for cross-domain blockers.
+- Cost and quota monitoring for paid services.
+
+Automation levels:
+
+| Level | Meaning | Approval Posture |
+|---|---|---|
+| Level 0: Manual | Human asks agent to run a workflow | Current default |
+| Level 1: Assisted | Agent drafts/summarizes/proposes, human decides | Safe early target |
+| Level 2: Scheduled read-only | Agent runs recurring reads/reports/indexes | Requires scoped approval |
+| Level 3: Proposed writes | Agent prepares write bundles for human approval | Requires strong provenance |
+| Level 4: Limited approved writes | Agent writes low-risk owned-domain records under delegation | Requires explicit delegation |
+| Level 5: High-consequence automation | Public, financial, sponsor, legal, launch, roadmap, live-control, schema, or destructive changes | Not allowed without explicit current approval |
+
+The near-term target is Level 1 and selected Level 2. Level 3 can be piloted for low-risk proposed-write bundles. Level 4 should wait until tooling, readback, rollback, and delegation are mature.
+
+## Agent Workflow Model
+
+### General Agent Routing
+
+When a user asks an agent a question:
+
+1. Classify the request.
+2. Identify source-of-truth needs.
+3. Read the minimum necessary systems.
+4. Preserve current/planned/proposed/aspirational separation.
+5. Return a grounded answer with evidence, uncertainty, downstream owners, and approval needs.
+6. Write only to the approved system, and only when scoped.
+7. Close with changed files, verification, not-changed surfaces, and unresolved questions.
+
+### Agent Routing Infrastructure To Build
+
+Each domain agent needs a small, explicit routing layer. This can start as documentation and later become App-owned tooling.
+
+Minimum routing record per agent:
+
+- Domain name.
+- Agent authority.
+- Allowed read systems.
+- Allowed write systems.
+- Approval gates.
+- Preferred retrieval systems.
+- Canonical source-of-truth fallback.
+- Domain handoff targets.
+- Closeout requirements.
+- Automation level allowed.
+- Visual/model permissions, if any.
+
+Required routing artifacts:
+
+| Artifact | Purpose | Owner |
+|---|---|---|
+| Agent data-access matrix | Shows which agent can read/query/propose/write each system | Company governance; App implementation support |
+| Tool routing registry | Maps tool names/connectors/helpers to safe use cases | App/Company |
+| Source-of-truth map | Prevents graph/vector/analytics layers from competing with canonical records | Company |
+| Approval matrix | Lists which writes require human approval and which can be delegated later | Company + domain owners |
+| Query templates | Reusable graph/vector/analytics queries by workflow | App + domain owners |
+| Evaluation set | Test questions and expected outputs for each system | Company + affected domains |
+| Closeout checklist | Forces reporting of changed files, records, systems, unresolved questions | Company |
+| Automation runbook | Defines schedule, logs, retries, readback, rollback, and alerting | App |
+
+The first version can live in this document or a follow-up reference file. A later App-owned implementation could expose routing through agent tools, MCP servers, local helpers, or the Planner/App operator surface.
+
+### Agent Data-Access Matrix
+
+| Agent | Markdown | Supabase | Graph | Vector | Analytics | Cache/Queue | Visual AI | Writes By Default |
+|---|---|---|---|---|---|---|---|---|
+| Company | Read/write Company docs when scoped | Read; write only approved Company Planner/records | Read derived graph | Read | Read summaries | No direct default | Read derived outputs | Company Markdown only when scoped |
+| Research | Read/write Research docs when scoped | Read Research records; approved Research writes only | Read/query ecological graph; propose corrections | Read | Limited | No direct default | Review visual evidence outputs | Research Markdown/proposed structured writes |
+| Content | Read/write Content drafts/packets when scoped | Read pipeline/calendar; approved Content writes only | Read claim/media/story graph | Read | Read content performance | No direct default | Use visual media summaries | Drafts/source packets/proposed content writes |
+| Web | Read Web docs/code when scoped | Read public-facing records | Read public claim/evidence graph | Read | Read website analytics | No direct default | Use approved media metadata | Web code/docs only when scoped |
+| App | Read implementation docs/code | Owns runtime/schema implementation when approved | Implements graph sync/tools when approved | Implements retrieval stack | Implements imports/tools | Owns cache/queue runtime | Owns local model integration | App code/schema only when scoped |
+| Growth | Read/write Growth docs when scoped | Read CRM/Planner when scoped; writes approved only | Read relationship/claim context | Read | Read audience/funnel analytics | No direct default | Limited | Growth docs/proposed CRM actions |
+| Brand | Read/write Brand docs when scoped | Read relevant public/context records | Read public claim/context graph | Read | Read campaign/audience summaries | No direct default | Review visual brand fit | Brand docs/copy drafts |
+| Financials | Read/write Financials docs when scoped | Read finance records when scoped; writes approved only | Usually no | Usually no | Read cost/performance summaries | No direct default | No default | Financial docs/approved finance records |
+| Hardware | Read/write Hardware docs when scoped | Read telemetry when scoped; live-control approved only | Read telemetry/ecology links if created | Read | Read telemetry analytics if created | No direct default | Visual inspection candidates | Hardware docs/proposed telemetry notes |
+| Raw Footage | Read/write routing docs when scoped | Read media records when scoped | Read media/evidence graph | Read media index | No default | No direct default | Primary visual AI user | Media notes/proposed metadata |
+
+No agent should receive broad write authority across all systems. Cross-domain write paths remain explicit approvals or future delegation.
+
+### Example: Company Agent
+
+Request:
+
+> What should we prioritize for the Aquatic Club talk this week?
+
+Likely routing:
+
+- Markdown: Company strategy, talk framing, current priorities, safety rules.
+- Supabase: Planner tasks, due dates, blockers, work programs, domain ownership.
+- Graph: claims, species histories, proof media, evidence paths relevant to talk themes.
+- Vector search: prior scripts, notes, source packets, captions, and public website framing.
+- Analytics warehouse: only if performance data or prior channel behavior matters.
+
+Likely output:
+
+- Priority recommendation.
+- Domain owners.
+- Evidence/proof assets needed.
+- Approval gates.
+- Planner writes that would require explicit approval.
+
+### Example: Research Agent
+
+Request:
+
+> Can we safely say Daphnia populations changed after the sealing event?
+
+Likely routing:
+
+- Graph: event-to-species-to-observation-to-media-to-claim paths.
+- Supabase: current species, observation, chronicle, and media records.
+- Vector search: source packets, transcripts, research notes.
+- Markdown: Research validation notes and uncertainty rules.
+
+Likely output:
+
+- Confidence label.
+- Evidence path.
+- Claim wording options.
+- What remains internal or needs review.
+- Proposed structured writes only if explicitly scoped.
+
+### Example: Content Agent
+
+Request:
+
+> Draft a public-safe short about Ghost Shrimp after sealing.
+
+Likely routing:
+
+- Graph: approved Ghost Shrimp claims and evidence/media relationships.
+- Vector search: prior scripts, captions, transcripts, story tone examples.
+- Supabase: content calendar and pipeline records to avoid duplicate content planning.
+- Markdown: Content voice guidance and source packet.
+
+Likely output:
+
+- Draft script.
+- Public-safe claim notes.
+- Media suggestions.
+- Content calendar/Planner write suggestions requiring approval.
+
+### Example: Web Agent
+
+Request:
+
+> Build or update a species page with the best proof.
+
+Likely routing:
+
+- Supabase: current public species fields, media, chronicles, website-facing records.
+- Graph: species-to-claim-to-evidence-to-media relationships.
+- Markdown: public claim boundaries, Brand guidance, Research review notes.
+- App/Web codebase: only when implementation is explicitly scoped.
+
+Likely output:
+
+- Proposed page content or implementation plan.
+- Public/private separation.
+- App/Web changes requiring explicit scope.
+- Public site behavior changes requiring approval.
+
+### Example: Growth Agent
+
+Request:
+
+> What did the Aquatic Club talk do for audience growth?
+
+Likely routing:
+
+- Analytics warehouse: website traffic, YouTube follows, QR scans, contact/support actions before and after the talk.
+- Supabase/CRM: approved relationship/contact records if scoped.
+- Markdown: Growth strategy and sponsor-safe rules.
+- Content/Web: campaign or post context.
+
+Likely output:
+
+- Performance summary.
+- Follow-up opportunities.
+- Sponsor-safe interpretation.
+- No sponsor or financial commitments unless explicitly approved.
+
+## Domain Ownership Map
+
+| Domain | Role In Operation Living Intelligence |
+|---|---|
+| Company | Program governance, source-of-truth model, dependency map, review cadence, cross-domain sequencing, approval discipline |
+| App | Runtime implementation, schema/migrations when approved, sync jobs, internal UI, MCP/tool bridges, credentials, monitoring, database integration |
+| Research | Ecological truth, species/biome interpretation, observation meaning, scientific uncertainty, claim safety, graph ontology for ecological relationships |
+| Content | Source packets, transcripts, story arcs, content calendar relationship, public/internal narrative routing, source-to-claim workflow |
+| Web | Public display rules, website data surfaces, public claim rendering, analytics tags and conversion paths when scoped |
+| Brand | Public language, identity fit, audience framing, support/sponsor-safe wording |
+| Growth | Audience analytics interpretation, CRM meaning, partner/sponsor funnel, event follow-up, commercial sequencing |
+| Financials | Cost review, paid-service budget impact, subscription approval, runway implications |
+| Hardware | Telemetry source boundaries, sensor data meaning, live-system safety, future telemetry warehouse inputs |
+| Raw Footage | Media evidence inventory, proof assets, footage/source routing, media provenance support |
+| Brain | Historical/archive lookup and retirement provenance only during probation |
+
+## Data Categories And Homes
+
+| Data Type | Canonical Home | Derived/Helper Home | Notes |
+|---|---|---|---|
+| Company strategy | Company Markdown | Vector index | Do not move to database as the main source |
+| Domain briefs | Company/domain Markdown | Vector index | Briefs remain human-readable |
+| Planner tasks/projects | Supabase | Analytics snapshots; vector summaries if useful | Supabase remains truth |
+| Programs/Operations | Supabase Planner if created; Company Markdown for governance | Analytics/graph summaries | Live Planner writes require approval |
+| Species records | Supabase Research tables | Graph; vector summaries | Research owns ecological meaning |
+| Observations | Supabase Research tables and Research notes | Graph; vector index | Evidence/provenance should be preserved |
+| Chronicles | Supabase/Web-facing records | Graph | Public chronology must not be distorted by import order |
+| Source packets | Markdown first | Graph references; vector index | Keep human-readable packets |
+| Public claims | Supabase/Markdown depending current workflow | Graph paths | Must preserve confidence/publicness labels |
+| Media assets | Supabase/App media library or filesystem until indexed | Graph references; vector captions/metadata | Raw media should not be duplicated blindly |
+| YouTube analytics | Analytics warehouse | Supabase summary if needed | Do not mix with content calendar truth |
+| Website analytics | Analytics warehouse | Supabase summary if needed | Use for trend analysis and campaign review |
+| CRM/contact funnel | Supabase/App/Growth CRM when approved | Analytics warehouse snapshots | Commitments remain approval-gated |
+| Agent telemetry | Analytics warehouse or logs | Dashboard summaries | Use after workflows stabilize |
+| Session cache | Redis/cache | None | Temporary only |
+
+## Pilot Scope
+
+### Pilot 1: Living Atlas Graph Packet
+
+Purpose:
+
+- Prove whether a graph database materially improves ecological reasoning, source provenance, and public-safe claim review.
+
+Suggested first packet:
+
+- Lake Post-Seal.
+- Flagfish.
+- Daphnia.
+- Ghost Shrimp.
+- Freshwater amphipods.
+- Copepods.
+- Slough Crayfish.
+- Pipeline 338 and Chronicle 30.
+- Existing source packet and Research validation notes.
+
+Pilot graph node types:
+
+- `Species`
+- `Biome`
+- `Event`
+- `Observation`
+- `Claim`
+- `MediaAsset`
+- `Chronicle`
+- `SourcePacket`
+- `ResearchReview`
+- `ContentItem`
+- `PublicSurface`
+- `DomainOwner`
+
+Pilot relationship types:
+
+- `OBSERVED_IN`
+- `AFFECTED_BY`
+- `CHANGED_AFTER`
+- `SUPPORTED_BY`
+- `CAPTURED_IN`
+- `MENTIONED_IN`
+- `PUBLICLY_RENDERED_AS`
+- `REVIEWED_BY`
+- `HAS_CONFIDENCE`
+- `HAS_PUBLICNESS_TIER`
+- `OWNED_BY`
+- `NEEDS_REVIEW_FROM`
+- `DERIVED_FROM`
+- `RELATED_TO`
+
+Pilot questions:
+
+1. What evidence supports saying the lake changed after sealing?
+2. Which species are connected to the Lake Post-Seal event?
+3. Which claims are public-safe, uncertain, or internal-only?
+4. Which media assets support Daphnia, Ghost Shrimp, and Flagfish claims?
+5. Which observations are not directly linked to the relevant pipeline or chronicle?
+6. Which public pages or content items could safely reuse this evidence?
+7. Which Research review notes are still blocking public wording?
+8. Which relationships are inferred rather than observed?
+9. Which source packet facts need structured Supabase write approval?
+10. Does graph traversal save enough time to justify continuing?
+
+Success criteria:
+
+- The graph answers at least 7 of the 10 pilot questions more clearly than current Markdown/Supabase lookup alone.
+- Evidence paths remain traceable back to source packets, Supabase IDs, or media paths.
+- Publicness and uncertainty labels remain visible.
+- No competing source of truth is created.
+- The pilot can be rebuilt from source data.
+- The workflow identifies at least one concrete cross-domain time savings or safety improvement.
+
+Recommended tool for pilot:
+
+- Start with local/self-hosted Memgraph Community for the graph pilot.
+- Do not start with a paid graph subscription unless local Memgraph cannot support the pilot evaluation.
+
+### Pilot 2: Analytics Warehouse For Audience Signals
+
+Purpose:
+
+- Centralize audience and performance data so Company, Content, Web, Growth, and Brand can understand what public work is doing over time.
+
+Initial sources:
+
+- YouTube Analytics API or YouTube Reporting API exports as the first analytics source.
+- Google Analytics or website event exports.
+- QR destination metrics.
+- Manual event/contact/support summary if no CRM integration exists yet.
+- Social post/export metrics when accessible.
+
+Initial questions:
+
+1. Did a specific post, talk, or website update drive traffic?
+2. Which videos send people to the website?
+3. Which topics produce retention, follows, or support interest?
+4. Did the Aquatic Club talk create measurable audience movement?
+5. Which QR destination or CTA performs best?
+6. Which content themes should inform future Content/Brand/Web planning?
+
+Recommended tool for pilot:
+
+- Start the analytics inventory with YouTube first.
+- Use MotherDuck/DuckDB for lightweight analytics unless YouTube/Google-source requirements make BigQuery the better fit.
+
+Success criteria:
+
+- YouTube data can be exported, normalized, and joined to content identity by date, video, topic, or campaign.
+- Later, YouTube and website data can be joined by date, content item, campaign, or destination.
+- The agent can produce a weekly or monthly performance summary without manual tab-hopping.
+- The warehouse does not become the source of truth for content calendar or CRM commitments.
+
+### Biome Telemetry Database Posture
+
+Current recommendation:
+
+- Do not add a separate time-series database for biome telemetry yet.
+- Keep `telemetry_snapshot` in Supabase/Postgres as the current-state/public-read fallback.
+- Keep `biome_telemetry` in Supabase/Postgres as the internal historical climate/control analysis table.
+- Treat telemetry analytics as Hardware/App operational data, not as part of the YouTube-first audience analytics warehouse.
+
+Rationale:
+
+- The current telemetry volume is still small enough for Postgres when indexed and managed carefully.
+- Supabase is already wired into App/Web/Hardware workflows for current telemetry and structured operational state.
+- A separate time-series database would add service management, credentials, backup/restore, sync drift, query routing, and agent-access complexity before the need is proven.
+- Telemetry should not gain a competing source of truth while the current monitoring and app paths are still stabilizing.
+
+Scaling path:
+
+1. Stay with Supabase/Postgres while row volume, query speed, and retention needs remain manageable.
+2. If telemetry grows, use standard Postgres techniques first: time indexes, native range partitioning, retention policies, and rollup/summary tables or materialized views.
+3. Avoid making Supabase TimescaleDB the default path for new work because Supabase has deprecated the extension for Postgres 17 projects.
+4. Add a dedicated time-series sidecar later only if high-resolution retention, long-history dashboards, heavy aggregations, or many more sensors make Postgres awkward.
+
+Possible future sidecar:
+
+- InfluxDB is the strongest default candidate for raw high-frequency telemetry if a separate time-series database becomes justified.
+- A managed TimescaleDB service outside Supabase can be reconsidered if Postgres-compatible time-series features become valuable enough to justify a separate managed database.
+
+Source-of-truth rule:
+
+- Supabase remains the source for current telemetry snapshots, approved operational summaries, and any App/Web-facing telemetry records.
+- Any future time-series database should begin as a derived raw-history store or analytical sidecar unless Company, Hardware, and App explicitly approve a different source-of-truth split.
+
+### Pilot 3: Retrieval Layer
+
+Purpose:
+
+- Improve agent access to notes, source packets, transcripts, briefs, drafts, and previous decisions.
+
+Recommended order:
+
+1. Inventory what should be indexed.
+2. Start with Supabase/pgvector or local prototype.
+3. Add Qdrant/Pinecone/Weaviate only after retrieval pain is proven.
+
+Success criteria:
+
+- Agents retrieve the right source packets and notes with fewer misses.
+- Retrieval results cite durable source paths or record IDs.
+- Public/private and uncertainty boundaries are not flattened by embeddings.
+
+### Pilot 4: Visual AI Media Intelligence
+
+Purpose:
+
+- Let agents visually work with miniBIOTA image and video files while preserving review boundaries.
+
+Initial sources:
+
+- A small Raw Footage or media folder selected by Josue.
+- Existing media assets already relevant to Lake Post-Seal or Aquatic Club proof.
+- A small set of known images/videos with expected labels to evaluate accuracy.
+
+Candidate tasks:
+
+1. Describe images/video clips in plain language.
+2. Identify candidate species, objects, scenes, or ecological events.
+3. Extract visible text from slides, labels, screenshots, or forms.
+4. Generate draft media tags.
+5. Locate objects or moments when the model supports coordinates or timestamps.
+6. Link candidate media evidence to graph claims for human review.
+
+Recommended tool posture:
+
+- Evaluate local Qwen2.5-VL-7B-Instruct or the best current local VLM before choosing a long-term model.
+- Use cloud multimodal fallback only if approved.
+- Start with read-only local file analysis and Markdown output.
+
+Success criteria:
+
+- The model helps locate or describe media evidence faster than manual browsing.
+- Outputs are clearly labeled as candidate AI annotations.
+- Research/Content can reject or correct outputs without contaminating source truth.
+- No media metadata is written to Supabase without approval.
+- Hardware cost/performance is acceptable for repeated use.
+
+## Phased Build Plan
+
+### Phase 0: Decision And Boundaries
+
+Outputs:
+
+- Confirm the approved Operation Living Intelligence name and current decision boundaries.
+- Confirm that Supabase remains operational truth.
+- Confirm that graph, vector, analytics, and cache layers start as derived/helper systems.
+- Confirm no paid service is started without approval.
+
+Downstream owners:
+
+- Company for governance.
+- App for technical implementation scoping.
+- Financials for cost review.
+
+Approval needed:
+
+- Name and program posture.
+- Any paid service.
+- Any schema, App, or database write.
+
+### Phase 1: Inventory And Map
+
+Outputs:
+
+- Data-source inventory.
+- Data-category-to-home map.
+- Access/credential map.
+- Current sync/export options.
+- Risk register for secrets, RLS, public/private data, and source-of-truth conflicts.
+
+Affected domains:
+
+- Company, App, Research, Content, Web, Growth, Financials, Raw Footage.
+
+Notes:
+
+- This phase can be docs-only.
+- Do not create live integrations yet.
+
+### Phase 2: Living Atlas Graph Pilot
+
+Outputs:
+
+- Local/free graph database.
+- Lake Post-Seal graph model.
+- Import script or manual import bundle.
+- Query examples.
+- Evaluation notes.
+
+Affected domains:
+
+- Research, Content, App, Company, Raw Footage, Web.
+
+Approval needed:
+
+- Any credentials.
+- Any paid database.
+- Any writeback to Supabase.
+- Any App integration.
+
+### Phase 3: Analytics Warehouse Pilot
+
+Outputs:
+
+- Analytics warehouse decision: MotherDuck/DuckDB vs BigQuery vs defer.
+- Initial YouTube and website metric schema.
+- Import/export workflow.
+- First weekly/monthly report template.
+
+Affected domains:
+
+- Content, Web, Growth, Brand, Company, App, Financials.
+
+Approval needed:
+
+- OAuth/API access.
+- Any paid plan.
+- Any public tracking or website behavior changes.
+
+### Phase 4: Retrieval Layer
+
+Outputs:
+
+- Indexing policy.
+- Embedding source list.
+- Metadata schema.
+- Retrieval evaluation set.
+- Agent citation rules.
+
+Affected domains:
+
+- Company, Research, Content, Brand, Web, App.
+
+Approval needed:
+
+- External API/service costs.
+- Indexed private/sensitive material policy.
+
+### Phase 5: Visual AI Media Pilot
+
+Outputs:
+
+- Local/cloud model evaluation note.
+- Hardware/runtime requirements.
+- Test media set.
+- Candidate annotation format.
+- Raw Footage/Content/Research review workflow.
+- Decision on whether to integrate with App Media Library later.
+
+Affected domains:
+
+- Raw Footage, Content, Research, App, Company, Hardware if local compute constraints matter.
+
+Approval needed:
+
+- Local model installation or large model downloads if outside existing environment.
+- Any cloud model/API cost.
+- Any media metadata writeback.
+- Any App Media Library integration.
+
+### Phase 6: Agent Routing And Tooling
+
+Outputs:
+
+- Agent source-routing rules by domain.
+- Read/write approval matrix.
+- Helper/tool bridge designs.
+- Closeout templates for multi-database work.
+- App-owned implementation plan if needed.
+
+Affected domains:
+
+- All active domains.
+
+Approval needed:
+
+- Any agent write capabilities.
+- Any cross-domain database access expansion.
+
+### Phase 7: Automation And Scheduled Workflows
+
+Outputs:
+
+- Automation level policy by workflow.
+- Scheduled read-only jobs for approved imports/reports/indexes.
+- Proposed-write bundle format.
+- Logs, monitoring, retries, and failure alerts.
+- Human approval surface for consequential changes.
+
+Affected domains:
+
+- Company, App, Research, Content, Web, Growth, Brand, Financials, Raw Footage.
+
+Approval needed:
+
+- Any scheduled job.
+- Any write-capable automation.
+- Any public, financial, sponsor, legal, launch, roadmap, schema, live-control, or destructive automation.
+
+### Phase 8: Operationalization
+
+Outputs:
+
+- Recurring review rhythm.
+- Backups and restore plan.
+- Cost monitoring.
+- Data quality checks.
+- Drift detection between Supabase/Markdown and derived systems.
+- Dashboard/report templates.
+
+Affected domains:
+
+- Company, App, Financials, Growth, Content, Research, Web.
+
+Approval needed:
+
+- Production-grade paid services.
+- Monitoring/alerting integrations.
+- Any public or operator UI.
+
+## Cost Posture
+
+Default posture:
+
+- Start free/local wherever possible.
+- Pay only after a pilot proves weekly value.
+- Financials should review recurring subscription impact before paid adoption.
+- Pilot budget is TBD as of 2026-05-13 while Josue continues finance planning with the Financials agent.
+
+Likely early costs:
+
+- Neo4j AuraDB Free or local Memgraph Community: likely no initial cost.
+- Neo4j AuraDB Professional: likely future candidate if graph becomes daily infrastructure.
+- MotherDuck or BigQuery: likely small early analytics cost, but depends on volume and query pattern.
+- Pinecone/Qdrant/Weaviate: defer unless Supabase/pgvector is insufficient.
+- Redis: defer unless runtime/session needs appear.
+- Local visual models: may be free in licensing but can require GPU/storage/time costs.
+- Cloud multimodal models: defer unless local visual AI is too weak or too slow.
+- Databricks: defer as enterprise-scale option.
+
+Cost decision rule:
+
+Prefer free/local first, but do not let free tools create a worse long-term system. Pay when the paid option clearly improves reliability, speed, accuracy, maintainability, security, or team-like usefulness enough to justify the cost.
+
+## Data Governance Rules
+
+### Source-Of-Truth Rules
+
+- Supabase remains truth for live structured operational state.
+- Markdown remains truth for durable strategy, governance, human-readable packets, and agent protocols.
+- Graph database starts as a derived relationship layer.
+- Vector database starts as a derived retrieval layer.
+- Analytics warehouse starts as a derived performance history layer.
+- Redis/cache is never durable truth.
+
+### Provenance Rules
+
+Every derived record should retain:
+
+- Source system.
+- Source record ID or file path.
+- Import timestamp.
+- Import method.
+- Confidence/publicness label where applicable.
+- Domain owner.
+- Whether the fact is observed, inferred, proposed, or approved.
+
+### Publicness Rules
+
+Public-facing claims must preserve:
+
+- Public/private/internal tier.
+- Research confidence.
+- Source evidence.
+- Review status.
+- Approved wording, if present.
+- Domain owner.
+
+The graph and vector layers must not turn internal research interpretation into public-safe language by default.
+
+### Writeback Rules
+
+Derived systems may suggest changes, but canonical writes go back to the owning source:
+
+- Supabase writes: explicit approval or approved domain delegation.
+- Markdown changes: scoped docs/memory edits.
+- App/schema changes: App-owned implementation approval.
+- Website changes: Web-owned implementation approval.
+- Research ecological records: Research-owned approval path.
+- Content calendar/pipeline changes: Content-owned approval path.
+- CRM/contact changes: Growth/App approval path.
+
+## Security And Credential Rules
+
+- Keep secrets in ignored local environment, user-level tool settings, OAuth, or approved App-owned credential paths.
+- Do not commit API keys, service-role keys, OAuth secrets, `.env` files, or database credentials.
+- Use read-only access first.
+- Use least-privilege credentials per tool.
+- Keep public/private data separation explicit.
+- Do not export sensitive records into third-party services without approval.
+- Treat analytics platform terms and YouTube/Google API policies as external constraints.
+- Financial, sponsor, CRM, and contact data require extra care and should not be indexed broadly without a policy.
+- Raw media should stay local by default unless Josue approves upload or cloud processing.
+- Local model downloads and runtimes should be documented, versioned, and reviewed for storage, compute, and license fit.
+
+## Sync And Drift Model
+
+Initial sync direction:
+
+```text
+Markdown + Supabase + exports
+        |
+        v
+Graph / Vector / Analytics derived layers
+        |
+        v
+Visual AI / automation candidate outputs
+        |
+        v
+Agent answers, dashboards, proposed changes
+        |
+        v
+Approved writes back to Markdown or Supabase
+```
+
+Drift checks should verify:
+
+- Graph records still point to existing source records.
+- Vector indexes are refreshed after source changes.
+- Analytics imports do not duplicate dates or reports.
+- Source-of-truth IDs are preserved.
+- Publicness labels did not disappear during sync.
+- Deleted/archived source records do not remain active in derived outputs.
+- Visual AI candidate annotations remain distinct from reviewed human/domain metadata.
+- Automated jobs log what they read, generated, proposed, or changed.
+
+## Review Rhythm
+
+Suggested cadence after kickoff:
+
+- Weekly during pilot build.
+- Every two weeks during active integration.
+- Monthly once stable.
+- Immediate review after any paid subscription, schema change, public tracking change, or cross-domain write path expansion.
+
+Each review should check:
+
+- Current phase.
+- Active blockers.
+- Cost posture.
+- Security/credential posture.
+- Domain owner needs.
+- Whether pilots have met success criteria.
+- Whether any derived layer is becoming an accidental source of truth.
+- Whether automation has exceeded its approved level.
+- Whether visual AI outputs are useful enough to keep or expand.
+- Whether Company report, domain reports, Planner records, or App implementation plans need updates.
+
+## Risks
+
+| Risk | Why It Matters | Mitigation |
+|---|---|---|
+| Too many databases too soon | Increases maintenance and confusion | Stage pilots; require success criteria before adding systems |
+| Competing sources of truth | Agents may write or trust the wrong place | Keep source-of-truth rules explicit and enforce writeback paths |
+| Paid services before proof | Adds recurring cost without clear value | Free/local pilots first; Financials review before subscription |
+| Public/private flattening | AI retrieval may expose internal or uncertain claims | Preserve publicness and confidence metadata everywhere |
+| App/runtime creep | Infrastructure planning may become unapproved App work | App owns implementation; schema/runtime changes require approval |
+| Analytics misinterpretation | Small data can create false confidence | Pair metrics with context and avoid overcommitting |
+| Credential sprawl | Secrets can leak or become unmanageable | Centralize credentials in approved local/OAuth/App paths |
+| Graph over-modeling | Too much ontology work can slow progress | Start with one packet and 10 questions |
+| Vector over-reliance | Similar text is not the same as true relationship | Use vector retrieval plus graph/provenance checks |
+| Agent write risk | Multi-database agents could change live state unsafely | Read-first posture and approval-gated writes |
+| Visual AI false positives | Models may misidentify species, events, or evidence | Treat outputs as candidate annotations; require Research/Content review |
+| Local model operations burden | Local VLMs can require GPU, storage, dependency maintenance, and batch tooling | Pilot with a small media set before committing |
+| Automation overreach | Scheduled agents may act beyond intended scope | Use automation levels, logs, readback, and approval gates |
+| Cutover disruption | Switching too early could break current workflows | Keep current workflow live until readiness gates pass |
+
+## Remaining Questions For Josue
+
+These are the main questions still open after the 2026-05-13 source checks, Planner setup, and follow-up choices:
+
+1. What is the maximum acceptable monthly cost for this whole intelligence stack during the pilot phase? Current answer: TBD pending Financials work.
+
+## Recommended Next Step
+
+Use a **graph-first kickoff** while running analytics, retrieval, and visual AI as scoped planning sidecars. The detailed projection scope is in `operation-living-intelligence-data-projection-matrix.md`:
+
+1. Start with the Lake Post-Seal graph pilot because it directly strengthens Operation Living Atlas and claim provenance.
+2. In parallel, inventory analytics sources and visual media workflows without connecting live services yet.
+3. Define the agent data-access matrix and approval model before giving any agent new tools.
+4. Keep current Markdown/Supabase/Planner workflows live until a pilot passes readiness gates.
+
+The graph-first kickoff is the strongest default because it directly supports Operation Living Atlas, claim safety, source provenance, public website readiness, visual proof routing, and agent reasoning.

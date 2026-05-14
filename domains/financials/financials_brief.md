@@ -29,12 +29,13 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 | Credit card debt | $56,674.65 (APRs 16.40%–28.49%) |
 | Founder capital | $33,500.00 at 0% APR |
 | Total liabilities | $90,174.65 |
-| Cash position | $282.35 business cash plus $13,177.78 personal runway support as of 2026-05-02 |
+| Cash position | $384.90 business cash as of 2026-05-14 plus $13,177.78 personal runway support as of 2026-05-02 |
 
 Financials project management is now Planner-integrated under
 `work_domains.key = financials` / `domain_id = 2`. After the 2026-05-12
-cross-domain cleanup and financial readback, Financials has 8 active work
-projects and 26 task rows (21 open, 5 done) after Operation Living
+cross-domain cleanup and financial readback plus the approved 2026-05-14
+Financials closeout for tasks `182` and `410`, Financials has 8 active work
+projects and 26 task rows (18 open, 8 done) after Operation Living
 Intelligence cost-review task `415` was added on 2026-05-14. Planner remains
 task-status truth; financial tables and close records remain
 balance/revenue/expense truth.
@@ -44,14 +45,26 @@ balance/revenue/expense truth.
 Planner/Supabase is the live Financials work queue for task status. Financial
 truth remains in financial tables and close records, not Planner task text.
 
-1. Collect May/current bank and card statements for spending visibility; Planner task `410` is scheduled for 2026-05-14.
-2. Capture utility cost estimates for biome operations
-3. Verify and update debt balances, minimum payments, and APRs
-4. Document tax obligations and filing requirements
-5. Build 3-6 month cash flow projection using current statements, cash snapshots, burn, debt payments, and planned purchases
+1. Capture utility cost estimates for biome operations
+2. Verify and update debt balances, minimum payments, and APRs
+3. Document tax obligations and filing requirements
+4. Build 3-6 month cash flow projection using current Chase visibility, current AmEx activity review, cash snapshots, burn, debt payments, and planned purchases
 
 ## Recent Milestones
 
+- **2026-05-14:** Financials completed the current statement visibility pass
+  for Planner task `410` with approval. January-April Chase Business Complete
+  Checking statements were reviewed, Chase current activity showed a 2026-05-06
+  Patreon deposit of $102.55 and a 2026-05-14 business cash balance of
+  $384.90, and those May revenue/cash receipt/balance records were added to
+  Supabase with readback. The AmEx current-activity screenshot was reviewed
+  through 2026-05-14; May AmEx expense writes were intentionally deferred until
+  the next official statement to avoid partial-month duplication. Planner tasks
+  `182` and `410` were marked done with approval.
+- **2026-05-14:** Financials added the missing 2026-03-25 PayPal/eBay Wyse
+  computer purchase as a posted $50.88 System Equipment expense after Josue
+  confirmed it was the Hardware Wyse computer for the local control network and
+  telemetry coordinator.
 - **2026-05-14:** Company updated Operation Living Intelligence Financials
   task `415` to review Twelve Labs free-tier limits and paid-plan thresholds
   only after Nemotron/Codex benchmark results exist. Qwen remains
@@ -89,8 +102,9 @@ truth remains in financial tables and close records, not Planner task text.
 
 - Utility costs not captured in operating expenses.
 - Tax obligations not documented.
-- May/current bank and card activity still needs to be collected before current-month spending visibility and runway forecasting are reliable.
-- Planner tasks `182` and `378` appear substantively resolved from the 2026-05-13 Financials session but still need explicit approval before being marked done.
+- May AmEx activity is reviewed from current activity but should wait for the
+  next official statement before statement-row import or partial-month expense
+  reconciliation.
 
 ## Cross-Domain Notes
 

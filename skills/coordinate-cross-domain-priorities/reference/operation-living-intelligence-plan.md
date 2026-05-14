@@ -1038,6 +1038,121 @@ Task `394` Company closeout criteria:
 - Company records the 8/10 pass result and "continue, but no-write/derived-only" recommendation.
 - The graph pilot is allowed to proceed only toward dry-run/readback planning, not live import, public rendering, App behavior, or canonical writes.
 
+#### Retrievable Source Inventory - Task 395
+
+Content/Research completed the task `395` docs-only retrievable source inventory on 2026-05-14:
+
+`M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-content-task-395-retrievable-source-inventory.md`
+
+Company should treat that artifact as the detailed source for which Content-owned and cross-domain materials are candidates for graph dry-run/readback, vector retrieval, visual AI candidate annotation, analytics, or Markdown-only context. The file is a Content planning inventory stored under the Research brief path provided by the handoff; if Content later relocates or mirrors it, Company should update this pointer rather than duplicate the inventory.
+
+Task `395` source inventory summary:
+
+| Area | Content/Research output |
+|---|---|
+| Bounded case | Uses Lake Post-Seal Living Atlas / `content_pipeline.id = 338` / `chronicles.id = 30` as the first retrievability design pass |
+| Included source classes | Living Atlas source packet, archived Content project notes, Research tasks `391-394`, named candidate footage/media recommendations, Content production setup notes, DaVinci workflow assumptions, and Supabase IDs as provenance pointers only |
+| Candidate feeds | Separates graph dry-run/readback, vector retrieval, visual AI candidate annotations, analytics, and Markdown-only operating context |
+| Publicness labels | Distinguishes public-safe candidate material, internal-only material, raw evidence material, review-needed material, and exclusions from the first retrieval seed |
+| Media boundary | Uses explicitly listed media paths/timecodes as candidate references only; no media metadata, `media_assets`, species-image, caption, or publication approval is implied |
+| Transcript gap | Records that `content_pipeline.id = 338` has `transcript = null`; the archived project final script may serve as script-equivalent planning context only with an explicit label |
+| Hardware/local compute | Captures phone/camera, macro lens, stabilization, audio, DaVinci, GPU, storage, export, and workflow watchouts as production context, not ecological evidence |
+| Validation questions | Requires source path/ID/owner/review preservation, public-output exclusion of internal/review-needed/raw material, vector distinction between final script and drafts, graph status separation, candidate-only media references, null-transcript handling, blocked-evidence readback, speed proof, and owner citation |
+
+Task `395` Company implications:
+
+- The Content/source inventory is now sufficient for a no-write, derived-only dry-run/readback design pass, but not for indexing, import, media metadata writes, visual AI annotations, public reuse, or App behavior changes.
+- Public-output reuse still needs Content/Web/Research approval rules and explicit publicness filters before it can be tested.
+- Raw Footage needs a read-only path/index strategy, candidate annotation storage policy, checksum/thumbnail/frame-extraction policy, backup readiness answer, and frame-level review owner.
+- Financials needs storage/backup and local processing cost gates before large-scale visual AI or indexing.
+- Company still needs to decide who approves the move from docs-only design to no-write dry-run/readback and what threshold proves OLI is faster or safer than Markdown/Supabase lookup.
+
+Task `395` Company closeout criteria:
+
+- The Content/Research source inventory artifact is linked from the Company OLI plan.
+- Candidate retrievable materials remain docs-only and derived-only.
+- The inventory does not approve graph import, vector ingestion, visual AI annotation, media metadata writes, App behavior, Planner updates, publication changes, or Supabase writes.
+
+#### Source Publicness And Indexing Plan - Task 396
+
+Content completed the task `396` docs-only source publicness and indexing plan on 2026-05-14:
+
+`M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-396-source-publicness-indexing-plan.md`
+
+Company should treat that artifact as the detailed source for how each task `395` source/material group is classified before any no-write dry-run/readback. The Company-side rule is:
+
+```text
+Indexability is not public safety.
+Every retrieved item must carry classification, allowed feed, publicness label,
+review owner, blocked public-use cases, and validation checks.
+```
+
+Task `396` classification summary:
+
+| Area | Content output |
+|---|---|
+| Classification vocabulary | Defines `safe-to-index`, `internal-only`, `review-needed`, `public-safe candidate`, `raw evidence only`, and `excluded` |
+| Allowed feeds | Limits all feed labels to no-write `graph dry-run`, `vector retrieval`, `visual AI candidate annotation`, `analytics`, and `Markdown-only` |
+| Source/material groups | Classifies the source packet, Research tasks `391-394`, archived project sections, pipeline/chronicle/observation pointers, null transcript gap, final script, story spine, production notes, prior transcript targets, production setup, and DaVinci tracker |
+| Candidate media groups | Separates public-safe candidate media, review-needed media, internal-only media, and excluded media by path/timecode with caption and claim blocks |
+| Hardware/local compute | Marks workstation, capture, lens, storage, GPU, export, and workflow notes as production context only, not ecological evidence |
+| Feed-level gates | Requires per-feed exclusions and minimum validation before graph dry-run, vector retrieval, visual AI candidate annotation, analytics, or Markdown-only readback |
+| Universal validation | Requires bounded source-set confirmation, source/owner/classification/publicness/review preservation, default public exclusion of internal/review-needed/raw/excluded material, blocked-evidence readback, transcript-null handling, media-reference-only behavior, ID-sensitive claim blocking, chronology separation, and unresolved owner reporting |
+
+Task `396` Company implications:
+
+- The Content/source lane now has a usable publicness/indexing gate for a later no-write dry-run/readback design.
+- `public-safe candidate` still means candidate only; it does not approve publication, captions, species images, media records, Web rendering, or public copy.
+- Section-level labeling is required for mixed documents like the archived Content project so final-script wording does not get blended with draft/story/session notes.
+- Any visual media use remains candidate-only until Raw Footage/Content/Research review confirms path, timecode/frame, caption risk, and publicness label.
+- The next Company/App decision point is where the no-write derived inventory lives and what benchmark proves faster/safer lookup.
+
+Task `396` Company closeout criteria:
+
+- The Content publicness/indexing artifact is linked from the Company OLI plan.
+- The projection matrix treats task `396` as a source-classification gate, not as an ingestion approval.
+- No graph import, vector ingestion, visual AI annotation, analytics job, media metadata, file move, public copy, publication record, Planner update, Supabase write, App behavior, Web behavior, or canonical Content/Research change is implied.
+
+#### Visual AI Feasibility And Backup Risk - Task 397
+
+Content completed the task `397` docs-only visual AI feasibility and backup-risk artifact on 2026-05-14:
+
+`M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-397-visual-ai-feasibility-and-backup-risk.md`
+
+Company should treat that artifact as the detailed source for whether a future local/private visual AI feasibility pass is reasonable and what storage/backup gates must be satisfied first. The Company-side rule is:
+
+```text
+A tiny no-write local/private visual test may be reasonable later.
+Scale, full scans, persistent derivatives, and production indexing are blocked
+until backup/storage and owner-review gates are solved.
+```
+
+Task `397` feasibility summary:
+
+| Area | Content output |
+|---|---|
+| Feasibility posture | `yes_later` for a tiny no-write local/private pass; `not_now` for any model run from this task; `blocked_for_scale` for batch processing, library scans, persistent derivatives, or production indexing |
+| Workstation assumptions | Windows 11 Pro, RTX 5060 Ti 16GB CUDA, DaVinci Resolve Studio, Samsung Galaxy S25 Ultra capture assumptions, macro lens, separate narration workflow, export settings, and production watchouts remain planning assumptions only |
+| Backup/storage gate | The 10TB raw media HDD and unresolved backup-drive gap block large-scale or automated processing, full-library scans, write-heavy workflows, persistent frame extraction, thumbnails, media fingerprinting, checksum sweeps, and model caches in media folders |
+| Future run requirements | Requires Company, Content, Raw Footage, App, Research, and Financials approval before any model run, plus verified read-only handling, exact file/timecode selection, allowed outputs, stop conditions, and no install/download/cloud/upload bundled into the test |
+| Task `398` constraints | Test set must use only task `395` media references and task `396` labels, prefer 3-5 items, max 6, avoid full clips, include at least one easy context item and at most one ID-sensitive item, exclude `20260501_071248.mp4`, and stop if the tool cannot prevent writes/uploads/broader scans |
+| Allowed outputs | Candidate annotation rows only: source path, timecode/frame, tool/run date, prompt, plain visual description, broad candidate label, advisory confidence, copied publicness label, review owner, blocked public-use cases, and human review note |
+| Forbidden outputs | Media metadata, `media_assets`, `species_images`, Supabase, Planner, graph, vector, App/Web writes, public captions, alt text, species copy, chronicle copy, publication notes, strong organism IDs, ecological outcome claims, establishment/recruitment/causation claims, checksums, thumbnails, frame exports, or persistent extracted media |
+
+Task `397` Company implications:
+
+- Task `398` may select a small test set, but it should not run models or approve the run protocol unless separately scoped.
+- The first media set should favor harmless context/scene-description items, with at most one ID-sensitive item only if the goal is to test blocked-claim behavior.
+- Raw Footage must approve read-only access and cache/output handling before any run.
+- Research must define forbidden and allowed organism wording before any ID-sensitive item is tested.
+- Financials must decide whether a tiny local GPU run is acceptable without purchase approval and what backup threshold blocks clip-based tests.
+
+Task `397` Company closeout criteria:
+
+- The Content feasibility/backup-risk artifact is linked from the Company OLI plan.
+- The projection matrix treats task `397` as a feasibility and storage-risk gate, not a model-run approval.
+- No model install, visual AI run, file move, media scan, metadata write, Supabase/Planner record, graph data, vector index, App/Web behavior, upload, purchase, or public-use approval is implied.
+
 Content project:
 
 - Inventory source packets, transcripts, scripts, production notes, footage references, and hardware/local compute assumptions that should be retrievable.

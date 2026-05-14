@@ -173,6 +173,48 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   behavior, public rendering, canonical write, Content/Web/media/species/
   observation/chronicle record, canonical ecology, or source-of-truth record
   changed.
+- **2026-05-14:** Content/Research completed Operation Living Intelligence
+  task `395` as the docs-only retrievable source inventory:
+  `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-content-task-395-retrievable-source-inventory.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  detailed source for source packets, scripts, archived Content project notes,
+  Research tasks `391-394`, named candidate footage/timecodes, Content
+  production setup, DaVinci workflow assumptions, Supabase provenance pointers,
+  candidate feed routing, publicness/review labels, transcript gaps, and
+  validation questions before any retrieval prototype. The inventory supports
+  a no-write, derived-only dry-run/readback design pass only. No Supabase,
+  Planner, Content canonical record, App behavior, media metadata, file move,
+  media scan, graph import, vector index, visual AI annotation, publication,
+  public behavior, or source-of-truth record changed.
+- **2026-05-14:** Content completed Operation Living Intelligence task `396`
+  as the docs-only source publicness and indexing plan:
+  `M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-396-source-publicness-indexing-plan.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  source-classification gate for task `395` materials. The plan defines
+  safe-to-index, internal-only, review-needed, public-safe candidate, raw
+  evidence only, and excluded classifications; restricts allowed feeds to
+  no-write graph dry-run, vector retrieval, visual AI candidate annotation,
+  analytics, or Markdown-only; and requires publicness labels, review owners,
+  blocked public-use cases, section-level labels, transcript-null handling,
+  media-reference-only behavior, ID-sensitive claim blocking, chronology
+  separation, and owner readback before any prototype. No Supabase, Planner,
+  Content canonical record, App behavior, Web/public behavior, graph import,
+  vector index, analytics job, visual AI annotation, media metadata, file move,
+  publication record, or source-of-truth record changed.
+- **2026-05-14:** Content completed Operation Living Intelligence task `397`
+  as the docs-only visual AI feasibility and backup-risk artifact:
+  `M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-397-visual-ai-feasibility-and-backup-risk.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  feasibility/storage gate before task `398` selects a small test set. The
+  artifact says a tiny no-write local/private visual AI feasibility pass may
+  be reasonable later, but no model run is approved now; batch processing,
+  full-library scans, persistent derivatives, production indexing, thumbnails,
+  checksum sweeps, and source-folder model caches remain blocked by the
+  backup-drive gap and missing owner approvals. Any later output is limited to
+  candidate annotation rows for human review. No model install, visual AI run,
+  file move, media scan, metadata write, Supabase/Planner record, graph data,
+  vector index, App/Web behavior, upload, purchase, public-use approval, or
+  source-of-truth record changed.
 - **2026-05-14:** Company continued Operation Living Intelligence beyond the
   Company lead stages by mapping App boundary task `386` at the
   planning/readiness level. The map separates App-owned Planner runtime,

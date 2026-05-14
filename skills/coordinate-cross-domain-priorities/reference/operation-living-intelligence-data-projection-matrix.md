@@ -477,6 +477,9 @@ Recommended first warehouse:
 | `chronicle_subject_links` | Chronicle -> species/biome/system/biosphere | 1 | Public relationship routing | Content/Web/Research approval |
 | Content project docs | Vector chunks, SourcePacket links | 1 | Script and source evidence retrieval | Content repo edits only when scoped |
 | Living Atlas source packets | Memgraph `SourcePacket`, vector chunks, `Claim` nodes | 1 | Provenance and claim review | Content/Research approval for proposed writes |
+| Task `395` retrievable source inventory | Dry-run manifest/source manifest input only | 1 | Bounded Lake Post-Seal source/material/media/hardware inventory for graph/vector/visual/analytics design | Docs-only; no graph import, vector ingestion, media annotation, App behavior, publication, Planner, or Supabase write |
+| Task `396` source publicness/indexing plan | Classification gate for dry-run manifest | 1 | Source/material/feed labels, review owners, blocked public-use cases, and validation checks before any readback prototype | Docs-only; indexability is not public safety and no ingestion/public/App/write path is approved |
+| Task `397` visual AI feasibility/backup-risk plan | Feasibility and storage-risk gate | 1 | Workstation assumptions, backup-drive gap, tiny-test constraints, candidate annotation fields, and approval gates | Docs-only; no model run, install, media scan, persistent derivative, upload, purchase, or media/App/Web/write path is approved |
 
 ### Web And Public Relationship Graph
 

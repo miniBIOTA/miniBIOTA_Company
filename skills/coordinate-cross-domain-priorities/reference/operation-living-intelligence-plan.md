@@ -1326,6 +1326,87 @@ Task `414` Company closeout criteria:
 - The projection matrix treats task `414` as a review output-shape gate, not DaVinci workflow execution.
 - No model run, DaVinci edit, media operation, metadata write, App/Web behavior, graph/vector activity, Supabase/Planner write, upload, purchase, public use, publication, or source-of-truth change is implied.
 
+#### Graph Cost Review - Task 406
+
+Financials completed the task `406` docs-only graph cost review on 2026-05-14:
+
+`M:\miniBIOTA\miniBIOTA_Financials\memory\09-operation-living-intelligence-graph-cost-review.md`
+
+Company should treat that Financials memory note as the graph-tool cost gate for the first OLI graph pilot. The Company-side rule is:
+
+```text
+Stay no-cost and Memgraph-first.
+Use Neo4j Aura Free only as a bounded fallback/comparison if local Memgraph is blocked
+and the dataset is approved for cloud placement.
+Do not approve paid graph tooling until task 409, source manifests, owner/rollback,
+and a real free/local limitation exist.
+```
+
+Task `406` cost review summary:
+
+| Area | Financials output |
+|---|---|
+| Current graph need | Narrow Lake Post-Seal derived graph pilot for relationship traversal, provenance, confidence/publicness/review labels, and readback; not production infrastructure |
+| Default posture | Local Memgraph Community first when implementation is later approved |
+| Cloud fallback | Neo4j Aura Free only as a bounded comparison/fallback if local Memgraph is blocked and App/Research/Content approve the dataset for cloud placement |
+| Paid deferrals | Defer Neo4j Aura Professional, Business Critical, VDC, Memgraph Cloud, Memgraph Enterprise, graph analytics/AuraDS/GDS, GraphRAG/runtime tooling, and production monitoring/support until proven need |
+| Paid threshold | Requires task `409`, source manifest, export/privacy/readback format, owner/review cadence/rollback owner, documented free/local limitation, Financials monthly max, billing owner, trial end date, cancellation path, and Company/App/vendor/security approval |
+| Recommendation | Avoid recurring graph cost until the pilot proves graph traversal materially improves evidence safety, review routing, or time-to-answer |
+
+Task `406` Company implications:
+
+- Task `406` is a cost gate, not implementation approval.
+- Task `409` remains required before graph import/export/run-pattern decisions.
+- Payment-method setup, subscription start, cloud resource creation, and paid trial conversion all require explicit approval.
+- Free trials that require a payment method should be treated as paid tooling unless Financials explicitly approves otherwise.
+- The first paid graph monthly ceiling remains TBD for Financials.
+
+Task `406` Company closeout criteria:
+
+- The Financials graph-cost artifact is linked from the Company OLI plan.
+- The projection matrix treats task `406` as the graph-cost approval gate.
+- No purchase, subscription, account, cloud resource, database instance, migration, graph import, Supabase/Planner write, App behavior, public behavior, financial record, or financial commitment is implied.
+
+#### OLI Cost Thresholds And Approval Criteria - Task 407
+
+Financials completed the task `407` docs-only cost thresholds and approval criteria artifact on 2026-05-14:
+
+`M:\miniBIOTA\miniBIOTA_Financials\memory\10-operation-living-intelligence-cost-thresholds.md`
+
+Company should treat that Financials memory note as the spending and approval framework for OLI graph, vector, analytics, cache/runtime, automation, local model, and visual AI/cloud benchmark tooling. The Company-side rule is:
+
+```text
+All paid OLI tooling ceilings are TBD.
+Until Josue sets category or whole-stack ceilings, the effective ceiling for new paid OLI tooling is $0.
+Free/local planning may continue, but paid, cloud, upload, account, install, and write-capable actions require explicit approval.
+```
+
+Task `407` threshold summary:
+
+| Area | Financials output |
+|---|---|
+| Free/local defaults | Memgraph Community, pgvector/local retrieval, DuckDB/export planning, no cache by default, manual/proposed-write automation, already-available local capabilities, and Nemotron/Codex local/private design first |
+| Financials review triggers | Recurring subscriptions, paid tiers, usage billing, free trials requiring payment, cloud resources, meaningful local hardware/storage/electricity/backup/maintenance costs, shared vendor accounts, or benchmarks likely to become paid ongoing use |
+| Explicit approval gates | Payment setup, paid/free trial with billing details, cloud accounts/resources/API keys/OAuth, tool installs, large model downloads, uploads, imports/exports/sync jobs, scheduled automation, live writes, schema/App/Web/public behavior changes, and commitments |
+| Monthly ceilings | Graph, vector, analytics, cache/runtime, automation, local models, visual AI/cloud benchmark, and whole OLI stack are all `TBD / not approved` |
+| Trial rules | Free tiers without payment may be evaluated only after data/privacy/account approval; trials with payment method or auto-conversion count as paid tooling |
+| Rollback requirements | Cancellation owner, billing owner, domain owner, data owner, renewal/trial date, export/deletion path, confirmation method, fallback workflow, and source-of-truth protection before paid/cloud adoption |
+| Owner/benefit/rollback | No paid/cloud tool should pass review without named owners, specific weekly value free/local cannot deliver, and written cancellation/deletion/export/fallback path |
+
+Task `407` Company implications:
+
+- Task `407` is an approval framework, not spend approval.
+- Broad approval to "try tools" is not enough for paid, cloud, upload, account, install, or write-capable work.
+- Free trials requiring payment details should be tracked as paid tooling before activation.
+- The whole OLI pilot stack still needs a Company + Financials monthly ceiling before any paid adoption.
+- The interim default is no new paid OLI tooling.
+
+Task `407` Company closeout criteria:
+
+- The Financials cost-threshold artifact is linked from the Company OLI plan.
+- The projection matrix treats task `407` as the cross-category Financials approval gate.
+- No purchase, subscription, account, cloud resource, tool install, Supabase/Planner write, financial record, App behavior, public behavior, graph/vector/cache/model activity, media upload, or commitment is implied.
+
 Content project:
 
 - Inventory source packets, transcripts, scripts, production notes, footage references, and hardware/local compute assumptions that should be retrievable.

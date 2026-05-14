@@ -288,6 +288,8 @@ This ledger keeps the earlier database research from disappearing into broad cat
 | PostgreSQL + pgvector | Yes, first vector layer | Lowest-friction semantic retrieval because it stays close to Supabase/Postgres records. |
 | Memgraph | Yes, first graph layer | Best current fit for local/free graph projection, relationship reasoning, and agent routing. |
 | Neo4j | Watchlist | Strong graph option, but less aligned with the current free/local-first decision and the $65/month concern. |
+| Financials task `406` graph cost review | Yes, cost gate | Stay no-cost and Memgraph-first; use Neo4j Aura Free only as bounded fallback/comparison after cloud-data approval; defer paid graph tooling until task `409`, manifests, rollback owner, and real free/local limitation exist. |
+| Financials task `407` cost thresholds | Yes, cross-category approval gate | All category ceilings remain TBD; effective interim ceiling is $0 for new paid OLI tooling until Josue sets ceilings; paid/cloud/upload/account/install/write-capable actions require explicit approval. |
 | DuckDB | Yes, first analytics warehouse | Best local-first path for YouTube and website analytics files without committing to a cloud warehouse. |
 | MotherDuck | Optional upgrade | Use if analytics needs cloud sharing, collaboration, or remote access. |
 | BigQuery | Optional Google-native upgrade | Use if YouTube/Google Analytics integration becomes easier or more valuable there than DuckDB. |

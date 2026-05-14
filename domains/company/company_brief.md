@@ -265,6 +265,33 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   operation, metadata write, App/Web behavior, graph/vector activity,
   Supabase/Planner write, upload, purchase, public-use approval, publication
   approval, or source-of-truth record changed.
+- **2026-05-14:** Financials completed Operation Living Intelligence task
+  `406` as the docs-only graph cost review:
+  `M:\miniBIOTA\miniBIOTA_Financials\memory\09-operation-living-intelligence-graph-cost-review.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  graph-cost gate. The recommendation is no-cost and Memgraph-first; Neo4j
+  Aura Free is only a bounded fallback/comparison if local Memgraph is blocked
+  and the dataset is approved for cloud placement; paid graph tooling remains
+  deferred until task `409`, source manifests, owner/rollback, a Financials
+  monthly ceiling, and a real free/local limitation exist. No purchase,
+  subscription, account, cloud resource, database instance, migration, graph
+  import, Supabase/Planner write, App behavior, public behavior, financial
+  record, financial commitment, or source-of-truth record changed.
+- **2026-05-14:** Financials completed Operation Living Intelligence task
+  `407` as the docs-only cost thresholds and approval criteria artifact:
+  `M:\miniBIOTA\miniBIOTA_Financials\memory\10-operation-living-intelligence-cost-thresholds.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  cross-category Financials approval gate. Graph, vector, analytics,
+  cache/runtime, automation, local model tooling, visual AI/cloud benchmark,
+  and whole-stack OLI paid ceilings remain `TBD / not approved`; until Josue
+  sets ceilings, the effective new paid-tool ceiling is `$0`. Paid tiers,
+  payment-method trials, cloud resources, tool installs, large model
+  downloads, media uploads, accounts/API keys/OAuth, scheduled jobs,
+  write-capable automation, and live writes require explicit approval with
+  owner, benefit, and rollback/cancellation criteria. No purchase,
+  subscription, account, cloud resource, tool install, Supabase/Planner write,
+  financial record, App behavior, public behavior, graph/vector/cache/model
+  activity, media upload, commitment, or source-of-truth record changed.
 - **2026-05-14:** Company continued Operation Living Intelligence beyond the
   Company lead stages by mapping App boundary task `386` at the
   planning/readiness level. The map separates App-owned Planner runtime,

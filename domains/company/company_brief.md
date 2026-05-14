@@ -143,6 +143,28 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   not grant new tool access, credentials, App bridge implementation,
   automation, cross-domain write authority, public behavior, paid service,
   Planner/Supabase write, or source-of-truth change.
+- **2026-05-14:** Company scoped App readiness task `389` as the local/private
+  visual-model worker boundary for the Nemotron/Codex media-intelligence path.
+  The worker is defined as a file-based sidecar that may produce candidate
+  JSON/JSONL annotations, Markdown notes, and pull-sheet drafts from a future
+  approved bounded media manifest. Nemotron/Codex remains the first lane, Qwen
+  remains fallback/benchmark only, and Twelve Labs remains a later bounded
+  comparison after a usable local/private workflow exists. No model install,
+  model download, dependency install, raw media scan, cloud upload, App worker,
+  App runtime change, schema change, storage write, media metadata write,
+  public behavior, publication, automation, or source-of-truth change was
+  approved.
+- **2026-05-14:** Company scoped App readiness task `390` as the approval and
+  readback requirement for any future App schema, runtime, helper, bridge,
+  storage, media metadata, automation, or canonical writeback path related to
+  Operation Living Intelligence. Future App-affecting implementation now needs
+  an approval packet naming the action, owners, source inputs, write target,
+  scope, safety labels, validation/readback, and rollback/fallback. Required
+  readback is defined for schema/migrations, runtime helpers, media metadata,
+  storage, candidate annotation files, Planner writes, public behavior, paid
+  services/API/OAuth, and automation. No App implementation, schema/runtime
+  change, storage write, media metadata write, public behavior, paid service,
+  automation, or source-of-truth change was approved.
 - **2026-05-14:** Company defined **Operation Living Intelligence Stage 5** as
   the post-Aquatic Club Talk implementation-readiness decision. After the
   2026-06-14 talk closeout, the first technical readiness lane should be task

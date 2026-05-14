@@ -769,6 +769,119 @@ Task `388` closeout criteria:
 - The registry can inform later App implementation without granting tool access by itself.
 - Task `389` can use the registry to keep visual-model worker design outside App runtime until approved.
 
+#### Local Visual-Model Worker Boundary - Task 389
+
+Task `389` defines the local/private visual-model worker boundary for the Nemotron/Codex media-intelligence path without changing App runtime. This is a design boundary only. It does not approve a model install, model download, raw media scan, cloud upload, App integration, background worker, GPU setup, dependency install, media metadata write, storage write, or public/media claim.
+
+Worker boundary decision:
+
+```text
+Codex may design a file-based sidecar worker.
+Nemotron/Codex is the preferred first analysis lane.
+Qwen remains fallback/benchmark only.
+Twelve Labs remains a later bounded benchmark after a usable local/private workflow exists.
+The worker produces candidate files, not App records.
+```
+
+Allowed sidecar responsibilities:
+
+| Responsibility | Allowed in task 389? | Boundary |
+|---|---:|---|
+| Worker architecture sketch | Yes | File-based sidecar only; no App runtime integration |
+| Input manifest shape | Yes | Lists approved files/assets only; no broad folder scan |
+| Candidate annotation schema | Yes | JSON/JSONL or Markdown candidate outputs only |
+| Clip pull-sheet shape | Yes | Content review aid, not DaVinci/App automation |
+| Model route notes | Yes | Nemotron-first, Qwen fallback, Twelve Labs later benchmark |
+| Review loop | Yes | Content reviews story usefulness; Research reviews ecological claims; App reviews metadata/runtime boundaries |
+| Hardware/storage checklist | Yes | Readiness checklist only; no install or dependency change |
+| Cost/privacy checklist | Yes | Required before hosted/API/cloud path |
+
+Blocked until separate approval:
+
+- Installing or downloading Nemotron, Qwen, CUDA/NVIDIA/NIM, vLLM, SGLang, TensorRT-LLM, Python packages, Docker images, or any model runtime dependency.
+- Running a model over raw media.
+- Broadly scanning, indexing, moving, copying, uploading, or reindexing the raw media folder.
+- Creating App workers, IPC routes, UI, schema, migration, service, queue, scheduler, or helper code.
+- Writing `media_assets`, media tags, media links, storage records, thumbnails, public copy, or ecological claims.
+- Uploading raw media or persistent indexes to Twelve Labs, NVIDIA-hosted services, or any cloud video/model platform.
+- Treating model labels, captions, or timestamps as reviewed truth.
+
+Candidate file contract:
+
+| Field | Purpose |
+|---|---|
+| `source_ref` | Local file path or App media asset reference when approved |
+| `time_start` / `time_end` | Optional video timestamp range |
+| `frame_ref` | Optional still/frame reference if created by an approved run |
+| `description` | Plain-language visual/audio description |
+| `candidate_labels` | Candidate species, object, event, behavior, or system labels |
+| `story_role` | Evidence, context, transition, beauty shot, tension, Q&A support, or close |
+| `claim_support_type` | What kind of claim the clip/image might support |
+| `confidence` | Model/human confidence note, including uncertainty |
+| `publicness` | Internal, review-needed, or public-candidate label |
+| `review_owner` | Content, Research, App, Web, or Raw Footage owner needed next |
+| `model_route` | Nemotron, Qwen fallback, Twelve Labs benchmark, or manual note |
+| `model_version` / `prompt_version` | Exact versions after an approved run |
+| `generated_at` | Timestamp after an approved run |
+
+Task `389` closeout criteria:
+
+- The visual worker is defined as a sidecar candidate-output workflow, not App runtime.
+- Nemotron/Codex is preserved as the first lane; Qwen is fallback/benchmark only.
+- Twelve Labs remains a later bounded comparison, not the first backend.
+- Candidate annotations remain review artifacts until Content/Research/App approve any write path.
+- The boundary gives task `390` enough structure to define approval/readback requirements for future App schema, media metadata, or writeback paths.
+
+#### App Approval And Readback Requirements - Task 390
+
+Task `390` defines the approval and readback requirements for any future App schema, media metadata, storage, runtime, helper, or writeback path related to Operation Living Intelligence. This is a governance requirement only. It does not approve the future writes, schema changes, App code changes, migrations, workers, services, model runs, media metadata writes, storage writes, or public behavior changes.
+
+Approval packet required before any App-affecting implementation:
+
+| Required item | Why it matters |
+|---|---|
+| Change type | Distinguish schema, runtime, helper, storage, media metadata, App UI, worker, queue, scheduled job, or canonical writeback |
+| Owning domain | App owns runtime/schema/tooling; Content/Research/Web/Raw Footage/Financials own review meaning where relevant |
+| Source records/files | Exact tables, rows, file paths, media asset IDs, storage buckets, or docs touched |
+| Derived input | Export, manifest, candidate annotation file, model output, graph result, vector result, or analytics report being used |
+| Proposed write target | Exact table/file/path/API/UI behavior that would change |
+| Approval scope | Single run, bounded batch, recurring job, one-off schema change, or future delegated workflow |
+| Validation plan | Queries, counts, sample checks, UI checks, or file checks that prove the change did what it claimed |
+| Readback plan | What will be read back immediately after the action |
+| Rollback/fallback | How to undo, ignore, rebuild, or fall back to current Markdown/Supabase/App behavior |
+| Risk labels | Public/private, confidence, claim safety, credential, cost, security, source-of-truth, and domain-owner risks |
+
+Approval gates by write class:
+
+| Write class | Required approval before action | Required readback after action |
+|---|---|---|
+| App schema or migration | App-scoped approval plus explicit migration scope | Migration applied status, affected table/column/index/policy list, sample query or schema inspection |
+| App runtime/helper/bridge | App-scoped approval for code/runtime path | Tool/bridge route exercised in read-only mode, logs or readback showing no unintended writes |
+| Media metadata write | App + Content + Research approval, and Raw Footage/Web if public proof is implicated | Changed media rows/tags/links/review fields plus before/after summary |
+| Storage upload/delete/policy | App + Web approval, and Content/Research if proof/public assets are implicated | Bucket/path/object readback, public/private access check, rollback path |
+| Candidate annotation file creation | Approval for bounded run/test set | File count, schema check, model/prompt version, skipped/error list, confirmation no canonical record changed |
+| Planner/Supabase task or project write | Record-owner approval or standing delegation | Changed row readback with id, status/date/link fields, and approval note |
+| Public website behavior/copy/tracking | Web + Brand/Research/Content/Growth as applicable | Route/copy/event readback or implementation verification |
+| Paid service/API/OAuth | Financials + App + owning domain approval | Account/key/storage/cost boundary confirmation without exposing secrets |
+| Automation/scheduled job | App + Company + owning domain approval | Run log, source read list, output list, skipped/error list, and proof of no unapproved writes |
+
+Default readback standard:
+
+- Read back the exact row, file, object, route, or output that changed.
+- Include stable IDs, paths, timestamps, and owner/domain fields where available.
+- Confirm whether the action was read-only, proposed-write only, or canonical write.
+- Confirm whether publicness, confidence, review status, and source IDs survived the action.
+- Confirm no unrelated tables, files, storage buckets, public routes, or Planner records changed.
+- Record any failed/skipped item and the next owner.
+
+Task `390` closeout criteria:
+
+- Every future App-affecting OLI action has an approval packet shape.
+- Schema/runtime/media/storage/writeback classes each have explicit approval and readback requirements.
+- Candidate annotations remain separate from canonical media metadata.
+- Derived graph/vector/analytics/model outputs cannot write canonical App/Supabase/Web records by implication.
+- The App lane is ready to hand off to Research task `391` without leaving hidden App write authority behind.
+
 Research project:
 
 - Define the first graph ontology for species, biomes, observations, events, claims, media, source packets, publicness, confidence, and reviews.

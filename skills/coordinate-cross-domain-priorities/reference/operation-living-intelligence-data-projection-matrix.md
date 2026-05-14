@@ -608,6 +608,83 @@ Router invariants:
 - The router should prefer the narrowest sufficient source set.
 - Future App implementation should expose registry-backed tools through App-approved bridges only.
 
+#### Local Visual-Model Worker Boundary For Task 389
+
+Task `389` defines the projection boundary for a local/private visual-model worker. It is a file-based sidecar design, not an App runtime change. It does not approve model installation, dependency installation, media processing, cloud upload, App worker code, storage writes, media metadata writes, or publication.
+
+Worker posture:
+
+| Boundary | Task 389 design value | Not approved |
+|---|---|---|
+| Input | Approved file/asset manifest for a bounded test set | Broad raw-folder scan, reindex, file move, or cloud upload |
+| Processing | Nemotron/Codex-first candidate analysis design | Model install/download/run or GPU/runtime setup |
+| Fallback | Qwen-style local model lane retained as fallback/benchmark | Treating Qwen as primary or permanent commitment |
+| Cloud benchmark | Twelve Labs later on the same bounded set after local/private workflow exists | Persistent cloud index, paid plan, broad upload, or backend adoption |
+| Output | Candidate JSON/JSONL, Markdown notes, and pull-sheet drafts | Canonical `media_assets`, tags, captions, storage records, or public claims |
+| Review | Content story usefulness, Research ecological claim safety, App metadata/runtime boundary | Unreviewed model output becoming truth |
+
+Candidate annotation minimum fields:
+
+| Field | Required? | Notes |
+|---|---:|---|
+| `source_ref` | Yes | Local file path or approved App media asset reference |
+| `time_start`, `time_end` | For video | Timestamp range when known |
+| `description` | Yes | Plain-language visual/audio description |
+| `candidate_labels` | Yes | Species, object, event, behavior, system, or story tags |
+| `story_role` | Preferred | Evidence, context, transition, beauty shot, tension, Q&A support, close |
+| `claim_support_type` | Preferred | What claim the media may support |
+| `confidence` | Yes | Include uncertainty and model limitations |
+| `publicness` | Yes | Internal, review-needed, or public-candidate |
+| `review_owner` | Yes | Content, Research, App, Web, or Raw Footage |
+| `model_route` | Yes | Nemotron, Qwen fallback, Twelve Labs benchmark, manual |
+| `model_version`, `prompt_version`, `generated_at` | After approved run | Required when real model outputs exist |
+
+Readback expectations for any future approved run:
+
+- Count input files/clips processed and skipped.
+- List model route, model version, prompt version, and runtime path.
+- List output files created.
+- List candidate labels requiring Research review.
+- List candidate clips requiring Content review.
+- List any file that failed, timed out, or was excluded.
+- Confirm no App media metadata, Storage record, public site record, or canonical source was written.
+
+#### App Approval And Readback Requirements For Task 390
+
+Task `390` is the hard stop between derived OLI outputs and App-owned implementation/write paths. Any future App schema, runtime, helper, bridge, storage, media metadata, automation, or canonical writeback path needs an explicit approval packet and immediate readback. This section does not approve any of those actions.
+
+Approval packet minimum:
+
+| Requirement | Minimum detail |
+|---|---|
+| Proposed action | Read-only query, export, candidate file creation, schema change, runtime/helper change, media metadata write, storage write, Planner write, public behavior change, or automation |
+| Owner approvals | App plus affected domain owners such as Content, Research, Web, Raw Footage, Growth, Financials, or Company |
+| Source inputs | Exact source rows, file paths, media asset ids, source manifest, corpus version, model output, graph result, vector result, or analytics export |
+| Write target | Exact table/field, file/path, bucket/object, route, helper, worker, or runtime surface |
+| Scope | One row/file, bounded batch, one-off run, recurring job, migration, or delegated workflow |
+| Safety labels | Public/private, confidence, review status, credential, cost, security, and source-of-truth implications |
+| Validation/readback | Exact rows/files/routes/logs/objects to inspect after action |
+| Rollback/fallback | How to undo, ignore, rebuild, or return to current App/Supabase/Markdown behavior |
+
+Readback matrix:
+
+| Action class | Required readback |
+|---|---|
+| Schema/migration | Migration status, affected tables/columns/indexes/policies, schema inspection or sample query |
+| Runtime/helper/bridge | Route exercised, logs/output, proof of intended read/write scope |
+| Media metadata | Before/after row summary, changed tags/links/status fields, review owner confirmation |
+| Storage | Bucket/object path, access posture, upload/delete result, rollback path |
+| Candidate annotation file | Output path, schema check, model/prompt version, processed/skipped/error counts |
+| Planner/task write | Row id, status/date/link fields, completed/archive fields if changed, approval note |
+| Public behavior | Route/copy/event verification and public/private claim review where relevant |
+| Paid/API/OAuth | Cost boundary, credential location, retention/privacy note, no secret exposure |
+| Automation | Run log, source read list, output list, skipped/error list, proof of no unapproved writes |
+
+Default no-write rule:
+
+- Graph, vector, analytics, visual AI, and router outputs may propose.
+- They do not write App/Supabase/Web/Storage/Planner records unless the approval packet explicitly authorizes that target and the readback confirms it.
+
 ### Planner And Operations
 
 | Source | Project to | Priority | Purpose | Writeback rule |

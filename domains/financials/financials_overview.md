@@ -16,51 +16,46 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 > Phase 3 transition note: This Company report was originally copied from `M:\miniBIOTA\miniBIOTA_Brain\2. miniBIOTA_Financials\financials_overview.md` on 2026-05-09. As of Phase 10, this Company path is the active reporting target; the Brain source is historical/archive lookup only.
 
 ## Scope
-- Defines the financial baseline, operating expenses, debt carry, active revenue streams, and tax obligations for miniBIOTA.
-- This domain is strictly about the numbers — what comes in, what goes out, what's owed, and what's planned.
+- Defines the financial baseline, operating expenses, debt carry, active revenue streams, cash visibility, and tax-obligation support for miniBIOTA.
+- This domain is strictly about the numbers: what comes in, what goes out, what is owed, and what is planned.
+- Current financial values must be verified in Supabase before analysis. `financials_brief.md` is the active manager-facing snapshot.
 
 ## Current State
 - Initial operating expense, liabilities, and revenue data was normalized on 2026-03-29 from founder-provided CSV exports and loaded into Supabase.
-- Supabase tables are live: `operating_expenses`, `liabilities`, `revenue_streams`, `planned_purchases`, `mileage_log`.
-- Active Financials Agent context has moved from the old mirrored `docs/` pattern into `M:\miniBIOTA\miniBIOTA_Financials\AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
-- Financials project management is now organized in App Planner/Supabase under
-  `work_domains.key = financials` / `domain_id = 2`. After the 2026-05-12
-  cross-domain cleanup, 2026-05-13 financial readback, and 2026-05-14
-  Operation Living Intelligence cost-review task addition, Financials has 8
-  active work projects and 26 task rows (21 open, 5 done).
-- `mileage_log` added 2026-04-21: IRS-compliant vehicle trip log. Fields: `trip_date`, `destination`, `purpose`, `project`, `category` (field_work/production/business), `miles`, `irs_rate`, `deduction_amount` (computed). RLS enabled. Standard mileage rate method adopted — tolls and parking are separately tracked in Quicken under `Content & Production : Tolls & Parking`.
-- Hardware debt (physical build costs) is currently a secondary priority to establishing digital cash flow.
+- Supabase tables are live for operating expenses, liabilities, revenue streams, planned purchases, mileage, monthly closes, account snapshots, cash receipts, expense transactions, and statement reconciliation support.
+- Active Financials Agent context lives in `M:\miniBIOTA\miniBIOTA_Financials\AGENTS.md`, `memory\`, `skills\`, and `skills\*\reference\`.
+- Financials project management is organized in App Planner/Supabase under `work_domains.key = financials` / `domain_id = 2`. After the 2026-05-14 closeout and recurring monthly close setup, Financials has 9 active/planned work projects and 36 task rows (28 open, 8 done). Planner is task-status truth only; financial truth remains in Supabase finance tables and close records.
+- A recurring accountant-style monthly close workflow now lives in Planner project `Monthly Financial Close & Accountant Review` (`work_projects.id=83`) with recurring routine task `Monthly Financial Close and Statement Review` (`tasks.id=488`) and checklist subtasks (`tasks.id=489`-`497`), first scheduled for 2026-06-05.
+- `mileage_log` added 2026-04-21 as the IRS-compliant vehicle trip log. Standard mileage rate method is adopted; tolls and parking are separately tracked in Quicken under `Content & Production : Tolls & Parking`.
 
 ## Financial Baseline
+Current values below are a Company reporting snapshot as of 2026-05-14. Verify Supabase rows before analysis or writes.
+
 ### Income
-- **Total Average Monthly Inflow:** $460.10 (Facebook $193.31, YouTube $170.14, Patreon $87.95, Ko-Fi $8.71)
-- **Latest Monthly Snapshot:** $576.21 total inflow in March 2026
-- **April 2026 (partial as of 2026-04-21):** Patreon $78.21 (received Apr 6). YouTube and Facebook pending. Ko-Fi and Open Collective pending.
+- Average monthly inflow: approximately $460/mo.
+- Latest closed monthly snapshot: $576.21 total inflow in March 2026.
+- April 2026 cash receipts: $294.28 total, consisting of $78.21 Patreon deposited 2026-04-06 for the April period and $216.07 Facebook deposited 2026-04-23 for the March period.
+- May Patreon: $102.55 deposited 2026-05-06 and recorded with approval on 2026-05-14.
 
 ### Operating Expenses
-- **Total Monthly OpEx:** $97.52
-- Web & Data: $26.25 (OpenAI, Domain, Railway)
-- Content Production: $14.99 (Artlist)
-- Operations: $36.28 (Google Workspace, Amex annual fee, FL Annual Report filing fee)
-- AI Tools: $20.00 (Anthropic Claude Code)
-- *Cancelled: Fusion 360 ($40.88/mo), Google AI API ($10.00/mo)*
+- Monthly OpEx: $157.52.
+- AI tools changed on 2026-04-29: Anthropic / Claude Code cancelled; OpenAI upgraded from ChatGPT Plus to ChatGPT Pro at $100/mo.
+- Artlist remains a Content OpEx at $14.99/mo.
 
 ### Liabilities
-- **Credit Cards/Loans:** $56,883.41 total balance, $1,695.00 minimum monthly payments, APRs 16.40%-28.49%
-- **Founder Capital:** $33,500.00 at 0% APR (sunk cost)
-- **Total Recorded Liabilities:** $90,383.41
+- Credit card debt: $56,674.65, APRs 16.40%-28.49%.
+- Founder capital: $33,500.00 at 0% APR.
+- Total recorded liabilities: $90,174.65.
 
-### Pending
-- Utilities: estimated monthly electricity/water bump from biomes not yet captured
+### Cash Visibility
+- Business cash: $384.90 as of 2026-05-14 from Chase Business Complete Checking current activity.
+- Personal runway support: $13,177.78 as of 2026-05-02. Personal runway support remains separate from business cash.
+- May AmEx current activity was reviewed from a 2026-05-14 screenshot, but May AmEx expense writes were deferred until the next official statement to avoid partial-month duplication.
 
 ## Financials Agent Memory And Skills
-Financials now uses the repo-native memory/skills architecture. Use the Financials repo directly for detailed context:
+Financials uses the repo-native memory/skills architecture. Use the Financials repo directly for detailed context:
 
-Financials Agent wiring now treats App Planner/Supabase as the live Financials
-work queue. Financials sessions should read Planner projects/tasks when
-planning work, ask before marking completed Planner tasks done at closeout, and
-keep balances, APRs, cash, revenue, mileage, tax, liability, receipt,
-transaction, and close truth in financial tables rather than in Planner.
+Financials Agent wiring treats App Planner/Supabase as the live Financials work queue. Financials sessions should read Planner projects/tasks when planning work, ask before marking completed Planner tasks done at closeout, and keep balances, APRs, cash, revenue, mileage, tax, liability, receipt, transaction, and close truth in financial tables rather than in Planner.
 
 | Path | Purpose |
 |---|---|
@@ -69,7 +64,9 @@ transaction, and close truth in financial tables rather than in Planner.
 | `M:\miniBIOTA\miniBIOTA_Financials\memory\02-financial-safety-rules.md` | Financial safety, approval, and sensitive-write rules |
 | `M:\miniBIOTA\miniBIOTA_Financials\memory\03-financial-data-model.md` | Current-state vs historical close table roles |
 | `M:\miniBIOTA\miniBIOTA_Financials\memory\04-tax-and-category-rules.md` | Durable tax/category decisions |
+| `M:\miniBIOTA\miniBIOTA_Financials\memory\05-database-access.md` | Database and Planner access boundaries |
 | `M:\miniBIOTA\miniBIOTA_Financials\memory\05-monthly-close-rules.md` | Monthly close sequencing and separation rules |
+| `M:\miniBIOTA\miniBIOTA_Financials\memory\08-statement-reconciliation-model.md` | Statement visibility and reconciliation model |
 | `M:\miniBIOTA\miniBIOTA_Financials\skills\analyze-financial-state\SKILL.md` | Cash flow, runway, debt, revenue, burn, liabilities, taxes, and current state |
 | `M:\miniBIOTA\miniBIOTA_Financials\skills\categorize-expense\SKILL.md` | Expense classification workflow |
 | `M:\miniBIOTA\miniBIOTA_Financials\skills\log-mileage\SKILL.md` | Mileage logging workflow |
@@ -82,69 +79,42 @@ The Brain Financials folder no longer keeps a `docs/` mirror. Use the source rep
 Full category/subcategory/tax line item structure established 2026-04-21. Active reference: `M:\miniBIOTA\miniBIOTA_Financials\skills\categorize-expense\reference\quicken-categories.md`.
 
 Key decisions:
-- **Standard mileage rate** adopted for vehicle deduction (not actual expenses). Mileage tracked in Supabase `mileage_log`. Gas stays on personal side.
-- **Tolls & Parking** is the vehicle subcategory under Content & Production (replaces Vehicle & Fuel). Tolls deductible on top of standard mileage rate.
-- **Phone & Internet** stays on personal side. Business use percentage deducted at tax time — not split in Quicken.
+- Standard mileage rate adopted for vehicle deduction, not actual vehicle expenses. Mileage is tracked in Supabase `mileage_log`. Gas stays on the personal side.
+- Tolls and parking are deductible on top of the standard mileage rate and route to `Content & Production : Tolls & Parking`.
+- Phone and internet stay on the personal side. Business-use percentage is handled at tax time.
 
-**2026 mileage logged as of 2026-04-21:** 603.0 miles / $404.01 deduction
-| Date | Destination | Miles | Deduction |
-|---|---|---|---|
-| Mar 14 | Aquashella, Orlando FL | 172.0 | $115.24 |
-| Mar 26 | Honeymoon Island, FL | 182.0 | $121.94 |
-| Apr 4 | Old Town, FL | 120.0 | $80.40 |
-| Apr 22 | Spring Hill, FL | 129.0 | $86.43 |
+2026 mileage logged as of 2026-04-21: 603.0 miles / $404.01 deduction.
 
 ## Dashboard
-Financials tab lives in the miniBIOTA Electron desktop app (`M:\miniBIOTA\miniBIOTA_App\`). Pulls live from `revenue_streams`, `operating_expenses`, `liabilities`, `planned_purchases`. Shows: revenue by source (3-month comparison), monthly burn, liabilities with APR and proportional bars, planned purchases queue.
+Financials tab lives in the miniBIOTA Electron desktop app (`M:\miniBIOTA\miniBIOTA_App\`). It pulls live from financial tables and displays revenue, monthly burn, liabilities, planned purchases, and related dashboard state.
 
 ## Sponsor Pipeline
-Active partner pipeline now live in Supabase `partner_opportunities` table (added 2026-04-17). Visible in the Sales Pipeline tab of the miniBIOTA desktop app (`M:\miniBIOTA\miniBIOTA_App\`). 5 active prospects: Fritz Aquatics (warm — gifting only, converting to paid), Bambu Lab, Seachem, Autodesk/Fusion 360, Fluval. Target: 2 closed deals by May 1 to reach $2,000/mo break-even.
+Sales/Growth owns partner pipeline execution in `partner_opportunities`. Financials tracks revenue after closed/approved deals and keeps financial guardrails for sponsorship planning.
 
-## Priorities (as of 2026-04-21)
-Live task status is now in App Planner/Supabase under the Financials domain.
-The historical priority list below predates Planner project organization and
-should be treated as context unless confirmed against live Planner records.
-Open items in priority order:
-1. ~~Create live revenue tracker~~ — Quicken categories established; April revenue entry in progress (return Apr 30 for full close)
-2. Capture utility cost estimates (electricity/water) for biome operations
-3. Verify and update all debt balances, minimum payments, and APRs — fill missing `next_due_date` fields
-4. Document tax obligations and filing requirements
-5. Build sponsor/partner pipeline in `partner_opportunities` table
-6. Add cash balance / bank snapshot table — **scheduled for April 30** (closing balance + credit card balances + runway calculation)
-7. Create one-time expenses log for non-recurring actual spend (monitor, GPU, and other equipment purchases)
-8. Add monthly revenue targets per source
-9. Build debt payoff projection (avalanche method)
-10. Build 3–6 month cash flow projection (requires cash balance table first)
+## Priorities
+Live task status is in App Planner/Supabase under the Financials domain. Use live Planner records and `financials_brief.md` for current priority ordering. As of 2026-05-14, active manager-facing priorities are:
 
-**April 30 return checklist:**
-- Log YouTube and Facebook April revenue
-- Log Ko-Fi and Open Collective (if any)
-- Log actual cost/date for ASUS ProArt monitor and Ulanzi phone mount
-- Log RTX 5060 Ti GPU (received Apr 24, actual cost)
-- Enter cash balance and credit card balances
-- Log any remaining April mileage trips
+1. Capture utility cost estimates for biome operations
+2. Verify and update debt balances, minimum payments, and APRs
+3. Document tax obligations and filing requirements
+4. Build a 3-6 month cash flow projection using current Chase visibility, AmEx current-activity review, cash snapshots, burn, debt payments, and planned purchases
 
 ## Risks / Gaps
-- No cash balance / runway visibility yet — highest structural gap. April 30 snapshot planned.
-- April 2026 revenue partially entered (Patreon only); YouTube and Facebook still pending.
 - Utility costs not captured in operating expenses.
 - Tax obligations not documented.
 - `next_due_date` null on most liability records.
-- Equipment purchases (monitor, GPU) not yet logged as actual expenses — `planned_purchases` still shows them as pending/ordered.
+- May AmEx activity is reviewed from current activity but should wait for the next official statement before statement-row import or partial-month expense reconciliation.
 
 ## Files In This Folder
 
-**Company-owned active strategic view:**
-- `financials_overview.md` — this file
+Company-owned active strategic view:
+- `financials_overview.md` - this file
+- `financials_brief.md` - operational state, active priorities, risks, and cross-domain notes
 
-**Financials Agent-owned (edit in `M:\miniBIOTA\miniBIOTA_Financials\`):**
-- `AGENTS.md` - active Financials Agent entry point
-- `memory/` - durable financial memory and routing
-- `skills/` - repeatable workflow playbooks and exact references
-- `financials_brief.md` — operational state, active priorities, risks, cross-domain notes (maintained by Financials Agent)
+Financials Agent-owned detailed context:
+- `M:\miniBIOTA\miniBIOTA_Financials\AGENTS.md`
+- `M:\miniBIOTA\miniBIOTA_Financials\memory\`
+- `M:\miniBIOTA\miniBIOTA_Financials\skills\`
 
-**Mirror status:**
-- Brain no longer keeps a Financials `docs/` mirror. Use the source repo paths above for active detailed context.
-
-**Sync behavior:**
-- `_system/sync_docs.ps1` keeps Financials docs mirroring disabled and removes any stale `2. miniBIOTA_Financials\docs` folder if it appears.
+Mirror status:
+- Brain no longer keeps a Financials `docs/` mirror. Use the Financials repo paths above for active detailed context.

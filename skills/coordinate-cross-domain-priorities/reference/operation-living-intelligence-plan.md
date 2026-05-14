@@ -544,6 +544,54 @@ Stage 4 closeout criteria:
 - OLI cadence preserves the Aquatic Club Talk priority and does not authorize implementation by itself.
 - Every review checks source-of-truth drift, domain handoffs, and whether live Planner/Supabase writes need approval.
 
+### Stage 5 Post-Talk Implementation Readiness Decision
+
+Stage 5 decides which Operation Living Intelligence lanes may move from planning into implementation readiness after the Aquatic Club Talk closeout. It does not approve the implementation work itself. Each lane still needs the normal domain approval, App/runtime approval, live-write approval, cost approval, or public-surface approval before any concrete build, import, install, automation, or source-of-truth change.
+
+Decision rule:
+
+```text
+After 2026-06-14 closeout, allow the lowest-risk lanes to move into implementation readiness.
+Keep all canonical writes, public surfaces, paid services, automation, and source-of-truth cutovers gated.
+Use the Lake Post-Seal graph seed as the first real technical proof case.
+```
+
+Post-talk lane posture:
+
+| Lane | Post-talk posture | May move next? | Required before implementation |
+|---|---|---:|---|
+| Task `409` schema/data audit | First required implementation-readiness step | Yes | Explicit approval to run the deeper audit; exact source rows/fields; readback notes |
+| Living Atlas graph seed | Primary technical proof case | Yes, after `409` | Source manifest, Research/Content review owners, App-approved Memgraph run path, validation queries, local/ignored export location |
+| Content/source inventory | Supporting readiness lane | Yes | Content confirms source packets, transcripts/scripts, production notes, and media references included/excluded |
+| Research ontology and claim review | Supporting readiness lane | Yes | Research confirms publicness, confidence, observed/inferred labels, caveats, and review-needed rules |
+| App bridge design | Design may advance; build remains gated | Yes, design only | App approval for any local service, helper, connector, secret, schema, runtime, or UI work |
+| Visual AI/media readiness | Readiness may advance; model runs remain gated | Yes, bounded readiness only | Small test set, local/private processing path, hardware/storage review, Content/Research review loop, no media metadata write |
+| Analytics warehouse questions | Planning may advance; API/export remains gated | Yes, questions/inventory only | Growth/Web/Content define first questions; separate approval for YouTube/API/OAuth/export, website tracking, or warehouse setup |
+| Financials cost review | Required before paid adoption | Yes | Free/local baseline, paid threshold, owner, rollback plan, and no recurring spend without approval |
+| Web public data surfaces | Stays downstream | Not yet | Reviewed Atlas/graph outputs, Web/Research/Brand approval, public copy/behavior approval |
+| Vector retrieval | Stays secondary until graph/source packet proof | Not yet, except docs-only scope | Approved corpus, citation rules, publicness filters, evaluation set, App implementation approval |
+| Automation/cache/runtime memory | Holds until manual pilot proves repeated need | Not yet | Proven repeated job, logs/readback, App approval, human approval for consequential writes |
+| Controlled writeback/cutover | Holds until pilots pass | No | Pilot proof, domain owner approval, rollback path, source-of-truth decision, explicit write approval |
+
+Stage 5 implementation-readiness sequence:
+
+1. Finish Aquatic Club Talk closeout and capture proof gaps, audience questions, follow-up signals, source retrieval friction, and media-evidence needs.
+2. Run the weekly OLI review and confirm whether domain capacity supports `409` plus docs-only implementation handoffs.
+3. If approved, complete task `409` as the deeper schema/data audit for the exact Lake Post-Seal source set.
+4. Produce a docs-only App/Research/Content handoff for the Living Atlas graph seed: source manifest, ontology, export format, validation queries, local storage/privacy, and review owners.
+5. Decide whether the Memgraph local/free pilot build is approved as a separate implementation step.
+6. Keep analytics, visual AI, vector retrieval, and Financials as sidecar readiness lanes until each has a bounded test set, owner, success criteria, and approval gate.
+7. Keep Web public surfaces, automation, and writeback/cutover downstream until reviewed outputs and pilot results exist.
+
+Stage 5 closeout criteria:
+
+- The first post-talk technical lane is `409` followed by the Lake Post-Seal graph seed handoff.
+- Content and Research readiness may advance because they directly feed the first graph proof case.
+- App bridge work may advance as design only until implementation is separately approved.
+- Visual AI and analytics may advance as bounded readiness/inventory lanes, not service connections or model runs.
+- Web, vector retrieval, automation/cache, and writeback/cutover remain downstream until pilot proof and approvals exist.
+- No live Planner/Supabase record, App runtime, schema, public website behavior, paid service, model run, media metadata write, automation, public commitment, sponsor commitment, financial commitment, legal decision, launch target, roadmap commitment, or source-of-truth change is approved by this stage.
+
 ### Sequential Work Order
 
 Use this order for Planner parent tasks. Only the first Company coordination lane should be active immediately; most implementation lanes should stay planned until after Aquatic Club Talk closeout unless a task directly reduces current friction.
@@ -582,6 +630,144 @@ App project:
 - Design the agent router/tool registry needed to decide which agent queries which system.
 - Design local visual-model worker boundary without changing App runtime yet.
 - Define approval/readback requirements for any future App schema, media metadata, or writeback path.
+
+#### App Boundary Map - Task 386
+
+Task `386` maps the App-owned surfaces that Operation Living Intelligence must respect before any export, graph build, media workflow, analytics connector, or agent tool bridge is implemented. This is a planning boundary only; it does not authorize App code changes, schema changes, local service setup, storage writes, media metadata writes, secret handling changes, or Planner/Supabase writes.
+
+| App surface | Current role | OLI may use for planning | Boundary |
+|---|---|---|---|
+| Planner runtime | App-owned UI/runtime over `work_domains`, `work_projects`, `tasks`, `work_programs`, and `work_program_projects` | Read current work state, ownership, dependencies, blockers, and approved Program links | Planner status remains Supabase truth; task/project/program edits require approval |
+| Supabase bridge | Internal app and approved helpers provide protected reads/writes where scoped | Design read-only export/readback patterns and source manifests | No raw SQL, migration, schema change, service-role action, or broad helper access without App-scoped approval |
+| Media Library | App-owned media search/filter/tagging and Supabase-backed media records | Reference media assets, review status, tags, species/biome/system/chronicle links, and proof-media routing | Candidate OLI annotations are not canonical media metadata; writes require App/Content/Research approval |
+| Raw media folder/indexing path | App runtime defaults media indexing to `M:\miniBIOTA\miniBIOTA_Files\8. Raw Footage\Photos & Videos` | Use as the boundary for future local/private media test-set planning | No broad scan, reindex, move, cloud upload, or model run without explicit approval |
+| Storage/upload tooling | App/Web-owned Supabase Storage and image upload/rollback surfaces | Map file references and public-image provenance only | No storage write, bucket policy change, upload, deletion, or public image behavior change without approval |
+| Secret-key path | Secrets stay in Electron main-process services, local environment, ignored config, OAuth, or user-level tooling | Document which future connectors need credentials and where approval is required | Do not commit keys, expose service-role credentials to renderer/browser code, or create new secret paths from OLI planning |
+| Site Admin/admin records | App operator/admin workflows for species, biomes, chronicles, announcements, staging, and media | Identify downstream App/Web/Research review points for future curated outputs | No public/admin record change, public route behavior, or public claim update without domain approval |
+| Monitoring/local hardware display | App/operator view for internal telemetry fields and MQTT read surfaces | Map internal-only telemetry context if analytics or graph planning needs it later | No firmware, MQTT, live-control, setpoint, or public telemetry change |
+| Prompt Library | App-owned reusable prompt/workflow records | Treat as future retrieval/workflow-template candidate after App review | Prompt create/edit/favorite/archive are live writes and require approval |
+
+Task `386` routing rules:
+
+- Company may use this boundary map to plan OLI handoffs and approval gates.
+- App owns implementation design for any bridge, connector, helper, service, UI, schema, storage, indexing, or credential change.
+- Content and Research own interpretation of media usefulness, ecological claims, publicness, and review status.
+- Web owns public rendering and public behavior once curated outputs exist.
+- Raw Footage remains local source-media provenance; App's Media Library is the runtime/indexing surface.
+- Financials reviews any paid App connector, API, storage, model, analytics, or managed service.
+
+Task `386` closeout criteria:
+
+- The active media folder boundary is named.
+- Planner, Supabase bridge, Media Library, storage, secret-key, and indexing surfaces are separated.
+- App implementation ownership is explicit.
+- OLI planning can reference App surfaces without authorizing App changes.
+- Later App tasks `387` through `390` have a clean boundary to build from.
+
+#### Read-Only Access Pattern - Task 387
+
+Task `387` designs how Operation Living Intelligence may query graph, vector, analytics, and media-intelligence layers during pilots without letting those layers write canonical records. This is a design pattern only; it does not approve a Memgraph install, vector index, analytics warehouse, media model run, App connector, scheduled job, credential setup, or any source-of-truth write.
+
+Core pattern:
+
+```text
+Canonical source first.
+Derived layer second.
+Evidence/citation returned with every answer.
+Proposed changes routed back to the canonical owner.
+No canonical write from a derived layer during pilot.
+```
+
+Read-only access by layer:
+
+| Derived layer | Read-only input | Allowed pilot query | Required output | Hard stop |
+|---|---|---|---|---|
+| Memgraph relationship graph | Approved rebuildable export from Supabase/Markdown/source packets | Relationship paths, evidence chains, owner/dependency paths, publicness/confidence traversal | Source table/path/id, relationship type, confidence/publicness/review labels, validation query result | No canonical Supabase, Markdown, media, Planner, or Web write |
+| Vector retrieval | Approved corpus chunks with source IDs, paths, publicness labels, and version/run metadata | Similarity search, source packet retrieval, transcript/script/note retrieval, prompt/workflow lookup | Ranked chunks with source path/id, retrieval score, corpus version, public/internal status | No text edit, embedding refresh, corpus expansion, or publication without approval |
+| Analytics warehouse | Approved read-only exports or API reports after source approval | YouTube/website/QR/social/task cadence questions and trend summaries | Source export/API name, date range, metric definition, aggregation notes, uncertainty/low-sample caveat | No campaign, sponsor, pricing, outreach, roadmap, or public claim commitment from metrics |
+| Media intelligence | Approved bounded local/private media test set and candidate annotation files | Candidate visual descriptions, timestamps, tags, evidence usefulness, pull-sheet suggestions | Source file/asset reference, timestamp, model/prompt version, uncertainty, Content/Research review owner | No media metadata write, cloud upload, broad scan, publication, or ecological claim without review |
+| Agent router/tool registry | Approved domain/source matrix and App-owned bridge design | Decide which system to query and which owner must review | Query route, sources consulted, omitted layers, approval needs, proposed next owner | No cross-domain write, hidden tool access, or automated action beyond approved scope |
+
+Access envelope:
+
+- Reads must be traceable to a source manifest or approved corpus/export.
+- Derived layers must be rebuildable from canonical sources.
+- Query outputs must include enough evidence for a human/domain owner to verify them.
+- Agents may propose changes, but the proposal returns to the owning domain's canonical surface.
+- App owns implementation of clients, connectors, helpers, secrets, logs, and runtime paths.
+- Company owns the governance pattern and review cadence, not App runtime implementation.
+- Any layer that needs credentials, APIs, local services, scheduled refresh, cloud processing, writeback, or new storage requires separate approval before use.
+
+Task `387` closeout criteria:
+
+- Graph, vector, analytics, media-intelligence, and router reads are separated.
+- Every read path returns source/citation, publicness/confidence/review context where applicable, and an owner for proposed changes.
+- No derived layer is allowed to become canonical during the pilot.
+- The pattern gives task `388` enough structure to design agent routing/tool registry rules.
+
+#### Agent Router And Tool Registry - Task 388
+
+Task `388` defines the first agent router/tool registry shape for Operation Living Intelligence. The router's job is to decide which canonical source and which derived helper layer an agent should use, then identify the owner and approval path for any proposed action. This is a governance/design registry only; it does not grant new tool access, write authority, automation, cross-domain permissions, App bridge implementation, or live Planner/Supabase writes.
+
+Router decision order:
+
+```text
+1. Classify the request and domain owner.
+2. Read the canonical source first when current truth matters.
+3. Use derived layers only as helpers.
+4. Return evidence, uncertainty, and omitted/blocked layers.
+5. Route proposed changes to the canonical owner.
+6. Stop at the approval gate before any write or consequential action.
+```
+
+Tool registry fields:
+
+| Field | Purpose |
+|---|---|
+| `tool_or_layer` | Human-readable name such as Supabase Planner, Memgraph, vector index, analytics warehouse, Media Library, visual AI candidate annotations |
+| `canonical_or_derived` | Marks whether the layer owns truth or only helps retrieval/reasoning |
+| `owning_domain` | Domain responsible for meaning, runtime, or approval |
+| `allowed_agents` | Agents allowed to read or request the layer during the pilot |
+| `allowed_actions` | Read, query, summarize, propose, validate, export-design, or write only if separately approved |
+| `required_inputs` | Source manifest, task id, source id/path, date range, corpus version, media test set, or owner approval |
+| `required_outputs` | Source/citation, confidence/publicness/review labels, owner, approval need, readback or validation notes |
+| `blocked_actions` | Writes, public behavior, cloud upload, schema/runtime change, paid service, automation, or commitments |
+| `approval_gate` | The human/domain approval needed before action moves beyond query/proposal |
+
+Initial router map:
+
+| Request type | First source | Helper layer | Primary owner | Agent may output | Stop before |
+|---|---|---|---|---|---|
+| Current task/project/program status | Supabase Planner/App Planner | Memgraph dependency graph later | App runtime + record owner | Status summary, owner, blockers, proposed next step | Planner edit/status/schedule/link/archive |
+| Ecological relationship or claim | Research records/notes and source packets | Memgraph, vector source packets | Research | Evidence path, confidence/publicness labels, review need | Species/observation/claim write or public claim |
+| Content/story/source lookup | Content pipeline/calendar/source packets | Vector retrieval, Memgraph story graph | Content | Prior coverage, source list, story continuity, proposed packet note | Calendar/pipeline write or publish action |
+| Proof media lookup | App Media Library/raw media references | Memgraph media links, visual AI candidates | App + Content + Research | Candidate proof assets, review owner, caveats | Media metadata write, broad scan, upload, publication |
+| Public website use | Web docs/public tables after review | Memgraph public-surface paths, analytics | Web + Research + Brand | Public-readiness note, downstream handoff | Public route/copy/behavior/tracking change |
+| Analytics/performance question | Approved source export/API report | DuckDB/MotherDuck summaries | Growth + Content + Web + Company | Trend summary, caveats, follow-up questions | Sponsor/pricing/outreach/roadmap commitment |
+| Tool cost/adoption | Financials approved summaries and OLI cost posture | Analytics/cost comparison docs | Financials + Company + App | Free/paid comparison, threshold, owner, rollback need | Subscription, purchase, or financial commitment |
+| App/runtime/schema/tooling question | App docs/repo and approved App records | Router registry and source manifest | App | Implementation handoff, risk list, approval need | Code/schema/runtime/helper/secret/storage change |
+| Visual AI/media model question | Approved bounded test-set plan | Candidate annotation layer | App + Content + Research + Raw Footage | Model-readiness note, review loop, privacy/cost gate | Model run, cloud upload, broad indexing, media write |
+
+Per-agent policy:
+
+| Agent | Default router role | Default read posture | Default proposal posture | Write/approval stop |
+|---|---|---|---|---|
+| Company | Governance router and dependency interpreter | Company docs, domain reports, Planner status, approved OLI layers | Handoffs, approval gates, sequencing, review rhythm | Planner writes, commitments, App/domain changes need approval |
+| App | Runtime/tooling owner | App docs/code, Planner/App records, schema/runtime surfaces when scoped | Bridge designs, readback/logging, safety boundaries | Code/schema/runtime/helper/storage/secret changes need App-scoped approval |
+| Research | Ecological meaning owner | Research records, graph candidates, source evidence | Claim labels, caveats, ontology corrections | Canonical records/public claims need Research approval |
+| Content | Story/source owner | Content records/docs, packets, scripts, media candidates | Source packets, story links, pull sheets | Calendar/pipeline/publish writes need approval |
+| Web | Public behavior owner | Web docs/code, public records, reviewed outputs | Public-surface plans, analytics events | Public behavior/copy/tracking changes need approval |
+| Growth | Relationship/audience owner | Growth docs, approved CRM/analytics summaries | Follow-up strategy, audience questions | Outreach/CRM/sponsor actions need approval |
+| Financials | Cost/finance owner | Financials summaries when scoped | Cost thresholds, paid/free recommendation | Spend/subscription/raw finance writes need approval |
+| Raw Footage | Source media provenance context | Approved media references and routing docs | Evidence candidates, archive/proof routing | File moves/metadata/cloud upload need approval |
+
+Task `388` closeout criteria:
+
+- The router always checks canonical source before derived helper trust.
+- Each tool/layer has owner, allowed action, required output, blocked action, and approval gate fields.
+- Each domain agent has a default read/propose/write boundary.
+- The registry can inform later App implementation without granting tool access by itself.
+- Task `389` can use the registry to keep visual-model worker design outside App runtime until approved.
 
 Research project:
 

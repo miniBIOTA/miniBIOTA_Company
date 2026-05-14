@@ -26,7 +26,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 | April close cash receipts | $294.28 total: $78.21 Patreon deposited 2026-04-06 for April period; $216.07 Facebook deposited 2026-04-23 for March period; YouTube/Ko-Fi had no April deposit |
 | Monthly OpEx | $157.52 |
 | Net (avg) | ~$302/mo before debt service |
-| Credit card debt | $56,674.65 (APRs 16.40%–28.49%) |
+| Credit card debt | $56,674.65 (APRs 16.40%-28.49%) |
 | Founder capital | $33,500.00 at 0% APR |
 | Total liabilities | $90,174.65 |
 | Cash position | $384.90 business cash as of 2026-05-14 plus $13,177.78 personal runway support as of 2026-05-02 |
@@ -78,7 +78,7 @@ truth remains in financial tables and close records, not Planner task text.
   fallback/benchmark only. This is a cost-review gate only; no paid
   subscription, vendor backend, financial commitment, media upload, App
   runtime change, or schema change was approved.
-- **2026-05-13:** Financials added and applied a statement reconciliation layer for full card visibility without polluting miniBIOTA expense totals. January-April 2026 AmEx Business Green Rewards Card statements are now represented in `statement_import_batches` with 72 statement rows, 4 statement document metadata records, and 12 recurring classification rules. User review resolved all initially open Amazon, Walmart, Home Depot, and points-adjustment rows; remaining open statement-review count was verified as zero. The April-statement Google/Claude charge was confirmed as Anthropic/Claude, and Planner task `410` was created for 2026-05-14 to collect May/current bank and card statements.
+- **2026-05-13:** Financials added and applied a statement reconciliation layer for full card visibility without polluting miniBIOTA expense totals. January-April 2026 AmEx Business Green Rewards Card statements are now represented in `statement_import_batches` with 72 statement rows, 4 statement document metadata records, and 12 recurring classification rules. User review resolved all initially open Amazon, Walmart, Home Depot, and points-adjustment rows; remaining open statement-review count was verified as zero. The April-statement Google/Claude charge was confirmed as Anthropic/Claude, and Planner task `410` was created for 2026-05-14 to collect May/current bank and card statements; that follow-up was completed on 2026-05-14 with approval.
 - **2026-05-12:** Company applied approved Financials Planner cleanup and
   readback. Tasks `96` and `97` were marked complete after verifying
   `account_balance_snapshots`, `expense_transactions`, and `planned_purchases`.
@@ -86,11 +86,12 @@ truth remains in financial tables and close records, not Planner task text.
   were entered and readback confirmed monthly close `id=1` is closed for
   `close_month = 2026-04-01` with April cash receipts entered.
 - **2026-05-09:** Financials project management was organized in App
-  Planner/Supabase: 6 Financials work projects now track revenue/targets,
+  Planner/Supabase: the 6 core Financials work projects track revenue/targets,
   operating burn/utilities, debt/liabilities, tax/deduction support, monthly
   close/cash runway/forecasting, and planned purchases/equipment spend.
-  Existing Financials tasks were linked, one pending Google-charge review task
-  was added, and readback confirmed 0 unlinked open Financials tasks. The
+  Existing Financials tasks were linked, one then-pending Google-charge review
+  task was added and later resolved, and readback confirmed 0 unlinked open
+  Financials tasks. The
   Financials Agent then verified and tightened local Planner wiring in
   `AGENTS.md`, memory, and `skills/financials-session-closeout/SKILL.md`
   without changing financial records, Planner records, schema, app behavior, or
@@ -115,9 +116,9 @@ truth remains in financial tables and close records, not Planner task text.
 
 ## Cross-Domain Notes
 
-- **Content:** Mileage trips for field work and content production are deductible — always log in `mileage_log` after field sessions. Artlist ($14.99/mo) is a Content OpEx.
+- **Content:** Mileage trips for field work and content production are deductible - always log in `mileage_log` after field sessions. Artlist ($14.99/mo) is a Content OpEx.
 - **Hardware:** Equipment purchases (sensors, ESP32s, build materials) should be logged in `planned_purchases` when received. Utility cost estimates for biome operations still pending.
-- **Sales:** `partner_opportunities` table is Sales-domain-owned. Revenue from closed sponsorship deals flows into `revenue_streams` as Sponsorships — Financials tracks the inflow, Sales owns the pipeline.
+- **Sales:** `partner_opportunities` table is Sales-domain-owned. Revenue from closed sponsorship deals flows into `revenue_streams` as Sponsorships - Financials tracks the inflow, Sales owns the pipeline.
 - **App:** App Planner/Supabase is the shared project/task runtime for
   Financials work status. Financial tables remain the source of truth for
   balances, revenue, expenses, liabilities, mileage, receipts, transactions,

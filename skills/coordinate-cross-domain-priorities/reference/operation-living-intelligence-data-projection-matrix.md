@@ -524,6 +524,90 @@ Recommended first warehouse:
 | App storage/upload tooling | Vector docs and storage-surface nodes | 5 | Agent understands image upload/rollback risk | App/Web approval |
 | Field Observer RPC `save_species_sighting_session(...)` | Vector docs; optional Memgraph sighting summary later | 6 | Agent understands sighting saves and `date_last_observed` update boundary | App/Research approval |
 
+#### App Boundary Map For Task 386
+
+Task `386` establishes the App boundary for Operation Living Intelligence before later App bridge, router, media-worker, or writeback design. This is a projection/readiness map only. It does not approve App implementation, helper creation, local services, secret changes, storage writes, media metadata writes, raw SQL, migrations, public behavior, or Planner/Supabase writes.
+
+| Boundary | Canonical/App-owned surface | OLI projection/readiness use | Required approval before action |
+|---|---|---|---|
+| Planner runtime | `work_domains`, `work_projects`, `tasks`, `work_programs`, `work_program_projects` through App Planner/Supabase | Dependency graph, ownership map, blocker context, approved Program membership | Planner write approval for any create/edit/status/schedule/link/archive change |
+| Supabase bridge | App-owned runtime bridge, MCP/read-only awareness, Company scoped helper for Company Planner records | Read-only source audit, source manifest, export query planning, readback design | App approval for helper/bridge changes; explicit approval for writes, raw SQL, schema, migration, service-role action |
+| Media Library records | `media_assets`, media link tables, tags, media projects, review/status fields | Media references in graph, candidate proof routing, visual AI test-set planning | App/Content/Research approval before metadata write or review-state change |
+| Raw media folder | `M:\miniBIOTA\miniBIOTA_Files\8. Raw Footage\Photos & Videos` as the App indexing default | Boundary for local/private media test-set selection and evidence references | Approval before broad scan, reindex, move, model run, cloud upload, or persistent external index |
+| Storage/upload | Supabase Storage buckets and App/Web upload/rollback tooling | File-reference provenance and missing-image analysis only | App/Web approval before upload, deletion, bucket policy change, public image behavior, or storage write |
+| Secrets and credentials | Electron main-process services, local environment, ignored config, OAuth, or user-level tool settings | Connector requirement inventory and security checklist | App/security approval before new credential path; never commit keys or expose service-role credentials to renderer/browser code |
+| Site Admin/admin workflows | App operator surfaces for species, biomes, chronicles, announcements, staging, and media | Future handoff points for curated graph/Atlas outputs | App/Web/Research/Brand approval before public/admin record or behavior change |
+| Monitoring and telemetry display | App/operator MQTT and monitoring surfaces | Internal telemetry context for later analytics or graph planning | Hardware/App/Web approval before public telemetry, live-control, setpoint, MQTT, or schema changes |
+| Prompt Library | `prompt_library` records and App prompt workflows | Future retrieval/workflow-template index after App review | App approval for create/edit/archive/favorite/restore writes |
+
+Task `386` unlocks planning clarity for:
+
+- Task `387`: read-only access patterns can use named App surfaces without expanding write authority.
+- Task `388`: agent router/tool registry can route App-owned operations through App-approved bridges.
+- Task `389`: visual-model worker planning can stay outside App runtime until explicitly approved.
+- Task `390`: approval/readback rules can distinguish App runtime/schema/media/storage writes from derived OLI outputs.
+
+#### Read-Only Access Pattern For Task 387
+
+Task `387` defines how derived OLI layers should be queried during pilots. These access patterns are read-only designs. They do not approve installs, indexes, imports, exports, API connections, local services, App helpers, scheduled jobs, model runs, cloud uploads, or canonical writes.
+
+| Layer | First read surface | Minimum query contract | Return with every result | Writeback boundary |
+|---|---|---|---|---|
+| Memgraph | Approved local/free graph built from a source manifest | Query by source ID/path, relationship type, owner, publicness, confidence, and review state | Source table/path/id, labels, edge type, graph build/version, validation query reference | Proposed corrections go to Research/Content/App/Company source owner; Memgraph stays derived |
+| Vector retrieval | Approved corpus/index with chunk metadata | Query by semantic similarity plus source filters, publicness filters, owner filters, and version | Chunk text or summary, source path/id, score, corpus version, public/internal status | Text edits return to repo/domain owner; index refresh requires approval |
+| Analytics | Approved exports/API reports loaded into DuckDB/MotherDuck or local files | Query by source, metric definition, date range, aggregation, and sample-size caveat | Metric name, source/export name, date range, aggregation logic, caveat | Reports may inform questions only; no sponsor/pricing/outreach/public/roadmap commitments |
+| Media intelligence | Approved bounded test set and candidate annotation files | Query by file/asset reference, timestamp, candidate tag, species/object/event, and review status | Source file/asset id, timestamp, model/prompt version, confidence/uncertainty, review owner | Candidate annotations are not media metadata; writes need App/Content/Research approval |
+| Agent router | Domain/source matrix plus App-owned bridge design | Choose canonical source first, then derived helper layer, then review owner | Route taken, sources skipped, approval need, proposed owner | No automated write or tool escalation beyond approved scope |
+
+Read-only pilot invariants:
+
+- Canonical source lookup comes before derived-layer trust.
+- Every derived answer must carry provenance, owner, and confidence/publicness/review context where the source supports it.
+- Derived layers may generate proposed-write bundles, but not canonical writes.
+- Query logs/readback should show what source was read, what layer answered, and what approval would be required for action.
+- A layer that cannot preserve source IDs, labels, and rebuildability is not ready for pilot use.
+
+#### Agent Router And Tool Registry For Task 388
+
+Task `388` turns the Stage 1 permission baseline and task `387` read-only pattern into a registry shape. This is still docs-only. It does not create tools, grant credentials, install MCP servers, expose App bridges, automate jobs, or authorize writes.
+
+Tool registry minimum record:
+
+| Field | Required value |
+|---|---|
+| Tool/layer name | Supabase Planner, Memgraph, vector index, analytics warehouse, Media Library, visual AI candidate files, App bridge, or future connector |
+| Source role | Canonical, derived, temporary runtime, candidate review layer, or execution layer |
+| Owning domain | Domain that owns meaning, implementation, or approval |
+| Allowed agents | Which domain agents may read/query/request it |
+| Allowed actions | Read, query, summarize, validate, propose, export-design, or approved write |
+| Required input | Source id/path, task/project id, source manifest, corpus version, date range, media test set, approval note |
+| Required output | Source/citation, owner, confidence/publicness/review labels, route taken, approval need, readback/validation note |
+| Blocked by default | Canonical write, public behavior, cloud upload, schema/runtime change, paid service, automation, commitment, broad indexing |
+| Approval gate | Human/domain approval needed before the blocked action can happen |
+
+Initial routing table:
+
+| Request family | Canonical first | Derived/helper second | Proposed output | Approval stop |
+|---|---|---|---|---|
+| Work status and dependencies | Planner/Supabase | Memgraph dependency graph later | Status, owner, blocker, proposed handoff | Planner writes |
+| Ecology and claims | Research records/notes | Memgraph and vector source packets | Evidence path, caveat, review need | Research record/public claim writes |
+| Content/story memory | Content records/docs | Vector and Memgraph story paths | Prior coverage, source packet, story continuity | Calendar/pipeline/publish writes |
+| Media evidence | App Media Library/raw references | Memgraph media paths and visual AI candidates | Candidate assets, timestamps, review owners | Metadata writes, cloud upload, broad scan |
+| Public website use | Web public records/docs | Public-surface graph and analytics | Public-readiness handoff | Public behavior/copy/tracking changes |
+| Analytics | Approved exports/API reports | DuckDB/MotherDuck | Trend, caveat, question list | Sponsor/pricing/outreach/roadmap commitments |
+| Cost/tool adoption | Financials summaries and OLI cost posture | Tool comparison notes | Cost threshold, benefit, rollback need | Spend/subscription commitment |
+| Runtime/tooling | App docs/code/runtime notes | Router registry and source manifests | App implementation handoff | App code/schema/runtime/helper/secret/storage change |
+| Visual AI | Approved test-set plan | Candidate annotations | Candidate tags, pull sheet, uncertainty | Model run, media write, cloud upload, publication |
+
+Router invariants:
+
+- The router must name the route it took and the route it refused or deferred.
+- The router must surface omitted layers when a query cannot safely use them yet.
+- The router may recommend an owner or approval path, but it may not manufacture authority.
+- The router must preserve current/planned/proposed/aspirational separation.
+- The router should prefer the narrowest sufficient source set.
+- Future App implementation should expose registry-backed tools through App-approved bridges only.
+
 ### Planner And Operations
 
 | Source | Project to | Priority | Purpose | Writeback rule |

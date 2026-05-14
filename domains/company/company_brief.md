@@ -54,10 +54,13 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   supplies tool/routing precedent. Stage 3 scopes the first graph pilot to the
   Lake Post-Seal packet, and Stage 4 now sets weekly review as the default
   pilot-planning cadence, with biweekly review allowed only as a capacity
-  adjustment around the talk window. This is operating coordination only; no
-  schema, App runtime, public site, paid-service, local model install,
-  automated-write, export/import, Planner/Supabase write, or source-of-truth
-  cutover has been approved by the plan itself.
+  adjustment around the talk window. Stage 5 now identifies the post-talk
+  implementation-readiness order: task `409` first, then a Lake Post-Seal
+  graph seed handoff, with Content/Research readiness and App design as the
+  first supporting lanes. This is operating coordination only; no schema, App
+  runtime, public site, paid-service, local model install, automated-write,
+  export/import, Planner/Supabase write, or source-of-truth cutover has been
+  approved by the plan itself.
 - Codex is the primary operating interface moving forward. Previous interface-specific guidance is archived as legacy context only.
 
 ## Active Priorities
@@ -109,6 +112,51 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-14:** Company continued Operation Living Intelligence beyond the
+  Company lead stages by mapping App boundary task `386` at the
+  planning/readiness level. The map separates App-owned Planner runtime,
+  Supabase bridge, Media Library, raw media folder/indexing path, storage/upload
+  tooling, secret-key paths, Site Admin/admin workflows, monitoring, and Prompt
+  Library surfaces. The active App media indexing boundary is
+  `M:\miniBIOTA\miniBIOTA_Files\8. Raw Footage\Photos & Videos`. This gives
+  later App bridge, agent-router, media-worker, and writeback planning a clean
+  boundary while leaving App implementation ownership intact. No App code,
+  schema, runtime, helper, storage, media metadata, local service, credential,
+  public behavior, model run, automation, Planner/Supabase write, or
+  source-of-truth change was approved.
+- **2026-05-14:** Company scoped App readiness task `387` as a read-only
+  access pattern for graph, vector retrieval, analytics, media intelligence,
+  and the future agent router/tool registry. The pattern requires canonical
+  source lookup first, derived-layer query second, source/citation and
+  publicness/confidence/review context in outputs where applicable, and any
+  proposed correction routed back to the canonical owner. It does not approve
+  Memgraph install, vector index, analytics warehouse, API/OAuth connection,
+  local service, App helper, model run, cloud upload, scheduled job, canonical
+  write, public behavior, App runtime change, schema change, or automation.
+- **2026-05-14:** Company scoped App readiness task `388` as the first
+  Operation Living Intelligence agent router/tool registry design. The router
+  checks canonical sources first, uses derived layers only as helpers, returns
+  evidence and omitted/blocked layers, names the owner and approval gate, and
+  stops before writes or consequential actions. The registry shape covers tool
+  name, canonical/derived role, owning domain, allowed agents/actions,
+  required inputs/outputs, blocked default actions, and approval gate. It does
+  not grant new tool access, credentials, App bridge implementation,
+  automation, cross-domain write authority, public behavior, paid service,
+  Planner/Supabase write, or source-of-truth change.
+- **2026-05-14:** Company defined **Operation Living Intelligence Stage 5** as
+  the post-Aquatic Club Talk implementation-readiness decision. After the
+  2026-06-14 talk closeout, the first technical readiness lane should be task
+  `409`, followed by a docs-only App/Research/Content handoff for the
+  Lake Post-Seal graph seed. Content/source inventory and Research ontology
+  review may advance because they feed that proof case; App bridge work may
+  advance as design only. Visual AI/media and analytics may advance only as
+  bounded readiness/inventory lanes. Web public surfaces, vector retrieval,
+  automation/cache/runtime memory, and writeback/cutover remain downstream
+  until pilot proof and separate approvals exist. No implementation, install,
+  export/import, App runtime, schema, public behavior, paid service, model run,
+  media metadata write, automation, live Planner/Supabase write, public
+  commitment, sponsor commitment, financial commitment, legal decision, launch
+  target, roadmap commitment, or source-of-truth change was approved.
 - **2026-05-14:** Company defined **Operation Living Intelligence Stage 4** as
   the pilot-planning review rhythm. Weekly OLI review is now the default while
   pilot planning is active, with lightweight review before the 2026-06-13

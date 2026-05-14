@@ -159,6 +159,20 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   import readiness. No Supabase, Planner, graph import, graph data, App
   behavior, Content/Web/media/species/observation/chronicle record, canonical
   ecology, or source-of-truth record changed.
+- **2026-05-14:** Research completed Operation Living Intelligence task `394`
+  as the docs-only Stage 3 pilot question evaluation:
+  `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-394-stage-3-pilot-question-evaluation.md`.
+  The graph-candidate model passed `8 / 10` Stage 3 pilot questions. Research
+  recommends continuing, but only to a no-write, derived-only dry-run/readback
+  prototype or another docs-only design pass. The graph model is strongest for
+  claim safety, source provenance, observed-vs-inferred separation, review
+  gates, species caveats, structured-write boundaries, and media-candidate
+  boundaries. Public surface/content reuse mapping remains under-modeled, and
+  speed improvement is plausible but unproven until a no-write dry-run/query
+  readback exists. No Supabase, Planner, graph import, graph data, App
+  behavior, public rendering, canonical write, Content/Web/media/species/
+  observation/chronicle record, canonical ecology, or source-of-truth record
+  changed.
 - **2026-05-14:** Company continued Operation Living Intelligence beyond the
   Company lead stages by mapping App boundary task `386` at the
   planning/readiness level. The map separates App-owned Planner runtime,

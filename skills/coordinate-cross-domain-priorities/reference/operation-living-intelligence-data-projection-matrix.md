@@ -812,12 +812,15 @@ Research ontology source:
 - `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-391-graph-ontology.md`
 - `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-392-lake-post-seal-graph-candidates.md`
 - `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-393-graph-path-safety.md`
+- `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-394-stage-3-pilot-question-evaluation.md`
 
 Research task `391` defines the first Research-owned ontology for this wave. The graph is a derived evidence/review graph, not canonical ecology. Use the Research brief as the detailed authority for node classes, edge types, claim gates, publicness tiers, confidence labels, observed-vs-inferred separation, and review ownership.
 
 Research task `392` applies that ontology to the Lake Post-Seal packet as candidate graph nodes and relationships. Use the task `392` brief as the detailed source for graph-candidate IDs, candidate edges, blocked edges, source IDs, provenance references, media candidate handling, and validation questions before import.
 
 Research task `393` defines graph path safety. Use the task `393` brief as the detailed source for path-level provenance, confidence floors, publicness floors, review floors, observed/inferred/proposed/approved status handling, query/readback checks, and failure cases where traversal could overstate evidence.
+
+Research task `394` evaluates the 10 Stage 3 pilot questions. It records an 8/10 pass result and recommends continuing only to a no-write, derived-only dry-run/readback prototype or another docs-only design pass. It does not approve live graph import, App behavior, public rendering, or canonical writes.
 
 Minimum Research ontology requirements from task `391`:
 
@@ -854,6 +857,17 @@ Minimum path-safety requirements from task `393`:
 | Review gates | Unresolved gates stop both public output and import readiness |
 | Query safety | Public-output and import-readiness queries must fail closed and show blockers instead of silently dropping them |
 | Readback | Every path must produce a safe readback sentence weaker than or equal to the weakest path element |
+
+Stage 3 evaluation result from task `394`:
+
+| Evaluation item | Result |
+|---|---|
+| Pass count | `8 / 10` |
+| Continue? | Yes, but only as no-write/derived-only dry-run/readback or another docs-only design pass |
+| Strongest graph value | Claim safety, source provenance, observed-vs-inferred separation, review gates, species caveats, structured-write boundaries, and media-candidate boundaries |
+| Weak area 1 | Public surface/content reuse mapping is under-modeled |
+| Weak area 2 | Speed improvement is plausible but unproven until a no-write dry-run/query readback exists |
+| Stop before | Live graph import, App behavior, public rendering, canonical writes, media metadata writes, or source-of-truth changes |
 
 Stage 3 pilot acceptance:
 

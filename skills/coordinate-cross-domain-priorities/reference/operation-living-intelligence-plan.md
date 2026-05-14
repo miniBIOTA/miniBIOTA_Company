@@ -994,6 +994,50 @@ Task `393` Company closeout criteria:
 - Public-output and import-readiness queries are separated and fail closed.
 - Company carries forward open decisions: blocked-edge storage/import posture, final review-status transition owner if App implements workflows, source version/checksum rule, explicit `purpose = public_output` query parameter, compact App display of mixed-status paths, confidence-floor implementation, and whether `validated_for_public_candidate` is enough for Website-visible output.
 
+#### Stage 3 Pilot Question Evaluation - Task 394
+
+Research completed the task `394` docs-only Stage 3 pilot question evaluation on 2026-05-14:
+
+`M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-394-stage-3-pilot-question-evaluation.md`
+
+Result:
+
+```text
+Pass count: 8 / 10.
+Recommendation: continue.
+Continue only to a no-write, derived-only dry-run/readback prototype or another docs-only design pass.
+Do not proceed to live graph import, canonical writes, public rendering, or App behavior changes.
+```
+
+Task `394` evaluation summary:
+
+| Pilot question area | Result |
+|---|---|
+| Evidence for lake change after sealing/fish removal | Pass |
+| Species connected to the Lake Post-Seal event and how | Pass |
+| Public-safe, uncertain, internal-only, and review-needed claims | Strong pass |
+| Supporting observations, packets, media refs, and Research notes | Strong pass |
+| Public pages, chronicle entries, or content items that could reuse evidence | Partial/fail; public surface reuse targets are not modeled clearly enough |
+| Observed versus inferred relationships | Strong pass |
+| Species caveats for Daphnia, Ghost Shrimp, Flagfish, amphipods, Mesostoma, and Moina | Strong pass |
+| Source packet facts needing explicit structured write approval | Pass |
+| Useful media references that are not canonical media metadata | Pass |
+| Easier, safer, or faster than Markdown/Supabase lookup alone | Provisional pass; easier/safer yes, faster still needs dry-run proof |
+
+Task `394` Company implications:
+
+- The graph-first pilot clears the 7/10 planning threshold.
+- The next approved posture is not live implementation; it is a no-write dry-run/readback prototype proposal or another docs-only design pass.
+- Before any import or App behavior, OLI still needs public surface/reuse-target modeling, source version/checksum rules, readback proof that blockers/floors/do-not-say guardrails are visible by default, and evidence that a dry-run is faster without hiding caveats.
+- Public surface reuse remains under-modeled and belongs with Content/Web ownership before public-output use.
+- Speed is not proven until a no-write dry-run or query readback prototype exists.
+
+Task `394` Company closeout criteria:
+
+- The Research evaluation artifact is linked from the Company OLI plan.
+- Company records the 8/10 pass result and "continue, but no-write/derived-only" recommendation.
+- The graph pilot is allowed to proceed only toward dry-run/readback planning, not live import, public rendering, App behavior, or canonical writes.
+
 Content project:
 
 - Inventory source packets, transcripts, scripts, production notes, footage references, and hardware/local compute assumptions that should be retrievable.

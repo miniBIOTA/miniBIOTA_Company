@@ -290,6 +290,8 @@ This ledger keeps the earlier database research from disappearing into broad cat
 | Neo4j | Watchlist | Strong graph option, but less aligned with the current free/local-first decision and the $65/month concern. |
 | Financials task `406` graph cost review | Yes, cost gate | Stay no-cost and Memgraph-first; use Neo4j Aura Free only as bounded fallback/comparison after cloud-data approval; defer paid graph tooling until task `409`, manifests, rollback owner, and real free/local limitation exist. |
 | Financials task `407` cost thresholds | Yes, cross-category approval gate | All category ceilings remain TBD; effective interim ceiling is $0 for new paid OLI tooling until Josue sets ceilings; paid/cloud/upload/account/install/write-capable actions require explicit approval. |
+| Financials task `408` proven-job criteria | Yes, evidence threshold | Paid vector, analytics, cache/runtime, or automation tooling cannot reach Financials review until a recurring owner-backed job proves free/local/default options are insufficient and owner/benefit/rollback are defined. |
+| Financials task `415` Twelve Labs cost threshold | Yes, cloud benchmark gate | No upload or benchmark approved now; Free still needs account/API/upload/privacy/deletion approval; paid Twelve Labs requires a completed Free benchmark that materially beats Nemotron/Codex for a named weekly job. |
 | DuckDB | Yes, first analytics warehouse | Best local-first path for YouTube and website analytics files without committing to a cloud warehouse. |
 | MotherDuck | Optional upgrade | Use if analytics needs cloud sharing, collaboration, or remote access. |
 | BigQuery | Optional Google-native upgrade | Use if YouTube/Google Analytics integration becomes easier or more valuable there than DuckDB. |

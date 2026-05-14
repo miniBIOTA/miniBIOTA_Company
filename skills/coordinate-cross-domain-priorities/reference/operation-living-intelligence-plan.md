@@ -1407,6 +1407,82 @@ Task `407` Company closeout criteria:
 - The projection matrix treats task `407` as the cross-category Financials approval gate.
 - No purchase, subscription, account, cloud resource, tool install, Supabase/Planner write, financial record, App behavior, public behavior, graph/vector/cache/model activity, media upload, or commitment is implied.
 
+#### Proven-Job Criteria - Task 408
+
+Financials completed the task `408` docs-only proven-job criteria artifact on 2026-05-14:
+
+`M:\miniBIOTA\miniBIOTA_Financials\memory\11-operation-living-intelligence-proven-job-criteria.md`
+
+Company should treat that Financials memory note as the evidence threshold before OLI can even consider paid vector retrieval, analytics warehouse, cache/runtime, or automation tooling. The Company-side rule is:
+
+```text
+A proven job makes a tool eligible for Financials review.
+It does not approve paid tooling.
+If monthly ceiling, owner, benefit, or rollback is unclear, defer paid tooling.
+```
+
+Task `408` proven-job summary:
+
+| Category | Proven job requires |
+|---|---|
+| Vector retrieval | Evaluation set with expected answers, source paths/record IDs, privacy labels, observed misses or slow lookup, metadata filters, citation/readback needs, and evidence that pgvector/local retrieval is insufficient or insufficiently maintainable |
+| Analytics warehouse | Recurring report questions with real consumers, defined cadence, source list, normalized metrics, manual pain evidence, and reason local DuckDB/export workflow is not enough |
+| Cache/runtime | Approved App/runtime need such as queueing, locks, temporary state, repeated retrieval context, rate control, or caching, plus retention policy, failure behavior, and reason local/session state is insufficient |
+| Automation | Stable recurring manual workflow with defined inputs/outputs, low-risk read-only or proposed-write path, logs/readback, stop switch, error handling, and human approval surface |
+
+Task `408` Company implications:
+
+- A platform being popular, impressive, discounted, AI-branded, or easier than free/local setup is not enough.
+- Paid tooling remains deferred when source sets, citation/readback, public/private metadata, source access, report questions, runtime policy, logs, stop switches, owner, benefit, rollback, or monthly ceiling are missing.
+- Every paid-tool review packet needs domain owner, data owner, billing owner, benefit measure, free/local baseline, cost shape, ceiling, rollback, source-of-truth guardrail, and closeout evidence.
+- The free/local/default option must be tried first or have a written blocker explaining why it cannot be tried safely.
+
+Task `408` Company closeout criteria:
+
+- The Financials proven-job artifact is linked from the Company OLI plan.
+- The projection matrix treats task `408` as the evidence threshold before paid vector, analytics, cache/runtime, or automation review.
+- No purchase, subscription, account, cloud resource, API key, OAuth connection, tool install, Supabase/Planner write, financial record, App behavior, public behavior, scheduled job, import/export, or commitment is implied.
+
+#### Twelve Labs Cost Threshold - Task 415
+
+Financials completed the task `415` docs-only Twelve Labs cost threshold artifact on 2026-05-14:
+
+`M:\miniBIOTA\miniBIOTA_Financials\memory\12-operation-living-intelligence-twelve-labs-cost-threshold.md`
+
+Company should treat that Financials memory note as the approval gate for any future Twelve Labs free-tier benchmark or paid-plan consideration. The Company-side rule is:
+
+```text
+No Twelve Labs upload or benchmark is approved now.
+Twelve Labs can only be considered after a reviewed Nemotron/Codex run shows a specific gap.
+Free-tier approval still requires account, API key, upload, retention, deletion, privacy, and readback gates.
+Paid Twelve Labs requires a completed free benchmark that materially beats local/private results for a named weekly job.
+```
+
+Task `415` threshold summary:
+
+| Area | Financials output |
+|---|---|
+| Free-tier boundary | No payment-method setup and no paid plan; Free still needs account/key/upload/privacy/deletion approval before use |
+| Current posture | No upload, benchmark, account, API key, cloud resource, paid plan, or media processing approved |
+| After Nemotron/Codex | Twelve Labs can be considered only after a separately approved local/private run on the bounded set produces reviewed outputs and a narrow benchmark question |
+| Paid-plan threshold | Paid consideration requires a completed Free benchmark that materially beats Nemotron/Codex on the same bounded media for review quality, timestamp precision, recall, segmentation, structured metadata usefulness, or story-sequence usefulness |
+| Risks | Payment-method posture, usage-based minutes, Segment duration multiplier, monthly infrastructure fees, cumulative free minutes, Free index expiry, account/API key sprawl, raw media retention/privacy, spend-tier drift, and accidental backend adoption |
+| Readback | Any future benchmark must report uploads, non-uploads, account/workspace/index, Free usage, payment method status, exported candidate outputs, noncanonical status, deletion/retention readback, and proof no App/media/graph/vector/public/Supabase/Planner/financial record was created |
+
+Task `415` Company implications:
+
+- Twelve Labs remains a later benchmark, not an implementation path.
+- Free-tier availability is not enough to approve raw media upload.
+- Developer plan selection, payment-method setup, usage billing, or Enterprise discussion is paid tooling and needs explicit user approval plus Financials review.
+- If local Nemotron/Codex is good enough for the bounded workflow, Twelve Labs should remain deferred.
+- Twelve Labs paid monthly ceiling remains TBD; current default remains no payment method and no paid plan.
+
+Task `415` Company closeout criteria:
+
+- The Financials Twelve Labs threshold artifact is linked from the Company OLI plan.
+- The projection matrix treats task `415` as the Twelve Labs free-tier/upload/paid-plan gate.
+- No purchase, subscription, account, API key, upload, cloud resource, Supabase/Planner write, financial record, App behavior, public behavior, media processing, or commitment is implied.
+
 Content project:
 
 - Inventory source packets, transcripts, scripts, production notes, footage references, and hardware/local compute assumptions that should be retrievable.

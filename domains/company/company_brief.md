@@ -292,6 +292,33 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   subscription, account, cloud resource, tool install, Supabase/Planner write,
   financial record, App behavior, public behavior, graph/vector/cache/model
   activity, media upload, commitment, or source-of-truth record changed.
+- **2026-05-14:** Financials completed Operation Living Intelligence task
+  `408` as the docs-only proven-job criteria artifact:
+  `M:\miniBIOTA\miniBIOTA_Financials\memory\11-operation-living-intelligence-proven-job-criteria.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  evidence threshold before paid vector retrieval, analytics warehouse,
+  cache/runtime, or automation tooling can even reach Financials review. A
+  proven job must be recurring, owner-backed, source-of-truth-safe, measured
+  against a free/local/default baseline, bounded by dataset/workload, and
+  paired with owner, benefit, rollback, cost-shape, ceiling, and closeout
+  evidence. Passing the threshold does not approve paid tooling. No purchase,
+  subscription, account, cloud resource, API key, OAuth connection, tool
+  install, Supabase/Planner write, financial record, App behavior, public
+  behavior, scheduled job, import/export, commitment, or source-of-truth record
+  changed.
+- **2026-05-14:** Financials completed Operation Living Intelligence task
+  `415` as the docs-only Twelve Labs cost threshold artifact:
+  `M:\miniBIOTA\miniBIOTA_Financials\memory\12-operation-living-intelligence-twelve-labs-cost-threshold.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  Twelve Labs free-tier/upload/paid-plan gate. No Twelve Labs upload or
+  benchmark is approved now; any later Free benchmark still needs account/API
+  key, upload, retention/deletion, privacy, export, and readback approval after
+  Nemotron/Codex results show a specific gap. Paid Twelve Labs remains
+  deferred unless a completed Free benchmark materially beats local/private
+  results for a named weekly job, with owner, benefit, rollback, billing, and
+  ceiling approval. No purchase, subscription, account, API key, upload, cloud
+  resource, Supabase/Planner write, financial record, App behavior, public
+  behavior, media processing, commitment, or source-of-truth record changed.
 - **2026-05-14:** Company continued Operation Living Intelligence beyond the
   Company lead stages by mapping App boundary task `386` at the
   planning/readiness level. The map separates App-owned Planner runtime,

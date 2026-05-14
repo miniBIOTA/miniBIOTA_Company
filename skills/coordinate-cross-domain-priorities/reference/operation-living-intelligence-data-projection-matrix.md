@@ -51,6 +51,33 @@ What is not approved by this document:
 - Media metadata writes.
 - Financial, sponsor, legal, public, launch, or roadmap commitments.
 
+## 2026-05-14 Closeout State
+
+The first Operation Living Intelligence planning push ended with derived-layer scope clarified, but no implementation layer created.
+
+Completed docs-only/source artifacts:
+
+- Research tasks `391-394`: graph ontology, Lake Post-Seal graph candidates, path safety, and Stage 3 question evaluation.
+- Content tasks `395-399`, `413`, and `414`: retrievable source inventory, publicness/indexing plan, visual AI feasibility/storage risk, bounded test set, candidate annotation review workflow, Nemotron/Codex plus Twelve Labs media-set decision, and DaVinci pull-sheet/rough-sequence criteria.
+- Financials tasks `406-408` and `415`: graph cost review, cost thresholds, proven-job criteria, and Twelve Labs free-tier/paid-threshold gate.
+- App readiness tasks `386-390`: App surface boundary, read-only access pattern, agent router/tool registry design, local/private visual-model worker boundary, and approval/readback requirements.
+
+Planner state at closeout:
+
+| Project | Status | Meaning for projections |
+|---|---|---|
+| Company project `75` | Active | Do not build/export/import before task `409` reruns the implementation-time schema/data audit |
+| App project `76` | Planned | App implementation remains gated; task `412` is still open |
+| Research project `77` | Done | Research graph planning can be used as source for a future no-write dry-run handoff |
+| Content project `78` | Done | Content source/media planning can be used as source for a future no-write dry-run handoff |
+| Web project `79` | Planned | Public surfaces remain downstream; tasks `400-402` are open |
+| Growth/Sales project `80` | Planned | Analytics questions remain open; tasks `403-405` are open |
+| Financials project `81` | Done | Free/local and cost-gate posture is available for later implementation decisions |
+
+Projection rule learned during closeout:
+
+- Planner project cards are not task completion proof. For daily schedule cleanup, use task status for real work and project status/open tasks for container truth. Clearing a project-level `start_date` can remove calendar noise without changing whether the project is active or done.
+
 ## Research Basis
 
 Local sources checked:

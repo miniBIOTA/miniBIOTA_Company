@@ -1,6 +1,6 @@
 ﻿---
 title: Cross-Domain Operating Model
-last_updated: 2026-05-11
+last_updated: 2026-05-14
 ---
 # Cross-Domain Operating Model
 
@@ -27,6 +27,8 @@ A Project is a domain-owned execution unit. It may participate in one or more Pr
 A project owner is the domain or agent accountable for execution. A project lead is the person or agent coordinating day-to-day movement. In solo sessions these may be the same, but docs should keep the distinction visible when cross-domain work depends on handoffs.
 
 Project dates can carry start, deadline, or milestone context, but they should not be used merely to force daily calendar visibility. For cross-domain prep programs, keep the project as the domain-owned container and use scheduled tasks or subtasks for actual day-by-day work.
+
+If a project is complete or is only an umbrella/container but still appears in a daily Planner lane because `work_projects.start_date` is set, treat that as calendar-noise cleanup. With approval, clear the project-level `start_date` and preserve the true project status. Do not mark an active container project done while it still has an intentional open gate task.
 
 ### Task
 

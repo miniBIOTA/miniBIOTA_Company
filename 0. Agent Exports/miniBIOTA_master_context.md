@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Master Context
 
-- Generated: 2026-05-13 21:15:47 -04:00
+- Generated: 2026-05-14 16:53:17 -04:00
 - Source contract: Company `domains/` reports are included below.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 - Format: portable Markdown with Obsidian wiki-links normalized or removed.
@@ -139,8 +139,23 @@
   `work_programs.id = 4` now links Company, App, Research/Ecosystem, Content,
   Web, Growth/Sales, and Financials projects plus existing overlapping
   Aquatic Club, Atlas, Web, AI Infrastructure, App media, and Supabase-safety
-  projects. This is operating coordination only; no schema, App runtime,
-  public site, paid-service, local model install, automated-write, or
+  projects. Stage 1 source-of-truth, domain-owner, and agent-routing rules
+  are now finalized at the planning/governance level in the projection matrix,
+  and Stage 2 now defines the operation mesh: Aquatic Club Talk controls
+  near-term timing, Living Atlas supplies the first proof case, Living Web is a
+  downstream reviewed-output consumer, and AI & Knowledge Infrastructure
+  supplies tool/routing precedent. Stage 3 scopes the first graph pilot to the
+  Lake Post-Seal packet, and Stage 4 now sets weekly review as the default
+  pilot-planning cadence, with biweekly review allowed only as a capacity
+  adjustment around the talk window. Stage 5 now identifies the post-talk
+  implementation-readiness order: task `409` first, then a Lake Post-Seal
+  graph seed handoff, with Content/Research readiness and App design as the
+  first supporting lanes. The 2026-05-14 docs-only planning pass completed the
+  Research, Content, and Financials OLI lanes while leaving Company project
+  `75` active for implementation gate `409`, App project `76` planned for
+  task `412`, and Web/Growth tasks `400-405` open. This is operating
+  coordination only; no schema, App runtime, public site, paid-service, local
+  model install, automated-write, export/import, Planner/Supabase write, or
   source-of-truth cutover has been approved by the plan itself.
 - Codex is the primary operating interface moving forward. Previous interface-specific guidance is archived as legacy context only.
 
@@ -193,6 +208,352 @@
 
 ## Recent Milestones
 
+- **2026-05-14:** Research completed Operation Living Intelligence task `391`
+  as the first Research-owned graph ontology brief for the Lake Post-Seal graph
+  seed:
+  `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-391-graph-ontology.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  detailed source for ecological ontology, claim safety, publicness, confidence,
+  observed-vs-inferred separation, and review gates. The ontology defines the
+  first graph as a derived evidence/review graph using `GraphSeed`,
+  `SourcePacket`, `CanonicalRecord`, `Species`, `Biome`, `Observation`,
+  `Event`, `Claim`, `Media`, `PublicnessTier`, `ConfidenceAssessment`, and
+  `ReviewGate` concepts. Daphnia species-level ID/establishment, Ghost Shrimp
+  juvenile recruitment, Mesostoma public use, Moina establishment,
+  water-clearing causation, food-web completion, stability, chronology edits,
+  and sensitive media captions remain Research-review gated. No Supabase,
+  Planner, graph import, graph data, App behavior, Content record, public site,
+  species-card, chronicle, observation-link, media, canonical ecology, or
+  source-of-truth record changed.
+- **2026-05-14:** Research completed Operation Living Intelligence task `392`
+  as the docs-only Lake Post-Seal graph-candidate relationship artifact:
+  `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-392-lake-post-seal-graph-candidates.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  detailed source for candidate nodes, candidate edges, blocked edges,
+  provenance references, confidence/publicness/review labels, and validation
+  questions before any graph import. The artifact keeps everything
+  `derived_only` and `candidate_not_imported`, treats Freshwater Lake biome `1`
+  as a source-context pointer pending approval, and blocks tempting overclaims
+  such as direct canonical observation-to-pipeline/chronicle links, Daphnia
+  species-level ID/establishment/clearing claims, food-web completion/stability,
+  Ghost Shrimp recruitment, Mesostoma public-primary use, Moina establishment,
+  public media captions, out-of-scope chronicle species, later observations,
+  and story-thread/open-loop first-class nodes. No Supabase, Planner, graph
+  import, graph data, App behavior, Content record, Web/public behavior, media,
+  species, observation, chronicle, canonical ecology, or source-of-truth record
+  changed.
+- **2026-05-14:** Research completed Operation Living Intelligence task `393`
+  as the docs-only graph path evidence/publicness safety artifact:
+  `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-393-graph-path-safety.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  detailed source for path-level provenance, confidence floors, publicness
+  floors, review floors, observed/inferred/proposed/approved status handling,
+  query/readback checks, Lake Post-Seal examples, and traversal failure cases.
+  The core rule is that graph traversal must not make claims stronger: the most
+  restrictive confidence, publicness, and review state controls the path, and
+  blocked/review-required/internal/raw/proposed material stops public output and
+  import readiness. No Supabase, Planner, graph import, graph data, App
+  behavior, Content/Web/media/species/observation/chronicle record, canonical
+  ecology, or source-of-truth record changed.
+- **2026-05-14:** Research completed Operation Living Intelligence task `394`
+  as the docs-only Stage 3 pilot question evaluation:
+  `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-394-stage-3-pilot-question-evaluation.md`.
+  The graph-candidate model passed `8 / 10` Stage 3 pilot questions. Research
+  recommends continuing, but only to a no-write, derived-only dry-run/readback
+  prototype or another docs-only design pass. The graph model is strongest for
+  claim safety, source provenance, observed-vs-inferred separation, review
+  gates, species caveats, structured-write boundaries, and media-candidate
+  boundaries. Public surface/content reuse mapping remains under-modeled, and
+  speed improvement is plausible but unproven until a no-write dry-run/query
+  readback exists. No Supabase, Planner, graph import, graph data, App
+  behavior, public rendering, canonical write, Content/Web/media/species/
+  observation/chronicle record, canonical ecology, or source-of-truth record
+  changed.
+- **2026-05-14:** Content/Research completed Operation Living Intelligence
+  task `395` as the docs-only retrievable source inventory:
+  `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-content-task-395-retrievable-source-inventory.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  detailed source for source packets, scripts, archived Content project notes,
+  Research tasks `391-394`, named candidate footage/timecodes, Content
+  production setup, DaVinci workflow assumptions, Supabase provenance pointers,
+  candidate feed routing, publicness/review labels, transcript gaps, and
+  validation questions before any retrieval prototype. The inventory supports
+  a no-write, derived-only dry-run/readback design pass only. No Supabase,
+  Planner, Content canonical record, App behavior, media metadata, file move,
+  media scan, graph import, vector index, visual AI annotation, publication,
+  public behavior, or source-of-truth record changed.
+- **2026-05-14:** Content completed Operation Living Intelligence task `396`
+  as the docs-only source publicness and indexing plan:
+  `M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-396-source-publicness-indexing-plan.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  source-classification gate for task `395` materials. The plan defines
+  safe-to-index, internal-only, review-needed, public-safe candidate, raw
+  evidence only, and excluded classifications; restricts allowed feeds to
+  no-write graph dry-run, vector retrieval, visual AI candidate annotation,
+  analytics, or Markdown-only; and requires publicness labels, review owners,
+  blocked public-use cases, section-level labels, transcript-null handling,
+  media-reference-only behavior, ID-sensitive claim blocking, chronology
+  separation, and owner readback before any prototype. No Supabase, Planner,
+  Content canonical record, App behavior, Web/public behavior, graph import,
+  vector index, analytics job, visual AI annotation, media metadata, file move,
+  publication record, or source-of-truth record changed.
+- **2026-05-14:** Content completed Operation Living Intelligence task `397`
+  as the docs-only visual AI feasibility and backup-risk artifact:
+  `M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-397-visual-ai-feasibility-and-backup-risk.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  feasibility/storage gate before task `398` selects a small test set. The
+  artifact says a tiny no-write local/private visual AI feasibility pass may
+  be reasonable later, but no model run is approved now; batch processing,
+  full-library scans, persistent derivatives, production indexing, thumbnails,
+  checksum sweeps, and source-folder model caches remain blocked by the
+  backup-drive gap and missing owner approvals. Any later output is limited to
+  candidate annotation rows for human review. No model install, visual AI run,
+  file move, media scan, metadata write, Supabase/Planner record, graph data,
+  vector index, App/Web behavior, upload, purchase, public-use approval, or
+  source-of-truth record changed.
+- **2026-05-14:** Content completed Operation Living Intelligence task `398`
+  as the docs-only small visual AI test-set artifact:
+  `M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-398-small-visual-ai-test-set.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  selected bounded candidate media set for a possible later no-write
+  local/private visual AI feasibility run. The set contains four exact
+  file/timecode items: an opaque lake still, a field-sampling clip, a
+  sample-introduction clip, and one ID-sensitive microcrustacean blocking
+  test. It remains selection only and still requires Company approval plus App,
+  Raw Footage, Content, Research, and Financials gates before any run. No model
+  run, install, media move, media scan, frame extraction, thumbnail, sidecar,
+  upload, metadata write, Supabase/Planner write, graph/vector data, App/Web
+  behavior, purchase, public-use approval, or source-of-truth record changed.
+- **2026-05-14:** Content completed Operation Living Intelligence task `399`
+  as the docs-only candidate annotation review workflow:
+  `M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-399-candidate-annotation-review-workflow.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  review gate before any future metadata-write proposal. The workflow keeps
+  candidate visual annotations as noncanonical review material and requires
+  Raw Footage path/timecode/no-side-effect checks, Content story/publicness
+  review, Research organism/claim-safety review, App noncanonical tooling
+  confirmation, Company metadata-proposal go/no-go, and human-readable
+  readback. No model run, metadata write, media asset/species image record,
+  file move, frame extraction, sidecar, Supabase/Planner record, graph/vector
+  data, App/Web behavior, upload, public-use approval, publication approval,
+  purchase, or source-of-truth record changed.
+- **2026-05-14:** Content completed Operation Living Intelligence task `413`
+  as the docs-only Nemotron/Codex and Twelve Labs media-set decision:
+  `M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-413-nemotron-codex-twelve-labs-media-test-set.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  decision that task `398` fully satisfies the bounded media-set need for the
+  future Nemotron/Codex-first lane. Twelve Labs remains a later benchmark
+  possibility on the same four items only after separate cloud upload,
+  retention/deletion, privacy, account/free-tier, cost, export, and review
+  gates. No model run, install, upload, test-set expansion, media move/scan/
+  extraction, sidecar, thumbnail, metadata write, Supabase/Planner record,
+  graph/vector data, App/Web behavior, purchase, public-use approval,
+  publication approval, or source-of-truth record changed.
+- **2026-05-14:** Content completed Operation Living Intelligence task `414`
+  as the docs-only DaVinci pull-sheet and rough-sequence review criteria:
+  `M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-414-davinci-pull-sheet-rough-sequence-criteria.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  review output-shape gate for future candidate annotations. The artifact
+  defines review-safe pull-sheet fields, story role labels, quality/usefulness
+  labels, evidence caveats, Research review needs, Content usefulness fields,
+  rough-sequence order, candidate status rules, DaVinci workflow boundaries,
+  and readback requirements. No model run, DaVinci project open/edit, media
+  operation, metadata write, App/Web behavior, graph/vector activity,
+  Supabase/Planner write, upload, purchase, public-use approval, publication
+  approval, or source-of-truth record changed.
+- **2026-05-14:** Financials completed Operation Living Intelligence task
+  `406` as the docs-only graph cost review:
+  `M:\miniBIOTA\miniBIOTA_Financials\memory\09-operation-living-intelligence-graph-cost-review.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  graph-cost gate. The recommendation is no-cost and Memgraph-first; Neo4j
+  Aura Free is only a bounded fallback/comparison if local Memgraph is blocked
+  and the dataset is approved for cloud placement; paid graph tooling remains
+  deferred until task `409`, source manifests, owner/rollback, a Financials
+  monthly ceiling, and a real free/local limitation exist. No purchase,
+  subscription, account, cloud resource, database instance, migration, graph
+  import, Supabase/Planner write, App behavior, public behavior, financial
+  record, financial commitment, or source-of-truth record changed.
+- **2026-05-14:** Financials completed Operation Living Intelligence task
+  `407` as the docs-only cost thresholds and approval criteria artifact:
+  `M:\miniBIOTA\miniBIOTA_Financials\memory\10-operation-living-intelligence-cost-thresholds.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  cross-category Financials approval gate. Graph, vector, analytics,
+  cache/runtime, automation, local model tooling, visual AI/cloud benchmark,
+  and whole-stack OLI paid ceilings remain `TBD / not approved`; until Josue
+  sets ceilings, the effective new paid-tool ceiling is `$0`. Paid tiers,
+  payment-method trials, cloud resources, tool installs, large model
+  downloads, media uploads, accounts/API keys/OAuth, scheduled jobs,
+  write-capable automation, and live writes require explicit approval with
+  owner, benefit, and rollback/cancellation criteria. No purchase,
+  subscription, account, cloud resource, tool install, Supabase/Planner write,
+  financial record, App behavior, public behavior, graph/vector/cache/model
+  activity, media upload, commitment, or source-of-truth record changed.
+- **2026-05-14:** Financials completed Operation Living Intelligence task
+  `408` as the docs-only proven-job criteria artifact:
+  `M:\miniBIOTA\miniBIOTA_Financials\memory\11-operation-living-intelligence-proven-job-criteria.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  evidence threshold before paid vector retrieval, analytics warehouse,
+  cache/runtime, or automation tooling can even reach Financials review. A
+  proven job must be recurring, owner-backed, source-of-truth-safe, measured
+  against a free/local/default baseline, bounded by dataset/workload, and
+  paired with owner, benefit, rollback, cost-shape, ceiling, and closeout
+  evidence. Passing the threshold does not approve paid tooling. No purchase,
+  subscription, account, cloud resource, API key, OAuth connection, tool
+  install, Supabase/Planner write, financial record, App behavior, public
+  behavior, scheduled job, import/export, commitment, or source-of-truth record
+  changed.
+- **2026-05-14:** Financials completed Operation Living Intelligence task
+  `415` as the docs-only Twelve Labs cost threshold artifact:
+  `M:\miniBIOTA\miniBIOTA_Financials\memory\12-operation-living-intelligence-twelve-labs-cost-threshold.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  Twelve Labs free-tier/upload/paid-plan gate. No Twelve Labs upload or
+  benchmark is approved now; any later Free benchmark still needs account/API
+  key, upload, retention/deletion, privacy, export, and readback approval after
+  Nemotron/Codex results show a specific gap. Paid Twelve Labs remains
+  deferred unless a completed Free benchmark materially beats local/private
+  results for a named weekly job, with owner, benefit, rollback, billing, and
+  ceiling approval. No purchase, subscription, account, API key, upload, cloud
+  resource, Supabase/Planner write, financial record, App behavior, public
+  behavior, media processing, commitment, or source-of-truth record changed.
+- **2026-05-14:** Company closed the first Operation Living Intelligence
+  planning push and reconciled the live Planner state. Company setup/stage
+  tasks `380-385`, visual media gate `411`, App readiness tasks `386-390`,
+  Research tasks `391-394`, Content tasks `395-399` plus `413-414`, and
+  Financials tasks `406-408` plus `415` are complete. Research project `77`,
+  Content project `78`, and Financials project `81` are done. Company project
+  `75` remains active because task `409` is intentionally open as the
+  implementation-time schema/data audit gate. App project `76` remains planned
+  because task `412` is still open, and Web/Growth projects `79-80` remain
+  planned with tasks `400-405` open. Company also cleaned project-level
+  calendar noise by clearing `start_date` on project `75` and completed App
+  project `82`; no project was incorrectly marked done to hide a real open
+  gate. No schema, App runtime, public site, paid-service, model run, cloud
+  upload, media metadata, graph/vector/analytics data, automation, public
+  commitment, sponsor commitment, financial commitment, legal decision, launch
+  target, roadmap commitment, or source-of-truth cutover was approved.
+- **2026-05-14:** Company continued Operation Living Intelligence beyond the
+  Company lead stages by mapping App boundary task `386` at the
+  planning/readiness level. The map separates App-owned Planner runtime,
+  Supabase bridge, Media Library, raw media folder/indexing path, storage/upload
+  tooling, secret-key paths, Site Admin/admin workflows, monitoring, and Prompt
+  Library surfaces. The active App media indexing boundary is
+  `M:\miniBIOTA\miniBIOTA_Files\8. Raw Footage\Photos & Videos`. This gives
+  later App bridge, agent-router, media-worker, and writeback planning a clean
+  boundary while leaving App implementation ownership intact. No App code,
+  schema, runtime, helper, storage, media metadata, local service, credential,
+  public behavior, model run, automation, Planner/Supabase write, or
+  source-of-truth change was approved.
+- **2026-05-14:** Company scoped App readiness task `387` as a read-only
+  access pattern for graph, vector retrieval, analytics, media intelligence,
+  and the future agent router/tool registry. The pattern requires canonical
+  source lookup first, derived-layer query second, source/citation and
+  publicness/confidence/review context in outputs where applicable, and any
+  proposed correction routed back to the canonical owner. It does not approve
+  Memgraph install, vector index, analytics warehouse, API/OAuth connection,
+  local service, App helper, model run, cloud upload, scheduled job, canonical
+  write, public behavior, App runtime change, schema change, or automation.
+- **2026-05-14:** Company scoped App readiness task `388` as the first
+  Operation Living Intelligence agent router/tool registry design. The router
+  checks canonical sources first, uses derived layers only as helpers, returns
+  evidence and omitted/blocked layers, names the owner and approval gate, and
+  stops before writes or consequential actions. The registry shape covers tool
+  name, canonical/derived role, owning domain, allowed agents/actions,
+  required inputs/outputs, blocked default actions, and approval gate. It does
+  not grant new tool access, credentials, App bridge implementation,
+  automation, cross-domain write authority, public behavior, paid service,
+  Planner/Supabase write, or source-of-truth change.
+- **2026-05-14:** Company scoped App readiness task `389` as the local/private
+  visual-model worker boundary for the Nemotron/Codex media-intelligence path.
+  The worker is defined as a file-based sidecar that may produce candidate
+  JSON/JSONL annotations, Markdown notes, and pull-sheet drafts from a future
+  approved bounded media manifest. Nemotron/Codex remains the first lane, Qwen
+  remains fallback/benchmark only, and Twelve Labs remains a later bounded
+  comparison after a usable local/private workflow exists. No model install,
+  model download, dependency install, raw media scan, cloud upload, App worker,
+  App runtime change, schema change, storage write, media metadata write,
+  public behavior, publication, automation, or source-of-truth change was
+  approved.
+- **2026-05-14:** Company scoped App readiness task `390` as the approval and
+  readback requirement for any future App schema, runtime, helper, bridge,
+  storage, media metadata, automation, or canonical writeback path related to
+  Operation Living Intelligence. Future App-affecting implementation now needs
+  an approval packet naming the action, owners, source inputs, write target,
+  scope, safety labels, validation/readback, and rollback/fallback. Required
+  readback is defined for schema/migrations, runtime helpers, media metadata,
+  storage, candidate annotation files, Planner writes, public behavior, paid
+  services/API/OAuth, and automation. No App implementation, schema/runtime
+  change, storage write, media metadata write, public behavior, paid service,
+  automation, or source-of-truth change was approved.
+- **2026-05-14:** Company defined **Operation Living Intelligence Stage 5** as
+  the post-Aquatic Club Talk implementation-readiness decision. After the
+  2026-06-14 talk closeout, the first technical readiness lane should be task
+  `409`, followed by a docs-only App/Research/Content handoff for the
+  Lake Post-Seal graph seed. Content/source inventory and Research ontology
+  review may advance because they feed that proof case; App bridge work may
+  advance as design only. Visual AI/media and analytics may advance only as
+  bounded readiness/inventory lanes. Web public surfaces, vector retrieval,
+  automation/cache/runtime memory, and writeback/cutover remain downstream
+  until pilot proof and separate approvals exist. No implementation, install,
+  export/import, App runtime, schema, public behavior, paid service, model run,
+  media metadata write, automation, live Planner/Supabase write, public
+  commitment, sponsor commitment, financial commitment, legal decision, launch
+  target, roadmap commitment, or source-of-truth change was approved.
+- **2026-05-14:** Company defined **Operation Living Intelligence Stage 4** as
+  the pilot-planning review rhythm. Weekly OLI review is now the default while
+  pilot planning is active, with lightweight review before the 2026-06-13
+  Aquatic Club Talk and biweekly review allowed only when the talk window or
+  domain capacity makes weekly review too heavy. Each review checks current
+  phase, task `409`, Stage 3 gates, Lake Post-Seal packet status, Research and
+  Content review needs, Web downstream boundaries, Financials/cost questions,
+  source-of-truth drift, domain handoffs, blockers, and approval gates.
+  Escalation is required before any paid service, install, App runtime bridge,
+  export/import, schema change, public website behavior, raw media upload,
+  canonical media metadata write, automation, cross-domain write authority,
+  public commitment, sponsor commitment, financial commitment, legal decision,
+  launch target, roadmap commitment, or live Planner/Supabase write.
+- **2026-05-14:** Company scoped **Operation Living Intelligence Stage 3** as
+  a graph-first Lake Post-Seal pilot at the planning/governance level. The
+  pilot is bounded to `content_pipeline.id = 338`, `chronicles.id = 30`, the
+  Lake Post-Seal species set, observations `170-178` plus explicitly approved
+  context records, Living Atlas source packets, Research validation notes, and
+  media references only. Success requires answering at least 7 of 10 evidence,
+  publicness, uncertainty, review-routing, and source-provenance questions more
+  clearly than Markdown/Supabase lookup alone, while preserving source IDs,
+  publicness/confidence labels, owner review paths, rebuildability, and
+  canonical-source discipline. No Memgraph install, export/import job, schema,
+  App behavior, media metadata write, public site behavior, paid service,
+  automation, public commitment, sponsor commitment, financial commitment,
+  legal decision, launch target, roadmap commitment, or source-of-truth cutover
+  was approved. Task `409` remains the next implementation-grade audit gate
+  before any graph import.
+- **2026-05-14:** Company started **Operation Living Intelligence Stage 2**
+  by documenting the operation mesh across Aquatic Club Talk Readiness,
+  Operation Living Atlas, Operation Living Web, and AI & Knowledge
+  Infrastructure. The resulting rule is: Aquatic Club Talk sets near-term
+  timing, Living Atlas supplies the Lake Post-Seal graph/retrieval proof case,
+  Living Web remains downstream of reviewed outputs, and AI & Knowledge
+  Infrastructure supplies prior tool/routing discipline. OLI may do docs-only
+  planning and small talk-support retrieval/evidence/analytics-question work
+  before the 2026-06-13 talk, but heavier graph/vector/analytics builds, model
+  installs, automation, App runtime work, and source-of-truth changes wait for
+  post-talk review, task `409`, and the relevant approval gates. No live
+  Planner/Supabase records beyond the approved Stage 1 task completion, schema,
+  App behavior, public site behavior, model install, raw media upload, paid
+  service, automated job, public commitment, sponsor commitment, financial
+  commitment, legal decision, launch target, or roadmap commitment changed.
+- **2026-05-14:** Company finalized **Operation Living Intelligence Stage 1**
+  at the planning/governance level by adding explicit source-of-truth,
+  system-access, domain-owner, agent-permission, and implementation-gate
+  matrices to the data projection matrix. The baseline rule is read canonical
+  sources first, use graph/vector/analytics/visual AI as derived helper
+  layers, return proposed changes to the canonical owner, and write only after
+  the relevant approval gate is satisfied. Task `409` remains the required
+  implementation-grade Supabase schema/data audit gate before any first OLI
+  export/import, graph build, vector index, analytics pull, model batch, cache,
+  or automation job. No live Planner/Supabase records, schema, App behavior,
+  public site behavior, local model install, raw media upload, paid service,
+  automated job, public commitment, sponsor commitment, financial commitment,
+  legal decision, launch target, or roadmap commitment changed.
 - **2026-05-14:** Josue officially swapped Operation Living Intelligence
   visual media intelligence to the **Nemotron/Codex-first** path after
   reviewing NVIDIA Nemotron 3 Nano Omni. The first build should keep raw media
@@ -638,51 +999,46 @@ Brain no longer mirrors Company docs. Load active Company detail from the source
 # 2. miniBIOTA_Financials
 
 ## Scope
-- Defines the financial baseline, operating expenses, debt carry, active revenue streams, and tax obligations for miniBIOTA.
-- This domain is strictly about the numbers â€” what comes in, what goes out, what's owed, and what's planned.
+- Defines the financial baseline, operating expenses, debt carry, active revenue streams, cash visibility, and tax-obligation support for miniBIOTA.
+- This domain is strictly about the numbers: what comes in, what goes out, what is owed, and what is planned.
+- Current financial values must be verified in Supabase before analysis. `financials_brief.md` is the active manager-facing snapshot.
 
 ## Current State
 - Initial operating expense, liabilities, and revenue data was normalized on 2026-03-29 from founder-provided CSV exports and loaded into Supabase.
-- Supabase tables are live: `operating_expenses`, `liabilities`, `revenue_streams`, `planned_purchases`, `mileage_log`.
-- Active Financials Agent context has moved from the old mirrored `docs/` pattern into `M:\miniBIOTA\miniBIOTA_Financials\AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
-- Financials project management is now organized in App Planner/Supabase under
-  `work_domains.key = financials` / `domain_id = 2`. After the 2026-05-12
-  cross-domain cleanup, 2026-05-13 financial readback, and 2026-05-14
-  Operation Living Intelligence cost-review task addition, Financials has 8
-  active work projects and 26 task rows (21 open, 5 done).
-- `mileage_log` added 2026-04-21: IRS-compliant vehicle trip log. Fields: `trip_date`, `destination`, `purpose`, `project`, `category` (field_work/production/business), `miles`, `irs_rate`, `deduction_amount` (computed). RLS enabled. Standard mileage rate method adopted â€” tolls and parking are separately tracked in Quicken under `Content & Production : Tolls & Parking`.
-- Hardware debt (physical build costs) is currently a secondary priority to establishing digital cash flow.
+- Supabase tables are live for operating expenses, liabilities, revenue streams, planned purchases, mileage, monthly closes, account snapshots, cash receipts, expense transactions, and statement reconciliation support.
+- Active Financials Agent context lives in `M:\miniBIOTA\miniBIOTA_Financials\AGENTS.md`, `memory\`, `skills\`, and `skills\*\reference\`.
+- Financials project management is organized in App Planner/Supabase under `work_domains.key = financials` / `domain_id = 2`. After the 2026-05-14 closeout and recurring monthly close setup, Financials has 9 active/planned work projects and 36 task rows (28 open, 8 done). Planner is task-status truth only; financial truth remains in Supabase finance tables and close records.
+- A recurring accountant-style monthly close workflow now lives in Planner project `Monthly Financial Close & Accountant Review` (`work_projects.id=83`) with recurring routine task `Monthly Financial Close and Statement Review` (`tasks.id=488`) and checklist subtasks (`tasks.id=489`-`497`), first scheduled for 2026-06-05.
+- `mileage_log` added 2026-04-21 as the IRS-compliant vehicle trip log. Standard mileage rate method is adopted; tolls and parking are separately tracked in Quicken under `Content & Production : Tolls & Parking`.
 
 ## Financial Baseline
+Current values below are a Company reporting snapshot as of 2026-05-14. Verify Supabase rows before analysis or writes.
+
 ### Income
-- **Total Average Monthly Inflow:** $460.10 (Facebook $193.31, YouTube $170.14, Patreon $87.95, Ko-Fi $8.71)
-- **Latest Monthly Snapshot:** $576.21 total inflow in March 2026
-- **April 2026 (partial as of 2026-04-21):** Patreon $78.21 (received Apr 6). YouTube and Facebook pending. Ko-Fi and Open Collective pending.
+- Average monthly inflow: approximately $460/mo.
+- Latest closed monthly snapshot: $576.21 total inflow in March 2026.
+- April 2026 cash receipts: $294.28 total, consisting of $78.21 Patreon deposited 2026-04-06 for the April period and $216.07 Facebook deposited 2026-04-23 for the March period.
+- May Patreon: $102.55 deposited 2026-05-06 and recorded with approval on 2026-05-14.
 
 ### Operating Expenses
-- **Total Monthly OpEx:** $97.52
-- Web & Data: $26.25 (OpenAI, Domain, Railway)
-- Content Production: $14.99 (Artlist)
-- Operations: $36.28 (Google Workspace, Amex annual fee, FL Annual Report filing fee)
-- AI Tools: $20.00 (Anthropic Claude Code)
-- *Cancelled: Fusion 360 ($40.88/mo), Google AI API ($10.00/mo)*
+- Monthly OpEx: $157.52.
+- AI tools changed on 2026-04-29: Anthropic / Claude Code cancelled; OpenAI upgraded from ChatGPT Plus to ChatGPT Pro at $100/mo.
+- Artlist remains a Content OpEx at $14.99/mo.
 
 ### Liabilities
-- **Credit Cards/Loans:** $56,883.41 total balance, $1,695.00 minimum monthly payments, APRs 16.40%-28.49%
-- **Founder Capital:** $33,500.00 at 0% APR (sunk cost)
-- **Total Recorded Liabilities:** $90,383.41
+- Credit card debt: $56,674.65, APRs 16.40%-28.49%.
+- Founder capital: $33,500.00 at 0% APR.
+- Total recorded liabilities: $90,174.65.
 
-### Pending
-- Utilities: estimated monthly electricity/water bump from biomes not yet captured
+### Cash Visibility
+- Business cash: $384.90 as of 2026-05-14 from Chase Business Complete Checking current activity.
+- Personal runway support: $13,177.78 as of 2026-05-02. Personal runway support remains separate from business cash.
+- May AmEx current activity was reviewed from a 2026-05-14 screenshot, but May AmEx expense writes were deferred until the next official statement to avoid partial-month duplication.
 
 ## Financials Agent Memory And Skills
-Financials now uses the repo-native memory/skills architecture. Use the Financials repo directly for detailed context:
+Financials uses the repo-native memory/skills architecture. Use the Financials repo directly for detailed context:
 
-Financials Agent wiring now treats App Planner/Supabase as the live Financials
-work queue. Financials sessions should read Planner projects/tasks when
-planning work, ask before marking completed Planner tasks done at closeout, and
-keep balances, APRs, cash, revenue, mileage, tax, liability, receipt,
-transaction, and close truth in financial tables rather than in Planner.
+Financials Agent wiring treats App Planner/Supabase as the live Financials work queue. Financials sessions should read Planner projects/tasks when planning work, ask before marking completed Planner tasks done at closeout, and keep balances, APRs, cash, revenue, mileage, tax, liability, receipt, transaction, and close truth in financial tables rather than in Planner.
 
 | Path | Purpose |
 |---|---|
@@ -691,7 +1047,9 @@ transaction, and close truth in financial tables rather than in Planner.
 | `M:\miniBIOTA\miniBIOTA_Financials\memory\02-financial-safety-rules.md` | Financial safety, approval, and sensitive-write rules |
 | `M:\miniBIOTA\miniBIOTA_Financials\memory\03-financial-data-model.md` | Current-state vs historical close table roles |
 | `M:\miniBIOTA\miniBIOTA_Financials\memory\04-tax-and-category-rules.md` | Durable tax/category decisions |
+| `M:\miniBIOTA\miniBIOTA_Financials\memory\05-database-access.md` | Database and Planner access boundaries |
 | `M:\miniBIOTA\miniBIOTA_Financials\memory\05-monthly-close-rules.md` | Monthly close sequencing and separation rules |
+| `M:\miniBIOTA\miniBIOTA_Financials\memory\08-statement-reconciliation-model.md` | Statement visibility and reconciliation model |
 | `M:\miniBIOTA\miniBIOTA_Financials\skills\analyze-financial-state\SKILL.md` | Cash flow, runway, debt, revenue, burn, liabilities, taxes, and current state |
 | `M:\miniBIOTA\miniBIOTA_Financials\skills\categorize-expense\SKILL.md` | Expense classification workflow |
 | `M:\miniBIOTA\miniBIOTA_Financials\skills\log-mileage\SKILL.md` | Mileage logging workflow |
@@ -704,72 +1062,45 @@ The Brain Financials folder no longer keeps a `docs/` mirror. Use the source rep
 Full category/subcategory/tax line item structure established 2026-04-21. Active reference: `M:\miniBIOTA\miniBIOTA_Financials\skills\categorize-expense\reference\quicken-categories.md`.
 
 Key decisions:
-- **Standard mileage rate** adopted for vehicle deduction (not actual expenses). Mileage tracked in Supabase `mileage_log`. Gas stays on personal side.
-- **Tolls & Parking** is the vehicle subcategory under Content & Production (replaces Vehicle & Fuel). Tolls deductible on top of standard mileage rate.
-- **Phone & Internet** stays on personal side. Business use percentage deducted at tax time â€” not split in Quicken.
+- Standard mileage rate adopted for vehicle deduction, not actual vehicle expenses. Mileage is tracked in Supabase `mileage_log`. Gas stays on the personal side.
+- Tolls and parking are deductible on top of the standard mileage rate and route to `Content & Production : Tolls & Parking`.
+- Phone and internet stay on the personal side. Business-use percentage is handled at tax time.
 
-**2026 mileage logged as of 2026-04-21:** 603.0 miles / $404.01 deduction
-| Date | Destination | Miles | Deduction |
-|---|---|---|---|
-| Mar 14 | Aquashella, Orlando FL | 172.0 | $115.24 |
-| Mar 26 | Honeymoon Island, FL | 182.0 | $121.94 |
-| Apr 4 | Old Town, FL | 120.0 | $80.40 |
-| Apr 22 | Spring Hill, FL | 129.0 | $86.43 |
+2026 mileage logged as of 2026-04-21: 603.0 miles / $404.01 deduction.
 
 ## Dashboard
-Financials tab lives in the miniBIOTA Electron desktop app (`M:\miniBIOTA\miniBIOTA_App\`). Pulls live from `revenue_streams`, `operating_expenses`, `liabilities`, `planned_purchases`. Shows: revenue by source (3-month comparison), monthly burn, liabilities with APR and proportional bars, planned purchases queue.
+Financials tab lives in the miniBIOTA Electron desktop app (`M:\miniBIOTA\miniBIOTA_App\`). It pulls live from financial tables and displays revenue, monthly burn, liabilities, planned purchases, and related dashboard state.
 
 ## Sponsor Pipeline
-Active partner pipeline now live in Supabase `partner_opportunities` table (added 2026-04-17). Visible in the Sales Pipeline tab of the miniBIOTA desktop app (`M:\miniBIOTA\miniBIOTA_App\`). 5 active prospects: Fritz Aquatics (warm â€” gifting only, converting to paid), Bambu Lab, Seachem, Autodesk/Fusion 360, Fluval. Target: 2 closed deals by May 1 to reach $2,000/mo break-even.
+Sales/Growth owns partner pipeline execution in `partner_opportunities`. Financials tracks revenue after closed/approved deals and keeps financial guardrails for sponsorship planning.
 
-## Priorities (as of 2026-04-21)
-Live task status is now in App Planner/Supabase under the Financials domain.
-The historical priority list below predates Planner project organization and
-should be treated as context unless confirmed against live Planner records.
-Open items in priority order:
-1. ~~Create live revenue tracker~~ â€” Quicken categories established; April revenue entry in progress (return Apr 30 for full close)
-2. Capture utility cost estimates (electricity/water) for biome operations
-3. Verify and update all debt balances, minimum payments, and APRs â€” fill missing `next_due_date` fields
-4. Document tax obligations and filing requirements
-5. Build sponsor/partner pipeline in `partner_opportunities` table
-6. Add cash balance / bank snapshot table â€” **scheduled for April 30** (closing balance + credit card balances + runway calculation)
-7. Create one-time expenses log for non-recurring actual spend (monitor, GPU, and other equipment purchases)
-8. Add monthly revenue targets per source
-9. Build debt payoff projection (avalanche method)
-10. Build 3â€“6 month cash flow projection (requires cash balance table first)
+## Priorities
+Live task status is in App Planner/Supabase under the Financials domain. Use live Planner records and `financials_brief.md` for current priority ordering. As of 2026-05-14, active manager-facing priorities are:
 
-**April 30 return checklist:**
-- Log YouTube and Facebook April revenue
-- Log Ko-Fi and Open Collective (if any)
-- Log actual cost/date for ASUS ProArt monitor and Ulanzi phone mount
-- Log RTX 5060 Ti GPU (received Apr 24, actual cost)
-- Enter cash balance and credit card balances
-- Log any remaining April mileage trips
+1. Capture utility cost estimates for biome operations
+2. Verify and update debt balances, minimum payments, and APRs
+3. Document tax obligations and filing requirements
+4. Build a 3-6 month cash flow projection using current Chase visibility, AmEx current-activity review, cash snapshots, burn, debt payments, and planned purchases
 
 ## Risks / Gaps
-- No cash balance / runway visibility yet â€” highest structural gap. April 30 snapshot planned.
-- April 2026 revenue partially entered (Patreon only); YouTube and Facebook still pending.
 - Utility costs not captured in operating expenses.
 - Tax obligations not documented.
 - `next_due_date` null on most liability records.
-- Equipment purchases (monitor, GPU) not yet logged as actual expenses â€” `planned_purchases` still shows them as pending/ordered.
+- May AmEx activity is reviewed from current activity but should wait for the next official statement before statement-row import or partial-month expense reconciliation.
 
 ## Files In This Folder
 
-**Company-owned active strategic view:**
-- `financials_overview.md` â€” this file
+Company-owned active strategic view:
+- `financials_overview.md` - this file
+- `financials_brief.md` - operational state, active priorities, risks, and cross-domain notes
 
-**Financials Agent-owned (edit in `M:\miniBIOTA\miniBIOTA_Financials\`):**
-- `AGENTS.md` - active Financials Agent entry point
-- `memory/` - durable financial memory and routing
-- `skills/` - repeatable workflow playbooks and exact references
-- `financials_brief.md` â€” operational state, active priorities, risks, cross-domain notes (maintained by Financials Agent)
+Financials Agent-owned detailed context:
+- `M:\miniBIOTA\miniBIOTA_Financials\AGENTS.md`
+- `M:\miniBIOTA\miniBIOTA_Financials\memory\`
+- `M:\miniBIOTA\miniBIOTA_Financials\skills\`
 
-**Mirror status:**
-- Brain no longer keeps a Financials `docs/` mirror. Use the source repo paths above for active detailed context.
-
-**Sync behavior:**
-- `_system/sync_docs.ps1` keeps Financials docs mirroring disabled and removes any stale `2. miniBIOTA_Financials\docs` folder if it appears.
+Mirror status:
+- Brain no longer keeps a Financials `docs/` mirror. Use the Financials repo paths above for active detailed context.
 
 ## Domain Brief Snapshot
 
@@ -786,39 +1117,59 @@ Open items in priority order:
 | April close cash receipts | $294.28 total: $78.21 Patreon deposited 2026-04-06 for April period; $216.07 Facebook deposited 2026-04-23 for March period; YouTube/Ko-Fi had no April deposit |
 | Monthly OpEx | $157.52 |
 | Net (avg) | ~$302/mo before debt service |
-| Credit card debt | $56,674.65 (APRs 16.40%â€“28.49%) |
+| Credit card debt | $56,674.65 (APRs 16.40%-28.49%) |
 | Founder capital | $33,500.00 at 0% APR |
 | Total liabilities | $90,174.65 |
-| Cash position | $282.35 business cash plus $13,177.78 personal runway support as of 2026-05-02 |
+| Cash position | $384.90 business cash as of 2026-05-14 plus $13,177.78 personal runway support as of 2026-05-02 |
 
 Financials project management is now Planner-integrated under
 `work_domains.key = financials` / `domain_id = 2`. After the 2026-05-12
-cross-domain cleanup and financial readback, Financials has 8 active work
-projects and 26 task rows (21 open, 5 done) after Operation Living
-Intelligence cost-review task `415` was added on 2026-05-14. Planner remains
-task-status truth; financial tables and close records remain
-balance/revenue/expense truth.
+cross-domain cleanup and financial readback plus the approved 2026-05-14
+Financials closeout for tasks `182` and `410`, and the recurring monthly
+Financials close routine, Financials has 9 active/planned work projects and 36
+task rows (28 open, 8 done). Planner remains task-status truth; financial
+tables and close records remain balance/revenue/expense truth.
 
 ## Active Priorities
 
 Planner/Supabase is the live Financials work queue for task status. Financial
 truth remains in financial tables and close records, not Planner task text.
 
-1. Collect May/current bank and card statements for spending visibility; Planner task `410` is scheduled for 2026-05-14.
-2. Capture utility cost estimates for biome operations
-3. Verify and update debt balances, minimum payments, and APRs
-4. Document tax obligations and filing requirements
-5. Build 3-6 month cash flow projection using current statements, cash snapshots, burn, debt payments, and planned purchases
+1. Capture utility cost estimates for biome operations
+2. Verify and update debt balances, minimum payments, and APRs
+3. Document tax obligations and filing requirements
+4. Build 3-6 month cash flow projection using current Chase visibility, current AmEx activity review, cash snapshots, burn, debt payments, and planned purchases
 
 ## Recent Milestones
 
+- **2026-05-14:** Financials created the approved recurring `Monthly Financial
+  Close & Accountant Review` Planner project (`work_projects.id=83`) with a
+  monthly recurring parent routine (`tasks.id=488`) and nine recurring checklist
+  subtasks (`tasks.id=489`-`497`), first scheduled for 2026-06-05. The routine
+  preserves the approval boundary: actual financial-record writes, statement
+  imports, balance updates, liability edits, tax-sensitive changes, schema/app
+  changes, and Planner closeout writes still require explicit approval and
+  readback.
+- **2026-05-14:** Financials completed the current statement visibility pass
+  for Planner task `410` with approval. January-April Chase Business Complete
+  Checking statements were reviewed, Chase current activity showed a 2026-05-06
+  Patreon deposit of $102.55 and a 2026-05-14 business cash balance of
+  $384.90, and those May revenue/cash receipt/balance records were added to
+  Supabase with readback. The AmEx current-activity screenshot was reviewed
+  through 2026-05-14; May AmEx expense writes were intentionally deferred until
+  the next official statement to avoid partial-month duplication. Planner tasks
+  `182` and `410` were marked done with approval.
+- **2026-05-14:** Financials added the missing 2026-03-25 PayPal/eBay Wyse
+  computer purchase as a posted $50.88 System Equipment expense after Josue
+  confirmed it was the Hardware Wyse computer for the local control network and
+  telemetry coordinator.
 - **2026-05-14:** Company updated Operation Living Intelligence Financials
   task `415` to review Twelve Labs free-tier limits and paid-plan thresholds
   only after Nemotron/Codex benchmark results exist. Qwen remains
   fallback/benchmark only. This is a cost-review gate only; no paid
   subscription, vendor backend, financial commitment, media upload, App
   runtime change, or schema change was approved.
-- **2026-05-13:** Financials added and applied a statement reconciliation layer for full card visibility without polluting miniBIOTA expense totals. January-April 2026 AmEx Business Green Rewards Card statements are now represented in `statement_import_batches` with 72 statement rows, 4 statement document metadata records, and 12 recurring classification rules. User review resolved all initially open Amazon, Walmart, Home Depot, and points-adjustment rows; remaining open statement-review count was verified as zero. The April-statement Google/Claude charge was confirmed as Anthropic/Claude, and Planner task `410` was created for 2026-05-14 to collect May/current bank and card statements.
+- **2026-05-13:** Financials added and applied a statement reconciliation layer for full card visibility without polluting miniBIOTA expense totals. January-April 2026 AmEx Business Green Rewards Card statements are now represented in `statement_import_batches` with 72 statement rows, 4 statement document metadata records, and 12 recurring classification rules. User review resolved all initially open Amazon, Walmart, Home Depot, and points-adjustment rows; remaining open statement-review count was verified as zero. The April-statement Google/Claude charge was confirmed as Anthropic/Claude, and Planner task `410` was created for 2026-05-14 to collect May/current bank and card statements; that follow-up was completed on 2026-05-14 with approval.
 - **2026-05-12:** Company applied approved Financials Planner cleanup and
   readback. Tasks `96` and `97` were marked complete after verifying
   `account_balance_snapshots`, `expense_transactions`, and `planned_purchases`.
@@ -826,11 +1177,12 @@ truth remains in financial tables and close records, not Planner task text.
   were entered and readback confirmed monthly close `id=1` is closed for
   `close_month = 2026-04-01` with April cash receipts entered.
 - **2026-05-09:** Financials project management was organized in App
-  Planner/Supabase: 6 Financials work projects now track revenue/targets,
+  Planner/Supabase: the 6 core Financials work projects track revenue/targets,
   operating burn/utilities, debt/liabilities, tax/deduction support, monthly
   close/cash runway/forecasting, and planned purchases/equipment spend.
-  Existing Financials tasks were linked, one pending Google-charge review task
-  was added, and readback confirmed 0 unlinked open Financials tasks. The
+  Existing Financials tasks were linked, one then-pending Google-charge review
+  task was added and later resolved, and readback confirmed 0 unlinked open
+  Financials tasks. The
   Financials Agent then verified and tightened local Planner wiring in
   `AGENTS.md`, memory, and `skills/financials-session-closeout/SKILL.md`
   without changing financial records, Planner records, schema, app behavior, or
@@ -849,14 +1201,15 @@ truth remains in financial tables and close records, not Planner task text.
 
 - Utility costs not captured in operating expenses.
 - Tax obligations not documented.
-- May/current bank and card activity still needs to be collected before current-month spending visibility and runway forecasting are reliable.
-- Planner tasks `182` and `378` appear substantively resolved from the 2026-05-13 Financials session but still need explicit approval before being marked done.
+- May AmEx activity is reviewed from current activity but should wait for the
+  next official statement before statement-row import or partial-month expense
+  reconciliation.
 
 ## Cross-Domain Notes
 
-- **Content:** Mileage trips for field work and content production are deductible â€” always log in `mileage_log` after field sessions. Artlist ($14.99/mo) is a Content OpEx.
+- **Content:** Mileage trips for field work and content production are deductible - always log in `mileage_log` after field sessions. Artlist ($14.99/mo) is a Content OpEx.
 - **Hardware:** Equipment purchases (sensors, ESP32s, build materials) should be logged in `planned_purchases` when received. Utility cost estimates for biome operations still pending.
-- **Sales:** `partner_opportunities` table is Sales-domain-owned. Revenue from closed sponsorship deals flows into `revenue_streams` as Sponsorships â€” Financials tracks the inflow, Sales owns the pipeline.
+- **Sales:** `partner_opportunities` table is Sales-domain-owned. Revenue from closed sponsorship deals flows into `revenue_streams` as Sponsorships - Financials tracks the inflow, Sales owns the pipeline.
 - **App:** App Planner/Supabase is the shared project/task runtime for
   Financials work status. Financial tables remain the source of truth for
   balances, revenue, expenses, liabilities, mileage, receipts, transactions,
@@ -2130,8 +2483,8 @@ These match the system IDs used throughout the rest of the app (observations, st
 - Public telemetry consumes the live read-only Supabase snapshot through `/api/telemetry/overview`, `/live-monitoring`, and paired biome detail weather panels.
 - Web context now uses the repo-native memory/skills architecture in `M:\miniBIOTA\miniBIOTA_Web\`.
 - Brain no longer keeps a Web `docs/` mirror; use the source repo's memory/skills/reference structure for detailed Web context.
-- App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`; current active Web project records are `36` through `41` plus `57`, with legacy/internal review project `42` archived.
-- The UX Interaction Lab is represented in Planner project `40` and was resumed by owner direction on 2026-05-09.
+- App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`; current non-archived Web project records are `36` through `41`, `57`, `68`, and `79`, with legacy/internal review project `42` archived.
+- The UX Interaction Lab is represented in Planner project `40`, was resumed by owner direction on 2026-05-09, has accepted P0 guidance slices completed as of 2026-05-14, and has started narrow live application through `/species` filter/search control-group cleanup, detail-tab route-contract coverage, `/live-monitoring` refresh-state presentation polish, a screenshot-approved `/live-monitoring` sensor-card polish pass, `/faq` shared disclosure alignment, mobile navigation overlay interaction hardening, shared gallery/lightbox modal interaction hardening, chronicle gallery trigger cleanup, and chronicle timeline delegated-toggle cleanup.
 
 ## Key Facts
 - Telemetry architecture is local-first and must not imply direct pump switching or centralized actuator control. Biome detail telemetry is public weather/context, not an operator dashboard.
@@ -2143,7 +2496,7 @@ These match the system IDs used throughout the rest of the app (observations, st
 ## Priorities
 - Keep Web memory and active Company Web reports aligned with the public-only, local-first telemetry and control architecture.
 - Use App Planner/Supabase for live Web task status; keep Markdown focused on architecture, rules, scope, and decisions.
-- Continue active UX Lab work through Planner project `40`; use `/ux-lab` for UX states, interaction rules, page patterns, and journeys while keeping development routes out of production navigation.
+- Continue active UX Lab work through Planner project `40`; use `/ux-lab` for UX states, interaction rules, page patterns, and journeys while keeping development routes out of production navigation. The next UX step should be browser/mobile visual QA when tooling is available or a separately accepted live-surface application.
 - Keep the now-connected App/Hardware coordinator-to-website telemetry handoff production-verified, public-safe, and read-only, including the new biome weather presentation.
 - Work through the cleaned Web Planner roadmap: About/supporters and Patreon acknowledgment content, Substack signup/list migration and weekly newsletter assembly, events/news/chronicles product passes, engineering imagery, telemetry hardening, and species-card data polish.
 
@@ -2184,11 +2537,11 @@ These match the system IDs used throughout the rest of the app (observations, st
 - Telemetry architecture is local-first. The public site now consumes the live read-only telemetry snapshot through `/api/telemetry/overview`, `/live-monitoring`, and biome detail weather panels; it must not imply direct pump switching or centralized actuator control.
 - Web Agent context now uses the repo-native memory/skills architecture in `M:\miniBIOTA\miniBIOTA_Web\`: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an active Web `docs/` mirror. `_system/sync_docs.ps1` removes stale `9. miniBIOTA_Web\docs` if it appears.
-- App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`. After the 2026-05-12 cross-domain cleanup, current active Web projects are IDs `36` through `41` plus `57` and Aquatic Club project `68`; legacy/internal project `42` is archived. Web has 8 non-archived work projects and 62 task rows (29 open, 33 done), and Web docs route actionable task status to Planner instead of Markdown task lists.
+- App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`. After the 2026-05-12 cross-domain cleanup, current active Web projects are IDs `36` through `41`, `57`, `68`, and `79`; legacy/internal project `42` is archived. Web has 9 non-archived work projects and 79 task rows (32 open, 47 done), and Web docs route actionable task status to Planner instead of Markdown task lists.
 
 ## Active Priorities
 - Keep Web memory and the Company Web report aligned with the public-only, local-first telemetry and control architecture.
-- Continue the active UX Interaction Lab scope in App Planner project `40`; the first live `/biosphere#biosphere-ecosystem-map` application pass is stabilized, reusable state patterns are defined in `/ux-lab` and first applied to `/species`, the first shared EEL state-preset promotion pass is complete, `/chronicles` has its first archive state/accessibility pass, shared detail tab/accordion semantics are tightened across core detail pages, `/ux-lab` now includes first-pass journey maps and tighter keyboard/modal preview contracts, and local route/lint/full-test/HTTP smoke checks are green. Next Web UX work should focus on owner/design review, real browser/mobile visual QA when tooling is available, or a separately scoped live-surface application while keeping `/ux-lab` and `/ui-kitchen-sink` development-gated and out of production navigation.
+- Continue the active UX Interaction Lab scope in App Planner project `40`; the first live `/biosphere#biosphere-ecosystem-map` application pass is stabilized, reusable state patterns are defined in `/ux-lab` and first applied to `/species`, the first shared EEL state-preset promotion pass is complete, `/chronicles` has its first archive state/accessibility pass, shared detail tab/accordion semantics are tightened across core detail pages, `/ux-lab` now includes first-pass journey maps, tighter keyboard/modal preview contracts, and accepted P0 guidance for state presets, loading/end states, detail tabs, and telemetry state coverage. The first live application pass has applied the control-group rule to `/species` filter/search, expanded detail-tab route-contract coverage, polished `/live-monitoring` refresh-state presentation, completed a screenshot-approved `/live-monitoring` sensor-card polish, aligned `/faq` accordions with the shared disclosure contract, hardened the mobile navigation overlay interaction contract, hardened the shared gallery/lightbox modal interaction contract, moved chronicle gallery triggers onto shared lightbox data hooks, and moved chronicle timeline toggles onto delegated interaction hooks while preserving the read-only telemetry boundary and public navigation links. Next Web UX work should focus on owner/design review, real browser/mobile visual QA when tooling is available, or a separately accepted live-surface application while keeping `/ux-lab` and `/ui-kitchen-sink` development-gated and out of production navigation.
 - Keep the now-connected desktop-app/coordinator-to-website telemetry handoff production-verified, public-safe, and read-only, including the new biome weather presentation.
 - Work through the cleaned Web Planner roadmap: About/supporters and Patreon acknowledgment content, Substack signup/list migration and weekly newsletter assembly, events/news/chronicles product passes, engineering imagery, telemetry hardening, and species-card data polish.
 - Support website-related public expectation-setting with a soft
@@ -2199,6 +2552,14 @@ These match the system IDs used throughout the rest of the app (observations, st
 - Build Operation Living Web, the Ecosystem Relationship Graph architecture, as a public species-to-biome-to-biosphere relationship experience; Web architecture is now ready to pause, with broad food-web curation routed to the Research Agent via the Web repo handoff packet.
 
 ## Recent Milestones
+- 2026-05-14: Accepted P0 UX Interaction Lab slices were converted into App Planner project `40` tasks and completed. The dev-gated lab now has tighter guidance for reusable state presets, loading and end-state behavior, detail-tab interactions, and public telemetry state coverage while keeping implementation of live public surfaces separately scoped.
+- 2026-05-14: The first accepted UX Lab live application slices were completed after owner visual review. /species filter/search controls now use the accepted control-group spacing contract, route-contract coverage now protects detail-tab ownership across species, biome, engineering, and biosphere detail surfaces, and /live-monitoring now presents refresh/stale/error state as a stable public status strip.
+- 2026-05-14: A screenshot-driven `/live-monitoring` sensor-card polish pass was completed under Planner task `507`; node cards now have an equal-height layout treatment and metric values stay readable across desktop and mobile.
+- 2026-05-14: `/faq` accordions were aligned with the shared disclosure contract under Planner task `508`, adding shared data hooks, ARIA state, and Enter/Space keyboard activation while preserving FAQ copy and route behavior.
+- 2026-05-14: Mobile navigation was hardened under Planner task `509`; the hamburger now owns the overlay through ARIA state, the overlay traps and returns focus, scroll lock is cleaned up consistently, and Escape/outside-click close behavior is explicit while preserving public navigation links.
+- 2026-05-14: The shared gallery/lightbox modal was hardened under Planner task `510`; generated image modals now expose dialog semantics, trap and return focus, coordinate page scroll lock, preserve Escape/outside-click/arrow behavior, and render selected captions with visible focus and reduced-motion handling.
+- 2026-05-14: Chronicle gallery triggers were moved onto the shared lightbox interaction contract under Planner task `511`; gallery buttons now use data hooks and accessible labels instead of inline lightbox handlers while preserving timeline expansion behavior.
+- 2026-05-14: Chronicle year and entry timeline toggles were moved onto delegated interaction hooks under Planner task `512`, preserving the existing keyboard behavior while removing inline timeline toggle handlers.
 - 2026-05-13: Public biome detail pages now render live atmosphere and biome telemetry as paired weather context. Hardware/Wyse publishes the read-only node set to Supabase, and Web presents Atmosphere Weather before Biome Weather with Web-derived public status chips while preserving the no-actuator boundary.
 - 2026-05-13: Company/Web/Content public-framing guidance was aligned for the
   website announcement idea. The preferred posture is a soft build-in-public
@@ -2389,13 +2750,12 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   `work_program_projects`.
 - App project management is now organized in App Planner/Supabase under the
   App domain. After the 2026-05-12 cross-domain cleanup and the 2026-05-14
-  Operation Living Intelligence visual-media task addition, App has 10 total
-  work projects, 9 non-archived projects, and 27 task rows (24 open, 3 done).
+  Operation Living Intelligence visual-media task addition and the App Quality System closeout, App has 12 total work projects, 11 non-archived projects, and 104 task rows (22 open, 82 done). The newest App-owned project is `App Quality System Roadmap` (`work_projects.id = 82`), created on 2026-05-14 with 10 phase parent tasks and 62 child subtasks; it is complete with all 72 roadmap task rows done.
 - Monitoring reads direct MQTT telemetry from the local biome network when connected to `mB2.4`, including internal-only heat-exchanger/liquid temperature (`liq_t`) and pump run percentage (`pump_pct`) display for sensor biomes 2-5.
 - Site Admin supports species, biosphere, biome, chronicle, announcement, staging, and media-library workflows.
 - Media Library/tagging, Species-style media search/filtering, and backend WebP image upload pipeline are implemented in the app.
 - Prompt Library has replaced the old static Team reference surface. Migration 012 was applied successfully by the user on 2026-05-11, making `prompt_library` live for reusable prompt records and future workflow-template use.
-- The app source repo now uses repo-local memory and skills as active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
+- The app source repo now uses repo-local memory and skills as active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`. `memory/11-app-quality-system.md` and `planning/app_quality_system_roadmap.md` capture the completed initial App quality-system rollout inspired by miniBIOTA_Web and the active-maintenance rules for extending it.
 - Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
 
 ## Key Facts
@@ -2459,8 +2819,8 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Verify packaged build behavior for Sharp/WebP image uploads when packaging resumes.
 - Keep App memory and skill references current as architecture, schema assumptions, and safety rules change.
 - Smoke test Prompt Library create/edit/copy/archive flows after launching the app, now that migration 012 is applied.
-- Use App Planner/Supabase for live App task status; keep Markdown focused on
-  context, operating rules, architecture notes, and playbooks.
+- Use App Planner/Supabase for live App task status; keep Markdown focused on context, operating rules, architecture notes, and playbooks.
+- Maintain and extend the completed App quality-system rollout (`work_projects.id = 82`) as an active guardrail layer. Ordinary Planner single-row patch paths now use write-plan persistence/readback; Programs/Operations write-plan coverage remains a future separately scoped cross-domain pass if needed.
 
 ## Risks / Gaps
 - CRM migration 013 created live RLS-protected tables with no policies. Any publishable-key policy design, legacy backfill, or CRM write workflow must be separately approved and tested. Migration 014's `crm_contact_links` table is live for legacy contact links; creating/editing those links remains a live CRM record write.
@@ -2469,11 +2829,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Packaged build behavior with Sharp/native dependencies should be verified before relying on distributable builds.
 - Monitoring setpoint/control writes affect the live biosphere and require explicit confirmation before changes.
 - Supabase migrations and schema assumptions must be checked before app write paths are changed.
-- Planner task hierarchy has been visually smoke tested for the Aquatic Club
-  Week-view case; parent/container due-date support and Today/task-modal
-  hierarchy inspection are in place. Broader daily-use coverage across Planner
-  task creation, Timeline, Month, and content production remains worth
-  watching.
+- Planner task hierarchy has been visually smoke tested for the Aquatic Club Week-view case; parent/container due-date support and Today/task-modal hierarchy inspection are in place. The initial App quality-system rollout added Planner production scheduling services, fixture tests, selectors, write-plan persistence, and UI-system guardrails. Broader daily-use coverage across Planner task creation, Timeline, Month, and content production remains worth watching, and ordinary Planner single-row patch paths now use write-plan persistence/readback beyond the production-run pilot; Programs/Operations write-plan coverage remains separately scoped.
 - Planner Programs/Operations schema and live Program records are live, but
   Program UI create/edit/link behavior still needs interactive smoke
   verification before daily reliance.
@@ -2530,13 +2886,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   2`), and `Aquatic Club Talk Readiness` (`work_programs.id = 3`), with
   domain-owned projects linked through `work_program_projects`.
 - App project management is now Planner-integrated under
-  `work_domains.key = app` / `domain_id = 9`. After the 2026-05-12
-  cross-domain cleanup, App has 10 total work projects, 9 non-archived projects,
-  and 27 task rows (24 open, 3 done) after Operation Living Intelligence
-  visual-media task `412` was added on 2026-05-14. Project `11` is
-  completed/archived as stale wiring work, and active App Planner work is now
-  concentrated in runtime, sources/workflow polish, Field Observer, media
-  reliability, monitoring, Supabase/storage safety, and Aquatic Club support.
+  `work_domains.key = app` / `domain_id = 9`. After the 2026-05-12 cross-domain cleanup and the 2026-05-14 additions of Operation Living Intelligence visual-media task `412` plus App Quality System Roadmap project `82`, App has 12 total work projects, 11 non-archived projects, and 104 task rows (22 open, 82 done). Project `11` is completed/archived as stale wiring work. The initial quality-system rollout in project `82` is complete with all 72 roadmap task rows done. Active App Planner work is now concentrated in runtime, sources/workflow polish, Field Observer, media reliability, monitoring, Supabase/storage safety, and Aquatic Club support.
 - Prompt Library has replaced the old static Team reference surface. Migration 012 was applied successfully by the user on 2026-05-11, making the `prompt_library` table live for reusable prompt records. Prompt create, edit, favorite, archive, and restore actions are live Supabase writes through the internal app REST path.
 - `miniBIOTA_App` now has repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
@@ -2548,6 +2898,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Use App Planner/Supabase as the live App work queue, and keep App docs/memory
   wired so App sessions read current projects/tasks and ask before marking
   Planner tasks done at closeout.
+- Maintain and extend the completed App quality-system rollout (`work_projects.id = 82`) as an active guardrail layer: App design tokens, shared primitives, fixture tests, scoped lints, dev-only UI Lab, Planner selectors, and explicit write plans are now in place. Ordinary Planner single-row patch paths now use write-plan persistence/readback; Programs/Operations write-plan coverage remains a future separately scoped cross-domain pass if needed.
 - Keep the desktop app as the forward operator surface while the public website remains read-only.
 - Preserve secret-key access as internal-only; do not expose app behavior as a public web surface.
 - Continue the Field Observer Android build with publishable-key/Auth/RLS access only; do not ship Supabase secret keys in the APK.
@@ -2555,6 +2906,8 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Continue using the app for financials, Planner/content production, CRM, media tagging, and monitoring workflows.
 
 ## Recent Milestones
+
+- **2026-05-14:** App quality-system planning was promoted into durable App memory and live Planner tracking. The new roadmap `planning/app_quality_system_roadmap.md` compares miniBIOTA_App against miniBIOTA_Web and defines the long-running path toward Web-like build quality: design tokens, shared primitives, fixture tests, token lints, dev-only UI Lab, Planner selectors/services, and explicit write plans. It was mirrored to App Planner as `work_projects.id = 82` with 10 phase parent tasks and 62 child subtasks. No app runtime behavior, schema, Storage, telemetry, MQTT, public website behavior, or Company/Brain source docs changed beyond this reporting update.
 
 - **2026-05-14:** Company updated Operation Living Intelligence App task `412`
   for designing the Nemotron/Codex local/private media-analysis pipeline and
@@ -2937,11 +3290,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Monitoring setpoint/control writes affect the live biosphere and require explicit confirmation before changes.
 - App source repo memory and skills must stay current as app architecture, schema assumptions, safety rules, and workflow playbooks change.
 - Field Observer authenticated catalog reads are enabled through migration 009. Signed release APK generation and any live sighting saves remain unverified and require explicit approval before use against production data.
-- Planner task hierarchy paths have now been visually smoke tested for the
-  Aquatic Club Week-view case, and Today/task-modal hierarchy inspection was
-  tightened on 2026-05-13, but broader daily-use coverage across Month,
-  Timeline, content production, and live creation/edit flows remains worth
-  watching.
+- Planner task hierarchy paths have now been visually smoke tested for the Aquatic Club Week-view case, and Today/task-modal hierarchy inspection was tightened on 2026-05-13. The initial App quality-system rollout added Planner production scheduling services, fixture tests, selectors, write-plan persistence, and UI-system guardrails, but broader daily-use coverage across Month, Timeline, content production, and live creation/edit flows remains worth watching. Ordinary Planner single-row patch paths now use write-plan persistence/readback beyond the production-run pilot; Programs/Operations write-plan coverage remains separately scoped.
 - Planner Programs/Operations schema and live Program records exist after
   migration 010, but Program UI create/edit/link behavior still needs
   interactive smoke verification before daily reliance.
@@ -2966,7 +3315,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   Planner-ready. Programs/Operations are cross-domain umbrellas above projects;
   they coordinate domain-owned projects without overriding domain
   source-of-truth, approval rules, or task/project ownership.
-- **Growth:** Growth owns CRM as a commercial relationship system; App owns the`n  CRM operator surface, Supabase-backed workflow implementation, validation,`n  and runtime behavior when CRM features are scoped. Migration 013 is live as`n  the additive relationship-system foundation, but relationship records,`n  backfills, outreach, approvals, and commitments still require separately`n  scoped Growth/App approval.
+- **Growth:** Growth owns CRM as a commercial relationship system; App owns the CRM operator surface, Supabase-backed workflow implementation, validation, and runtime behavior when CRM features are scoped. Migration 013 is live as the additive relationship-system foundation, but relationship records, backfills, outreach, approvals, and commitments still require separately scoped Growth/App approval.
 - **Financials:** Financials tab reads `revenue_streams`, `operating_expenses`, `liabilities`, and `planned_purchases`.
 - **Hardware:** Monitoring tab reads live biome MQTT data. Internal App/operator display includes `liq_t` heat-exchanger/liquid temperature and `pump_pct` pump run percentage for sensor biomes 2-5; those fields should remain out of Web/public telemetry unless separately scoped. Monitoring may later integrate Supabase telemetry snapshot fallback and setpoint controls.
 - **Ecosystem/Data:** Species and chronicle admin changes in the app affect public ecology records. Field Observer sighting counts/details should remain history datapoints; curated species population fields remain manually maintained.
@@ -2993,6 +3342,7 @@ Brain no longer mirrors App docs. Load active App detail from the source repo:
 | `memory/08-recurring-decisions.md` | Durable recurring decisions and unresolved app decisions |
 | `skills/implement-app-feature/SKILL.md` | Playbook for adding or fixing UI/app features |
 | `memory/10-field-observer.md` | Private Android Field Observer routing, data contract, install path, and safety notes |
+| `memory/11-app-quality-system.md` | Durable App quality-system direction inspired by miniBIOTA_Web: tokens, primitives, fixture tests, lints, UI Lab, services/selectors, and write plans |
 | `skills/refactor-renderer-module/SKILL.md` | Playbook for renderer module refactors |
 | `skills/refactor-renderer-module/reference/app-module-map.md` | Current module ownership map and refactor boundaries |
 | `skills/refactor-renderer-module/reference/refactor-roadmap.md` | Current refactor status, stop conditions, and maintenance-mode guidance |

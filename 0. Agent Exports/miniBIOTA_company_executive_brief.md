@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Executive Brief
 
-- Generated: 2026-05-13 21:15:47 -04:00
+- Generated: 2026-05-14 16:53:17 -04:00
 - Purpose: Company-side synthesis of domain reports.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 
@@ -31,20 +31,22 @@
 
 ## 2. miniBIOTA_Financials
 
-**Summary:** Defines the financial baseline, operating expenses, debt carry, active revenue streams, and tax obligations for miniBIOTA.
+**Summary:** Defines the financial baseline, operating expenses, debt carry, active revenue streams, cash visibility, and tax-obligation support for miniBIOTA.
 
 ### Current Status
 - Initial operating expense, liabilities, and revenue data was normalized on 2026-03-29 from founder-provided CSV exports and loaded into Supabase.
-- Supabase tables are live: `operating_expenses`, `liabilities`, `revenue_streams`, `planned_purchases`, `mileage_log`.
-- Active Financials Agent context has moved from the old mirrored `docs/` pattern into `M:\miniBIOTA\miniBIOTA_Financials\AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
+- Supabase tables are live for operating expenses, liabilities, revenue streams, planned purchases, mileage, monthly closes, account snapshots, cash receipts, expense transactions, and statement reconciliation support.
+- Active Financials Agent context lives in `M:\miniBIOTA\miniBIOTA_Financials\AGENTS.md`, `memory\`, `skills\`, and `skills\*\reference\`.
 
 ### Priorities
-- No items captured.
+- Capture utility cost estimates for biome operations
+- Verify and update debt balances, minimum payments, and APRs
+- Document tax obligations and filing requirements
 
 ### Risks / Gaps
-- No cash balance / runway visibility yet â€” highest structural gap. April 30 snapshot planned.
-- April 2026 revenue partially entered (Patreon only); YouTube and Facebook still pending.
 - Utility costs not captured in operating expenses.
+- Tax obligations not documented.
+- `next_due_date` null on most liability records.
 
 ## 3. miniBIOTA_Research
 
@@ -166,7 +168,7 @@
 ### Priorities
 - Keep Web memory and active Company Web reports aligned with the public-only, local-first telemetry and control architecture.
 - Use App Planner/Supabase for live Web task status; keep Markdown focused on architecture, rules, scope, and decisions.
-- Continue active UX Lab work through Planner project `40`; use `/ux-lab` for UX states, interaction rules, page patterns, and journeys while keeping development routes out of production navigation.
+- Continue active UX Lab work through Planner project `40`; use `/ux-lab` for UX states, interaction rules, page patterns, and journeys while keeping development routes out of production navigation. The next UX step should be browser/mobile visual QA when tooling is available or a separately accepted live-surface application.
 
 ### Risks / Gaps
 - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
@@ -214,7 +216,7 @@
 ## Cross-Domain Next Actions
 
 - 1. miniBIOTA_Company: Next action - Coordinate Aquatic Club Talk Readiness as the Q2 strategic forcing function. Remaining Q2 work should stack toward the talk unless urgent operations require otherwise. The talk should help people buy into the miniBIOTA story, feel emotionally connected to the project, understand why the build matters, make their own novel connections, and leave with curiosity, awe, and a sense of future possibilities. Gap - The roadmap is mostly unfilled after the Q2 talk focus, limiting Q3+ strategic visibility.
-- 2. miniBIOTA_Financials: Next action - No immediate action recorded. Gap - No cash balance / runway visibility yet â€” highest structural gap. April 30 snapshot planned.
+- 2. miniBIOTA_Financials: Next action - Live task status is in App Planner/Supabase under the Financials domain. Use live Planner records and `financials_brief.md` for current priority ordering. As of 2026-05-14, active manager-facing priorities are: Gap - Utility costs not captured in operating expenses.
 - 3. miniBIOTA_Research: Next action - Keep species counts, observation totals, thread/loop state, and population status synchronized with Supabase. Gap - Ecology docs can drift quickly because live observations and Supabase records are updated often.
 - 4. miniBIOTA_Brand: Next action - Turn the mission and vision into reusable messaging pillars, founder narrative, and external positioning language. Gap - Brand documentation is still too sparse to support consistent execution across web, content, events, and fundraising.
 - 5. miniBIOTA_Content: Next action - Sea urchin intro short was published May 4 as pipeline 351, Mottled Shore Crab short May 6 as pipeline 352, and producer-diversity/Caulerpa short May 7 as pipeline 353. Loop 9 is advanced, not resolved; shorts loop 17 tracks whether the variegated sea urchin survives and keeps eating Graceful redweed; shorts loop 18 tracks whether Green Feather Alga spreads too much and needs removal. Gap - Longform working title still TBD.

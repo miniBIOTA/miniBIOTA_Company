@@ -57,10 +57,13 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   adjustment around the talk window. Stage 5 now identifies the post-talk
   implementation-readiness order: task `409` first, then a Lake Post-Seal
   graph seed handoff, with Content/Research readiness and App design as the
-  first supporting lanes. This is operating coordination only; no schema, App
-  runtime, public site, paid-service, local model install, automated-write,
-  export/import, Planner/Supabase write, or source-of-truth cutover has been
-  approved by the plan itself.
+  first supporting lanes. The 2026-05-14 docs-only planning pass completed the
+  Research, Content, and Financials OLI lanes while leaving Company project
+  `75` active for implementation gate `409`, App project `76` planned for
+  task `412`, and Web/Growth tasks `400-405` open. This is operating
+  coordination only; no schema, App runtime, public site, paid-service, local
+  model install, automated-write, export/import, Planner/Supabase write, or
+  source-of-truth cutover has been approved by the plan itself.
 - Codex is the primary operating interface moving forward. Previous interface-specific guidance is archived as legacy context only.
 
 ## Active Priorities
@@ -319,6 +322,22 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   ceiling approval. No purchase, subscription, account, API key, upload, cloud
   resource, Supabase/Planner write, financial record, App behavior, public
   behavior, media processing, commitment, or source-of-truth record changed.
+- **2026-05-14:** Company closed the first Operation Living Intelligence
+  planning push and reconciled the live Planner state. Company setup/stage
+  tasks `380-385`, visual media gate `411`, App readiness tasks `386-390`,
+  Research tasks `391-394`, Content tasks `395-399` plus `413-414`, and
+  Financials tasks `406-408` plus `415` are complete. Research project `77`,
+  Content project `78`, and Financials project `81` are done. Company project
+  `75` remains active because task `409` is intentionally open as the
+  implementation-time schema/data audit gate. App project `76` remains planned
+  because task `412` is still open, and Web/Growth projects `79-80` remain
+  planned with tasks `400-405` open. Company also cleaned project-level
+  calendar noise by clearing `start_date` on project `75` and completed App
+  project `82`; no project was incorrectly marked done to hide a real open
+  gate. No schema, App runtime, public site, paid-service, model run, cloud
+  upload, media metadata, graph/vector/analytics data, automation, public
+  commitment, sponsor commitment, financial commitment, legal decision, launch
+  target, roadmap commitment, or source-of-truth cutover was approved.
 - **2026-05-14:** Company continued Operation Living Intelligence beyond the
   Company lead stages by mapping App boundary task `386` at the
   planning/readiness level. The map separates App-owned Planner runtime,

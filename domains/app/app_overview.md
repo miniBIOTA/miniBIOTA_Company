@@ -1,4 +1,4 @@
----
+﻿---
 id: app_operations
 title: 11. miniBIOTA_App
 domain: app_operations
@@ -36,12 +36,12 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   `work_program_projects`.
 - App project management is now organized in App Planner/Supabase under the
   App domain. After the 2026-05-12 cross-domain cleanup and the 2026-05-14
-  Operation Living Intelligence visual-media task addition, App has 11 total work projects, 10 non-archived projects, and 99 task rows (96 open, 3 done). The newest App-owned project is `App Quality System Roadmap` (`work_projects.id = 82`), created on 2026-05-14 with 10 phase parent tasks and 62 child subtasks.
+  Operation Living Intelligence visual-media task addition and the App Quality System closeout, App has 12 total work projects, 11 non-archived projects, and 104 task rows (23 open, 81 done). The newest App-owned project is `App Quality System Roadmap` (`work_projects.id = 82`), created on 2026-05-14 with 10 phase parent tasks and 62 child subtasks; its initial rollout is complete, with only task `473` open for broader write-plan expansion.
 - Monitoring reads direct MQTT telemetry from the local biome network when connected to `mB2.4`, including internal-only heat-exchanger/liquid temperature (`liq_t`) and pump run percentage (`pump_pct`) display for sensor biomes 2-5.
 - Site Admin supports species, biosphere, biome, chronicle, announcement, staging, and media-library workflows.
 - Media Library/tagging, Species-style media search/filtering, and backend WebP image upload pipeline are implemented in the app.
 - Prompt Library has replaced the old static Team reference surface. Migration 012 was applied successfully by the user on 2026-05-11, making `prompt_library` live for reusable prompt records and future workflow-template use.
-- The app source repo now uses repo-local memory and skills as active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`. `memory/11-app-quality-system.md` and `planning/app_quality_system_roadmap.md` now capture the long-running App quality-system plan inspired by miniBIOTA_Web.
+- The app source repo now uses repo-local memory and skills as active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`. `memory/11-app-quality-system.md` and `planning/app_quality_system_roadmap.md` capture the completed initial App quality-system rollout inspired by miniBIOTA_Web and the active-maintenance rules for extending it.
 - Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
 
 ## Key Facts
@@ -106,7 +106,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Keep App memory and skill references current as architecture, schema assumptions, and safety rules change.
 - Smoke test Prompt Library create/edit/copy/archive flows after launching the app, now that migration 012 is applied.
 - Use App Planner/Supabase for live App task status; keep Markdown focused on context, operating rules, architecture notes, and playbooks.
-- Execute the App Quality System Roadmap (`work_projects.id = 82`) over time, starting with Planner production scheduling services/fixture tests/write plans before broad UI-system rollout.
+- Maintain and extend the completed App quality-system rollout (`work_projects.id = 82`) as an active guardrail layer. Broader write-plan expansion remains open as Planner task `473`.
 
 ## Risks / Gaps
 - CRM migration 013 created live RLS-protected tables with no policies. Any publishable-key policy design, legacy backfill, or CRM write workflow must be separately approved and tested. Migration 014's `crm_contact_links` table is live for legacy contact links; creating/editing those links remains a live CRM record write.
@@ -115,7 +115,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Packaged build behavior with Sharp/native dependencies should be verified before relying on distributable builds.
 - Monitoring setpoint/control writes affect the live biosphere and require explicit confirmation before changes.
 - Supabase migrations and schema assumptions must be checked before app write paths are changed.
-- Planner task hierarchy has been visually smoke tested for the Aquatic Club Week-view case; parent/container due-date support and Today/task-modal hierarchy inspection are in place. Broader daily-use coverage across Planner task creation, Timeline, Month, and content production remains worth watching. The new App Quality System Roadmap treats Planner production scheduling as the first cleanup/proving ground.
+- Planner task hierarchy has been visually smoke tested for the Aquatic Club Week-view case; parent/container due-date support and Today/task-modal hierarchy inspection are in place. The initial App quality-system rollout added Planner production scheduling services, fixture tests, selectors, write-plan persistence, and UI-system guardrails. Broader daily-use coverage across Planner task creation, Timeline, Month, and content production remains worth watching, and Planner task `473` remains open for broader write-plan expansion beyond the production-run pilot.
 - Planner Programs/Operations schema and live Program records are live, but
   Program UI create/edit/link behavior still needs interactive smoke
   verification before daily reliance.
@@ -136,3 +136,4 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Last verified: 2026-05-09
 - Known divergences: no active App docs mirror remains in Brain.
 - Next sync check: use App repo memory/skills directly when App detail is needed.
+

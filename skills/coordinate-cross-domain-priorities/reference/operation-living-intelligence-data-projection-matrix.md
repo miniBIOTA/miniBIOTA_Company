@@ -482,6 +482,8 @@ Recommended first warehouse:
 | Task `397` visual AI feasibility/backup-risk plan | Feasibility and storage-risk gate | 1 | Workstation assumptions, backup-drive gap, tiny-test constraints, candidate annotation fields, and approval gates | Docs-only; no model run, install, media scan, persistent derivative, upload, purchase, or media/App/Web/write path is approved |
 | Task `398` small visual AI test set | Selected bounded candidate media set | 1 | Four exact file/timecode items for possible later no-write local/private feasibility testing | Docs-only; no model run, tool install, media operation, App/Web behavior, graph/vector activity, public use, purchase, or write path is approved |
 | Task `399` candidate annotation review workflow | Review gate before metadata proposal | 1 | Required candidate fields, Raw Footage/Content/Research/App checks, rejection/correction path, readback requirements | Docs-only; candidate annotations stay noncanonical review material and no metadata/public/App/Web/graph/vector/write path is approved |
+| Task `413` Nemotron/Codex and Twelve Labs media-set decision | Model-lane media-set boundary | 1 | Confirms task `398` four-item set for Nemotron/Codex and later same-set Twelve Labs benchmark only after cloud gates | Docs-only; no model run, upload, test-set expansion, media operation, App/Web behavior, purchase, public use, or write path is approved |
+| Task `414` DaVinci pull-sheet and rough-sequence criteria | Review output-shape gate | 1 | Pull-sheet fields, rough-sequence criteria, story role/quality/usefulness/evidence caveat labels, and DaVinci boundary | Docs-only; no DaVinci edit, media operation, metadata/public/App/Web/graph/vector/write path is approved |
 
 ### Web And Public Relationship Graph
 

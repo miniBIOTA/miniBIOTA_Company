@@ -1,4 +1,4 @@
----
+﻿---
 id: app_brief
 title: App Operations Brief
 domain: app_operations
@@ -46,10 +46,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   2`), and `Aquatic Club Talk Readiness` (`work_programs.id = 3`), with
   domain-owned projects linked through `work_program_projects`.
 - App project management is now Planner-integrated under
-  `work_domains.key = app` / `domain_id = 9`. After the 2026-05-12 cross-domain cleanup and the 2026-05-14 additions of Operation Living Intelligence visual-media task `412` plus App Quality System Roadmap project `82`, App has 11 total work projects, 10 non-archived projects, and 99 task rows (96 open, 3 done). Project `11` is
-  completed/archived as stale wiring work, and active App Planner work is now
-  concentrated in runtime, sources/workflow polish, Field Observer, media
-  reliability, monitoring, Supabase/storage safety, and Aquatic Club support.
+  `work_domains.key = app` / `domain_id = 9`. After the 2026-05-12 cross-domain cleanup and the 2026-05-14 additions of Operation Living Intelligence visual-media task `412` plus App Quality System Roadmap project `82`, App has 12 total work projects, 11 non-archived projects, and 104 task rows (23 open, 81 done). Project `11` is completed/archived as stale wiring work. The initial quality-system rollout in project `82` is complete, with one planned follow-up task (`473`) left open for broader write-plan expansion after the production-run persistence path proves stable. Active App Planner work is now concentrated in runtime, sources/workflow polish, Field Observer, media reliability, monitoring, Supabase/storage safety, Aquatic Club support, and that write-plan expansion follow-up.
 - Prompt Library has replaced the old static Team reference surface. Migration 012 was applied successfully by the user on 2026-05-11, making the `prompt_library` table live for reusable prompt records. Prompt create, edit, favorite, archive, and restore actions are live Supabase writes through the internal app REST path.
 - `miniBIOTA_App` now has repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
@@ -61,7 +58,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Use App Planner/Supabase as the live App work queue, and keep App docs/memory
   wired so App sessions read current projects/tasks and ask before marking
   Planner tasks done at closeout.
-- Execute the App Quality System Roadmap (`work_projects.id = 82`) over time: stabilize Planner production scheduling first, then add App design tokens, shared primitives, fixture tests, token lints, a dev-only UI Lab, Planner selectors, and explicit write plans.
+- Maintain and extend the completed App quality-system rollout (`work_projects.id = 82`) as an active guardrail layer: App design tokens, shared primitives, fixture tests, scoped lints, dev-only UI Lab, Planner selectors, and explicit write plans are now in place. Broader write-plan expansion remains open as Planner task `473`.
 - Keep the desktop app as the forward operator surface while the public website remains read-only.
 - Preserve secret-key access as internal-only; do not expose app behavior as a public web surface.
 - Continue the Field Observer Android build with publishable-key/Auth/RLS access only; do not ship Supabase secret keys in the APK.
@@ -453,7 +450,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Monitoring setpoint/control writes affect the live biosphere and require explicit confirmation before changes.
 - App source repo memory and skills must stay current as app architecture, schema assumptions, safety rules, and workflow playbooks change.
 - Field Observer authenticated catalog reads are enabled through migration 009. Signed release APK generation and any live sighting saves remain unverified and require explicit approval before use against production data.
-- Planner task hierarchy paths have now been visually smoke tested for the Aquatic Club Week-view case, and Today/task-modal hierarchy inspection was tightened on 2026-05-13, but broader daily-use coverage across Month, Timeline, content production, and live creation/edit flows remains worth watching. The App Quality System Roadmap now tracks the needed cleanup path, with Planner production scheduling as the first proving ground for services, fixture tests, and write plans.
+- Planner task hierarchy paths have now been visually smoke tested for the Aquatic Club Week-view case, and Today/task-modal hierarchy inspection was tightened on 2026-05-13. The initial App quality-system rollout added Planner production scheduling services, fixture tests, selectors, write-plan persistence, and UI-system guardrails, but broader daily-use coverage across Month, Timeline, content production, and live creation/edit flows remains worth watching. Planner task `473` remains open for broader write-plan expansion beyond the production-run pilot.
 - Planner Programs/Operations schema and live Program records exist after
   migration 010, but Program UI create/edit/link behavior still needs
   interactive smoke verification before daily reliance.
@@ -519,3 +516,4 @@ Brain no longer mirrors App docs. Load active App detail from the source repo:
 | `skills/image-pipeline-review/reference/image-pipeline.md` | WebP, Sharp, Supabase Storage, rollback, and packaging guidance |
 | `skills/app-doc-closeout/SKILL.md` | Playbook for deciding whether App memory/Brain updates are required at closeout |
 | `skills/update-app-memory/SKILL.md` | Playbook for promoting durable App decisions, hazards, and architecture rules into memory |
+

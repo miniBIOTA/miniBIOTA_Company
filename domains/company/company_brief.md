@@ -241,6 +241,30 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   file move, frame extraction, sidecar, Supabase/Planner record, graph/vector
   data, App/Web behavior, upload, public-use approval, publication approval,
   purchase, or source-of-truth record changed.
+- **2026-05-14:** Content completed Operation Living Intelligence task `413`
+  as the docs-only Nemotron/Codex and Twelve Labs media-set decision:
+  `M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-413-nemotron-codex-twelve-labs-media-test-set.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  decision that task `398` fully satisfies the bounded media-set need for the
+  future Nemotron/Codex-first lane. Twelve Labs remains a later benchmark
+  possibility on the same four items only after separate cloud upload,
+  retention/deletion, privacy, account/free-tier, cost, export, and review
+  gates. No model run, install, upload, test-set expansion, media move/scan/
+  extraction, sidecar, thumbnail, metadata write, Supabase/Planner record,
+  graph/vector data, App/Web behavior, purchase, public-use approval,
+  publication approval, or source-of-truth record changed.
+- **2026-05-14:** Content completed Operation Living Intelligence task `414`
+  as the docs-only DaVinci pull-sheet and rough-sequence review criteria:
+  `M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-414-davinci-pull-sheet-rough-sequence-criteria.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  review output-shape gate for future candidate annotations. The artifact
+  defines review-safe pull-sheet fields, story role labels, quality/usefulness
+  labels, evidence caveats, Research review needs, Content usefulness fields,
+  rough-sequence order, candidate status rules, DaVinci workflow boundaries,
+  and readback requirements. No model run, DaVinci project open/edit, media
+  operation, metadata write, App/Web behavior, graph/vector activity,
+  Supabase/Planner write, upload, purchase, public-use approval, publication
+  approval, or source-of-truth record changed.
 - **2026-05-14:** Company continued Operation Living Intelligence beyond the
   Company lead stages by mapping App boundary task `386` at the
   planning/readiness level. The map separates App-owned Planner runtime,

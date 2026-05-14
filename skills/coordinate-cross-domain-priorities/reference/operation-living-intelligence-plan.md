@@ -1241,6 +1241,91 @@ Task `399` Company closeout criteria:
 - The projection matrix treats task `399` as a review workflow gate, not metadata approval.
 - No model run, metadata write, media asset/species image record, file move, frame extraction, sidecar, Supabase/Planner record, graph/vector data, App/Web behavior, upload, public-use approval, publication approval, purchase, or source-of-truth change is implied.
 
+#### Nemotron/Codex And Twelve Labs Media Test Set - Task 413
+
+Content completed the task `413` docs-only Nemotron/Codex and Twelve Labs media test-set decision artifact on 2026-05-14:
+
+`M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-413-nemotron-codex-twelve-labs-media-test-set.md`
+
+Company should treat that artifact as the decision that task `398` is the bounded media set for the future Nemotron/Codex-first lane, and also the maximum candidate set for any later Twelve Labs benchmark unless a separate future task revises it. The Company-side rule is:
+
+```text
+Nemotron/Codex uses the task 398 four-item set exactly.
+Twelve Labs may only benchmark the same bounded set later, after separate
+cloud upload, retention, deletion, privacy, account, cost, and review gates.
+```
+
+Task `413` decision summary:
+
+| Area | Content decision |
+|---|---|
+| Nemotron/Codex lane | Task `398` fully satisfies task `413`; no separate or expanded media set is needed |
+| Twelve Labs lane | Later cloud/free-tier benchmark may reuse the same four items only after a separate cloud benchmark protocol |
+| No expansion | Do not add held-out, excluded, Mesostoma, zoea, handling, later-comparison, full-library, or newly discovered media |
+| Local lane purpose | Test label preservation and overclaim resistance before speed or coverage |
+| Cloud boundary | No cloud upload is approved; free-tier does not mean risk-free |
+| Shared readback | Any future local or cloud run must report exact items used, no extras, publicness labels, prompts, candidate annotations only, blocked uses, Raw Footage/App/Research/Content checks, metadata status `not_approved`, and public use status `blocked` |
+
+Task `413` retained media set:
+
+- `TEST_398_01_OPAQUE_LAKE_STILL`
+- `TEST_398_02_FIELD_SAMPLING`
+- `TEST_398_03_SAMPLE_INTRODUCTION`
+- `TEST_398_04_MICROCRUSTACEAN_BLOCKING`
+
+Task `413` Company implications:
+
+- The future Nemotron/Codex lane should not revisit media selection unless a specific owner reopens the set.
+- Twelve Labs should be a later benchmark, not a shortcut around local/private workflow, Content/Research review, or Raw Footage governance.
+- Any Twelve Labs benchmark needs explicit approval for upload, retention/deletion terms, account/free-tier limits, privacy, costs, output export format, and noncanonical candidate-only handling.
+- Local-run approval does not imply cloud-upload approval.
+
+Task `413` Company closeout criteria:
+
+- The Content decision artifact is linked from the Company OLI plan.
+- The projection matrix treats task `413` as the media-set decision for Nemotron/Codex and a cloud-gated benchmark boundary for Twelve Labs.
+- No model run, install, upload, test-set expansion, media move/scan/extraction, sidecar/thumbnail, metadata write, Supabase/Planner record, graph/vector data, App/Web behavior, purchase, public-use approval, publication approval, or source-of-truth change is implied.
+
+#### DaVinci Pull-Sheet And Rough-Sequence Review Criteria - Task 414
+
+Content completed the task `414` docs-only DaVinci pull-sheet and rough-sequence review criteria artifact on 2026-05-14:
+
+`M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-414-davinci-pull-sheet-rough-sequence-criteria.md`
+
+Company should treat that artifact as the review-safe output shape for future candidate annotations and rough-sequence planning. The Company-side rule is:
+
+```text
+A pull-sheet is a human review aid, not a media index.
+A rough-sequence is a proposed story/edit order, not a DaVinci timeline,
+publish plan, metadata record, or public claim.
+```
+
+Task `414` workflow summary:
+
+| Area | Content output |
+|---|---|
+| Pull-sheet fields | Defines local review IDs, task `398` item IDs, exact paths/timecodes, task `396` publicness labels, review owners, candidate annotation links, broad labels, story roles, quality/usefulness labels, evidence caveats, Research/Content/Raw Footage needs, DaVinci use boundary, blocked public-use cases, candidate status, and readback note |
+| Forbidden fields | Blocks media asset IDs, species image IDs, DaVinci timeline IDs, extracted frame filenames, thumbnail paths, generated sidecar paths, public captions, public alt text, approved species IDs, publication approval, metadata approval, and graph/vector IDs |
+| Story role labels | Uses editorial-only labels such as `establishing_context`, `process_context`, `event_context`, `uncertainty_test`, `claim_blocker`, and `not_for_sequence` |
+| Quality/usefulness labels | Separates visual quality from story usefulness so a visually good item can still be story-unsafe or Research-blocked |
+| Evidence caveats | Requires explicit `cannot_prove_*` and chronology/publicness/metadata caveats so sequence order does not become proof |
+| Rough-sequence criteria | Recommends the task `398` order: opaque still, field sampling, sample introduction, microcrustacean uncertainty test; sequence must not imply causation, establishment, reproduction, clearing, food-web completion, or public/publish readiness |
+| DaVinci boundary | Allows future pull-sheet use as a human checklist only after separate approval; does not allow opening/editing projects, importing media, proxies, frames, thumbnails, sidecars, moves, timelines, exports, publication, or writes |
+
+Task `414` Company implications:
+
+- Future pull-sheet or rough-sequence rows must preserve task `398` item IDs, task `396` labels, task `399` review workflow, and task `413` local/cloud lane separation.
+- Research status is required before any ID-sensitive item becomes a usable candidate.
+- Raw Footage path/timecode/no-side-effect confirmation is an automatic hold gate.
+- Any candidate that sounds like public caption, alt text, publication wording, species ID, establishment/recruitment/clearing/causation, or public claim is rejected or corrected before use.
+- A future DaVinci session remains a separate Content workflow, not approved by task `414`.
+
+Task `414` Company closeout criteria:
+
+- The Content pull-sheet/rough-sequence artifact is linked from the Company OLI plan.
+- The projection matrix treats task `414` as a review output-shape gate, not DaVinci workflow execution.
+- No model run, DaVinci edit, media operation, metadata write, App/Web behavior, graph/vector activity, Supabase/Planner write, upload, purchase, public use, publication, or source-of-truth change is implied.
+
 Content project:
 
 - Inventory source packets, transcripts, scripts, production notes, footage references, and hardware/local compute assumptions that should be retrievable.

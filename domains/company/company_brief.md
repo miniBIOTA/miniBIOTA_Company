@@ -146,6 +146,19 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   import, graph data, App behavior, Content record, Web/public behavior, media,
   species, observation, chronicle, canonical ecology, or source-of-truth record
   changed.
+- **2026-05-14:** Research completed Operation Living Intelligence task `393`
+  as the docs-only graph path evidence/publicness safety artifact:
+  `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-393-graph-path-safety.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  detailed source for path-level provenance, confidence floors, publicness
+  floors, review floors, observed/inferred/proposed/approved status handling,
+  query/readback checks, Lake Post-Seal examples, and traversal failure cases.
+  The core rule is that graph traversal must not make claims stronger: the most
+  restrictive confidence, publicness, and review state controls the path, and
+  blocked/review-required/internal/raw/proposed material stops public output and
+  import readiness. No Supabase, Planner, graph import, graph data, App
+  behavior, Content/Web/media/species/observation/chronicle record, canonical
+  ecology, or source-of-truth record changed.
 - **2026-05-14:** Company continued Operation Living Intelligence beyond the
   Company lead stages by mapping App boundary task `386` at the
   planning/readiness level. The map separates App-owned Planner runtime,

@@ -811,10 +811,13 @@ Research ontology source:
 
 - `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-391-graph-ontology.md`
 - `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-392-lake-post-seal-graph-candidates.md`
+- `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-393-graph-path-safety.md`
 
 Research task `391` defines the first Research-owned ontology for this wave. The graph is a derived evidence/review graph, not canonical ecology. Use the Research brief as the detailed authority for node classes, edge types, claim gates, publicness tiers, confidence labels, observed-vs-inferred separation, and review ownership.
 
 Research task `392` applies that ontology to the Lake Post-Seal packet as candidate graph nodes and relationships. Use the task `392` brief as the detailed source for graph-candidate IDs, candidate edges, blocked edges, source IDs, provenance references, media candidate handling, and validation questions before import.
+
+Research task `393` defines graph path safety. Use the task `393` brief as the detailed source for path-level provenance, confidence floors, publicness floors, review floors, observed/inferred/proposed/approved status handling, query/readback checks, and failure cases where traversal could overstate evidence.
 
 Minimum Research ontology requirements from task `391`:
 
@@ -839,6 +842,18 @@ Minimum candidate-relationship requirements from task `392`:
 | Strongest edge families | Prioritize provenance, evidence, review-gate, publicness/confidence, media-candidate, and context-vs-proof edges |
 | Blocked edges | Preserve blocked overclaim edges as guardrails for Daphnia, Ghost Shrimp, Mesostoma, Moina, lake clearing, food-web completion, stability, chronology, media captions, and direct canonical observation links |
 | Import checks | Require frozen source versions/checksums, no-write dry run, delete/regenerate path, publicness filtering, and explicit approval before any candidate edge becomes canonical, public, or app-visible |
+
+Minimum path-safety requirements from task `393`:
+
+| Requirement | Task 393 direction |
+|---|---|
+| Path wrapper | Return `path_query_purpose`, nodes, edges, sources, evidence bases, confidence/publicness/review floors, observed/inferred/proposed mix, blockers, required reviews, safe readback, and do-not-say guardrails |
+| Confidence floor | Traversal cannot upgrade confidence; the most restrictive relevant confidence controls the path |
+| Publicness floor | Publicness can only narrow; internal/raw/blocked/proposed/review-required path elements block public output |
+| Edge semantics | `CONTEXT_FOR`, `QUALIFIES_CLAIM`, `REQUIRES_REVIEW`, and `BLOCKS_PUBLIC_USE_OF` cannot be treated as proof/support edges |
+| Review gates | Unresolved gates stop both public output and import readiness |
+| Query safety | Public-output and import-readiness queries must fail closed and show blockers instead of silently dropping them |
+| Readback | Every path must produce a safe readback sentence weaker than or equal to the weakest path element |
 
 Stage 3 pilot acceptance:
 

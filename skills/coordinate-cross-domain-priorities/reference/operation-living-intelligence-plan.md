@@ -960,6 +960,40 @@ Task `392` Company closeout criteria:
 - App task `409` and a later App/Research/Content handoff remain required before import/export work.
 - Planner task `392` may be marked complete only after explicit approval and readback.
 
+#### Graph Path Evidence And Publicness Safety - Task 393
+
+Research completed the task `393` docs-only graph path safety brief on 2026-05-14:
+
+`M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-393-graph-path-safety.md`
+
+Company should treat that Research brief as the detailed source for how graph paths preserve evidence provenance, confidence/uncertainty, publicness, observed-vs-inferred/proposed/approved status, and Research review state. The Company-side rule is:
+
+```text
+Graph traversal must not make claims stronger.
+The most restrictive confidence, publicness, and review state controls the path.
+Blocked/review-required/internal/raw/proposed material stops public output and import readiness.
+```
+
+Task `393` path safety outputs:
+
+| Area | Research output |
+|---|---|
+| Required path wrapper | Every readback path should expose `path_query_purpose`, `source_set_id`, `path_nodes`, `path_edges`, `path_sources`, evidence bases, confidence/publicness/review floors, observed/inferred/proposed mix, blocking nodes/edges, required reviews, safe readback, and do-not-say guardrails |
+| Provenance rule | Every node and edge must preserve source docs/sections, source packet refs, canonical record pointers where applicable, source-check date, owner, and derived-only state |
+| Confidence rule | Confidence labels never average or improve by traversal; the path inherits the most restrictive relevant confidence label |
+| Publicness rule | Publicness can only narrow as a path grows; any internal, raw, blocked, proposed, or review-required hop blocks public output |
+| Edge-type rule | `CONTEXT_FOR`, `QUALIFIES_CLAIM`, `REQUIRES_REVIEW`, and `BLOCKS_PUBLIC_USE_OF` cannot be treated as `SUPPORTS_CLAIM` |
+| Review rule | Review gates are hard stops for public use and import readiness until resolved in the approved scope |
+| Query/readback checks | Public-output and import-readiness queries must fail closed, return all path nodes/edges/gates, expose blockers, and produce a safe readback no stronger than the weakest path element |
+| Lake Post-Seal examples | Safe chronicle frame, Daphnia introduction with unresolved establishment, Daphnia media block, Ghost Shrimp breeding vs recruitment, Mesostoma internal-only path, and direct-link cleanup block |
+
+Task `393` Company closeout criteria:
+
+- The Research path-safety brief is linked from the Company OLI plan.
+- Graph path readback must preserve hop-by-hop provenance, labels, and review gates.
+- Public-output and import-readiness queries are separated and fail closed.
+- Company carries forward open decisions: blocked-edge storage/import posture, final review-status transition owner if App implements workflows, source version/checksum rule, explicit `purpose = public_output` query parameter, compact App display of mixed-status paths, confidence-floor implementation, and whether `validated_for_public_candidate` is enough for Website-visible output.
+
 Content project:
 
 - Inventory source packets, transcripts, scripts, production notes, footage references, and hardware/local compute assumptions that should be retrievable.

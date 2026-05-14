@@ -1,8 +1,8 @@
----
+﻿---
 id: web_brief
 title: Web & Digital Presence Brief
 domain: web_and_digital_presence
-last_updated: 2026-05-13
+last_updated: 2026-05-14
 tags: [website, digital-presence, information-architecture, ui, telemetry, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -27,7 +27,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Active Priorities
 - Keep Web memory and the Company Web report aligned with the public-only, local-first telemetry and control architecture.
-- Continue the active UX Interaction Lab scope in App Planner project `40`; the first live `/biosphere#biosphere-ecosystem-map` application pass is stabilized, reusable state patterns are defined in `/ux-lab` and first applied to `/species`, the first shared EEL state-preset promotion pass is complete, `/chronicles` has its first archive state/accessibility pass, shared detail tab/accordion semantics are tightened across core detail pages, `/ux-lab` now includes first-pass journey maps and tighter keyboard/modal preview contracts, and local route/lint/full-test/HTTP smoke checks are green. Next Web UX work should focus on owner/design review, real browser/mobile visual QA when tooling is available, or a separately scoped live-surface application while keeping `/ux-lab` and `/ui-kitchen-sink` development-gated and out of production navigation.
+- Continue the active UX Interaction Lab scope in App Planner project `40`; the first live `/biosphere#biosphere-ecosystem-map` application pass is stabilized, reusable state patterns are defined in `/ux-lab` and first applied to `/species`, the first shared EEL state-preset promotion pass is complete, `/chronicles` has its first archive state/accessibility pass, shared detail tab/accordion semantics are tightened across core detail pages, `/ux-lab` now includes first-pass journey maps, tighter keyboard/modal preview contracts, and accepted P0 guidance for state presets, loading/end states, detail tabs, and telemetry state coverage. Next Web UX work should focus on owner/design review, real browser/mobile visual QA when tooling is available, or a separately accepted live-surface application while keeping `/ux-lab` and `/ui-kitchen-sink` development-gated and out of production navigation.
 - Keep the now-connected desktop-app/coordinator-to-website telemetry handoff production-verified, public-safe, and read-only, including the new biome weather presentation.
 - Work through the cleaned Web Planner roadmap: About/supporters and Patreon acknowledgment content, Substack signup/list migration and weekly newsletter assembly, events/news/chronicles product passes, engineering imagery, telemetry hardening, and species-card data polish.
 - Support website-related public expectation-setting with a soft
@@ -38,6 +38,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Build Operation Living Web, the Ecosystem Relationship Graph architecture, as a public species-to-biome-to-biosphere relationship experience; Web architecture is now ready to pause, with broad food-web curation routed to the Research Agent via the Web repo handoff packet.
 
 ## Recent Milestones
+- 2026-05-14: Accepted P0 UX Interaction Lab slices were converted into App Planner project `40` tasks and completed. The dev-gated lab now has tighter guidance for reusable state presets, loading and end-state behavior, detail-tab interactions, and public telemetry state coverage while keeping implementation of live public surfaces separately scoped.
 - 2026-05-13: Public biome detail pages now render live atmosphere and biome telemetry as paired weather context. Hardware/Wyse publishes the read-only node set to Supabase, and Web presents Atmosphere Weather before Biome Weather with Web-derived public status chips while preserving the no-actuator boundary.
 - 2026-05-13: Company/Web/Content public-framing guidance was aligned for the
   website announcement idea. The preferred posture is a soft build-in-public
@@ -148,8 +149,3 @@ Brain no longer keeps a Web `docs\` mirror after the memory/skills migration.
 | `skills\work-with-public-telemetry\SKILL.md` | Public telemetry workflow |
 | `skills\close-web-session\SKILL.md` | Closeout workflow |
 | `skills\*\reference\` | Exact supporting references for playbooks |
-
-
-
-
-

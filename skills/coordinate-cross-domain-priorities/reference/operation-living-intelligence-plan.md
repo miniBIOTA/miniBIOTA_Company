@@ -889,6 +889,77 @@ Research project:
 - Define how graph paths preserve evidence, uncertainty, inferred-vs-observed status, and Research review status.
 - Evaluate whether graph traversal improves at least 7 of the 10 pilot questions.
 
+#### Research Graph Ontology - Task 391
+
+Research completed the first Research-owned graph ontology planning brief for task `391` on 2026-05-14:
+
+`M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-391-graph-ontology.md`
+
+Company should treat that Research brief as the detailed source for ecological ontology, claim safety, publicness, confidence, and review gates. The Company-side summary is:
+
+```text
+The first graph is a derived evidence and review graph.
+It connects canonical records, source packets, claims, media, confidence labels,
+publicness tiers, and review gates.
+It does not become canonical ecology.
+It must answer: what can be public, what is internal only, what supports this,
+what must not be said, and what needs Research review?
+```
+
+Research ontology outputs:
+
+| Area | Research decision |
+|---|---|
+| Source boundary | Lake Post-Seal proof case only: `content_pipeline.id = 338`, `chronicles.id = 30`, species `24`, `67`, `66`, `164`, `167`, `180`, observations `170-178`, explicitly approved context records only, Living Atlas source packets, Research validation notes, proposed-write bundle notes, and media references |
+| Core node classes | `GraphSeed`, `SourcePacket`, `CanonicalRecord`, `Species`, `Biome`, `Observation`, `Event`, `Claim`, `Media`, `PublicnessTier`, `ConfidenceAssessment`, `ReviewGate` |
+| Core edge families | Seed/provenance edges, canonical-record references, packet associations, species/biome subject edges, observation/event/media/claim support edges, publicness/confidence/review edges, context-vs-proof edges, and limitation edges |
+| Cross-cutting fields | Source set id, derived-only flag, canonical record type/id, source doc path/section, evidence basis, confidence label, uncertainty note, observed-vs-inferred status, publicness tier, public-use status, review status, review owner, do-not-say guardrail, and source-check date |
+| Public-use guardrails | Daphnia remains `Daphnia sp.` publicly; Daphnia establishment is unresolved; Ghost Shrimp breeding is confirmed but juvenile recruitment is unconfirmed; Mesostoma remains internal or review-gated; lake clearing, food-web completion, stability, and causation claims remain gated |
+| First-pilot exclusions | No global record discovery, no whole ecosystem graph, no new claims from adjacency, no direct canonical links when only packet association is verified, no unreviewed media public claims, no story-thread/open-loop first-class expansion unless explicitly approved |
+
+Task `391` Company closeout criteria:
+
+- The Research ontology brief is linked from the Company OLI plan.
+- Company uses the Research brief as the detailed ontology source instead of duplicating ecological authority.
+- The first graph remains derived-only and bounded to the Lake Post-Seal proof case.
+- Daphnia, Ghost Shrimp, Mesostoma, Moina, water-clearing, food-web-completion, chronology, and media-caption claims remain review-gated.
+- Open Research questions are carried forward: approved context records outside `170-178`, story thread/open-loop node timing, source packet checksum/versioning, final review-status ownership if App implements workflows, implementation form for publicness/confidence/review gates, publish-date vs ecological-event-window model, media verification standard, and graph regeneration after source correction.
+
+#### Lake Post-Seal Graph Candidates - Task 392
+
+Research completed the task `392` docs-only graph-candidate relationship brief on 2026-05-14:
+
+`M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-392-lake-post-seal-graph-candidates.md`
+
+Company should treat that Research brief as the detailed source for candidate nodes, candidate edges, blocked edges, provenance references, confidence/publicness/review labels, and validation questions before any graph import. The Company-side summary is:
+
+```text
+Task 392 converts the Lake Post-Seal packet into candidate graph relationships.
+Everything remains derived-only and candidate_not_imported.
+The strongest edges are provenance, evidence, review, and guardrail edges.
+The most important blocked edges are the tempting public overclaims.
+```
+
+Task `392` outputs:
+
+| Area | Research output |
+|---|---|
+| Source key | Uses source IDs including `SRC391`, `SRC_PACKET_338`, `SRC_RESEARCH_VALIDATION`, `SRC_LINK_VERIFY`, `SRC_ARCHIVED_PROJECT`, and `SRC_MEDIA_PACKET` |
+| Candidate nodes | Defines seed/source nodes, canonical-record pointer nodes, species nodes, observation nodes, event nodes, claim nodes, review gate nodes, and media candidate nodes |
+| Candidate edges | Defines seed/provenance edges, source-to-record edges, species/biome context edges, observation evidence edges, event/claim edges, media candidate edges, and qualifying/blocking edges |
+| Explicit biome pointer | Treats Freshwater Lake biome `1` as source-context pointer only, pending Company/App/Research confirmation before import |
+| Blocked edges | Blocks direct canonical observation-to-pipeline/chronicle links, Daphnia species-level ID/establishment/clearing claims, food-web completion/stability, Ghost Shrimp recruitment, Mesostoma public-primary use, Moina establishment, public media captions, out-of-scope chronicle species, later observations, and story-thread/open-loop first-class nodes |
+| Import validation | Requires frozen source versions/checksums, no-write dry-run/delete-regenerate path, candidate-vs-canonical distinction, publicness/review label visibility, blocked/internal/raw-evidence filtering, and explicit approval before any candidate edge becomes canonical/public/app-visible |
+| Open cross-domain questions | Company/App/Content/Research need decisions on context records beyond `170-178`, Freshwater Lake biome node inclusion, story/open-loop node timing, blocked-edge import posture, candidate storage form, source checksum/path preservation, media approval bundle scope, Mesostoma public handling, Daphnia public wording, and publish-date vs ecological-event-window policy |
+
+Task `392` Company closeout criteria:
+
+- The Research graph-candidate brief is linked from the Company OLI plan.
+- Candidate graph relationships remain docs-only and derived-only.
+- Company recognizes blocked edges as guardrails, not implementation instructions.
+- App task `409` and a later App/Research/Content handoff remain required before import/export work.
+- Planner task `392` may be marked complete only after explicit approval and readback.
+
 Content project:
 
 - Inventory source packets, transcripts, scripts, production notes, footage references, and hardware/local compute assumptions that should be retrievable.

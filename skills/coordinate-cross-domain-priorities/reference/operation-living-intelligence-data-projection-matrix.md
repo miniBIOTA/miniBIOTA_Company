@@ -807,6 +807,39 @@ Success:
 - No publicness flattening.
 - The graph can be rebuilt from export files.
 
+Research ontology source:
+
+- `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-391-graph-ontology.md`
+- `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-392-lake-post-seal-graph-candidates.md`
+
+Research task `391` defines the first Research-owned ontology for this wave. The graph is a derived evidence/review graph, not canonical ecology. Use the Research brief as the detailed authority for node classes, edge types, claim gates, publicness tiers, confidence labels, observed-vs-inferred separation, and review ownership.
+
+Research task `392` applies that ontology to the Lake Post-Seal packet as candidate graph nodes and relationships. Use the task `392` brief as the detailed source for graph-candidate IDs, candidate edges, blocked edges, source IDs, provenance references, media candidate handling, and validation questions before import.
+
+Minimum Research ontology requirements from task `391`:
+
+| Requirement | Task 391 direction |
+|---|---|
+| Seed wrapper | Use `GraphSeed` to enforce the bounded source set and derived-only write policy |
+| Evidence sources | Use `SourcePacket` and `CanonicalRecord` references so every node and edge points back to source docs or source records |
+| Ecological/context nodes | Use `Species`, `Biome`, `Observation`, and `Event` without turning the graph into canonical ecology |
+| Claim safety | Use `Claim`, `PublicnessTier`, `ConfidenceAssessment`, and `ReviewGate` to keep publicness, confidence, uncertainty, and review status queryable |
+| Media proof | Use `Media` as proof references only; media captions and organism IDs remain review-gated |
+| Overclaim blocks | Keep Daphnia species-level ID/establishment, Ghost Shrimp juvenile recruitment, Mesostoma public use, Moina establishment, water-clearing causation, food-web completion, stability, chronology edits, and sensitive media captions behind Research review |
+| Exclusions | Do not add global records, whole ecosystem graph, unapproved observations, unreviewed media claims, story-thread/open-loop first-class nodes, or canonical links that have only packet-association evidence |
+
+Minimum candidate-relationship requirements from task `392`:
+
+| Requirement | Task 392 direction |
+|---|---|
+| Candidate status | All candidate nodes/edges are `derived_only = true` and `candidate_status = candidate_not_imported` |
+| Provenance | Use source IDs such as `SRC_PACKET_338`, `SRC_RESEARCH_VALIDATION`, `SRC_LINK_VERIFY`, and `SRC_MEDIA_PACKET` on every candidate node/edge |
+| Candidate source set | Keep observations to `170-178`; exclude later observations unless explicitly approved as context |
+| Biome context | Freshwater Lake biome `1` can be represented only as a source-context pointer until import inclusion is approved |
+| Strongest edge families | Prioritize provenance, evidence, review-gate, publicness/confidence, media-candidate, and context-vs-proof edges |
+| Blocked edges | Preserve blocked overclaim edges as guardrails for Daphnia, Ghost Shrimp, Mesostoma, Moina, lake clearing, food-web completion, stability, chronology, media captions, and direct canonical observation links |
+| Import checks | Require frozen source versions/checksums, no-write dry run, delete/regenerate path, publicness filtering, and explicit approval before any candidate edge becomes canonical, public, or app-visible |
+
 Stage 3 pilot acceptance:
 
 | Acceptance check | Required result |

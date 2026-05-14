@@ -1,8 +1,8 @@
----
+﻿---
 id: web_overview
 title: 9. miniBIOTA_Web
 domain: web_and_digital_presence
-last_updated: 2026-05-13
+last_updated: 2026-05-14
 tags: [web, public-site, flask, telemetry, public-only, design-system, planner]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -26,7 +26,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Web context now uses the repo-native memory/skills architecture in `M:\miniBIOTA\miniBIOTA_Web\`.
 - Brain no longer keeps a Web `docs/` mirror; use the source repo's memory/skills/reference structure for detailed Web context.
 - App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`; current active Web project records are `36` through `41` plus `57`, with legacy/internal review project `42` archived.
-- The UX Interaction Lab is represented in Planner project `40` and was resumed by owner direction on 2026-05-09.
+- The UX Interaction Lab is represented in Planner project `40`, was resumed by owner direction on 2026-05-09, and has accepted P0 guidance slices completed as of 2026-05-14 while live-surface implementation remains separately scoped.
 
 ## Key Facts
 - Telemetry architecture is local-first and must not imply direct pump switching or centralized actuator control. Biome detail telemetry is public weather/context, not an operator dashboard.
@@ -38,7 +38,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Priorities
 - Keep Web memory and active Company Web reports aligned with the public-only, local-first telemetry and control architecture.
 - Use App Planner/Supabase for live Web task status; keep Markdown focused on architecture, rules, scope, and decisions.
-- Continue active UX Lab work through Planner project `40`; use `/ux-lab` for UX states, interaction rules, page patterns, and journeys while keeping development routes out of production navigation.
+- Continue active UX Lab work through Planner project `40`; use `/ux-lab` for UX states, interaction rules, page patterns, and journeys while keeping development routes out of production navigation. The next UX step should be owner/design review, browser/mobile visual QA, or a separately accepted live-surface application.
 - Keep the now-connected App/Hardware coordinator-to-website telemetry handoff production-verified, public-safe, and read-only, including the new biome weather presentation.
 - Work through the cleaned Web Planner roadmap: About/supporters and Patreon acknowledgment content, Substack signup/list migration and weekly newsletter assembly, events/news/chronicles product passes, engineering imagery, telemetry hardening, and species-card data polish.
 

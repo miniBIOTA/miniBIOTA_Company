@@ -112,6 +112,40 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-14:** Research completed Operation Living Intelligence task `391`
+  as the first Research-owned graph ontology brief for the Lake Post-Seal graph
+  seed:
+  `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-391-graph-ontology.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  detailed source for ecological ontology, claim safety, publicness, confidence,
+  observed-vs-inferred separation, and review gates. The ontology defines the
+  first graph as a derived evidence/review graph using `GraphSeed`,
+  `SourcePacket`, `CanonicalRecord`, `Species`, `Biome`, `Observation`,
+  `Event`, `Claim`, `Media`, `PublicnessTier`, `ConfidenceAssessment`, and
+  `ReviewGate` concepts. Daphnia species-level ID/establishment, Ghost Shrimp
+  juvenile recruitment, Mesostoma public use, Moina establishment,
+  water-clearing causation, food-web completion, stability, chronology edits,
+  and sensitive media captions remain Research-review gated. No Supabase,
+  Planner, graph import, graph data, App behavior, Content record, public site,
+  species-card, chronicle, observation-link, media, canonical ecology, or
+  source-of-truth record changed.
+- **2026-05-14:** Research completed Operation Living Intelligence task `392`
+  as the docs-only Lake Post-Seal graph-candidate relationship artifact:
+  `M:\miniBIOTA\miniBIOTA_Research\research\research-briefs\2026-05-14-operation-living-intelligence-task-392-lake-post-seal-graph-candidates.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  detailed source for candidate nodes, candidate edges, blocked edges,
+  provenance references, confidence/publicness/review labels, and validation
+  questions before any graph import. The artifact keeps everything
+  `derived_only` and `candidate_not_imported`, treats Freshwater Lake biome `1`
+  as a source-context pointer pending approval, and blocks tempting overclaims
+  such as direct canonical observation-to-pipeline/chronicle links, Daphnia
+  species-level ID/establishment/clearing claims, food-web completion/stability,
+  Ghost Shrimp recruitment, Mesostoma public-primary use, Moina establishment,
+  public media captions, out-of-scope chronicle species, later observations,
+  and story-thread/open-loop first-class nodes. No Supabase, Planner, graph
+  import, graph data, App behavior, Content record, Web/public behavior, media,
+  species, observation, chronicle, canonical ecology, or source-of-truth record
+  changed.
 - **2026-05-14:** Company continued Operation Living Intelligence beyond the
   Company lead stages by mapping App boundary task `386` at the
   planning/readiness level. The map separates App-owned Planner runtime,

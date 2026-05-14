@@ -2,7 +2,7 @@
 id: financials
 title: 2. miniBIOTA_Financials
 domain: financials
-last_updated: 2026-05-09
+last_updated: 2026-05-14
 tags: [finance, budget, revenue, debt, opex, taxes]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -24,9 +24,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Supabase tables are live: `operating_expenses`, `liabilities`, `revenue_streams`, `planned_purchases`, `mileage_log`.
 - Active Financials Agent context has moved from the old mirrored `docs/` pattern into `M:\miniBIOTA\miniBIOTA_Financials\AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Financials project management is now organized in App Planner/Supabase under
-  `work_domains.key = financials` / `domain_id = 2`: 6 Financials work
-  projects track 14 Financials tasks, with 0 unlinked open Financials tasks
-  after readback on 2026-05-09.
+  `work_domains.key = financials` / `domain_id = 2`. After the 2026-05-12
+  cross-domain cleanup, 2026-05-13 financial readback, and 2026-05-14
+  Operation Living Intelligence cost-review task addition, Financials has 8
+  active work projects and 26 task rows (21 open, 5 done).
 - `mileage_log` added 2026-04-21: IRS-compliant vehicle trip log. Fields: `trip_date`, `destination`, `purpose`, `project`, `category` (field_work/production/business), `miles`, `irs_rate`, `deduction_amount` (computed). RLS enabled. Standard mileage rate method adopted — tolls and parking are separately tracked in Quicken under `Content & Production : Tolls & Parking`.
 - Hardware debt (physical build costs) is currently a secondary priority to establishing digital cash flow.
 

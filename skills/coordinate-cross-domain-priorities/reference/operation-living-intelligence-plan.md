@@ -2,7 +2,7 @@
 id: operation_living_intelligence_plan
 title: Operation Living Intelligence Plan
 domain: company_operations
-last_updated: 2026-05-13
+last_updated: 2026-05-14
 tags: [operation-living-intelligence, ai-infrastructure, databases, analytics, graph, vector, agents, cross-domain]
 status: active_planning
 ---
@@ -90,6 +90,16 @@ Follow-up decisions:
 - On 2026-05-13, Josue chose **YouTube analytics first** for the analytics warehouse lane.
 - On 2026-05-13, Josue chose **Memgraph** for the graph pilot direction.
 - On 2026-05-13, Company recommended keeping biome telemetry in Supabase/Postgres for now instead of adding a separate time-series database during the first Operation Living Intelligence buildout.
+- On 2026-05-14, Josue updated the visual media intelligence direction to a
+  **Nemotron/Codex-first visual media intelligence build** after reviewing
+  NVIDIA Nemotron 3 Nano Omni. Codex should build the local/private pipeline
+  and NVIDIA Nemotron 3 Nano Omni, or the best current Nemotron
+  omni/video-capable deployment at implementation time, should serve as the
+  first media-analysis engine. Qwen is retained as a fallback/benchmark lane,
+  not the primary build path. After the Nemotron/Codex build produces a usable
+  candidate annotation workflow, miniBIOTA should try the **Twelve Labs free
+  tier** on the same bounded media set as a benchmark/refinement lane, not as
+  the initial source-of-truth media system.
 
 ## Source Checks - 2026-05-13
 
@@ -117,6 +127,39 @@ Detailed data projection scope:
 - Use that matrix before implementing any export, import, sync, Memgraph graph, vector index, analytics warehouse, or writeback flow.
 - A first read-only live Supabase schema audit was completed on 2026-05-13 and documented at `domains/company/operation_living_intelligence_supabase_schema_audit_2026-05-13.md`. It found 108 public-schema tables/views, one exposed RPC, and two public Storage buckets, and it confirmed that CRM and Financials need especially cautious projection boundaries.
 - Planner task `409` is the implementation-time gate to rerun a deeper Supabase schema/data audit before the first Operation Living Intelligence export/import.
+
+## Visual Media Intelligence Decision - 2026-05-14
+
+The approved direction for the video/photo tagging, extraction, and rough-sequence workflow is **Nemotron/Codex first**, with **Twelve Labs free tier as a later side-by-side benchmark** and **Qwen retained only as a fallback/benchmark lane**.
+
+Decision details:
+
+- Codex is the builder/orchestrator for the first local media intelligence pipeline: folder reads, scene/chunk planning, model calls, candidate annotation files, search/index handoff, clip pull sheets, and later DaVinci-friendly export planning.
+- NVIDIA Nemotron 3 Nano Omni, or the best current Nemotron omni/video-capable deployment at implementation time, is the first analysis engine for media understanding.
+- Qwen may still be tested as a fallback or comparison model if Nemotron is unavailable, too costly, or weaker on miniBIOTA's bounded test set.
+- The first output should be a rebuildable candidate annotation layer, not canonical media metadata.
+- Twelve Labs should be tested only after the Nemotron/Codex workflow exists enough to compare against. Use its free tier, if available and still appropriate at test time, on the same small media set to benchmark search quality, timestamp usefulness, segmentation, structured metadata, and story-sequence usefulness.
+- Twelve Labs is allowed as a refinement/reference candidate, but adopting it as an ongoing backend would require separate approval for cloud media upload, API/key setup, pricing, privacy, retention, and vendor dependency.
+- ChatGPT/Codex and Gemini may help plan, build, or benchmark workflows, but they are not the first canonical media-processing engine for this build.
+
+Initial candidate annotation fields:
+
+- Source file path or App media asset reference.
+- Start/end timestamp for video clips.
+- Plain-language visual description.
+- Candidate species/object/event labels.
+- Story role such as context, tension, transition, evidence, beauty shot, Q&A support, or closing moment.
+- Claim-support type and uncertainty.
+- Publicness/review status.
+- Research and Content review owner.
+- Quality/usefulness notes for editing.
+- Model name/version, prompt version, and run timestamp.
+
+The first practical "unlock" target is a candidate clip sequence or pull sheet for a story such as Lake Post-Seal recovery or Aquatic Club proof media. The agent may propose clip order, in/out points, story role, and evidence caveats, but Content owns the final edit and Research owns ecological claim review.
+
+Approved Planner follow-up:
+
+- On 2026-05-14, Josue approved live Planner follow-up tasks `411` through `415` for the visual media intelligence path and Twelve Labs benchmark lane. Later that same day, Josue officially swapped the primary model lane from Qwen/Codex to Nemotron/Codex after reviewing NVIDIA Nemotron 3 Nano Omni. These tasks are unscheduled planned work across Company, App, Content, and Financials. They do not approve raw media upload, paid service adoption, App runtime changes, media metadata writes, or publication.
 
 ## Decision Boundary
 
@@ -154,7 +197,7 @@ Operation Living Intelligence does not by itself authorize:
 | Graph intelligence | Neo4j or Memgraph | Species, observations, events, claims, media, provenance, dependencies, multi-hop reasoning | Initially derived; possible future canonical graph only by approval | Company governance; Research/App implementation |
 | Analytics warehouse | MotherDuck/DuckDB or BigQuery first | YouTube, website, social, email, support, CRM funnel, agent telemetry, trend analysis | Derived analytical history | Growth, Content, Web, Company; App/data implementation |
 | Short-term agent memory/cache | Redis or equivalent | Session state, queues, cache, locks, recent retrieval context | No, temporary runtime state | App/AI infrastructure |
-| Visual AI/media intelligence | Local VLMs such as Qwen2.5-VL-7B where appropriate; cloud multimodal models when approved | Image/video understanding, media captions, visual evidence extraction, object/event localization, rough clip notes, structured media metadata | Derived review layer unless approved as media metadata | Raw Footage, Content, Research, App |
+| Visual AI/media intelligence | Nemotron/Codex local-or-private pipeline first; Qwen fallback/benchmark; Twelve Labs free tier later as benchmark/refinement if approved for the test set | Image/video/audio understanding, media captions, visual evidence extraction, object/event localization, rough clip notes, candidate story sequences, structured media metadata | Derived review layer unless approved as media metadata | Raw Footage, Content, Research, App |
 | Automation/orchestration | App-owned workers, schedulers, queues, and agent tool bridges | Recurring checks, import jobs, retrieval refreshes, drift checks, report generation, proposed-task bundles | No, execution layer | App implementation; Company governance |
 | Enterprise/lakehouse option | Databricks Lakehouse/Lakebase later | Enterprise analytics, governance, large-scale data lake, privacy/security controls | Future option only | Not needed by default |
 | Distributed SQL option | TiDB/TiDB Cloud later | HTAP SQL + vector search if starting a new scalable operational DB | Not recommended as current replacement | Not needed by default |
@@ -170,7 +213,7 @@ Start with:
 3. Add analytics warehouse planning for YouTube/website/social performance, but do not implement until data sources and reporting questions are defined.
 4. Use Supabase/pgvector for first-pass semantic retrieval before adopting a dedicated vector database.
 5. Add Redis/cache only when agent workflows need queueing, speed, or temporary state.
-6. Add a visual AI/media intelligence pilot after the graph and data-source inventory clarify which media evidence needs extraction.
+6. Build the visual AI/media intelligence pilot as a Nemotron/Codex workflow, keeping local/private processing as the default target, then benchmark Twelve Labs free tier on the same bounded media set after the first workflow exists.
 7. Keep all current workflows operational while derived layers are built, tested, and compared. Do not switch agents or domains to a new system until it passes readiness criteria.
 
 ## Candidate Platform Coverage
@@ -193,7 +236,8 @@ Operation Living Intelligence should evaluate every major data-system category t
 | Analytics warehouse | MotherDuck/DuckDB, BigQuery | YouTube, website, QR, social, newsletter, CRM/funnel, agent telemetry analytics | Inventory first; pilot after graph or in parallel docs-only |
 | Enterprise lakehouse | Databricks Lakehouse / Lakebase | Enterprise governance, security, large-scale analytics, data sovereignty | Defer unless scale/security needs justify it |
 | Globally distributed app DB | Azure Cosmos DB | Resilient, multi-model, cloud-scale app memory in Azure ecosystems | Defer unless Azure-centered agent infrastructure appears |
-| Visual/local AI runtime | Qwen2.5-VL-7B candidate, later best-fit local VLMs | Image/video understanding, media evidence extraction, candidate annotations | Plan now; pilot after media test set and hardware review |
+| Visual/local AI runtime | Nemotron/Codex pipeline first; NVIDIA Nemotron 3 Nano Omni or best current Nemotron omni/video-capable deployment at implementation time; Qwen fallback/benchmark | Image/video/audio understanding, media evidence extraction, candidate annotations, rough clip pull sheets | Plan now; pilot after media test set and hardware review |
+| Video-native cloud benchmark | Twelve Labs free tier first, paid plan only after separate approval | Compare Nemotron/Codex results against video-native search, timestamping, segmentation, embeddings, and structured analysis | Benchmark after Nemotron/Codex build; do not upload broadly or adopt as backend without approval |
 | Automation/orchestration | App-owned workers, queues, schedulers, MCP/tool bridges | Recurring reports, sync jobs, proposed-write bundles, drift checks | Design early; enable only after approval |
 
 Adoption rule:
@@ -529,15 +573,27 @@ Use visual AI for media understanding and evidence extraction:
 - Bounding boxes, points, or structured coordinate outputs when a model supports them.
 - Draft metadata for App Media Library or Raw Footage workflows.
 
-At the time of this plan, Qwen2.5-VL-7B-Instruct is a candidate local/open model for visual workflows. Its public model card describes image understanding, video understanding, visual-agent behavior, localization outputs such as boxes/points, and structured outputs. Treat the specific model choice as time-sensitive: App/AI infrastructure should verify the best current local model before implementation.
+At the time of the 2026-05-14 model swap, NVIDIA Nemotron 3 Nano Omni became the preferred first model lane for the visual workflows. NVIDIA's current material describes the model as an omni/multimodal Nemotron lane for image, video, audio, and text reasoning, with possible access patterns through NVIDIA-hosted/API deployment, NIM, Hugging Face weights, and local inference stacks such as vLLM/SGLang/TensorRT-LLM when hardware supports them. The exact deployment should remain time-sensitive: App/AI infrastructure should verify the best current Nemotron local, private, NIM, or API-accessible option before implementation. Qwen remains a fallback/benchmark candidate rather than the primary lane.
+
+Implementation caution:
+
+- Treat Nemotron as a stronger first target, not as a permanent vendor lock.
+- Prefer local/private processing for raw miniBIOTA footage when hardware and setup make it practical.
+- If a hosted API or NIM endpoint is used first, limit testing to an explicitly approved bounded media set.
+- Verify license, commercial-use terms, model availability, hardware/storage needs, context limits, video/audio input support, API cost, and retention/privacy terms at implementation time.
+- Do not assume hosted tests authorize broad cloud media upload or persistent external media indexing.
 
 Initial visual AI posture:
 
+- Nemotron/Codex first for the first build: Codex builds the pipeline and NVIDIA Nemotron 3 Nano Omni analyzes the bounded media set when local/private deployment is feasible.
+- Qwen can be used as a fallback or comparison model if needed.
 - Local-first when privacy, cost, or raw media volume matters.
-- Cloud multimodal models only when approved and when local quality or hardware is insufficient.
+- Twelve Labs free tier may be used later on the same bounded test set to benchmark/refine the Nemotron/Codex workflow.
+- Cloud multimodal models only when approved and when local quality, timestamping, search quality, or hardware is insufficient.
 - Outputs are candidate annotations until reviewed by the owning domain.
 - Do not publish AI-derived media claims without Research/Content/Web review.
 - Do not write media metadata back to Supabase/App records without approval.
+- Do not upload raw media to a cloud video platform without explicit approval for the selected test set.
 
 Visual AI belongs near Raw Footage, Content, Research, and App:
 
@@ -963,12 +1019,15 @@ Candidate tasks:
 4. Generate draft media tags.
 5. Locate objects or moments when the model supports coordinates or timestamps.
 6. Link candidate media evidence to graph claims for human review.
+7. Generate candidate story-sequence pull sheets with file paths, in/out times, story role, and review caveats.
 
 Recommended tool posture:
 
-- Evaluate local Qwen2.5-VL-7B-Instruct or the best current local VLM before choosing a long-term model.
-- Use cloud multimodal fallback only if approved.
-- Start with read-only local file analysis and Markdown output.
+- Build with Codex + Nemotron first: local/private read-only file analysis, candidate JSON/JSONL annotations, and Markdown/pull-sheet output.
+- Use NVIDIA Nemotron 3 Nano Omni or the best current Nemotron omni/video-capable deployment at implementation time rather than locking to an older named model or a less capable fallback.
+- Keep Qwen as a fallback/benchmark lane if Nemotron is unavailable, too costly, or unexpectedly weaker on the bounded media set.
+- Try Twelve Labs free tier after the Nemotron/Codex workflow exists, using the same bounded media set to compare timestamped search, segmentation, structured metadata, and story-sequence usefulness.
+- Use broader cloud multimodal fallback only if approved.
 
 Success criteria:
 
@@ -977,6 +1036,8 @@ Success criteria:
 - Research/Content can reject or correct outputs without contaminating source truth.
 - No media metadata is written to Supabase without approval.
 - Hardware cost/performance is acceptable for repeated use.
+- The Nemotron/Codex workflow can produce a useful candidate clip pull sheet or rough sequence for a real miniBIOTA story.
+- The Twelve Labs comparison shows whether a video-native cloud platform materially improves recall, timestamp precision, segmentation, or editing usefulness enough to consider future adoption.
 
 ## Phased Build Plan
 
@@ -1087,6 +1148,10 @@ Outputs:
 - Hardware/runtime requirements.
 - Test media set.
 - Candidate annotation format.
+- Nemotron/Codex local/private pipeline plan and first candidate annotation run.
+- Qwen fallback/benchmark posture.
+- Twelve Labs free-tier benchmark plan for the same media set after the Nemotron/Codex run.
+- Candidate clip pull-sheet or rough sequence output format for DaVinci/Content review.
 - Raw Footage/Content/Research review workflow.
 - Decision on whether to integrate with App Media Library later.
 
@@ -1098,6 +1163,8 @@ Approval needed:
 
 - Local model installation or large model downloads if outside existing environment.
 - Any cloud model/API cost.
+- Any raw media upload to Twelve Labs or another cloud provider.
+- Any Twelve Labs paid plan, credential storage, persistent index, or ongoing backend use.
 - Any media metadata writeback.
 - Any App Media Library integration.
 

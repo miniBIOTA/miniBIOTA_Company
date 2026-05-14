@@ -2,7 +2,7 @@
 id: content_production
 title: 5. miniBIOTA_Content
 domain: content_production
-last_updated: 2026-05-12
+last_updated: 2026-05-14
 tags: [content, storytelling, publishing, media-production, workflow, pipeline]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -25,9 +25,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Pipeline has 353 records in `content_pipeline` as of 2026-05-07, including shorts 348-353.
 - `story_threads`, `story_beats`, `open_loops`, `content_calendar`, `chronicles`, and `content_pipeline` are Supabase-backed structured records. Query Supabase when current state matters.
 - Ordinary Content task management is now organized in App Planner/Supabase
-  under `work_domains.key = content` / `domain_id = 5`: 5 Content work
-  projects track 6 ordinary Content tasks, with 0 unlinked open Content tasks
-  after readback on 2026-05-09.
+  under `work_domains.key = content` / `domain_id = 5`. After the 2026-05-12
+  cross-domain cleanup and the 2026-05-14 Operation Living Intelligence
+  visual-media additions, Content has 8 active work projects and 50
+  task/checklist rows (48 open, 2 done).
 - ~$460/mo average revenue from content across YouTube, Facebook, and Patreon/Ko-fi support.
 - Active platforms: YouTube (25k), Instagram (62k), Facebook (~20k), TikTok (~20k), Patreon.
 

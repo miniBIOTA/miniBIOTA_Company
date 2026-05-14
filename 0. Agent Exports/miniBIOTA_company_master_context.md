@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Master Context
 
-- Generated: 2026-05-13 17:32:16 -04:00
+- Generated: 2026-05-13 21:15:47 -04:00
 - Source contract: Company `domains/` reports are included below.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 - Format: portable Markdown with Obsidian wiki-links normalized or removed.
@@ -126,8 +126,8 @@
   plan is not yet assembled, and Q3+ roadmap detail remains thin.
 - Company project management is now Planner-integrated under
   `work_domains.key = company_ops` / `domain_id = 1`: 6 Company work projects
-  track 28 Company tasks after the Operation Living Intelligence schema-audit
-  gate was added on 2026-05-13. `Roadmap & Quarterly Objectives`, `Operation Living Atlas
+  track 29 Company tasks after the Operation Living Intelligence visual media
+  intelligence governance task was added on 2026-05-14. `Roadmap & Quarterly Objectives`, `Operation Living Atlas
   Coordination`, `Aquatic Club Talk Program Coordination`, and `Operation
   Living Intelligence Coordination` are active; `Business Plan & Operating
   Model` and `AI & Knowledge Infrastructure` remain planned.
@@ -164,8 +164,15 @@
   graph, vector, analytics, visual AI, cache, and automation layers behind
   readiness gates. Default kickoff is graph-first through the Lake Post-Seal
   Living Atlas packet, with analytics and visual AI inventory as planning
-  sidecars. The live Program should remain unscheduled parent/container work
-  until timing is reviewed against Aquatic Club Talk Readiness.
+  sidecars. Visual media intelligence now has a Nemotron/Codex-first build path:
+  Codex should build the local candidate-annotation and clip-pull workflow,
+  while NVIDIA Nemotron 3 Nano Omni or the best current Nemotron
+  omni/video-capable deployment serves as the first analysis engine. Qwen is
+  retained as a fallback/benchmark lane. Twelve Labs free tier may be tested
+  afterward on the same bounded media set as a benchmark/refinement lane, not
+  as the initial source of truth. The live Program should remain unscheduled
+  parent/container work until timing is reviewed against Aquatic Club Talk
+  Readiness.
 - Coordinate website-related public communication as a soft build-in-public
   update, not a high-profile launch event, until launch scope/readiness is
   explicitly approved. Current public framing should acknowledge slower content
@@ -186,6 +193,24 @@
 
 ## Recent Milestones
 
+- **2026-05-14:** Josue officially swapped Operation Living Intelligence
+  visual media intelligence to the **Nemotron/Codex-first** path after
+  reviewing NVIDIA Nemotron 3 Nano Omni. The first build should keep raw media
+  local/private by default, use Codex to create the pipeline and NVIDIA
+  Nemotron 3 Nano Omni or the best current Nemotron omni/video-capable
+  deployment to generate candidate annotations, then produce review-safe clip
+  pull sheets or rough sequences for Content and Research review. Qwen remains
+  a fallback/benchmark lane. Twelve Labs free tier should be tested later on
+  the same bounded media set as a benchmark/refinement lane after the
+  Nemotron/Codex workflow exists. With Josue's approval, Planner tasks `411`
+  through `415` were updated across Company, App, Content, and Financials
+  projects as follow-ups; Company governance task `411` was marked done after
+  the docs and Planner swap were completed, while App/Content/Financials
+  implementation and benchmark tasks remain open/planned. No raw media
+  upload, paid plan, persistent external index, App runtime change, media
+  metadata write, public site behavior, schema change, automated job, public
+  commitment, sponsor commitment, financial commitment, legal decision, launch
+  target, or roadmap commitment was approved by this direction.
 - **2026-05-13:** Company completed the first read-only live Supabase schema
   audit for Operation Living Intelligence. The audit found 108 public-schema
   tables/views exposed through OpenAPI, one exposed RPC
@@ -480,8 +505,9 @@
 - Operation Living Intelligence creates a large architecture surface area. The
   main risks are premature tool adoption, competing sources of truth, agent
   write overreach, visual AI false positives, local model operations burden,
-  paid-service creep, and cutting over before derived systems prove they are
-  accurate, rebuildable, secure, cost-aware, and useful.
+  raw-media cloud upload risk, paid-service creep, and cutting over before
+  derived systems prove they are accurate, rebuildable, secure, cost-aware,
+  and useful.
 
 ## Cross-Domain Notes
 
@@ -559,9 +585,13 @@
   performance feedback while preserving the content calendar and publishing
   approval boundaries.
 - **Raw Footage:** Operation Living Intelligence should eventually support
-  local visual AI workflows for video/image description, candidate tags,
-  event/clip notes, OCR, and media-to-claim evidence routing, with outputs
-  treated as candidate annotations until reviewed.
+  local/private Nemotron/Codex visual AI workflows for video/image/audio
+  description, candidate tags, event/clip notes, OCR, clip pull sheets, rough
+  story sequences, and media-to-claim evidence routing, with outputs treated
+  as candidate annotations until reviewed. Qwen remains fallback/benchmark
+  only. Twelve Labs may be compared on a bounded free tier test set after the
+  first workflow exists, but cloud upload and ongoing backend use remain
+  separately approval-gated.
 - **Growth:** Operation Living Intelligence analytics should eventually connect
   YouTube, website, QR, social, newsletter/support, event, and CRM/funnel
   signals so Growth can interpret audience movement without creating sponsor,
@@ -616,9 +646,10 @@ Brain no longer mirrors Company docs. Load active Company detail from the source
 - Supabase tables are live: `operating_expenses`, `liabilities`, `revenue_streams`, `planned_purchases`, `mileage_log`.
 - Active Financials Agent context has moved from the old mirrored `docs/` pattern into `M:\miniBIOTA\miniBIOTA_Financials\AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Financials project management is now organized in App Planner/Supabase under
-  `work_domains.key = financials` / `domain_id = 2`: 6 Financials work
-  projects track 14 Financials tasks, with 0 unlinked open Financials tasks
-  after readback on 2026-05-09.
+  `work_domains.key = financials` / `domain_id = 2`. After the 2026-05-12
+  cross-domain cleanup, 2026-05-13 financial readback, and 2026-05-14
+  Operation Living Intelligence cost-review task addition, Financials has 8
+  active work projects and 26 task rows (21 open, 5 done).
 - `mileage_log` added 2026-04-21: IRS-compliant vehicle trip log. Fields: `trip_date`, `destination`, `purpose`, `project`, `category` (field_work/production/business), `miles`, `irs_rate`, `deduction_amount` (computed). RLS enabled. Standard mileage rate method adopted â€” tolls and parking are separately tracked in Quicken under `Content & Production : Tolls & Parking`.
 - Hardware debt (physical build costs) is currently a secondary priority to establishing digital cash flow.
 
@@ -762,23 +793,32 @@ Open items in priority order:
 
 Financials project management is now Planner-integrated under
 `work_domains.key = financials` / `domain_id = 2`. After the 2026-05-12
-cross-domain cleanup and financial readback, Financials has 7 active work
-projects and 20 task rows (15 open, 5 done). Planner remains task-status truth;
-financial tables and close records remain balance/revenue/expense truth.
+cross-domain cleanup and financial readback, Financials has 8 active work
+projects and 26 task rows (21 open, 5 done) after Operation Living
+Intelligence cost-review task `415` was added on 2026-05-14. Planner remains
+task-status truth; financial tables and close records remain
+balance/revenue/expense truth.
 
 ## Active Priorities
 
 Planner/Supabase is the live Financials work queue for task status. Financial
 truth remains in financial tables and close records, not Planner task text.
 
-1. Review pending/needs-review Google $20 charge from 2026-04-28, likely final Claude/Anthropic charge before cancellation.
+1. Collect May/current bank and card statements for spending visibility; Planner task `410` is scheduled for 2026-05-14.
 2. Capture utility cost estimates for biome operations
-3. Document tax obligations and filing requirements
-4. Build debt payoff projection (avalanche method)
-5. Build 3â€“6 month cash flow projection using the new cash/runway snapshots
+3. Verify and update debt balances, minimum payments, and APRs
+4. Document tax obligations and filing requirements
+5. Build 3-6 month cash flow projection using current statements, cash snapshots, burn, debt payments, and planned purchases
 
 ## Recent Milestones
 
+- **2026-05-14:** Company updated Operation Living Intelligence Financials
+  task `415` to review Twelve Labs free-tier limits and paid-plan thresholds
+  only after Nemotron/Codex benchmark results exist. Qwen remains
+  fallback/benchmark only. This is a cost-review gate only; no paid
+  subscription, vendor backend, financial commitment, media upload, App
+  runtime change, or schema change was approved.
+- **2026-05-13:** Financials added and applied a statement reconciliation layer for full card visibility without polluting miniBIOTA expense totals. January-April 2026 AmEx Business Green Rewards Card statements are now represented in `statement_import_batches` with 72 statement rows, 4 statement document metadata records, and 12 recurring classification rules. User review resolved all initially open Amazon, Walmart, Home Depot, and points-adjustment rows; remaining open statement-review count was verified as zero. The April-statement Google/Claude charge was confirmed as Anthropic/Claude, and Planner task `410` was created for 2026-05-14 to collect May/current bank and card statements.
 - **2026-05-12:** Company applied approved Financials Planner cleanup and
   readback. Tasks `96` and `97` were marked complete after verifying
   `account_balance_snapshots`, `expense_transactions`, and `planned_purchases`.
@@ -796,7 +836,7 @@ truth remains in financial tables and close records, not Planner task text.
   without changing financial records, Planner records, schema, app behavior, or
   Brain docs.
 - **2026-05-04:** Financials repo migrated active agent context from the old `docs/` pattern into Codex-native `memory/` and `skills/`. Active detailed sources are now `AGENTS.md`, `memory/00-index.md`, relevant `memory/*.md`, `skills/*/SKILL.md`, and `skills/*/reference/`. Brain no longer keeps a Financials `docs/` mirror.
-- **2026-05-02:** Applied the financial close schema and completed April close in Supabase. Added close header, account balance snapshots, one Facebook cash receipt, 16 miniBIOTA expense transactions, six liability snapshots, current liability updates, and planned purchase links for monitor/GPU/phone mount. Posted miniBIOTA expenses totaled $1,353.08, plus one $20 pending/needs-review AI tools charge.
+- **2026-05-02:** Applied the financial close schema and completed April close in Supabase. Added close header, account balance snapshots, one Facebook cash receipt, 16 miniBIOTA expense transactions, six liability snapshots, current liability updates, and planned purchase links for monitor/GPU/phone mount. Posted miniBIOTA expenses now total $1,373.08 after the formerly pending $20 AI tools charge was confirmed as Anthropic/Claude on 2026-05-13.
 - **2026-05-02:** Added April Patreon to canonical records: $78.21 April 2026 `revenue_streams` row and matching cash receipt deposited 2026-04-06.
 - **2026-05-02:** Drafted additive financial close schema migration and monthly close workflow in the Financials repo. New model separates cash receipts, expense transactions, account balance snapshots, and liability snapshots from current-state dashboard tables.
 - **2026-05-02:** Updated AI tools operating expenses from the 2026-04-29 subscription change: Anthropic / Claude Code cancelled; OpenAI upgraded from ChatGPT Plus to ChatGPT Pro at $100/mo. Active monthly OpEx is now $157.52.
@@ -809,7 +849,8 @@ truth remains in financial tables and close records, not Planner task text.
 
 - Utility costs not captured in operating expenses.
 - Tax obligations not documented.
-- One Apr 28 $20 Google charge is included as pending/needs-review because it likely represents the final Claude/Anthropic charge, but the statement descriptor needs final confirmation.
+- May/current bank and card activity still needs to be collected before current-month spending visibility and runway forecasting are reliable.
+- Planner tasks `182` and `378` appear substantively resolved from the 2026-05-13 Financials session but still need explicit approval before being marked done.
 
 ## Cross-Domain Notes
 
@@ -1164,9 +1205,10 @@ Brain no longer mirrors Brand docs. Load active Brand detail from the source rep
 - Pipeline has 353 records in `content_pipeline` as of 2026-05-07, including shorts 348-353.
 - `story_threads`, `story_beats`, `open_loops`, `content_calendar`, `chronicles`, and `content_pipeline` are Supabase-backed structured records. Query Supabase when current state matters.
 - Ordinary Content task management is now organized in App Planner/Supabase
-  under `work_domains.key = content` / `domain_id = 5`: 5 Content work
-  projects track 6 ordinary Content tasks, with 0 unlinked open Content tasks
-  after readback on 2026-05-09.
+  under `work_domains.key = content` / `domain_id = 5`. After the 2026-05-12
+  cross-domain cleanup and the 2026-05-14 Operation Living Intelligence
+  visual-media additions, Content has 8 active work projects and 50
+  task/checklist rows (48 open, 2 done).
 - ~$460/mo average revenue from content across YouTube, Facebook, and Patreon/Ko-fi support.
 - Active platforms: YouTube (25k), Instagram (62k), Facebook (~20k), TikTok (~20k), Patreon.
 
@@ -1287,9 +1329,10 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
   parent production task, and subtasks are the execution schedule.
 - **Ordinary task/work-project layer:** Planner-integrated under
   `work_domains.key = content` / `domain_id = 5`. After the 2026-05-12
-  cross-domain cleanup, Content has 8 active work projects and 48 task/checklist
-  rows (46 open, 2 done), including active short/longform production and
-  Aquatic Club talk support.
+  cross-domain cleanup and 2026-05-14 Operation Living Intelligence
+  visual-media additions, Content has 8 active work projects and 50 task/checklist
+  rows (48 open, 2 done), including active short/longform production, Aquatic
+  Club talk support, and visual media intelligence readiness.
 
 ## Active Priorities
 
@@ -1311,6 +1354,13 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
   chronicles, publish closeout, and active project docs.
 
 ## Recent Milestones
+- **2026-05-14:** Company updated Operation Living Intelligence Content tasks
+  `413` and `414` for selecting a bounded Nemotron/Codex visual AI test set,
+  later comparing Twelve Labs free tier on the same set, and defining
+  candidate clip pull-sheet/rough-sequence review criteria for DaVinci and
+  Content workflow. Qwen remains fallback/benchmark only. No
+  `content_calendar`, publishing, media metadata, raw-media upload, paid
+  service, App runtime, public site behavior, or public claim changed.
 - **2026-05-13:** Company/Content strategy aligned around a possible website
   update short and supporting posts. The preferred posture is a soft
   build-in-public announcement, not a high-profile launch event: content can
@@ -1636,9 +1686,11 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
 - Known near-term deliverables include a business plan, media kit, sponsorship package, and speaking/pitching activity, but they are not yet organized into one operating system.
 - The website already has commercial and audience-capture surfaces through `/donate`, `/events`, `/build`, and newsletter signup routes, while `email_signups` remains capture-only until an external platform sync is defined.
 - Growth project management is now organized in App Planner/Supabase under
-  `work_domains.key = sales` / `domain_id = 7`: 5 Growth work projects track
-  13 Growth tasks, with 0 unlinked open Growth tasks after readback on
-  2026-05-09.
+  `work_domains.key = sales` / `domain_id = 7`. After the 2026-05-12
+  cross-domain cleanup, Growth has 6 active work projects and 23 task rows
+  (22 open, 1 done), including Aquatic Club sponsorship/follow-up support.
+  Planner tracks work status; outreach, pricing, CRM implementation, sponsor
+  commitments, campaign dates, and public claims remain approval-gated.
 - `miniBIOTA_Growth` now uses repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Growth `docs/` mirror; use the source repo's memory/skills structure for detailed Growth Agent context.
 
@@ -1649,10 +1701,16 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
 - Growth owns CRM relationship meaning, lifecycle stages, follow-up strategy,
   opportunity context, and sponsor/partner/customer commitment discipline. App
   owns CRM software/runtime/schema/UI implementation.
+- CRM's practical operator layer now supports flexible contact links and
+  dated/timed CRM activities that can link to Planner tasks without duplicating
+  schedule truth.
 - No partner pipeline, pricing structure, sponsorship tiers, or CRM-style operating cadence is fully operational yet.
 - Growth Agent wiring now treats App Planner/Supabase as the live Growth work
   queue. Growth sessions should read Planner projects/tasks when planning work,
   and ask before marking completed Planner tasks done at closeout.
+- CRM activity scheduling is now coordinated with Planner through optional task
+  links and explicit Planner visibility controls; Growth owns the relationship
+  semantics and App owns the runtime behavior.
 
 ## Priorities
 - Turn scattered commercial signals into a working operating model covering sponsorships, speaking, audience support, course pre-sale, affiliate-backed resources, and crowdfunding.
@@ -1666,7 +1724,11 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
 
 ## Risks / Gaps
 - Without an explicit commercial system, public interest can accumulate without conversion.
-- Newsletter-sync and relationship-management workflow are missing.
+- Newsletter-sync and broader relationship-management workflow are still being
+  built out.
+- CRM/Planner calendar display needs cleanup review so relationship activity
+  context remains distinct from all-domain Planner task truth and does not
+  imply outreach approval.
 - Sponsorship pricing, tier design, partner categories, and outreach cadence are not yet documented.
 - Commercial planning spans Brand, Content, Web, Financials, and Company Operations, so ownership and sequencing can blur.
 - Revenue projections and campaign plans must be checked against current financial and audience data before execution.
@@ -1706,6 +1768,10 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
   function: contact meaning, relationship lifecycle, follow-up strategy,
   opportunity context, sponsor/partner/customer commitment discipline, and
   outreach cadence. App owns CRM software/runtime/schema/UI implementation.
+- CRM now has its first approved live relationship content in the practical
+  legacy operator layer, plus flexible contact links and activity scheduling
+  fields. CRM activities can carry relationship-specific dates/times and link
+  to Planner tasks without creating duplicate schedule truth.
 - Growth project management is now Planner-integrated under
   `work_domains.key = sales` / `domain_id = 7`. After the 2026-05-12
   cross-domain cleanup, Growth has 6 active work projects and 23 task rows
@@ -1727,6 +1793,13 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
 
 ## Recent Milestones
 
+- **2026-05-13:** Growth/App/Company coordination advanced the CRM operator
+  layer: flexible labeled contact links are live, CRM activity scheduling now
+  supports due time, optional Planner task links, and explicit Planner
+  visibility, and the first event-bound relationship activity was aligned to
+  an existing Planner task instead of creating duplicate schedule state.
+  Relationship details, outreach execution, sponsor terms, public claims, and
+  commitments remain approval-gated.
 - **2026-05-12:** Company applied approved Growth Planner cleanup from the
   cross-domain task relevance review: Growth project names now distinguish
   sponsorship research/approved outreach from live sending, CRM relationship
@@ -1753,6 +1826,9 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
 
 - Without an explicit commercial system, public interest can accumulate without conversion.
 - Newsletter-sync and relationship-management workflow are missing.
+- CRM/Planner integration now has a safer dedupe pattern, but the App calendar
+  and Planner display still need cleanup/smoke review so relationship context
+  does not create duplicate work truth or imply outreach approval.
 - Sponsorship pricing, tier design, partner categories, and outreach cadence are not yet documented.
 - Commercial planning spans Brand, Content, Web, Financials, and Company Operations, so ownership and sequencing can blur.
 - Revenue projections and campaign plans must be checked against current financial and audience data before execution.
@@ -1770,6 +1846,10 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
 - **App:** App Planner/Supabase is the shared project/task runtime for Growth
   work status. Growth owns commercial strategy and relationship context; App
   owns Planner/CRM runtime behavior, schema, UI, and implementation.
+- **App:** CRM activity dates/times can now be coordinated with Planner by
+  linking a CRM activity to an existing task or explicitly opting unlinked CRM
+  activity items into Planner visibility. This remains an internal operator
+  surface, not public commitment or outreach approval.
 
 ## Domain Reference
 
@@ -2308,8 +2388,9 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   (`work_programs.id = 3`), with domain-owned projects linked through
   `work_program_projects`.
 - App project management is now organized in App Planner/Supabase under the
-  App domain: 7 App work projects track 16 linked App tasks, with 0 unlinked
-  open App tasks after readback on 2026-05-09.
+  App domain. After the 2026-05-12 cross-domain cleanup and the 2026-05-14
+  Operation Living Intelligence visual-media task addition, App has 10 total
+  work projects, 9 non-archived projects, and 27 task rows (24 open, 3 done).
 - Monitoring reads direct MQTT telemetry from the local biome network when connected to `mB2.4`, including internal-only heat-exchanger/liquid temperature (`liq_t`) and pump run percentage (`pump_pct`) display for sensor biomes 2-5.
 - Site Admin supports species, biosphere, biome, chronicle, announcement, staging, and media-library workflows.
 - Media Library/tagging, Species-style media search/filtering, and backend WebP image upload pipeline are implemented in the app.
@@ -2451,10 +2532,11 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - App project management is now Planner-integrated under
   `work_domains.key = app` / `domain_id = 9`. After the 2026-05-12
   cross-domain cleanup, App has 10 total work projects, 9 non-archived projects,
-  and 26 task rows (23 open, 3 done). Project `11` is completed/archived as
-  stale wiring work, and active App Planner work is now concentrated in runtime,
-  sources/workflow polish, Field Observer, media reliability, monitoring,
-  Supabase/storage safety, and Aquatic Club support.
+  and 27 task rows (24 open, 3 done) after Operation Living Intelligence
+  visual-media task `412` was added on 2026-05-14. Project `11` is
+  completed/archived as stale wiring work, and active App Planner work is now
+  concentrated in runtime, sources/workflow polish, Field Observer, media
+  reliability, monitoring, Supabase/storage safety, and Aquatic Club support.
 - Prompt Library has replaced the old static Team reference surface. Migration 012 was applied successfully by the user on 2026-05-11, making the `prompt_library` table live for reusable prompt records. Prompt create, edit, favorite, archive, and restore actions are live Supabase writes through the internal app REST path.
 - `miniBIOTA_App` now has repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
@@ -2473,6 +2555,14 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Continue using the app for financials, Planner/content production, CRM, media tagging, and monitoring workflows.
 
 ## Recent Milestones
+
+- **2026-05-14:** Company updated Operation Living Intelligence App task `412`
+  for designing the Nemotron/Codex local/private media-analysis pipeline and
+  sidecar annotation boundary after Josue selected NVIDIA Nemotron 3 Nano Omni
+  as the primary model lane. Qwen remains fallback/benchmark only. This is
+  planning only; no App runtime behavior, schema, model install, media
+  metadata write, raw media upload, public site behavior, paid service, or
+  automated job changed.
 
 - **2026-05-13:** CRM Contacts gained flexible labeled links through migration `014_crm_contact_links.sql` and App UI support in the contact modal/detail view. Contacts can now store only the links they actually have, such as Website, YouTube, Facebook, or other freeform labels, instead of requiring a fixed social-platform column list. Grant Eder's YouTube link was moved from notes into `crm_contact_links` after the user applied the migration. This changed App CRM schema/runtime behavior and one approved CRM contact record; no outreach execution, partner/sponsor commitments, Planner records, public site behavior, Storage, telemetry, or pricing/public claims changed.
 

@@ -2,7 +2,7 @@
 id: content_brief
 title: Content Production Brief
 domain: content_production
-last_updated: 2026-05-13
+last_updated: 2026-05-14
 tags: [content, production, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -35,9 +35,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   parent production task, and subtasks are the execution schedule.
 - **Ordinary task/work-project layer:** Planner-integrated under
   `work_domains.key = content` / `domain_id = 5`. After the 2026-05-12
-  cross-domain cleanup, Content has 8 active work projects and 48 task/checklist
-  rows (46 open, 2 done), including active short/longform production and
-  Aquatic Club talk support.
+  cross-domain cleanup and 2026-05-14 Operation Living Intelligence
+  visual-media additions, Content has 8 active work projects and 50 task/checklist
+  rows (48 open, 2 done), including active short/longform production, Aquatic
+  Club talk support, and visual media intelligence readiness.
 
 ## Active Priorities
 
@@ -59,6 +60,13 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   chronicles, publish closeout, and active project docs.
 
 ## Recent Milestones
+- **2026-05-14:** Company updated Operation Living Intelligence Content tasks
+  `413` and `414` for selecting a bounded Nemotron/Codex visual AI test set,
+  later comparing Twelve Labs free tier on the same set, and defining
+  candidate clip pull-sheet/rough-sequence review criteria for DaVinci and
+  Content workflow. Qwen remains fallback/benchmark only. No
+  `content_calendar`, publishing, media metadata, raw-media upload, paid
+  service, App runtime, public site behavior, or public claim changed.
 - **2026-05-13:** Company/Content strategy aligned around a possible website
   update short and supporting posts. The preferred posture is a soft
   build-in-public announcement, not a high-profile launch event: content can

@@ -129,7 +129,7 @@ Project: `Operation Living Intelligence App Bridges & Agent Router`
 | 386 | 10 | Map App-owned Planner, Supabase bridge, Media Library, storage, secret-key, and indexing boundaries | task | planned | Include the current media folder used by App indexing. |
 | 387 | 20 | Design read-only access pattern for graph, vector, analytics, and media-intelligence layers | task | planned | Derived layers should not write canonical records during pilot. |
 | 388 | 30 | Design the agent router and tool registry for which agent queries which system | task | planned | Include read/write/approval policy per agent domain. |
-| 389 | 40 | Design local visual-model worker boundary without changing App runtime yet | task | planned | Treat Qwen2.5-VL-7B-style models as time-sensitive candidates, not permanent commitments. |
+| 389 | 40 | Design local visual-model worker boundary without changing App runtime yet | task | planned | Treat Nemotron, Qwen, and other model choices as time-sensitive candidates, not permanent commitments. |
 | 390 | 50 | Define approval and readback requirements for any future App schema, media metadata, or writeback path | milestone | planned | App/schema/runtime changes require separate approval. |
 
 ## Research Project Tasks
@@ -203,3 +203,33 @@ Project: `Operation Living Intelligence Cost & Subscription Review`
 Readback confirmed the created tasks are unscheduled. Aquatic Club Talk Readiness remains the protected near-term hard-window priority through the 2026-06-13 talk and 2026-06-14 closeout.
 
 The first attempted task insert was rejected by Supabase because the live `tasks` table requires `domain_label`. Company reran the idempotent write with the required labels; the completed write created only the missing task rows.
+
+## 2026-05-14 Visual Media Intelligence Addendum
+
+Josue approved adding the visual media intelligence path to the build direction and Planner follow-up, then officially swapped the primary model lane from Qwen/Codex to Nemotron/Codex after reviewing NVIDIA Nemotron 3 Nano Omni.
+
+Decision:
+
+- Codex should build the local media intelligence pipeline first.
+- NVIDIA Nemotron 3 Nano Omni, or the best current Nemotron omni/video-capable deployment at implementation time, should be the first visual analysis engine.
+- Qwen remains a fallback/benchmark lane, not the primary build path.
+- Outputs should be candidate annotations and clip pull sheets or rough sequences for Content/Research review, not canonical media metadata.
+- Twelve Labs free tier should be tested afterward on the same bounded media set as a benchmark/refinement lane.
+- Twelve Labs should not become the ongoing backend, a persistent external media index, or a paid service without separate approval.
+
+Planner follow-up tasks:
+
+| Task ID | Project ID | Domain | Task | Type | Notes |
+|---:|---:|---|---|---|---|
+| 411 | 75 | Company Ops | Add Nemotron/Codex visual media intelligence build gates to Operation Living Intelligence review | task | Company coordination; no implementation ownership transfer. |
+| 412 | 76 | App | Design Nemotron/Codex local/private media-analysis pipeline and sidecar annotation boundary | task | App owns runtime boundaries, local worker pattern, candidate sidecar format, and any future Media Library integration. |
+| 413 | 78 | Content | Select bounded media test set for Nemotron/Codex visual AI and later Twelve Labs free-tier benchmark | task | Content owns production usefulness and source-media selection with Raw Footage/App boundaries. |
+| 414 | 78 | Content | Define candidate clip pull-sheet and rough-sequence review criteria for DaVinci and Content workflow | task | Include story role, in/out timestamps, quality, evidence caveats, and Research review needs. |
+| 415 | 81 | Financials | Review Twelve Labs free-tier limits and paid-plan threshold after Nemotron/Codex benchmark results exist | task | No paid subscription or cloud backend commitment. |
+
+Planner status after the swap:
+
+- Task `411` was marked done because the Company governance/docs/Planner swap was completed.
+- Tasks `412`, `413`, `414`, and `415` remain open/planned implementation, test-set, review-criteria, and cost-review follow-ups.
+
+No scheduled dates are implied by this addendum. Aquatic Club Talk Readiness remains the protected near-term hard-window priority.

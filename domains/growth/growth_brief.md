@@ -2,7 +2,7 @@
 id: growth_brief
 title: Growth Brief
 domain: partners_and_sales
-last_updated: 2026-05-12
+last_updated: 2026-05-13
 tags: [growth, partners, sales, sponsorships, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -27,6 +27,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   function: contact meaning, relationship lifecycle, follow-up strategy,
   opportunity context, sponsor/partner/customer commitment discipline, and
   outreach cadence. App owns CRM software/runtime/schema/UI implementation.
+- CRM now has its first approved live relationship content in the practical
+  legacy operator layer, plus flexible contact links and activity scheduling
+  fields. CRM activities can carry relationship-specific dates/times and link
+  to Planner tasks without creating duplicate schedule truth.
 - Growth project management is now Planner-integrated under
   `work_domains.key = sales` / `domain_id = 7`. After the 2026-05-12
   cross-domain cleanup, Growth has 6 active work projects and 23 task rows
@@ -48,6 +52,13 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-13:** Growth/App/Company coordination advanced the CRM operator
+  layer: flexible labeled contact links are live, CRM activity scheduling now
+  supports due time, optional Planner task links, and explicit Planner
+  visibility, and the first event-bound relationship activity was aligned to
+  an existing Planner task instead of creating duplicate schedule state.
+  Relationship details, outreach execution, sponsor terms, public claims, and
+  commitments remain approval-gated.
 - **2026-05-12:** Company applied approved Growth Planner cleanup from the
   cross-domain task relevance review: Growth project names now distinguish
   sponsorship research/approved outreach from live sending, CRM relationship
@@ -74,6 +85,9 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 - Without an explicit commercial system, public interest can accumulate without conversion.
 - Newsletter-sync and relationship-management workflow are missing.
+- CRM/Planner integration now has a safer dedupe pattern, but the App calendar
+  and Planner display still need cleanup/smoke review so relationship context
+  does not create duplicate work truth or imply outreach approval.
 - Sponsorship pricing, tier design, partner categories, and outreach cadence are not yet documented.
 - Commercial planning spans Brand, Content, Web, Financials, and Company Operations, so ownership and sequencing can blur.
 - Revenue projections and campaign plans must be checked against current financial and audience data before execution.
@@ -91,6 +105,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - **App:** App Planner/Supabase is the shared project/task runtime for Growth
   work status. Growth owns commercial strategy and relationship context; App
   owns Planner/CRM runtime behavior, schema, UI, and implementation.
+- **App:** CRM activity dates/times can now be coordinated with Planner by
+  linking a CRM activity to an existing task or explicitly opting unlinked CRM
+  activity items into Planner visibility. This remains an internal operator
+  surface, not public commitment or outreach approval.
 
 ## Domain Reference
 

@@ -2,7 +2,7 @@
 id: partners_and_sales
 title: 7. miniBIOTA_Growth
 domain: partners_and_sales
-last_updated: 2026-05-12
+last_updated: 2026-05-13
 tags: [partnerships, sales, sponsorships, business-development, outreach]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -24,9 +24,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Known near-term deliverables include a business plan, media kit, sponsorship package, and speaking/pitching activity, but they are not yet organized into one operating system.
 - The website already has commercial and audience-capture surfaces through `/donate`, `/events`, `/build`, and newsletter signup routes, while `email_signups` remains capture-only until an external platform sync is defined.
 - Growth project management is now organized in App Planner/Supabase under
-  `work_domains.key = sales` / `domain_id = 7`: 5 Growth work projects track
-  13 Growth tasks, with 0 unlinked open Growth tasks after readback on
-  2026-05-09.
+  `work_domains.key = sales` / `domain_id = 7`. After the 2026-05-12
+  cross-domain cleanup, Growth has 6 active work projects and 23 task rows
+  (22 open, 1 done), including Aquatic Club sponsorship/follow-up support.
+  Planner tracks work status; outreach, pricing, CRM implementation, sponsor
+  commitments, campaign dates, and public claims remain approval-gated.
 - `miniBIOTA_Growth` now uses repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Growth `docs/` mirror; use the source repo's memory/skills structure for detailed Growth Agent context.
 
@@ -37,10 +39,16 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Growth owns CRM relationship meaning, lifecycle stages, follow-up strategy,
   opportunity context, and sponsor/partner/customer commitment discipline. App
   owns CRM software/runtime/schema/UI implementation.
+- CRM's practical operator layer now supports flexible contact links and
+  dated/timed CRM activities that can link to Planner tasks without duplicating
+  schedule truth.
 - No partner pipeline, pricing structure, sponsorship tiers, or CRM-style operating cadence is fully operational yet.
 - Growth Agent wiring now treats App Planner/Supabase as the live Growth work
   queue. Growth sessions should read Planner projects/tasks when planning work,
   and ask before marking completed Planner tasks done at closeout.
+- CRM activity scheduling is now coordinated with Planner through optional task
+  links and explicit Planner visibility controls; Growth owns the relationship
+  semantics and App owns the runtime behavior.
 
 ## Priorities
 - Turn scattered commercial signals into a working operating model covering sponsorships, speaking, audience support, course pre-sale, affiliate-backed resources, and crowdfunding.
@@ -54,7 +62,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Risks / Gaps
 - Without an explicit commercial system, public interest can accumulate without conversion.
-- Newsletter-sync and relationship-management workflow are missing.
+- Newsletter-sync and broader relationship-management workflow are still being
+  built out.
+- CRM/Planner calendar display needs cleanup review so relationship activity
+  context remains distinct from all-domain Planner task truth and does not
+  imply outreach approval.
 - Sponsorship pricing, tier design, partner categories, and outreach cadence are not yet documented.
 - Commercial planning spans Brand, Content, Web, Financials, and Company Operations, so ownership and sequencing can blur.
 - Revenue projections and campaign plans must be checked against current financial and audience data before execution.

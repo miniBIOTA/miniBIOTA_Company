@@ -2,7 +2,7 @@
 id: app_brief
 title: App Operations Brief
 domain: app_operations
-last_updated: 2026-05-13
+last_updated: 2026-05-14
 tags: [app, electron, operations, planner, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -48,10 +48,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - App project management is now Planner-integrated under
   `work_domains.key = app` / `domain_id = 9`. After the 2026-05-12
   cross-domain cleanup, App has 10 total work projects, 9 non-archived projects,
-  and 26 task rows (23 open, 3 done). Project `11` is completed/archived as
-  stale wiring work, and active App Planner work is now concentrated in runtime,
-  sources/workflow polish, Field Observer, media reliability, monitoring,
-  Supabase/storage safety, and Aquatic Club support.
+  and 27 task rows (24 open, 3 done) after Operation Living Intelligence
+  visual-media task `412` was added on 2026-05-14. Project `11` is
+  completed/archived as stale wiring work, and active App Planner work is now
+  concentrated in runtime, sources/workflow polish, Field Observer, media
+  reliability, monitoring, Supabase/storage safety, and Aquatic Club support.
 - Prompt Library has replaced the old static Team reference surface. Migration 012 was applied successfully by the user on 2026-05-11, making the `prompt_library` table live for reusable prompt records. Prompt create, edit, favorite, archive, and restore actions are live Supabase writes through the internal app REST path.
 - `miniBIOTA_App` now has repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
@@ -70,6 +71,14 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Continue using the app for financials, Planner/content production, CRM, media tagging, and monitoring workflows.
 
 ## Recent Milestones
+
+- **2026-05-14:** Company updated Operation Living Intelligence App task `412`
+  for designing the Nemotron/Codex local/private media-analysis pipeline and
+  sidecar annotation boundary after Josue selected NVIDIA Nemotron 3 Nano Omni
+  as the primary model lane. Qwen remains fallback/benchmark only. This is
+  planning only; no App runtime behavior, schema, model install, media
+  metadata write, raw media upload, public site behavior, paid service, or
+  automated job changed.
 
 - **2026-05-13:** CRM Contacts gained flexible labeled links through migration `014_crm_contact_links.sql` and App UI support in the contact modal/detail view. Contacts can now store only the links they actually have, such as Website, YouTube, Facebook, or other freeform labels, instead of requiring a fixed social-platform column list. Grant Eder's YouTube link was moved from notes into `crm_contact_links` after the user applied the migration. This changed App CRM schema/runtime behavior and one approved CRM contact record; no outreach execution, partner/sponsor commitments, Planner records, public site behavior, Storage, telemetry, or pricing/public claims changed.
 

@@ -2,7 +2,7 @@
 id: financials_brief
 title: Financials Brief
 domain: financials
-last_updated: 2026-05-13
+last_updated: 2026-05-14
 tags: [finance, budget, revenue, debt, brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -34,8 +34,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 Financials project management is now Planner-integrated under
 `work_domains.key = financials` / `domain_id = 2`. After the 2026-05-12
 cross-domain cleanup and financial readback, Financials has 8 active work
-projects and 25 task rows (20 open, 5 done). Planner remains task-status truth;
-financial tables and close records remain balance/revenue/expense truth.
+projects and 26 task rows (21 open, 5 done) after Operation Living
+Intelligence cost-review task `415` was added on 2026-05-14. Planner remains
+task-status truth; financial tables and close records remain
+balance/revenue/expense truth.
 
 ## Active Priorities
 
@@ -50,6 +52,12 @@ truth remains in financial tables and close records, not Planner task text.
 
 ## Recent Milestones
 
+- **2026-05-14:** Company updated Operation Living Intelligence Financials
+  task `415` to review Twelve Labs free-tier limits and paid-plan thresholds
+  only after Nemotron/Codex benchmark results exist. Qwen remains
+  fallback/benchmark only. This is a cost-review gate only; no paid
+  subscription, vendor backend, financial commitment, media upload, App
+  runtime change, or schema change was approved.
 - **2026-05-13:** Financials added and applied a statement reconciliation layer for full card visibility without polluting miniBIOTA expense totals. January-April 2026 AmEx Business Green Rewards Card statements are now represented in `statement_import_batches` with 72 statement rows, 4 statement document metadata records, and 12 recurring classification rules. User review resolved all initially open Amazon, Walmart, Home Depot, and points-adjustment rows; remaining open statement-review count was verified as zero. The April-statement Google/Claude charge was confirmed as Anthropic/Claude, and Planner task `410` was created for 2026-05-14 to collect May/current bank and card statements.
 - **2026-05-12:** Company applied approved Financials Planner cleanup and
   readback. Tasks `96` and `97` were marked complete after verifying

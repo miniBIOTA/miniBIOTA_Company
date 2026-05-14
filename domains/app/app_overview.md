@@ -2,7 +2,7 @@
 id: app_operations
 title: 11. miniBIOTA_App
 domain: app_operations
-last_updated: 2026-05-13
+last_updated: 2026-05-14
 tags: [app, electron, operations, planner, monitoring, internal-tools]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -35,8 +35,9 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   (`work_programs.id = 3`), with domain-owned projects linked through
   `work_program_projects`.
 - App project management is now organized in App Planner/Supabase under the
-  App domain: 7 App work projects track 16 linked App tasks, with 0 unlinked
-  open App tasks after readback on 2026-05-09.
+  App domain. After the 2026-05-12 cross-domain cleanup and the 2026-05-14
+  Operation Living Intelligence visual-media task addition, App has 10 total
+  work projects, 9 non-archived projects, and 27 task rows (24 open, 3 done).
 - Monitoring reads direct MQTT telemetry from the local biome network when connected to `mB2.4`, including internal-only heat-exchanger/liquid temperature (`liq_t`) and pump run percentage (`pump_pct`) display for sensor biomes 2-5.
 - Site Admin supports species, biosphere, biome, chronicle, announcement, staging, and media-library workflows.
 - Media Library/tagging, Species-style media search/filtering, and backend WebP image upload pipeline are implemented in the app.

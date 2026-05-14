@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Executive Brief
 
-- Generated: 2026-05-13 17:32:16 -04:00
+- Generated: 2026-05-13 21:15:47 -04:00
 - Purpose: Company-side synthesis of domain reports.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 
@@ -138,8 +138,8 @@
 
 ### Risks / Gaps
 - Without an explicit commercial system, public interest can accumulate without conversion.
-- Newsletter-sync and relationship-management workflow are missing.
-- Sponsorship pricing, tier design, partner categories, and outreach cadence are not yet documented.
+- Newsletter-sync and broader relationship-management workflow are still being built out.
+- CRM/Planner calendar display needs cleanup review so relationship activity context remains distinct from all-domain Planner task truth and does not imply outreach approval.
 
 ## 8. Raw Footage
 

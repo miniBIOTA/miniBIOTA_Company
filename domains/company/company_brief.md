@@ -2,7 +2,7 @@
 id: company_brief
 title: Company Operations Brief
 domain: company_operations
-last_updated: 2026-05-13
+last_updated: 2026-05-14
 tags: [company, operations, strategy, roadmap, strategy-brief]
 reporting_status: active
 reporting_phase: brain_retirement_phase_11_probation
@@ -33,8 +33,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   plan is not yet assembled, and Q3+ roadmap detail remains thin.
 - Company project management is now Planner-integrated under
   `work_domains.key = company_ops` / `domain_id = 1`: 6 Company work projects
-  track 28 Company tasks after the Operation Living Intelligence schema-audit
-  gate was added on 2026-05-13. `Roadmap & Quarterly Objectives`, `Operation Living Atlas
+  track 29 Company tasks after the Operation Living Intelligence visual media
+  intelligence governance task was added on 2026-05-14. `Roadmap & Quarterly Objectives`, `Operation Living Atlas
   Coordination`, `Aquatic Club Talk Program Coordination`, and `Operation
   Living Intelligence Coordination` are active; `Business Plan & Operating
   Model` and `AI & Knowledge Infrastructure` remain planned.
@@ -71,8 +71,15 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   graph, vector, analytics, visual AI, cache, and automation layers behind
   readiness gates. Default kickoff is graph-first through the Lake Post-Seal
   Living Atlas packet, with analytics and visual AI inventory as planning
-  sidecars. The live Program should remain unscheduled parent/container work
-  until timing is reviewed against Aquatic Club Talk Readiness.
+  sidecars. Visual media intelligence now has a Nemotron/Codex-first build path:
+  Codex should build the local candidate-annotation and clip-pull workflow,
+  while NVIDIA Nemotron 3 Nano Omni or the best current Nemotron
+  omni/video-capable deployment serves as the first analysis engine. Qwen is
+  retained as a fallback/benchmark lane. Twelve Labs free tier may be tested
+  afterward on the same bounded media set as a benchmark/refinement lane, not
+  as the initial source of truth. The live Program should remain unscheduled
+  parent/container work until timing is reviewed against Aquatic Club Talk
+  Readiness.
 - Coordinate website-related public communication as a soft build-in-public
   update, not a high-profile launch event, until launch scope/readiness is
   explicitly approved. Current public framing should acknowledge slower content
@@ -93,6 +100,24 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-14:** Josue officially swapped Operation Living Intelligence
+  visual media intelligence to the **Nemotron/Codex-first** path after
+  reviewing NVIDIA Nemotron 3 Nano Omni. The first build should keep raw media
+  local/private by default, use Codex to create the pipeline and NVIDIA
+  Nemotron 3 Nano Omni or the best current Nemotron omni/video-capable
+  deployment to generate candidate annotations, then produce review-safe clip
+  pull sheets or rough sequences for Content and Research review. Qwen remains
+  a fallback/benchmark lane. Twelve Labs free tier should be tested later on
+  the same bounded media set as a benchmark/refinement lane after the
+  Nemotron/Codex workflow exists. With Josue's approval, Planner tasks `411`
+  through `415` were updated across Company, App, Content, and Financials
+  projects as follow-ups; Company governance task `411` was marked done after
+  the docs and Planner swap were completed, while App/Content/Financials
+  implementation and benchmark tasks remain open/planned. No raw media
+  upload, paid plan, persistent external index, App runtime change, media
+  metadata write, public site behavior, schema change, automated job, public
+  commitment, sponsor commitment, financial commitment, legal decision, launch
+  target, or roadmap commitment was approved by this direction.
 - **2026-05-13:** Company completed the first read-only live Supabase schema
   audit for Operation Living Intelligence. The audit found 108 public-schema
   tables/views exposed through OpenAPI, one exposed RPC
@@ -387,8 +412,9 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Operation Living Intelligence creates a large architecture surface area. The
   main risks are premature tool adoption, competing sources of truth, agent
   write overreach, visual AI false positives, local model operations burden,
-  paid-service creep, and cutting over before derived systems prove they are
-  accurate, rebuildable, secure, cost-aware, and useful.
+  raw-media cloud upload risk, paid-service creep, and cutting over before
+  derived systems prove they are accurate, rebuildable, secure, cost-aware,
+  and useful.
 
 ## Cross-Domain Notes
 
@@ -466,9 +492,13 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   performance feedback while preserving the content calendar and publishing
   approval boundaries.
 - **Raw Footage:** Operation Living Intelligence should eventually support
-  local visual AI workflows for video/image description, candidate tags,
-  event/clip notes, OCR, and media-to-claim evidence routing, with outputs
-  treated as candidate annotations until reviewed.
+  local/private Nemotron/Codex visual AI workflows for video/image/audio
+  description, candidate tags, event/clip notes, OCR, clip pull sheets, rough
+  story sequences, and media-to-claim evidence routing, with outputs treated
+  as candidate annotations until reviewed. Qwen remains fallback/benchmark
+  only. Twelve Labs may be compared on a bounded free tier test set after the
+  first workflow exists, but cloud upload and ongoing backend use remain
+  separately approval-gated.
 - **Growth:** Operation Living Intelligence analytics should eventually connect
   YouTube, website, QR, social, newsletter/support, event, and CRM/funnel
   signals so Growth can interpret audience movement without creating sponsor,

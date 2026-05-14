@@ -2,7 +2,7 @@
 id: operation_living_intelligence_data_projection_matrix
 title: Operation Living Intelligence Data Projection Matrix
 domain: company_operations
-last_updated: 2026-05-13
+last_updated: 2026-05-14
 tags: [operation-living-intelligence, data-projection, memgraph, supabase, pgvector, analytics, agents, migration-scope]
 status: active_planning
 ---
@@ -175,6 +175,9 @@ This matrix accounts for every active Company registry domain. Coverage means th
 | Postgres telemetry tables | `telemetry_snapshot`, `biome_telemetry` | Keep; no separate TSDB yet |
 | InfluxDB/Timescale sidecar | Possible future high-volume telemetry sidecar | Deferred until scale demands it |
 | Local VLM/runtime | Visual media analysis and candidate annotations | Planned pilot only |
+| Nemotron/Codex media pipeline | Local/private-first visual/video/audio analysis, candidate annotation generation, and clip pull-sheet orchestration | Selected first build path for visual media intelligence |
+| Qwen media benchmark/fallback | Alternative visual/video analysis lane if Nemotron is unavailable, too costly, or underperforms on miniBIOTA's test set | Fallback/benchmark only, not the primary build path |
+| Twelve Labs | Video-native cloud search, segmentation, embeddings, and structured analysis benchmark | Free-tier comparison after Nemotron/Codex pilot; no broad upload, paid plan, or backend adoption without approval |
 | Local filesystem | Raw footage and non-git media source material | Keep as file source; do not duplicate blindly |
 | YouTube APIs | Analytics/Reporting source for first warehouse | OAuth/API connection requires approval |
 | Website analytics source | GA/server/export/QR metrics when approved | Later |
@@ -229,6 +232,9 @@ This ledger keeps the earlier database research from disappearing into broad cat
 | Redis | Later runtime utility | Useful for agent queues, locks, cache, and session memory after automation exists. |
 | InfluxDB/Timescale | Later telemetry sidecar | Use only when biome telemetry frequency, retention, or query patterns outgrow Postgres rollups. |
 | Local VLM runtime | Yes, pilot layer | Needed for visual review of video/image files, but outputs stay candidate annotations until reviewed. |
+| Nemotron/Codex media pipeline | Yes, first visual-media build path | Codex should build the local/private pipeline while NVIDIA Nemotron 3 Nano Omni, or the best current Nemotron omni/video-capable deployment, produces candidate annotations, timestamps, story roles, and pull-sheet inputs. |
+| Qwen media benchmark/fallback | Yes, fallback/benchmark lane | Keep Qwen available as a comparison or fallback option if Nemotron is unavailable, too costly, or weaker on the bounded media set. |
+| Twelve Labs | Benchmark/refinement lane | Use the free tier after the Nemotron/Codex workflow exists to compare video-native search, segmentation, timestamping, embeddings, and structured metadata on the same bounded media set. Paid or ongoing use needs separate approval. |
 
 ## Memgraph Projection Scope
 
@@ -645,17 +651,34 @@ Success:
 Purpose:
 
 - Let agents visually inspect media in a review-safe way.
+- Build a miniBIOTA-owned Nemotron/Codex workflow before deciding whether any cloud video platform should become operational infrastructure.
 
 Data:
 
 - Small selected media set from App media library/raw folder.
 - Existing `media_assets` references.
-- Candidate model annotations from local VLM.
+- Candidate model annotations from NVIDIA Nemotron 3 Nano Omni or the best current Nemotron omni/video-capable deployment.
+- Optional Qwen fallback/benchmark annotations if needed.
+- Optional Twelve Labs free-tier benchmark outputs after the Nemotron/Codex run, using the same bounded media set and only after cloud-upload approval for those files.
+
+Nemotron implementation notes:
+
+- Current public NVIDIA material positions Nemotron 3 Nano Omni as an omni/multimodal reasoning lane for image, video, audio, and text workflows.
+- Candidate deployment paths include hosted/API access, NVIDIA NIM, Hugging Face weights, and local inference stacks when hardware and storage are sufficient.
+- The first implementation should verify current model availability, license/commercial terms, GPU/storage requirements, input limits, cost, privacy/retention terms, and whether the chosen route actually supports the required video/audio inputs.
+- Hosted/API testing should use only an explicitly approved bounded media set; broad raw-media upload, persistent external indexing, or paid recurring use remains outside this wave unless separately approved.
 
 Success:
 
 - Candidate annotations help find proof faster.
 - Outputs are labeled model-generated and do not write canonical media metadata.
+- The Nemotron/Codex run produces candidate JSON/JSONL annotations with file path, timestamps, description, candidate tags/species, story role, claim-support type, confidence, model/prompt version, and review owner.
+- The agent can generate at least one useful clip pull sheet or rough sequence for Content review.
+- The Twelve Labs comparison, if run, clarifies whether video-native cloud search materially improves recall, timestamp precision, segmentation, or editing usefulness.
+
+Planner follow-up:
+
+- Approved tasks `411` through `415` cover Company governance gates, App sidecar/pipeline boundaries, Content test-set and pull-sheet review criteria, and Financials review of Twelve Labs free-tier limits and paid-plan thresholds.
 
 ### Wave 7: Planner And Agent Routing Graph
 
@@ -738,6 +761,8 @@ Recommended export file families:
 | `edges_media_evidence.csv` | CSV | Memgraph |
 | `edges_program_dependencies.csv` | CSV | Memgraph |
 | `documents_vector.jsonl` | JSONL | pgvector embedding job |
+| `media_ai_candidates.jsonl` | JSONL | Nemotron/Codex visual AI pilot, optional Qwen benchmark, optional vector search |
+| `media_clip_pull_sheets.jsonl` | JSONL | Content/DaVinci review workflow |
 | `youtube_daily_metrics.parquet` | Parquet | DuckDB/MotherDuck |
 | `telemetry_rollups.parquet` | Parquet | DuckDB optional, Memgraph summaries |
 

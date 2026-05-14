@@ -46,9 +46,18 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   `work_programs.id = 4` now links Company, App, Research/Ecosystem, Content,
   Web, Growth/Sales, and Financials projects plus existing overlapping
   Aquatic Club, Atlas, Web, AI Infrastructure, App media, and Supabase-safety
-  projects. This is operating coordination only; no schema, App runtime,
-  public site, paid-service, local model install, automated-write, or
-  source-of-truth cutover has been approved by the plan itself.
+  projects. Stage 1 source-of-truth, domain-owner, and agent-routing rules
+  are now finalized at the planning/governance level in the projection matrix,
+  and Stage 2 now defines the operation mesh: Aquatic Club Talk controls
+  near-term timing, Living Atlas supplies the first proof case, Living Web is a
+  downstream reviewed-output consumer, and AI & Knowledge Infrastructure
+  supplies tool/routing precedent. Stage 3 scopes the first graph pilot to the
+  Lake Post-Seal packet, and Stage 4 now sets weekly review as the default
+  pilot-planning cadence, with biweekly review allowed only as a capacity
+  adjustment around the talk window. This is operating coordination only; no
+  schema, App runtime, public site, paid-service, local model install,
+  automated-write, export/import, Planner/Supabase write, or source-of-truth
+  cutover has been approved by the plan itself.
 - Codex is the primary operating interface moving forward. Previous interface-specific guidance is archived as legacy context only.
 
 ## Active Priorities
@@ -100,6 +109,62 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-14:** Company defined **Operation Living Intelligence Stage 4** as
+  the pilot-planning review rhythm. Weekly OLI review is now the default while
+  pilot planning is active, with lightweight review before the 2026-06-13
+  Aquatic Club Talk and biweekly review allowed only when the talk window or
+  domain capacity makes weekly review too heavy. Each review checks current
+  phase, task `409`, Stage 3 gates, Lake Post-Seal packet status, Research and
+  Content review needs, Web downstream boundaries, Financials/cost questions,
+  source-of-truth drift, domain handoffs, blockers, and approval gates.
+  Escalation is required before any paid service, install, App runtime bridge,
+  export/import, schema change, public website behavior, raw media upload,
+  canonical media metadata write, automation, cross-domain write authority,
+  public commitment, sponsor commitment, financial commitment, legal decision,
+  launch target, roadmap commitment, or live Planner/Supabase write.
+- **2026-05-14:** Company scoped **Operation Living Intelligence Stage 3** as
+  a graph-first Lake Post-Seal pilot at the planning/governance level. The
+  pilot is bounded to `content_pipeline.id = 338`, `chronicles.id = 30`, the
+  Lake Post-Seal species set, observations `170-178` plus explicitly approved
+  context records, Living Atlas source packets, Research validation notes, and
+  media references only. Success requires answering at least 7 of 10 evidence,
+  publicness, uncertainty, review-routing, and source-provenance questions more
+  clearly than Markdown/Supabase lookup alone, while preserving source IDs,
+  publicness/confidence labels, owner review paths, rebuildability, and
+  canonical-source discipline. No Memgraph install, export/import job, schema,
+  App behavior, media metadata write, public site behavior, paid service,
+  automation, public commitment, sponsor commitment, financial commitment,
+  legal decision, launch target, roadmap commitment, or source-of-truth cutover
+  was approved. Task `409` remains the next implementation-grade audit gate
+  before any graph import.
+- **2026-05-14:** Company started **Operation Living Intelligence Stage 2**
+  by documenting the operation mesh across Aquatic Club Talk Readiness,
+  Operation Living Atlas, Operation Living Web, and AI & Knowledge
+  Infrastructure. The resulting rule is: Aquatic Club Talk sets near-term
+  timing, Living Atlas supplies the Lake Post-Seal graph/retrieval proof case,
+  Living Web remains downstream of reviewed outputs, and AI & Knowledge
+  Infrastructure supplies prior tool/routing discipline. OLI may do docs-only
+  planning and small talk-support retrieval/evidence/analytics-question work
+  before the 2026-06-13 talk, but heavier graph/vector/analytics builds, model
+  installs, automation, App runtime work, and source-of-truth changes wait for
+  post-talk review, task `409`, and the relevant approval gates. No live
+  Planner/Supabase records beyond the approved Stage 1 task completion, schema,
+  App behavior, public site behavior, model install, raw media upload, paid
+  service, automated job, public commitment, sponsor commitment, financial
+  commitment, legal decision, launch target, or roadmap commitment changed.
+- **2026-05-14:** Company finalized **Operation Living Intelligence Stage 1**
+  at the planning/governance level by adding explicit source-of-truth,
+  system-access, domain-owner, agent-permission, and implementation-gate
+  matrices to the data projection matrix. The baseline rule is read canonical
+  sources first, use graph/vector/analytics/visual AI as derived helper
+  layers, return proposed changes to the canonical owner, and write only after
+  the relevant approval gate is satisfied. Task `409` remains the required
+  implementation-grade Supabase schema/data audit gate before any first OLI
+  export/import, graph build, vector index, analytics pull, model batch, cache,
+  or automation job. No live Planner/Supabase records, schema, App behavior,
+  public site behavior, local model install, raw media upload, paid service,
+  automated job, public commitment, sponsor commitment, financial commitment,
+  legal decision, launch target, or roadmap commitment changed.
 - **2026-05-14:** Josue officially swapped Operation Living Intelligence
   visual media intelligence to the **Nemotron/Codex-first** path after
   reviewing NVIDIA Nemotron 3 Nano Omni. The first build should keep raw media

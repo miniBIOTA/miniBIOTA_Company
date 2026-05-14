@@ -34,11 +34,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 Financials project management is now Planner-integrated under
 `work_domains.key = financials` / `domain_id = 2`. After the 2026-05-12
 cross-domain cleanup and financial readback plus the approved 2026-05-14
-Financials closeout for tasks `182` and `410`, Financials has 8 active work
-projects and 26 task rows (18 open, 8 done) after Operation Living
-Intelligence cost-review task `415` was added on 2026-05-14. Planner remains
-task-status truth; financial tables and close records remain
-balance/revenue/expense truth.
+Financials closeout for tasks `182` and `410`, and the recurring monthly
+Financials close routine, Financials has 9 active/planned work projects and 36
+task rows (28 open, 8 done). Planner remains task-status truth; financial
+tables and close records remain balance/revenue/expense truth.
 
 ## Active Priorities
 
@@ -52,6 +51,14 @@ truth remains in financial tables and close records, not Planner task text.
 
 ## Recent Milestones
 
+- **2026-05-14:** Financials created the approved recurring `Monthly Financial
+  Close & Accountant Review` Planner project (`work_projects.id=83`) with a
+  monthly recurring parent routine (`tasks.id=488`) and nine recurring checklist
+  subtasks (`tasks.id=489`-`497`), first scheduled for 2026-06-05. The routine
+  preserves the approval boundary: actual financial-record writes, statement
+  imports, balance updates, liability edits, tax-sensitive changes, schema/app
+  changes, and Planner closeout writes still require explicit approval and
+  readback.
 - **2026-05-14:** Financials completed the current statement visibility pass
   for Planner task `410` with approval. January-April Chase Business Complete
   Checking statements were reviewed, Chase current activity showed a 2026-05-06

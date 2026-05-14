@@ -30,6 +30,8 @@ What is scoped here:
 - Which tables and files should be projected first.
 - Which systems remain canonical.
 - Which agents should read each layer.
+- Which domain owns each layer and review boundary.
+- Which agents may read, propose, or write by default.
 - Which derived layers improve agent behavior.
 - Which writebacks require approval.
 - Which validation checks prevent drift.
@@ -149,6 +151,75 @@ This matrix accounts for every active Company registry domain. Coverage means th
 | App | App repo, Planner runtime/schema/UI, Media Library, CRM runtime, Prompt Library, Monitoring | Export helpers, local services, vector/graph/analytics connectors | App owns runtime/schema/UI and service implementation |
 | Raw Footage | Local filesystem media and Company Raw Footage routing report | Media references, visual AI candidate annotations | App/Content/Research review before metadata or public proof writes |
 | Definitions | Company glossary and domain-specific terminology extensions | Vocabulary vector index, graph term nodes | Company owns central glossary; domains own specialized corrections |
+
+## Stage 1 Operating Matrix
+
+Stage 1 is finalized at the planning/governance level as of 2026-05-14. It defines routing and ownership before any export, import, graph build, vector index, analytics pull, model run, App runtime change, or automation job begins.
+
+This section does not approve live writes. It makes the rule simple:
+
+```text
+Read from the canonical owner first.
+Use derived layers for relationship, retrieval, analytics, and review speed.
+Return proposed changes to the canonical owner.
+Write only after the relevant approval gate is satisfied.
+```
+
+### System Access Matrix
+
+| System | Canonical role | Primary owner | Agents may read | Agents may propose | Writes require |
+|---|---|---|---|---|---|
+| Company and domain Markdown | Strategy, governance, briefs, source packets, decisions, domain instructions | Company and owning domain | Owning domain agents; Company for coordination | Edits to scoped docs, handoffs, source packets, decision notes | Repo-scope approval or standing doc-edit scope; no public/financial/legal/roadmap commitments by implication |
+| Supabase/Postgres | Live structured operational truth | App runtime plus owning domains | Agents when current structured state matters | Proposed writes or approval bundles to owning records | Explicit approval or future standing domain delegation; schema/runtime/admin changes remain App-approved |
+| Planner Programs/Projects/Tasks | Live operating work queue and program links | App runtime; Company/domain governance by record owner | Company and domain agents for current status | Task/project/status/link/schedule updates | Explicit Planner approval unless standing delegation exists for that domain |
+| Memgraph | Derived relationship and provenance graph | App implementation; Company/Research governance by graph lane | Agents after a rebuildable graph exists | Candidate relationships, missing evidence, dependency paths | Write only to derived graph after scoped build approval; canonical corrections go back to source owner |
+| pgvector/vector search | Derived semantic retrieval | App implementation; domains own indexed content meaning | Agents after indexed corpus is approved | Indexing scope, citation rules, retrieval evaluation fixes | Embedding/index job approval; canonical text edits remain repo/domain writes |
+| DuckDB/MotherDuck analytics | Derived performance history | Growth/Content/Web/Company meaning; App/data implementation | Agents after source/API/export approval | Reports, dashboard questions, metric joins | API/OAuth/export approval; no strategy, sponsor, pricing, or campaign commitments by metric inference |
+| Visual AI candidate annotations | Derived media review layer | App tooling; Raw Footage/Content/Research review | Agents after bounded test set approval | Candidate tags, descriptions, timestamps, pull sheets, review notes | Model run/test-set approval; no media metadata, upload, publication, or claim write without separate approval |
+| Redis/cache/queues | Temporary runtime state only | App implementation | Agents only through approved runtime tools | Queue/cache needs, job status design | App-owned runtime approval; never durable truth |
+| Automation jobs | Execution layer for reads, reports, indexes, proposed-write bundles | App implementation; Company governance | Agents may request/manual-run when scoped | Scheduled read-only jobs or proposed-write bundles | Explicit automation approval; consequential writes require current human approval |
+
+### Domain Owner Matrix
+
+| Lane | Company role | Domain owner | First derived use | Hard boundary |
+|---|---|---|---|---|
+| Program governance and routing | Owns OLI governance, dependency map, review cadence, approval posture | Company | Planner dependency graph, agent routing graph | Does not replace domain implementation queues |
+| App/runtime infrastructure | Defines governance needs and approval gates | App | Export helpers, connectors, graph/vector/analytics clients, media worker, cache/queue | No schema, runtime, storage, secret, or UI change without App-scoped approval |
+| Ecological graph and claims | Coordinates downstream owner needs | Research | Living Atlas graph, claim provenance, publicness/confidence paths | AI/graph outputs are not ecological truth until Research review |
+| Source packets, scripts, and media usefulness | Coordinates proof/story needs | Content | Vector packets, story graph, visual pull sheets, YouTube joins | Content calendar/pipeline truth stays in Supabase/Content workflows |
+| Public surfaces and website analytics | Names public-read constraints | Web | Public surface graph, website analytics exports | No public website behavior or public claim change without Web/Research/Brand approval |
+| Audience and CRM meaning | Keeps commitment boundaries visible | Growth | YouTube/website/QR/social/CRM analytics later | No outreach, sponsor, pricing, CRM, or relationship commitment by inference |
+| Cost and subscription posture | Requires cost gate before adoption | Financials | Aggregate tool-cost review and paid-threshold analysis | No recurring spend or raw finance projection without Financials approval |
+| Telemetry and live system context | Coordinates source-of-truth split | Hardware/App/Web | Telemetry rollups and public-safe monitoring context | No firmware, MQTT, setpoint, live-control, or telemetry schema change without approval |
+| Raw media evidence | Coordinates proof/archive routing | Raw Footage with App/Content/Research | Media references and candidate visual annotations | Raw media stays local by default; cloud upload and metadata writes require explicit approval |
+| Brand and public language | Names downstream review need | Brand | Vector messaging corpus and public-language review nodes | No sponsor-safe, campaign, CTA, or public positioning change without Brand/Growth/Company review |
+
+### Agent Permission Baseline
+
+| Agent | Default read posture | Default proposal posture | Default write posture |
+|---|---|---|---|
+| Company | Reads Company docs, Company report, Planner status, domain reports, and derived OLI layers when relevant | Proposes governance, routing, dependencies, approval gates, and cross-domain handoffs | Company Markdown when scoped; Planner only with explicit approval |
+| App | Reads App code/docs, schema/runtime surfaces, Planner/App records, and approved OLI specs | Proposes implementation boundaries, helper designs, readback, logs, fallback, and runtime safety | App code/runtime/schema only when scoped; live DB writes only with approval |
+| Research | Reads Research docs/records, ecological graph candidates, evidence paths, and visual annotations | Proposes ecological corrections, claim labels, publicness/confidence changes | Research docs when scoped; canonical Research records only with approval |
+| Content | Reads Content records/docs, source packets, scripts, media candidates, analytics summaries | Proposes packets, pull sheets, story links, calendar/pipeline changes, content interpretations | Content docs/drafts when scoped; calendar/pipeline writes only with approval |
+| Web | Reads Web docs/code, public records, approved public graph outputs, website analytics | Proposes public route/copy/data-surface changes and analytics events | Web docs/code only when scoped; public behavior changes require approval |
+| Growth | Reads Growth docs, approved CRM/analytics summaries, audience signals | Proposes relationship meaning, follow-up strategy, funnel questions | Growth docs when scoped; CRM/outreach/sponsor writes require approval |
+| Brand | Reads Brand docs, approved public-language records, source context | Proposes wording, positioning, channel fit, sponsor-safe language | Brand docs/copy drafts when scoped; public commitments require approval |
+| Financials | Reads Financials records only when scoped and aggregate summaries by default | Proposes cost thresholds, tool adoption gates, paid/free recommendations | Financials docs/records only through Financials approval |
+| Hardware | Reads Hardware docs and telemetry when scoped | Proposes telemetry summaries, engineering context, live-system risk notes | Hardware docs when scoped; firmware/live-control/schema actions require approval |
+| Raw Footage | Reads source-media routing, approved media references, candidate annotations | Proposes evidence/pull-sheet/metadata candidates | Media metadata/file changes only with explicit approval and owner review |
+
+### Stage 1 Implementation Gates
+
+Before any first export/import, Memgraph graph, vector index, analytics pull, visual AI batch, cache, or automation job:
+
+1. Rerun task `409` as the implementation-grade Supabase schema/data audit gate.
+2. Identify exact source rows, files, and private/public fields.
+3. Name the domain owner and review owner for every exported family.
+4. Define export files as rebuildable and local/ignored unless explicitly approved for commit.
+5. Preserve source IDs, paths, publicness labels, confidence labels, and review status.
+6. Produce a readback report with counts, missing IDs, sensitive-data exclusions, and drift warnings.
+7. Keep Aquatic Club Talk Readiness protected as the near-term hard-window priority until Company deliberately reschedules OLI implementation work.
 
 ## Database And Platform Coverage Audit
 
@@ -556,6 +627,7 @@ No live writes.
 Purpose:
 
 - Prove Memgraph value with Lake Post-Seal/pipeline 338/chronicle 30.
+- Keep the first graph seed rebuildable, narrow, and review-safe before any larger Living Atlas graph expansion.
 
 Data:
 
@@ -573,6 +645,29 @@ Success:
 - Research uncertainty survives import.
 - No publicness flattening.
 - The graph can be rebuilt from export files.
+
+Stage 3 pilot acceptance:
+
+| Acceptance check | Required result |
+|---|---|
+| Source manifest | Lists every included Supabase row, Markdown path, media reference, and excluded sensitive/private field |
+| Included scope | Stays limited to the Lake Post-Seal packet, `content_pipeline.id = 338`, `chronicles.id = 30`, species `24`, `67`, `66`, `164`, `167`, `180`, observations `170-178`, and explicitly approved context records |
+| Required nodes | Includes `Species`, `Observation`, `ContentItem`, `Chronicle`, `SourcePacket`, `ResearchReview`, `Claim`, and media reference nodes when evidence exists |
+| Required relationships | Includes source/provenance, species mention, observation, support, review, owner, confidence, and publicness edges |
+| Query evaluation | Answers at least 7 of the 10 Stage 3 pilot questions more clearly than Markdown/Supabase lookup alone |
+| Publicness/confidence | Every claim-like path exposes public/internal/review and observed/inferred/uncertain state |
+| Canonical writeback | Produces proposed-write notes only; no canonical Supabase, media, Web, Planner, or Markdown write happens from the graph |
+| Rebuild test | Graph can be dropped and rebuilt from export files without losing truth |
+| Owner routing | Output names Research, Content, Web, App, and Company review needs where relevant |
+
+Stage 3 gates before import:
+
+1. Complete implementation-grade audit task `409` for exact source rows, fields, row counts, sample records, quality caveats, and export queries.
+2. Confirm the local/App-approved Memgraph run pattern and where ignored export/import files will live.
+3. Define validation queries for node count, edge endpoint validity, missing source IDs, publicness/confidence presence, and sensitive-field exclusion.
+4. Confirm Research and Content review owners for claim/story interpretation.
+5. Keep Web as downstream review only until curated graph outputs exist.
+6. Keep Financials review available before any paid graph service is considered.
 
 ### Wave 2: Content Story Graph
 

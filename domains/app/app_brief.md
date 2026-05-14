@@ -1,4 +1,4 @@
-﻿---
+---
 id: app_brief
 title: App Operations Brief
 domain: app_operations
@@ -46,10 +46,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   2`), and `Aquatic Club Talk Readiness` (`work_programs.id = 3`), with
   domain-owned projects linked through `work_program_projects`.
 - App project management is now Planner-integrated under
-  `work_domains.key = app` / `domain_id = 9`. After the 2026-05-12
-  cross-domain cleanup, App has 10 total work projects, 9 non-archived projects,
-  and 27 task rows (24 open, 3 done) after Operation Living Intelligence
-  visual-media task `412` was added on 2026-05-14. Project `11` is
+  `work_domains.key = app` / `domain_id = 9`. After the 2026-05-12 cross-domain cleanup and the 2026-05-14 additions of Operation Living Intelligence visual-media task `412` plus App Quality System Roadmap project `82`, App has 11 total work projects, 10 non-archived projects, and 99 task rows (96 open, 3 done). Project `11` is
   completed/archived as stale wiring work, and active App Planner work is now
   concentrated in runtime, sources/workflow polish, Field Observer, media
   reliability, monitoring, Supabase/storage safety, and Aquatic Club support.
@@ -64,6 +61,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Use App Planner/Supabase as the live App work queue, and keep App docs/memory
   wired so App sessions read current projects/tasks and ask before marking
   Planner tasks done at closeout.
+- Execute the App Quality System Roadmap (`work_projects.id = 82`) over time: stabilize Planner production scheduling first, then add App design tokens, shared primitives, fixture tests, token lints, a dev-only UI Lab, Planner selectors, and explicit write plans.
 - Keep the desktop app as the forward operator surface while the public website remains read-only.
 - Preserve secret-key access as internal-only; do not expose app behavior as a public web surface.
 - Continue the Field Observer Android build with publishable-key/Auth/RLS access only; do not ship Supabase secret keys in the APK.
@@ -71,6 +69,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Continue using the app for financials, Planner/content production, CRM, media tagging, and monitoring workflows.
 
 ## Recent Milestones
+
+- **2026-05-14:** App quality-system planning was promoted into durable App memory and live Planner tracking. The new roadmap `planning/app_quality_system_roadmap.md` compares miniBIOTA_App against miniBIOTA_Web and defines the long-running path toward Web-like build quality: design tokens, shared primitives, fixture tests, token lints, dev-only UI Lab, Planner selectors/services, and explicit write plans. It was mirrored to App Planner as `work_projects.id = 82` with 10 phase parent tasks and 62 child subtasks. No app runtime behavior, schema, Storage, telemetry, MQTT, public website behavior, or Company/Brain source docs changed beyond this reporting update.
 
 - **2026-05-14:** Company updated Operation Living Intelligence App task `412`
   for designing the Nemotron/Codex local/private media-analysis pipeline and
@@ -453,11 +453,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Monitoring setpoint/control writes affect the live biosphere and require explicit confirmation before changes.
 - App source repo memory and skills must stay current as app architecture, schema assumptions, safety rules, and workflow playbooks change.
 - Field Observer authenticated catalog reads are enabled through migration 009. Signed release APK generation and any live sighting saves remain unverified and require explicit approval before use against production data.
-- Planner task hierarchy paths have now been visually smoke tested for the
-  Aquatic Club Week-view case, and Today/task-modal hierarchy inspection was
-  tightened on 2026-05-13, but broader daily-use coverage across Month,
-  Timeline, content production, and live creation/edit flows remains worth
-  watching.
+- Planner task hierarchy paths have now been visually smoke tested for the Aquatic Club Week-view case, and Today/task-modal hierarchy inspection was tightened on 2026-05-13, but broader daily-use coverage across Month, Timeline, content production, and live creation/edit flows remains worth watching. The App Quality System Roadmap now tracks the needed cleanup path, with Planner production scheduling as the first proving ground for services, fixture tests, and write plans.
 - Planner Programs/Operations schema and live Program records exist after
   migration 010, but Program UI create/edit/link behavior still needs
   interactive smoke verification before daily reliance.
@@ -482,7 +478,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   Planner-ready. Programs/Operations are cross-domain umbrellas above projects;
   they coordinate domain-owned projects without overriding domain
   source-of-truth, approval rules, or task/project ownership.
-- **Growth:** Growth owns CRM as a commercial relationship system; App owns the`n  CRM operator surface, Supabase-backed workflow implementation, validation,`n  and runtime behavior when CRM features are scoped. Migration 013 is live as`n  the additive relationship-system foundation, but relationship records,`n  backfills, outreach, approvals, and commitments still require separately`n  scoped Growth/App approval.
+- **Growth:** Growth owns CRM as a commercial relationship system; App owns the CRM operator surface, Supabase-backed workflow implementation, validation, and runtime behavior when CRM features are scoped. Migration 013 is live as the additive relationship-system foundation, but relationship records, backfills, outreach, approvals, and commitments still require separately scoped Growth/App approval.
 - **Financials:** Financials tab reads `revenue_streams`, `operating_expenses`, `liabilities`, and `planned_purchases`.
 - **Hardware:** Monitoring tab reads live biome MQTT data. Internal App/operator display includes `liq_t` heat-exchanger/liquid temperature and `pump_pct` pump run percentage for sensor biomes 2-5; those fields should remain out of Web/public telemetry unless separately scoped. Monitoring may later integrate Supabase telemetry snapshot fallback and setpoint controls.
 - **Ecosystem/Data:** Species and chronicle admin changes in the app affect public ecology records. Field Observer sighting counts/details should remain history datapoints; curated species population fields remain manually maintained.
@@ -509,6 +505,7 @@ Brain no longer mirrors App docs. Load active App detail from the source repo:
 | `memory/08-recurring-decisions.md` | Durable recurring decisions and unresolved app decisions |
 | `skills/implement-app-feature/SKILL.md` | Playbook for adding or fixing UI/app features |
 | `memory/10-field-observer.md` | Private Android Field Observer routing, data contract, install path, and safety notes |
+| `memory/11-app-quality-system.md` | Durable App quality-system direction inspired by miniBIOTA_Web: tokens, primitives, fixture tests, lints, UI Lab, services/selectors, and write plans |
 | `skills/refactor-renderer-module/SKILL.md` | Playbook for renderer module refactors |
 | `skills/refactor-renderer-module/reference/app-module-map.md` | Current module ownership map and refactor boundaries |
 | `skills/refactor-renderer-module/reference/refactor-roadmap.md` | Current refactor status, stop conditions, and maintenance-mode guidance |
@@ -522,7 +519,3 @@ Brain no longer mirrors App docs. Load active App detail from the source repo:
 | `skills/image-pipeline-review/reference/image-pipeline.md` | WebP, Sharp, Supabase Storage, rollback, and packaging guidance |
 | `skills/app-doc-closeout/SKILL.md` | Playbook for deciding whether App memory/Brain updates are required at closeout |
 | `skills/update-app-memory/SKILL.md` | Playbook for promoting durable App decisions, hazards, and architecture rules into memory |
-
-
-
-

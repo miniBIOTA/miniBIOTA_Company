@@ -355,6 +355,195 @@ Recommended existing project links:
 | Supabase, Storage & Secret-Key Safety | Review | Schema, credential, and write-safety gate |
 | Aquatic Club Talk Program Coordination | Dependency | Protects the current hard-window operating priority |
 
+### Stage 2 Operation Mesh
+
+Stage 2 is the coordination layer that keeps Operation Living Intelligence useful without letting it sprawl into the protected Aquatic Club talk window or duplicate existing Operations.
+
+The mesh rule:
+
+```text
+Aquatic Club Talk sets near-term timing.
+Living Atlas supplies the first proof case.
+Living Web stays downstream of reviewed outputs.
+AI & Knowledge Infrastructure supplies precedent and tooling discipline.
+Operation Living Intelligence coordinates the stack, but does not replace any of them.
+```
+
+| Overlapping operation | Relationship to OLI | What OLI may do now | What waits |
+|---|---|---|---|
+| Aquatic Club Talk Readiness | Protected Q2 hard-window priority and current public-readiness filter | Use OLI planning only when it reduces talk friction: proof-media routing, source retrieval rules, claim/evidence routing, QR/follow-up analytics questions, and safer agent handoffs | Heavy graph/vector/analytics builds, model installs, broad media analysis, automation, and new App runtime work unless Josue explicitly reprioritizes |
+| Operation Living Atlas | First graph/retrieval proof case and source-packet workflow | Use Lake Post-Seal as the first graph model candidate; preserve Research uncertainty, Content source packets, media evidence, publicness tiers, and proposed-write discipline | Dedicated queue table, App review workflow, structured writeback, or large backfill expansion until approval/write/readback friction proves the need |
+| Operation Living Web | Downstream public consumption path for reviewed Atlas/OLI outputs | Define public-read-only constraints, website analytics questions, and future graph-powered public surface requirements | Public route changes, graph-powered UI, public copy changes, or website tracking changes without Web/Research/Brand approval |
+| AI & Knowledge Infrastructure | Existing knowledge-work and agent-access precedent | Reuse its discipline for MCP/helper reads, source loading, routing rules, readback, and closeout standards | New broad tool access, automated writes, or cross-domain write authority until App/Company governance and approval gates are ready |
+
+Near-term priority split:
+
+| Timing | Allowed OLI work | Reason |
+|---|---|---|
+| Before 2026-06-13 talk | Docs-only planning, source/routing maps, small proof-media or claim-evidence handoff improvements, questions for analytics/reporting, and bounded follow-up prep that directly helps the talk | Supports the Q2 focus without stealing implementation capacity |
+| 2026-06-13 to 2026-06-14 closeout | Capture talk outcomes, proof gaps, audience questions, follow-up metrics needed, and source/asset retrieval pain | Turns the talk into evidence for what OLI should build next |
+| After talk closeout | Stage 3 graph pilot scope, implementation-grade schema/data audit task `409`, App-owned export/helper design, and deeper Content/Research/Web/Growth/Financials lane planning | Moves from governance to implementation readiness with better evidence |
+
+Stage 2 dependency map:
+
+| Dependency | Upstream owner | Downstream owner | Handoff surface |
+|---|---|---|---|
+| Talk proof themes and source/evidence needs | Content + Research + Company | OLI graph/retrieval planning | Talk notes, source packets, Research review notes, Company brief |
+| Lake Post-Seal packet status and unresolved caveats | Content + Research | Stage 3 graph pilot | Operation Living Atlas packet, Research validation notes, projection matrix |
+| Public-safe website consumption rules | Web + Research + Brand | OLI/Web analytics and public graph planning | Web repo docs, Company brief, future implementation handoff |
+| App bridge and schema safety precedent | App | OLI implementation planning | App docs, Supabase safety project, Company database-awareness notes |
+| Cost and paid-tool thresholds | Financials | OLI platform choices | Financials review task/project, OLI cost posture |
+| Audience and follow-up signal questions | Growth + Web + Content | Analytics warehouse pilot | Growth notes, website analytics questions, content identity records |
+
+Stage 2 closeout criteria:
+
+- OLI remains live but does not displace Aquatic Club Talk Readiness.
+- Stage 3 is framed as graph-first through Lake Post-Seal, not as a broad data-stack build.
+- Web is named as a downstream consumer of reviewed graph/Atlas outputs, not the first implementation driver.
+- AI & Knowledge Infrastructure is treated as precedent and support, not as a parallel source of task truth.
+- No new implementation work begins before task `409` and the relevant App/domain approval gates.
+- Any talk-support OLI work is limited to retrieval, evidence routing, proof-media planning, or analytics questions that directly help the talk.
+
+### Stage 3 Graph-First Pilot Scope
+
+Stage 3 approves the graph-first pilot scope and success criteria at the planning/governance level only. It does not approve a Memgraph install, export job, import job, App runtime change, schema change, or canonical writeback.
+
+Pilot decision:
+
+```text
+Use a rebuildable local/free Memgraph-first Living Atlas graph seed.
+Scope it to the Lake Post-Seal packet.
+Evaluate it against evidence-path, publicness, uncertainty, and cross-domain routing questions.
+Do not expand to a broad graph until this packet proves value.
+```
+
+Bounded source set:
+
+| Source family | Included first | Excluded from Stage 3 |
+|---|---|---|
+| Published content | `content_pipeline.id = 338` and related source packet context | Broad Content pipeline history |
+| Public chronology | `chronicles.id = 30` and related subject links | Full chronicle archive |
+| Species | Flagfish `24`, Ghost Shrimp `67`, Freshwater amphipods `66`, Daphnia `164`, Mesostoma `167`, Moina `180`, and directly relevant related organisms if the packet requires them | Full species database |
+| Observations | Observations `170-178` plus approved later context observations only when they explain the Lake Post-Seal arc | Unrelated observation cleanup |
+| Story context | Relevant story threads, open loops, and story beats tied to the packet | Broad story graph |
+| Media evidence | References to candidate media only, with review status and source path/asset id when available | Media metadata writes, broad raw-media indexing, cloud upload |
+| Reviews and packets | Living Atlas source packet, Research validation notes, proposed-write bundle notes | New structured queue table or App review workflow |
+
+Minimum graph model:
+
+| Node or edge class | Required in first pilot? | Purpose |
+|---|---:|---|
+| `Species`, `Observation`, `ContentItem`, `Chronicle`, `SourcePacket`, `ResearchReview`, `Claim`, `MediaAsset` reference | Yes | Core evidence path from event to species/story/public claim |
+| `Biome`, `PublicSurface`, `AgentDomain` | Yes, if source data is available | Preserve context, public rendering boundary, and owner routing |
+| `StoryThread`, `OpenLoop`, `StoryBeat` | Optional but preferred | Test whether graph helps Content continuity |
+| `SUPPORTED_BY`, `MENTIONS_SPECIES`, `OBSERVED_SPECIES`, `CAPTURED_IN`, `NEEDS_REVIEW_FROM`, `OWNED_BY`, `HAS_CONFIDENCE`, `HAS_PUBLICNESS_TIER` | Yes | Preserve provenance, owner, review, uncertainty, and publicness |
+| Planner `WorkProgram`/`WorkProject`/`Task` nodes | No for first ecological seed; optional as a separate later proof | Avoid mixing task truth into the first ecology graph |
+
+Pilot questions:
+
+1. What evidence supports saying the lake changed after sealing or fish removal?
+2. Which species are connected to the Lake Post-Seal event, and how?
+3. Which claims are public-safe, uncertain, internal-only, or still review-needed?
+4. Which observations, source packets, media references, and Research notes support each claim?
+5. Which public pages, chronicle entries, or content items could safely reuse the evidence?
+6. Which relationships are observed versus inferred?
+7. Which Daphnia, Ghost Shrimp, Flagfish, amphipod, Mesostoma, or Moina facts still need caveats?
+8. Which source packet facts would require explicit structured write approval?
+9. Which media references are useful but still not canonical media metadata?
+10. Does graph traversal make the packet easier, safer, or faster than Markdown/Supabase lookup alone?
+
+Success criteria:
+
+| Criterion | Pass condition |
+|---|---|
+| Evidence-path value | At least 7 of the 10 pilot questions are answered more clearly than with current Markdown/Supabase lookup alone |
+| Provenance | Every node and edge preserves source table/path plus source id/path |
+| Publicness and confidence | Public/internal/review and observed/inferred/uncertain labels remain visible in query outputs |
+| Rebuildability | The graph can be deleted and rebuilt from source exports without losing canonical truth |
+| No source-of-truth drift | No species, observation, content, media, Planner, or Web record treats Memgraph as canonical |
+| Review routing | Research, Content, Web, App, and Company review needs are visible from graph paths |
+| Implementation restraint | No paid service, App runtime work, schema change, media metadata write, or public surface change occurs during the pilot without separate approval |
+
+Required gates before any import:
+
+1. Complete task `409`: implementation-grade Supabase schema/data audit for the exact source rows and fields.
+2. Confirm the local/App-approved Memgraph run pattern: local binary, Docker, or another App-approved local service path.
+3. Define export file location, privacy posture, and ignored/local storage rules.
+4. Produce a source manifest listing included rows, Markdown paths, media references, and excluded sensitive fields.
+5. Define validation queries and readback format.
+6. Confirm Research and Content review owners for claim and story interpretation.
+7. Confirm Web review only begins after reviewed outputs exist.
+
+Stage 3 closeout criteria:
+
+- The graph pilot is scoped narrowly enough for one packet.
+- The success criteria are testable before any import.
+- The implementation gates are explicit and owner-mapped.
+- The next work is task `409` plus an App/Research/Content implementation handoff, not a broad buildout.
+
+### Stage 4 Pilot Review Rhythm
+
+Stage 4 defines the review cadence for Operation Living Intelligence during pilot planning. It does not approve implementation, scheduling, Planner edits, App runtime changes, imports, exports, model installs, paid services, public-site changes, automation, or writeback.
+
+Cadence decision:
+
+```text
+Use a weekly OLI review while pilot planning is active.
+Keep the review lightweight before the 2026-06-13 Aquatic Club Talk.
+Switch to biweekly only when the talk window or domain capacity makes weekly review too heavy.
+Reconfirm cadence after the 2026-06-14 talk closeout.
+```
+
+Review scope:
+
+| Review lane | What to check | Primary owner |
+|---|---|---|
+| Pilot phase | Whether the work is still in planning, audit, export design, local graph build, validation, or closeout | Company |
+| Protected talk window | Whether OLI work is directly helping Aquatic Club Talk Readiness or should wait | Company + Content |
+| Stage 3 gates | Task `409`, source manifest, Memgraph run pattern, export location/privacy, validation queries, and owner review paths | Company + App |
+| Living Atlas proof case | Lake Post-Seal packet status, Research caveats, Content source packet readiness, and media-reference boundaries | Research + Content |
+| Public surface boundary | Whether any Web-facing idea is still downstream of reviewed Atlas/graph outputs | Web + Research + Brand |
+| Cost and tools | Whether any tool choice is still free/local/planning or needs Financials review | Financials + Company |
+| Source-of-truth drift | Whether graph, vector, analytics, or visual AI layers are being treated as canonical without approval | Company + App |
+| Domain handoffs | Which owner needs the next input, what surface carries it, and whether approval is required | Company |
+
+Review inputs:
+
+- Current status of Planner task `409` and any approved implementation handoff tasks.
+- Stage 3 pilot gate checklist.
+- Lake Post-Seal packet notes, Research validation notes, Content source packet status, and relevant media references.
+- App notes for local Memgraph/export/helper design, if approved and available.
+- Financials notes for paid/free tool thresholds, if a paid-service question appears.
+- Talk-window conflicts, support needs, audience questions, proof gaps, or retrieval friction.
+- Any new publicness, confidence, privacy, credential, or source-of-truth concern.
+
+Review outputs:
+
+- Confirm current phase and whether the work remains planning-only.
+- Refresh blockers, dependencies, downstream owners, and approval gates.
+- Decide whether the next week should stay docs-only, move to audit/export design, or wait.
+- Record any Company brief, domain report, memory, or Planner implication.
+- Flag any live Planner/Supabase write that needs explicit approval before it happens.
+
+Escalation triggers:
+
+- Paid subscription, paid API, cloud upload, or recurring service cost.
+- Memgraph/Neo4j install, local service setup, Docker/service dependency, or App runtime bridge.
+- Supabase export/import, schema change, migration, raw SQL, storage change, or credential change.
+- Public website behavior, public tracking, public copy, or graph-powered public route.
+- Raw media upload, broad media scan, canonical media metadata write, or model-derived claim becoming public.
+- Automated agent run, scheduled job, writeback, or cross-domain write authority.
+- Any public, sponsor, legal, financial, launch, or roadmap commitment.
+- Any loss of publicness, confidence, uncertainty, or observed-vs-inferred labels.
+
+Stage 4 closeout criteria:
+
+- Weekly review is the default during pilot planning.
+- Biweekly review is allowed only as a capacity adjustment, especially around the talk window.
+- The review has clear inputs, outputs, owners, and escalation triggers.
+- OLI cadence preserves the Aquatic Club Talk priority and does not authorize implementation by itself.
+- Every review checks source-of-truth drift, domain handoffs, and whether live Planner/Supabase writes need approval.
+
 ### Sequential Work Order
 
 Use this order for Planner parent tasks. Only the first Company coordination lane should be active immediately; most implementation lanes should stay planned until after Aquatic Club Talk closeout unless a task directly reduces current friction.

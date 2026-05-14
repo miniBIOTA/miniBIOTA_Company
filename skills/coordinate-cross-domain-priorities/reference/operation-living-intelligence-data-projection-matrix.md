@@ -480,6 +480,8 @@ Recommended first warehouse:
 | Task `395` retrievable source inventory | Dry-run manifest/source manifest input only | 1 | Bounded Lake Post-Seal source/material/media/hardware inventory for graph/vector/visual/analytics design | Docs-only; no graph import, vector ingestion, media annotation, App behavior, publication, Planner, or Supabase write |
 | Task `396` source publicness/indexing plan | Classification gate for dry-run manifest | 1 | Source/material/feed labels, review owners, blocked public-use cases, and validation checks before any readback prototype | Docs-only; indexability is not public safety and no ingestion/public/App/write path is approved |
 | Task `397` visual AI feasibility/backup-risk plan | Feasibility and storage-risk gate | 1 | Workstation assumptions, backup-drive gap, tiny-test constraints, candidate annotation fields, and approval gates | Docs-only; no model run, install, media scan, persistent derivative, upload, purchase, or media/App/Web/write path is approved |
+| Task `398` small visual AI test set | Selected bounded candidate media set | 1 | Four exact file/timecode items for possible later no-write local/private feasibility testing | Docs-only; no model run, tool install, media operation, App/Web behavior, graph/vector activity, public use, purchase, or write path is approved |
+| Task `399` candidate annotation review workflow | Review gate before metadata proposal | 1 | Required candidate fields, Raw Footage/Content/Research/App checks, rejection/correction path, readback requirements | Docs-only; candidate annotations stay noncanonical review material and no metadata/public/App/Web/graph/vector/write path is approved |
 
 ### Web And Public Relationship Graph
 

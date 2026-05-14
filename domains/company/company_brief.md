@@ -215,6 +215,32 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   file move, media scan, metadata write, Supabase/Planner record, graph data,
   vector index, App/Web behavior, upload, purchase, public-use approval, or
   source-of-truth record changed.
+- **2026-05-14:** Content completed Operation Living Intelligence task `398`
+  as the docs-only small visual AI test-set artifact:
+  `M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-398-small-visual-ai-test-set.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  selected bounded candidate media set for a possible later no-write
+  local/private visual AI feasibility run. The set contains four exact
+  file/timecode items: an opaque lake still, a field-sampling clip, a
+  sample-introduction clip, and one ID-sensitive microcrustacean blocking
+  test. It remains selection only and still requires Company approval plus App,
+  Raw Footage, Content, Research, and Financials gates before any run. No model
+  run, install, media move, media scan, frame extraction, thumbnail, sidecar,
+  upload, metadata write, Supabase/Planner write, graph/vector data, App/Web
+  behavior, purchase, public-use approval, or source-of-truth record changed.
+- **2026-05-14:** Content completed Operation Living Intelligence task `399`
+  as the docs-only candidate annotation review workflow:
+  `M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-399-candidate-annotation-review-workflow.md`.
+  Company linked the artifact into the OLI plan and projection matrix as the
+  review gate before any future metadata-write proposal. The workflow keeps
+  candidate visual annotations as noncanonical review material and requires
+  Raw Footage path/timecode/no-side-effect checks, Content story/publicness
+  review, Research organism/claim-safety review, App noncanonical tooling
+  confirmation, Company metadata-proposal go/no-go, and human-readable
+  readback. No model run, metadata write, media asset/species image record,
+  file move, frame extraction, sidecar, Supabase/Planner record, graph/vector
+  data, App/Web behavior, upload, public-use approval, publication approval,
+  purchase, or source-of-truth record changed.
 - **2026-05-14:** Company continued Operation Living Intelligence beyond the
   Company lead stages by mapping App boundary task `386` at the
   planning/readiness level. The map separates App-owned Planner runtime,

@@ -25,8 +25,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Public telemetry consumes the live read-only Supabase snapshot through `/api/telemetry/overview`, `/live-monitoring`, and paired biome detail weather panels.
 - Web context now uses the repo-native memory/skills architecture in `M:\miniBIOTA\miniBIOTA_Web\`.
 - Brain no longer keeps a Web `docs/` mirror; use the source repo's memory/skills/reference structure for detailed Web context.
-- App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`; current active Web project records are `36` through `41` plus `57`, with legacy/internal review project `42` archived.
-- The UX Interaction Lab is represented in Planner project `40`, was resumed by owner direction on 2026-05-09, has accepted P0 guidance slices completed as of 2026-05-14, and has started narrow live application through `/species` filter/search control-group cleanup, detail-tab route-contract coverage, `/live-monitoring` refresh-state presentation polish, and an implemented `/live-monitoring` mobile sensor-card polish pass pending owner screenshot review.
+- App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`; current non-archived Web project records are `36` through `41`, `57`, `68`, and `79`, with legacy/internal review project `42` archived.
+- The UX Interaction Lab is represented in Planner project `40`, was resumed by owner direction on 2026-05-09, has accepted P0 guidance slices completed as of 2026-05-14, and has started narrow live application through `/species` filter/search control-group cleanup, detail-tab route-contract coverage, `/live-monitoring` refresh-state presentation polish, a screenshot-approved `/live-monitoring` sensor-card polish pass, and `/faq` shared disclosure alignment.
 
 ## Key Facts
 - Telemetry architecture is local-first and must not imply direct pump switching or centralized actuator control. Biome detail telemetry is public weather/context, not an operator dashboard.
@@ -38,7 +38,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Priorities
 - Keep Web memory and active Company Web reports aligned with the public-only, local-first telemetry and control architecture.
 - Use App Planner/Supabase for live Web task status; keep Markdown focused on architecture, rules, scope, and decisions.
-- Continue active UX Lab work through Planner project `40`; use `/ux-lab` for UX states, interaction rules, page patterns, and journeys while keeping development routes out of production navigation. The next UX step should be owner screenshot review of the `/live-monitoring` mobile sensor-card polish, browser/mobile visual QA when tooling is available, or a separately accepted live-surface application.
+- Continue active UX Lab work through Planner project `40`; use `/ux-lab` for UX states, interaction rules, page patterns, and journeys while keeping development routes out of production navigation. The next UX step should be browser/mobile visual QA when tooling is available or a separately accepted live-surface application.
 - Keep the now-connected App/Hardware coordinator-to-website telemetry handoff production-verified, public-safe, and read-only, including the new biome weather presentation.
 - Work through the cleaned Web Planner roadmap: About/supporters and Patreon acknowledgment content, Substack signup/list migration and weekly newsletter assembly, events/news/chronicles product passes, engineering imagery, telemetry hardening, and species-card data polish.
 

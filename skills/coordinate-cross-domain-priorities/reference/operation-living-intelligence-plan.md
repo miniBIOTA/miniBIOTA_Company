@@ -1153,6 +1153,94 @@ Task `397` Company closeout criteria:
 - The projection matrix treats task `397` as a feasibility and storage-risk gate, not a model-run approval.
 - No model install, visual AI run, file move, media scan, metadata write, Supabase/Planner record, graph data, vector index, App/Web behavior, upload, purchase, or public-use approval is implied.
 
+#### Small Visual AI Test Set - Task 398
+
+Content completed the task `398` docs-only small visual AI test-set artifact on 2026-05-14:
+
+`M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-398-small-visual-ai-test-set.md`
+
+Company should treat that artifact as the selected candidate media set for a possible future no-write local/private visual AI feasibility run. The Company-side rule is:
+
+```text
+Task 398 selects the set only.
+It does not approve a model run, tool install, media operation, App behavior,
+public use, graph/vector activity, purchase, or canonical write.
+```
+
+Task `398` selected test set:
+
+| Test item | File/timecode | Role | Publicness/review boundary |
+|---|---|---|---|
+| `TEST_398_01_OPAQUE_LAKE_STILL` | `M:\miniBIOTA\miniBIOTA_Files\8. Raw Footage\Other Photos & Videos\Biomes\Freshwater Lake\20260408_082108.jpg`; still image | Easy context | Public candidate opacity context; blocks Daphnia-causation, failure framing, media metadata, species-image promotion, and public caption approval |
+| `TEST_398_02_FIELD_SAMPLING` | `M:\miniBIOTA\miniBIOTA_Files\8. Raw Footage\Photos & Videos\2026\20260408_112606.mp4`; `00:02-00:11` | Easy context | Public candidate sampling context; blocks organism ID, public species claim, and claims that this sample produced the introduced Daphnia |
+| `TEST_398_03_SAMPLE_INTRODUCTION` | `M:\miniBIOTA\miniBIOTA_Files\8. Raw Footage\Photos & Videos\2026\20260408_140153.mp4`; `00:45-00:55` | Event context | Public candidate sample-introduction context; blocks establishment, reproduction, clearing, completed-food-web, and metadata-write claims |
+| `TEST_398_04_MICROCRUSTACEAN_BLOCKING` | `M:\miniBIOTA\miniBIOTA_Files\8. Raw Footage\Photos & Videos\2026\20260408_121519.mp4`; `00:06-01:13` | ID-sensitive blocking test | Review-needed raw evidence; blocks `Daphnia ambigua`, establishment, reproduction, clearing, public Daphnia proof, and species-image/caption use |
+
+Task `398` selection rationale:
+
+- The set uses four items, inside the preferred 3-5 item range and below the max of six.
+- It includes harmless context, event context, and exactly one ID-sensitive blocking test.
+- It uses only task `395` media references and task `396` labels.
+- It avoids full media scans, new discovery, frame extraction, thumbnails, sidecars, metadata writes, uploads, graph/vector records, and public output.
+- Held-out/excluded items remain held out when they add redundancy, handling/framing risk, extra ID sensitivity, internal-only burden, outcome-proxy risk, or task `396` exclusion status.
+
+Task `398` Company implications:
+
+- A later model run still requires explicit Company approval and owner readback from App, Raw Footage, Content, Research, and Financials.
+- App must prove the run will not create App behavior, graph data, vector indexes, persistent App memory, media records, indexing jobs, public output, source-folder sidecars, thumbnails, derived frames, or metadata.
+- Raw Footage must approve read-only access to these exact files/timecodes and define any temporary-cache policy.
+- Research must approve uncertainty wording for the ID-sensitive microcrustacean item before it is used.
+- Output destination must be Markdown planning or another approved noncanonical location outside raw media folders.
+
+Task `398` Company closeout criteria:
+
+- The Content small-test-set artifact is linked from the Company OLI plan.
+- The projection matrix treats task `398` as a selected bounded test set, not a run protocol or execution approval.
+- No model run, install, media move, media scan, frame extraction, thumbnail, sidecar, upload, metadata write, Supabase/Planner write, graph/vector data, App/Web behavior, purchase, or public-use approval is implied.
+
+#### Candidate Annotation Review Workflow - Task 399
+
+Content completed the task `399` docs-only candidate annotation review workflow on 2026-05-14:
+
+`M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\2026-05-14-operation-living-intelligence-content-task-399-candidate-annotation-review-workflow.md`
+
+Company should treat that artifact as the review path for any future candidate visual annotations before metadata write or public use is even proposed. The Company-side rule is:
+
+```text
+Candidate visual annotations are review material.
+They are not metadata, proof, captions, species IDs, public facts,
+graph nodes, vector chunks, alt text, chronicle copy, or publication approval.
+```
+
+Task `399` review workflow summary:
+
+| Step | Owner path | Required output |
+|---|---|---|
+| Future run go/no-go | Company + Content + App + Raw Footage | Explicit bounded approval for a no-write local/private run; stop if approval is missing or the tool would scan/upload/write |
+| Candidate generation | App/operator under Content boundary | Candidate annotation rows only in an approved noncanonical location |
+| Media integrity check | Raw Footage | Path/timecode confirmation and no media-folder side-effect note |
+| Story/publicness review | Content | Accept for Research review, correct, hold, or reject based on story, caption-risk, publicness, chronology, and production relevance |
+| Organism/claim review | Research | Approved candidate wording, broader label required, hold, or reject based on ID/uncertainty/ecology safety |
+| Final candidate status | Content + Research | Readback of allowed/blocked uses; hold if disagreement or publicness conflict remains |
+| Metadata proposal decision | Company + Content + Research + App + Raw Footage | Separate metadata workflow proposal request or no-action decision |
+| Future write workflow | Future approved owner | Separate write plan, approval, and readback; no write comes from task `399` |
+
+Task `399` required candidate annotation fields include local candidate ID, task `398` item ID, exact source path/timecode, source artifact refs, tool/run audit fields, prompt/instruction, plain visual description, broad safe candidate label, exact task `396` publicness label, classification, review owners, blocked public-use cases, allowed candidate use, Raw Footage/Content/Research review statuses, `metadata_write_status = not_approved`, `public_use_status = blocked`, and a human-readable readback note.
+
+Task `399` Company implications:
+
+- A future model output cannot move directly into metadata, public copy, graph/vector records, App/Web behavior, or publication.
+- Raw Footage can reject outputs for wrong path/timecode, unapproved derivatives, unapproved frame extraction, or source-folder side effects.
+- Content can reject or correct outputs that sound like captions, publication notes, public claims, stronger chronology, media metadata, or unsupported story use.
+- Research can reject or downgrade outputs that over-identify organisms or imply establishment, recruitment, causation, unresolved outcomes, or model-derived Research confidence.
+- Company arbitrates whether reviewed candidates are mature enough to justify a separate metadata-write proposal.
+
+Task `399` Company closeout criteria:
+
+- The Content review-workflow artifact is linked from the Company OLI plan.
+- The projection matrix treats task `399` as a review workflow gate, not metadata approval.
+- No model run, metadata write, media asset/species image record, file move, frame extraction, sidecar, Supabase/Planner record, graph/vector data, App/Web behavior, upload, public-use approval, publication approval, purchase, or source-of-truth change is implied.
+
 Content project:
 
 - Inventory source packets, transcripts, scripts, production notes, footage references, and hardware/local compute assumptions that should be retrievable.

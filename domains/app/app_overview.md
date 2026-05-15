@@ -1,8 +1,8 @@
-﻿---
+---
 id: app_operations
 title: 11. miniBIOTA_App
 domain: app_operations
-last_updated: 2026-05-14
+last_updated: 2026-05-15
 tags: [app, electron, operations, planner, monitoring, internal-tools]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -27,6 +27,25 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Planner project-manager schema foundation is live after migration 007, and
   former top-level Weekly Checklist and Tasks behavior has been consolidated
   into Planner replacement surfaces.
+- Planner card accents now use domain identity as the stable visual signal:
+  project/content cards use the full domain color, tasks/subtasks use softer
+  versions of the same color, and status remains separate as badges, text,
+  actions, or columns. The shared palette intentionally gives Company Ops,
+  Financials, Ecosystem, Brand, Content, Engineering, Sales, Web, App, and
+  Hardware distinct color lanes.
+- The supplemental App quality-system token cleanup on 2026-05-15 promoted
+  Planner domain palette values into `css/shared/app-tokens.css` as
+  `--app-domain-*` tokens, kept `shared-domain-colors.css` as the
+  class-to-semantic-variable mapping layer, and left the scoped token/CSS
+  quality lints passing across 69 CSS files after focused Planner, Roadmap,
+  CRM, and Admin Media cleanup. Prompt Library was checked and was already
+  token-clean.
+- The second scanner-driven cleanup pass on 2026-05-15 finished Site Admin's
+  CSS token pilot beyond Media Library. Shared Admin navigation/status/action
+  controls, detail disclosures, form actions, species filters/search, image
+  grids, tables/forms, and Media Library styles now scan clean for raw colors
+  and scoped CSS quality drift. The token/CSS quality lint pilot now covers 74
+  CSS files.
 - Planner Programs/Operations schema is live after migration 010, adding
   `work_programs` and `work_program_projects` as the cross-domain umbrella
   layer above domain-owned projects. Live Program records now include
@@ -35,13 +54,28 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   (`work_programs.id = 3`), with domain-owned projects linked through
   `work_program_projects`.
 - App project management is now organized in App Planner/Supabase under the
-  App domain. After the 2026-05-12 cross-domain cleanup and the 2026-05-14
-  Operation Living Intelligence visual-media task addition and the App Quality System closeout, App has 12 total work projects, 11 non-archived projects, and 104 task rows (22 open, 82 done). The newest App-owned project is `App Quality System Roadmap` (`work_projects.id = 82`), created on 2026-05-14 with 10 phase parent tasks and 62 child subtasks; it is complete with all 72 roadmap task rows done.
+  App domain. The newest App-owned project is `Mobile Field Observer Quality System` (`work_projects.id = 84`), created on 2026-05-15 and scheduled for 2026-05-16 with 6 phase parent tasks and 33 child tasks. The previous `App Quality System Roadmap` (`work_projects.id = 82`) is complete with all 72 roadmap task rows done.
 - Monitoring reads direct MQTT telemetry from the local biome network when connected to `mB2.4`, including internal-only heat-exchanger/liquid temperature (`liq_t`) and pump run percentage (`pump_pct`) display for sensor biomes 2-5.
 - Site Admin supports species, biosphere, biome, chronicle, announcement, staging, and media-library workflows.
 - Media Library/tagging, Species-style media search/filtering, and backend WebP image upload pipeline are implemented in the app.
 - Prompt Library has replaced the old static Team reference surface. Migration 012 was applied successfully by the user on 2026-05-11, making `prompt_library` live for reusable prompt records and future workflow-template use.
-- The app source repo now uses repo-local memory and skills as active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`. `memory/11-app-quality-system.md` and `planning/app_quality_system_roadmap.md` capture the completed initial App quality-system rollout inspired by miniBIOTA_Web and the active-maintenance rules for extending it.
+- The app source repo now uses repo-local memory and skills as active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`. `memory/11-app-quality-system.md` and `planning/app_quality_system_roadmap.md` capture the completed initial App quality-system rollout inspired by miniBIOTA_Web, and `planning/mobile_field_observer_quality_system_project.md` captures the planned mobile Field Observer quality-system follow-up.
+- Operation Living Intelligence Wave 1 now has App-owned local helper tooling
+  and documentation for the Lake Post-Seal graph pilot:
+  `tools/generate-oli-wave1-jsonl.js`, `tools/generate-oli-wave1-cypher.js`,
+  `tools/run-oli-wave1-jsonl-readback.js`,
+  `tools/run-oli-wave1-memgraph-smoke.js`, and
+  `docs/operation-living-intelligence-wave1.md`. The workflow is local,
+  ignored-output, no-Docker JSONL readback first, and disposable Memgraph
+  smoke testing only when intentionally needed; it does not change App runtime
+  behavior, schema, Supabase records, public website behavior, or canonical
+  source-of-truth ownership.
+- App also has a prepared read-only SQL metadata gate packet for Operation
+  Living Intelligence:
+  `docs/operation-living-intelligence-sql-metadata-check.md` and
+  `tools/inspect-oli-wave1-sql-metadata.sql`, with optional local runner
+  `tools/run-oli-wave1-sql-metadata-check.ps1`. It is not a migration and
+  should only be run through an approved SQL-capable read-only path.
 - Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
 
 ## Key Facts
@@ -64,6 +98,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - App Agent wiring now treats App Planner/Supabase as the live App work queue:
   App sessions should read Planner projects/tasks when choosing work, and ask
   before marking completed Planner tasks done at closeout.
+- Operation Living Intelligence Wave 1 graph outputs are derived-only,
+  rebuildable, and local. Durable automation still requires live SQL metadata
+  inspection through a SQL-capable database path before any persistent graph
+  service, scheduled sync, or canonical writeback is approved.
 - Planner task UI has initial migration 007 support for live domains, project
   assignment, workflow status, blocked reason, completion timestamp, and
   multi-day task spans.
@@ -106,7 +144,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Keep App memory and skill references current as architecture, schema assumptions, and safety rules change.
 - Smoke test Prompt Library create/edit/copy/archive flows after launching the app, now that migration 012 is applied.
 - Use App Planner/Supabase for live App task status; keep Markdown focused on context, operating rules, architecture notes, and playbooks.
-- Maintain and extend the completed App quality-system rollout (`work_projects.id = 82`) as an active guardrail layer. Ordinary Planner single-row patch paths now use write-plan persistence/readback; Programs/Operations write-plan coverage remains a future separately scoped cross-domain pass if needed.
+- Maintain and extend the completed App quality-system rollout (`work_projects.id = 82`) as an active guardrail layer. Execute the planned Mobile Field Observer Quality System project (`work_projects.id = 84`) on 2026-05-16 to bring the Android companion under the same token/component/UI Lab/validation discipline. Ordinary Planner single-row patch paths now use write-plan persistence/readback; Programs/Operations write-plan coverage remains a future separately scoped cross-domain pass if needed.
 
 ## Risks / Gaps
 - CRM migration 013 created live RLS-protected tables with no policies. Any publishable-key policy design, legacy backfill, or CRM write workflow must be separately approved and tested. Migration 014's `crm_contact_links` table is live for legacy contact links; creating/editing those links remains a live CRM record write.
@@ -136,6 +174,4 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Last verified: 2026-05-09
 - Known divergences: no active App docs mirror remains in Brain.
 - Next sync check: use App repo memory/skills directly when App detail is needed.
-
-
 

@@ -2,7 +2,7 @@
 id: web_brief
 title: Web & Digital Presence Brief
 domain: web_and_digital_presence
-last_updated: 2026-05-14
+last_updated: 2026-05-15
 tags: [website, digital-presence, information-architecture, ui, telemetry, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -38,6 +38,56 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Build Operation Living Web, the Ecosystem Relationship Graph architecture, as a public species-to-biome-to-biosphere relationship experience; Web architecture is now ready to pause, with broad food-web curation routed to the Research Agent via the Web repo handoff packet.
 
 ## Recent Milestones
+- 2026-05-15: The public `/faq` About page received the final Brand/Web
+  implementation pass and owner visual approval on desktop and mobile. The
+  page now leads with `miniBIOTA Builds Living Biospheres`, an About-first
+  public identity section, read-only telemetry boundary language, restrained
+  supporter/contributor handling, and route-contract coverage for approved
+  public framing and forbidden support/control claims. Planner tasks `#553`
+  through `#557` were marked done after read-back.
+- 2026-05-15: Brand provided screenshot-grounded website visual direction.
+  Web recorded the boundary that Brand owns public image meaning, photo
+  selection guidance, hero imagery, caption tone, and visual approval rules,
+  while Web owns implementation, responsive rendering, optimization,
+  accessibility mechanics, route contracts, and design-system integration.
+  Approved direction is dark, observational, organism-forward, and
+  instrument-like; real miniBIOTA imagery is preferred, and supporter/sponsor/
+  Patreon/contributor/member/funding visuals remain owner-approval gated.
+- 2026-05-15: Company completed the docs-only Operation Living Intelligence
+  Wave 2 Content Story Graph design. Web's role remains downstream public
+  review only: future graph outputs may name candidate public surfaces, but no
+  Web route behavior, species-card copy, chronicle output, ecosystem-map
+  relationship, public messaging, database record, schema, Planner record,
+  telemetry behavior, launch/announcement, or source-of-truth change is
+  approved by the design.
+- 2026-05-15: Company completed the read-only source-availability review for
+  the selected Wave 2 Lake Post-Seal packet. The packet is source-available for
+  a future no-write App proposal, but Web remains downstream review only:
+  candidate public reuse must stay blocked until Content/Research/Web review,
+  and no Web route behavior, public copy, chronicle/species/biome output,
+  ecosystem-map relationship, database record, schema, Planner record,
+  telemetry behavior, launch/announcement, or source-of-truth change was
+  approved.
+- 2026-05-15: Company prepared the no-write Wave 2 App implementation
+  proposal. Web remains downstream review only: future local readback may name
+  candidate public-surface paths, but public rendering, route behavior,
+  chronicle/species/biome copy, ecosystem-map output, public messaging,
+  database records, schema, Planner records, launch/announcement, or
+  source-of-truth changes are still unapproved.
+- 2026-05-15: Company documented the Operation Living Intelligence Wave 1
+  public reuse boundary for the Lake Post-Seal graph pilot. Candidate public
+  surfaces such as `/chronicles#chronicle-30`, relevant species pages, the
+  Freshwater Lake biome surface, and the biosphere ecosystem map remain
+  review-gated only; no Web route behavior, public copy, species-card edit,
+  chronicle edit, ecosystem-map output, database record, schema, Planner
+  record, telemetry behavior, or public launch/announcement changed.
+- 2026-05-15: Company/App generated the local Operation Living Intelligence
+  Wave 1.1 public reuse sidecar. The sidecar models public reuse candidates
+  and review gates as derived local graph data with `review_required` status.
+  It does not authorize Web implementation, route behavior, species-card copy,
+  chronicle output, ecosystem-map relationships, public messaging, database
+  records, schema, Planner records, telemetry behavior, or public
+  launch/announcement.
 - 2026-05-14: Accepted P0 UX Interaction Lab slices were converted into App Planner project `40` tasks and completed. The dev-gated lab now has tighter guidance for reusable state presets, loading and end-state behavior, detail-tab interactions, and public telemetry state coverage while keeping implementation of live public surfaces separately scoped.
 - 2026-05-14: The first accepted UX Lab live application slices were completed after owner visual review. /species filter/search controls now use the accepted control-group spacing contract, route-contract coverage now protects detail-tab ownership across species, biome, engineering, and biosphere detail surfaces, and /live-monitoring now presents refresh/stale/error state as a stable public status strip.
 - 2026-05-14: A screenshot-driven `/live-monitoring` sensor-card polish pass was completed under Planner task `507`; node cards now have an equal-height layout treatment and metric values stay readable across desktop and mobile.
@@ -104,7 +154,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Known Risks & Blockers
 - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
 - Public telemetry now depends on the App/Hardware coordinator producer staying healthy and aligned with the public read-only contract.
-- The cleaned Web roadmap still needs source assets and cross-domain inputs for About/supporter recognition, Substack/list migration, weekly newsletter process design, events/news/chronicles content strategy, and engineering imagery.
+- The cleaned Web roadmap still needs source assets and cross-domain inputs for Substack/list migration, weekly newsletter process design, events/news/chronicles content strategy, engineering imagery, and any later owner-approved supporter/sponsor/Patreon/contributor/member/funding recognition.
 - `/events`, `/news`, and `/chronicles` remain active public routes but need later content/product development.
 - Engineering system pages still need real system images to replace placeholders.
 - Public expectation-setting is a near-term risk if website content sends
@@ -112,6 +162,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   replacement needs, species-card photo/data polish, and still-developing
   interaction/history surfaces should be named as in-progress rather than
   implied as launch-complete.
+- Operation Living Intelligence graph outputs must not become public Web output
+  until Research, Content, and Web review gates are satisfied. Wave 1 public
+  reuse targets are candidate surfaces only; Web route behavior, species-card
+  copy, chronicle output, and ecosystem-map relationships remain separately
+  scoped and approval-gated.
 
 ## Cross-Domain Notes
 - **Company/Web Strategy:** Company owns active Web strategy reporting and cross-domain coordination through this report, while detailed Web context lives in `M:\miniBIOTA\miniBIOTA_Web\AGENTS.md`, `memory/00-index.md`, relevant memory files, local playbooks, and exact playbook references. Brain is archive/provenance lookup only during retirement probation.
@@ -124,6 +179,12 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   public site implementation and current capability truth.
 - **Research:** Scientific and ecological claims must reflect structured ecological truth.
 - **Brand:** Public copy should keep the "Biological Startup" voice: technical precision, accessible ecology, and maker clarity.
+- **Brand:** Brand owns public visual direction for website imagery, hero
+  selection, image approval boundaries, and caption tone. Web should ask Brand
+  or the owner before publishing first-viewport hero imagery, identifiable
+  people, private workspace details, sensitive hardware/prototype states,
+  supporter/sponsor/Patreon/contributor/member/funding visuals, or image/copy
+  pairings that could imply unapproved claims.
 
 ## Domain Reference
 

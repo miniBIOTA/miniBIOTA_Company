@@ -2,7 +2,7 @@
 id: company_brief
 title: Company Operations Brief
 domain: company_operations
-last_updated: 2026-05-14
+last_updated: 2026-05-15
 tags: [company, operations, strategy, roadmap, strategy-brief]
 reporting_status: active
 reporting_phase: brain_retirement_phase_11_probation
@@ -54,13 +54,72 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   supplies tool/routing precedent. Stage 3 scopes the first graph pilot to the
   Lake Post-Seal packet, and Stage 4 now sets weekly review as the default
   pilot-planning cadence, with biweekly review allowed only as a capacity
-  adjustment around the talk window. Stage 5 now identifies the post-talk
-  implementation-readiness order: task `409` first, then a Lake Post-Seal
-  graph seed handoff, with Content/Research readiness and App design as the
-  first supporting lanes. The 2026-05-14 docs-only planning pass completed the
-  Research, Content, and Financials OLI lanes while leaving Company project
-  `75` active for implementation gate `409`, App project `76` planned for
-  task `412`, and Web/Growth tasks `400-405` open. This is operating
+  adjustment around the talk window. Stage 5 now identifies the
+  implementation-readiness order: task `409` first, with the Wave 1
+  Lake Post-Seal graph seed handoff now documented as the App/Research/Content
+  boundary for a future no-write dry-run proposal. The 2026-05-15 task `409`
+  REST/OpenAPI audit pass confirmed the bounded source rows, counts, media
+  asset/link state, privacy tiers, and validation-query needs, while initially
+  leaving a live SQL metadata gap for constraints, indexes, RLS policies, and
+  triggers. Josue later ran the JSON SQL packet in Supabase SQL Editor and
+  provided the metadata readback, resolving that gap for the current review
+  while keeping automation and persistent infrastructure gated. Josue then
+  approved using the narrower audit for a design-only App proposal, and Company
+  documented the Wave 1 no-write dry-run proposal plus App design-review
+  packet and Company-side readiness review as the next handoff surface. App
+  context review found `out/` is currently ignored in the App repo while
+  `.local/` is not, so the proposed future local output path now uses App's
+  ignored `out/operation_living_intelligence/` tree. Company's pre-review
+  recommendation is JSONL-only first, with Memgraph optional later after the
+  source manifest, validation report, blocked-edge handling, readback examples,
+  and delete/rebuild behavior are proven. The first JSONL dry run has now been
+  generated under App's ignored `out/` tree and validated with review gates
+  active. Import-shape review added explicit guardrail/context nodes so blocked
+  edges have endpoints. Company then created App-owned local helpers for JSONL
+  regeneration, Cypher generation, and a disposable Memgraph smoke test. The
+  Wave 1 graph now imports into a local disposable Memgraph container and
+  passes readback with `67` nodes, `109` relationships, blocked-claim safety,
+  media-review safety, no direct observation-to-content/chronicle links, and
+  no canonical writeback. Docker/Memgraph is accepted only as a local
+  disposable pilot dependency, not day-to-day infrastructure, persistent graph
+  service, automation, or canonical database. The SQL metadata gap is now
+  reviewed for the current proof, and App has a verified manual internal
+  projection helper that regenerates the local JSONL package, no-Docker
+  readback, public reuse sidecar, sidecar-aware readback, and Cypher file with
+  `pass_manual_internal_projection_ready`; this is still manual/local/no-write,
+  not automation, public output, App runtime integration, persistent
+  infrastructure, or source-of-truth migration. Company then closed Wave 1 as
+  a successful local proof and recommended pausing graph infrastructure until a
+  new implementation proposal was approved. At that gate, the recommended work
+  was a docs-only Wave 2 Content Story Graph design pass, not more
+  Docker/Memgraph setup. Company then completed that Wave 2 design pass as a no-write planning
+  handoff: the first Wave 2 target is story continuity across published
+  content, planned content, draft/candidate material, chronicles, story
+  threads, open loops, story beats, observations, and review gates. Company
+  then completed the read-only source-availability review for the selected
+  Lake Post-Seal story packet: the packet is source-available for a future
+  no-write App implementation proposal. Company then prepared that proposal as
+  a design-only App review packet, then prepared the Company-side App
+  design-review handoff after user approval to continue. App completed the
+  docs-only review and, after later implementation approval, added the
+  smallest local JSONL/readback helper. The Wave 2 packet now validates under
+  App's ignored `out/` tree with `63` nodes, `136` normal edges, `34` blocked
+  edges, and readback status
+  `pass_with_review_required_content_story_readback_ready`. Company reviewed
+  the generated output and decided not to move Wave 2 to Cypher/Memgraph now:
+  the no-Docker readback already answers the pilot questions, while Wave 1
+  already proved the disposable graph-import path. Public output,
+  Cypher/Memgraph, durable runtime, automation, canonical writeback, and all
+  Supabase/Planner/App/Web writes remain unapproved. Company then documented
+  the session handoff at
+  `domains/company/operation_living_intelligence_session_closeout_2026-05-15.md`,
+  making Wave 3 Species and Public History Expansion the recommended next
+  docs-only design pass.
+  The 2026-05-14 docs-only planning pass completed the Research, Content, and
+  Financials OLI lanes while leaving Company project `75` active for the
+  remaining implementation gate, App project `76` planned for task `412`, and
+  Web/Growth tasks `400-405` open.
+  This is operating
   coordination only; no schema, App runtime, public site, paid-service, local
   model install, automated-write, export/import, Planner/Supabase write, or
   source-of-truth cutover has been approved by the plan itself.
@@ -115,6 +174,401 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-15:** Josue approved using the task `409` REST/OpenAPI plus App
+  migration-source audit as sufficient for a design-only App proposal despite
+  the unresolved live SQL metadata access gap. Company documented the
+  **Operation Living Intelligence Wave 1 No-Write Graph Dry-Run Proposal**:
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_no_write_dry_run_proposal_2026-05-15.md`.
+  Company then prepared the App-facing design review packet:
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_app_design_review_packet_2026-05-15.md`.
+  Company also completed the App design-review readiness note:
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_app_design_review_readiness_2026-05-15.md`.
+  The proposal and packet name the exact Lake Post-Seal source manifest,
+  recommended App-owned ignored local output location, JSONL graph seed format,
+  blocked edge handling, validation checks, readback examples, review owners,
+  and fallback docs-only path. App repo context showed `out/` is ignored and
+  `.local/` is not, so the recommended future local output path now uses
+  `M:\miniBIOTA\miniBIOTA_App\out\operation_living_intelligence\wave_1_lake_post_seal\`.
+  Company's pre-review recommendation is JSONL-only first, with Memgraph
+  optional later.
+  At that gate, the next step was App design review only. No graph
+  import, export job, Memgraph install, App runtime/schema change,
+  Supabase/Planner write, media metadata write, public site behavior, model
+  run, cloud upload, paid service, automation, public commitment, sponsor
+  commitment, financial commitment, legal decision, launch target, roadmap
+  commitment, or source-of-truth change was approved.
+- **2026-05-15:** Company generated the first Operation Living Intelligence
+  Wave 1 JSONL dry run under App's ignored local output folder:
+  `M:\miniBIOTA\miniBIOTA_App\out\operation_living_intelligence\wave_1_lake_post_seal\`.
+  Company documented the generation record at
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_jsonl_dry_run_generation_2026-05-15.md`.
+  The generated files are `source_manifest.json`, `nodes.jsonl`,
+  `edges.jsonl`, `blocked_edges.jsonl`, `validation_report.json`, and
+  `readback_examples.md`. Follow-up import-shape review added `3`
+  out-of-seed chronicle species context nodes and `10` blocked-claim guardrail
+  nodes so blocked edges have valid endpoints for a future graph import.
+  Current validation returns `pass_with_review_required_import_shape_ready`
+  with `67` nodes, `96` edges, `13` blocked edges, valid normal and blocked
+  edge endpoints, no sensitive source families, no public output approval, and
+  no canonical writeback. Company documented the Memgraph readiness review at
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_memgraph_import_readiness_review_2026-05-15.md`.
+  No Memgraph import, App code/runtime/schema change,
+  Supabase/Planner write, public site behavior, media metadata write, model
+  run, cloud upload, paid service, automation, public commitment, sponsor
+  commitment, financial commitment, legal decision, launch target, roadmap
+  commitment, or source-of-truth change was approved or performed.
+- **2026-05-15:** Company created the App-owned Operation Living Intelligence
+  Wave 1 JSONL regeneration helper:
+  `M:\miniBIOTA\miniBIOTA_App\tools\generate-oli-wave1-jsonl.js`.
+  Company documented the helper at
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_app_regeneration_helper_2026-05-15.md`.
+  Running `node tools/generate-oli-wave1-jsonl.js` from App regenerated the
+  same import-shaped JSONL package under App's ignored `out/` tree with
+  `67` nodes, `96` edges, `13` blocked edges, and validation status
+  `pass_with_review_required_import_shape_ready`. The helper performs
+  read-only Supabase REST reads and local generated-file writes only. No
+  Supabase/Planner write, Storage write, media metadata write, public site
+  change, App runtime/schema/migration/package change, Memgraph import, model
+  run, cloud upload, paid service, automation, public commitment, sponsor
+  commitment, financial commitment, legal decision, launch target, roadmap
+  commitment, or canonical writeback was performed.
+- **2026-05-15:** Company documented the Operation Living Intelligence Wave 1
+  local Memgraph import proposal:
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_memgraph_import_proposal_2026-05-15.md`.
+  The proposal recommends generating a local `import.cypher` file from the
+  regenerated JSONL package before starting Memgraph, then separately approving
+  Docker/Memgraph runtime, import, and readback. Current Memgraph packaging
+  review favors the current Docker Compose/install-helper path after review and
+  treats the old one-container platform image as fallback/reference because the
+  platform repo marks it deprecated after the last published platform image.
+  No Docker/Memgraph install, service start, graph import, App runtime/schema
+  change, Supabase/Planner write, public output, media metadata write, model
+  run, cloud upload, paid service, automation, public commitment, sponsor
+  commitment, financial commitment, legal decision, launch target, roadmap
+  commitment, or canonical writeback was performed.
+- **2026-05-15:** With Josue's approval for the narrow next step, Company
+  created the App-owned Cypher import-file generator:
+  `M:\miniBIOTA\miniBIOTA_App\tools\generate-oli-wave1-cypher.js`.
+  It generated
+  `M:\miniBIOTA\miniBIOTA_App\out\operation_living_intelligence\wave_1_lake_post_seal\import.cypher`
+  from the validated JSONL package. Company documented the result at
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_cypher_import_file_generation_2026-05-15.md`.
+  The generated file contains `67` node merge statements, `109` relationship
+  merge statements, and `13` blocked guardrail relationship imports. Safety
+  scan found no `LOAD`, `CALL`, HTTP, secret, Supabase, Planner, or Storage
+  hooks. No Docker/Memgraph runtime, graph import, App runtime/schema change,
+  Supabase/Planner write, public output, media metadata write, model run,
+  cloud upload, paid service, automation, public commitment, sponsor
+  commitment, financial commitment, legal decision, launch target, roadmap
+  commitment, or canonical writeback was performed.
+- **2026-05-15:** With Josue's approval to proceed to the runtime check,
+  Company verified the active shell/machine for local Memgraph execution. No
+  `docker`, Docker Desktop standard install path, `memgraph`, or `mgconsole`
+  command was visible, and ports `7687`, `7444`, and `3000` had no active
+  listener. Company documented the block at
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_memgraph_runtime_check_2026-05-15.md`.
+  The generated `import.cypher` remains ready, but the actual graph import is
+  blocked until Docker Desktop or another local Memgraph runtime is installed/
+  started and available in the session. No Docker/Memgraph install, service
+  start, graph import, App runtime/schema change, Supabase/Planner write,
+  public output, media metadata write, model run, cloud upload, paid service,
+  automation, public commitment, sponsor commitment, financial commitment,
+  legal decision, launch target, roadmap commitment, or canonical writeback
+  was performed.
+- **2026-05-15:** Company completed the first actual disposable local Memgraph
+  import/readback test for Operation Living Intelligence Wave 1:
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_memgraph_import_readback_2026-05-15.md`.
+  Docker Desktop was installed through the official `winget` package, WSL/
+  Docker initialized, and a disposable `memgraph/memgraph-mage:latest`
+  container reported Memgraph v3.10.1. The generated `import.cypher` imported
+  successfully after stripping comment-only lines for `mgconsole`
+  compatibility. Readback confirmed `67` nodes, `109` relationships, Daphnia/
+  Ghost Shrimp/Mesostoma/Moina blocked-claim paths, `13` unreviewed media
+  candidates with `media_review_required`, `0` direct observation-to-content/
+  chronicle source links, and `0` canonical writebacks. The disposable
+  container was stopped and removed, and Docker Desktop was stopped after the
+  test. No Supabase/Planner write, Storage write, media metadata write, public
+  site change, App runtime/schema/migration/package change, cloud upload, paid
+  service, automation, public commitment, sponsor commitment, financial
+  commitment, legal decision, launch target, roadmap commitment, or canonical
+  writeback was performed.
+- **2026-05-15:** Company/App completed a direct-import compatibility pass for
+  Wave 1 Memgraph prep. App updated
+  `M:\miniBIOTA\miniBIOTA_App\tools\generate-oli-wave1-cypher.js` so
+  regenerated `import.cypher` starts directly with executable Cypher instead
+  of a comment-only header. A fresh disposable Memgraph container imported the
+  regenerated file directly through `mgconsole` with no comment-stripping
+  workaround. Compact readback again confirmed `67` nodes, `109`
+  relationships, expected blocked-claim paths, `13` media candidates requiring
+  review, `0` direct observation source links, and `0` non-`none` canonical
+  writebacks. The disposable container was stopped/removed and Docker Desktop
+  was stopped after verification.
+- **2026-05-15:** App/Company added and verified a repeatable one-command
+  Wave 1 Memgraph smoke-test helper:
+  `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave1-memgraph-smoke.js`.
+  The helper starts a disposable `memgraph/memgraph-mage:latest` container,
+  imports the generated `import.cypher`, runs compact safety readbacks, and
+  removes the container. Verified output: `67` nodes, `109` relationships,
+  blocked claims/media/source-link/writeback checks passed, and the disposable
+  container was stopped/removed. Company documented the helper at
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_memgraph_smoke_helper_2026-05-15.md`.
+  Docker Desktop was stopped after verification.
+- **2026-05-15:** Company closed the immediate Wave 1 dependency-policy
+  question:
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_pilot_dependency_decision_2026-05-15.md`.
+  Docker Desktop plus Memgraph is accepted only as a local disposable pilot
+  dependency for repeatable Wave 1 smoke tests. It is not day-to-day
+  infrastructure, a persistent graph database service, an automated sync path,
+  a canonical source of truth, or approval for Supabase/Planner/media/public
+  writes. No user action is required right now; durable graph automation still
+  waits on a separate implementation proposal, credential/read-scope design,
+  drift checks, security review, and future approval.
+- **2026-05-15:** App now has an operator note for the Operation Living
+  Intelligence Wave 1 helper workflow:
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave1.md`.
+  Environment inspection found no SQL-capable database connection string or
+  Postgres environment variables available to resolve the task `409` live SQL
+  metadata gap from this session. The current App path remains REST/OpenAPI
+  plus local helper generation and disposable Memgraph smoke testing only.
+- **2026-05-15:** App now has a prepared read-only SQL metadata inspection
+  packet for the next Operation Living Intelligence implementation gate:
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-sql-metadata-check.md`
+  and
+  `M:\miniBIOTA\miniBIOTA_App\tools\inspect-oli-wave1-sql-metadata.sql`.
+  App also has optional runner
+  `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave1-sql-metadata-check.ps1`.
+  The SQL file contains catalog `SELECT` statements only and is intended to
+  prove live columns, constraints, indexes, RLS state, policies, triggers,
+  selected function metadata, and selected grants once a SQL-capable read-only
+  path exists. It was not run in this session because no `psql`, Postgres
+  connection string, or MCP SQL database tool was available.
+- **2026-05-15:** App added and verified a no-Docker Operation Living
+  Intelligence Wave 1 JSONL readback helper:
+  `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave1-jsonl-readback.js`.
+  Company documented the helper at
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_jsonl_readback_helper_2026-05-15.md`.
+  The helper reads the generated JSONL files, writes ignored local readback
+  reports, and verifies graph safety/value without Docker or Memgraph.
+  Verified result: `67` nodes, `96` edges, `13` blocked edges, `109`
+  relationships with blocked guardrails, Daphnia/Ghost Shrimp/Mesostoma/Moina
+  blockers present, `13` unreviewed media candidates, `0` direct observation
+  source links, `0` canonical writebacks, and `9 / 10` Stage 3 questions
+  passing or provisionally passing. Public-surface reuse remains the one
+  partial/fail area.
+- **2026-05-15:** Company documented the Wave 1 public reuse boundary that
+  explains the remaining Stage 3 question `5` gap:
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_public_reuse_boundary_2026-05-15.md`.
+  The boundary names candidate public source identities and surfaces such as
+  `content_pipeline:338`, `chronicle:30`, `/chronicles#chronicle-30`,
+  Freshwater Lake, and the relevant species pages, but keeps them as
+  review-gated public-reuse candidates only. It does not approve Web route
+  changes, species-card edits, chronicle edits, public ecosystem-map output,
+  media captions, Content copy, Supabase/Planner writes, or public messaging.
+- **2026-05-15:** Company documented the proposed Wave 1.1 public reuse
+  sidecar:
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_1_public_reuse_sidecar_proposal_2026-05-15.md`.
+  The proposal keeps public reuse mapping separate from the core Wave 1 graph
+  and defines candidate records, review gates, sidecar relationships,
+  validation requirements, safe readback language, stop conditions, and the
+  next App-owned local-helper gate. It does not approve App helper
+  implementation, durable Memgraph runtime, graph automation, Web route
+  changes, Content copy, media captions, Supabase/Planner writes, public
+  messaging, or source-of-truth migration.
+- **2026-05-15:** Company/App generated the local Wave 1.1 public reuse
+  sidecar with the App helper
+  `M:\miniBIOTA\miniBIOTA_App\tools\generate-oli-wave1-public-reuse-sidecar.js`.
+  Company documented the generation record at
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_1_public_reuse_sidecar_generation_2026-05-15.md`.
+  The generated ignored sidecar files live under
+  `M:\miniBIOTA\miniBIOTA_App\out\operation_living_intelligence\wave_1_lake_post_seal\public_reuse_sidecar\`
+  and returned `pass_with_review_required_public_reuse_sidecar_ready` with
+  `11` public surfaces, `11` public reuse candidates, `7` reuse gates, and
+  `47` public reuse edges. Question `5` can now be answered as
+  `review_required` candidate public surfaces, not public-output approval. App
+  also updated the no-Docker JSONL readback helper so, when the sidecar is
+  present, Stage 3 now reports `10 / 10` pass or provisional-pass with question
+  `5` as `provisional_pass`. No Web route change, Content copy, media caption,
+  Supabase/Planner write, App runtime/schema/package change, durable Memgraph
+  runtime, graph automation, public messaging, or source-of-truth migration
+  occurred.
+- **2026-05-15:** Company/App prepared a Supabase SQL Editor friendly JSON
+  packet for the remaining Wave 1 SQL metadata gate:
+  `M:\miniBIOTA\miniBIOTA_App\tools\inspect-oli-wave1-sql-metadata-json.sql`.
+  Company documented the packet at
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_sql_metadata_json_packet_2026-05-15.md`.
+  The packet returns one `oli_wave1_sql_metadata_readback` JSON result for
+  columns, constraints, indexes, RLS state, policies, triggers, selected
+  function metadata, and selected grants. Static non-comment SQL keyword scan
+  found no write/DDL/security/RPC keywords, but the query was not run because
+  the active session still has no `psql`, Postgres connection string, or
+  Supabase MCP SQL database tool. This is now the clear user-run gate before
+  durable graph automation or persistent infrastructure.
+- **2026-05-15:** Josue ran the Wave 1 SQL metadata JSON packet in Supabase SQL
+  Editor and provided the result. Company reviewed the metadata and documented
+  the review at
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_sql_metadata_review_2026-05-15.md`.
+  All `17` target tables exist; key columns, source/link constraints, and
+  indexes support the current Wave 1 local graph proof. RLS is enabled across
+  the target tables, with sparse public/authenticated policies, so durable
+  projection must use an internal protected App-owned read path or narrowly
+  scoped database role rather than browser/public access. Broad table grants
+  are a security-review signal before automation. The SQL metadata gap is
+  resolved for review, but durable graph automation, persistent Memgraph
+  infrastructure, public graph output, and canonical writeback remain gated.
+- **2026-05-15:** App prepared the Wave 1 durable projection design:
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave1-durable-projection-design.md`.
+  Company documented the cross-domain decision at
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_durable_projection_design_2026-05-15.md`.
+  The design keeps the next implementation posture at manual internal run only:
+  protected read path, ignored local output, rebuildable files, validation and
+  drift gates, no public output, no canonical writeback, and explicit stop
+  conditions. It does not approve scheduled sync, persistent Memgraph service,
+  App runtime integration, Supabase/Planner writes, Web behavior, Content copy,
+  paid services, or public commitments.
+- **2026-05-15:** Company closed Operation Living Intelligence Wave 1 as a
+  successful local proof and documented the next-wave handoff at
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_completion_and_next_waves_2026-05-15.md`.
+  The decision is to pause graph infrastructure here: no persistent Memgraph,
+  scheduled sync, App runtime integration, public graph output, canonical
+  writeback, paid graph service, or source-of-truth migration is approved.
+  At that gate, the recommended next work was a docs-only Wave 2 Content Story
+  Graph design pass before building more tooling.
+- **2026-05-15:** Company completed the docs-only Operation Living Intelligence
+  Wave 2 Content Story Graph design pass:
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_2_content_story_graph_design_2026-05-15.md`.
+  The design scopes Wave 2 around the question: what story is this part of,
+  what has already been published, what is planned, and what is only candidate
+  material? It defines candidate source families, node/edge types, status
+  rules, pilot questions, validation gates, output boundaries, and
+  cross-domain review owners. It does not approve App helper implementation,
+  Memgraph/Docker use, persistent infrastructure, Supabase/Planner writes,
+  content/calendar/pipeline/chronicle writes, media metadata, Web behavior,
+  Content copy, Research claim changes, automation, public output, or
+  source-of-truth migration.
+- **2026-05-15:** Company selected the first bounded Wave 2 packet:
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_2_lake_post_seal_packet_selection_2026-05-15.md`.
+  The selected anchor is the Lake Post-Seal story around `content_pipeline.id =
+  338` and `chronicles.id = 30`, reusing the proven Wave 1 source context while
+  adding a read-only source-availability gate for story threads `1`, `3`, `5`,
+  linked story beats, related `content_calendar` rows, and source-map joins.
+  No App helper work, graph build, Memgraph/Docker use, Supabase/Planner write,
+  Content record change, Web behavior, public output, or source-of-truth
+  migration is approved by the selection.
+- **2026-05-15:** Company completed the read-only source-availability review
+  for the selected Wave 2 Lake Post-Seal packet:
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_2_lake_post_seal_source_availability_review_2026-05-15.md`.
+  The review confirmed the published anchor `content_pipeline.id = 338`, the
+  public chronicle anchor `chronicles.id = 30`, active story threads `1`,
+  `3`, and `5`, open/advanced loops `1`, `2`, `3`, `4`, and `7`, observations
+  `170-178`, five available/unseen story beats, two loop-linked
+  `content_calendar` follow-up rows, and `13` media candidates still
+  `reviewed = false`. The packet is source-available for a future no-write
+  App implementation proposal; no helper, graph build, Memgraph/Docker use,
+  public output, source-of-truth migration, or live record write is approved.
+- **2026-05-15:** Company prepared the no-write Operation Living Intelligence
+  Wave 2 App implementation proposal:
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_2_no_write_app_implementation_proposal_2026-05-15.md`.
+  The proposal scopes a future local JSONL/readback package under App's ignored
+  `out\operation_living_intelligence\wave_2_content_story_graph\lake_post_seal\`
+  path, with source manifest, nodes, edges, blocked edges, validation, and
+  story readback files. It is ready for App-scoped design review only if
+  explicitly approved; no App helper, graph generation, Memgraph/Docker use,
+  Supabase/Planner write, public output, automation, or source-of-truth
+  migration is approved.
+- **2026-05-15:** After user approval to continue, Company prepared the
+  Operation Living Intelligence Wave 2 App design-review packet:
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_2_app_design_review_packet_2026-05-15.md`.
+  Company read App operating rules, App ignored-output state, App Supabase
+  safety memory/skill, and the Wave 1 OLI helper pattern. The packet asks App
+  to review the proposed ignored output path, JSONL/readback-first shape,
+  source refresh pattern, validation/readback checks, and stop conditions only.
+  No App repo file, App helper, graph generation, Supabase/Planner write,
+  public output, or source-of-truth record changed.
+- **2026-05-15:** App completed the docs-only Operation Living Intelligence
+  Wave 2 design review at
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave2-design-review.md`.
+  The review accepts the proposed ignored output path and JSONL/readback-first
+  shape for a separately approved helper, keeps Cypher/Memgraph
+  deferred, requires explicit blocked-inference/status validation, and names
+  explicit helper implementation approval as the next gate. During the review
+  itself, no App helper, graph generation, runtime/schema change,
+  Supabase/Planner write, public output, media metadata change, automation, or
+  source-of-truth migration was performed.
+- **2026-05-15:** After Josue approved the smallest local Wave 2 helper, App
+  added and verified
+  `M:\miniBIOTA\miniBIOTA_App\tools\generate-oli-wave2-content-story-jsonl.js`
+  and
+  `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave2-content-story-readback.js`.
+  Generated files live under App's ignored
+  `out\operation_living_intelligence\wave_2_content_story_graph\lake_post_seal\`
+  folder. Validation returned
+  `pass_with_review_required_content_story_jsonl_ready` with `63` nodes,
+  `136` normal edges, and `34` blocked edges; readback returned
+  `pass_with_review_required_content_story_readback_ready`. One
+  `story_beat:6` source link to out-of-scope `story_thread:30` is preserved as
+  a blocked inference instead of expanding the approved scope. Company
+  documented the result at
+  `domains/company/operation_living_intelligence_wave_2_jsonl_readback_helper_2026-05-15.md`.
+  No Docker/Memgraph use, App runtime/schema change, Supabase/Planner write,
+  media metadata change, public output, automation, canonical writeback, or
+  source-of-truth migration was approved or performed.
+- **2026-05-15:** Company reviewed the generated Wave 2 JSONL/readback output
+  and documented the next-gate decision at
+  `domains/company/operation_living_intelligence_wave_2_readback_review_2026-05-15.md`.
+  The decision is to close Wave 2 as a successful no-Docker local proof and
+  skip Cypher/Memgraph for this wave unless a future query needs graph runtime
+  behavior that JSONL/readback cannot provide. The recommended next work is a
+  docs-only Wave 3 Species and Public History Expansion design pass, while
+  Wave 2 remains a review packet for Content, Research, Web, App, and media
+  review. No public output, Content copy, Research claim, Web behavior,
+  App runtime change, media metadata write, Supabase/Planner write,
+  automation, canonical writeback, or source-of-truth migration was approved.
+- **2026-05-15:** Company created the Operation Living Intelligence session
+  closeout handoff:
+  `domains/company/operation_living_intelligence_session_closeout_2026-05-15.md`.
+  It records Wave 1 as a complete local proof, Wave 2 as a complete no-Docker
+  local proof, the current approved/not-approved boundaries, remaining work by
+  wave, Planner/write boundaries, and the next-session startup path. The
+  recommended next task is Wave 3 Species and Public History Expansion as a
+  docs-only design pass. No live Planner/Supabase records, public behavior,
+  App runtime, media metadata, Content copy, Research claims, automation,
+  canonical writeback, or source-of-truth migration changed.
+- **2026-05-15:** Company completed the read-only Operation Living Intelligence
+  task `409` REST/OpenAPI and App migration-source audit pass:
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md`.
+  The audit confirmed `108` OpenAPI-visible tables/views, exact relevant row
+  counts, the Lake Post-Seal source rows, candidate species/observation/link
+  IDs, media asset/link state, privacy/publicness tiers, candidate export
+  manifest rows, and validation-query requirements for a future no-write,
+  derived-only graph seed proposal. It also identified the remaining task
+  `409` gap: live constraints, indexes, RLS policies, and triggers still need
+  SQL-capable App/Supabase inspection or an explicit decision to proceed only
+  to a design proposal with the narrower audit. Josue approved a read-only SQL
+  metadata inspection the same day, but the active session had no usable
+  SQL-capable path: catalog tables were not exposed through PostgREST,
+  active-session MCP resources/templates were empty, and direct hosted MCP
+  endpoint reachability was blocked. No Planner/Supabase write, App
+  behavior, schema, public site behavior, graph import, graph data, media
+  metadata, model run, cloud upload, paid service, automation, public
+  commitment, sponsor commitment, financial commitment, legal decision, launch
+  target, roadmap commitment, or source-of-truth change was approved.
+- **2026-05-15:** Company created the docs-only **Operation Living Intelligence
+  Wave 1 Living Atlas Graph Seed Handoff**:
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_living_atlas_graph_seed_handoff_2026-05-15.md`.
+  The handoff converts the completed Research ontology/candidate/path-safety/
+  evaluation work, Content source/publicness readiness, App boundary planning,
+  Financials cost posture, and live Planner readback into a bounded
+  App/Research/Content implementation-readiness packet for a future no-write,
+  derived-only Lake Post-Seal graph seed dry-run proposal. At that point, task
+  `409` remained the implementation-readiness gate, with the source-row audit
+  pass documented and live SQL metadata proof still required before any
+  export/import, graph build, vector index, analytics pull, model batch, cache,
+  or automation job. The live SQL metadata proof was later completed for the
+  current Wave 1 proof through the user-run JSON SQL packet. No
+  Planner/Supabase write, App behavior, public site
+  behavior, graph import, graph data, media metadata, paid service, automation,
+  public commitment, sponsor commitment, financial commitment, legal decision,
+  launch target, roadmap commitment, or source-of-truth change was approved.
 - **2026-05-14:** Research completed Operation Living Intelligence task `391`
   as the first Research-owned graph ontology brief for the Lake Post-Seal graph
   seed:
@@ -895,6 +1349,38 @@ Brain no longer mirrors Company docs. Load active Company detail from the source
 | `skills/coordinate-cross-domain-priorities/reference/operation-living-intelligence-plan.md` | Operation Living Intelligence agent data-stack architecture plan |
 | `skills/coordinate-cross-domain-priorities/reference/operation-living-intelligence-data-projection-matrix.md` | Operation Living Intelligence source-to-derived-layer projection matrix and platform ledger |
 | `domains/company/operation_living_intelligence_supabase_schema_audit_2026-05-13.md` | First read-only live Supabase schema audit for Operation Living Intelligence |
+| `domains/company/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md` | Task 409 REST/OpenAPI source-row audit and SQL metadata access-gap record |
+| `domains/company/operation_living_intelligence_wave_1_living_atlas_graph_seed_handoff_2026-05-15.md` | Wave 1 Living Atlas graph seed Company/App/Research/Content handoff |
+| `domains/company/operation_living_intelligence_wave_1_no_write_dry_run_proposal_2026-05-15.md` | Wave 1 design-only App proposal for a no-write graph dry run |
+| `domains/company/operation_living_intelligence_wave_1_app_design_review_packet_2026-05-15.md` | App-facing design review packet for the Wave 1 no-write graph dry-run proposal |
+| `domains/company/operation_living_intelligence_wave_1_app_design_review_readiness_2026-05-15.md` | Company-side App design review readiness and JSONL-first recommendation |
+| `domains/company/operation_living_intelligence_wave_1_jsonl_dry_run_generation_2026-05-15.md` | Generation record for the first ignored local Wave 1 JSONL dry run |
+| `domains/company/operation_living_intelligence_wave_1_memgraph_import_readiness_review_2026-05-15.md` | Memgraph import readiness review for the Wave 1 JSONL files |
+| `domains/company/operation_living_intelligence_wave_1_app_regeneration_helper_2026-05-15.md` | App helper record for repeatable Wave 1 JSONL regeneration |
+| `domains/company/operation_living_intelligence_wave_1_memgraph_import_proposal_2026-05-15.md` | Local Memgraph import proposal for Wave 1 generated JSONL |
+| `domains/company/operation_living_intelligence_wave_1_cypher_import_file_generation_2026-05-15.md` | Generated local `import.cypher` record for Wave 1 Memgraph import prep |
+| `domains/company/operation_living_intelligence_wave_1_memgraph_runtime_check_2026-05-15.md` | Runtime availability check showing local Memgraph import blocked until Docker/Memgraph is available |
+| `domains/company/operation_living_intelligence_wave_1_memgraph_import_readback_2026-05-15.md` | First disposable local Memgraph import and safety readback result |
+| `domains/company/operation_living_intelligence_wave_1_memgraph_smoke_helper_2026-05-15.md` | App helper record for repeatable disposable Memgraph import/readback smoke tests |
+| `domains/company/operation_living_intelligence_wave_1_pilot_dependency_decision_2026-05-15.md` | Decision that Docker/Memgraph remains a local disposable Wave 1 pilot dependency only |
+| `domains/company/operation_living_intelligence_wave_1_jsonl_readback_helper_2026-05-15.md` | App helper record for no-Docker JSONL safety/value readbacks |
+| `domains/company/operation_living_intelligence_wave_1_public_reuse_boundary_2026-05-15.md` | Public reuse boundary for Stage 3 question 5 and future Wave 1.1 sidecar design |
+| `domains/company/operation_living_intelligence_wave_1_1_public_reuse_sidecar_proposal_2026-05-15.md` | Proposed Wave 1.1 sidecar model for review-gated public reuse candidates |
+| `domains/company/operation_living_intelligence_wave_1_1_public_reuse_sidecar_generation_2026-05-15.md` | Generation record for the local Wave 1.1 public reuse sidecar helper and output |
+| `domains/company/operation_living_intelligence_wave_1_sql_metadata_json_packet_2026-05-15.md` | User-run JSON SQL packet for the remaining live metadata gate |
+| `domains/company/operation_living_intelligence_wave_1_sql_metadata_review_2026-05-15.md` | Review of the live SQL metadata readback and durable automation implications |
+| `domains/company/operation_living_intelligence_wave_1_durable_projection_design_2026-05-15.md` | Company decision record for the App-owned manual internal durable projection design |
+| `domains/company/operation_living_intelligence_wave_1_manual_projection_helper_2026-05-15.md` | Company record for the verified App manual Wave 1 projection helper |
+| `domains/company/operation_living_intelligence_wave_1_completion_and_next_waves_2026-05-15.md` | Company Wave 1 completion decision and next-wave sequencing handoff |
+| `domains/company/operation_living_intelligence_wave_2_content_story_graph_design_2026-05-15.md` | Wave 2 docs-only Content Story Graph design and source-packet selection gate |
+| `domains/company/operation_living_intelligence_wave_2_lake_post_seal_packet_selection_2026-05-15.md` | Selected first Wave 2 Lake Post-Seal story packet and read-only source-availability gate |
+| `domains/company/operation_living_intelligence_wave_2_lake_post_seal_source_availability_review_2026-05-15.md` | Read-only source availability result for the first Wave 2 packet |
+| `domains/company/operation_living_intelligence_wave_2_no_write_app_implementation_proposal_2026-05-15.md` | Design-only no-write Wave 2 App implementation proposal |
+| `domains/company/operation_living_intelligence_wave_2_app_design_review_packet_2026-05-15.md` | Company-side App design-review handoff for Wave 2 |
+| `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave2-design-review.md` | App-side docs-only Wave 2 design review |
+| `domains/company/operation_living_intelligence_wave_2_jsonl_readback_helper_2026-05-15.md` | Verified App local JSONL/readback helper record for Wave 2 |
+| `domains/company/operation_living_intelligence_wave_2_readback_review_2026-05-15.md` | Company review closing Wave 2 as a no-Docker proof and deferring Cypher/Memgraph |
+| `domains/company/operation_living_intelligence_session_closeout_2026-05-15.md` | Operation Living Intelligence session handoff, remaining work, and next-session startup path |
 | `skills/review-roadmap-implications/SKILL.md` | Playbook for milestone, project, deadline, quarterly plan, and roadmap questions |
 | `skills/review-roadmap-implications/reference/strategic-roadmap.md` | Exact roadmap reference |
 | `skills/run-operating-review/SKILL.md` | Playbook for Company operating reviews, dependency-map refreshes, Programs/Operations governance, and roadmap cadence checks |

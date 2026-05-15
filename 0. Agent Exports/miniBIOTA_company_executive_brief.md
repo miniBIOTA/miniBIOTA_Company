@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Executive Brief
 
-- Generated: 2026-05-14 16:53:17 -04:00
+- Generated: 2026-05-15 14:05:43 -04:00
 - Purpose: Company-side synthesis of domain reports.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 
@@ -163,7 +163,7 @@
 ### Current Status
 - The site is public-only; legacy Flask admin has been removed from active web code.
 - Public telemetry consumes the live read-only Supabase snapshot through `/api/telemetry/overview`, `/live-monitoring`, and paired biome detail weather panels.
-- Web context now uses the repo-native memory/skills architecture in `M:\miniBIOTA\miniBIOTA_Web\`.
+- The public `/faq` About page has a Brand/Web approved implementation pass as of 2026-05-15: About-first copy, owner-approved headline direction, read-only telemetry boundary language, restrained supporter/contributor handling, desktop/mobile visual approval, and route-contract coverage.
 
 ### Priorities
 - Keep Web memory and active Company Web reports aligned with the public-only, local-first telemetry and control architecture.

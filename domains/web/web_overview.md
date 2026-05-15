@@ -2,7 +2,7 @@
 id: web_overview
 title: 9. miniBIOTA_Web
 domain: web_and_digital_presence
-last_updated: 2026-05-14
+last_updated: 2026-05-15
 tags: [web, public-site, flask, telemetry, public-only, design-system, planner]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -23,6 +23,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Current State
 - The site is public-only; legacy Flask admin has been removed from active web code.
 - Public telemetry consumes the live read-only Supabase snapshot through `/api/telemetry/overview`, `/live-monitoring`, and paired biome detail weather panels.
+- The public `/faq` About page has a Brand/Web approved implementation pass as of 2026-05-15: About-first copy, owner-approved headline direction, read-only telemetry boundary language, restrained supporter/contributor handling, desktop/mobile visual approval, and route-contract coverage.
 - Web context now uses the repo-native memory/skills architecture in `M:\miniBIOTA\miniBIOTA_Web\`.
 - Brain no longer keeps a Web `docs/` mirror; use the source repo's memory/skills/reference structure for detailed Web context.
 - App Planner/Supabase is the live Web work queue under `work_domains.key = web` / `domain_id = 8`; current non-archived Web project records are `36` through `41`, `57`, `68`, and `79`, with legacy/internal review project `42` archived.
@@ -34,13 +35,18 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Chronicle short-form video playback uses `media_type='short'` plus `/shorts/` URLs for vertical Shorts rendering.
 - Operator/admin workflows belong in `miniBIOTA_App`, not the public site.
 - The "Biological Startup" voice should remain technically precise, accessible, ecological, and maker-clear.
+- Brand owns public website visual direction for imagery, hero selection,
+  caption tone, and approval boundaries; Web owns implementation, responsive
+  rendering, optimization, accessibility mechanics, route contracts, and
+  design-system integration. The approved visual direction is dark,
+  observational, organism-forward, and instrument-like.
 
 ## Priorities
 - Keep Web memory and active Company Web reports aligned with the public-only, local-first telemetry and control architecture.
 - Use App Planner/Supabase for live Web task status; keep Markdown focused on architecture, rules, scope, and decisions.
 - Continue active UX Lab work through Planner project `40`; use `/ux-lab` for UX states, interaction rules, page patterns, and journeys while keeping development routes out of production navigation. The next UX step should be browser/mobile visual QA when tooling is available or a separately accepted live-surface application.
 - Keep the now-connected App/Hardware coordinator-to-website telemetry handoff production-verified, public-safe, and read-only, including the new biome weather presentation.
-- Work through the cleaned Web Planner roadmap: About/supporters and Patreon acknowledgment content, Substack signup/list migration and weekly newsletter assembly, events/news/chronicles product passes, engineering imagery, telemetry hardening, and species-card data polish.
+- Work through the cleaned Web Planner roadmap: Substack signup/list migration and weekly newsletter assembly, events/news/chronicles product passes, engineering imagery, telemetry hardening, species-card data polish, and any later owner-approved supporter/sponsor/Patreon/contributor/member/funding recognition.
 
 ## Risks / Gaps
 - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
@@ -49,6 +55,9 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - The owner roadmap is captured in Planner, but several tasks still need source assets, copy, policy decisions, or cross-domain input before implementation.
 - `/events`, `/news`, and `/chronicles` remain active public routes but need later content/product development.
 - Engineering system pages still need real system images to replace placeholders.
+- Supporter, sponsor, Patreon, contributor, partner, membership, funding, and
+  public-credit visuals remain owner-approval gated even though the About page
+  now has safe group acknowledgment language.
 
 ## Files In This Folder
 - `web_brief.md` - active Company manager-facing report brief for Web.

@@ -1,8 +1,8 @@
-﻿---
+---
 id: app_brief
 title: App Operations Brief
 domain: app_operations
-last_updated: 2026-05-14
+last_updated: 2026-05-15
 tags: [app, electron, operations, planner, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -46,7 +46,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   2`), and `Aquatic Club Talk Readiness` (`work_programs.id = 3`), with
   domain-owned projects linked through `work_program_projects`.
 - App project management is now Planner-integrated under
-  `work_domains.key = app` / `domain_id = 9`. After the 2026-05-12 cross-domain cleanup and the 2026-05-14 additions of Operation Living Intelligence visual-media task `412` plus App Quality System Roadmap project `82`, App has 12 total work projects, 11 non-archived projects, and 104 task rows (22 open, 82 done). Project `11` is completed/archived as stale wiring work. The initial quality-system rollout in project `82` is complete with all 72 roadmap task rows done. Active App Planner work is now concentrated in runtime, sources/workflow polish, Field Observer, media reliability, monitoring, Supabase/storage safety, and Aquatic Club support.
+  `work_domains.key = app` / `domain_id = 9`. After the 2026-05-15 Mobile Field Observer Quality System mirror, App has a new planned App-domain project for tomorrow: `Mobile Field Observer Quality System` (`work_projects.id = 84`), scheduled for 2026-05-16 with 6 parent phase tasks and 33 child tasks. Project `11` is completed/archived as stale wiring work. The initial quality-system rollout in project `82` is complete with all 72 roadmap task rows done. Active App Planner work is now concentrated in runtime, sources/workflow polish, Field Observer mobile quality-system work, media reliability, monitoring, Supabase/storage safety, and Aquatic Club support.
 - Prompt Library has replaced the old static Team reference surface. Migration 012 was applied successfully by the user on 2026-05-11, making the `prompt_library` table live for reusable prompt records. Prompt create, edit, favorite, archive, and restore actions are live Supabase writes through the internal app REST path.
 - `miniBIOTA_App` now has repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
@@ -61,11 +61,167 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Maintain and extend the completed App quality-system rollout (`work_projects.id = 82`) as an active guardrail layer: App design tokens, shared primitives, fixture tests, scoped lints, dev-only UI Lab, Planner selectors, and explicit write plans are now in place. Ordinary Planner single-row patch paths now use write-plan persistence/readback; Programs/Operations write-plan coverage remains a future separately scoped cross-domain pass if needed.
 - Keep the desktop app as the forward operator surface while the public website remains read-only.
 - Preserve secret-key access as internal-only; do not expose app behavior as a public web surface.
-- Continue the Field Observer Android build with publishable-key/Auth/RLS access only; do not ship Supabase secret keys in the APK.
+- Continue the Field Observer Android build with publishable-key/Auth/RLS access only; do not ship Supabase secret keys in the APK. The next planned Field Observer work is the 2026-05-16 mobile quality-system project (`work_projects.id = 84`) to add mobile `--field-*` tokens, shared mobile UI primitives, a fixture-only mobile UI Lab, validation/lints, and explicit Capacitor sync/build/install closeout.
 - Verify packaged build behavior for Sharp/WebP image uploads when packaging work resumes.
 - Continue using the app for financials, Planner/content production, CRM, media tagging, and monitoring workflows.
 
 ## Recent Milestones
+
+- **2026-05-15:** Company completed the docs-only Operation Living
+  Intelligence Wave 2 Content Story Graph design:
+  `domains/company/operation_living_intelligence_wave_2_content_story_graph_design_2026-05-15.md`.
+  App's role is future protected-read helper/output ownership only if a later
+  implementation proposal is approved. The design recommends reusing the Wave
+  1 local-output/no-write pattern under a separate ignored output folder, but
+  does not approve App helper implementation, App runtime integration,
+  Memgraph/Docker use, Supabase/Planner writes, schema changes, public output,
+  automation, or source-of-truth migration.
+- **2026-05-15:** Company completed the read-only source-availability review
+  for the selected Wave 2 Lake Post-Seal packet:
+  `domains/company/operation_living_intelligence_wave_2_lake_post_seal_source_availability_review_2026-05-15.md`.
+  At that gate, the packet was ready for a future no-write App implementation
+  proposal, but helper work remained unapproved until later explicit approval.
+  Any App work should stay local JSONL/readback-first,
+  ignored-output-only, protected-read-only, and must
+  preserve `none` canonical writeback plus public/media/research review gates.
+- **2026-05-15:** Company prepared the no-write Wave 2 App implementation
+  proposal:
+  `domains/company/operation_living_intelligence_wave_2_no_write_app_implementation_proposal_2026-05-15.md`.
+  It proposes a future App-owned local package under
+  `out\operation_living_intelligence\wave_2_content_story_graph\lake_post_seal\`
+  with source manifest, JSONL graph files, blocked edges, validation, and
+  readback reports. At proposal time this was not App implementation approval;
+  later approval covered only the smallest local helper, not runtime/schema
+  change, Docker/Memgraph use, Supabase/Planner write, public behavior, or
+  automation.
+- **2026-05-15:** Company prepared the Wave 2 App design-review packet after
+  user approval to continue:
+  `domains/company/operation_living_intelligence_wave_2_app_design_review_packet_2026-05-15.md`.
+  Company read App operating rules, ignored-output state, Supabase safety
+  memory/skill, and Wave 1 OLI helper patterns. The packet is a design-review
+  handoff only; later approval covered only the smallest local helper and did
+  not approve runtime/schema changes, Supabase/Planner writes, public
+  behavior, or automation.
+- **2026-05-15:** App completed the docs-only Operation Living Intelligence
+  Wave 2 design review:
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave2-design-review.md`.
+  The review accepts the proposed ignored `out\operation_living_intelligence\wave_2_content_story_graph\lake_post_seal\`
+  output path and JSONL/readback-first shape for a separately approved helper.
+  It also keeps Cypher/Memgraph deferred and requires explicit status and
+  blocked-inference validation. During the review itself, no App helper,
+  graph files, runtime behavior, schema, Supabase/Planner write, media
+  metadata, public behavior, or automation changed.
+- **2026-05-15:** After Josue approved the smallest local Wave 2 helper, App
+  added and verified
+  `tools/generate-oli-wave2-content-story-jsonl.js` and
+  `tools/run-oli-wave2-content-story-readback.js`. The generated files are
+  ignored local output under
+  `out\operation_living_intelligence\wave_2_content_story_graph\lake_post_seal\`.
+  The generator returned
+  `pass_with_review_required_content_story_jsonl_ready` with `63` nodes,
+  `136` normal edges, and `34` blocked edges; the offline readback returned
+  `pass_with_review_required_content_story_readback_ready`. One selected story
+  beat link to out-of-scope `story_thread:30` is blocked instead of expanding
+  scope. No Docker/Memgraph use, App runtime/schema change, Supabase/Planner
+  write, Storage write, media metadata change, public behavior, automation,
+  canonical writeback, or source-of-truth migration changed. Company later
+  reviewed the generated output and closed Wave 2 as a successful no-Docker
+  local proof, so no Cypher/Memgraph or App runtime follow-up is currently
+  recommended for Wave 2.
+- **2026-05-15:** App added local Operation Living Intelligence Wave 1 helper
+  tooling and documentation for the Lake Post-Seal graph pilot:
+  `tools/generate-oli-wave1-jsonl.js`, `tools/generate-oli-wave1-cypher.js`,
+  `tools/run-oli-wave1-jsonl-readback.js`,
+  `tools/run-oli-wave1-memgraph-smoke.js`, and
+  `docs/operation-living-intelligence-wave1.md`. The helpers generate ignored
+  local JSONL/Cypher outputs, run no-Docker JSONL safety/value readbacks, run a
+  disposable local Memgraph smoke test when intentionally needed, and preserve
+  the boundary that Supabase/domain repos remain canonical. Verified JSONL
+  readback returned `67` nodes, `96` edges, `13` blocked edges, `109`
+  relationships with blocked guardrails, and `9 / 10` Stage 3 questions
+  passing or provisionally passing. Verified Memgraph smoke readback returned
+  `67` nodes, `109` relationships, blocked claims/media/source-link/writeback
+  checks passed, and the disposable container was removed. No App runtime
+  behavior, schema, migrations, packages, Supabase/Planner records, Storage,
+  media metadata, telemetry, MQTT, public website behavior, paid service,
+  automation, or canonical writeback changed.
+- **2026-05-15:** Company documented a public-reuse boundary for the remaining
+  OLI Wave 1 Stage 3 question `5` gap:
+  `domains/company/operation_living_intelligence_wave_1_public_reuse_boundary_2026-05-15.md`.
+  The boundary keeps public surfaces as review-gated candidates only and does
+  not approve App runtime changes, Web behavior, Content copy, Supabase writes,
+  media metadata, or canonical writeback.
+  Company then documented the proposed Wave 1.1 public reuse sidecar:
+  `domains/company/operation_living_intelligence_wave_1_1_public_reuse_sidecar_proposal_2026-05-15.md`.
+  App then added and verified the local helper
+  `tools/generate-oli-wave1-public-reuse-sidecar.js`, which writes ignored
+  sidecar JSONL/readback files under `out/operation_living_intelligence/`.
+  Verified sidecar generation returned `11` public surfaces, `11` public reuse
+  candidates, `7` reuse gates, `47` public reuse edges, and status
+  `pass_with_review_required_public_reuse_sidecar_ready`. App also updated the
+  no-Docker JSONL readback helper so Stage 3 now returns `10 / 10` pass or
+  provisional-pass when the sidecar is present, with question `5` held at
+  `provisional_pass` and `review_required`. The helper is local, ignored,
+  rebuildable, read-only against generated files, and no-write against
+  Supabase/Planner/Web/Content/App runtime services.
+  Environment inspection at that point found no SQL-capable database
+  connection string or Postgres environment variables; the task `409` live SQL
+  metadata gap was later resolved for review after Josue ran the JSON SQL
+  packet in Supabase SQL Editor.
+- **2026-05-15:** App added a Supabase SQL Editor friendly JSON version of the
+  Operation Living Intelligence Wave 1 SQL metadata packet:
+  `tools/inspect-oli-wave1-sql-metadata-json.sql`. It returns one
+  `oli_wave1_sql_metadata_readback` JSON value for target table existence,
+  columns, constraints, indexes, RLS state, policies, triggers, selected
+  function metadata, and selected grants. Static non-comment SQL keyword scan
+  found no write/DDL/security/RPC keywords. It was not run because this
+  machine/session still does not expose `psql`, a Postgres connection string,
+  or an MCP SQL database tool.
+- **2026-05-15:** Josue ran the Wave 1 SQL metadata JSON packet in Supabase SQL
+  Editor and provided the result for review. Company/App review confirmed all
+  `17` target tables exist and that key columns, constraints, and indexes
+  support the current local Wave 1 graph proof. RLS is enabled on target
+  tables, with sparse public/authenticated policies, so any durable projection
+  must use an internal protected App-owned read path or narrowly scoped
+  database role rather than browser/public access. Broad table grants are a
+  security-review signal before automation. Durable graph automation,
+  persistent Memgraph infrastructure, public graph output, and canonical
+  writeback remain unapproved.
+- **2026-05-15:** App prepared the Operation Living Intelligence Wave 1 durable
+  projection design:
+  `docs/operation-living-intelligence-wave1-durable-projection-design.md`.
+  The design keeps the next implementation posture at manual internal run only:
+  protected read path, ignored local output, rebuildable files,
+  validation/readback gates, drift checks, no public output, no canonical
+  writeback, operator runbook, and stop conditions. It does not approve
+  scheduled sync, persistent Memgraph service, App runtime integration,
+  Supabase/Planner writes, Web behavior, Content copy, paid services, or source
+  of truth migration.
+- **2026-05-15:** App added and verified the manual Operation Living
+  Intelligence Wave 1 projection helper:
+  `tools/run-oli-wave1-manual-projection.js`. The helper runs the existing
+  local JSONL regeneration, no-Docker readback, public reuse sidecar,
+  sidecar-aware readback, and Cypher generation sequence, then writes ignored
+  local operator reports. Verified run returned
+  `pass_manual_internal_projection_ready`, `67` nodes, `96` normal edges, `13`
+  blocked edges, Stage 3 `10 / 10`, public reuse `review_required`, and no stop
+  conditions after explicit network permission allowed the bounded Supabase
+  source refresh. It does not start Docker/Memgraph, change App runtime
+  behavior, write Supabase/Planner/Storage records, change public Web behavior,
+  edit Content copy, automate a schedule, or create canonical writeback.
+- **2026-05-15:** App added the read-only Operation Living Intelligence SQL
+  metadata gate packet:
+  `docs/operation-living-intelligence-sql-metadata-check.md` and
+  `tools/inspect-oli-wave1-sql-metadata.sql`, plus optional runner
+  `tools/run-oli-wave1-sql-metadata-check.ps1`. The SQL file is catalog
+  inspection only and targets Wave 1 columns, constraints, indexes, RLS state,
+  policies, triggers, selected function metadata, and selected grants. It was
+  not run because this machine/session does not expose `psql`, a Postgres
+  connection string, or an MCP SQL database tool.
+- **2026-05-15:** Planner domain accents were simplified so color now means domain ownership rather than mixed project/thread/task semantics. The shared palette in `css/shared/shared-domain-colors.css` gives each domain a distinct color lane; project/content cards use the full domain accent while tasks/subtasks use softer versions, and status remains separate as badges, text, actions, or columns. Planner renderers now route known domains through the local palette helper instead of trusting live `work_domains.color_class` for display. This was a local renderer/CSS behavior update only; no Supabase records, schema, migrations, Storage, telemetry, MQTT, Planner records, or live app actions changed, and Electron visual smoke verification was not run.
+- **2026-05-15:** App completed a supplemental quality-system token cleanup after the domain-accent update. Planner domain palette values now live in `css/shared/app-tokens.css` as `--app-domain-*` tokens, `shared-domain-colors.css` remains the class-to-semantic-variable mapping layer, and focused Planner/Roadmap/CRM/Admin Media CSS cleanup keeps the scoped token and CSS quality lints passing across 69 CSS files. Prompt Library was checked and needed no edits because it was already token-clean. No app launch, Supabase writes, schema, Storage, telemetry, MQTT, or live Planner records changed.
+- **2026-05-15:** App completed the second scanner-driven cleanup pass over Site Admin CSS. Shared Admin navigation/status/action controls, detail disclosures, form action buttons, species filters/search, image grids, tables/forms, and Media Library styles now scan clean for raw color and scoped CSS quality drift. The token and CSS quality lint pilot now covers 74 CSS files. No app launch, Supabase writes, schema, Storage, telemetry, MQTT, or live operational records changed.
+- **2026-05-15:** Mobile Field Observer quality-system planning was promoted into durable App planning/memory and mirrored into App Planner as `work_projects.id = 84`, scheduled for 2026-05-16 with 6 parent phase tasks and 33 child tasks. The work will bring the mobile app under the same guardrail model as the desktop App quality-system rollout: mobile `--field-*` design tokens, shared plain-JavaScript UI primitives, a fixture-only mobile UI Lab, scoped validation/lints, and a Capacitor sync/build/install closeout. The final phone install/relaunch is in scope for the project but remains an explicit device-action approval gate. No app runtime behavior, schema, Storage, telemetry, MQTT, sighting records, public website behavior, or Company/Brain source docs changed beyond this reporting update.
 
 - **2026-05-14:** App quality-system planning was promoted into durable App memory and live Planner tracking. The new roadmap `planning/app_quality_system_roadmap.md` compares miniBIOTA_App against miniBIOTA_Web and defines the long-running path toward Web-like build quality: design tokens, shared primitives, fixture tests, token lints, dev-only UI Lab, Planner selectors/services, and explicit write plans. It was mirrored to App Planner as `work_projects.id = 82` with 10 phase parent tasks and 62 child subtasks. No app runtime behavior, schema, Storage, telemetry, MQTT, public website behavior, or Company/Brain source docs changed beyond this reporting update.
 
@@ -449,12 +605,18 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Packaged build behavior with Sharp/native dependencies should be verified before relying on distributable `.exe` builds.
 - Monitoring setpoint/control writes affect the live biosphere and require explicit confirmation before changes.
 - App source repo memory and skills must stay current as app architecture, schema assumptions, safety rules, and workflow playbooks change.
-- Field Observer authenticated catalog reads are enabled through migration 009. Signed release APK generation and any live sighting saves remain unverified and require explicit approval before use against production data.
+- Field Observer authenticated catalog reads are enabled through migration 009. Signed release APK generation and any live sighting saves remain unverified and require explicit approval before use against production data. Mobile web-source edits require `npm.cmd run cap:sync`, debug build, and device install/relaunch before they are visible on-phone.
 - Planner task hierarchy paths have now been visually smoke tested for the Aquatic Club Week-view case, and Today/task-modal hierarchy inspection was tightened on 2026-05-13. The initial App quality-system rollout added Planner production scheduling services, fixture tests, selectors, write-plan persistence, and UI-system guardrails, but broader daily-use coverage across Month, Timeline, content production, and live creation/edit flows remains worth watching. Ordinary Planner single-row patch paths now use write-plan persistence/readback beyond the production-run pilot; Programs/Operations write-plan coverage remains separately scoped.
 - Planner Programs/Operations schema and live Program records exist after
   migration 010, but Program UI create/edit/link behavior still needs
   interactive smoke verification before daily reliance.
 - Prompt Library schema is live after migration 012, but create/edit/copy/archive flows still need interactive app smoke verification before daily reliance.
+- Operation Living Intelligence Wave 1 graph tooling is local, manual, and
+  disposable only. The live SQL metadata gap has been reviewed for the current
+  Wave 1 proof, but durable graph automation, persistent Memgraph
+  infrastructure, App runtime integration, public output, and canonical
+  writeback still require separate approval, credential/read-scope design,
+  drift checks, and security review.
 
 ## Cross-Domain Notes
 
@@ -516,6 +678,4 @@ Brain no longer mirrors App docs. Load active App detail from the source repo:
 | `skills/image-pipeline-review/reference/image-pipeline.md` | WebP, Sharp, Supabase Storage, rollback, and packaging guidance |
 | `skills/app-doc-closeout/SKILL.md` | Playbook for deciding whether App memory/Brain updates are required at closeout |
 | `skills/update-app-memory/SKILL.md` | Playbook for promoting durable App decisions, hazards, and architecture rules into memory |
-
-
 

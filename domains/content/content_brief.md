@@ -60,6 +60,45 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   chronicles, publish closeout, and active project docs.
 
 ## Recent Milestones
+- **2026-05-15:** Company completed the docs-only Operation Living
+  Intelligence Wave 2 Content Story Graph design:
+  `domains/company/operation_living_intelligence_wave_2_content_story_graph_design_2026-05-15.md`.
+  The design keeps Content as owner of story continuity, source packets,
+  scripts, captions, and publishing state while proposing a future read-only
+  graph projection that distinguishes published content, planned content,
+  draft/candidate material, chronicles, story threads, open loops, story beats,
+  observations, and review gates. No `content_calendar`, `content_pipeline`,
+  chronicle, story thread, story beat, open loop, media metadata, Web behavior,
+  App helper, Supabase/Planner record, public copy, publishing, automation, or
+  source-of-truth change was approved.
+- **2026-05-15:** Company selected the Lake Post-Seal story as the first
+  bounded Wave 2 Content Story Graph packet:
+  `domains/company/operation_living_intelligence_wave_2_lake_post_seal_packet_selection_2026-05-15.md`.
+  The anchor is `content_pipeline.id = 338` and `chronicles.id = 30`; the next
+  gate is a read-only source-availability check for story threads `1`, `3`,
+  `5`, linked story beats, related `content_calendar` rows, and source-map
+  joins. No Content records, calendar rows, pipeline rows, chronicle rows,
+  scripts, captions, publishing state, media metadata, App helper, or public
+  output changed.
+- **2026-05-15:** Company completed the read-only source-availability review
+  for the selected Wave 2 Lake Post-Seal packet:
+  `domains/company/operation_living_intelligence_wave_2_lake_post_seal_source_availability_review_2026-05-15.md`.
+  The review confirms the packet is source-available for a future no-write
+  implementation proposal: the April 17 published anchor and chronicle are
+  present, story threads `1`, `3`, and `5` remain developing, five related
+  story beats are available/unseen, one related short is published and one is
+  planned through loop `3`, and all `13` candidate media rows remain
+  `reviewed = false`. This is planning context only; no Content calendar,
+  pipeline, story, script, caption, media, publishing, or public-output record
+  changed.
+- **2026-05-15:** Company prepared the no-write Wave 2 App implementation
+  proposal:
+  `domains/company/operation_living_intelligence_wave_2_no_write_app_implementation_proposal_2026-05-15.md`.
+  Content impact: future graph output, if later approved, should help answer
+  what has been published, what is planned, and what remains candidate story
+  material without changing Content records. The proposal remains design-only;
+  no calendar, pipeline, script, caption, media, publishing, public-output, or
+  App helper change is approved.
 - **2026-05-14:** Company updated Operation Living Intelligence Content tasks
   `413` and `414` for selecting a bounded Nemotron/Codex visual AI test set,
   later comparing Twelve Labs free tier on the same set, and defining

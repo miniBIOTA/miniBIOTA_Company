@@ -308,12 +308,21 @@ Open/planned gates at read time:
 
 | Project / task | State |
 |---|---|
-| Company task `409` | open/planned implementation audit gate |
+| Company task `409` | open/planned implementation audit gate at audit time; later marked done on 2026-05-15 after explicit approval and readback |
 | App task `412` | open/planned visual media boundary gate |
 | Web tasks `400-402` | open/planned public surface mapping |
 | Growth/Sales tasks `403-405` | open/planned analytics source/question/stack work |
 
 This audit did not change Planner status.
+
+Later update: after the Wave 1/Wave 2/Wave 3 local helper and readback sequence completed, Josue explicitly approved marking the matching Planner task done. Company marked task `409` done on 2026-05-15 and read back:
+
+```text
+tasks.id = 409
+status = done
+work_status = done
+completed_at = 2026-05-15T19:35:55.967+00:00
+```
 
 ## Task 409 Result
 

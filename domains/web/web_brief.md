@@ -29,7 +29,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Keep Web memory and the Company Web report aligned with the public-only, local-first telemetry and control architecture.
 - Continue the active UX Interaction Lab scope in App Planner project `40`; the first live `/biosphere#biosphere-ecosystem-map` application pass is stabilized, reusable state patterns are defined in `/ux-lab` and first applied to `/species`, the first shared EEL state-preset promotion pass is complete, `/chronicles` has its first archive state/accessibility pass, shared detail tab/accordion semantics are tightened across core detail pages, `/ux-lab` now includes first-pass journey maps, tighter keyboard/modal preview contracts, and accepted P0 guidance for state presets, loading/end states, detail tabs, and telemetry state coverage. The first live application pass has applied the control-group rule to `/species` filter/search, expanded detail-tab route-contract coverage, polished `/live-monitoring` refresh-state presentation, completed a screenshot-approved `/live-monitoring` sensor-card polish, aligned `/faq` accordions with the shared disclosure contract, hardened the mobile navigation overlay interaction contract, hardened the shared gallery/lightbox modal interaction contract, moved chronicle gallery triggers onto shared lightbox data hooks, and moved chronicle timeline toggles onto delegated interaction hooks while preserving the read-only telemetry boundary and public navigation links. Next Web UX work should focus on owner/design review, real browser/mobile visual QA when tooling is available, or a separately accepted live-surface application while keeping `/ux-lab` and `/ui-kitchen-sink` development-gated and out of production navigation.
 - Keep the now-connected desktop-app/coordinator-to-website telemetry handoff production-verified, public-safe, and read-only, including the new biome weather presentation.
-- Work through the cleaned Web Planner roadmap: About/supporters and Patreon acknowledgment content, Substack signup/list migration and weekly newsletter assembly, events/news/chronicles product passes, engineering imagery, telemetry hardening, and species-card data polish.
+- Work through the cleaned Web Planner roadmap: follow-up supporter source review for YouTube/Ko-fi/contributors/sponsors, Substack signup/list migration and weekly newsletter assembly, events/news/chronicles product passes, engineering imagery, telemetry hardening, and species-card data polish.
 - Support website-related public expectation-setting with a soft
   build-in-public posture. The website can be shown as an in-progress public
   layer for species, interactions, ecosystem history, and telemetry, but should
@@ -38,9 +38,18 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Build Operation Living Web, the Ecosystem Relationship Graph architecture, as a public species-to-biome-to-biosphere relationship experience; Web architecture is now ready to pause, with broad food-web curation routed to the Research Agent via the Web repo handoff packet.
 
 ## Recent Milestones
+- 2026-05-16: The public `/faq#supporters` section now shows owner-approved Patreon supporter recognition as cabinet-style nameplates grouped by supported biome, with tier labels and a Patreon CTA. Web keeps payment amounts, handles, private account details, benefit promises, YouTube/Ko-fi supporters, contributor/collaborator credits, sponsor/business recognition, and partner language deferred until separate owner-approved review. Route-contract and UI token verification passed.
+- 2026-05-15: Company prepared the Operation Living Intelligence Wave 8 Hardware/App/Web design-review packet at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_hardware_app_web_design_review_packet_2026-05-15.md`. Web implication: the next Web involvement is docs-only review of public-safe field boundaries, stale/offline language, public summary reuse, internal-field exclusions, and proof that a future helper cannot change `/live-monitoring`, `/api/telemetry/overview`, public copy, route/API behavior, telemetry runtime, or canonical Web truth.
+- 2026-05-15: Company prepared the Operation Living Intelligence Wave 8 domain review synthesis at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_domain_review_synthesis_2026-05-15.md`. Web implication: Company recommends pausing Wave 8 before implementation and continuing Wave 9 docs-only unless Josue asks for Web-owned review now. Web acceptance of public-safe summary fields, stale/offline language, internal-field exclusions, and any future public reuse boundary remains pending.
+- 2026-05-15: Company documented the Operation Living Intelligence Wave 9 CRM, Financials, And Sensitive Domains docs-only design at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md`. Web implication: public intake, newsletter/signup, donation/support, event, and conversion signals remain aggregate-only candidates. Web/Growth approval is required before any public-intake reads, generated summaries, CRM linkage, route/form behavior, newsletter sync, public copy, or public claim changes.
+- 2026-05-15: Company completed the Operation Living Intelligence Wave 9 source/privacy readiness review at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md`. Web implication: policy shape is ready for a no-write owner-review packet, but Web/Growth acceptance remains pending before any public-intake reads, public aggregate summaries, CRM linkage, route/form behavior, newsletter sync, public copy, or public claim changes.
+- 2026-05-15: Company prepared the Operation Living Intelligence Wave 9 Growth/Financials/App/Web owner-review packet at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md`. Web implication: Web docs-only review is ready to request for public-intake aggregate-only boundaries, no CRM linkage without Web/Growth approval, public surface labels, validation, and public-reuse gates. Web/Growth acceptance remains pending before any public-intake reads, route/form behavior, newsletter sync, public copy, public claim, CRM linkage, or public aggregate output.
+- 2026-05-15: Company prepared the Operation Living Intelligence Wave 9 owner-review synthesis at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md`. Web implication: the next Web step remains owner-owned docs-only review; the synthesis is Company routing only and does not approve public-intake reads, route/form behavior, newsletter sync, public copy, public claim, CRM linkage, public aggregate output, or Web runtime changes.
+- 2026-05-15: Company completed the Operation Living Intelligence Wave 8 source/readiness review at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_source_readiness_review_2026-05-15.md`. Web implication: source shape is ready for a no-write Hardware/App/Web design-review packet, but public telemetry summaries, route/API changes, public copy, public-safe field expansion, live telemetry reads, generated output, telemetry runtime changes, and canonical writeback remain unapproved.
+- 2026-05-15: Company started Operation Living Intelligence Wave 8 Telemetry Summaries as docs-only design at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_telemetry_summaries_design_2026-05-15.md`. Web implication: public telemetry summaries remain planning-only until a source/readiness review confirms public-safe fields, stale/offline language, and safe read path. No Web route, API, public copy, telemetry runtime, database, App/Hardware behavior, generated output, or canonical writeback changed.
 - 2026-05-15: The public `/faq` About page received the final Brand/Web
   implementation pass and owner visual approval on desktop and mobile. The
-  page now leads with `miniBIOTA Builds Living Biospheres`, an About-first
+  page now leads with the singular biosphere headline, an About-first
   public identity section, read-only telemetry boundary language, restrained
   supporter/contributor handling, and route-contract coverage for approved
   public framing and forbidden support/control claims. Planner tasks `#553`
@@ -51,8 +60,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   while Web owns implementation, responsive rendering, optimization,
   accessibility mechanics, route contracts, and design-system integration.
   Approved direction is dark, observational, organism-forward, and
-  instrument-like; real miniBIOTA imagery is preferred, and supporter/sponsor/
-  Patreon/contributor/member/funding visuals remain owner-approval gated.
+  instrument-like; real miniBIOTA imagery is preferred. Supporter/sponsor/Patreon/contributor/member/funding visuals remain owner-approval gated beyond the specific approved Patreon cabinet-nameplate recognition now implemented on `/faq#supporters`.
 - 2026-05-15: Company completed the docs-only Operation Living Intelligence
   Wave 2 Content Story Graph design. Web's role remains downstream public
   review only: future graph outputs may name candidate public surfaces, but no
@@ -154,7 +162,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Known Risks & Blockers
 - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
 - Public telemetry now depends on the App/Hardware coordinator producer staying healthy and aligned with the public read-only contract.
-- The cleaned Web roadmap still needs source assets and cross-domain inputs for Substack/list migration, weekly newsletter process design, events/news/chronicles content strategy, engineering imagery, and any later owner-approved supporter/sponsor/Patreon/contributor/member/funding recognition.
+- The cleaned Web roadmap still needs source assets and cross-domain inputs for Substack/list migration, weekly newsletter process design, events/news/chronicles content strategy, engineering imagery, and later owner-approved YouTube/Ko-fi supporter, contributor/collaborator, sponsor/business, member, funding, and partner recognition.
 - `/events`, `/news`, and `/chronicles` remain active public routes but need later content/product development.
 - Engineering system pages still need real system images to replace placeholders.
 - Public expectation-setting is a near-term risk if website content sends
@@ -167,11 +175,14 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   reuse targets are candidate surfaces only; Web route behavior, species-card
   copy, chronicle output, and ecosystem-map relationships remain separately
   scoped and approval-gated.
+- Operation Living Intelligence Wave 8 telemetry summaries have a Hardware/App/Web design-review packet and Company domain review synthesis ready, but must not change `/live-monitoring`, `/api/telemetry/overview`, biome detail weather panels, public telemetry copy, public-safe field boundaries, Web runtime behavior, or public-facing summary output without a separate Web-approved implementation scope.
+- Operation Living Intelligence Wave 9 must not turn public intake, newsletter/signup, donation/support, event, or conversion surfaces into CRM, Growth, Financials, or agent-memory output without separate Web/Growth approval and privacy rules.
 
 ## Cross-Domain Notes
 - **Company/Web Strategy:** Company owns active Web strategy reporting and cross-domain coordination through this report, while detailed Web context lives in `M:\miniBIOTA\miniBIOTA_Web\AGENTS.md`, `memory/00-index.md`, relevant memory files, local playbooks, and exact playbook references. Brain is archive/provenance lookup only during retirement probation.
 - **App:** The Electron app owns private operator/admin workflows, telemetry producer handoff work, and the App Planner runtime used as Web's live work queue.
 - **Hardware:** Public telemetry depends on local-first coordinator, node freshness, upstream status, and setpoint read models. Check Hardware context before changing live telemetry assumptions.
+- **Company:** Operation Living Intelligence Wave 8 is docs-only; source/readiness review, Hardware/App/Web design-review packet, and Company domain review synthesis are complete, and Web-facing telemetry summaries need Web docs-only review plus explicit Web approval before public reuse.
 - **Content:** Chronicles and public story surfaces depend on Content records and publishing closeout decisions.
 - **Content:** Website-related audience updates should explain the slower
   content cadence and invite viewers into the build without creating a launch
@@ -183,7 +194,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   selection, image approval boundaries, and caption tone. Web should ask Brand
   or the owner before publishing first-viewport hero imagery, identifiable
   people, private workspace details, sensitive hardware/prototype states,
-  supporter/sponsor/Patreon/contributor/member/funding visuals, or image/copy
+  supporter/sponsor/Patreon/contributor/member/funding visuals beyond the approved `/faq#supporters` cabinet-nameplate display, or image/copy
   pairings that could imply unapproved claims.
 
 ## Domain Reference
@@ -215,5 +226,13 @@ Brain no longer keeps a Web `docs\` mirror after the memory/skills migration.
 | `skills\change-public-route\SKILL.md` | Route/API/form change workflow |
 | `skills\update-ui-system\SKILL.md` | Shared UI and design-system workflow |
 | `skills\work-with-public-telemetry\SKILL.md` | Public telemetry workflow |
+| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_telemetry_summaries_design_2026-05-15.md` | Company Wave 8 docs-only telemetry summaries design |
+| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_source_readiness_review_2026-05-15.md` | Company Wave 8 telemetry source/readiness review |
+| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_hardware_app_web_design_review_packet_2026-05-15.md` | Company Wave 8 Hardware/App/Web design review packet |
+| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_domain_review_synthesis_2026-05-15.md` | Company Wave 8 domain review synthesis |
+| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md` | Company Wave 9 docs-only CRM, Financials, and Sensitive Domains design |
+| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md` | Company Wave 9 source privacy readiness review |
+| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md` | Company Wave 9 Growth/Financials/App/Web owner-review packet |
+| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md` | Company Wave 9 owner-review synthesis |
 | `skills\close-web-session\SKILL.md` | Closeout workflow |
 | `skills\*\reference\` | Exact supporting references for playbooks |

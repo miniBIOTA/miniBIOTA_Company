@@ -2,7 +2,7 @@
 id: brand_brief
 title: Brand & Marketing Brief
 domain: brand_and_marketing
-last_updated: 2026-05-12
+last_updated: 2026-05-15
 tags: [brand, marketing, messaging, planner, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -22,7 +22,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - `miniBIOTA_Brand` is the dedicated Brand Agent workspace for mission language, positioning, public voice, messaging systems, reach strategy, and distribution strategy.
 - `miniBIOTA_Brand` now uses repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Brand `docs/` mirror. Use the source repo's memory/skills structure for detailed Brand Agent context.
-- Foundational mission and vision language is established and migrated into the Brand repo memory/skills architecture.
+- Foundational mission, vision, and positioning language is established and migrated into the Brand repo memory/skills architecture. As of 2026-05-15, Brand no longer uses startup-category positioning; current positioning centers on living biospheres, ecological storytelling, and human-scale understanding.
 - Reach and distribution strategy is established for Substack, Reddit, press, podcast circuit, YouTube Community, Discord, Ko-fi, Open Collective, and future native comments.
 - Operational marketing assets are still thin: reusable messaging pillars, founder narrative, campaign templates, and outreach-ready pitch materials need deeper development.
 - App Planner/Supabase is the live Brand work queue under
@@ -30,11 +30,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   cross-domain cleanup, Brand has 9 active work projects, 1 archived merge
   cleanup project, and 46 open Brand task/checklist rows. Brand docs route
   actionable task status to Planner instead of Markdown task lists.
-- Planner tracks work only. Brand memory and skills remain the source for positioning, voice, claim safety, channel rules, support/sponsor boundaries, and approved-versus-draft language context.
+- Planner tracks work only. Brand memory and skills remain the source for positioning, voice, claim safety, channel rules, support/sponsor boundaries, and approved-versus-draft language context. Current working headline direction: "miniBIOTA builds a living biosphere where connected ecosystems unfold over time."
 
 ## Active Priorities
 
-- Turn mission and vision into reusable messaging pillars, founder narrative, and external positioning language.
+- Turn the living-biosphere positioning into reusable messaging pillars, About-page language, founder-light narrative, and external positioning language.
 - Use App Planner/Supabase for live Brand task status while preserving Brand memory and skills as the source for messaging and claim-safety rules.
 - Build outreach-ready material for speaking opportunities, press, podcasts, and public partnerships.
 - Research Reddit targets and format guidance before active external posting.
@@ -42,6 +42,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Prepare for 1 Million Cups speaking opportunities as a stepping stone toward larger public talks.
 
 ## Recent Milestones
+
+- **2026-05-15:** Brand positioning interview retired startup-category framing and reset the working direction around living biospheres, ecological storytelling, and human-scale understanding. Current working headline direction: "miniBIOTA builds a living biosphere where connected ecosystems unfold over time." This is positioning memory, not approval of final public copy.
 
 - **2026-05-12:** Company applied approved Brand Planner cleanup from the
   cross-domain task relevance review: Brand now has a `Core Messaging & Public
@@ -58,7 +60,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Known Risks & Blockers
 
-- Brand documentation is still too sparse to support consistent execution across web, content, events, and fundraising.
+- Brand documentation is still too sparse to support consistent execution across web, content, events, and fundraising, especially now that the new living-biosphere positioning needs reusable copy systems.
 - The difference between foundational message and active campaign strategy needs clearer documentation.
 - Marketing action items have historically lived in scattered notes and need consolidation into a brand operating system.
 - Planner task wording can describe marketing work, but it does not approve public claims, sponsor promises, campaign commitments, partner commitments, launch/pricing/legal/scientific claims, media interest, event bookings, or brand commitments.
@@ -67,7 +69,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Cross-Domain Notes
 
-- **Website:** Public copy should reinforce miniBIOTA as the public source of truth and make ecological, engineering, and sponsor paths easy to follow.
+- **Website:** Public copy should reinforce the living-biosphere positioning and make ecological, engineering, and support paths easy to follow. Brand/Web dependency remains active: About copy, support/contributor language, sensitive visuals, claim-bearing captions, and recognition language require owner and Brand approval before Web treats them as final.
 - **Content:** Content titles, hooks, captions, and announcements should use the brand voice and no-em-dash public copy rule.
 - **Partners/Sales:** Sponsorship and Open Collective language should separate business sponsorships from individual support channels.
 - **Financials:** Current revenue baseline and support channel performance influence messaging around sustainability and sponsorship.

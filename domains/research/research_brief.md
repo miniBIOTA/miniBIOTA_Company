@@ -46,6 +46,25 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Recent Milestones
 
 - **2026-05-15:** Company completed the docs-only Operation Living
+  Intelligence Wave 6 Media And Visual AI Readiness design:
+  `domains/company/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
+  Research implication: any future candidate visual annotation remains
+  noncanonical until Research reviews organism wording and claim safety,
+  especially the ID-sensitive microcrustacean blocking test. The design blocks
+  model-derived Daphnia species ID, establishment, reproduction, clearing,
+  completed-food-web, public proof, species-card, caption, and media metadata
+  claims. No Research notes, species/observation records, Supabase/Planner
+  records, public wording, model run, generated output, upload, or canonical
+  writeback changed.
+- **2026-05-15:** Company completed the Operation Living Intelligence Wave 6
+  source/runtime readiness review:
+  `domains/company/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
+  Research implication: the ID-sensitive microcrustacean item remains blocked
+  until Research defines allowed and forbidden wording for model output review.
+  No candidate annotation, organism ID, ecological claim, species/observation
+  record, Research note, public wording, Supabase/Planner write, upload, or
+  canonical writeback changed.
+- **2026-05-15:** Company completed the docs-only Operation Living
   Intelligence Wave 2 Content Story Graph design:
   `domains/company/operation_living_intelligence_wave_2_content_story_graph_design_2026-05-15.md`.
   Research's boundary is claim safety and observation/open-loop interpretation:

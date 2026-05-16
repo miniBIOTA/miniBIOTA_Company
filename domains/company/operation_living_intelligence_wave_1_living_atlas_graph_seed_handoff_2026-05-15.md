@@ -22,14 +22,16 @@ Live Planner readback on 2026-05-15 showed:
 
 | Planner item | Current state | Handoff meaning |
 |---|---|---|
-| Company project `75` | active | Company coordination remains open because task `409` is still open |
+| Company project `75` | active | Company coordination remained open at handoff time because task `409` was still open; task `409` was later marked done on 2026-05-15, but project-level closeout was not changed |
 | App project `76` | planned | App implementation remains unapproved even though readiness tasks `386-390` are done; visual media sidecar task `412` is still open |
 | Research project `77` | done | Research graph ontology, candidates, path safety, and Stage 3 evaluation are ready as planning sources |
 | Content project `78` | done | Content source/publicness/media-readiness artifacts are ready as planning sources |
 | Web project `79` | planned | Public surface mapping remains open in tasks `400-402` |
 | Growth/Sales project `80` | planned | Analytics source/question/stack work remains open in tasks `403-405` |
 | Financials project `81` | done | Cost posture is ready: no-cost/free-local first, paid ceilings still not approved |
-| Task `409` | open/planned | REST/OpenAPI and source-migration audit pass completed on 2026-05-15; approved read-only SQL metadata attempt found no active SQL-capable path in this session; live SQL metadata proof for constraints, indexes, RLS, and triggers remains a gate before any export/import, graph build, vector index, analytics pull, model batch, cache, or automation job |
+| Task `409` | done as of later 2026-05-15 readback | REST/OpenAPI and source-migration audit pass completed on 2026-05-15; later Wave 1/Wave 2/Wave 3 local helper/readback work and Company reviews satisfied the gate for the current local proofs; durable graph infrastructure, vector index, analytics pull, model batch, cache, automation, public output, and canonical writeback remain separately unapproved |
+
+Later update: task `409` was marked done on 2026-05-15 after explicit approval and readback, following completion of the Wave 1/Wave 2/Wave 3 read-only audits, local helpers, readbacks, and Company reviews. This later task-status update did not mark Company project `75` done, did not mark App task `412` done, and did not approve durable graph infrastructure, automation, public output, or canonical writeback.
 
 ## Wave 1 Objective
 

@@ -27,6 +27,13 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Financials project management is organized in App Planner/Supabase under `work_domains.key = financials` / `domain_id = 2`. After the 2026-05-14 closeout and recurring monthly close setup, Financials has 9 active/planned work projects and 36 task rows (28 open, 8 done). Planner is task-status truth only; financial truth remains in Supabase finance tables and close records.
 - A recurring accountant-style monthly close workflow now lives in Planner project `Monthly Financial Close & Accountant Review` (`work_projects.id=83`) with recurring routine task `Monthly Financial Close and Statement Review` (`tasks.id=488`) and checklist subtasks (`tasks.id=489`-`497`), first scheduled for 2026-06-05.
 - `mileage_log` added 2026-04-21 as the IRS-compliant vehicle trip log. Standard mileage rate method is adopted; tolls and parking are separately tracked in Quicken under `Content & Production : Tolls & Parking`.
+- Operation Living Intelligence Wave 9 is Company docs-only design. Financials
+  context remains aggregate-only by default, and any finance read, summary
+  scope, graph/vector projection, generated output, spend approval, or
+  financial recommendation needs Financials/Josue approval before it exists.
+  Company source/privacy readiness, the Growth/Financials/App/Web owner-review
+  packet, and Company owner-review synthesis are complete, but
+  Financials-owned acceptance remains pending.
 
 ## Financial Baseline
 Current values below are a Company reporting snapshot as of 2026-05-14. Verify Supabase rows before analysis or writes.
@@ -104,6 +111,9 @@ Live task status is in App Planner/Supabase under the Financials domain. Use liv
 - Tax obligations not documented.
 - `next_due_date` null on most liability records.
 - May AmEx activity is reviewed from current activity but should wait for the next official statement before statement-row import or partial-month expense reconciliation.
+- Wave 9 sensitive-domain projection must not expose raw account, statement,
+  liability, cash, tax, mileage, transaction, document, or close details without
+  Financials-approved scope and privacy rules.
 
 ## Files In This Folder
 

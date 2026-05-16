@@ -61,6 +61,25 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 - **2026-05-15:** Company completed the docs-only Operation Living
+  Intelligence Wave 6 Media And Visual AI Readiness design:
+  `domains/company/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
+  Content implication: the first future visual AI lane must use the already
+  selected task `398` four-item media set, preserve candidate annotation and
+  pull-sheet outputs as review material only, and keep any rough sequence as a
+  human checklist rather than a DaVinci timeline, publication plan, caption,
+  alt text, or public claim. No model run, generated output, DaVinci work,
+  Content calendar/pipeline change, publication, media metadata, public copy,
+  App helper/runtime change, upload, paid service, Supabase/Planner write, or
+  canonical writeback changed.
+- **2026-05-15:** Company completed the Operation Living Intelligence Wave 6
+  source/runtime readiness review:
+  `domains/company/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
+  Content implication: the four selected task `398` source files exist and can
+  remain the future review set, but implementation is deferred until media
+  inspection, storage, model-route, and review gates are resolved. No
+  generated pull sheet, rough sequence, DaVinci work, Content record, public
+  copy, publication, or media metadata changed.
+- **2026-05-15:** Company completed the docs-only Operation Living
   Intelligence Wave 2 Content Story Graph design:
   `domains/company/operation_living_intelligence_wave_2_content_story_graph_design_2026-05-15.md`.
   The design keeps Content as owner of story continuity, source packets,

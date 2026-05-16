@@ -2,7 +2,7 @@
 id: brand_and_marketing
 title: 4. miniBIOTA_Brand
 domain: brand_and_marketing
-last_updated: 2026-05-09
+last_updated: 2026-05-15
 tags: [brand, marketing, messaging, audience-growth, positioning, planner]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -20,7 +20,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Translates the project's scientific and engineering depth into language that can attract audiences, partners, donors, sponsors, and media attention.
 
 ## Current State
-- Foundational mission and vision language is preserved and clear.
+- Foundational mission, vision, and positioning language is preserved and current. As of 2026-05-15, Brand no longer uses startup-category positioning; current positioning centers on living biospheres, ecological storytelling, and human-scale understanding.
 - Reach and distribution strategy is established for Substack, Reddit, press, podcast circuit, YouTube Community, Discord, Ko-fi, Open Collective, and future native comments.
 - Operational marketing assets are still thin: reusable messaging pillars, founder narrative, campaign templates, and outreach-ready pitch materials need deeper development.
 - `miniBIOTA_Brand` now uses repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
@@ -28,14 +28,14 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - App Planner/Supabase is the live Brand work queue under `work_domains.key = brand` / `domain_id = 4`, with current project records `49` through `56`.
 
 ## Key Facts
-- The brand promise centers on making ecology visible by building and documenting fully closed biospheres.
+- The brand promise centers on making ecological relationships visible through a hand-built, documented living biosphere.
 - The project combines education, engineering spectacle, and ecological storytelling rather than fitting a standard nonprofit, science, or hobby category.
-- The voice is positioned as "The Biological Startup": technical, maker-focused, accessible, and story-driven.
+- Current working headline direction: "miniBIOTA builds a living biosphere where connected ecosystems unfold over time." The voice remains technical, maker-focused, accessible, grounded, and story-driven, without positioning miniBIOTA as a startup category.
 - Public-facing copy should avoid em dashes and avoid overclaiming ecological closure, scientific proof, revenue, sponsor status, system stability, product readiness, or commercial traction.
 - Planner records organize actionable Brand work but do not approve public claims, campaign commitments, sponsor promises, partner commitments, launch dates, pricing claims, legal claims, scientific claims, media interest, event bookings, or brand commitments.
 
 ## Priorities
-- Turn the mission and vision into reusable messaging pillars, founder narrative, and external positioning language.
+- Turn the living-biosphere positioning into reusable messaging pillars, About-page language, founder-light narrative, and external positioning language.
 - Use App Planner/Supabase for live Brand task status and ask before marking completed Planner tasks done.
 - Prepare outreach-ready material for speaking opportunities, press, podcasts, and public-facing partnerships.
 - Research Reddit targets and format guidance before active external posting.
@@ -43,7 +43,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Prepare for 1 Million Cups speaking opportunities as a stepping stone toward larger public talks.
 
 ## Risks / Gaps
-- Brand documentation is still too sparse to support consistent execution across web, content, events, and fundraising.
+- Brand documentation is still too sparse to support consistent execution across web, content, events, and fundraising, especially now that the new living-biosphere positioning needs reusable copy systems.
 - The difference between foundational message and active campaign strategy needs clearer documentation.
 - Marketing action items have historically lived in scattered notes and need consolidation into a brand operating system.
 - Planner task wording can describe work to do, but Brand memory/skills still govern positioning, claim safety, channel rules, support/sponsor boundaries, and approved-versus-draft language.

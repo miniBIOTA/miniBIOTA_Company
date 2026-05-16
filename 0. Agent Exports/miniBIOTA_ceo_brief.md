@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Executive Brief
 
-- Generated: 2026-05-15 14:05:43 -04:00
+- Generated: 2026-05-16 15:25:09 -04:00
 - Purpose: Company-side synthesis of domain reports.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 
@@ -69,20 +69,20 @@
 
 ## 4. miniBIOTA_Brand
 
-**Summary:** Defines the narrative framing, public message, and market-facing identity of miniBIOTA. The brand promise centers on making ecology visible by building and documenting fully closed biospheres.
+**Summary:** Defines the narrative framing, public message, and market-facing identity of miniBIOTA. The brand promise centers on making ecological relationships visible through a hand-built, documented living biosphere.
 
 ### Current Status
-- Foundational mission and vision language is preserved and clear.
+- Foundational mission, vision, and positioning language is preserved and current. As of 2026-05-15, Brand no longer uses startup-category positioning; current positioning centers on living biospheres, ecological storytelling, and human-scale understanding.
 - Reach and distribution strategy is established for Substack, Reddit, press, podcast circuit, YouTube Community, Discord, Ko-fi, Open Collective, and future native comments.
 - Operational marketing assets are still thin: reusable messaging pillars, founder narrative, campaign templates, and outreach-ready pitch materials need deeper development.
 
 ### Priorities
-- Turn the mission and vision into reusable messaging pillars, founder narrative, and external positioning language.
+- Turn the living-biosphere positioning into reusable messaging pillars, About-page language, founder-light narrative, and external positioning language.
 - Use App Planner/Supabase for live Brand task status and ask before marking completed Planner tasks done.
 - Prepare outreach-ready material for speaking opportunities, press, podcasts, and public-facing partnerships.
 
 ### Risks / Gaps
-- Brand documentation is still too sparse to support consistent execution across web, content, events, and fundraising.
+- Brand documentation is still too sparse to support consistent execution across web, content, events, and fundraising, especially now that the new living-biosphere positioning needs reusable copy systems.
 - The difference between foundational message and active campaign strategy needs clearer documentation.
 - Marketing action items have historically lived in scattered notes and need consolidation into a brand operating system.
 
@@ -163,7 +163,7 @@
 ### Current Status
 - The site is public-only; legacy Flask admin has been removed from active web code.
 - Public telemetry consumes the live read-only Supabase snapshot through `/api/telemetry/overview`, `/live-monitoring`, and paired biome detail weather panels.
-- The public `/faq` About page has a Brand/Web approved implementation pass as of 2026-05-15: About-first copy, owner-approved headline direction, read-only telemetry boundary language, restrained supporter/contributor handling, desktop/mobile visual approval, and route-contract coverage.
+- Operation Living Intelligence Wave 8 telemetry summaries are in Company docs-only design with source/readiness review, Hardware/App/Web design-review packet, and Company domain review synthesis complete. Web-facing summary reuse requires Web docs-only review and explicit Web approval before any public route, API, copy, telemetry runtime, or field-boundary change.
 
 ### Priorities
 - Keep Web memory and active Company Web reports aligned with the public-only, local-first telemetry and control architecture.
@@ -173,7 +173,7 @@
 ### Risks / Gaps
 - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
 - Public telemetry now depends on the App/Hardware coordinator producer staying healthy and aligned with the public read-only contract.
-- Planner records can organize Web work, but they do not authorize production navigation, public claims, private/admin surfaces, or runtime behavior changes by themselves.
+- Operation Living Intelligence Wave 8 has a Hardware/App/Web design-review packet and Company domain review synthesis ready, but must not turn telemetry summaries into public Web behavior, public claims, route/API changes, generated public summary output, or public-safe field expansion without separate Web review.
 
 ## 10. Definitions
 
@@ -218,7 +218,7 @@
 - 1. miniBIOTA_Company: Next action - Coordinate Aquatic Club Talk Readiness as the Q2 strategic forcing function. Remaining Q2 work should stack toward the talk unless urgent operations require otherwise. The talk should help people buy into the miniBIOTA story, feel emotionally connected to the project, understand why the build matters, make their own novel connections, and leave with curiosity, awe, and a sense of future possibilities. Gap - The roadmap is mostly unfilled after the Q2 talk focus, limiting Q3+ strategic visibility.
 - 2. miniBIOTA_Financials: Next action - Live task status is in App Planner/Supabase under the Financials domain. Use live Planner records and `financials_brief.md` for current priority ordering. As of 2026-05-14, active manager-facing priorities are: Gap - Utility costs not captured in operating expenses.
 - 3. miniBIOTA_Research: Next action - Keep species counts, observation totals, thread/loop state, and population status synchronized with Supabase. Gap - Ecology docs can drift quickly because live observations and Supabase records are updated often.
-- 4. miniBIOTA_Brand: Next action - Turn the mission and vision into reusable messaging pillars, founder narrative, and external positioning language. Gap - Brand documentation is still too sparse to support consistent execution across web, content, events, and fundraising.
+- 4. miniBIOTA_Brand: Next action - Turn the living-biosphere positioning into reusable messaging pillars, About-page language, founder-light narrative, and external positioning language. Gap - Brand documentation is still too sparse to support consistent execution across web, content, events, and fundraising, especially now that the new living-biosphere positioning needs reusable copy systems.
 - 5. miniBIOTA_Content: Next action - Sea urchin intro short was published May 4 as pipeline 351, Mottled Shore Crab short May 6 as pipeline 352, and producer-diversity/Caulerpa short May 7 as pipeline 353. Loop 9 is advanced, not resolved; shorts loop 17 tracks whether the variegated sea urchin survives and keeps eating Graceful redweed; shorts loop 18 tracks whether Green Feather Alga spreads too much and needs removal. Gap - Longform working title still TBD.
 - 6. miniBIOTA_Hardware: Next action - Complete sealing and infrastructure upgrades to reach airtight closed-system standard. Gap - Biomes 2-5 have SHT31 wiring, water-damage, and connection-quality risks until the rewire is complete.
 - 7. miniBIOTA_Growth: Next action - Turn scattered commercial signals into a working operating model covering sponsorships, speaking, audience support, course pre-sale, affiliate-backed resources, and crowdfunding. Gap - Without an explicit commercial system, public interest can accumulate without conversion.

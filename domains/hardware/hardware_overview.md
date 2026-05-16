@@ -2,7 +2,7 @@
 id: hardware_overview
 title: 6. miniBIOTA_Hardware
 domain: engineering_and_hardware
-last_updated: 2026-05-13
+last_updated: 2026-05-15
 tags: [hardware, engineering, controls, telemetry, sensors, enclosure]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -25,6 +25,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - All 6 biome ESP32 nodes have live firmware; OTA is operational going forward.
 - Biomes 2-5 report through the App Monitoring tab; Biome 1 has no sensors and Biome 6 is wave-motor-only. App Monitoring already consumes live MQTT `liq_t` and `pump_pct` as internal operator hardware telemetry.
 - The read-only Wyse telemetry coordinator is deployed and running as `minibiota-telemetry.service`, upserting Supabase `telemetry_snapshot` row `id=1` about every 15 seconds for website live monitoring and internal `biome_telemetry` history rows about every minute for climate/control analysis.
+- Operation Living Intelligence Wave 8 telemetry summaries are in Company docs-only design with source/readiness review, Hardware/App/Web design-review packet, and Company domain review synthesis complete. Hardware-owned acceptance remains pending before any helper, live telemetry read, generated rollup, schema/runtime change, MQTT publishing, command queue, device control, or public reuse.
 - Hardware rewire is planned for biomes 2-5 to resolve sensor wiring, water-damage, and connection-quality faults; connector standard remains open.
 - The source repo now uses repo-local biome folders, `0. Hardware Systems/`, memory, and skills as active detailed context: `AGENTS.md`, biome folders, `0. Hardware Systems/`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Hardware `docs/` mirror; use the source repo's biome folders, `0. Hardware Systems/`, memory, and skills structure for detailed Hardware Agent context.
@@ -45,6 +46,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Biomes 2-5 have SHT31 wiring, water-damage, and connection-quality risks until the rewire is complete.
 - Biome 1 has no sensors and remains expected-offline until hardware is installed.
 - Website telemetry is reading the live `telemetry_snapshot`; stale/offline handling and public-safe payload semantics should continue to be monitored. Internal `biome_telemetry` history is live for analysis; command queues remain deferred.
+- Operation Living Intelligence Wave 8 has a Hardware/App/Web design-review packet and Company domain review synthesis ready, but must not turn telemetry summaries into Hardware control instructions, firmware changes, MQTT publishing, live table reads, helper output, App Monitoring changes, Web/public telemetry changes, or canonical telemetry records without separate approval.
 - Airtight closure is not yet achieved; passive air leakage remains across multiple biomes.
 
 ## Files In This Folder

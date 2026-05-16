@@ -2,7 +2,7 @@
 id: company_brief
 title: Company Operations Brief
 domain: company_operations
-last_updated: 2026-05-15
+last_updated: 2026-05-16
 tags: [company, operations, strategy, roadmap, strategy-brief]
 reporting_status: active
 reporting_phase: brain_retirement_phase_11_probation
@@ -113,8 +113,379 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   Supabase/Planner/App/Web writes remain unapproved. Company then documented
   the session handoff at
   `domains/company/operation_living_intelligence_session_closeout_2026-05-15.md`,
-  making Wave 3 Species and Public History Expansion the recommended next
-  docs-only design pass.
+  then started Wave 3 Species and Public History Expansion as a docs-only
+  design pass at
+  `domains/company/operation_living_intelligence_wave_3_species_public_history_design_2026-05-15.md`.
+  Company then completed the Wave 3 Lake Post-Seal source-availability review
+  at
+  `domains/company/operation_living_intelligence_wave_3_lake_post_seal_source_availability_review_2026-05-15.md`.
+  Company then prepared the no-write Wave 3 App implementation proposal at
+  `domains/company/operation_living_intelligence_wave_3_no_write_app_implementation_proposal_2026-05-15.md`.
+  The proposal keeps the first Wave 3 implementation shape local,
+  JSONL/readback-first, and App-review-gated, with explicit source manifest,
+  public-surface candidates, species/public-history claim guardrails,
+  media/display-asset distinctions, validation checks, and readback examples.
+  Josue then approved continuing to the App design-review gate, and Company
+  prepared the Wave 3 App design-review packet at
+  `domains/company/operation_living_intelligence_wave_3_app_design_review_packet_2026-05-15.md`.
+  App then completed the Wave 3 docs-only design review at
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave3-design-review.md`,
+  accepting the proposed ignored output path, JSONL/readback-first package
+  shape, blocked-edge guardrails, validation/readback posture, and `none`
+  canonical writeback boundary for a future separately approved helper. The
+  smallest local helper was then approved, added in App, and verified with
+  ignored output under
+  `out/operation_living_intelligence/wave_3_species_public_history/lake_post_seal/`.
+  Generation returned
+  `pass_with_review_required_species_public_history_jsonl_ready` with `114`
+  nodes, `222` normal edges, and `49` blocked edges. No-Docker readback
+  returned
+  `pass_with_review_required_species_public_history_readback_ready` with `271`
+  relationships including blocked guardrails, `3` primary species, `4` context
+  species, `2` internal/review-required species, `9` observations, `13` media
+  candidates, `3` display assets, and `11` public surfaces. Company reviewed
+  the generated output at
+  `domains/company/operation_living_intelligence_wave_3_readback_review_2026-05-15.md`
+  and closed Wave 3 as a no-Docker local species/public-history proof.
+  Cypher/Memgraph, public output, Research/Web/Content writes, media metadata
+  writes, Planner/Supabase writes, automation, and canonical writeback remain
+  unapproved. Company then started Wave 4 YouTube Analytics Warehouse as a
+  docs-only design pass at
+  `domains/company/operation_living_intelligence_wave_4_youtube_analytics_warehouse_design_2026-05-15.md`.
+  The design uses official YouTube API documentation to recommend manual
+  export or targeted YouTube Analytics API query first, Reporting API bulk jobs
+  later, and no monetary metrics until Financials approval. No API/OAuth
+  connection, analytics pull, warehouse file, App helper, scheduled job,
+  public dashboard, Content/Web/Growth action, Planner/Supabase write, paid
+  service, revenue claim, commitment, or canonical writeback was approved.
+  Company then completed the Wave 4 source/auth readiness review: the source
+  identity is available, but auth and analytics data access are not ready until
+  Josue chooses manual export, targeted Analytics API proposal, or deferral.
+  Josue chose to defer Wave 4 analytics access setup for now and continue to
+  Wave 5 Retrieval Layer. Company documented the Wave 5 docs-only retrieval
+  design at
+  `domains/company/operation_living_intelligence_wave_5_retrieval_layer_design_2026-05-15.md`.
+  The design starts with corpus inventory, citation rules, and a no-embedding
+  keyword/source-path baseline before any embeddings, vector index, App helper,
+  generated corpus files, scheduled refresh, public search, or canonical
+  writeback.
+  Company then completed the Wave 5 corpus inventory and citation readiness
+  review at
+  `domains/company/operation_living_intelligence_wave_5_retrieval_corpus_inventory_citation_readiness_review_2026-05-15.md`.
+  Result: `company_corpus_ready_for_no_write_manifest_proposal`. The next
+  Company step was a no-write App manifest/chunk export proposal, which is
+  now documented at
+  `domains/company/operation_living_intelligence_wave_5_no_write_app_manifest_chunk_export_proposal_2026-05-15.md`.
+  Company then prepared the Wave 5 App design-review packet at
+  `domains/company/operation_living_intelligence_wave_5_app_design_review_packet_2026-05-15.md`.
+  App then completed the docs-only Wave 5 design review at
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave5-design-review.md`.
+  Josue then approved the narrow Wave 5 helper implementation. App added
+  `tools/generate-oli-wave5-retrieval-manifest.js` and
+  `tools/run-oli-wave5-retrieval-readback.js`, generated ignored local output
+  under
+  `M:\miniBIOTA\miniBIOTA_App\out\operation_living_intelligence\wave_5_retrieval_layer\company_corpus\`,
+  and verified `98` documents, `1427` chunks, `10` evaluation questions, `0`
+  sensitive path matches, and readback status
+  `pass_with_review_required_retrieval_readback_ready` with `9 / 10`
+  evaluation questions passed. Company recorded this at
+  `domains/company/operation_living_intelligence_wave_5_retrieval_manifest_chunk_helper_2026-05-15.md`.
+  Company then completed the Wave 5 baseline usefulness review at
+  `domains/company/operation_living_intelligence_wave_5_retrieval_baseline_usefulness_review_2026-05-15.md`.
+  Decision: keep the local helper as a rebuildable citation/retrieval aid, but
+  do not proceed to embeddings, pgvector, vector indexes, public search,
+  scheduled refresh, App runtime integration, live reads, expanded corpus scope,
+  or canonical writeback without a separate vector/embedding decision brief.
+  Company then completed the Wave 5 evaluation tuning plan at
+  `domains/company/operation_living_intelligence_wave_5_evaluation_tuning_plan_2026-05-15.md`.
+  The plan defines expected statuses for `answerable_with_citation`,
+  `review_required`, and `blocked` questions, and makes the next Wave 5
+  implementation gate an approved evaluation-set/helper update rather than
+  vector work. Company then prepared the Wave 5 expected-status helper update
+  proposal at
+  `domains/company/operation_living_intelligence_wave_5_expected_status_helper_update_proposal_2026-05-15.md`.
+  The proposal limits any future implementation to the two Wave 5 App helper
+  files, ignored local output regeneration, and readback validation; it still
+  does not approve embeddings, vectors, live reads, runtime behavior, public
+  output, or canonical writeback. Josue then approved that exact update. App
+  updated the two Wave 5 helper files, regenerated ignored local output, and
+  verified `101` documents, `1463` chunks, `15` evaluation questions, and
+  `15 / 15` expected-status evaluation passes. Company recorded the result at
+  `domains/company/operation_living_intelligence_wave_5_expected_status_helper_update_2026-05-15.md`.
+  Company then reviewed the expected-status readback at
+  `domains/company/operation_living_intelligence_wave_5_expected_status_readback_review_2026-05-15.md`
+  and accepted it as the current local Wave 5 retrieval baseline. Vector or
+  embedding work still requires a separate decision brief. Company then
+  completed that vector/embedding decision brief at
+  `domains/company/operation_living_intelligence_wave_5_vector_embedding_decision_brief_2026-05-16.md`.
+  Decision: semantic retrieval is worth evaluating only through a future
+  no-write, ignored-output App design-review packet; no vector implementation
+  is approved. Company then prepared that packet at
+  `domains/company/operation_living_intelligence_wave_5_vector_embedding_app_design_review_packet_2026-05-16.md`.
+  App completed the docs-only review at
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave5-vector-embedding-design-review.md`,
+  and Company synthesized the result at
+  `domains/company/operation_living_intelligence_wave_5_vector_embedding_app_review_synthesis_2026-05-16.md`.
+  App recommends local-file-only vector evaluation first, with pgvector deferred
+  until local value and safety are proven. Company then prepared the local
+  vector evaluation helper proposal at
+  `domains/company/operation_living_intelligence_wave_5_local_vector_evaluation_helper_proposal_2026-05-16.md`;
+  Josue approved it; App added the local vector-proxy helper and example
+  config doc, and first run returned
+  `blocked_baseline_stale_no_vector_evaluation` before semantic candidate
+  output. Company recorded this at
+  `domains/company/operation_living_intelligence_wave_5_local_vector_evaluation_helper_2026-05-16.md`.
+  The baseline was then refreshed to `108` documents and `1543` chunks with
+  `15 / 15` expected-status questions passing; the vector-proxy helper reran
+  with `75` candidate rows and `15 / 15` result rows passing. Company accepted
+  this no-embedding comparison at
+  `domains/company/operation_living_intelligence_wave_5_local_vector_proxy_readback_review_2026-05-16.md`.
+  Next Wave 5 gate, only if needed, is deciding whether true local/offline
+  embeddings are justified.
+  Company then documented the Wave 6 Media And
+  Visual AI Readiness docs-only design at
+  `domains/company/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
+  Wave 6 keeps the task `398` four-item media set as the first bounded set,
+  keeps Nemotron/Codex as the first lane subject to implementation-time route
+  verification, keeps Qwen fallback/benchmark-only, and keeps Twelve Labs as a
+  later cloud benchmark only after a reviewed local/private run shows a
+  specific gap. The next recommended step is a Wave 6 source/runtime
+  readiness review before any App packet, helper, model run, upload, generated
+  output, DaVinci path, media metadata path, or public use. Company then
+  completed that source/runtime readiness review at
+  `domains/company/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
+  Result: `source_available_runtime_partially_ready_model_route_not_ready_implementation_deferred`.
+  The four selected task `398` files exist, App `out/` is ignored, Node/npm
+  are available, and `nvidia-smi` reports an RTX 5060 Ti with 16GB VRAM, but
+  `ffprobe`/`ffmpeg`/`mediainfo` are not on PATH, storage-free checks were
+  denied, the exact Nemotron route is not selected, and privacy/retention,
+  license/commercial, cost, and input-limit gates remain unresolved. The next
+  step was a Wave 6 App design-review packet for source/runtime readiness
+  only, now documented at
+  `domains/company/operation_living_intelligence_wave_6_app_design_review_packet_2026-05-15.md`.
+  The packet asks App for docs-only review of preflight media inspection,
+  ignored output path, no raw-media side effects, Media Library separation,
+  model-route/credential separation, storage/cache posture, and stop
+  conditions. App completed the docs-only Wave 6 design review at
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave6-design-review.md`,
+  accepting the future preflight-only boundary in principle while keeping
+  implementation deferred. At that point, Wave 6 remained blocked before helper,
+  media-inspection dependency install/use, generated output, model route
+  selection, model install/download/run, API/model call, upload, media
+  operation, App runtime behavior, Media Library metadata, DaVinci work,
+  public output, paid service, or canonical writeback. Company then prepared
+  the Wave 6 media preflight policy/tooling proposal at
+  `domains/company/operation_living_intelligence_wave_6_media_preflight_policy_and_tooling_proposal_2026-05-16.md`.
+  The proposal scopes a future preflight-only App helper and ignored output
+  boundary, but does not approve helper files, generated output, media
+  inspection commands, tool installs, model routes, raw-media side effects,
+  App/runtime/database writes, public output, or canonical writeback. Company
+  then prepared the Wave 6 preflight implementation readiness checklist at
+  `domains/company/operation_living_intelligence_wave_6_preflight_implementation_readiness_checklist_2026-05-16.md`,
+  narrowing any future first implementation to Phase A filesystem-only
+  preflight unless media-inspection tooling is separately approved. Waves 4
+  and 6 remain deferred return gates. Josue then approved Phase A, and App
+  added `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-media-preflight.js`.
+  Phase A readback returned
+  `pass_with_review_required_wave6_phase_a_preflight_ready` with all `4 / 4`
+  source files present, ignored App output, parent folders unchanged,
+  `ffprobe`/`ffmpeg` detected by PATH probe only, no media tool execution, and
+  no media processing, model/API/cloud, database, App runtime, public, or
+  canonical write. Josue then approved Phase B, and App completed approved
+  `ffprobe` stream metadata readback at
+  `domains/company/operation_living_intelligence_wave_6_phase_b_media_stream_metadata_readback_2026-05-16.md`.
+  Phase B parsed all `4 / 4` metadata results, confirmed parent folders
+  unchanged, and performed no `ffmpeg`, model/API/cloud, Media Library,
+  database, public, or canonical write. Company then completed the Wave 6
+  model-route decision packet at
+  `domains/company/operation_living_intelligence_wave_6_model_route_decision_packet_2026-05-16.md`.
+  Company recommendation was local/private-first App route review: Nemotron
+  remains the preferred target if feasible, Qwen remains fallback/local
+  benchmark if needed, and hosted/cloud routes remain deferred behind
+  account/key/upload/privacy/cost approval. Company then prepared the Wave 6
+  App model-route design-review packet at
+  `domains/company/operation_living_intelligence_wave_6_model_route_app_design_review_packet_2026-05-16.md`.
+  App completed the docs-only model-route review at
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave6-model-route-design-review.md`.
+  Company prepared the model-route feasibility preflight approval packet at
+  `domains/company/operation_living_intelligence_wave_6_model_route_feasibility_preflight_approval_packet_2026-05-16.md`.
+  Josue approved that narrow boundary, App added
+  `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-model-route-feasibility.js`,
+  and Company recorded the readback at
+  `domains/company/operation_living_intelligence_wave_6_model_route_feasibility_preflight_readback_2026-05-16.md`.
+  Result:
+  `pass_with_review_required_wave6_model_route_feasibility_preflight_ready`.
+  The readback confirmed the exact four source files exist, raw parent folders
+  stayed unchanged, local CPU/RAM/GPU/disk readiness was recorded, and no model
+  install/download/run, API call, cloud upload, preprocessing, generated
+  annotation, App runtime, Media Library, database, public, or canonical write
+  occurred. Company then completed the official route recheck and
+  route-selection packet at
+  `domains/company/operation_living_intelligence_wave_6_official_route_recheck_and_route_selection_packet_2026-05-16.md`.
+  The selected route for a future implementation proposal is
+  `Qwen/Qwen3-VL-2B-Instruct` local/offline. Nemotron 3 Nano Omni remains the
+  strategic quality target once hardware/runtime gates are solved; hosted/cloud
+  routes remain deferred. Company then prepared the Qwen3-VL local pilot
+  implementation approval packet at
+  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_implementation_approval_packet_2026-05-16.md`.
+  That packet requires explicit approval before App code, dependency install,
+  model download/cache, or model run. Josue approved it, and App completed the
+  Qwen3-VL still-image local pilot with
+  `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-qwen3-vl-local-pilot.js`.
+  Company recorded the readback at
+  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_readback_2026-05-16.md`.
+  Result:
+  `pass_with_review_required_wave6_qwen3_vl_still_image_candidate_ready`.
+  The helper used only `TEST_398_01_OPAQUE_LAKE_STILL`, generated parsed
+  candidate-only JSON with public/canonical blocks, confirmed the raw parent
+  folder unchanged, and performed no video, `ffmpeg`, preprocessing, API/cloud,
+  Media Library, database, public, or canonical write. Runtime was CPU-only.
+  Company then completed the Qwen3-VL prompt hardening/usefulness review at
+  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardening_usefulness_review_2026-05-16.md`.
+  Josue approved the prompt-hardened still-image rerun, and App reran the
+  helper with the existing local runtime/cache. Company recorded the readback at
+  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardened_rerun_readback_2026-05-16.md`.
+  Result:
+  `pass_with_review_required_wave6_qwen3_vl_still_image_candidate_ready`.
+  The hardened candidate parsed as JSON, retained review-required,
+  public-use-blocked, noncanonical guardrails, removed the earlier environment-quality
+  judgment issue, confirmed the raw parent folder unchanged at `430 / 430`,
+  and did not reinstall dependencies or redownload the model. Runtime remained
+  CPU-only; video, GPU/CUDA runtime changes, preprocessing, generated
+  annotation expansion, Media Library writes, public output, and canonical
+  writeback remain unapproved. Company then completed the Wave 6 video/GPU
+  runtime decision packet at
+  `domains/company/operation_living_intelligence_wave_6_video_gpu_runtime_decision_packet_2026-05-16.md`.
+  Decision: do not run video yet. The next safe gate is a docs-only App
+  short-video/GPU runtime design review before any video input, GPU/CUDA
+  runtime change, decoder/backend change, preprocessing, generated annotation
+  expansion, Media Library metadata, App runtime behavior, public output, or
+  canonical writeback. Company then prepared the App design-review packet at
+  `domains/company/operation_living_intelligence_wave_6_video_gpu_runtime_app_design_review_packet_2026-05-16.md`.
+  The packet asks App to review `TEST_398_02_FIELD_SAMPLING` only as the
+  possible first short-video candidate and keeps implementation unapproved.
+  App completed the docs-only review at
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave6-video-gpu-runtime-design-review.md`.
+  Result: `app_review_blocks_video_until_runtime_changes_are_approved`. App
+  accepts the sequencing decision to not run video yet and recommends a
+  no-execution runtime/backend preflight or exact implementation approval
+  packet before any video input, GPU/CUDA runtime change, decoder/backend
+  install/use, preprocessing, or generated annotation expansion.
+  Company then prepared the no-execution runtime/backend preflight approval
+  packet at
+  `domains/company/operation_living_intelligence_wave_6_runtime_backend_preflight_approval_packet_2026-05-16.md`.
+  It defines a possible App helper boundary for local Python/runtime/cache/
+  package/CUDA/backend availability readback only. Implementation, local
+  environment probing, video input, model execution, dependency changes,
+  decoder/backend use, preprocessing, generated annotations, App runtime
+  behavior, database/public/canonical writes, and raw-media side effects remain
+  unapproved.
+  Josue then approved the no-execution preflight helper, and App completed it
+  at
+  `domains/company/operation_living_intelligence_wave_6_runtime_backend_preflight_readback_2026-05-16.md`.
+  Result: `pass_runtime_backend_preflight_cpu_only_video_packet_possible`.
+  The existing local runtime is CPU-only from Torch's view
+  (`torch = 2.12.0+cpu`, `torch_cuda_available = false`), `torchvision` is
+  importable, `torchcodec` and `decord` are missing, and the raw video parent
+  folder stayed unchanged at `967 / 967`. Video execution, GPU/CUDA runtime
+  changes, dependency/backend changes, preprocessing, generated annotations,
+  public output, and canonical writeback remain unapproved.
+  Company then prepared the CPU-only short-video implementation approval packet
+  at
+  `domains/company/operation_living_intelligence_wave_6_cpu_only_short_video_implementation_approval_packet_2026-05-16.md`.
+  It names the exact future helper boundary if Josue approves video: existing
+  local/offline Qwen3-VL runtime/cache only, CPU only, `torchvision` only,
+  `TEST_398_02_FIELD_SAMPLING` only, audio ignored, bounded video budget,
+  ignored candidate/readback output only, and blocked readback if anything
+  requires runtime/backend/preprocessing expansion.
+  App then completed the approved CPU-only short-video helper at
+  `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-qwen3-vl-short-video-pilot.js`,
+  and Company recorded the blocked readback at
+  `domains/company/operation_living_intelligence_wave_6_cpu_only_short_video_pilot_readback_2026-05-16.md`.
+  Result: `blocked_wave6_qwen3_vl_cpu_short_video_readback_only`. The approved
+  `torchvision` backend cannot read video in this runtime because
+  `torchvision.io` has no `read_video`; no candidate was accepted, raw parent
+  folder stayed unchanged at `967 / 967`, and model cache stayed unchanged.
+  Company then prepared the Decord backend short-video approval packet at
+  `domains/company/operation_living_intelligence_wave_6_decord_backend_short_video_approval_packet_2026-05-16.md`.
+  It recommends a local `decord` backend route as the next possible video path,
+  with install/use limited to the existing ignored App venv, CPU-only, exact
+  `TEST_398_02_FIELD_SAMPLING` scope, existing model cache, ignored output,
+  and no `torchcodec`, `ffmpeg`, preprocessing, GPU/CUDA, public, or canonical
+  writes.
+  Wave 5 is accepted as the
+  local no-embedding baseline and semantic-proxy comparison before any true
+  embedding decision.
+  Company then documented the Wave 7 Planner And Agent Routing Graph docs-only
+  design at
+  `domains/company/operation_living_intelligence_wave_7_planner_agent_routing_graph_design_2026-05-15.md`.
+  Wave 7 designs a derived ownership/blocker/approval/handoff graph over
+  Planner truth, Company registry routing, and domain reports while keeping
+  Planner/Supabase as live task truth and keeping helper implementation,
+  generated output, Planner writes, App runtime behavior, graph runtime,
+  automation, public output, and canonical writeback unapproved. Company then
+  completed the Wave 7 source/readiness review at
+  `domains/company/operation_living_intelligence_wave_7_source_readiness_review_2026-05-15.md`.
+  Result: `source_shape_ready_live_read_deferred_app_packet_ready`. The source
+  shape is ready for a Company-to-App design-review packet, while live Planner
+  reads, helper implementation, generated output, Planner writes, App runtime
+  behavior, graph runtime, automation, and canonical writeback remain
+  unapproved. Company then prepared the Wave 7 App design-review packet at
+  `domains/company/operation_living_intelligence_wave_7_app_design_review_packet_2026-05-15.md`.
+  The packet asks App for docs-only review of the no-write Planner/registry
+  routing helper boundary before any live read, helper, generated output,
+  Planner write, App runtime behavior, graph runtime, automation, or canonical
+  writeback. Josue then chose to pause Wave 7 as a deferred return gate, like
+  Waves 4 and 6, and continue to Wave 8 docs-only. Company documented the
+  Wave 8 Telemetry Summaries docs-only design at
+  `domains/company/operation_living_intelligence_wave_8_telemetry_summaries_design_2026-05-15.md`.
+  Wave 8 designs derived telemetry summaries for current vs historical climate
+  context while preserving Hardware/App/Web boundaries, live-control safety,
+  public/private telemetry separation, and no-write/no-implementation gates.
+  Company then completed the Wave 8 source/readiness review at
+  `domains/company/operation_living_intelligence_wave_8_source_readiness_review_2026-05-15.md`.
+  Result: `source_shape_ready_live_read_deferred_packet_ready_retention_open`.
+  Source shape is ready for a no-write Hardware/App/Web design-review packet,
+  while live telemetry reads, row samples, retention policy, helpers, generated
+  output, schema/runtime changes, App/Web/Hardware behavior changes, scheduled
+  jobs, and canonical writeback remain unapproved. Company then prepared the
+  Wave 8 Hardware/App/Web design-review packet at
+  `domains/company/operation_living_intelligence_wave_8_hardware_app_web_design_review_packet_2026-05-15.md`.
+  Company then prepared the domain review synthesis at
+  `domains/company/operation_living_intelligence_wave_8_domain_review_synthesis_2026-05-15.md`.
+  Result: `company_review_synthesis_ready_domain_acceptance_pending`. The
+  recommended default is to pause Wave 8 before implementation and continue
+  Wave 9 docs-only unless Josue explicitly chooses Hardware/App/Web
+  domain-owned review notes now. Company then documented the Wave 9 CRM,
+  Financials, And Sensitive Domains docs-only design at
+  `domains/company/operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md`.
+  Wave 9 is policy-first: sensitivity tiers, owner approvals, aggregate-only
+  summary shapes, blocked source families, commitment discipline, recommendation
+  review gates, and provenance must come before any sensitive live read,
+  helper, generated output, graph/vector projection, outreach, spend, public
+  claim, App/Web/Growth/Financials behavior change, or canonical writeback.
+  Company then completed the Wave 9 source/privacy readiness review at
+  `domains/company/operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md`.
+  Result: `policy_shape_ready_owner_review_required_live_read_deferred_sensitive_projection_blocked`.
+  Company then prepared the no-write Growth/Financials/App/Web owner-review
+  packet at
+  `domains/company/operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md`.
+  Company then prepared the owner-review synthesis at
+  `domains/company/operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md`.
+  Owner review is ready to request, but sensitive live reads, owner acceptance,
+  helper work, generated output, graph/vector indexing, outreach, spend, public
+  claims, behavior changes, and canonical writeback remain unapproved.
+  Company then consolidated Waves 4-9 in the deferred return map at
+  `domains/company/operation_living_intelligence_deferred_return_map_2026-05-15.md`.
+  Josue then approved the Wave 7 App docs-only review; App completed it at
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave7-design-review.md`.
+  The map now treats Wave 7 review and the Wave 5 local
+  manifest/chunk/keyword-baseline helper as complete return gates. Company
+  also completed the Wave 5 usefulness review, evaluation tuning,
+  expected-status helper update, readback review, and vector/embedding decision
+  brief. The helper is accepted as a local citation/retrieval aid; any semantic
+  retrieval step should start with a docs-only App design-review packet before
+  implementation.
   The 2026-05-14 docs-only planning pass completed the Research, Content, and
   Financials OLI lanes while leaving Company project `75` active for the
   remaining implementation gate, App project `76` planned for task `412`, and
@@ -533,6 +904,855 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   docs-only design pass. No live Planner/Supabase records, public behavior,
   App runtime, media metadata, Content copy, Research claims, automation,
   canonical writeback, or source-of-truth migration changed.
+- **2026-05-15:** Company started **Operation Living Intelligence Wave 3:
+  Species and Public History Expansion** as a docs-only design pass:
+  `domains/company/operation_living_intelligence_wave_3_species_public_history_design_2026-05-15.md`.
+  The design asks what miniBIOTA can safely say publicly about a species and
+  why, beginning with a Lake Post-Seal packet anchored on chronicle `30`,
+  content pipeline `338`, Freshwater Lake, Flagfish `24`, Ghost Shrimp `67`,
+  and Daphnia `164`. The next step is source-availability review only. No App
+  helper, graph generation, public output, Research/Web/Content write, media
+  metadata write, Planner/Supabase write, automation, or canonical writeback
+  was approved.
+- **2026-05-15:** Company completed the **Operation Living Intelligence Wave 3
+  Lake Post-Seal source-availability review**:
+  `domains/company/operation_living_intelligence_wave_3_lake_post_seal_source_availability_review_2026-05-15.md`.
+  Result: the packet is source-available for a future no-write App proposal
+  using local JSONL/readback only. Confirmed context includes the published
+  source anchors, Freshwater Lake, chronicle `30` subject links, available
+  species rows, source-context species, observations/open loops, Wave 1 public
+  reuse sidecar surfaces, Wave 2 story context, and review-gated media/image
+  state. The next recommended action is an App proposal document only. No App
+  repo edits, helper implementation, graph generation, public output,
+  Research/Web/Content write, media metadata write, Planner/Supabase write,
+  automation, or canonical writeback was approved.
+- **2026-05-15:** Company prepared the **Operation Living Intelligence Wave 3
+  No-Write App Implementation Proposal**:
+  `domains/company/operation_living_intelligence_wave_3_no_write_app_implementation_proposal_2026-05-15.md`.
+  The proposal defines a future local JSONL/readback package under App's
+  ignored `out/operation_living_intelligence/wave_3_species_public_history/lake_post_seal/`
+  path. It specifies the Lake Post-Seal source manifest, primary species
+  `24`, `67`, and `164`, public chronicle context species `66`, `65`, `169`,
+  and `25`, internal/review-required source-context species `167` and `180`,
+  candidate public surfaces, review-gated media and display-image handling,
+  proposed nodes/edges, blocked inferences, validation checks, readback
+  examples, stop conditions, and review owners. The next gate is App design
+  review only if explicitly approved. No App repo file, helper implementation,
+  graph generation, Memgraph/Docker use, Supabase/Planner write, Research
+  write, Content write, Web/public behavior, media metadata write, automation,
+  canonical writeback, public commitment, sponsor commitment, financial
+  commitment, legal decision, launch target, or roadmap commitment changed.
+- **2026-05-15:** After Josue approved continuing to the App design-review
+  gate, Company prepared the **Operation Living Intelligence Wave 3 App Design
+  Review Packet**:
+  `domains/company/operation_living_intelligence_wave_3_app_design_review_packet_2026-05-15.md`.
+  The packet asks App to review only the future no-write local JSONL/readback
+  shape: ignored output path, protected read pattern, source manifest,
+  species/public-history modeling, public-surface candidates, media/display
+  asset distinction, blocked-inference guardrails, validation checks, and stop
+  conditions. No App repo file, helper implementation, graph generation,
+  Memgraph/Docker use, Supabase/Planner write, Storage write, schema change,
+  Research write, Content write, Web/public behavior, media metadata write,
+  species image change, automation, canonical writeback, public commitment,
+  sponsor commitment, financial commitment, legal decision, launch target, or
+  roadmap commitment changed.
+- **2026-05-15:** App completed the docs-only **Operation Living Intelligence
+  Wave 3 Design Review**:
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave3-design-review.md`.
+  The review accepts the proposed ignored
+  `out/operation_living_intelligence/wave_3_species_public_history/lake_post_seal/`
+  output path and JSONL/readback-first package shape for a future separately
+  approved helper. It keeps Cypher/Memgraph deferred, requires explicit
+  source-scope, blocked-edge, validation, and readback checks, and keeps
+  canonical writeback at `none`. During the review itself, no App helper,
+  generated output, runtime behavior, schema, Supabase/Planner/Storage write,
+  media metadata, species image, public behavior, Research/Content/Web change,
+  automation, public commitment, sponsor commitment, financial commitment,
+  legal decision, launch target, or roadmap commitment changed.
+- **2026-05-15:** After Josue approved the smallest local Wave 3 helper, App
+  added and verified
+  `M:\miniBIOTA\miniBIOTA_App\tools\generate-oli-wave3-species-public-history-jsonl.js`
+  and
+  `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave3-species-public-history-readback.js`.
+  The generated files are ignored local output under
+  `out\operation_living_intelligence\wave_3_species_public_history\lake_post_seal\`.
+  The generator returned
+  `pass_with_review_required_species_public_history_jsonl_ready` with `114`
+  nodes, `222` normal edges, and `49` blocked edges; the offline readback
+  returned
+  `pass_with_review_required_species_public_history_readback_ready` with `271`
+  relationships including blocked guardrails. Company recorded the helper at
+  `domains/company/operation_living_intelligence_wave_3_jsonl_readback_helper_2026-05-15.md`
+  and closed Wave 3 as a successful no-Docker species/public-history proof at
+  `domains/company/operation_living_intelligence_wave_3_readback_review_2026-05-15.md`.
+  No Docker/Memgraph use, App runtime/schema change, Supabase/Planner write,
+  Storage write, media metadata change, species image change, public behavior,
+  Research/Content/Web change, automation, canonical writeback, public
+  commitment, sponsor commitment, financial commitment, legal decision,
+  launch target, or roadmap commitment changed.
+- **2026-05-15:** Company started **Operation Living Intelligence Wave 4:
+  YouTube Analytics Warehouse** as a docs-only design pass:
+  `domains/company/operation_living_intelligence_wave_4_youtube_analytics_warehouse_design_2026-05-15.md`.
+  The design checks current official YouTube Analytics/Reporting/Data API docs
+  and recommends a cautious first path: begin with manual YouTube Studio export
+  or a bounded targeted Analytics API query for the Lake Post-Seal source
+  identity (`content_pipeline.id = 338`, `chronicles.id = 30`,
+  `https://youtu.be/lgmPWX9e-A0`), keep Reporting API bulk jobs for later
+  recurring warehouse work, and exclude monetary metrics until Financials
+  approves monetary scope. The next step is a source-availability and
+  auth-readiness review only. No YouTube API/OAuth connection, API call,
+  Google Cloud change, credential storage, analytics export, warehouse file,
+  DuckDB/MotherDuck/BigQuery setup, App helper, scheduled job, public
+  dashboard, Content/Web/Growth action, Planner/Supabase write, paid service,
+  revenue claim, public commitment, sponsor commitment, financial commitment,
+  legal decision, launch target, roadmap commitment, or canonical writeback
+  changed.
+- **2026-05-15:** Company completed the **Operation Living Intelligence Wave 4
+  YouTube Analytics Source And Auth Readiness Review**:
+  `domains/company/operation_living_intelligence_wave_4_youtube_analytics_source_auth_readiness_review_2026-05-15.md`.
+  Result: `source_available_auth_not_ready_implementation_deferred`. The first
+  source identity is available for `content_pipeline.id = 338`,
+  `chronicles.id = 30`, and YouTube video id `lgmPWX9e-A0`, but analytics data
+  access is not ready: no manual export, OAuth setup, credential path, API
+  response, warehouse file, App helper, scheduled job, or readback exists. The
+  next decision is whether to use a manual YouTube Studio export packet, a
+  targeted Analytics API no-write App proposal, or defer Wave 4 and continue to
+  Wave 5 Retrieval Layer docs-only. No YouTube API/OAuth connection, API call,
+  export, Google Cloud change, token storage, warehouse output, App behavior,
+  Planner/Supabase write, public dashboard, revenue claim, paid service,
+  commitment, or canonical writeback changed.
+- **2026-05-15:** Josue chose to defer Wave 4 YouTube analytics access setup
+  and continue to **Operation Living Intelligence Wave 5: Retrieval Layer**.
+  Company documented the docs-only Wave 5 design at
+  `domains/company/operation_living_intelligence_wave_5_retrieval_layer_design_2026-05-15.md`.
+  The design starts with corpus inventory, chunk/citation rules, and a
+  no-embedding keyword/source-path baseline, then only later considers
+  embeddings or pgvector after corpus scope and evaluation questions are
+  approved. The required rule is: no source path or record ID, no
+  authoritative answer. No embedding job, vector index, pgvector table,
+  Supabase schema change, external API/model call, App helper, generated
+  corpus output, scheduled refresh, public search, Planner/Supabase write,
+  paid vector service, public commitment, sponsor commitment, financial
+  commitment, legal decision, launch target, roadmap commitment, or canonical
+  writeback changed.
+- **2026-05-15:** Company completed the Wave 5 Retrieval Corpus Inventory And
+  Citation Readiness Review at
+  `domains/company/operation_living_intelligence_wave_5_retrieval_corpus_inventory_citation_readiness_review_2026-05-15.md`.
+  Result: `company_corpus_ready_for_no_write_manifest_proposal`. The first
+  safe corpus is limited to Company-owned and Company-report-level sources:
+  Company operating memory/protocols, OLI plan/projection matrix/wave docs,
+  active Company domain reports/overviews, and explicitly selected generated
+  readbacks labeled `generated-derived`. Deep Content and Research source docs
+  remain candidate-only until owner scope is explicit; sensitive CRM/contact,
+  finance, sponsor, private analytics, raw media, credentials, service-role,
+  App runtime-log, and Brain archive sources remain excluded by default. No
+  embedding job, vector index, pgvector table, Supabase schema change,
+  external API/model call, App helper implementation, generated corpus output,
+  scheduled refresh, public search, Planner/Supabase write, paid vector
+  service, public commitment, sponsor commitment, financial commitment, legal
+  decision, launch target, roadmap commitment, or canonical writeback changed.
+- **2026-05-15:** Company prepared the **Operation Living Intelligence Wave 5
+  No-Write App Manifest/Chunk Export Proposal** at
+  `domains/company/operation_living_intelligence_wave_5_no_write_app_manifest_chunk_export_proposal_2026-05-15.md`.
+  The proposal asks App to review a future local ignored manifest/chunk export
+  under
+  `M:\miniBIOTA\miniBIOTA_App\out\operation_living_intelligence\wave_5_retrieval_layer\company_corpus\`,
+  with `corpus_manifest.json`, `documents_manifest.jsonl`,
+  `chunks_manifest.jsonl`, `retrieval_evaluation_set.jsonl`,
+  `keyword_baseline_report.md`, `validation_report.json`, and
+  `retrieval_readback_report.md`. The package remains
+  manifest/chunk/readback-first and explicitly defers embeddings, pgvector,
+  vector indexes, App helper implementation, generated corpus output,
+  external API/model calls, scheduled refresh, public search,
+  Planner/Supabase writes, App runtime behavior, Web behavior, paid services,
+  public commitments, sponsor commitments, financial commitments, legal
+  decisions, launch targets, roadmap commitments, and canonical writeback.
+- **2026-05-15:** Company prepared the **Operation Living Intelligence Wave 5
+  App Design Review Packet** at
+  `domains/company/operation_living_intelligence_wave_5_app_design_review_packet_2026-05-15.md`.
+  The packet asks App for design review only: ignored output path, manifest and
+  chunk shape, line-aware chunking, metadata labels, generated-derived
+  handling, keyword baseline, validation/readback checks, and stop conditions.
+  No App code, generated corpus files, embeddings, vector index, pgvector
+  table, Supabase schema change, external API/model call, Planner/Supabase
+  write, Storage change, App runtime behavior, Web/public search behavior,
+  automation, public commitment, sponsor commitment, financial commitment,
+  legal decision, launch target, roadmap commitment, or canonical writeback
+  changed.
+- **2026-05-15:** App completed the docs-only **Operation Living Intelligence
+  Wave 5 Design Review** at
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave5-design-review.md`.
+  The review accepts the proposed ignored
+  `out/operation_living_intelligence/wave_5_retrieval_layer/company_corpus/`
+  output path and manifest/chunk/readback-first package shape for a future
+  separately approved helper. It requires line-aware chunks,
+  source/owner/role/canonicality/publicness/claim-status metadata, a
+  no-embedding keyword/source-path baseline, validation/readback gates,
+  generated-derived labels for selected readbacks, and `none` canonical
+  writeback. No App helper, generated corpus files, embeddings, vector index,
+  pgvector table, Supabase schema change, external API/model call,
+  Planner/Supabase write, Storage change, App runtime behavior,
+  Web/public-search behavior, automation, public commitment, sponsor
+  commitment, financial commitment, legal decision, launch target, roadmap
+  commitment, or canonical writeback changed.
+- **2026-05-15:** App added and verified the approved narrow **Operation
+  Living Intelligence Wave 5 Retrieval Manifest/Chunk Helper**:
+  `M:\miniBIOTA\miniBIOTA_App\tools\generate-oli-wave5-retrieval-manifest.js`
+  and
+  `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave5-retrieval-readback.js`.
+  Generated output lives under ignored App `out/` at
+  `M:\miniBIOTA\miniBIOTA_App\out\operation_living_intelligence\wave_5_retrieval_layer\company_corpus\`.
+  The generator returned `pass_with_review_required_retrieval_manifest_ready`
+  with `98` documents, `1427` chunks, `10` evaluation questions, and `0`
+  sensitive path matches. Readback returned
+  `pass_with_review_required_retrieval_readback_ready` with `9 / 10`
+  evaluation questions passed, all required keyword terms found, exact path
+  lookup, heading search, metadata filters, and blocked-answer readback. The
+  Company record is
+  `domains/company/operation_living_intelligence_wave_5_retrieval_manifest_chunk_helper_2026-05-15.md`.
+  No embeddings, vector fields, vector index, pgvector table, model/API call,
+  live Supabase/Planner read, App runtime behavior, public search, scheduled
+  refresh, public output, structured write, or canonical writeback changed.
+- **2026-05-15:** Company completed the docs-only **Operation Living
+  Intelligence Wave 5 Retrieval Baseline Usefulness Review** at
+  `domains/company/operation_living_intelligence_wave_5_retrieval_baseline_usefulness_review_2026-05-15.md`.
+  The review accepts the local helper as useful for source-path, keyword,
+  heading, metadata-filter, and citation readback work. It does not approve
+  embeddings, pgvector, vector index, public search, scheduled refresh, App
+  runtime integration, live reads, corpus expansion beyond Company/report-level
+  sources, or canonical writeback. The later expected-status helper update and
+  readback review accepted the no-embedding baseline; any vector/embedding work
+  still needs a separate decision brief.
+- **2026-05-15:** Company completed the docs-only **Operation Living
+  Intelligence Wave 5 Evaluation Tuning Plan** at
+  `domains/company/operation_living_intelligence_wave_5_evaluation_tuning_plan_2026-05-15.md`.
+  The plan specifies that future retrieval readback should distinguish
+  `answerable_with_citation`, `review_required`, and `blocked` expected
+  statuses. It keeps the Daphnia/publicness case as review-required unless
+  Research, Content, and Web owner-review boundaries are preserved, and adds
+  proposed questions for public species-card blocking, generated-derived
+  canonicality, corpus-expansion ownership, private source-family exclusion,
+  and stale generated snapshot handling. No App code, generated output,
+  embeddings, vector work, live reads, runtime behavior, public output, or
+  canonical writeback changed.
+- **2026-05-15:** Company prepared the docs-only **Operation Living
+  Intelligence Wave 5 Expected-Status Helper Update Proposal** at
+  `domains/company/operation_living_intelligence_wave_5_expected_status_helper_update_proposal_2026-05-15.md`.
+  The proposal is the approval packet for a future narrow App helper update:
+  update `tools/generate-oli-wave5-retrieval-manifest.js` and
+  `tools/run-oli-wave5-retrieval-readback.js`, increase the evaluation set
+  from `10` to `15`, support expected statuses, regenerate ignored local output,
+  and rerun validation/readback. Implementation remains unapproved until Josue
+  explicitly approves that exact scope.
+- **2026-05-15:** App completed the approved narrow **Operation Living
+  Intelligence Wave 5 Expected-Status Helper Update**. App updated
+  `M:\miniBIOTA\miniBIOTA_App\tools\generate-oli-wave5-retrieval-manifest.js`
+  and
+  `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave5-retrieval-readback.js`.
+  Regenerated ignored output under
+  `M:\miniBIOTA\miniBIOTA_App\out\operation_living_intelligence\wave_5_retrieval_layer\company_corpus\`
+  returned `pass_with_review_required_retrieval_manifest_ready` and
+  `pass_with_review_required_retrieval_readback_ready` with `101` documents,
+  `1463` chunks, `15` evaluation questions, and `15 / 15` passed. The update
+  lets `review_required` and `blocked` answers pass only when those are the
+  expected safe outcomes. No embeddings, vector work, live reads, App runtime
+  behavior, public output, expanded corpus scope, or canonical writeback changed.
+- **2026-05-15:** Company completed the **Operation Living Intelligence Wave 5
+  Expected-Status Readback Review** at
+  `domains/company/operation_living_intelligence_wave_5_expected_status_readback_review_2026-05-15.md`.
+  Result: the 15-question no-embedding readback is accepted as the current
+  local Wave 5 retrieval baseline for citation recovery, owner routing,
+  publicness/claim-review gates, generated-derived caution, and sensitive-source
+  exclusion. The review does not approve embeddings, pgvector/vector index,
+  public search, scheduled refresh, App runtime integration, live reads,
+  expanded corpus scope, public output, or canonical writeback. Next Wave 5
+  step, only if needed, is a docs-only vector/embedding decision brief.
+- **2026-05-16:** Company completed the **Operation Living Intelligence Wave 5
+  Vector/Embedding Decision Brief** at
+  `domains/company/operation_living_intelligence_wave_5_vector_embedding_decision_brief_2026-05-16.md`.
+  Decision: semantic retrieval is worth evaluating, but only through a future
+  no-write, ignored-output App design-review packet. The brief does not approve
+  App code, generated vector output, embeddings, pgvector/vector index,
+  model/API calls, credential setup, live reads, public search, scheduled
+  refresh, App runtime integration, expanded corpus scope, structured writes,
+  public output, or canonical writeback.
+- **2026-05-16:** Company prepared the **Operation Living Intelligence Wave 5
+  Vector/Embedding App Design-Review Packet** at
+  `domains/company/operation_living_intelligence_wave_5_vector_embedding_app_design_review_packet_2026-05-16.md`.
+  The packet asks App to review a future no-write, ignored-output semantic
+  retrieval pilot shape only. It does not approve App code, embeddings,
+  generated vector output, pgvector/vector index, model/API calls, credential
+  setup, live reads, public search, scheduled refresh, App runtime integration,
+  expanded corpus scope, structured writes, public output, or canonical
+  writeback.
+- **2026-05-16:** App completed the docs-only **Operation Living Intelligence
+  Wave 5 Vector/Embedding Design Review** at
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave5-vector-embedding-design-review.md`.
+  Company synthesized the review at
+  `domains/company/operation_living_intelligence_wave_5_vector_embedding_app_review_synthesis_2026-05-16.md`.
+  Result: App accepts a future separately approved no-write local vector
+  evaluation proposal and recommends local-file-only evaluation first, with
+  pgvector deferred until local value, citation fidelity, expected-status
+  behavior, stale-output handling, and cost/privacy rules are proven. No App
+  code, embeddings, generated vector output, pgvector/vector index,
+  model/API calls, credential setup, live reads, public search, scheduled
+  refresh, App runtime integration, expanded corpus scope, structured writes,
+  public output, or canonical writeback changed.
+- **2026-05-16:** Company prepared the **Operation Living Intelligence Wave 5
+  Local Vector Evaluation Helper Proposal** at
+  `domains/company/operation_living_intelligence_wave_5_local_vector_evaluation_helper_proposal_2026-05-16.md`.
+  The proposal scopes a future local-file-only App helper,
+  `tools/run-oli-wave5-local-vector-evaluation.js`, and ignored output under
+  `out/operation_living_intelligence/wave_5_retrieval_layer/company_corpus/vector_eval/`.
+  It does not approve App code, embeddings, generated vector output,
+  pgvector/vector index, model/API calls, credential setup, live reads, public
+  search, scheduled refresh, App runtime integration, expanded corpus scope,
+  structured writes, public output, or canonical writeback.
+- **2026-05-16:** Josue approved the **Operation Living Intelligence Wave 5
+  Local Vector Evaluation Helper** boundary. App added
+  `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave5-local-vector-evaluation.js`
+  and
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave5-vector-eval-config.example.json`,
+  then wrote validation output under ignored
+  `M:\miniBIOTA\miniBIOTA_App\out\operation_living_intelligence\wave_5_retrieval_layer\company_corpus\vector_eval\`.
+  First run returned `blocked_baseline_stale_no_vector_evaluation`: all
+  required baseline files were present, but `6` stale source hashes and `6`
+  unmanifested OLI source candidates blocked semantic candidate output. Company
+  recorded this at
+  `domains/company/operation_living_intelligence_wave_5_local_vector_evaluation_helper_2026-05-16.md`.
+  Treat this as a successful stale-baseline guardrail, not a semantic retrieval
+  pass. No embeddings, model/API calls, pgvector/vector index, live reads,
+  App runtime behavior, public output, expanded corpus, structured writes,
+  scheduled refresh, or canonical writeback changed.
+- **2026-05-16:** Company refreshed and accepted the **Operation Living
+  Intelligence Wave 5 Local Vector-Proxy Readback** at
+  `domains/company/operation_living_intelligence_wave_5_local_vector_proxy_readback_review_2026-05-16.md`.
+  The regenerated Wave 5 baseline returned `108` documents, `1543` chunks,
+  and `15 / 15` expected-status questions passing. The local vector-proxy
+  helper then returned `pass_with_review_required_local_vector_proxy_evaluation_ready`
+  with `75` candidate rows, `15` result rows, `15 / 15` result rows passing,
+  `0` stale source hashes, and `0` unmanifested OLI source candidates. Treat
+  this as an accepted no-embedding semantic-proxy comparison, not a true
+  embedding benchmark. No embeddings, model/API calls, pgvector/vector index,
+  live reads, App runtime behavior, public output, expanded corpus, scheduled
+  refresh, structured writes, or canonical writeback changed.
+- **2026-05-15:** Company completed the docs-only **Operation Living
+  Intelligence Wave 6 Media And Visual AI Readiness Design** at
+  `domains/company/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
+  The design checks current official NVIDIA and Twelve Labs documentation,
+  keeps Nemotron/Codex as the first visual-media lane subject to exact route
+  verification, locks the first bounded set to the task `398` four media
+  items, and preserves candidate annotations as noncanonical review material
+  with `metadata_write_status = not_approved`, `public_use_status = blocked`,
+  and `canonical_writeback = none`. The next gate is source/runtime readiness
+  review. No model install/download/run, API call, cloud upload, generated
+  output, App helper/runtime change, Media Library integration, media scan,
+  frame extraction, sidecar/thumbnail/proxy creation, DaVinci work,
+  media metadata write, Research/Content/Web change, Supabase/Planner/Storage
+  write, graph/vector write, paid service, public output, or canonical
+  writeback changed.
+- **2026-05-15:** Company completed the **Operation Living Intelligence Wave 6
+  Source And Runtime Readiness Review** at
+  `domains/company/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
+  Result:
+  `source_available_runtime_partially_ready_model_route_not_ready_implementation_deferred`.
+  The four task `398` media sources exist; App `out/` is ignored; Node
+  `v24.14.1`, `npm.cmd 11.11.0`, and `nvidia-smi` are available; and
+  `nvidia-smi` reports `NVIDIA GeForce RTX 5060 Ti`, `16311 MiB`, driver
+  `595.79`. Implementation remains blocked because `ffprobe`, `ffmpeg`, and
+  `mediainfo` are not on PATH, storage-free checks were denied, exact Nemotron
+  route is not selected, local 16GB VRAM does not prove full Nemotron local
+  feasibility, and privacy/retention/license/cost/input-limit gates remain
+  unresolved. No model install/download/run, API call, upload, generated
+  output, App helper/runtime change, media operation, DaVinci work, media
+  metadata write, Supabase/Planner/Storage write, graph/vector write, paid
+  service, public output, or canonical writeback changed.
+- **2026-05-15:** Company prepared the **Operation Living Intelligence Wave 6
+  App Design Review Packet** at
+  `domains/company/operation_living_intelligence_wave_6_app_design_review_packet_2026-05-15.md`.
+  The packet asks App for docs-only review of the source/runtime readiness
+  boundary: whether a preflight-only media inspection step is appropriate,
+  whether `ffprobe`/equivalent is acceptable, whether ignored
+  `out/operation_living_intelligence/wave_6_media_visual_ai_readiness/` is the
+  right preflight output path, how to prevent raw media folder side effects
+  and Media Library writes, and whether model route selection should remain
+  deferred until after preflight. No App code, helper, generated output, model
+  route selection, model install/download/run, API/model call, cloud upload,
+  media scan, clip/frame extraction, thumbnail/proxy/sidecar creation, App
+  runtime behavior, Media Library metadata, Supabase/Planner/Storage write,
+  DaVinci work, graph/vector write, paid service, public output, or canonical
+  writeback changed.
+- **2026-05-15:** App completed the docs-only **Operation Living Intelligence
+  Wave 6 Design Review** at
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave6-design-review.md`.
+  App accepted the future preflight-only boundary in principle: bounded task
+  `398` source set, ignored
+  `out/operation_living_intelligence/wave_6_media_visual_ai_readiness/`
+  output, read-only media metadata inspection, validation/readback, and strict
+  separation between media preflight, model route, credentials, generated
+  annotations, Media Library metadata, and App runtime behavior. No App helper,
+  dependency install/use, generated output, media scan, clip/frame extraction,
+  thumbnail/proxy/sidecar creation, model route selection, model
+  install/download/run, API/model call, cloud upload, Media Library metadata,
+  Supabase/Planner/Storage write, App runtime behavior, DaVinci work, public
+  output, paid service, or canonical writeback changed.
+- **2026-05-16:** Company prepared the **Operation Living Intelligence Wave 6
+  Media Preflight Policy And Tooling Proposal** at
+  `domains/company/operation_living_intelligence_wave_6_media_preflight_policy_and_tooling_proposal_2026-05-16.md`.
+  The proposal scopes a future preflight-only App helper,
+  `tools/run-oli-wave6-media-preflight.js`, exact four-file task `398` source
+  reads, immediate parent-folder side-effect checks, and ignored generated
+  output under
+  `out/operation_living_intelligence/wave_6_media_visual_ai_readiness/preflight/`.
+  It does not approve App code, generated output, media-inspection tooling
+  install/use, model route selection, model install/download/run, API/model
+  calls, cloud upload, media scan, clip/frame extraction, thumbnails/proxies/
+  sidecars/caches/checksums, Media Library metadata, Supabase/Planner/Storage
+  writes, App runtime behavior, DaVinci work, public output, paid service, or
+  canonical writeback.
+- **2026-05-16:** Company prepared the **Operation Living Intelligence Wave 6
+  Preflight Implementation Readiness Checklist** at
+  `domains/company/operation_living_intelligence_wave_6_preflight_implementation_readiness_checklist_2026-05-16.md`.
+  The checklist narrows a future first implementation to Phase A
+  filesystem-only preflight and provides exact approval wording. Media
+  inspection tool use, model/API/cloud work, generated annotations,
+  database/App runtime writes, public output, and canonical writeback remain
+  unapproved.
+- **2026-05-16:** App completed the approved **Operation Living Intelligence
+  Wave 6 Phase A Media Preflight Helper** at
+  `domains/company/operation_living_intelligence_wave_6_phase_a_media_preflight_helper_2026-05-16.md`.
+  Result:
+  `pass_with_review_required_wave6_phase_a_preflight_ready`. The helper found
+  all `4 / 4` source files, wrote ignored App preflight output, confirmed
+  immediate raw-media parent folders unchanged, detected `ffprobe`/`ffmpeg`
+  availability without executing media tools, and performed no media
+  processing, model/API/cloud, Media Library, Supabase/Planner/Storage, App
+  runtime, public, or canonical write.
+- **2026-05-16:** Company prepared the **Operation Living Intelligence Wave 6
+  Phase B Media Stream Metadata Approval Packet** at
+  `domains/company/operation_living_intelligence_wave_6_phase_b_media_stream_metadata_approval_packet_2026-05-16.md`.
+  The packet names the detected `ffprobe.exe` path and proposed
+  `-v error -print_format json -show_format -show_streams` flags for a future
+  exact four-file metadata readback.
+- **2026-05-16:** App completed the approved **Operation Living Intelligence
+  Wave 6 Phase B Media Stream Metadata Readback** at
+  `domains/company/operation_living_intelligence_wave_6_phase_b_media_stream_metadata_readback_2026-05-16.md`.
+  Result:
+  `pass_with_review_required_wave6_phase_b_stream_metadata_ready`. The helper
+  ran only the approved `ffprobe` command against the exact four task `398`
+  files; all `4 / 4` commands exited `0`; metadata JSON parsed; parent folders
+  stayed unchanged. The three video files are 4K H.264 with audio tracks:
+  `11.47s`, `108.19s`, and `79.46s`. The still reports as `image2`/MJPEG
+  `4000x2252` with no audio. No `ffmpeg`, media export/transcode/clip/frame/
+  thumbnail/proxy/sidecar/cache/checksum/derivative, model/API/cloud, Media
+  Library metadata, App runtime, Supabase/Planner/Storage, public output, paid
+  service, or canonical writeback changed.
+- **2026-05-16:** Company completed the **Operation Living Intelligence Wave 6
+  Model Route Decision Packet** at
+  `domains/company/operation_living_intelligence_wave_6_model_route_decision_packet_2026-05-16.md`.
+  Decision posture: local/private-first for the next Wave 6 gate. Nemotron
+  remains the preferred strategic target if feasible; Qwen remains a fallback/
+  local benchmark if Nemotron is too heavy, unavailable, or key-dependent; and
+  hosted/cloud routes, including NVIDIA hosted API and Twelve Labs, remain
+  deferred until separate account, API-key, upload, privacy, retention, and
+  cost approval. No model install/download/run, API call, cloud upload,
+  preprocessing, generated annotation, App runtime, Media Library metadata,
+  database, public output, paid service, or canonical writeback changed.
+- **2026-05-16:** Company prepared the **Operation Living Intelligence Wave 6
+  Model Route App Design-Review Packet** at
+  `domains/company/operation_living_intelligence_wave_6_model_route_app_design_review_packet_2026-05-16.md`.
+  The packet asks App for docs-only review of local/private Nemotron
+  feasibility, Qwen fallback practicality, hosted/cloud gate requirements,
+  hardware/storage/input/preprocessing constraints, output/cache/credential
+  boundaries, and validation/readback requirements. It does not approve App
+  code, model install/download/run, API/model calls, cloud upload, preprocessing,
+  generated annotations, Media Library metadata, App runtime behavior,
+  Supabase/Planner/Storage writes, public output, paid service, or canonical
+  writeback.
+- **2026-05-16:** App completed the docs-only **Operation Living Intelligence
+  Wave 6 Model Route Design Review** at
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave6-model-route-design-review.md`.
+  App accepts local/private-first as the planning posture: Nemotron remains the
+  preferred strategic target if feasible, Qwen2.5-VL local remains fallback/
+  benchmark if Nemotron is blocked, and hosted/cloud routes remain deferred
+  behind account/key/upload/privacy/retention/cost approval. The next safe
+  Wave 6 gate, if continuing, is a model-route feasibility preflight approval
+  packet, not model execution. No App code, helper implementation, generated
+  output, model install/download/run, API call, cloud upload, preprocessing,
+  generated annotations, App runtime behavior, Media Library metadata,
+  Supabase/Planner/Storage writes, public output, paid service, or canonical
+  writeback changed.
+- **2026-05-16:** Company prepared the **Operation Living Intelligence Wave 6
+  Model Route Feasibility Preflight Approval Packet** at
+  `domains/company/operation_living_intelligence_wave_6_model_route_feasibility_preflight_approval_packet_2026-05-16.md`.
+  The packet defines the next possible App feasibility/readback boundary:
+  route requirements, hardware/storage/cache checks, input-limit questions,
+  output paths, validation, and stop conditions. The packet itself did not
+  approve helper implementation, local environment probing, official route
+  recheck, generated output, model install/download/run, API calls, cloud upload, preprocessing,
+  generated annotations, App runtime behavior, Media Library metadata,
+  Supabase/Planner/Storage writes, public output, paid service, or canonical
+  writeback.
+- **2026-05-16:** App completed the approved **Operation Living Intelligence
+  Wave 6 Model Route Feasibility Helper/Readback** with
+  `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-model-route-feasibility.js`.
+  Company recorded the readback at
+  `domains/company/operation_living_intelligence_wave_6_model_route_feasibility_preflight_readback_2026-05-16.md`.
+  Result:
+  `pass_with_review_required_wave6_model_route_feasibility_preflight_ready`.
+  The helper wrote ignored feasibility/readback output only under
+  `M:\miniBIOTA\miniBIOTA_App\out\operation_living_intelligence\wave_6_media_visual_ai_readiness\model_route_feasibility\`,
+  confirmed the exact four task `398` source paths exist, confirmed the
+  immediate raw parent folders stayed unchanged, and recorded local readiness
+  facts: Intel i5-14600K, 34GB RAM, NVIDIA GeForce RTX 5060 Ti with `16311 MiB`
+  total VRAM and `14195 MiB` free at readback, plus `M:\` and `C:\` disk
+  capacity/free-space checks. No official route docs were rechecked, and no
+  model install/download/run, API/model call, cloud upload, preprocessing,
+  generated annotation, App runtime behavior, Media Library metadata,
+  Supabase/Planner/Storage write, public output, paid service, or canonical
+  writeback changed. The next safe Wave 6 gate was the official route recheck
+  and exact route-selection packet recorded immediately below.
+- **2026-05-16:** Company completed the **Operation Living Intelligence Wave 6
+  Official Route Recheck And Route Selection Packet** at
+  `domains/company/operation_living_intelligence_wave_6_official_route_recheck_and_route_selection_packet_2026-05-16.md`.
+  Decision: `Qwen/Qwen3-VL-2B-Instruct` local/offline is the first practical
+  future pilot proposal route. Nemotron 3 Nano Omni remains the strategic
+  quality target once hardware/runtime gates are solved; current NVIDIA NIM
+  local requirements exceed the current 16GB VRAM workstation. Hosted/cloud
+  routes, including NVIDIA hosted/NIM API and Twelve Labs, remain deferred
+  behind account/key/upload/privacy/retention/cost approval. No App code,
+  dependency install, model install/download/run, API/model call, cloud upload,
+  preprocessing, generated annotation, App runtime behavior, Media Library
+  metadata, Supabase/Planner/Storage write, public output, paid service, or
+  canonical writeback changed.
+- **2026-05-16:** Company prepared the **Operation Living Intelligence Wave 6
+  Qwen3-VL Local Pilot Implementation Approval Packet** at
+  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_implementation_approval_packet_2026-05-16.md`.
+  The packet proposes a still-image-only first local pilot using
+  `Qwen/Qwen3-VL-2B-Instruct` and `TEST_398_01_OPAQUE_LAKE_STILL`, with
+  ignored local candidate/readback output, raw parent-folder side-effect proof,
+  public-use-blocked candidate status, and no public/canonical writes. It
+  requires explicit approval before App code, dependency install, model
+  download/cache, model run, API/model call, cloud upload, preprocessing,
+  generated annotation, App runtime behavior, Media Library metadata,
+  Supabase/Planner/Storage write, public output, paid service, or canonical
+  writeback.
+- **2026-05-16:** App completed the approved **Operation Living Intelligence
+  Wave 6 Qwen3-VL Still-Image Local Pilot** with
+  `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-qwen3-vl-local-pilot.js`.
+  Company recorded the readback at
+  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_readback_2026-05-16.md`.
+  Result:
+  `pass_with_review_required_wave6_qwen3_vl_still_image_candidate_ready`.
+  The helper used `Qwen/Qwen3-VL-2B-Instruct` local/offline on
+  `TEST_398_01_OPAQUE_LAKE_STILL`, installed named dependencies and cached the
+  model under ignored App `out/`, generated parsed candidate-only JSON under
+  ignored App `out/`, preserved `review_required`, blocked public use, kept
+  metadata writes not approved, kept canonical writeback as none, and confirmed
+  the raw parent folder stayed unchanged at `430 / 430`
+  entries. Runtime was CPU-only (`torch_cuda_available = false`). No video
+  input, `ffmpeg`, preprocessing, API/model call, cloud upload, credentials,
+  account/payment setup, Media Library metadata, App runtime behavior,
+  Supabase/Planner/Storage write, public output, paid service, or canonical
+  writeback changed. Future prompt hardening, reruns, video input, GPU/CUDA
+  runtime changes, generated annotation workflow, Media Library integration,
+  public output, and canonical writeback remain separate approval gates.
+- **2026-05-16:** Company completed the **Operation Living Intelligence Wave 6
+  Qwen3-VL Prompt Hardening And Usefulness Review** at
+  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardening_usefulness_review_2026-05-16.md`.
+  Result: the still-image pilot is useful enough to continue as a local
+  candidate-output proof, but the prompt should be hardened before any rerun
+  because the candidate output included one review-required environment-quality
+  phrase. No model rerun, prompt change in App helper, video input, GPU/CUDA
+  runtime change, dependency change, preprocessing, Media Library metadata,
+  App runtime behavior, Supabase/Planner/Storage write, public output, paid
+  service, or canonical writeback changed.
+- **2026-05-16:** App completed the approved **Operation Living Intelligence
+  Wave 6 Qwen3-VL Prompt-Hardened Still-Image Rerun** with
+  `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-qwen3-vl-local-pilot.js`.
+  Company recorded the readback at
+  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardened_rerun_readback_2026-05-16.md`.
+  Result:
+  `pass_with_review_required_wave6_qwen3_vl_still_image_candidate_ready`.
+  The rerun used only `TEST_398_01_OPAQUE_LAKE_STILL`, used the existing
+  local runtime/cache under ignored App `out/`, did not attempt dependency
+  install or model download, generated parsed prompt-versioned candidate JSON,
+  preserved review-required/public-use-blocked/noncanonical guardrails, removed
+  the earlier environment-quality judgment issue, and confirmed the raw parent
+  folder stayed unchanged at `430 / 430`. Runtime remained CPU-only. Video
+  input, GPU/CUDA runtime changes, preprocessing, generated annotations beyond
+  candidate readback, Media Library metadata, App runtime behavior,
+  Supabase/Planner/Storage writes, public output, paid service, and canonical
+  writeback remain unapproved.
+- **2026-05-16:** Company completed the **Operation Living Intelligence Wave 6
+  Video/GPU Runtime Decision Packet** at
+  `domains/company/operation_living_intelligence_wave_6_video_gpu_runtime_decision_packet_2026-05-16.md`.
+  Decision: do not run video yet. Official Qwen3-VL docs support video, but
+  video adds processor-budget, decoder/backend, and GPU/runtime choices that
+  App must review before execution. The recommended next gate is a docs-only
+  App short-video/GPU runtime design-review packet focused on
+  `TEST_398_02_FIELD_SAMPLING` only. No App code, video input, GPU/CUDA runtime
+  change, dependency change, decoder/backend install/use, `ffmpeg`,
+  preprocessing, generated annotation expansion, Media Library metadata,
+  Supabase/Planner/Storage write, public output, paid service, or canonical
+  writeback changed.
+- **2026-05-16:** Company prepared the **Operation Living Intelligence Wave 6
+  Video/GPU Runtime App Design Review Packet** at
+  `domains/company/operation_living_intelligence_wave_6_video_gpu_runtime_app_design_review_packet_2026-05-16.md`.
+  The packet asks App for docs-only review of `TEST_398_02_FIELD_SAMPLING` as
+  the only possible first short-video candidate, including runtime, GPU/CUDA,
+  decoder/backend, token/frame budget, raw-folder side-effect proof, and
+  candidate-only output guardrails. No App code, video execution, GPU/CUDA
+  runtime change, dependency change, decoder/backend install/use, `ffmpeg`,
+  preprocessing, generated annotation expansion, Media Library metadata,
+  Supabase/Planner/Storage write, public output, paid service, or canonical
+  writeback changed.
+- **2026-05-16:** App completed the docs-only **Operation Living Intelligence
+  Wave 6 Video/GPU Runtime Design Review** at
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave6-video-gpu-runtime-design-review.md`.
+  Result: `app_review_blocks_video_until_runtime_changes_are_approved`. App
+  accepts the decision to stop before video and recommends a no-execution
+  runtime/backend preflight or exact implementation approval packet before any
+  short-video run. No App code, video input, GPU/CUDA runtime change,
+  dependency change, decoder/backend install/use, `ffmpeg`, preprocessing,
+  generated annotation expansion, Media Library metadata,
+  Supabase/Planner/Storage write, public output, paid service, or canonical
+  writeback changed.
+- **2026-05-16:** Company prepared the **Operation Living Intelligence Wave 6
+  Runtime/Backend Preflight Approval Packet** at
+  `domains/company/operation_living_intelligence_wave_6_runtime_backend_preflight_approval_packet_2026-05-16.md`.
+  The packet defines the next possible no-execution App helper boundary:
+  report local Python/runtime/cache/package/CUDA/backend availability and raw
+  folder side-effect proof, then stop. At packet stage it did not approve App
+  code, local environment probing, video input, model execution, dependency change, decoder/backend use,
+  `ffmpeg`, preprocessing, generated annotation expansion, App runtime
+  behavior, database/public/canonical write, paid service, or raw-media side
+  effect changed.
+- **2026-05-16:** App completed the approved **Operation Living Intelligence
+  Wave 6 Runtime/Backend Preflight Helper**, and Company recorded the readback
+  at
+  `domains/company/operation_living_intelligence_wave_6_runtime_backend_preflight_readback_2026-05-16.md`.
+  Result: `pass_runtime_backend_preflight_cpu_only_video_packet_possible`.
+  Existing local runtime/cache paths are present; `torch = 2.12.0+cpu`;
+  `torch_cuda_available = false`; `torchvision` is importable; `torchcodec` and
+  `decord` are missing; `TEST_398_02_FIELD_SAMPLING` exists; and the raw parent
+  folder stayed unchanged at `967 / 967`. This supports proposing an exact
+  CPU-only short-video packet later, but still does not approve video, model
+  execution, GPU/CUDA runtime changes, dependency/backend changes,
+  preprocessing, generated annotations, public output, or canonical writeback.
+- **2026-05-16:** Company prepared the **Operation Living Intelligence Wave 6
+  CPU-Only Short-Video Implementation Approval Packet** at
+  `domains/company/operation_living_intelligence_wave_6_cpu_only_short_video_implementation_approval_packet_2026-05-16.md`.
+  The packet is docs-only and names the exact possible implementation boundary:
+  existing local/offline Qwen3-VL runtime/cache only, CPU only, `torchvision`
+  only, `TEST_398_02_FIELD_SAMPLING` only, audio ignored, smallest bounded
+  video budget, ignored candidate/readback output only, and blocked readback if
+  video cannot run within those limits. It does not approve App code, video
+  input, model execution, GPU/CUDA runtime changes, dependency/backend changes,
+  preprocessing, generated annotations, public output, or canonical writeback.
+- **2026-05-16:** App completed the approved **Operation Living Intelligence
+  Wave 6 CPU-Only Short-Video Helper**, and Company recorded the blocked
+  readback at
+  `domains/company/operation_living_intelligence_wave_6_cpu_only_short_video_pilot_readback_2026-05-16.md`.
+  Result: `blocked_wave6_qwen3_vl_cpu_short_video_readback_only`. The helper
+  stayed inside the exact approved boundary, but `qwen_vl_utils` could not use
+  `torchvision` because `torchvision.io` has no `read_video`. No candidate was
+  accepted. Raw parent folder stayed unchanged at `967 / 967`; model cache
+  stayed unchanged; no dependency/backend/model-cache changes, `ffmpeg`,
+  preprocessing, public output, or canonical writeback occurred.
+- **2026-05-16:** Company prepared the **Operation Living Intelligence Wave 6
+  Decord Backend Short-Video Approval Packet** at
+  `domains/company/operation_living_intelligence_wave_6_decord_backend_short_video_approval_packet_2026-05-16.md`.
+  The packet is docs-only and recommends a local `decord` backend route as the
+  next possible video path after `torchvision` blocked. It keeps implementation
+  unapproved and limits any future approved route to the existing ignored App
+  venv, CPU-only, exact `TEST_398_02_FIELD_SAMPLING` scope, existing model
+  cache, ignored output, and no `torchcodec`, `ffmpeg`, preprocessing,
+  GPU/CUDA, public output, or canonical writeback.
+- **2026-05-16:** App completed the approved **Operation Living Intelligence
+  Wave 6 Decord Backend Short-Video Helper**, and Company recorded the readback
+  at
+  `domains/company/operation_living_intelligence_wave_6_decord_backend_short_video_pilot_readback_2026-05-16.md`.
+  Result:
+  `pass_with_review_required_wave6_qwen3_vl_decord_short_video_candidate_ready`.
+  The helper installed/used `decord 0.6.0` only inside the existing ignored App
+  venv, used existing local/offline Qwen3-VL runtime/cache, ran CPU-only on
+  `TEST_398_02_FIELD_SAMPLING`, sampled `4` frames, produced parsed
+  candidate-only JSON under ignored App `out/`, and kept output
+  review-required, public-use-blocked, metadata-write-not-approved, and
+  noncanonical. Raw parent folder stayed unchanged at `967 / 967`; model cache
+  stayed unchanged at `31 / 31`. No model-cache change, `torchcodec`,
+  `ffmpeg`, preprocessing, GPU/CUDA, App runtime behavior, Media Library
+  metadata, Supabase/Planner/Storage/schema/public write, or canonical
+  writeback changed. Next safe Wave 6 gate is a Decord short-video usefulness
+  review and next-route decision, not more video expansion by default.
+- **2026-05-16:** Company completed the **Operation Living Intelligence Wave 6
+  Decord Short-Video Usefulness Review** at
+  `domains/company/operation_living_intelligence_wave_6_decord_short_video_usefulness_review_2026-05-16.md`.
+  Decision: accept Decord as the current local CPU short-video baseline, but do
+  not expand Wave 6 implementation by default. The candidate is useful as a
+  review-required local proof, not Research evidence, Media Library metadata,
+  public copy, generated annotation workflow, or canonical text. The CPU run
+  took about `112674.74 ms` for the 11.47s video sampled to `4` frames, so
+  repeated video review should wait for either a concrete owner need or a
+  docs-only GPU/CUDA runtime proof decision packet. Additional video/model
+  runs, GPU/CUDA, preprocessing, `torchcodec`, `ffmpeg`, App runtime behavior,
+  public output, or canonical writeback remain unapproved.
+- **2026-05-16:** Company completed the **Operation Living Intelligence Wave 6
+  GPU/CUDA Runtime Proof Decision Packet** at
+  `domains/company/operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_decision_packet_2026-05-16.md`.
+  Decision: GPU/CUDA proof is worth planning because Decord answered the video
+  backend question and CPU video is slow, but no runtime/package change,
+  model run, video input, GPU/CUDA inference, App code, or dependency work is
+  approved. The next safe Wave 6 continuation is a docs-only App design-review
+  packet for the GPU/CUDA runtime-proof boundary, preferably starting with a
+  no-video runtime proof before any still-image or short-video GPU model run.
+- **2026-05-16:** Company prepared the **Operation Living Intelligence Wave 6
+  GPU/CUDA Runtime Proof App Design Review Packet** at
+  `domains/company/operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_app_design_review_packet_2026-05-16.md`.
+  The packet asks App for docs-only review of whether a future no-video
+  GPU/CUDA runtime proof can be isolated safely, whether a separate ignored App
+  runtime is required, what exact Torch/CUDA package path would be needed, and
+  what stop conditions should block before package, model, media, App runtime,
+  database, public, or canonical changes. It does not approve App code,
+  runtime/package changes, model runs, video input, GPU/CUDA inference,
+  generated annotations, App runtime behavior, public output, or canonical
+  writeback.
+- **2026-05-16:** App completed the docs-only **Operation Living Intelligence
+  Wave 6 GPU/CUDA Runtime Proof Design Review** at
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave6-gpu-cuda-runtime-proof-design-review.md`.
+  App decision: use a separate ignored GPU runtime for any future CUDA proof,
+  do not mutate the accepted CPU proof runtime by default, and require the
+  exact Torch/CUDA package path before any install. The first future
+  implementation, if approved, should be no-video/no-model CUDA availability
+  proof only; model cache use, still-image GPU inference, and short-video GPU
+  inference remain later separate gates. No App code, runtime/package change,
+  model run, video input, GPU/CUDA inference, dependency install, Media Library
+  metadata, database/public/canonical write, or App runtime behavior changed.
+- **2026-05-15:** Company completed the docs-only **Operation Living
+  Intelligence Wave 7 Planner And Agent Routing Graph Design** at
+  `domains/company/operation_living_intelligence_wave_7_planner_agent_routing_graph_design_2026-05-15.md`.
+  The design keeps Planner/Supabase as live task truth and Company
+  registry/domain reports as routing truth, while proposing only a future
+  derived no-write graph for work ownership, blockers, approval gates, handoff
+  surfaces, and deferred return gates. Waves 4 and 6 are deferred return
+  gates, and Wave 5 now has an accepted local baseline plus a completed
+  vector/embedding decision brief that routes any semantic retrieval next step
+  through a future no-write App design-review packet. No App helper, generated output, Planner/Supabase
+  write, schema change, App runtime behavior, graph runtime, automation,
+  public output, paid service, or canonical writeback changed.
+- **2026-05-15:** Company completed the **Operation Living Intelligence Wave 7
+  Source Readiness Review** at
+  `domains/company/operation_living_intelligence_wave_7_source_readiness_review_2026-05-15.md`.
+  Result: `source_shape_ready_live_read_deferred_app_packet_ready`. App
+  schema/source shape is ready for a no-write Company-to-App design-review
+  packet: migration 007 supports `work_domains`, `work_projects`, `tasks`, and
+  `content_calendar.work_project_id`; migration 010 supports `work_programs`
+  and `work_program_projects`; App `loadCalendar()` reads the relevant Planner
+  sources; Program reads are optional-schema guarded; App `out/` is ignored.
+  No live Planner read, App helper, generated output, Planner/Supabase write,
+  schema change, App runtime behavior, graph runtime, automation, public
+  output, or canonical writeback changed.
+- **2026-05-15:** Company prepared the **Operation Living Intelligence Wave 7
+  App Design Review Packet** at
+  `domains/company/operation_living_intelligence_wave_7_app_design_review_packet_2026-05-15.md`.
+  The packet asks App for docs-only review of a future no-write Planner/agent
+  routing boundary: read path, live-read gate, ignored output path, source set,
+  write-path exclusion, canonical boundary, deferred gate handling, readback
+  shape, and stop conditions. No App code, helper implementation, generated
+  output, live Planner/Supabase read, Planner/Supabase write, task/project/
+  program/source-link/schedule/status change, App runtime behavior, schema,
+  migration, graph runtime, automation, public output, paid service, sensitive
+  indexing, or canonical writeback changed.
+- **2026-05-15:** Josue chose to pause **Operation Living Intelligence Wave 7**
+  as a deferred return gate after the Company-to-App packet and continue to
+  **Wave 8: Telemetry Summaries** docs-only. Company documented the Wave 8
+  design at
+  `domains/company/operation_living_intelligence_wave_8_telemetry_summaries_design_2026-05-15.md`.
+  The design scopes derived telemetry summaries from `telemetry_snapshot`,
+  `biome_telemetry`, and telemetry-domain references while preserving
+  Hardware/App/Web ownership boundaries, public/private field separation,
+  live-control safety, and a source/readiness review gate before any helper,
+  live telemetry read, generated output, schema/runtime change, public Web
+  change, scheduled job, or canonical writeback.
+- **2026-05-15:** Company completed the **Operation Living Intelligence Wave 8
+  Source Readiness Review** at
+  `domains/company/operation_living_intelligence_wave_8_source_readiness_review_2026-05-15.md`.
+  Result: `source_shape_ready_live_read_deferred_packet_ready_retention_open`.
+  Hardware source confirms `biome_telemetry` internal history schema and
+  coordinator behavior; Web source confirms `telemetry_snapshot` public read
+  contract, public node allowlist, and stale/offline semantics; App source
+  confirms Monitoring internal operator fields and telemetry-control safety
+  boundaries. Live row samples, row counts, current freshness, RLS/policy state,
+  retention policy, helpers, generated output, live reads, schema/runtime
+  changes, App/Web/Hardware behavior changes, scheduled jobs, and canonical
+  writeback remain unapproved.
+- **2026-05-15:** Company prepared the **Operation Living Intelligence Wave 8
+  Hardware/App/Web Design Review Packet** at
+  `domains/company/operation_living_intelligence_wave_8_hardware_app_web_design_review_packet_2026-05-15.md`.
+  The packet asks Hardware, App, and Web for docs-only review of the no-write
+  telemetry-summary helper boundary, including read path, live-read gate,
+  snapshot-first vs history rollups, ignored output path, public/internal field
+  separation, retention/cadence policy, Web reuse, App runtime boundary,
+  Hardware live-control boundary, validation checks, and stop conditions. It
+  does not approve live telemetry reads, helper implementation, generated
+  output, schema/runtime changes, App/Web/Hardware behavior changes, scheduled
+  jobs, public claims, or canonical writeback.
+- **2026-05-15:** Company prepared the **Operation Living Intelligence Wave 8
+  Domain Review Synthesis** at
+  `domains/company/operation_living_intelligence_wave_8_domain_review_synthesis_2026-05-15.md`.
+  Result: `company_review_synthesis_ready_domain_acceptance_pending`. Company
+  recommends `telemetry_snapshot`-only as the first possible later helper scope
+  and defers `biome_telemetry` history rollups until retention/cadence,
+  source-volume, live-read, and public/internal validation gates are accepted.
+  Domain-owned Hardware/App/Web acceptance remains pending; implementation,
+  live reads, generated output, behavior changes, scheduled jobs, public claims,
+  and canonical writeback remain unapproved.
+- **2026-05-15:** Company documented the **Operation Living Intelligence Wave 9
+  CRM, Financials, And Sensitive Domains Design** at
+  `domains/company/operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md`.
+  The design keeps sensitive-domain projection policy-first: sensitivity tiers,
+  owner approval matrix, aggregate-only summary shapes, blocked source families,
+  commitment discipline, agent recommendation review gates, and
+  audit/provenance requirements must be defined before live CRM, Financials,
+  partner, public-intake, or private analytics reads. It does not approve CRM
+  reads/writes, Financials reads/writes, helper implementation, generated
+  output, outreach, sponsor commitments, pricing, campaign dates, spend, public
+  claims, App/Web/Growth/Financials behavior changes, graph/vector projection,
+  automation, paid services, or canonical writeback.
+- **2026-05-15:** Company completed the **Operation Living Intelligence Wave 9
+  Source Privacy Readiness Review** at
+  `domains/company/operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md`.
+  Result: `policy_shape_ready_owner_review_required_live_read_deferred_sensitive_projection_blocked`.
+  Company prepared the no-write Growth/Financials/App/Web owner-review packet
+  at
+  `domains/company/operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md`.
+  Company then prepared the owner-review synthesis at
+  `domains/company/operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md`.
+  Live CRM/partner/Financials/public-intake reads, owner acceptance, helper
+  work, generated output, graph/vector indexing, outreach, spend, public
+  claims, behavior changes, and canonical writeback remain unapproved.
+- **2026-05-15:** Company created the **Operation Living Intelligence Deferred
+  Return Map** at
+  `domains/company/operation_living_intelligence_deferred_return_map_2026-05-15.md`.
+  The map consolidates Waves 4-9 into a decision board, separates docs-only
+  agent work from items requiring Josue/owner input, and recommends Wave 7 App
+  docs-only review as the easiest return gate plus Wave 5 local
+  manifest/chunk/keyword-baseline helper as the first low-risk implementation
+  candidate only after explicit approval. It does not approve implementation,
+  live reads, generated output, API/OAuth setup, model work, sensitive data use,
+  App/Web behavior changes, structured writes, paid services, or canonical
+  writeback.
+- **2026-05-15:** App completed the docs-only **Operation Living Intelligence
+  Wave 7 Design Review** at
+  `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave7-design-review.md`.
+  App accepts the future no-write Planner/agent routing boundary in principle:
+  ignored local output, manifest/readback-first shape, Planner/Supabase as live
+  task truth, Company registry/domain reports as routing context, deferred
+  return gates preserved, and no mutation/write-plan helper calls. Wave 7
+  implementation remains unapproved: no live Planner reads, helper output,
+  Planner writes, App runtime behavior, graph runtime, automation, public
+  output, or canonical writeback.
 - **2026-05-15:** Company completed the read-only Operation Living Intelligence
   task `409` REST/OpenAPI and App migration-source audit pass:
   `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md`.
@@ -540,18 +1760,18 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   counts, the Lake Post-Seal source rows, candidate species/observation/link
   IDs, media asset/link state, privacy/publicness tiers, candidate export
   manifest rows, and validation-query requirements for a future no-write,
-  derived-only graph seed proposal. It also identified the remaining task
-  `409` gap: live constraints, indexes, RLS policies, and triggers still need
-  SQL-capable App/Supabase inspection or an explicit decision to proceed only
-  to a design proposal with the narrower audit. Josue approved a read-only SQL
-  metadata inspection the same day, but the active session had no usable
-  SQL-capable path: catalog tables were not exposed through PostgREST,
-  active-session MCP resources/templates were empty, and direct hosted MCP
-  endpoint reachability was blocked. No Planner/Supabase write, App
-  behavior, schema, public site behavior, graph import, graph data, media
-  metadata, model run, cloud upload, paid service, automation, public
-  commitment, sponsor commitment, financial commitment, legal decision, launch
-  target, roadmap commitment, or source-of-truth change was approved.
+  derived-only graph seed proposal. It initially identified a remaining task
+  `409` gap around live constraints, indexes, RLS policies, and triggers; the
+  live SQL metadata proof was later completed for the current local proof
+  through the user-run JSON SQL packet. After Wave 1/Wave 2/Wave 3 local
+  helper/readback work and Company reviews completed, Josue explicitly
+  approved marking the matching Planner task done. Task `409` was marked
+  `done` / `done` on 2026-05-15 with completed_at
+  `2026-05-15T19:35:55.967+00:00`. No project status, App behavior, schema,
+  public site behavior, durable graph import, media metadata, model run, cloud
+  upload, paid service, automation, public commitment, sponsor commitment,
+  financial commitment, legal decision, launch target, roadmap commitment, or
+  source-of-truth change was approved.
 - **2026-05-15:** Company created the docs-only **Operation Living Intelligence
   Wave 1 Living Atlas Graph Seed Handoff**:
   `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_living_atlas_graph_seed_handoff_2026-05-15.md`.
@@ -781,11 +2001,13 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   tasks `380-385`, visual media gate `411`, App readiness tasks `386-390`,
   Research tasks `391-394`, Content tasks `395-399` plus `413-414`, and
   Financials tasks `406-408` plus `415` are complete. Research project `77`,
-  Content project `78`, and Financials project `81` are done. Company project
-  `75` remains active because task `409` is intentionally open as the
-  implementation-time schema/data audit gate. App project `76` remains planned
-  because task `412` is still open, and Web/Growth projects `79-80` remain
-  planned with tasks `400-405` open. Company also cleaned project-level
+  Content project `78`, and Financials project `81` are done. Company task
+  `409` was later marked done on 2026-05-15 after the Wave 1/Wave 2/Wave 3
+  read-only audits, local helpers, readbacks, and Company reviews completed;
+  Company project `75` remains active unless a separate project-level closeout
+  is approved. App project `76` remains planned because task `412` is still
+  open, and Web/Growth projects `79-80` remain planned with tasks `400-405`
+  open. Company also cleaned project-level
   calendar noise by clearing `start_date` on project `75` and completed App
   project `82`; no project was incorrectly marked done to hide a real open
   gate. No schema, App runtime, public site, paid-service, model run, cloud
@@ -942,6 +2164,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   CRM, Financials, Research, Web/App, and Planner surfaces. Planner task
   `409` was created under Operation Living Intelligence project `75` as the
   implementation-time schema/data audit gate before any first export/import.
+  That task was later marked done on 2026-05-15 after explicit approval and
+  readback.
   No schema, App behavior, public site behavior, export job, import job, sync
   automation, paid service, public commitment, sponsor commitment, financial
   commitment, legal decision, launch target, or roadmap commitment changed.
@@ -1381,6 +2605,82 @@ Brain no longer mirrors Company docs. Load active Company detail from the source
 | `domains/company/operation_living_intelligence_wave_2_jsonl_readback_helper_2026-05-15.md` | Verified App local JSONL/readback helper record for Wave 2 |
 | `domains/company/operation_living_intelligence_wave_2_readback_review_2026-05-15.md` | Company review closing Wave 2 as a no-Docker proof and deferring Cypher/Memgraph |
 | `domains/company/operation_living_intelligence_session_closeout_2026-05-15.md` | Operation Living Intelligence session handoff, remaining work, and next-session startup path |
+| `domains/company/operation_living_intelligence_wave_3_species_public_history_design_2026-05-15.md` | Wave 3 docs-only Species and Public History Expansion design |
+| `domains/company/operation_living_intelligence_wave_3_lake_post_seal_source_availability_review_2026-05-15.md` | Wave 3 Lake Post-Seal species/public-history source-availability review |
+| `domains/company/operation_living_intelligence_wave_3_no_write_app_implementation_proposal_2026-05-15.md` | Wave 3 design-only no-write App implementation proposal |
+| `domains/company/operation_living_intelligence_wave_3_app_design_review_packet_2026-05-15.md` | Company-side App design-review handoff for Wave 3 |
+| `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave3-design-review.md` | App-side docs-only Wave 3 design review |
+| `domains/company/operation_living_intelligence_wave_3_jsonl_readback_helper_2026-05-15.md` | Verified App local JSONL/readback helper record for Wave 3 |
+| `domains/company/operation_living_intelligence_wave_3_readback_review_2026-05-15.md` | Company review closing Wave 3 as a no-Docker proof and deferring Cypher/Memgraph |
+| `domains/company/operation_living_intelligence_wave_4_youtube_analytics_warehouse_design_2026-05-15.md` | Wave 4 docs-only YouTube Analytics Warehouse design |
+| `domains/company/operation_living_intelligence_wave_4_youtube_analytics_source_auth_readiness_review_2026-05-15.md` | Wave 4 YouTube analytics source and auth readiness review |
+| `domains/company/operation_living_intelligence_wave_5_retrieval_layer_design_2026-05-15.md` | Wave 5 docs-only Retrieval Layer design |
+| `domains/company/operation_living_intelligence_wave_5_retrieval_corpus_inventory_citation_readiness_review_2026-05-15.md` | Wave 5 corpus inventory and citation readiness review |
+| `domains/company/operation_living_intelligence_wave_5_no_write_app_manifest_chunk_export_proposal_2026-05-15.md` | Wave 5 no-write App manifest/chunk export proposal |
+| `domains/company/operation_living_intelligence_wave_5_app_design_review_packet_2026-05-15.md` | Wave 5 Company-to-App design review packet |
+| `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave5-design-review.md` | App-side docs-only Wave 5 design review |
+| `domains/company/operation_living_intelligence_wave_5_retrieval_manifest_chunk_helper_2026-05-15.md` | Verified App local retrieval manifest/chunk helper record for Wave 5 |
+| `domains/company/operation_living_intelligence_wave_5_retrieval_baseline_usefulness_review_2026-05-15.md` | Wave 5 baseline usefulness review and vector-not-approved decision |
+| `domains/company/operation_living_intelligence_wave_5_evaluation_tuning_plan_2026-05-15.md` | Wave 5 expected-status evaluation tuning plan |
+| `domains/company/operation_living_intelligence_wave_5_expected_status_helper_update_proposal_2026-05-15.md` | Wave 5 expected-status App helper update proposal |
+| `domains/company/operation_living_intelligence_wave_5_expected_status_helper_update_2026-05-15.md` | Verified Wave 5 expected-status App helper update |
+| `domains/company/operation_living_intelligence_wave_5_expected_status_readback_review_2026-05-15.md` | Wave 5 expected-status readback review and local baseline acceptance |
+| `domains/company/operation_living_intelligence_wave_5_vector_embedding_decision_brief_2026-05-16.md` | Wave 5 vector/embedding decision brief |
+| `domains/company/operation_living_intelligence_wave_5_vector_embedding_app_design_review_packet_2026-05-16.md` | Wave 5 vector/embedding App design-review packet |
+| `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave5-vector-embedding-design-review.md` | App-side Wave 5 vector/embedding docs-only review |
+| `domains/company/operation_living_intelligence_wave_5_vector_embedding_app_review_synthesis_2026-05-16.md` | Company synthesis of App Wave 5 vector/embedding review |
+| `domains/company/operation_living_intelligence_wave_5_local_vector_evaluation_helper_proposal_2026-05-16.md` | Wave 5 local vector evaluation helper proposal |
+| `domains/company/operation_living_intelligence_wave_5_local_vector_evaluation_helper_2026-05-16.md` | Wave 5 local vector-proxy helper implementation and stale-baseline guardrail record |
+| `domains/company/operation_living_intelligence_wave_5_local_vector_proxy_readback_review_2026-05-16.md` | Wave 5 local vector-proxy readback review and no-embedding comparison acceptance |
+| `domains/company/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md` | Wave 6 docs-only Media And Visual AI Readiness design |
+| `domains/company/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md` | Wave 6 source and runtime readiness review |
+| `domains/company/operation_living_intelligence_wave_6_app_design_review_packet_2026-05-15.md` | Wave 6 Company-to-App source/runtime readiness design review packet |
+| `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave6-design-review.md` | App-side docs-only Wave 6 design review |
+| `domains/company/operation_living_intelligence_wave_6_media_preflight_policy_and_tooling_proposal_2026-05-16.md` | Wave 6 media preflight policy and tooling proposal |
+| `domains/company/operation_living_intelligence_wave_6_preflight_implementation_readiness_checklist_2026-05-16.md` | Wave 6 preflight implementation readiness checklist |
+| `domains/company/operation_living_intelligence_wave_6_phase_a_media_preflight_helper_2026-05-16.md` | Wave 6 approved Phase A media preflight helper and readback |
+| `domains/company/operation_living_intelligence_wave_6_phase_b_media_stream_metadata_approval_packet_2026-05-16.md` | Wave 6 Phase B media stream metadata approval packet |
+| `domains/company/operation_living_intelligence_wave_6_phase_b_media_stream_metadata_readback_2026-05-16.md` | Wave 6 approved Phase B media stream metadata readback |
+| `domains/company/operation_living_intelligence_wave_6_model_route_decision_packet_2026-05-16.md` | Wave 6 model-route decision packet |
+| `domains/company/operation_living_intelligence_wave_6_model_route_app_design_review_packet_2026-05-16.md` | Wave 6 model-route App design-review packet |
+| `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave6-model-route-design-review.md` | App-side docs-only Wave 6 model-route design review |
+| `domains/company/operation_living_intelligence_wave_6_model_route_feasibility_preflight_approval_packet_2026-05-16.md` | Wave 6 model-route feasibility preflight approval packet |
+| `domains/company/operation_living_intelligence_wave_6_model_route_feasibility_preflight_readback_2026-05-16.md` | Wave 6 approved model-route feasibility helper/readback |
+| `domains/company/operation_living_intelligence_wave_6_official_route_recheck_and_route_selection_packet_2026-05-16.md` | Wave 6 official route recheck and route-selection packet |
+| `domains/company/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_implementation_approval_packet_2026-05-16.md` | Wave 6 Qwen3-VL local pilot implementation approval packet |
+| `domains/company/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_readback_2026-05-16.md` | Wave 6 Qwen3-VL still-image local pilot readback |
+| `domains/company/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardening_usefulness_review_2026-05-16.md` | Wave 6 Qwen3-VL prompt hardening and usefulness review |
+| `domains/company/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardened_rerun_readback_2026-05-16.md` | Wave 6 Qwen3-VL prompt-hardened still-image rerun readback |
+| `domains/company/operation_living_intelligence_wave_6_video_gpu_runtime_decision_packet_2026-05-16.md` | Wave 6 video/GPU runtime decision packet |
+| `domains/company/operation_living_intelligence_wave_6_video_gpu_runtime_app_design_review_packet_2026-05-16.md` | Wave 6 video/GPU runtime App design-review packet |
+| `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave6-video-gpu-runtime-design-review.md` | App-side docs-only Wave 6 video/GPU runtime design review |
+| `domains/company/operation_living_intelligence_wave_6_runtime_backend_preflight_approval_packet_2026-05-16.md` | Wave 6 runtime/backend preflight approval packet |
+| `domains/company/operation_living_intelligence_wave_6_runtime_backend_preflight_readback_2026-05-16.md` | Wave 6 runtime/backend preflight readback |
+| `domains/company/operation_living_intelligence_wave_6_cpu_only_short_video_implementation_approval_packet_2026-05-16.md` | Wave 6 CPU-only short-video implementation approval packet |
+| `domains/company/operation_living_intelligence_wave_6_cpu_only_short_video_pilot_readback_2026-05-16.md` | Wave 6 CPU-only short-video blocked pilot readback |
+| `domains/company/operation_living_intelligence_wave_6_decord_backend_short_video_approval_packet_2026-05-16.md` | Wave 6 Decord backend short-video approval packet |
+| `domains/company/operation_living_intelligence_wave_6_decord_backend_short_video_pilot_readback_2026-05-16.md` | Wave 6 Decord backend short-video pilot readback |
+| `domains/company/operation_living_intelligence_wave_6_decord_short_video_usefulness_review_2026-05-16.md` | Wave 6 Decord short-video usefulness review and next-route decision |
+| `domains/company/operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_decision_packet_2026-05-16.md` | Wave 6 GPU/CUDA runtime proof decision packet |
+| `domains/company/operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_app_design_review_packet_2026-05-16.md` | Wave 6 GPU/CUDA runtime proof App design-review packet |
+| `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave6-gpu-cuda-runtime-proof-design-review.md` | App-side docs-only Wave 6 GPU/CUDA runtime proof design review |
+| `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-qwen3-vl-local-pilot.js` | App local ignored-output Wave 6 Qwen3-VL still-image pilot helper |
+| `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-runtime-backend-preflight.js` | App local ignored-output Wave 6 runtime/backend preflight helper |
+| `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-qwen3-vl-short-video-pilot.js` | App local ignored-output Wave 6 CPU-only short-video pilot helper |
+| `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-model-route-feasibility.js` | App local ignored-output Wave 6 model-route feasibility helper |
+| `domains/company/operation_living_intelligence_wave_7_planner_agent_routing_graph_design_2026-05-15.md` | Wave 7 docs-only Planner And Agent Routing Graph design |
+| `domains/company/operation_living_intelligence_wave_7_source_readiness_review_2026-05-15.md` | Wave 7 Planner/agent routing source readiness review |
+| `domains/company/operation_living_intelligence_wave_7_app_design_review_packet_2026-05-15.md` | Wave 7 Company-to-App design review packet |
+| `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave7-design-review.md` | App-side docs-only Wave 7 design review |
+| `domains/company/operation_living_intelligence_wave_8_telemetry_summaries_design_2026-05-15.md` | Wave 8 docs-only Telemetry Summaries design |
+| `domains/company/operation_living_intelligence_wave_8_source_readiness_review_2026-05-15.md` | Wave 8 telemetry source readiness review |
+| `domains/company/operation_living_intelligence_wave_8_hardware_app_web_design_review_packet_2026-05-15.md` | Wave 8 Hardware/App/Web design review packet |
+| `domains/company/operation_living_intelligence_wave_8_domain_review_synthesis_2026-05-15.md` | Wave 8 Company domain review synthesis |
+| `domains/company/operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md` | Wave 9 docs-only CRM, Financials, and Sensitive Domains design |
+| `domains/company/operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md` | Wave 9 source privacy readiness review |
+| `domains/company/operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md` | Wave 9 Growth/Financials/App/Web owner-review packet |
+| `domains/company/operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md` | Wave 9 Company owner-review synthesis |
+| `domains/company/operation_living_intelligence_deferred_return_map_2026-05-15.md` | Operation Living Intelligence Waves 4-9 deferred return map and sequencing recommendation |
 | `skills/review-roadmap-implications/SKILL.md` | Playbook for milestone, project, deadline, quarterly plan, and roadmap questions |
 | `skills/review-roadmap-implications/reference/strategic-roadmap.md` | Exact roadmap reference |
 | `skills/run-operating-review/SKILL.md` | Playbook for Company operating reviews, dependency-map refreshes, Programs/Operations governance, and roadmap cadence checks |

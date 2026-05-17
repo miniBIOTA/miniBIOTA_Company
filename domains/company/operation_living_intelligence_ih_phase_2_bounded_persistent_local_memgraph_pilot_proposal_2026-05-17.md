@@ -130,6 +130,13 @@ memgraph_data -> /var/lib/memgraph
 memgraph_logs -> /var/log/memgraph
 ```
 
+Windows Docker bind-mount ownership correction approved on 2026-05-17:
+
+- The first persistent Memgraph start failed after the `vm.max_map_count` warning was resolved because the bind-mounted data directory was seen by the container as owned by `root` while the Memgraph process ran as user `memgraph`.
+- Relevant Memgraph log: `The process is running as user memgraph, but the data directory is owned by user root. Please start the process as user root!`
+- For this bounded local Phase 2 pilot only, the App helper should run the approved `minibiota-oli-ih-phase2-memgraph` container as `root` when using the approved bind-mounted `memgraph_data` and `memgraph_logs` directories.
+- If a stopped container with the same approved name already exists from the pre-correction run and is not configured as `root`, the helper may remove and recreate only that container. It must not delete Phase 1 source output, Supabase data, Planner data, App runtime files, media metadata, public output, or canonical records.
+
 Do not store Memgraph data under Company docs, App runtime directories, Supabase exports, media folders, or public Web folders.
 
 ## Start And Stop

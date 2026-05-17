@@ -2,7 +2,7 @@
 id: company_brief
 title: Company Operations Brief
 domain: company_operations
-last_updated: 2026-05-16
+last_updated: 2026-05-17
 tags: [company, operations, strategy, roadmap, strategy-brief]
 reporting_status: active
 reporting_phase: brain_retirement_phase_11_probation
@@ -21,6 +21,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 - `miniBIOTA_Company` is the dedicated Company Agent workspace for mission, vision, strategic planning, governance, roadmap, project-management strategy, and cross-domain operating context.
 - Company is the active owner for cross-domain operating coordination: planning strategy, Programs/Operations governance, roadmap cadence, dependency mapping, cross-domain operating memory, review rhythm, active domain reports, and active Company exports. Brain is archive/recovery context and retirement provenance during Phase 11 probation.
+- Operation Living Intelligence is now consolidated into the Intelligent Harness implementation path: Supabase source map, Memgraph projection, Cypher query harness, pgvector/current retrieval, LangGraph-style workflow, review-gated answer system, operator dashboard, and later upgrade adapters as needed.
 - `miniBIOTA_Company` now uses repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Company `docs/` mirror. Use the source repo's memory/skills structure for detailed Company Agent context.
 - miniBIOTA has already been tested as a fully closed working concept in Q1 2026.
@@ -33,8 +34,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   plan is not yet assembled, and Q3+ roadmap detail remains thin.
 - Company project management is now Planner-integrated under
   `work_domains.key = company_ops` / `domain_id = 1`: 6 Company work projects
-  track 29 Company tasks after the Operation Living Intelligence visual media
-  intelligence governance task was added on 2026-05-14. `Roadmap & Quarterly Objectives`, `Operation Living Atlas
+  track 113 Company tasks after the Operation Living Intelligence Intelligent
+  Harness Planner expansion on 2026-05-17. `Roadmap & Quarterly Objectives`, `Operation Living Atlas
   Coordination`, `Aquatic Club Talk Program Coordination`, and `Operation
   Living Intelligence Coordination` are active; `Business Plan & Operating
   Model` and `AI & Knowledge Infrastructure` remain planned.
@@ -1629,6 +1630,201 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   inference remain later separate gates. No App code, runtime/package change,
   model run, video input, GPU/CUDA inference, dependency install, Media Library
   metadata, database/public/canonical write, or App runtime behavior changed.
+- **2026-05-16:** Company prepared the **Operation Living Intelligence Wave 6
+  No-Video GPU/CUDA Runtime Proof Approval Packet** at
+  `domains/company/operation_living_intelligence_wave_6_no_video_gpu_cuda_runtime_proof_approval_packet_2026-05-16.md`.
+  The packet defines the next possible implementation boundary only if Josue
+  approves: add one App helper, create a new ignored GPU runtime under App
+  `out/`, install only `torch==2.7.0` from the PyTorch CUDA 12.8 wheel index,
+  run only Torch CUDA availability/device/tiny-tensor checks, and verify the
+  accepted CPU proof runtime and model cache unchanged. It still does not
+  approve implementation, runtime creation, package install, model run, media
+  input, App runtime behavior, Media Library metadata, database/public/canonical
+  write, driver/toolkit/global Python change, or paid/cloud route.
+- **2026-05-16:** App completed the approved **Operation Living Intelligence
+  Wave 6 No-Video GPU/CUDA Runtime Proof** at
+  `domains/company/operation_living_intelligence_wave_6_no_video_gpu_cuda_runtime_proof_readback_2026-05-16.md`.
+  App added `tools/run-oli-wave6-gpu-cuda-runtime-proof.js`, created/used the
+  separate ignored GPU runtime under App `out/`, installed `torch 2.7.0+cu128`
+  from the approved CUDA 12.8 PyTorch wheel index, verified CUDA availability
+  on `NVIDIA GeForce RTX 5060 Ti`, and passed a tiny CUDA tensor check. The
+  accepted CPU proof runtime and existing model cache stayed unchanged. This
+  proves local CUDA runtime readiness only; model execution, image/video input,
+  media preprocessing, generated annotations, Media Library metadata, App
+  runtime behavior, database/public/canonical writes, and cloud/API routes
+  remain separately gated.
+- **2026-05-16:** Company prepared the **Operation Living Intelligence Wave 6
+  GPU Qwen3-VL Stack Proof Approval Packet** at
+  `domains/company/operation_living_intelligence_wave_6_gpu_qwen3_vl_stack_proof_approval_packet_2026-05-16.md`.
+  The recommended next gate is no-media/no-model-load package/import
+  compatibility inside the existing ignored GPU runtime before any GPU model
+  load, still-image inference, or short-video proof. The packet names the
+  future helper, package boundary, output path, validation checks, and stop
+  conditions, but does not approve App code, package install, model loading,
+  media input, App runtime behavior, public/canonical output, database writes,
+  or cloud/API routes.
+- **2026-05-16:** App completed the approved **Operation Living Intelligence
+  Wave 6 GPU Qwen3-VL Stack Proof** at
+  `domains/company/operation_living_intelligence_wave_6_gpu_qwen3_vl_stack_proof_readback_2026-05-16.md`.
+  The helper installed the approved non-Torch stack inside the existing ignored
+  GPU runtime and kept Torch unchanged at `2.7.0+cu128`. CUDA and the tiny
+  tensor check still passed, and `transformers` plus the Qwen3-VL classes
+  imported. The proof blocked safely because `qwen_vl_utils` requires
+  `torchvision`, which was explicitly excluded from the approval. No model
+  load, model download/cache mutation, media input, App runtime behavior,
+  Media Library metadata, database/public/canonical write, or cloud/API route
+  changed. The next Wave 6 gate, if continuing, is an exact `torchvision`
+  compatibility approval packet.
+- **2026-05-16:** App completed the approved **Operation Living Intelligence
+  Wave 6 GPU Torchvision Compatibility Proof** at
+  `domains/company/operation_living_intelligence_wave_6_gpu_torchvision_compat_proof_readback_2026-05-16.md`.
+  App added `tools/run-oli-wave6-gpu-torchvision-compat-proof.js` and installed
+  only `torchvision 0.22.0+cu128` from the official PyTorch CUDA 12.8 wheel
+  index inside the existing ignored GPU runtime. Torch stayed unchanged at
+  `2.7.0+cu128`; CUDA and the tiny tensor check still passed; `qwen_vl_utils`,
+  `transformers`, and the Qwen3-VL classes imported; and `torchaudio`,
+  `decord`, and `torchcodec` remained absent. The accepted CPU runtime and
+  existing model cache stayed unchanged. No model load, model download/cache
+  mutation, image/video/raw-media input, media preprocessing, App runtime
+  behavior, Media Library metadata, database/public/canonical write, or
+  cloud/API route changed. The next Wave 6 gate, if continuing, should be a
+  no-media/no-download GPU model-load proof using only the existing local
+  Qwen3-VL model cache before any still-image or short-video GPU inference.
+- **2026-05-16:** App completed the approved **Operation Living Intelligence
+  Wave 6 GPU Model-Load Proof** at
+  `domains/company/operation_living_intelligence_wave_6_gpu_model_load_proof_readback_2026-05-16.md`.
+  App added `tools/run-oli-wave6-gpu-model-load-proof.js` and used only the
+  existing ignored GPU runtime plus the existing local
+  `Qwen/Qwen3-VL-2B-Instruct` cache. The proof set Hugging Face/Transformers
+  offline flags and `local_files_only=True`, loaded `AutoProcessor` and
+  `Qwen3VLForConditionalGeneration`, and sampled parameters on `cuda:0`.
+  Torch remained `2.7.0+cu128`; CUDA remained available on
+  `NVIDIA GeForce RTX 5060 Ti`; load elapsed was `8652.26 ms`; and the
+  accepted CPU runtime plus model cache stayed unchanged. No dependency
+  install, model download/cache mutation, image/video/raw-media input,
+  generation, forward pass, media preprocessing, App runtime behavior, Media
+  Library metadata, database/public/canonical write, or cloud/API route
+  changed. The next Wave 6 gate was a separately approved GPU still-image
+  inference proof using only `TEST_398_01_OPAQUE_LAKE_STILL` and the accepted
+  prompt-hardened guardrails before any short-video GPU inference; that proof
+  was later approved and completed.
+- **2026-05-16:** Company prepared the **Operation Living Intelligence Wave 6
+  GPU Still-Image Inference Approval Packet** at
+  `domains/company/operation_living_intelligence_wave_6_gpu_still_image_inference_approval_packet_2026-05-16.md`.
+  The packet defines the next possible App helper boundary only if Josue
+  approves: use the existing ignored GPU runtime and existing local Qwen3-VL
+  cache, run only `TEST_398_01_OPAQUE_LAKE_STILL`, use the accepted
+  prompt-hardened no-environment-judgment guardrails, write ignored
+  candidate/readback output under App `out/`, keep the result review-required,
+  public-use-blocked, metadata-write-not-approved, noncanonical, and
+  canonical-writeback-none, and verify the raw parent folder, model cache, and
+  accepted CPU runtime unchanged. It still does not approve implementation,
+  image inference, generated candidate output, video input, dependency changes,
+  model download/cache mutation, preprocessing, Media Library metadata, App
+  runtime behavior, database/public/canonical writes, or cloud/API routes.
+- **2026-05-16:** App completed the approved **Operation Living Intelligence
+  Wave 6 GPU Still-Image Inference Proof** at
+  `domains/company/operation_living_intelligence_wave_6_gpu_still_image_inference_readback_2026-05-16.md`.
+  App added `tools/run-oli-wave6-gpu-still-image-proof.js` and used only
+  `TEST_398_01_OPAQUE_LAKE_STILL`, the existing ignored GPU runtime, the
+  existing local Qwen3-VL cache, and the accepted prompt-hardened guardrails.
+  The proof generated parsed candidate JSON with `review_required = true`,
+  `public_use_status = blocked`, `metadata_write_status = not_approved`, and
+  `canonical_writeback = none`; the candidate remained a visual description,
+  not a species identification or public copy. Runtime readback: Torch
+  `2.7.0+cu128`, CUDA `12.8`, `NVIDIA GeForce RTX 5060 Ti`, parameters on
+  `cuda:0`, model load `2016.33 ms`, generation `76587.66 ms`. Raw parent
+  folder stayed `430 / 430`, accepted CPU runtime stayed `30064 / 30064`, and
+  model cache stayed `18 / 18`. No dependency install/change, model
+  download/cache mutation, video input, preprocessing, Media Library metadata,
+  App runtime behavior, database/public/canonical write, or cloud/API route
+  changed.
+- **2026-05-16:** Company completed the docs-only **Operation Living
+  Intelligence Wave 6 GPU Still-Image Usefulness And Performance Review** at
+  `domains/company/operation_living_intelligence_wave_6_gpu_still_image_usefulness_performance_review_2026-05-16.md`.
+  The review accepts the GPU still-image proof as useful for local visual-AI
+  readiness: Qwen3-VL ran on the isolated ignored GPU runtime, the candidate
+  stayed review-required/public-blocked/noncanonical, and the raw parent
+  folder, accepted CPU runtime, and model cache stayed unchanged. Performance
+  remains review-required: one still image took about `86.1s` total, with
+  `76.6s` generation time, so the proof does not justify running GPU video
+  directly. If Wave 6 continues, the next safe gate is a docs-only GPU
+  short-video implementation approval packet; implementation still requires
+  separate explicit approval.
+- **2026-05-16:** Company prepared the **Operation Living Intelligence Wave 6
+  GPU Short-Video Implementation Approval Packet** at
+  `domains/company/operation_living_intelligence_wave_6_gpu_short_video_implementation_approval_packet_2026-05-16.md`.
+  The packet defines the next possible App helper boundary only if Josue
+  approves: use only `TEST_398_02_FIELD_SAMPLING`, the existing ignored GPU
+  runtime, and the existing local/offline Qwen3-VL cache; ignore audio; write
+  ignored candidate/readback output only; keep output review-required,
+  public-blocked, metadata-not-approved, noncanonical, not a species
+  identification, and not a timecoded evidence record; and stop with a blocked
+  readback if the proof needs dependency changes, `decord` in the GPU runtime,
+  `torchcodec`, `torchaudio`, `ffmpeg`, preprocessing, source-folder temp
+  files, App runtime behavior, Media Library metadata, database/public/
+  canonical writes, or any broader scope.
+- **2026-05-16:** App completed the approved **Operation Living Intelligence
+  Wave 6 GPU Short-Video Proof** at
+  `domains/company/operation_living_intelligence_wave_6_gpu_short_video_proof_readback_2026-05-16.md`.
+  App added `tools/run-oli-wave6-gpu-short-video-proof.js` and used only
+  `TEST_398_02_FIELD_SAMPLING`, the existing ignored GPU runtime, the existing
+  local Qwen3-VL cache, and prompt-hardened short-video guardrails. The helper
+  ignored audio, sampled `4` frames, ran Qwen3-VL on CUDA, and generated parsed
+  candidate JSON with `review_required = true`, `public_use_status = blocked`,
+  `metadata_write_status = not_approved`, `canonical_writeback = none`,
+  `species_claim_status = not_a_species_identification`, and
+  `timecode_claim_status = not_a_timecoded_evidence_record`. Runtime readback:
+  Torch `2.7.0+cu128`, CUDA `12.8`, `NVIDIA GeForce RTX 5060 Ti`,
+  torchvision `0.22.0+cu128`, no Decord/Torchcodec/Torchaudio in the GPU
+  runtime, model load `2054.06 ms`, generation `13215.86 ms`, total validation
+  `181311.06 ms`. Raw parent folder stayed `967 / 967`, accepted CPU runtime
+  stayed `30064 / 30064`, and model cache stayed `18 / 18`. No dependency
+  install/change, model download/cache mutation, additional media input,
+  preprocessing, Media Library metadata, App runtime behavior, database/
+  public/canonical write, or cloud/API route changed. Company then completed
+  the GPU short-video usefulness/performance review at
+  `domains/company/operation_living_intelligence_wave_6_gpu_short_video_usefulness_performance_review_2026-05-16.md`.
+  The review accepts GPU short-video as the current local baseline and
+  recommends stopping Wave 6 implementation here by default. Any future prompt
+  refinement, owner review, additional media run, annotation workflow, Media
+  Library integration, public use, database write, or canonical writeback needs
+  separate scope and approval. Company then completed the Operation Living
+  Intelligence Waves 1-9 consolidation and next-phase map at
+  `domains/company/operation_living_intelligence_waves_1_9_consolidation_next_phase_map_2026-05-16.md`.
+  The next-phase posture is to keep the proven local baselines, stop broad
+  exploratory implementation, and return only when a concrete internal workflow
+  needs a proven layer: Wave 5 retrieval for agent/citation support, Wave 1-3
+  graph/readback patterns for bounded Living Atlas packets, Wave 6 visual-AI
+  candidates only after prompt/owner review need, and Waves 4, 8, and 9 only
+  when their owner data is needed for a real decision.
+- **2026-05-17:** Company created the **Operation Living Intelligence:
+  Intelligent Harness Master Plan** at
+  `domains/company/operation_living_intelligence_intelligent_harness_master_plan_2026-05-17.md`.
+  The broad OLI wave expansion is now closed and consolidated into a practical
+  Intelligent Harness implementation path: Supabase source map, Memgraph
+  projection, Cypher query harness, pgvector/current retrieval,
+  LangGraph-style workflow, review-gated answer system, operator dashboard,
+  and later upgrade adapters as needed. The key operating lesson is that the
+  harness itself is the destination: Supabase remains canonical structured
+  truth, Memgraph is the derived relationship graph, Markdown keeps governance
+  and short readbacks, and Planner must show the real build path in detail.
+  Company updated live Planner project `75` so Phase 0 is done, Phase 1 is
+  active, Phases 2-8 are planned, and the OLI documentation cleanup lane is
+  tracked as tasks `636` through `641`. The cleanup lane is for a later second
+  pass: classify old wave-expansion docs as active scaffold, provenance,
+  superseded, or archive without deleting useful approval records, source
+  evidence, implementation readbacks, or provenance. No code, package install,
+  Supabase schema/data change, App runtime change, Memgraph setup, generated
+  output, public output, or canonical writeback was approved by the plan.
+- **2026-05-17:** Company completed the second-pass OLI documentation cleanup
+  inventory at
+  `domains/company/operation_living_intelligence_documentation_cleanup_inventory_2026-05-17.md`.
+  The inventory found `115` OLI documentation files and classified them as
+  active control, active scaffold, deferred lane reference, provenance
+  preserve, superseded reference, or archive candidate after review. No files
+  were moved, deleted, archived, or superseded; no Planner, Supabase, App,
+  Memgraph, generated output, public output, or canonical records changed.
 - **2026-05-15:** Company completed the docs-only **Operation Living
   Intelligence Wave 7 Planner And Agent Routing Graph Design** at
   `domains/company/operation_living_intelligence_wave_7_planner_agent_routing_graph_design_2026-05-15.md`.
@@ -2664,6 +2860,28 @@ Brain no longer mirrors Company docs. Load active Company detail from the source
 | `domains/company/operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_decision_packet_2026-05-16.md` | Wave 6 GPU/CUDA runtime proof decision packet |
 | `domains/company/operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_app_design_review_packet_2026-05-16.md` | Wave 6 GPU/CUDA runtime proof App design-review packet |
 | `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave6-gpu-cuda-runtime-proof-design-review.md` | App-side docs-only Wave 6 GPU/CUDA runtime proof design review |
+| `domains/company/operation_living_intelligence_wave_6_no_video_gpu_cuda_runtime_proof_approval_packet_2026-05-16.md` | Wave 6 no-video GPU/CUDA runtime proof approval packet |
+| `domains/company/operation_living_intelligence_wave_6_no_video_gpu_cuda_runtime_proof_readback_2026-05-16.md` | Wave 6 no-video GPU/CUDA runtime proof readback |
+| `domains/company/operation_living_intelligence_wave_6_gpu_qwen3_vl_stack_proof_approval_packet_2026-05-16.md` | Wave 6 GPU Qwen3-VL stack proof approval packet |
+| `domains/company/operation_living_intelligence_wave_6_gpu_qwen3_vl_stack_proof_readback_2026-05-16.md` | Wave 6 GPU Qwen3-VL stack proof readback |
+| `domains/company/operation_living_intelligence_wave_6_gpu_torchvision_compat_proof_readback_2026-05-16.md` | Wave 6 GPU torchvision compatibility proof readback |
+| `domains/company/operation_living_intelligence_wave_6_gpu_model_load_proof_readback_2026-05-16.md` | Wave 6 GPU model-load proof readback |
+| `domains/company/operation_living_intelligence_wave_6_gpu_still_image_inference_approval_packet_2026-05-16.md` | Wave 6 GPU still-image inference approval packet |
+| `domains/company/operation_living_intelligence_wave_6_gpu_still_image_inference_readback_2026-05-16.md` | Wave 6 GPU still-image inference readback |
+| `domains/company/operation_living_intelligence_wave_6_gpu_still_image_usefulness_performance_review_2026-05-16.md` | Wave 6 GPU still-image usefulness and performance review |
+| `domains/company/operation_living_intelligence_wave_6_gpu_short_video_implementation_approval_packet_2026-05-16.md` | Wave 6 GPU short-video implementation approval packet |
+| `domains/company/operation_living_intelligence_wave_6_gpu_short_video_proof_readback_2026-05-16.md` | Wave 6 GPU short-video proof readback |
+| `domains/company/operation_living_intelligence_wave_6_gpu_short_video_usefulness_performance_review_2026-05-16.md` | Wave 6 GPU short-video usefulness and performance review |
+| `domains/company/operation_living_intelligence_waves_1_9_consolidation_next_phase_map_2026-05-16.md` | Operation Living Intelligence Waves 1-9 consolidation and next-phase map |
+| `domains/company/operation_living_intelligence_session_closeout_2026-05-16.md` | Operation Living Intelligence 2026-05-16 session closeout |
+| `domains/company/operation_living_intelligence_intelligent_harness_master_plan_2026-05-17.md` | Operation Living Intelligence Intelligent Harness master plan |
+| `domains/company/operation_living_intelligence_intelligent_harness_session_closeout_2026-05-17.md` | Operation Living Intelligence Intelligent Harness session closeout |
+| `domains/company/operation_living_intelligence_documentation_cleanup_inventory_2026-05-17.md` | Operation Living Intelligence documentation cleanup inventory and classification |
+| `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-gpu-cuda-runtime-proof.js` | App local ignored-output Wave 6 no-video GPU/CUDA runtime proof helper |
+| `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-gpu-qwen3-vl-stack-proof.js` | App local ignored-output Wave 6 GPU Qwen3-VL stack proof helper |
+| `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-gpu-torchvision-compat-proof.js` | App local ignored-output Wave 6 GPU torchvision compatibility proof helper |
+| `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-gpu-model-load-proof.js` | App local ignored-output Wave 6 GPU model-load proof helper |
+| `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-gpu-still-image-proof.js` | App local ignored-output Wave 6 GPU still-image inference proof helper |
 | `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-qwen3-vl-local-pilot.js` | App local ignored-output Wave 6 Qwen3-VL still-image pilot helper |
 | `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-runtime-backend-preflight.js` | App local ignored-output Wave 6 runtime/backend preflight helper |
 | `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-qwen3-vl-short-video-pilot.js` | App local ignored-output Wave 6 CPU-only short-video pilot helper |

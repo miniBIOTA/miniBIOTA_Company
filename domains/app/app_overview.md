@@ -345,14 +345,85 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   App requires a separate ignored GPU runtime and exact Torch/CUDA package
   path before install; the first future implementation should be no-video and
   no-model CUDA availability proof only.
-  No additional video input, GPU/CUDA runtime change, decoder/backend change beyond installed Decord, generated
-  annotation output, media export/transcode/
-  clip/frame/thumbnail/proxy/sidecar/cache/checksum/derivative, upload, Media
-  Library integration, media metadata write, App runtime behavior, public
-  output, or canonical writeback is approved. The current next App-facing gate,
-  if Wave 6 continues, is a separate approval packet for no-video/no-model
-  GPU/CUDA runtime proof, or a different backend/runtime/preprocessing route if
-  that is intentionally chosen.
+  Company then prepared the no-video GPU/CUDA runtime proof approval packet at
+  `domains/company/operation_living_intelligence_wave_6_no_video_gpu_cuda_runtime_proof_approval_packet_2026-05-16.md`.
+  It names the possible future App helper, separate ignored runtime, and
+  `torch==2.7.0` CUDA 12.8 package route, but still requires explicit approval
+  before runtime creation, package install, or CUDA checks.
+  Josue then approved implementation, and App added
+  `tools/run-oli-wave6-gpu-cuda-runtime-proof.js`. The helper created/used the
+  separate ignored GPU runtime under App `out/`, installed `torch 2.7.0+cu128`
+  from the approved CUDA 12.8 PyTorch wheel index, verified CUDA available on
+  `NVIDIA GeForce RTX 5060 Ti`, passed a tiny CUDA tensor check, and confirmed
+  the accepted CPU proof runtime and existing model cache unchanged. This proves
+  local CUDA runtime readiness only. No additional video input, model execution,
+  media preprocessing, generated annotation output, media export/transcode/clip/
+  frame/thumbnail/proxy/sidecar/cache/checksum/derivative, upload, Media Library
+  integration, media metadata write, App runtime behavior, public output, or
+  canonical writeback is approved. The current next App-facing gate, if Wave 6
+  continues, is the prepared GPU Qwen3-VL stack proof approval packet at
+  `domains/company/operation_living_intelligence_wave_6_gpu_qwen3_vl_stack_proof_approval_packet_2026-05-16.md`.
+  That proposed next step is no-media/no-model-load package/import
+  compatibility inside the existing ignored GPU runtime before any GPU model
+  load, still-image proof, or short-video proof. App then completed the
+  approved stack proof with
+  `tools/run-oli-wave6-gpu-qwen3-vl-stack-proof.js`: the approved non-Torch
+  stack installed, Torch stayed `2.7.0+cu128`, CUDA and the tiny tensor check
+  still passed, and Qwen3-VL classes imported, but `qwen_vl_utils` blocked
+  because it requires `torchvision`, which was explicitly excluded. The next
+  App-facing gate was an exact `torchvision` compatibility proof. Josue then
+  approved that proof, and App added
+  `tools/run-oli-wave6-gpu-torchvision-compat-proof.js`: the helper installed
+  only `torchvision 0.22.0+cu128` from the official PyTorch CUDA 12.8 wheel
+  index inside the existing ignored GPU runtime, kept Torch unchanged at
+  `2.7.0+cu128`, confirmed CUDA/tiny tensor readiness, confirmed
+  `qwen_vl_utils` and Qwen3-VL class imports, left `torchaudio`, `decord`, and
+  `torchcodec` absent, and confirmed the accepted CPU runtime plus model cache
+  unchanged. The current next App-facing gate, if Wave 6 continues, is a
+  no-media/no-download GPU model-load proof using only the existing local
+  Qwen3-VL model cache. Josue then approved that proof, and App added
+  `tools/run-oli-wave6-gpu-model-load-proof.js`: the helper set offline/cache
+  flags plus `local_files_only=True`, loaded `AutoProcessor` and
+  `Qwen3VLForConditionalGeneration` from the existing local cache, sampled
+  parameters on `cuda:0`, confirmed the accepted CPU runtime and model cache
+  unchanged, and did not install dependencies, download a model, read media,
+  generate, run a forward pass, change App runtime behavior, or write public/
+  canonical/database records. Company then prepared the GPU still-image
+  inference approval packet at
+  `domains/company/operation_living_intelligence_wave_6_gpu_still_image_inference_approval_packet_2026-05-16.md`.
+  Josue approved that boundary, and App added
+  `tools/run-oli-wave6-gpu-still-image-proof.js`: the helper used only the
+  exact still image, existing ignored GPU runtime, existing local model cache,
+  and prompt-hardened guardrails. It generated parsed candidate JSON with
+  review-required/public-blocked/noncanonical guardrails intact, kept the raw
+  parent folder, accepted CPU runtime, and model cache unchanged, and did not
+  install dependencies, download a model, read video, preprocess media, change
+  App runtime behavior, or write public/canonical/database records. Company
+  then completed the docs-only GPU still-image usefulness/performance review:
+  the proof is useful for local visual-AI readiness, but one still image took
+  about `86.1s` total, so it does not approve GPU video execution. The current
+  next App-facing gate, if Wave 6 continues, is the prepared docs-only GPU
+  short-video implementation approval packet at
+  `domains/company/operation_living_intelligence_wave_6_gpu_short_video_implementation_approval_packet_2026-05-16.md`.
+  Implementation remains unapproved; the packet requires existing ignored GPU
+  runtime/cache only, `TEST_398_02_FIELD_SAMPLING` only, audio ignored, no
+  dependency changes, no preprocessing, and no App runtime/public/canonical/
+  database writes. Josue then approved that boundary, and App added
+  `tools/run-oli-wave6-gpu-short-video-proof.js`: the helper used only the
+  exact short video, existing ignored GPU runtime, existing local model cache,
+  and prompt-hardened short-video guardrails. It ignored audio, sampled `4`
+  frames, generated parsed candidate JSON with review-required/public-blocked/
+  noncanonical guardrails intact, kept the raw parent folder, accepted CPU
+  runtime, and model cache unchanged, and did not install dependencies,
+  download a model, preprocess media, change App runtime behavior, or write
+  public/canonical/database records. Company then completed the GPU short-video
+  usefulness/performance review at
+  `domains/company/operation_living_intelligence_wave_6_gpu_short_video_usefulness_performance_review_2026-05-16.md`.
+  App implication: GPU short-video is accepted as the current local baseline,
+  but Wave 6 implementation should stop here by default. Any prompt refinement,
+  owner review, additional media run, annotation workflow, Media Library
+  integration, App runtime behavior, public output, database write, or
+  canonical writeback needs separate scope and approval.
 - Operation Living Intelligence Wave 7 Planner/agent routing remains
   design-only; any App-owned helper, generated routing output, live Planner
   read, Planner write, graph runtime, App runtime integration, scheduled sync,

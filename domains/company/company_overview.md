@@ -2,8 +2,8 @@
 id: company_operations
 title: 1. miniBIOTA_Company
 domain: company_operations
-last_updated: 2026-05-12
-tags: [operations, strategy, roadmap, business-planning, governance, operation-living-atlas]
+last_updated: 2026-05-17
+tags: [operations, strategy, roadmap, business-planning, governance, operation-living-atlas, operation-living-intelligence]
 reporting_status: active
 reporting_phase: brain_retirement_phase_11_probation
 source_repo: miniBIOTA_Brain
@@ -22,15 +22,18 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Current State
 - miniBIOTA has already been tested as a fully closed working concept in Q1 2026.
 - Operation Living Atlas is active as the coordinated backfill program for published content, species histories, chronicles, observations, media, and ecological relationships.
+- Operation Living Intelligence has been consolidated into the Intelligent Harness implementation path: Supabase source map, Memgraph projection, Cypher query harness, pgvector/current retrieval, LangGraph-style workflow, review-gated answer system, operator dashboard, and later upgrade adapters as needed.
 - Q2 2026 now has one approved strategic focus: execute a great Aquatic Club of
   Pasco County talk on 2026-06-13 and make the supporting assets, data, proof,
   web/social presence, and follow-up paths strong enough that the talk becomes
   the successful wrap-up of Q2. The business plan is not yet assembled, and
   Q3+ roadmap detail remains thin.
 - Company project management is now organized in App Planner/Supabase under
-  `work_domains.key = company_ops` / `domain_id = 1`: 5 Company work projects
-  track 21 Company tasks, with active Company coordination now including the
-  `Aquatic Club Talk Program Coordination` project for the 2026-06-13 talk.
+  `work_domains.key = company_ops` / `domain_id = 1`: 6 Company work projects
+  track 113 Company tasks after the Operation Living Intelligence Intelligent
+  Harness Planner expansion. Active Company coordination includes `Roadmap &
+  Quarterly Objectives`, `Operation Living Atlas Coordination`, `Aquatic Club
+  Talk Program Coordination`, and `Operation Living Intelligence Coordination`.
 - `miniBIOTA_Company` now uses repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Company `docs/` mirror; use the source repo's memory/skills structure for detailed Company Agent context.
 - Company is the active owner for cross-domain operating coordination, active domain reports, and active Company exports. Brain is archive/recovery context and retirement provenance during Phase 11 probation.
@@ -57,6 +60,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   make their own novel connections, and leave with curiosity, awe, and a sense
   of future possibilities.
 - Coordinate Operation Living Atlas across Company, Research, Content, Web, App, and Raw Footage. Source plan: `M:\miniBIOTA\miniBIOTA_Company\skills\coordinate-cross-domain-priorities\reference\operation-living-atlas-plan.md`; first model arc: Lake Post-Seal / Flagfish / Daphnia / Ghost Shrimp.
+- Coordinate Operation Living Intelligence as the Intelligent Harness build: Supabase remains canonical structured truth, Memgraph becomes the derived relationship graph, retrieval adds cited source context, workflow orchestration routes multi-step questions, and all canonical/public writeback remains approval-gated.
 - Build a business plan that aligns operations, funding, storytelling, and hardware development.
 - Complete the content strategy and story arc so public communication matches the current stage of the project.
 - Finish species card coverage and finalize species information for public-facing use.
@@ -80,6 +84,14 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Company must keep the operating review rhythm alive so dependency maps,
   roadmap cadence, and Programs/Operations governance stay current without
   sliding back into the retired Brain planning model.
+- Operation Living Intelligence cleanup now needs a second pass: classify old
+  wave-expansion docs as active scaffold, provenance, superseded, or archive
+  so the new Intelligent Harness path stays clear without losing approval
+  records, source evidence, implementation readbacks, or provenance.
+- The second-pass OLI cleanup inventory is now documented at
+  `domains/company/operation_living_intelligence_documentation_cleanup_inventory_2026-05-17.md`;
+  it classifies `115` OLI files without moving, deleting, archiving, or
+  superseding them.
 
 ## Files In This Folder
 - `company_brief.md` - active Company manager-facing report.

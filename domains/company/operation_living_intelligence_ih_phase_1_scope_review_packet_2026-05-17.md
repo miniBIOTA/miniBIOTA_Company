@@ -4,7 +4,7 @@ title: Operation Living Intelligence Intelligent Harness Phase 1 Scope Review Pa
 domain: company_operations
 last_updated: 2026-05-17
 tags: [operation-living-intelligence, intelligent-harness, phase-1, source-map, scope-review, lake-post-seal]
-status: review_ready_recommendation
+status: approved_scope_ready_for_sql_metadata_and_app_proposal
 ---
 # Operation Living Intelligence Intelligent Harness Phase 1 Scope Review Packet
 
@@ -38,6 +38,21 @@ Use the core seed to prove:
 - the harness can answer practical questions without inventing source links or public claims.
 
 Do not expand the first pilot just because related rows exist. The first win is a reliable, inspectable harness path, not a maximal graph.
+
+## Approved Decisions
+
+Approved by Josue on 2026-05-17:
+
+- Use the narrow Lake Post-Seal Core Seed first.
+- Keep context and expansion rows out of the required first import/readback.
+- Use the current retrieval baseline first, not pgvector.
+- Use Supabase SQL Editor as the first SQL metadata path.
+- Prepare the next implementation proposal for an App-owned no-write JSONL/readback helper before any Memgraph import.
+
+Interpretation:
+
+- This approves the Phase 1 scope direction and next proposal preparation.
+- This does not approve App code edits, generated output, Supabase writes, Planner writes, SQL execution by Codex, Memgraph setup, public output, or canonical writeback.
 
 ## Core Seed
 
@@ -193,12 +208,20 @@ source map
 
 SQL metadata availability is the main thing needed before any implementation proposal becomes executable.
 
-Pick one path:
+Chosen first path:
+
+```text
+Supabase SQL Editor
+```
+
+Josue needs to run or provide the readback from the existing App-side SELECT-only SQL metadata packet before App implementation starts.
+
+Other paths remain fallback options only:
 
 | Path | What Josue needs to provide or do | Why it matters |
 |---|---|---|
-| Supabase MCP database tools | Make a session available where Codex can use SQL-capable Supabase MCP database tools in read-only mode | Lets the agent inspect columns, FK constraints, indexes, RLS policies, and triggers directly. |
 | Supabase SQL Editor | Run or approve running the existing read-only SQL metadata packet and provide the result | Fastest if MCP is not available. |
+| Supabase MCP database tools | Make a session available where Codex can use SQL-capable Supabase MCP database tools in read-only mode | Lets the agent inspect columns, FK constraints, indexes, RLS policies, and triggers directly. |
 | App-owned read-only SQL bridge | Approve a docs-only or later implementation proposal for an App-owned read-only metadata bridge | Best if this will become recurring operational tooling. |
 | `psql` / direct read-only connection | Provide a read-only connection path and approval for catalog-only SELECT queries | Works, but needs careful secret handling and explicit read-only posture. |
 
@@ -224,24 +247,14 @@ M:\miniBIOTA\miniBIOTA_App\tools\inspect-oli-wave1-sql-metadata.sql
 
 ## Recommended Next Move
 
-Company should prepare the exact source-query list for the core seed.
+Company should prepare the next App-owned no-write JSONL/readback helper proposal before any Memgraph import.
 
-That query list should be implementation-ready but still no-write:
-
-- table;
-- selected fields;
-- filters;
-- expected row counts;
-- node labels;
-- edge labels;
-- canonical vs derived flag;
-- review/publicness fields;
-- validation checks.
+That proposal should use the approved core seed query list and require SQL Editor metadata readback before implementation.
 
 After that, the next gate is:
 
 ```text
-Resolve SQL metadata availability before asking App to design a no-write projection helper.
+Josue runs/provides Supabase SQL Editor metadata readback, then App reviews the no-write JSONL/readback helper proposal.
 ```
 
 ## Not Approved
@@ -262,4 +275,3 @@ This packet does not approve:
 - media metadata writes;
 - scheduled jobs;
 - canonical writeback.
-

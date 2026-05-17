@@ -4,7 +4,7 @@ title: Operation Living Intelligence Intelligent Harness Phase 1 Core Seed Sourc
 domain: company_operations
 last_updated: 2026-05-17
 tags: [operation-living-intelligence, intelligent-harness, phase-1, source-query-list, no-write, lake-post-seal]
-status: query_list_ready_for_review
+status: approved_for_no_write_app_proposal_after_sql_metadata
 ---
 # Operation Living Intelligence Intelligent Harness Phase 1 Core Seed Source Query List
 
@@ -20,6 +20,18 @@ domains/company/operation_living_intelligence_ih_phase_1_scope_review_packet_202
 ```
 
 This query list is implementation-ready as a planning artifact, but it does not approve implementation. It should be reviewed before any App helper, generated output, Memgraph setup, graph import, pgvector work, scheduled job, Supabase write, Planner write, or canonical writeback.
+
+## Approval State
+
+Approved by Josue on 2026-05-17 for the next proposal:
+
+- Use this narrow Lake Post-Seal Core Seed as the required first import/readback scope.
+- Keep context and expansion rows out of the required first import/readback.
+- Use the current retrieval baseline first, not pgvector.
+- Use Supabase SQL Editor as the first SQL metadata path.
+- Prepare an App-owned no-write JSONL/readback helper proposal before any Memgraph import.
+
+This approval does not approve implementation, generated output, SQL execution by Codex, Supabase writes, Planner writes, App runtime changes, Memgraph setup, public output, or canonical writeback.
 
 ## Query Rules
 
@@ -281,10 +293,24 @@ This query list does not prove:
 Before implementation, resolve SQL metadata through one approved path:
 
 ```text
-Supabase MCP database tools
 Supabase SQL Editor with the existing App SQL packet
+Supabase MCP database tools
 psql/direct read-only connection
 App-owned read-only SQL bridge
+```
+
+Approved first path:
+
+```text
+Supabase SQL Editor
+```
+
+Required availability:
+
+```text
+Josue runs or provides the readback from:
+M:\miniBIOTA\miniBIOTA_App\tools\inspect-oli-wave1-sql-metadata.sql
+or the JSON-output companion packet referenced by the App SQL metadata note.
 ```
 
 ## Not Approved
@@ -305,4 +331,3 @@ This query list does not approve:
 - media metadata writes;
 - scheduled jobs;
 - canonical writeback.
-

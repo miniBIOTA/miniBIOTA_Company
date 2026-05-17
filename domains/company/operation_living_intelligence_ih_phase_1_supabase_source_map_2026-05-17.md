@@ -4,7 +4,7 @@ title: Operation Living Intelligence Intelligent Harness Phase 1 Supabase Source
 domain: company_operations
 last_updated: 2026-05-17
 tags: [operation-living-intelligence, intelligent-harness, phase-1, supabase, source-map, lake-post-seal]
-status: phase_1_source_map_v0_review_packet_and_query_list_ready
+status: phase_1_scope_approved_app_no_write_proposal_next
 ---
 # Operation Living Intelligence Intelligent Harness Phase 1 Supabase Source Map
 
@@ -21,8 +21,16 @@ This is a planning/source-map artifact only. It does not approve code implementa
 Status:
 
 ```text
-source_map_v0_review_packet_and_core_query_list_ready
+phase_1_scope_approved_app_no_write_proposal_next
 ```
+
+Approved by Josue on 2026-05-17:
+
+- Use the narrow Lake Post-Seal Core Seed first.
+- Keep context and expansion rows out of the required first import/readback.
+- Use the current retrieval baseline first, not pgvector.
+- Use Supabase SQL Editor as the first SQL metadata path.
+- Prepare the next implementation proposal for an App-owned no-write JSONL/readback helper before any Memgraph import.
 
 First bounded scope:
 
@@ -52,6 +60,12 @@ Core seed source-query list:
 
 ```text
 domains/company/operation_living_intelligence_ih_phase_1_core_seed_source_query_list_2026-05-17.md
+```
+
+Next App proposal:
+
+```text
+domains/company/operation_living_intelligence_ih_phase_1_app_no_write_jsonl_readback_helper_proposal_2026-05-17.md
 ```
 
 Primary source packet:

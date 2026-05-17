@@ -4,7 +4,7 @@ title: Operation Living Intelligence Intelligent Harness Phase 1 App No-Write JS
 domain: company_operations
 last_updated: 2026-05-17
 tags: [operation-living-intelligence, intelligent-harness, phase-1, app-proposal, jsonl, readback, no-write]
-status: proposal_ready_blocked_on_sql_metadata_readback
+status: proposal_ready_for_app_implementation_review
 ---
 # Operation Living Intelligence Intelligent Harness Phase 1 App No-Write JSONL Readback Helper Proposal
 
@@ -35,16 +35,16 @@ Approved by Josue on 2026-05-17:
 Status:
 
 ```text
-proposal_ready_blocked_on_sql_metadata_readback
+proposal_ready_for_app_implementation_review
 ```
 
-This proposal is ready for App design review after SQL metadata readback is available.
+This proposal is ready for App implementation review after the Phase 1 SQL metadata gate was satisfied.
 
 This proposal does not approve implementation by itself.
 
 ## Required Precondition
 
-Before App implements the helper, Josue should run or provide the Supabase SQL Editor metadata readback from the existing App-side SELECT-only packet.
+Before App implements the helper, App review should confirm the Supabase SQL Editor metadata readback and addendum results already provided by Josue.
 
 Preferred SQL Editor packet:
 
@@ -73,6 +73,25 @@ Required readback sections:
 - `08_table_grants`
 
 The SQL packet must remain read-only. No DDL, DML, RPC calls, security changes, grants, trigger changes, policy changes, migrations, data backfills, or canonical writes are approved.
+
+Metadata gate state:
+
+```text
+satisfied_for_no_write_jsonl_readback_helper_proposal
+```
+
+The Phase 1 SQL metadata gate is satisfied after:
+
+- the existing App JSON SQL metadata packet confirmed the first inspected target tables;
+- the addendum confirmed metadata coverage for `public.biomes`;
+- the addendum confirmed metadata coverage for `public.species_to_biomes`;
+- `public.species_to_biomes` confirmed `species_id`, `biome_id`, foreign keys to `species(id)` and `biomes(id)`, and supporting indexes.
+
+Known Phase 1 field correction:
+
+```text
+observations.system_id is unavailable and must not be required by the helper.
+```
 
 ## Proposed App Ownership
 
@@ -156,6 +175,10 @@ Required source query groups:
 - media candidates;
 - public display images;
 - Planner context.
+
+Phase 1 field correction:
+
+- `observations.system_id` is unavailable in the SQL metadata readback and must not be required, synthesized, or treated as a missing-row error by the helper.
 
 Required negative checks:
 
@@ -341,12 +364,13 @@ The helper/readback can pass only if:
 - no Supabase, Planner, Storage, App runtime, Web, media metadata, or graph database write occurs;
 - generated output stays under ignored App `out/`;
 - readback names the SQL metadata readback used or says implementation is blocked until it is provided.
+- `observations.system_id` is not required for the Phase 1 observation projection.
 
 ## Stop Conditions
 
 Stop implementation or mark the run blocked if:
 
-- SQL metadata readback has not been provided;
+- SQL metadata readback or the `biomes` / `species_to_biomes` addendum is missing from App review evidence;
 - any source query needs a write path;
 - expected source rows are missing without explanation;
 - the helper cannot distinguish canonical from derived edges;
@@ -379,15 +403,6 @@ This proposal does not approve:
 
 ## Next Action
 
-Needed from Josue:
-
-```text
-Run/provide the Supabase SQL Editor metadata readback for the target tables.
-```
-
-After that:
-
 ```text
 Ask App to review this proposal and, if approved, implement the smallest no-write JSONL/readback helper under ignored App out/.
 ```
-

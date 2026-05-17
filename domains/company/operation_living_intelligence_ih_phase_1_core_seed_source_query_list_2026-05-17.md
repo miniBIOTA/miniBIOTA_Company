@@ -122,12 +122,13 @@ Use only when testing full chronicle-context or expansion behavior.
 Recommended fields:
 
 ```text
-id,observed_at,created_at,biome_id,species_id,system_id,pipeline_id,chronicle_id,promoted_to_chronicle,has_video,video_description,note
+id,observed_at,created_at,biome_id,species_id,pipeline_id,chronicle_id,promoted_to_chronicle,has_video,video_description,note
 ```
 
 Validation:
 
 ```text
+observations.system_id is unavailable in Phase 1 metadata and must not be required.
 pipeline_id must be null for all 9 rows.
 chronicle_id must be null for all 9 rows.
 promoted_to_chronicle must be false for all 9 rows.
@@ -280,37 +281,31 @@ A future no-write helper or manual readback should output:
 | Source freshness | Include `updated_at`, `created_at`, or read timestamp where available. |
 | Writeback | Must say `none`. |
 
-## SQL Metadata Still Needed
+## SQL Metadata Gate
 
-This query list does not prove:
-
-- foreign keys;
-- indexes;
-- RLS policies;
-- triggers;
-- complete column constraints.
-
-Before implementation, resolve SQL metadata through one approved path:
+Status:
 
 ```text
-Supabase SQL Editor with the existing App SQL packet
-Supabase MCP database tools
-psql/direct read-only connection
-App-owned read-only SQL bridge
+satisfied_for_no_write_jsonl_readback_helper_proposal
 ```
 
-Approved first path:
+The Phase 1 SQL metadata gate is satisfied for proposal review after Josue provided:
+
+- the existing App JSON SQL metadata packet readback for the Wave 1 target tables;
+- a read-only SQL metadata addendum for `public.biomes`;
+- a read-only SQL metadata addendum for `public.species_to_biomes`.
+
+The addendum confirmed:
+
+- `public.biomes` exists and includes the required Phase 1 biome fields;
+- `public.species_to_biomes` exists and includes `species_id` and `biome_id`;
+- `species_to_biomes` has foreign keys to `species(id)` and `biomes(id)`;
+- relevant indexes, RLS state, policies, triggers, grants, and function dependencies were inspected for the two addendum tables.
+
+Known Phase 1 field correction:
 
 ```text
-Supabase SQL Editor
-```
-
-Required availability:
-
-```text
-Josue runs or provides the readback from:
-M:\miniBIOTA\miniBIOTA_App\tools\inspect-oli-wave1-sql-metadata.sql
-or the JSON-output companion packet referenced by the App SQL metadata note.
+observations.system_id is unavailable and must not be required by the helper.
 ```
 
 ## Not Approved

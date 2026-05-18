@@ -7,7 +7,7 @@ Generated: `2026-05-18T12:32:37.616Z`
 ## Input
 
 - Input mode: `file`
-- Input path: `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_ih_phase_19_test_observation_2026-05-18.txt`
+- Input path: `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_ih_phase_19_test_observation_2026-05-18.txt`
 
 ## Outputs
 

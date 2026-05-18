@@ -5,8 +5,8 @@ status: selected-working-draft
 related_task: 291
 source_drafts:
   - domains/company/aquatic_club_talk_working_note_2026-05-12.md
-  - domains/company/aquatic_club_talk_gemini_alternative_2026-05-12.md
-  - domains/company/aquatic_club_talk_Claude_alternative_2026-05-12.md
+  - archive/superseded/aquatic-club-talk/aquatic_club_talk_gemini_alternative_2026-05-12.md
+  - archive/superseded/aquatic-club-talk/aquatic_club_talk_Claude_alternative_2026-05-12.md
 ---
 # Aquatic Club Talk - Selected Working Opening
 

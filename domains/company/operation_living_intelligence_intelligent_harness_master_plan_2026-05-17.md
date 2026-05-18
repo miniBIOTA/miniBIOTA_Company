@@ -645,16 +645,33 @@ The first implementation pattern should prove:
 - Review gates survive the context packet.
 - The harness can produce a short answer with source IDs and ownership.
 
-After Lake Post-Seal works, the same pattern should expand to the normal ongoing observation-to-story workflow:
+2026-05-18 refinement:
+
+```text
+Normal current observation-to-story workflow is now the active first operator path.
+Lake Post-Seal remains the regression/test fixture.
+```
+
+Reason:
+
+- the observation intake, App bridge, Phase 13 suggestions, Phase 19 pipeline, and Phase 20 approved observation writeback path are already proven;
+- Josue's live need is to process real observations conversationally without manually inspecting the Intelligence tab;
+- bounded graph context should support the workflow, not narrow it so much that canonical species outside Lake Post-Seal look absent;
+- Lake Post-Seal remains useful for stable harness regression checks and known graph/readback behavior.
+
+The active workflow is:
 
 ```text
 new observation
 -> source record
+-> read-only canonical species/biome ID checks
 -> graph refresh
 -> story/thread/media relationship suggestions
 -> review queue
 -> approved reuse
 ```
+
+The harness should perform read-only canonical ID checks before treating a species or biome hint as missing. For example, Creeping Beggarweed is canonical species `97` / `Desmodium incanum`; if it is outside the bounded graph, the operator question should be "Can I use species_id 97?" rather than "Do we need to create/find this species?"
 
 ## 6. What To Build Now vs Later
 

@@ -4,7 +4,7 @@ title: Operation Living Intelligence Intelligent Harness Phase 21 Content Agent 
 domain: company_operations
 last_updated: 2026-05-18
 tags: [operation-living-intelligence, intelligent-harness, phase-21, content-agent, observation-workflow, follow-up, no-write]
-status: proposal_ready_for_review_not_approved_for_implementation
+status: phase21_content_workflow_proposal_with_supporting_app_helper_improvement_approved
 ---
 # Operation Living Intelligence Intelligent Harness Phase 21 Content Agent Intelligent Follow-Up Workflow Proposal
 
@@ -56,6 +56,28 @@ Content-owned conversational follow-up workflow that reads existing Phase 19 and
 ```
 
 The Content agent should not replace the App bridge, Phase 13 runner, Intelligence tab, or Phase 20 writeback helper. It should become the conversational layer that reads their outputs and asks the right next questions.
+
+## 2026-05-18 Approved Improvement Addendum
+
+Josue approved two immediate improvements after reviewing the Planner-driven next step and the Creeping Beggarweed miss:
+
+- make the current observation-to-story workflow the active first operational scope;
+- keep Lake Post-Seal as a regression/test fixture instead of the main operator path;
+- update the App Phase 13 suggestion runner so species hints are checked against canonical `public.species` with a read-only lookup before being treated as truly missing or only outside-graph.
+
+The App helper improvement is still suggestion-only. It may read `public.species` to disambiguate a species hint, but it must not write Supabase, Planner, App runtime state, Memgraph, pgvector, media metadata, public output, story links, open loop links, beats, chronicles, or canonical records.
+
+Operational example:
+
+```text
+If Josue says the species is Creeping Beggarweed, the harness should recognize canonical species_id 97 / Desmodium incanum as a canonical species row even if it is outside the bounded Lake Post-Seal graph.
+```
+
+That does not auto-approve the observation. It only lets Content ask the better follow-up question:
+
+```text
+I found Creeping Beggarweed as canonical species_id 97, but it is outside the current bounded graph. Can I use that ID in the observation writeback proposal?
+```
 
 ## 1. Pipeline Ownership: Direct Call Or Request
 
@@ -288,6 +310,12 @@ The Content agent should ask for species/biome ID confirmation when any of these
 - the canonical row has not been read or confirmed recently enough for the writeback packet;
 - the observation spans multiple species or biomes.
 
+When the Phase 13 output includes a read-only canonical species match, Content should distinguish these cases:
+
+- `review_required`: species is represented in the current harness graph;
+- `canonical_species_found_outside_current_graph_requires_review`: species exists in canonical Supabase but is outside the bounded graph;
+- `candidate_outside_current_graph_requires_review`: no canonical species match was found, or the lookup was unavailable.
+
 The Content agent may summarize high-confidence species/biome suggestions without ID confirmation when the conversation is still exploratory and no writeback proposal is being prepared.
 
 Do not guess IDs.
@@ -303,8 +331,9 @@ real conversational leads, not canonical records.
 Rules:
 
 - Label outside-graph species/biome/story/media suggestions plainly.
-- Do not convert an outside-graph suggestion into a canonical ID.
-- Ask whether Josue wants a read-only ID/source check.
+- Do not convert an outside-graph suggestion into a canonical ID unless a current read-only canonical lookup actually returned that row.
+- Ask whether Josue wants a read-only ID/source check when no canonical match appears in the harness output.
+- If a canonical match exists but is outside the bounded graph, ask whether to use that ID in the writeback proposal and keep graph/story linking separate.
 - If no canonical ID exists, route to Research/App schema ownership before any observation write.
 - If the observation can still be logged without a species or biome, follow the `log-daily-observation` rules for null or review-required routing.
 - Keep the claim and publicness status blocked or review-required until reviewed.
@@ -362,7 +391,22 @@ Phase 21 should add a conversational harness-reading step before the existing wr
 
 ## 10. Files Or Skills Proposed For Update
 
-No files should be updated until implementation is approved.
+Initial supporting implementation was approved on 2026-05-18 for the App Phase 13 helper only.
+
+Updated App helper:
+
+```text
+M:\miniBIOTA\miniBIOTA_App\tools\run-oli-ih-phase13-observation-input-runner.js
+```
+
+Change:
+
+- adds a read-only `public.species` lookup when `species_hint` is present;
+- records lookup status, query terms, rows read, match count, and errors in validation output;
+- labels canonical matches outside the bounded graph as `canonical_species_found_outside_current_graph_requires_review`;
+- keeps all outputs suggestion-only with `writeback = none`.
+
+No Content skill implementation has been made yet.
 
 Likely future Content updates:
 
@@ -405,13 +449,7 @@ M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_ih_
 
 Only update this after Phase 21 is approved and implemented.
 
-Optional later App update:
-
-```text
-None recommended for Phase 21.
-```
-
-The Content agent can read files directly. App runtime should not change for this phase.
+App runtime should not change for this phase. The App helper change is a local CLI/output-contract improvement, not a UI/runtime change.
 
 ## 11. What Remains Blocked
 
@@ -449,6 +487,7 @@ Implementation should prove:
 - Content identifies the suggested species, biome, story thread, open loop, media, and claim cautions.
 - Content distinguishes suggested links from approved links.
 - Content identifies outside-graph suggestions and asks for review or ID checks.
+- Content recognizes canonical species matches returned by the Phase 13 read-only lookup and asks for ID confirmation instead of saying the species is missing.
 - Content carries blocked-public warnings into the conversational summary.
 - Content does not state that suggestions are approved or written.
 - Content asks the follow-up questions in the correct order.
@@ -506,7 +545,7 @@ If Josue approves implementation later:
 
 ## Recommendation
 
-Approve Phase 21 as a no-write Content workflow proposal before implementation.
+Keep Phase 21 as the next Content workflow implementation proposal, with the supporting App Phase 13 canonical species lookup improvement already approved and added.
 
 The highest-value next build is not more dashboard surface area. It is making the Content agent read the harness output and talk Josue through the next decision naturally.
 

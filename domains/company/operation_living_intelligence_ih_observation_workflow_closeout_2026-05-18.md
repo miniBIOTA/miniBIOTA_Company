@@ -80,6 +80,7 @@ App bridge:
 Phase 13 auto-linker:
 
 - suggests species, biome, story thread, open loop, media, claim, review, and blocked-public connections;
+- checks canonical `public.species` read-only when a species hint is present, so canonical species outside the bounded graph are not mistaken for missing species;
 - keeps suggestions local and review-required;
 - updates the latest suggestion run for the Intelligence tab.
 
@@ -125,5 +126,11 @@ Recommended next step:
 Run one or two more raw observations through the Phase 19 local pipeline, then choose one approved observation for the Phase 20 writeback path.
 ```
 
-After that, the highest-value next build is likely approved story-thread/open-loop linking from an existing canonical observation, starting with observation `253` only if Josue wants the Gulf marsh crab excavation event connected into the story system.
+2026-05-18 operational scope refinement:
 
+- the active first operator path should now be the normal current observation-to-story workflow;
+- Lake Post-Seal remains the regression/test fixture for graph and readback behavior;
+- canonical species lookup should happen before labeling a species hint as missing;
+- known example: Creeping Beggarweed exists as canonical species `97` / `Desmodium incanum`, even though it may be outside the bounded Lake Post-Seal graph.
+
+After one or two more real observations, the highest-value next build is likely approved story-thread/open-loop linking from an existing canonical observation, starting with observation `253` only if Josue wants the Gulf marsh crab excavation event connected into the story system.

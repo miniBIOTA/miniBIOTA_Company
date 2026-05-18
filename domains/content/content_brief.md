@@ -2,7 +2,7 @@
 id: content_brief
 title: Content Production Brief
 domain: content_production
-last_updated: 2026-05-14
+last_updated: 2026-05-18
 tags: [content, production, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -60,6 +60,19 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   chronicles, publish closeout, and active project docs.
 
 ## Recent Milestones
+- **2026-05-18:** Operation Living Intelligence observation workflow became
+  operational through the Content Agent conversational layer. Phase 21 now lets
+  Content read Phase 19 / Phase 13 Intelligent Harness outputs, summarize
+  species/biome/story/open-loop/media/claim cautions, ask the next approval
+  questions, and prepare Phase 20 writeback proposals while keeping all
+  downstream layers separate. The workflow was tested on a real Mole Cricket
+  burrow surface-foraging observation: Content preserved the raw note, created
+  local intake/proposal/readback packets, confirmed `species_id = 162` and
+  `biome_id = 3` by live read-only checks, passed duplicate checks, and wrote
+  one approved canonical `public.observations` row (`id = 254`). No story
+  links, open loop links, story beats, chronicles, Planner tasks, media
+  metadata, content pipeline records, public output, App runtime change,
+  Memgraph change, pgvector work, or graph refresh was performed.
 - **2026-05-15:** Company completed the docs-only Operation Living
   Intelligence Wave 6 Media And Visual AI Readiness design:
   `domains/company/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.

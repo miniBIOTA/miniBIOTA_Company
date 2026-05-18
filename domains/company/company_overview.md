@@ -2,7 +2,7 @@
 id: company_operations
 title: 1. miniBIOTA_Company
 domain: company_operations
-last_updated: 2026-05-17
+last_updated: 2026-05-18
 tags: [operations, strategy, roadmap, business-planning, governance, operation-living-atlas, operation-living-intelligence]
 reporting_status: active
 reporting_phase: brain_retirement_phase_11_probation
@@ -84,14 +84,16 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Company must keep the operating review rhythm alive so dependency maps,
   roadmap cadence, and Programs/Operations governance stay current without
   sliding back into the retired Brain planning model.
-- Operation Living Intelligence cleanup now needs a second pass: classify old
-  wave-expansion docs as active scaffold, provenance, superseded, or archive
-  so the new Intelligent Harness path stays clear without losing approval
-  records, source evidence, implementation readbacks, or provenance.
-- The second-pass OLI cleanup inventory is now documented at
-  `domains/company/operation_living_intelligence_documentation_cleanup_inventory_2026-05-17.md`;
-  it classifies `115` OLI files without moving, deleting, archiving, or
-  superseding them.
+- Operation Living Intelligence cleanup is in a staged physical-cleanup pass.
+  The active reference map and cleanup inventory now separate current harness
+  entry points, retained provenance, deferred media/analytics lanes, and safe
+  leaf files already removed so the new Intelligent Harness path stays clear
+  without losing approval records, source evidence, implementation readbacks, or
+  deferred-lane provenance.
+- The OLI cleanup inventory is documented at
+  `domains/company/operation_living_intelligence_documentation_cleanup_inventory_2026-05-17.md`.
+  Future removals should stay batch-scoped and preserve current observation
+  workflow references until more live operator testing is complete.
 
 ## Files In This Folder
 - `company_brief.md` - active Company manager-facing report.

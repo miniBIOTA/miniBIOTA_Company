@@ -4,7 +4,7 @@ title: Operation Living Intelligence Documentation Cleanup Inventory
 domain: company_operations
 last_updated: 2026-05-18
 tags: [operation-living-intelligence, intelligent-harness, cleanup, inventory, classification]
-status: second_cleanup_pass_complete_no_files_moved
+status: physical_cleanup_started_safe_leaf_files_removed
 ---
 # Operation Living Intelligence Documentation Cleanup Inventory
 
@@ -14,7 +14,7 @@ This is the cleanup inventory for Operation Living Intelligence documentation.
 
 The goal is to inventory old OLI wave-expansion documents and classify each document family so the new Intelligent Harness path can stay clear without losing useful provenance.
 
-No files are moved, deleted, archived, or superseded by this document. This is a reviewable classification pass only.
+This document began as a reviewable classification pass. On 2026-05-18, Josue approved beginning physical cleanup of easily safe leaf files.
 
 ## 2026-05-18 Second Cleanup Pass Result
 
@@ -35,6 +35,42 @@ Use the active reference map as the operator entry point.
 Do not physically move/archive/delete OLI docs yet.
 Classify first; batch physical cleanup only after Josue approves a batch list.
 ```
+
+## 2026-05-18 Physical Cleanup Started
+
+Josue approved continuing cleanup by removing easily safe files from `domains/company`.
+
+Removed safe leaf files:
+
+- Failed/generated Phase 19 readback artifacts:
+  - `operation_living_intelligence_ih_phase_19_pipeline_readback_20260518_134034.md`
+  - `operation_living_intelligence_ih_phase_19_pipeline_readback_20260518_134034.json`
+- Machine JSON companions where human-readable Markdown readbacks remain:
+  - `operation_living_intelligence_ih_phase_19_pipeline_readback_20260518_123237.json`
+  - `operation_living_intelligence_ih_phase_19_pipeline_readback_20260518_134108.json`
+- Extra generated Phase 19 Markdown readback not referenced by the active map:
+  - `operation_living_intelligence_ih_phase_19_pipeline_readback_20260518_134108.md`
+- Individual Phase 2-7 Intelligent Harness proposal docs consolidated by the Phase 1-7 closeout:
+  - `operation_living_intelligence_ih_phase_2_bounded_persistent_local_memgraph_pilot_proposal_2026-05-17.md`
+  - `operation_living_intelligence_ih_phase_3_intelligence_query_harness_proposal_2026-05-17.md`
+  - `operation_living_intelligence_ih_phase_4_graphrag_context_builder_proposal_2026-05-17.md`
+  - `operation_living_intelligence_ih_phase_5_langgraph_style_agent_workflow_proposal_2026-05-17.md`
+  - `operation_living_intelligence_ih_phase_6_review_queue_proposed_action_system_proposal_2026-05-17.md`
+  - `operation_living_intelligence_ih_phase_7_operator_dashboard_proposal_2026-05-17.md`
+- Redundant generic Wave 9 owner-review packet superseded by the Growth/Financials/App/Web owner-review packet and owner-review synthesis:
+  - `operation_living_intelligence_wave_9_owner_review_packet_2026-05-15.md`
+
+Preserved during this pass:
+
+- active reference map;
+- current master plan;
+- current and prior Intelligent Harness closeouts;
+- Phase 1 source map/query/scope docs;
+- Phase 8-21 active workflow proposal docs;
+- active-map referenced Phase 19 Markdown readback proof;
+- deferred lane design/readiness docs;
+- Planner/Supabase provenance docs;
+- Company brief and exports.
 
 Current proven workflow:
 
@@ -125,7 +161,7 @@ Second-pass family addition:
 
 | Family | Cleanup posture |
 |---|---|
-| Intelligent Harness Phases 1-12 | Keep as implementation and UI/UX provenance; use the Phase 1-7 closeout and active reference map first. |
+| Intelligent Harness Phases 1-12 | Keep Phase 1 source/scope docs and Phase 8-12 active UI/workflow references; Phase 2-7 individual proposal docs were removed after consolidation by the Phase 1-7 closeout. |
 | Intelligent Harness Phases 13-20 | Active observation workflow references. Keep easiest to find until operational testing stabilizes. |
 | Phase 19 checklist/readback | Active operator proof and checklist. |
 | Phase 20 writeback proposal | Active approval-gated canonical observation writeback design. |
@@ -423,7 +459,7 @@ Wave 6 files in the remaining provenance set:
 | `operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md` | Deferred lane reference | Keep for Phase 8 sensitive-data upgrade. |
 | `operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md` | Deferred lane reference | Keep for sensitive-data gates. |
 | `operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md` | Provenance preserve | Later archive candidate. |
-| `operation_living_intelligence_wave_9_owner_review_packet_2026-05-15.md` | Provenance preserve | Later archive candidate. |
+| `operation_living_intelligence_wave_9_owner_review_packet_2026-05-15.md` | Removed leaf file | Removed after supersession by the Growth/Financials/App/Web owner-review packet and owner-review synthesis. |
 | `operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md` | Deferred lane reference / provenance | Keep for later owner review. |
 
 ## Recommended Next Cleanup Action
@@ -434,7 +470,7 @@ The compact replacement map now exists:
 domains/company/operation_living_intelligence_active_reference_map_2026-05-18.md
 ```
 
-Before moving or archiving old files, review and approve that map as the active entry point.
+Before additional moves or deletions, use that map as the active entry point.
 
 The next physical cleanup pass can then classify batches as:
 
@@ -444,22 +480,19 @@ The next physical cleanup pass can then classify batches as:
 - archive candidate after review;
 - superseded reference after review.
 
-No file movement is recommended until Josue explicitly approves the batch list.
+Additional file movement should remain batch-scoped and explicitly reviewed against active references.
 
-If Josue approves a physical cleanup later, recommended first batch:
+Recommended guardrails for the next physical cleanup batch:
 
 - keep all active control and active observation workflow references in place;
-- archive only old proposal/readback files already summarized by the active reference map;
+- remove only old proposal/readback files already summarized by a retained closeout, synthesis, or active reference;
 - do not archive Phase 13/19/20/21 files until two more real observations prove the current operator flow;
 - do not archive Lake Post-Seal graph/story/species files until the regression fixture contract is written down in App/Company terms.
 
 ## Not Changed
 
-This cleanup pass did not:
+This physical cleanup pass did not:
 
-- move files;
-- delete files;
-- archive files;
 - update Planner;
 - change Supabase;
 - change App runtime;

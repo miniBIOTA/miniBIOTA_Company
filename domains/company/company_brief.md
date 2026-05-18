@@ -108,8 +108,7 @@ Brain no longer mirrors active Company docs. Load active Company detail from the
 | `domains/company/operation_living_intelligence_ih_observation_workflow_closeout_2026-05-18.md` | Local-to-canonical observation workflow closeout |
 | `domains/company/operation_living_intelligence_supabase_schema_audit_2026-05-13.md` | First read-only live Supabase schema audit for OLI |
 | `domains/company/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md` | Task 409 REST/OpenAPI source-row audit and SQL metadata access-gap record |
-| `domains/company/operation_living_intelligence_waves_1_9_consolidation_next_phase_map_2026-05-16.md` | OLI Waves 1-9 consolidation and next-phase map |
-| `domains/company/operation_living_intelligence_deferred_return_map_2026-05-15.md` | Deferred return map for analytics, media/visual AI, telemetry, routing, and sensitive-domain lanes |
+| `archive/superseded/operation-living-intelligence/` | Archived OLI Wave 1-9 and transition-map provenance; not active operating instructions |
 | `skills/review-roadmap-implications/SKILL.md` | Playbook for milestone, quarterly plan, deadline, and roadmap questions |
 | `skills/review-roadmap-implications/reference/strategic-roadmap.md` | Exact roadmap reference |
 | `skills/run-operating-review/SKILL.md` | Playbook for Company operating reviews, dependency-map refreshes, Programs/Operations governance, and roadmap cadence checks |

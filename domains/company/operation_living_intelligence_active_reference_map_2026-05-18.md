@@ -4,7 +4,7 @@ title: Operation Living Intelligence Active Reference Map
 domain: company_operations
 last_updated: 2026-05-18
 tags: [operation-living-intelligence, intelligent-harness, active-reference, cleanup, observation-workflow, phase-21]
-status: active_reference_map_current_after_wave_provenance_archived
+status: active_reference_map_current_after_transition_maps_archived
 ---
 # Operation Living Intelligence Active Reference Map
 
@@ -12,7 +12,7 @@ status: active_reference_map_current_after_wave_provenance_archived
 
 This is the compact operating map for Operation Living Intelligence after the Intelligent Harness proved the local-to-canonical observation workflow through Phase 20 and the second cleanup pass clarified the current operator path.
 
-Use this map before opening older wave-expansion files. Older Wave 1-9 files now live in `archive/superseded/operation-living-intelligence/` as provenance and deferred-lane reference, not as the primary operating path.
+Use this map before opening older wave-expansion files. Older Wave 1-9 files and the former transition maps now live in `archive/superseded/operation-living-intelligence/` as provenance and deferred-lane reference, not as the primary operating path.
 
 ## Current Operator Path
 
@@ -98,7 +98,7 @@ Known example:
 
 ## Deferred Reference Lanes
 
-Archived wave documents should be treated this way:
+Archived wave and transition documents should be treated this way:
 
 | Lane | Status |
 |---|---|
@@ -109,6 +109,7 @@ Archived wave documents should be treated this way:
 | Wave 7 routing docs | Archived provenance for routing concepts; not the current operator workflow. |
 | Wave 8 telemetry docs | Archived deferred telemetry reference. |
 | Wave 9 sensitive-domain docs | Archived deferred sensitive-data reference. |
+| Former deferred return and Waves 1-9 consolidation maps | Archived transition summaries; use this active map first and open them only for provenance. |
 
 ## Current Operating Guidance
 
@@ -139,7 +140,7 @@ The following remain unapproved:
 
 ## Cleanup Posture
 
-Wave 1-9 exploration/proof files have been archived out of `domains/company`.
+Wave 1-9 exploration/proof files and the old transition-summary maps have been archived out of `domains/company`.
 Use this map to avoid mistaking archived wave files for the current operator
 path.
 

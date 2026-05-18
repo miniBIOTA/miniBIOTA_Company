@@ -1,6 +1,6 @@
 ---
 title: Recurring Decisions
-last_updated: 2026-05-14
+last_updated: 2026-05-18
 ---
 # Recurring Decisions
 
@@ -40,6 +40,7 @@ last_updated: 2026-05-14
 - Roadmap cadence and operating review rhythm are Company-owned coordination functions; they do not create roadmap commitments, launch targets, or public promises without explicit approval.
 - Dependency maps are Company operating memory and should identify affected domains, downstream owners, blockers, handoff surfaces, and review timing.
 - Cross-interface and cross-agent handoffs must use durable files, briefs, or structured records as the handoff surface. Chat history alone is not enough.
+- Documentation cleanup should start by identifying the active operating surface before removing or archiving files. Active docs should guide current work or answer what to open first / what to do next; proposal, proof, source-audit, transition-map, generated-export, and historical-provenance docs should be archived once their useful facts are captured in a current map, closeout, master plan, or source-of-truth document. Keep one compact active reference map when a document set has sprawled, rebuild generated exports after active-domain cleanup, scan for stale references, and stop cleanup when the remaining active docs each have a clear job.
 - Operation Living Atlas should continue with Markdown source packets, Research validation notes, Company coordination notes, and existing Planner tasks until approval/write/readback friction or multiple concurrent packets proves the need for an App-owned Supabase queue table or private review workflow.
 - Operation Living Intelligence is the approved name and active planning program for miniBIOTA's long-term agent data stack. It should keep current Markdown/Supabase/Planner workflows live while new graph, vector, analytics, visual AI, cache, and automation layers are built as derived or read-first systems. Do not cut over a domain or agent workflow to a new system until the layer has an owner, source-of-truth rule, evaluation results, fallback path, cost posture, security posture, and approval model.
 - Operation Living Intelligence is live in Planner as `work_programs.id = 4`. Its first record setup created Company coordination project `75`, App project `76`, Research/Ecosystem project `77`, Content project `78`, Web project `79`, Growth/Sales project `80`, Financials project `81`, and unscheduled parent/container tasks `380` through `408`. The first setup deliberately avoided scheduled dates so Aquatic Club Talk Readiness remains the protected near-term hard-window priority.

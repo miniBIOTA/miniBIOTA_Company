@@ -1,6 +1,6 @@
 ---
 title: Company Memory Index
-last_updated: 2026-05-14
+last_updated: 2026-05-18
 ---
 # Company Memory Index
 

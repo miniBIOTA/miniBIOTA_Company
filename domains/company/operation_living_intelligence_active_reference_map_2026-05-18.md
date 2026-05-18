@@ -4,7 +4,7 @@ title: Operation Living Intelligence Active Reference Map
 domain: company_operations
 last_updated: 2026-05-18
 tags: [operation-living-intelligence, intelligent-harness, active-reference, cleanup, observation-workflow, phase-21]
-status: active_reference_map_current_after_physical_cleanup_started
+status: active_reference_map_current_after_wave_provenance_archived
 ---
 # Operation Living Intelligence Active Reference Map
 
@@ -12,7 +12,7 @@ status: active_reference_map_current_after_physical_cleanup_started
 
 This is the compact operating map for Operation Living Intelligence after the Intelligent Harness proved the local-to-canonical observation workflow through Phase 20 and the second cleanup pass clarified the current operator path.
 
-Use this map before opening older wave-expansion files. The old files remain useful provenance and deferred-lane reference, but they are no longer the primary operating path.
+Use this map before opening older wave-expansion files. Older Wave 1-9 files now live in `archive/superseded/operation-living-intelligence/` as provenance and deferred-lane reference, not as the primary operating path.
 
 ## Current Operator Path
 
@@ -98,17 +98,17 @@ Known example:
 
 ## Deferred Reference Lanes
 
-Old wave documents should be treated this way:
+Archived wave documents should be treated this way:
 
 | Lane | Status |
 |---|---|
-| Waves 1-3 graph/story/species docs | Lake Post-Seal regression/test fixture and model provenance, not the daily operator path. |
-| Wave 4 analytics | Deferred analytics warehouse reference. |
-| Wave 5 retrieval/vector docs | Deferred retrieval/pgvector reference; pgvector remains unapproved. |
-| Wave 6 visual AI/media docs | Deferred media and visual-AI reference; media metadata writes remain unapproved. |
-| Wave 7 routing docs | Provenance for routing concepts; not the current operator workflow. |
-| Wave 8 telemetry docs | Deferred telemetry reference. |
-| Wave 9 sensitive-domain docs | Deferred sensitive-data reference. |
+| Waves 1-3 graph/story/species docs | Archived Lake Post-Seal regression/test fixture and model provenance, not the daily operator path. |
+| Wave 4 analytics | Archived deferred analytics warehouse reference. |
+| Wave 5 retrieval/vector docs | Archived deferred retrieval/pgvector reference; pgvector remains unapproved. |
+| Wave 6 visual AI/media docs | Archived deferred media and visual-AI reference; media metadata writes remain unapproved. |
+| Wave 7 routing docs | Archived provenance for routing concepts; not the current operator workflow. |
+| Wave 8 telemetry docs | Archived deferred telemetry reference. |
+| Wave 9 sensitive-domain docs | Archived deferred sensitive-data reference. |
 
 ## Current Operating Guidance
 
@@ -139,15 +139,16 @@ The following remain unapproved:
 
 ## Cleanup Posture
 
-Physical cleanup has started in small approved batches. Use this map to avoid
-mistaking older wave files for the current operator path.
+Wave 1-9 exploration/proof files have been archived out of `domains/company`.
+Use this map to avoid mistaking archived wave files for the current operator
+path.
 
 Approved cleanup posture:
 
 - use this active map as the first entry point;
 - treat Lake Post-Seal as a regression/test fixture;
-- treat older wave files as provenance or deferred-lane references unless this map says otherwise;
+- treat archived wave files as provenance or deferred-lane references unless this map says otherwise;
 - route daily observations through the current observation-to-story path;
-- prefer archive moves for provenance-bearing docs;
+- keep provenance-bearing docs in `archive/superseded/operation-living-intelligence/`;
 - delete only redundant generated/proposal residue already summarized elsewhere;
 - keep current observation workflow docs active until more real operator tests are complete.

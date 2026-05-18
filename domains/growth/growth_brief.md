@@ -54,7 +54,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 - **2026-05-15:** Company documented the Operation Living Intelligence Wave 9
   CRM, Financials, And Sensitive Domains docs-only design:
-  `domains/company/operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md`.
   Growth implication: CRM and partner context remain policy-first. Growth must
   approve relationship meaning, privacy tiers, aggregate summary shapes,
   contact-detail exclusions, outreach boundaries, sponsor/partner commitment
@@ -64,14 +64,14 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   writes/backfills, and live CRM reads remain unapproved.
 - **2026-05-15:** Company completed the Operation Living Intelligence Wave 9
   source/privacy readiness review:
-  `domains/company/operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md`.
   Growth implication: policy shape is ready for owner review from report and
   matrix context without live CRM or partner reads.
 - **2026-05-15:** Company prepared the Operation Living Intelligence Wave 9
   Growth/Financials/App/Web owner-review packet:
-  `domains/company/operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md`.
   Company also prepared the owner-review synthesis:
-  `domains/company/operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md`.
   Growth implication: Growth-owned docs-only review is ready to request for
   relationship sensitivity tiers, blocked contact/source families,
   `partner_opportunities` review status, aggregate-only CRM summary options,
@@ -168,7 +168,7 @@ Brain no longer mirrors Growth docs. Load active Growth detail from the source r
 | `skills/commercial-backlog-triage/SKILL.md` | Playbook for commercial systems and growth infrastructure |
 | `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md` | Exact commercial systems backlog reference |
 | `skills/growth-closeout/SKILL.md` | Playbook for closing Growth sessions and identifying follow-up implications |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md` | Company Wave 9 docs-only CRM, Financials, and Sensitive Domains design |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md` | Company Wave 9 source privacy readiness review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md` | Company Wave 9 Growth/Financials/App/Web owner-review packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md` | Company Wave 9 owner-review synthesis |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md` | Company Wave 9 docs-only CRM, Financials, and Sensitive Domains design |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md` | Company Wave 9 source privacy readiness review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md` | Company Wave 9 Growth/Financials/App/Web owner-review packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md` | Company Wave 9 owner-review synthesis |

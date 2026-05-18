@@ -75,7 +75,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   Memgraph change, pgvector work, or graph refresh was performed.
 - **2026-05-15:** Company completed the docs-only Operation Living
   Intelligence Wave 6 Media And Visual AI Readiness design:
-  `domains/company/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
   Content implication: the first future visual AI lane must use the already
   selected task `398` four-item media set, preserve candidate annotation and
   pull-sheet outputs as review material only, and keep any rough sequence as a
@@ -86,7 +86,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   canonical writeback changed.
 - **2026-05-15:** Company completed the Operation Living Intelligence Wave 6
   source/runtime readiness review:
-  `domains/company/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
   Content implication: the four selected task `398` source files exist and can
   remain the future review set, but implementation is deferred until media
   inspection, storage, model-route, and review gates are resolved. No
@@ -94,7 +94,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   copy, publication, or media metadata changed.
 - **2026-05-15:** Company completed the docs-only Operation Living
   Intelligence Wave 2 Content Story Graph design:
-  `domains/company/operation_living_intelligence_wave_2_content_story_graph_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_content_story_graph_design_2026-05-15.md`.
   The design keeps Content as owner of story continuity, source packets,
   scripts, captions, and publishing state while proposing a future read-only
   graph projection that distinguishes published content, planned content,
@@ -105,7 +105,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   source-of-truth change was approved.
 - **2026-05-15:** Company selected the Lake Post-Seal story as the first
   bounded Wave 2 Content Story Graph packet:
-  `domains/company/operation_living_intelligence_wave_2_lake_post_seal_packet_selection_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_lake_post_seal_packet_selection_2026-05-15.md`.
   The anchor is `content_pipeline.id = 338` and `chronicles.id = 30`; the next
   gate is a read-only source-availability check for story threads `1`, `3`,
   `5`, linked story beats, related `content_calendar` rows, and source-map
@@ -114,7 +114,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   output changed.
 - **2026-05-15:** Company completed the read-only source-availability review
   for the selected Wave 2 Lake Post-Seal packet:
-  `domains/company/operation_living_intelligence_wave_2_lake_post_seal_source_availability_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_lake_post_seal_source_availability_review_2026-05-15.md`.
   The review confirms the packet is source-available for a future no-write
   implementation proposal: the April 17 published anchor and chronicle are
   present, story threads `1`, `3`, and `5` remain developing, five related
@@ -125,7 +125,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   changed.
 - **2026-05-15:** Company prepared the no-write Wave 2 App implementation
   proposal:
-  `domains/company/operation_living_intelligence_wave_2_no_write_app_implementation_proposal_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_no_write_app_implementation_proposal_2026-05-15.md`.
   Content impact: future graph output, if later approved, should help answer
   what has been published, what is planned, and what remains candidate story
   material without changing Content records. The proposal remains design-only;

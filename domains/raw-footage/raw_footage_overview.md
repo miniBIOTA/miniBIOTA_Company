@@ -29,7 +29,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
 
 - **2026-05-15:** Company completed the docs-only Operation Living
   Intelligence Wave 6 Media And Visual AI Readiness design:
-  `domains/company/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
   Raw Footage implication: the first future visual AI readiness lane must use
   only the four task `398` media items unless the set is explicitly reopened,
   and Raw Footage must confirm exact source paths/timecodes, read-only access,
@@ -39,7 +39,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   or canonical writeback changed.
 - **2026-05-15:** Company completed the Operation Living Intelligence Wave 6
   source/runtime readiness review:
-  `domains/company/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
   Raw Footage implication: all four task `398` source paths exist, but
   implementation remains deferred until media-inspection tooling, source-folder
   no-side-effect/cache policy, storage-free state, and exact model route are
@@ -48,7 +48,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   Planner write, public output, or canonical writeback changed.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   media preflight policy/tooling proposal:
-  `domains/company/operation_living_intelligence_wave_6_media_preflight_policy_and_tooling_proposal_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_media_preflight_policy_and_tooling_proposal_2026-05-16.md`.
   Raw Footage implication: the proposed future helper would read only the exact
   four task `398` paths, write output only under App's ignored `out/` tree, and
   verify immediate parent folders for side effects before/after preflight. It
@@ -59,7 +59,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   writeback.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   preflight implementation readiness checklist:
-  `domains/company/operation_living_intelligence_wave_6_preflight_implementation_readiness_checklist_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_preflight_implementation_readiness_checklist_2026-05-16.md`.
   Raw Footage implication: a future first helper, if approved, should be Phase
   A filesystem-only preflight: exact four task `398` paths, ignored App
   output, tool availability detection only, immediate parent-folder
@@ -69,7 +69,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   canonical writeback remain unapproved.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 Phase A media preflight helper:
-  `domains/company/operation_living_intelligence_wave_6_phase_a_media_preflight_helper_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_phase_a_media_preflight_helper_2026-05-16.md`.
   Raw Footage implication: all four task `398` source files were found; ignored
   App preflight output was written; immediate parent folders remained
   unchanged; `ffprobe`/`ffmpeg` were detected by PATH probe only; and no media
@@ -80,10 +80,10 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   metadata-only readback.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   Phase B media stream metadata approval packet:
-  `domains/company/operation_living_intelligence_wave_6_phase_b_media_stream_metadata_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_phase_b_media_stream_metadata_approval_packet_2026-05-16.md`.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 Phase B media stream metadata readback:
-  `domains/company/operation_living_intelligence_wave_6_phase_b_media_stream_metadata_readback_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_phase_b_media_stream_metadata_readback_2026-05-16.md`.
   Raw Footage implication: App ran only the approved `ffprobe.exe -v error
   -print_format json -show_format -show_streams` command against the exact four
   task `398` source files, wrote output only under ignored App `out/`, and
@@ -95,7 +95,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   canonical writeback occurred.
 - **2026-05-16:** Company completed the Operation Living Intelligence Wave 6
   model-route decision packet:
-  `domains/company/operation_living_intelligence_wave_6_model_route_decision_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_model_route_decision_packet_2026-05-16.md`.
   Raw Footage implication at that point: the next safe gate was docs-only App
   model-route design review. Any preprocessing, temporary media staging, clip/frame
   extraction, cache behavior, model input handling, upload, generated
@@ -103,7 +103,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   unapproved and must preserve the no-source-folder-side-effect boundary.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   App model-route design-review packet:
-  `domains/company/operation_living_intelligence_wave_6_model_route_app_design_review_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_model_route_app_design_review_packet_2026-05-16.md`.
   Raw Footage implication: App review should answer what preprocessing, temp
   staging, cache, or model-input handling would be required later, but this
   packet itself approves none of those actions.
@@ -118,7 +118,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   boundary.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   model-route feasibility preflight approval packet:
-  `domains/company/operation_living_intelligence_wave_6_model_route_feasibility_preflight_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_model_route_feasibility_preflight_approval_packet_2026-05-16.md`.
   Raw Footage implication: the proposed next implementation boundary remains
   feasibility/readback only. It does not approve local environment probing,
   route recheck, helper execution, preprocessing, temp media staging, cache
@@ -126,7 +126,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   metadata, public use, or canonical writeback.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 model-route feasibility helper/readback:
-  `domains/company/operation_living_intelligence_wave_6_model_route_feasibility_preflight_readback_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_model_route_feasibility_preflight_readback_2026-05-16.md`.
   Raw Footage implication: the helper touched only ignored App output and
   read-only filesystem/environment checks. It confirmed all exact four task
   `398` source paths exist, then confirmed the immediate raw parent folders
@@ -138,7 +138,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   no-source-folder-side-effect boundary.
 - **2026-05-16:** Company completed the Operation Living Intelligence Wave 6
   official route recheck and route-selection packet:
-  `domains/company/operation_living_intelligence_wave_6_official_route_recheck_and_route_selection_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_official_route_recheck_and_route_selection_packet_2026-05-16.md`.
   Raw Footage implication: `Qwen/Qwen3-VL-2B-Instruct` local/offline is now
   the first practical future pilot proposal route, but no model download/run or
   media input operation is approved. Any future Qwen3-VL pilot packet must keep
@@ -147,14 +147,14 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   and confirm raw parent folders remain unchanged before and after any run.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   Qwen3-VL local pilot implementation approval packet:
-  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_implementation_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_implementation_approval_packet_2026-05-16.md`.
   Raw Footage implication: the packet proposes a still-image-only first pilot
   using `TEST_398_01_OPAQUE_LAKE_STILL` and requires raw parent-folder
   side-effect proof. It still needs explicit approval before model
   download/cache/run or any media input operation.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 Qwen3-VL still-image local pilot:
-  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_readback_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_readback_2026-05-16.md`.
   Raw Footage implication: the helper used only `TEST_398_01_OPAQUE_LAKE_STILL`,
   wrote ignored candidate/readback output, and confirmed the Freshwater Lake
   parent folder stayed unchanged at `430 / 430` entries. No video input,
@@ -164,13 +164,13 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   side-effect proof.
 - **2026-05-16:** Company completed the Operation Living Intelligence Wave 6
   Qwen3-VL prompt hardening and usefulness review:
-  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardening_usefulness_review_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardening_usefulness_review_2026-05-16.md`.
   Raw Footage implication: the still-image pilot is useful, but prompt
   hardening should block evaluative environment/care language before any rerun.
   Any rerun must again prove raw parent-folder side effects remain unchanged.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 Qwen3-VL prompt-hardened still-image rerun:
-  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardened_rerun_readback_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardened_rerun_readback_2026-05-16.md`.
   Raw Footage implication: the rerun used only
   `TEST_398_01_OPAQUE_LAKE_STILL`, produced ignored candidate/readback output
   under App `out/`, removed the earlier environment-quality judgment issue, and
@@ -180,7 +180,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   metadata write, public output, or canonical writeback changed.
 - **2026-05-16:** Company completed the Operation Living Intelligence Wave 6
   video/GPU runtime decision packet:
-  `domains/company/operation_living_intelligence_wave_6_video_gpu_runtime_decision_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_video_gpu_runtime_decision_packet_2026-05-16.md`.
   Raw Footage implication: do not run video yet. If Wave 6 continues, the next
   safe gate is App docs-only review of `TEST_398_02_FIELD_SAMPLING` as the
   first short-video candidate, with explicit proof that source folders stay
@@ -190,7 +190,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   canonical writeback is approved.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   video/GPU runtime App design-review packet:
-  `domains/company/operation_living_intelligence_wave_6_video_gpu_runtime_app_design_review_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_video_gpu_runtime_app_design_review_packet_2026-05-16.md`.
   Raw Footage implication: App review is scoped to `TEST_398_02_FIELD_SAMPLING`
   only as the possible first short-video candidate and must preserve
   raw-folder side-effect proof. No video input, GPU/CUDA runtime change,
@@ -206,7 +206,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   side-effect proof before any short-video run.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   runtime/backend preflight approval packet:
-  `domains/company/operation_living_intelligence_wave_6_runtime_backend_preflight_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_runtime_backend_preflight_approval_packet_2026-05-16.md`.
   Raw Footage implication: the next possible helper, if explicitly approved,
   may only confirm `TEST_398_02_FIELD_SAMPLING` source existence and immediate
   parent-folder unchanged proof while reporting local runtime/backend facts. It
@@ -216,7 +216,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   canonical writeback.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 runtime/backend preflight helper:
-  `domains/company/operation_living_intelligence_wave_6_runtime_backend_preflight_readback_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_runtime_backend_preflight_readback_2026-05-16.md`.
   Raw Footage implication: `TEST_398_02_FIELD_SAMPLING` exists at the expected
   path, and the immediate raw parent folder stayed unchanged at `967 / 967`.
   The helper did not decode video, run a model, use `ffmpeg`, preprocess media,
@@ -225,7 +225,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   or canonical writeback.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   CPU-only short-video implementation approval packet:
-  `domains/company/operation_living_intelligence_wave_6_cpu_only_short_video_implementation_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_cpu_only_short_video_implementation_approval_packet_2026-05-16.md`.
   Raw Footage implication: implementation remains unapproved, but any later
   approved helper would be limited to `TEST_398_02_FIELD_SAMPLING`, existing
   local/offline runtime/cache, CPU-only model execution, `torchvision` only,
@@ -236,7 +236,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   metadata writes, public output, or canonical writeback.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 CPU-only short-video helper:
-  `domains/company/operation_living_intelligence_wave_6_cpu_only_short_video_pilot_readback_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_cpu_only_short_video_pilot_readback_2026-05-16.md`.
   Raw Footage implication: the helper stayed inside the approved no-source-write
   boundary and blocked before accepting a candidate because `torchvision.io` has
   no `read_video`. The raw parent folder stayed unchanged at `967 / 967`; model
@@ -245,7 +245,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   writes, public output, or canonical writeback occurred.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   Decord backend short-video approval packet:
-  `domains/company/operation_living_intelligence_wave_6_decord_backend_short_video_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_decord_backend_short_video_approval_packet_2026-05-16.md`.
   Raw Footage implication: implementation remains unapproved. If later
   approved, the route would still be limited to `TEST_398_02_FIELD_SAMPLING`,
   existing ignored App runtime/cache, CPU-only, `decord` backend only, ignored

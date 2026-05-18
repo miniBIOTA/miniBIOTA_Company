@@ -53,7 +53,7 @@ truth remains in financial tables and close records, not Planner task text.
 
 - **2026-05-15:** Company documented the Operation Living Intelligence Wave 9
   CRM, Financials, And Sensitive Domains docs-only design:
-  `domains/company/operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md`.
   Financials implication: financial context remains aggregate-only by default.
   Financials must approve any finance read, summary scope, runway/cash label,
   cost posture, liability/debt trend, statement/document use, graph/vector
@@ -63,14 +63,14 @@ truth remains in financial tables and close records, not Planner task text.
   blocked without separate Financials/Josue approval.
 - **2026-05-15:** Company completed the Operation Living Intelligence Wave 9
   source/privacy readiness review:
-  `domains/company/operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md`.
   Financials implication: policy shape is ready for owner review from report
   and matrix context without live finance reads.
 - **2026-05-15:** Company prepared the Operation Living Intelligence Wave 9
   Growth/Financials/App/Web owner-review packet:
-  `domains/company/operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md`.
   Company also prepared the owner-review synthesis:
-  `domains/company/operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md`.
   Financials implication: Financials-owned docs-only review is ready to request
   for aggregate-only finance categories, blocked raw source families,
   cost/no-spend labels, approval gates for revenue/cost/runway/liability/cash
@@ -81,7 +81,7 @@ truth remains in financial tables and close records, not Planner task text.
   spend, and financial recommendations remain unapproved.
 - **2026-05-15:** Company completed the docs-only Operation Living
   Intelligence Wave 6 Media And Visual AI Readiness design:
-  `domains/company/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
   Financials implication: Nemotron/Codex remains the first lane only after a
   no-spend source/runtime readiness review, and Twelve Labs remains a later
   benchmark only after reviewed local/private results show a specific gap.
@@ -90,7 +90,7 @@ truth remains in financial tables and close records, not Planner task text.
   Planner/Supabase write, or paid-service commitment changed.
 - **2026-05-15:** Company completed the Operation Living Intelligence Wave 6
   source/runtime readiness review:
-  `domains/company/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
   Financials implication: implementation remains deferred because exact model
   route, storage-free state, possible model download/cache burden, cloud/API
   cost, payment-method posture, and Twelve Labs benchmark gates are unresolved.
@@ -195,7 +195,7 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
 | `skills\log-mileage\SKILL.md` | Business mileage logging workflow |
 | `skills\monthly-close-support\SKILL.md` | Monthly close, receipts, expenses, account balances, liabilities, and planned purchases |
 | `skills\monthly-close-support\reference\monthly-close-workflow.md` | Exact monthly close order and table roles |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md` | Company Wave 9 docs-only CRM, Financials, and Sensitive Domains design |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md` | Company Wave 9 source privacy readiness review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md` | Company Wave 9 Growth/Financials/App/Web owner-review packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md` | Company Wave 9 owner-review synthesis |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md` | Company Wave 9 docs-only CRM, Financials, and Sensitive Domains design |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md` | Company Wave 9 source privacy readiness review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md` | Company Wave 9 Growth/Financials/App/Web owner-review packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md` | Company Wave 9 owner-review synthesis |

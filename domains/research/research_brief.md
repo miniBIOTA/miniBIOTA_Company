@@ -47,7 +47,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 - **2026-05-15:** Company completed the docs-only Operation Living
   Intelligence Wave 6 Media And Visual AI Readiness design:
-  `domains/company/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
   Research implication: any future candidate visual annotation remains
   noncanonical until Research reviews organism wording and claim safety,
   especially the ID-sensitive microcrustacean blocking test. The design blocks
@@ -58,7 +58,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   writeback changed.
 - **2026-05-15:** Company completed the Operation Living Intelligence Wave 6
   source/runtime readiness review:
-  `domains/company/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
   Research implication: the ID-sensitive microcrustacean item remains blocked
   until Research defines allowed and forbidden wording for model output review.
   No candidate annotation, organism ID, ecological claim, species/observation
@@ -66,7 +66,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   canonical writeback changed.
 - **2026-05-15:** Company completed the docs-only Operation Living
   Intelligence Wave 2 Content Story Graph design:
-  `domains/company/operation_living_intelligence_wave_2_content_story_graph_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_content_story_graph_design_2026-05-15.md`.
   Research's boundary is claim safety and observation/open-loop interpretation:
   Wave 2 may use observations as evidence/context in a future read-only graph,
   but observations, open loops, and story beats must not become public claims
@@ -75,7 +75,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   automation, or source-of-truth change was approved.
 - **2026-05-15:** Company completed the read-only source-availability review
   for the selected Wave 2 Lake Post-Seal packet:
-  `domains/company/operation_living_intelligence_wave_2_lake_post_seal_source_availability_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_lake_post_seal_source_availability_review_2026-05-15.md`.
   Research-relevant result: observations `170-178`, open loops `1`, `2`, `3`,
   `4`, and `7`, and active story threads `1`, `3`, and `5` are available for
   future graph context, while media remains unreviewed and loops remain open
@@ -83,7 +83,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   Research/Content/Web review.
 - **2026-05-15:** Company prepared the no-write Wave 2 App implementation
   proposal:
-  `domains/company/operation_living_intelligence_wave_2_no_write_app_implementation_proposal_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_no_write_app_implementation_proposal_2026-05-15.md`.
   Research boundary remains unchanged: observations, loops, and story beats may
   be projected as source context in a future local readback, but the graph must
   block unresolved-loop overclaims, unreviewed-media proof, and any public

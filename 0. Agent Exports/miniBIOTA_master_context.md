@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Master Context
 
-- Generated: 2026-05-18 16:50:08 -04:00
+- Generated: 2026-05-18 17:09:54 -04:00
 - Source contract: Company `domains/` reports are included below.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 - Format: portable Markdown with Obsidian wiki-links normalized or removed.
@@ -382,7 +382,7 @@ truth remains in financial tables and close records, not Planner task text.
 
 - **2026-05-15:** Company documented the Operation Living Intelligence Wave 9
   CRM, Financials, And Sensitive Domains docs-only design:
-  `domains/company/operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md`.
   Financials implication: financial context remains aggregate-only by default.
   Financials must approve any finance read, summary scope, runway/cash label,
   cost posture, liability/debt trend, statement/document use, graph/vector
@@ -392,14 +392,14 @@ truth remains in financial tables and close records, not Planner task text.
   blocked without separate Financials/Josue approval.
 - **2026-05-15:** Company completed the Operation Living Intelligence Wave 9
   source/privacy readiness review:
-  `domains/company/operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md`.
   Financials implication: policy shape is ready for owner review from report
   and matrix context without live finance reads.
 - **2026-05-15:** Company prepared the Operation Living Intelligence Wave 9
   Growth/Financials/App/Web owner-review packet:
-  `domains/company/operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md`.
   Company also prepared the owner-review synthesis:
-  `domains/company/operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md`.
   Financials implication: Financials-owned docs-only review is ready to request
   for aggregate-only finance categories, blocked raw source families,
   cost/no-spend labels, approval gates for revenue/cost/runway/liability/cash
@@ -410,7 +410,7 @@ truth remains in financial tables and close records, not Planner task text.
   spend, and financial recommendations remain unapproved.
 - **2026-05-15:** Company completed the docs-only Operation Living
   Intelligence Wave 6 Media And Visual AI Readiness design:
-  `domains/company/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
   Financials implication: Nemotron/Codex remains the first lane only after a
   no-spend source/runtime readiness review, and Twelve Labs remains a later
   benchmark only after reviewed local/private results show a specific gap.
@@ -419,7 +419,7 @@ truth remains in financial tables and close records, not Planner task text.
   Planner/Supabase write, or paid-service commitment changed.
 - **2026-05-15:** Company completed the Operation Living Intelligence Wave 6
   source/runtime readiness review:
-  `domains/company/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
   Financials implication: implementation remains deferred because exact model
   route, storage-free state, possible model download/cache burden, cloud/API
   cost, payment-method posture, and Twelve Labs benchmark gates are unresolved.
@@ -524,10 +524,10 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
 | `skills\log-mileage\SKILL.md` | Business mileage logging workflow |
 | `skills\monthly-close-support\SKILL.md` | Monthly close, receipts, expenses, account balances, liabilities, and planned purchases |
 | `skills\monthly-close-support\reference\monthly-close-workflow.md` | Exact monthly close order and table roles |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md` | Company Wave 9 docs-only CRM, Financials, and Sensitive Domains design |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md` | Company Wave 9 source privacy readiness review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md` | Company Wave 9 Growth/Financials/App/Web owner-review packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md` | Company Wave 9 owner-review synthesis |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md` | Company Wave 9 docs-only CRM, Financials, and Sensitive Domains design |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md` | Company Wave 9 source privacy readiness review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md` | Company Wave 9 Growth/Financials/App/Web owner-review packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md` | Company Wave 9 owner-review synthesis |
 
 ---
 
@@ -622,7 +622,7 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
 
 - **2026-05-15:** Company completed the docs-only Operation Living
   Intelligence Wave 6 Media And Visual AI Readiness design:
-  `domains/company/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
   Research implication: any future candidate visual annotation remains
   noncanonical until Research reviews organism wording and claim safety,
   especially the ID-sensitive microcrustacean blocking test. The design blocks
@@ -633,7 +633,7 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
   writeback changed.
 - **2026-05-15:** Company completed the Operation Living Intelligence Wave 6
   source/runtime readiness review:
-  `domains/company/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
   Research implication: the ID-sensitive microcrustacean item remains blocked
   until Research defines allowed and forbidden wording for model output review.
   No candidate annotation, organism ID, ecological claim, species/observation
@@ -641,7 +641,7 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
   canonical writeback changed.
 - **2026-05-15:** Company completed the docs-only Operation Living
   Intelligence Wave 2 Content Story Graph design:
-  `domains/company/operation_living_intelligence_wave_2_content_story_graph_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_content_story_graph_design_2026-05-15.md`.
   Research's boundary is claim safety and observation/open-loop interpretation:
   Wave 2 may use observations as evidence/context in a future read-only graph,
   but observations, open loops, and story beats must not become public claims
@@ -650,7 +650,7 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
   automation, or source-of-truth change was approved.
 - **2026-05-15:** Company completed the read-only source-availability review
   for the selected Wave 2 Lake Post-Seal packet:
-  `domains/company/operation_living_intelligence_wave_2_lake_post_seal_source_availability_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_lake_post_seal_source_availability_review_2026-05-15.md`.
   Research-relevant result: observations `170-178`, open loops `1`, `2`, `3`,
   `4`, and `7`, and active story threads `1`, `3`, and `5` are available for
   future graph context, while media remains unreviewed and loops remain open
@@ -658,7 +658,7 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
   Research/Content/Web review.
 - **2026-05-15:** Company prepared the no-write Wave 2 App implementation
   proposal:
-  `domains/company/operation_living_intelligence_wave_2_no_write_app_implementation_proposal_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_no_write_app_implementation_proposal_2026-05-15.md`.
   Research boundary remains unchanged: observations, loops, and story beats may
   be projected as source context in a future local readback, but the graph must
   block unresolved-loop overclaims, unreviewed-media proof, and any public
@@ -1058,7 +1058,7 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
   Memgraph change, pgvector work, or graph refresh was performed.
 - **2026-05-15:** Company completed the docs-only Operation Living
   Intelligence Wave 6 Media And Visual AI Readiness design:
-  `domains/company/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
   Content implication: the first future visual AI lane must use the already
   selected task `398` four-item media set, preserve candidate annotation and
   pull-sheet outputs as review material only, and keep any rough sequence as a
@@ -1069,7 +1069,7 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
   canonical writeback changed.
 - **2026-05-15:** Company completed the Operation Living Intelligence Wave 6
   source/runtime readiness review:
-  `domains/company/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
   Content implication: the four selected task `398` source files exist and can
   remain the future review set, but implementation is deferred until media
   inspection, storage, model-route, and review gates are resolved. No
@@ -1077,7 +1077,7 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
   copy, publication, or media metadata changed.
 - **2026-05-15:** Company completed the docs-only Operation Living
   Intelligence Wave 2 Content Story Graph design:
-  `domains/company/operation_living_intelligence_wave_2_content_story_graph_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_content_story_graph_design_2026-05-15.md`.
   The design keeps Content as owner of story continuity, source packets,
   scripts, captions, and publishing state while proposing a future read-only
   graph projection that distinguishes published content, planned content,
@@ -1088,7 +1088,7 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
   source-of-truth change was approved.
 - **2026-05-15:** Company selected the Lake Post-Seal story as the first
   bounded Wave 2 Content Story Graph packet:
-  `domains/company/operation_living_intelligence_wave_2_lake_post_seal_packet_selection_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_lake_post_seal_packet_selection_2026-05-15.md`.
   The anchor is `content_pipeline.id = 338` and `chronicles.id = 30`; the next
   gate is a read-only source-availability check for story threads `1`, `3`,
   `5`, linked story beats, related `content_calendar` rows, and source-map
@@ -1097,7 +1097,7 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
   output changed.
 - **2026-05-15:** Company completed the read-only source-availability review
   for the selected Wave 2 Lake Post-Seal packet:
-  `domains/company/operation_living_intelligence_wave_2_lake_post_seal_source_availability_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_lake_post_seal_source_availability_review_2026-05-15.md`.
   The review confirms the packet is source-available for a future no-write
   implementation proposal: the April 17 published anchor and chronicle are
   present, story threads `1`, `3`, and `5` remain developing, five related
@@ -1108,7 +1108,7 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
   changed.
 - **2026-05-15:** Company prepared the no-write Wave 2 App implementation
   proposal:
-  `domains/company/operation_living_intelligence_wave_2_no_write_app_implementation_proposal_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_no_write_app_implementation_proposal_2026-05-15.md`.
   Content impact: future graph output, if later approved, should help answer
   what has been published, what is planned, and what remains candidate story
   material without changing Content records. The proposal remains design-only;
@@ -1348,10 +1348,10 @@ Brain no longer keeps a Content `docs\` mirror after the memory/skills migration
 - Keep Hardware durable detail in repo-local biome folders, `0. Hardware Systems/`, memory, playbooks, and skill references. Use App Planner/Supabase for Hardware work tracking and task completion status. Company carries active strategy-level Hardware reporting and cross-domain coordination; Brain is historical/archive lookup only.
 
 ## Recent Milestones
-- 2026-05-15: Company prepared the Operation Living Intelligence Wave 8 Hardware/App/Web design-review packet at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_hardware_app_web_design_review_packet_2026-05-15.md`. Hardware implication: the next Hardware involvement is docs-only review of telemetry source assumptions, live-read gate, snapshot-first recommendation, `biome_telemetry` retention/cadence boundary, validation checks, and proof that a future helper cannot change coordinator services, firmware, MQTT publishing, command queues, setpoints, device controls, schema, generated output, or canonical telemetry truth.
-- 2026-05-15: Company prepared the Operation Living Intelligence Wave 8 domain review synthesis at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_domain_review_synthesis_2026-05-15.md`. Hardware implication: Company recommends pausing Wave 8 before implementation and continuing Wave 9 docs-only unless Josue asks for Hardware-owned review now. Hardware acceptance of `telemetry_snapshot`-first sequencing, live-read approval, `biome_telemetry` retention/cadence policy, and no-control validation remains pending.
-- 2026-05-15: Company completed the Operation Living Intelligence Wave 8 source/readiness review at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_source_readiness_review_2026-05-15.md`. Hardware implication: source shape is ready for a no-write Hardware/App/Web design-review packet, but live telemetry reads, row samples, retention policy, helpers, generated output, Hardware service changes, firmware changes, MQTT publishing, command queues, device controls, telemetry schema changes, and canonical writeback remain unapproved.
-- 2026-05-15: Company started Operation Living Intelligence Wave 8 Telemetry Summaries as docs-only design at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_telemetry_summaries_design_2026-05-15.md`. Hardware implication: telemetry summaries remain planning-only until a source/readiness review confirms source shape, public/private field boundaries, cadence/retention, stale/offline semantics, and safe read path. No Hardware service, firmware, MQTT, command queue, telemetry schema, live-control, App Monitoring, Web/public telemetry, generated output, or canonical writeback changed.
+- 2026-05-15: Company prepared the Operation Living Intelligence Wave 8 Hardware/App/Web design-review packet at `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_hardware_app_web_design_review_packet_2026-05-15.md`. Hardware implication: the next Hardware involvement is docs-only review of telemetry source assumptions, live-read gate, snapshot-first recommendation, `biome_telemetry` retention/cadence boundary, validation checks, and proof that a future helper cannot change coordinator services, firmware, MQTT publishing, command queues, setpoints, device controls, schema, generated output, or canonical telemetry truth.
+- 2026-05-15: Company prepared the Operation Living Intelligence Wave 8 domain review synthesis at `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_domain_review_synthesis_2026-05-15.md`. Hardware implication: Company recommends pausing Wave 8 before implementation and continuing Wave 9 docs-only unless Josue asks for Hardware-owned review now. Hardware acceptance of `telemetry_snapshot`-first sequencing, live-read approval, `biome_telemetry` retention/cadence policy, and no-control validation remains pending.
+- 2026-05-15: Company completed the Operation Living Intelligence Wave 8 source/readiness review at `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_source_readiness_review_2026-05-15.md`. Hardware implication: source shape is ready for a no-write Hardware/App/Web design-review packet, but live telemetry reads, row samples, retention policy, helpers, generated output, Hardware service changes, firmware changes, MQTT publishing, command queues, device controls, telemetry schema changes, and canonical writeback remain unapproved.
+- 2026-05-15: Company started Operation Living Intelligence Wave 8 Telemetry Summaries as docs-only design at `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_telemetry_summaries_design_2026-05-15.md`. Hardware implication: telemetry summaries remain planning-only until a source/readiness review confirms source shape, public/private field boundaries, cadence/retention, stale/offline semantics, and safe read path. No Hardware service, firmware, MQTT, command queue, telemetry schema, live-control, App Monitoring, Web/public telemetry, generated output, or canonical writeback changed.
 - 2026-05-13: Expanded the read-only Wyse telemetry coordinator and Supabase telemetry schema. Public `telemetry_snapshot` now includes the website-expected atmosphere sensor nodes for biomes 2-5 while keeping pump, liquid/heat-exchanger, relay, command, and actuator fields out of the public payload. Internal `biome_telemetry` history is live for biomes 2-5 at about one-minute cadence with biome air, atmosphere air, liquid/heat-exchanger temperature, pump percentage, and target temperature fields for climate/control analysis. No firmware, MQTT publishing, setpoint command queue, pump/relay/actuator control, or public Web display contract for pump/liquid data was added.
 - 2026-05-13: App Monitoring confirmed the operator surface already consumes live MQTT `liq_t` and `pump_pct`; App labels were updated to present those cards as internal hardware telemetry. Hardware did not need another data-path, schema, MQTT, or public Web contract change.
 - 2026-05-12: Company applied approved Hardware Planner cleanup from the
@@ -1437,10 +1437,10 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
 | `skills\firmware-build-and-verify\SKILL.md` | Firmware review/build/change workflow |
 | `skills\control-network-setup\SKILL.md` | Opal/Wyse/MQTT/OTA setup and troubleshooting workflow |
 | `skills\telemetry-coordinator\SKILL.md` | Wyse telemetry coordinator and snapshot contract workflow |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_telemetry_summaries_design_2026-05-15.md` | Company Wave 8 docs-only telemetry summaries design |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_source_readiness_review_2026-05-15.md` | Company Wave 8 telemetry source/readiness review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_hardware_app_web_design_review_packet_2026-05-15.md` | Company Wave 8 Hardware/App/Web design review packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_domain_review_synthesis_2026-05-15.md` | Company Wave 8 domain review synthesis |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_telemetry_summaries_design_2026-05-15.md` | Company Wave 8 docs-only telemetry summaries design |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_source_readiness_review_2026-05-15.md` | Company Wave 8 telemetry source/readiness review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_hardware_app_web_design_review_packet_2026-05-15.md` | Company Wave 8 Hardware/App/Web design review packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_domain_review_synthesis_2026-05-15.md` | Company Wave 8 domain review synthesis |
 | `skills\hardware-architecture-reference\SKILL.md` | Physical, hydrological, climate, rain, enclosure, and system-boundary workflow |
 | `skills\*\reference\` | Exact setup, architecture, telemetry, and firmware references |
 
@@ -1577,7 +1577,7 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
 
 - **2026-05-15:** Company documented the Operation Living Intelligence Wave 9
   CRM, Financials, And Sensitive Domains docs-only design:
-  `domains/company/operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md`.
   Growth implication: CRM and partner context remain policy-first. Growth must
   approve relationship meaning, privacy tiers, aggregate summary shapes,
   contact-detail exclusions, outreach boundaries, sponsor/partner commitment
@@ -1587,14 +1587,14 @@ Brain no longer keeps a Hardware `docs\` mirror after the memory/skills migratio
   writes/backfills, and live CRM reads remain unapproved.
 - **2026-05-15:** Company completed the Operation Living Intelligence Wave 9
   source/privacy readiness review:
-  `domains/company/operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md`.
   Growth implication: policy shape is ready for owner review from report and
   matrix context without live CRM or partner reads.
 - **2026-05-15:** Company prepared the Operation Living Intelligence Wave 9
   Growth/Financials/App/Web owner-review packet:
-  `domains/company/operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md`.
   Company also prepared the owner-review synthesis:
-  `domains/company/operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md`.
   Growth implication: Growth-owned docs-only review is ready to request for
   relationship sensitivity tiers, blocked contact/source families,
   `partner_opportunities` review status, aggregate-only CRM summary options,
@@ -1691,10 +1691,10 @@ Brain no longer mirrors Growth docs. Load active Growth detail from the source r
 | `skills/commercial-backlog-triage/SKILL.md` | Playbook for commercial systems and growth infrastructure |
 | `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md` | Exact commercial systems backlog reference |
 | `skills/growth-closeout/SKILL.md` | Playbook for closing Growth sessions and identifying follow-up implications |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md` | Company Wave 9 docs-only CRM, Financials, and Sensitive Domains design |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md` | Company Wave 9 source privacy readiness review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md` | Company Wave 9 Growth/Financials/App/Web owner-review packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md` | Company Wave 9 owner-review synthesis |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md` | Company Wave 9 docs-only CRM, Financials, and Sensitive Domains design |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md` | Company Wave 9 source privacy readiness review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md` | Company Wave 9 Growth/Financials/App/Web owner-review packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md` | Company Wave 9 owner-review synthesis |
 
 ---
 
@@ -1716,7 +1716,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
 
 - **2026-05-15:** Company completed the docs-only Operation Living
   Intelligence Wave 6 Media And Visual AI Readiness design:
-  `domains/company/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
   Raw Footage implication: the first future visual AI readiness lane must use
   only the four task `398` media items unless the set is explicitly reopened,
   and Raw Footage must confirm exact source paths/timecodes, read-only access,
@@ -1726,7 +1726,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   or canonical writeback changed.
 - **2026-05-15:** Company completed the Operation Living Intelligence Wave 6
   source/runtime readiness review:
-  `domains/company/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
   Raw Footage implication: all four task `398` source paths exist, but
   implementation remains deferred until media-inspection tooling, source-folder
   no-side-effect/cache policy, storage-free state, and exact model route are
@@ -1735,7 +1735,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   Planner write, public output, or canonical writeback changed.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   media preflight policy/tooling proposal:
-  `domains/company/operation_living_intelligence_wave_6_media_preflight_policy_and_tooling_proposal_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_media_preflight_policy_and_tooling_proposal_2026-05-16.md`.
   Raw Footage implication: the proposed future helper would read only the exact
   four task `398` paths, write output only under App's ignored `out/` tree, and
   verify immediate parent folders for side effects before/after preflight. It
@@ -1746,7 +1746,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   writeback.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   preflight implementation readiness checklist:
-  `domains/company/operation_living_intelligence_wave_6_preflight_implementation_readiness_checklist_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_preflight_implementation_readiness_checklist_2026-05-16.md`.
   Raw Footage implication: a future first helper, if approved, should be Phase
   A filesystem-only preflight: exact four task `398` paths, ignored App
   output, tool availability detection only, immediate parent-folder
@@ -1756,7 +1756,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   canonical writeback remain unapproved.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 Phase A media preflight helper:
-  `domains/company/operation_living_intelligence_wave_6_phase_a_media_preflight_helper_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_phase_a_media_preflight_helper_2026-05-16.md`.
   Raw Footage implication: all four task `398` source files were found; ignored
   App preflight output was written; immediate parent folders remained
   unchanged; `ffprobe`/`ffmpeg` were detected by PATH probe only; and no media
@@ -1767,10 +1767,10 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   metadata-only readback.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   Phase B media stream metadata approval packet:
-  `domains/company/operation_living_intelligence_wave_6_phase_b_media_stream_metadata_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_phase_b_media_stream_metadata_approval_packet_2026-05-16.md`.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 Phase B media stream metadata readback:
-  `domains/company/operation_living_intelligence_wave_6_phase_b_media_stream_metadata_readback_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_phase_b_media_stream_metadata_readback_2026-05-16.md`.
   Raw Footage implication: App ran only the approved `ffprobe.exe -v error
   -print_format json -show_format -show_streams` command against the exact four
   task `398` source files, wrote output only under ignored App `out/`, and
@@ -1782,7 +1782,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   canonical writeback occurred.
 - **2026-05-16:** Company completed the Operation Living Intelligence Wave 6
   model-route decision packet:
-  `domains/company/operation_living_intelligence_wave_6_model_route_decision_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_model_route_decision_packet_2026-05-16.md`.
   Raw Footage implication at that point: the next safe gate was docs-only App
   model-route design review. Any preprocessing, temporary media staging, clip/frame
   extraction, cache behavior, model input handling, upload, generated
@@ -1790,7 +1790,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   unapproved and must preserve the no-source-folder-side-effect boundary.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   App model-route design-review packet:
-  `domains/company/operation_living_intelligence_wave_6_model_route_app_design_review_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_model_route_app_design_review_packet_2026-05-16.md`.
   Raw Footage implication: App review should answer what preprocessing, temp
   staging, cache, or model-input handling would be required later, but this
   packet itself approves none of those actions.
@@ -1805,7 +1805,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   boundary.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   model-route feasibility preflight approval packet:
-  `domains/company/operation_living_intelligence_wave_6_model_route_feasibility_preflight_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_model_route_feasibility_preflight_approval_packet_2026-05-16.md`.
   Raw Footage implication: the proposed next implementation boundary remains
   feasibility/readback only. It does not approve local environment probing,
   route recheck, helper execution, preprocessing, temp media staging, cache
@@ -1813,7 +1813,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   metadata, public use, or canonical writeback.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 model-route feasibility helper/readback:
-  `domains/company/operation_living_intelligence_wave_6_model_route_feasibility_preflight_readback_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_model_route_feasibility_preflight_readback_2026-05-16.md`.
   Raw Footage implication: the helper touched only ignored App output and
   read-only filesystem/environment checks. It confirmed all exact four task
   `398` source paths exist, then confirmed the immediate raw parent folders
@@ -1825,7 +1825,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   no-source-folder-side-effect boundary.
 - **2026-05-16:** Company completed the Operation Living Intelligence Wave 6
   official route recheck and route-selection packet:
-  `domains/company/operation_living_intelligence_wave_6_official_route_recheck_and_route_selection_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_official_route_recheck_and_route_selection_packet_2026-05-16.md`.
   Raw Footage implication: `Qwen/Qwen3-VL-2B-Instruct` local/offline is now
   the first practical future pilot proposal route, but no model download/run or
   media input operation is approved. Any future Qwen3-VL pilot packet must keep
@@ -1834,14 +1834,14 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   and confirm raw parent folders remain unchanged before and after any run.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   Qwen3-VL local pilot implementation approval packet:
-  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_implementation_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_implementation_approval_packet_2026-05-16.md`.
   Raw Footage implication: the packet proposes a still-image-only first pilot
   using `TEST_398_01_OPAQUE_LAKE_STILL` and requires raw parent-folder
   side-effect proof. It still needs explicit approval before model
   download/cache/run or any media input operation.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 Qwen3-VL still-image local pilot:
-  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_readback_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_readback_2026-05-16.md`.
   Raw Footage implication: the helper used only `TEST_398_01_OPAQUE_LAKE_STILL`,
   wrote ignored candidate/readback output, and confirmed the Freshwater Lake
   parent folder stayed unchanged at `430 / 430` entries. No video input,
@@ -1851,13 +1851,13 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   side-effect proof.
 - **2026-05-16:** Company completed the Operation Living Intelligence Wave 6
   Qwen3-VL prompt hardening and usefulness review:
-  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardening_usefulness_review_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardening_usefulness_review_2026-05-16.md`.
   Raw Footage implication: the still-image pilot is useful, but prompt
   hardening should block evaluative environment/care language before any rerun.
   Any rerun must again prove raw parent-folder side effects remain unchanged.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 Qwen3-VL prompt-hardened still-image rerun:
-  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardened_rerun_readback_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardened_rerun_readback_2026-05-16.md`.
   Raw Footage implication: the rerun used only
   `TEST_398_01_OPAQUE_LAKE_STILL`, produced ignored candidate/readback output
   under App `out/`, removed the earlier environment-quality judgment issue, and
@@ -1867,7 +1867,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   metadata write, public output, or canonical writeback changed.
 - **2026-05-16:** Company completed the Operation Living Intelligence Wave 6
   video/GPU runtime decision packet:
-  `domains/company/operation_living_intelligence_wave_6_video_gpu_runtime_decision_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_video_gpu_runtime_decision_packet_2026-05-16.md`.
   Raw Footage implication: do not run video yet. If Wave 6 continues, the next
   safe gate is App docs-only review of `TEST_398_02_FIELD_SAMPLING` as the
   first short-video candidate, with explicit proof that source folders stay
@@ -1877,7 +1877,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   canonical writeback is approved.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   video/GPU runtime App design-review packet:
-  `domains/company/operation_living_intelligence_wave_6_video_gpu_runtime_app_design_review_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_video_gpu_runtime_app_design_review_packet_2026-05-16.md`.
   Raw Footage implication: App review is scoped to `TEST_398_02_FIELD_SAMPLING`
   only as the possible first short-video candidate and must preserve
   raw-folder side-effect proof. No video input, GPU/CUDA runtime change,
@@ -1893,7 +1893,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   side-effect proof before any short-video run.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   runtime/backend preflight approval packet:
-  `domains/company/operation_living_intelligence_wave_6_runtime_backend_preflight_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_runtime_backend_preflight_approval_packet_2026-05-16.md`.
   Raw Footage implication: the next possible helper, if explicitly approved,
   may only confirm `TEST_398_02_FIELD_SAMPLING` source existence and immediate
   parent-folder unchanged proof while reporting local runtime/backend facts. It
@@ -1903,7 +1903,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   canonical writeback.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 runtime/backend preflight helper:
-  `domains/company/operation_living_intelligence_wave_6_runtime_backend_preflight_readback_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_runtime_backend_preflight_readback_2026-05-16.md`.
   Raw Footage implication: `TEST_398_02_FIELD_SAMPLING` exists at the expected
   path, and the immediate raw parent folder stayed unchanged at `967 / 967`.
   The helper did not decode video, run a model, use `ffmpeg`, preprocess media,
@@ -1912,7 +1912,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   or canonical writeback.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   CPU-only short-video implementation approval packet:
-  `domains/company/operation_living_intelligence_wave_6_cpu_only_short_video_implementation_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_cpu_only_short_video_implementation_approval_packet_2026-05-16.md`.
   Raw Footage implication: implementation remains unapproved, but any later
   approved helper would be limited to `TEST_398_02_FIELD_SAMPLING`, existing
   local/offline runtime/cache, CPU-only model execution, `torchvision` only,
@@ -1923,7 +1923,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   metadata writes, public output, or canonical writeback.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 CPU-only short-video helper:
-  `domains/company/operation_living_intelligence_wave_6_cpu_only_short_video_pilot_readback_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_cpu_only_short_video_pilot_readback_2026-05-16.md`.
   Raw Footage implication: the helper stayed inside the approved no-source-write
   boundary and blocked before accepting a candidate because `torchvision.io` has
   no `read_video`. The raw parent folder stayed unchanged at `967 / 967`; model
@@ -1932,7 +1932,7 @@ Brain keeps the original `8. Raw Footage` copy as transition/history until archi
   writes, public output, or canonical writeback occurred.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   Decord backend short-video approval packet:
-  `domains/company/operation_living_intelligence_wave_6_decord_backend_short_video_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_decord_backend_short_video_approval_packet_2026-05-16.md`.
   Raw Footage implication: implementation remains unapproved. If later
   approved, the route would still be limited to `TEST_398_02_FIELD_SAMPLING`,
   existing ignored App runtime/cache, CPU-only, `decord` backend only, ignored
@@ -2265,14 +2265,14 @@ These match the system IDs used throughout the rest of the app (observations, st
 
 ## Recent Milestones
 - 2026-05-16: The public `/faq#supporters` section now shows owner-approved Patreon supporter recognition as cabinet-style nameplates grouped by supported biome, with tier labels and a Patreon CTA. Web keeps payment amounts, handles, private account details, benefit promises, YouTube/Ko-fi supporters, contributor/collaborator credits, sponsor/business recognition, and partner language deferred until separate owner-approved review. Route-contract and UI token verification passed.
-- 2026-05-15: Company prepared the Operation Living Intelligence Wave 8 Hardware/App/Web design-review packet at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_hardware_app_web_design_review_packet_2026-05-15.md`. Web implication: the next Web involvement is docs-only review of public-safe field boundaries, stale/offline language, public summary reuse, internal-field exclusions, and proof that a future helper cannot change `/live-monitoring`, `/api/telemetry/overview`, public copy, route/API behavior, telemetry runtime, or canonical Web truth.
-- 2026-05-15: Company prepared the Operation Living Intelligence Wave 8 domain review synthesis at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_domain_review_synthesis_2026-05-15.md`. Web implication: Company recommends pausing Wave 8 before implementation and continuing Wave 9 docs-only unless Josue asks for Web-owned review now. Web acceptance of public-safe summary fields, stale/offline language, internal-field exclusions, and any future public reuse boundary remains pending.
-- 2026-05-15: Company documented the Operation Living Intelligence Wave 9 CRM, Financials, And Sensitive Domains docs-only design at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md`. Web implication: public intake, newsletter/signup, donation/support, event, and conversion signals remain aggregate-only candidates. Web/Growth approval is required before any public-intake reads, generated summaries, CRM linkage, route/form behavior, newsletter sync, public copy, or public claim changes.
-- 2026-05-15: Company completed the Operation Living Intelligence Wave 9 source/privacy readiness review at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md`. Web implication: policy shape is ready for a no-write owner-review packet, but Web/Growth acceptance remains pending before any public-intake reads, public aggregate summaries, CRM linkage, route/form behavior, newsletter sync, public copy, or public claim changes.
-- 2026-05-15: Company prepared the Operation Living Intelligence Wave 9 Growth/Financials/App/Web owner-review packet at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md`. Web implication: Web docs-only review is ready to request for public-intake aggregate-only boundaries, no CRM linkage without Web/Growth approval, public surface labels, validation, and public-reuse gates. Web/Growth acceptance remains pending before any public-intake reads, route/form behavior, newsletter sync, public copy, public claim, CRM linkage, or public aggregate output.
-- 2026-05-15: Company prepared the Operation Living Intelligence Wave 9 owner-review synthesis at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md`. Web implication: the next Web step remains owner-owned docs-only review; the synthesis is Company routing only and does not approve public-intake reads, route/form behavior, newsletter sync, public copy, public claim, CRM linkage, public aggregate output, or Web runtime changes.
-- 2026-05-15: Company completed the Operation Living Intelligence Wave 8 source/readiness review at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_source_readiness_review_2026-05-15.md`. Web implication: source shape is ready for a no-write Hardware/App/Web design-review packet, but public telemetry summaries, route/API changes, public copy, public-safe field expansion, live telemetry reads, generated output, telemetry runtime changes, and canonical writeback remain unapproved.
-- 2026-05-15: Company started Operation Living Intelligence Wave 8 Telemetry Summaries as docs-only design at `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_telemetry_summaries_design_2026-05-15.md`. Web implication: public telemetry summaries remain planning-only until a source/readiness review confirms public-safe fields, stale/offline language, and safe read path. No Web route, API, public copy, telemetry runtime, database, App/Hardware behavior, generated output, or canonical writeback changed.
+- 2026-05-15: Company prepared the Operation Living Intelligence Wave 8 Hardware/App/Web design-review packet at `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_hardware_app_web_design_review_packet_2026-05-15.md`. Web implication: the next Web involvement is docs-only review of public-safe field boundaries, stale/offline language, public summary reuse, internal-field exclusions, and proof that a future helper cannot change `/live-monitoring`, `/api/telemetry/overview`, public copy, route/API behavior, telemetry runtime, or canonical Web truth.
+- 2026-05-15: Company prepared the Operation Living Intelligence Wave 8 domain review synthesis at `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_domain_review_synthesis_2026-05-15.md`. Web implication: Company recommends pausing Wave 8 before implementation and continuing Wave 9 docs-only unless Josue asks for Web-owned review now. Web acceptance of public-safe summary fields, stale/offline language, internal-field exclusions, and any future public reuse boundary remains pending.
+- 2026-05-15: Company documented the Operation Living Intelligence Wave 9 CRM, Financials, And Sensitive Domains docs-only design at `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md`. Web implication: public intake, newsletter/signup, donation/support, event, and conversion signals remain aggregate-only candidates. Web/Growth approval is required before any public-intake reads, generated summaries, CRM linkage, route/form behavior, newsletter sync, public copy, or public claim changes.
+- 2026-05-15: Company completed the Operation Living Intelligence Wave 9 source/privacy readiness review at `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md`. Web implication: policy shape is ready for a no-write owner-review packet, but Web/Growth acceptance remains pending before any public-intake reads, public aggregate summaries, CRM linkage, route/form behavior, newsletter sync, public copy, or public claim changes.
+- 2026-05-15: Company prepared the Operation Living Intelligence Wave 9 Growth/Financials/App/Web owner-review packet at `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md`. Web implication: Web docs-only review is ready to request for public-intake aggregate-only boundaries, no CRM linkage without Web/Growth approval, public surface labels, validation, and public-reuse gates. Web/Growth acceptance remains pending before any public-intake reads, route/form behavior, newsletter sync, public copy, public claim, CRM linkage, or public aggregate output.
+- 2026-05-15: Company prepared the Operation Living Intelligence Wave 9 owner-review synthesis at `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md`. Web implication: the next Web step remains owner-owned docs-only review; the synthesis is Company routing only and does not approve public-intake reads, route/form behavior, newsletter sync, public copy, public claim, CRM linkage, public aggregate output, or Web runtime changes.
+- 2026-05-15: Company completed the Operation Living Intelligence Wave 8 source/readiness review at `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_source_readiness_review_2026-05-15.md`. Web implication: source shape is ready for a no-write Hardware/App/Web design-review packet, but public telemetry summaries, route/API changes, public copy, public-safe field expansion, live telemetry reads, generated output, telemetry runtime changes, and canonical writeback remain unapproved.
+- 2026-05-15: Company started Operation Living Intelligence Wave 8 Telemetry Summaries as docs-only design at `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_telemetry_summaries_design_2026-05-15.md`. Web implication: public telemetry summaries remain planning-only until a source/readiness review confirms public-safe fields, stale/offline language, and safe read path. No Web route, API, public copy, telemetry runtime, database, App/Hardware behavior, generated output, or canonical writeback changed.
 - 2026-05-15: The public `/faq` About page received the final Brand/Web
   implementation pass and owner visual approval on desktop and mobile. The
   page now leads with the singular biosphere headline, an About-first
@@ -2452,14 +2452,14 @@ Brain no longer keeps a Web `docs\` mirror after the memory/skills migration.
 | `skills\change-public-route\SKILL.md` | Route/API/form change workflow |
 | `skills\update-ui-system\SKILL.md` | Shared UI and design-system workflow |
 | `skills\work-with-public-telemetry\SKILL.md` | Public telemetry workflow |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_telemetry_summaries_design_2026-05-15.md` | Company Wave 8 docs-only telemetry summaries design |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_source_readiness_review_2026-05-15.md` | Company Wave 8 telemetry source/readiness review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_hardware_app_web_design_review_packet_2026-05-15.md` | Company Wave 8 Hardware/App/Web design review packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_domain_review_synthesis_2026-05-15.md` | Company Wave 8 domain review synthesis |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md` | Company Wave 9 docs-only CRM, Financials, and Sensitive Domains design |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md` | Company Wave 9 source privacy readiness review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md` | Company Wave 9 Growth/Financials/App/Web owner-review packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md` | Company Wave 9 owner-review synthesis |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_telemetry_summaries_design_2026-05-15.md` | Company Wave 8 docs-only telemetry summaries design |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_source_readiness_review_2026-05-15.md` | Company Wave 8 telemetry source/readiness review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_hardware_app_web_design_review_packet_2026-05-15.md` | Company Wave 8 Hardware/App/Web design review packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_domain_review_synthesis_2026-05-15.md` | Company Wave 8 domain review synthesis |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md` | Company Wave 9 docs-only CRM, Financials, and Sensitive Domains design |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md` | Company Wave 9 source privacy readiness review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md` | Company Wave 9 Growth/Financials/App/Web owner-review packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md` | Company Wave 9 owner-review synthesis |
 | `skills\close-web-session\SKILL.md` | Closeout workflow |
 | `skills\*\reference\` | Exact supporting references for playbooks |
 
@@ -2650,7 +2650,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   App-facing step, if any, is a separately approved model-route feasibility
   preflight, not model execution. Company prepared that feasibility preflight
   approval packet at
-  `domains/company/operation_living_intelligence_wave_6_model_route_feasibility_preflight_approval_packet_2026-05-16.md`;
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_model_route_feasibility_preflight_approval_packet_2026-05-16.md`;
   Josue approved the helper boundary, and App added
   `tools/run-oli-wave6-model-route-feasibility.js`. The helper writes ignored
   feasibility/readback output under
@@ -2660,27 +2660,27 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   with local CPU/RAM/GPU/disk readiness, all `4 / 4` sources present, parent
   folders unchanged, and no model/preprocessing/write activity. Company then
   completed the official route recheck and route-selection packet at
-  `domains/company/operation_living_intelligence_wave_6_official_route_recheck_and_route_selection_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_official_route_recheck_and_route_selection_packet_2026-05-16.md`.
   App implication: the next future implementation proposal route is
   `Qwen/Qwen3-VL-2B-Instruct` local/offline, while Nemotron 3 Nano Omni remains
   the strategic quality target once hardware/runtime gates are solved and
   hosted/cloud routes remain deferred. Company then prepared the Qwen3-VL local
   pilot implementation approval packet at
-  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_implementation_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_implementation_approval_packet_2026-05-16.md`.
   App implication: explicit approval is now required before App code,
   dependency install, model download/cache, or model run. Josue approved the
   packet, and App completed the still-image pilot with
   `tools/run-oli-wave6-qwen3-vl-local-pilot.js`. Readback is recorded at
-  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_readback_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_qwen3_vl_local_pilot_readback_2026-05-16.md`.
   Result: `pass_with_review_required_wave6_qwen3_vl_still_image_candidate_ready`;
   output is candidate-only, parsed JSON, public-use-blocked, noncanonical, and
   the raw parent folder remained unchanged. Runtime was CPU-only. Company then
   completed the prompt hardening/usefulness review at
-  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardening_usefulness_review_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardening_usefulness_review_2026-05-16.md`.
   Josue then approved the prompt-hardened still-image rerun. App updated and
   reran `tools/run-oli-wave6-qwen3-vl-local-pilot.js` using the existing local
   runtime/cache under ignored App `out/`. Company recorded the readback at
-  `domains/company/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardened_rerun_readback_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_qwen3_vl_prompt_hardened_rerun_readback_2026-05-16.md`.
   Result: `pass_with_review_required_wave6_qwen3_vl_still_image_candidate_ready`;
   output is prompt-versioned parsed JSON, candidate-only, public-use-blocked,
   noncanonical, and free of the earlier environment-quality judgment. No
@@ -2688,13 +2688,13 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   and the raw parent folder stayed unchanged at `430 / 430`. App implication:
   stop before video; video and GPU/CUDA runtime work remain deferred. Company
   then completed the video/GPU runtime decision packet at
-  `domains/company/operation_living_intelligence_wave_6_video_gpu_runtime_decision_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_video_gpu_runtime_decision_packet_2026-05-16.md`.
   App implication: the next safe App-facing gate is docs-only review of the
   short-video/GPU runtime boundary for `TEST_398_02_FIELD_SAMPLING`; no video
   execution, GPU/CUDA runtime change, decoder/backend change, preprocessing, or
   generated annotation expansion is approved. Company then prepared the App
   design-review packet at
-  `domains/company/operation_living_intelligence_wave_6_video_gpu_runtime_app_design_review_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_video_gpu_runtime_app_design_review_packet_2026-05-16.md`.
   App implication: App may now review that packet as docs-only; implementation
   remains unapproved. App completed that docs-only review at
   `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave6-video-gpu-runtime-design-review.md`.
@@ -2703,19 +2703,19 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   no-execution runtime/backend preflight or exact implementation approval
   packet before any short-video run.
   Company then prepared the runtime/backend preflight approval packet at
-  `domains/company/operation_living_intelligence_wave_6_runtime_backend_preflight_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_runtime_backend_preflight_approval_packet_2026-05-16.md`.
   App implication: the next possible implementation, if explicitly approved,
   is no-execution local runtime/cache/package/CUDA/backend availability
   readback only, not video or model execution.
   Josue approved that helper, and App added
   `tools/run-oli-wave6-runtime-backend-preflight.js`. Readback is recorded at
-  `domains/company/operation_living_intelligence_wave_6_runtime_backend_preflight_readback_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_runtime_backend_preflight_readback_2026-05-16.md`.
   Result: `pass_runtime_backend_preflight_cpu_only_video_packet_possible`.
   The existing runtime is CPU-only from Torch's view, `torchvision` is
   importable, and the raw video parent folder stayed unchanged at `967 / 967`.
   Company then prepared the CPU-only short-video implementation approval packet
   at
-  `domains/company/operation_living_intelligence_wave_6_cpu_only_short_video_implementation_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_cpu_only_short_video_implementation_approval_packet_2026-05-16.md`.
   App implication: implementation is still not approved, but the packet names
   the exact possible future helper boundary: existing local/offline runtime and
   cache only, CPU only, `torchvision` only, `TEST_398_02_FIELD_SAMPLING` only,
@@ -2724,13 +2724,13 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   App completed that approved helper at
   `tools/run-oli-wave6-qwen3-vl-short-video-pilot.js`. Company readback is
   recorded at
-  `domains/company/operation_living_intelligence_wave_6_cpu_only_short_video_pilot_readback_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_cpu_only_short_video_pilot_readback_2026-05-16.md`.
   Result: `blocked_wave6_qwen3_vl_cpu_short_video_readback_only`. The helper
   stayed inside the approved boundary, but `torchvision.io` has no `read_video`,
   so no candidate was accepted. Raw parent folder and model cache stayed
   unchanged.
   Company then prepared the Decord backend short-video approval packet at
-  `domains/company/operation_living_intelligence_wave_6_decord_backend_short_video_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_decord_backend_short_video_approval_packet_2026-05-16.md`.
   App implication: implementation remains unapproved, but the next possible
   video route is a local `decord` backend run limited to the existing ignored
   App venv, CPU-only, exact `TEST_398_02_FIELD_SAMPLING` scope, existing model
@@ -2739,7 +2739,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   App then completed that approved Decord helper at
   `tools/run-oli-wave6-qwen3-vl-short-video-pilot.js`. Company readback is
   recorded at
-  `domains/company/operation_living_intelligence_wave_6_decord_backend_short_video_pilot_readback_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_decord_backend_short_video_pilot_readback_2026-05-16.md`.
   Result:
   `pass_with_review_required_wave6_qwen3_vl_decord_short_video_candidate_ready`.
   The helper installed/used `decord 0.6.0` only inside the existing ignored App
@@ -2831,19 +2831,19 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   not be rerun; further video work should start with a Decord usefulness review
   or another separate backend/runtime/preprocessing packet.
   Company then completed the Decord usefulness review at
-  `domains/company/operation_living_intelligence_wave_6_decord_short_video_usefulness_review_2026-05-16.md`;
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_decord_short_video_usefulness_review_2026-05-16.md`;
   Decord is now accepted as the local CPU short-video baseline, but CPU runtime
   is too slow to assume repeated practical use. If Wave 6 continues, the next
   safe App-facing step should be a docs-only GPU/CUDA runtime proof decision or
   a new exact approval packet.
   Company then completed that GPU/CUDA runtime proof decision at
-  `domains/company/operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_decision_packet_2026-05-16.md`;
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_decision_packet_2026-05-16.md`;
   GPU/CUDA proof is worth planning, but no App code, runtime/package change,
   model run, video input, GPU/CUDA inference, or dependency work is approved.
   The next App-facing step should be docs-only design review of the runtime
   proof boundary.
   Company then prepared that App design-review packet at
-  `domains/company/operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_app_design_review_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_app_design_review_packet_2026-05-16.md`.
   It asks App to review a future no-video GPU/CUDA runtime proof boundary,
   including runtime isolation, exact Torch/CUDA package path, ignored output,
   and stop conditions.
@@ -2853,7 +2853,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   path before install; the first future implementation should be no-video and
   no-model CUDA availability proof only.
   Company then prepared the no-video GPU/CUDA runtime proof approval packet at
-  `domains/company/operation_living_intelligence_wave_6_no_video_gpu_cuda_runtime_proof_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_no_video_gpu_cuda_runtime_proof_approval_packet_2026-05-16.md`.
   It names the possible future App helper, separate ignored runtime, and
   `torch==2.7.0` CUDA 12.8 package route, but still requires explicit approval
   before runtime creation, package install, or CUDA checks.
@@ -2869,7 +2869,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   integration, media metadata write, App runtime behavior, public output, or
   canonical writeback is approved. The current next App-facing gate, if Wave 6
   continues, is the prepared GPU Qwen3-VL stack proof approval packet at
-  `domains/company/operation_living_intelligence_wave_6_gpu_qwen3_vl_stack_proof_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_gpu_qwen3_vl_stack_proof_approval_packet_2026-05-16.md`.
   That proposed next step is no-media/no-model-load package/import
   compatibility inside the existing ignored GPU runtime before any GPU model
   load, still-image proof, or short-video proof. App then completed the
@@ -2897,7 +2897,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   generate, run a forward pass, change App runtime behavior, or write public/
   canonical/database records. Company then prepared the GPU still-image
   inference approval packet at
-  `domains/company/operation_living_intelligence_wave_6_gpu_still_image_inference_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_gpu_still_image_inference_approval_packet_2026-05-16.md`.
   Josue approved that boundary, and App added
   `tools/run-oli-wave6-gpu-still-image-proof.js`: the helper used only the
   exact still image, existing ignored GPU runtime, existing local model cache,
@@ -2911,7 +2911,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   about `86.1s` total, so it does not approve GPU video execution. The current
   next App-facing gate, if Wave 6 continues, is the prepared docs-only GPU
   short-video implementation approval packet at
-  `domains/company/operation_living_intelligence_wave_6_gpu_short_video_implementation_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_gpu_short_video_implementation_approval_packet_2026-05-16.md`.
   Implementation remains unapproved; the packet requires existing ignored GPU
   runtime/cache only, `TEST_398_02_FIELD_SAMPLING` only, audio ignored, no
   dependency changes, no preprocessing, and no App runtime/public/canonical/
@@ -2925,7 +2925,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   download a model, preprocess media, change App runtime behavior, or write
   public/canonical/database records. Company then completed the GPU short-video
   usefulness/performance review at
-  `domains/company/operation_living_intelligence_wave_6_gpu_short_video_usefulness_performance_review_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_gpu_short_video_usefulness_performance_review_2026-05-16.md`.
   App implication: GPU short-video is accepted as the current local baseline,
   but Wave 6 implementation should stop here by default. Any prompt refinement,
   owner review, additional media run, annotation workflow, Media Library
@@ -3076,7 +3076,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   metadata, Supabase/Planner/Storage/schema writes, public output, or
   canonical writeback. Company then prepared the GPU still-image inference
   approval packet at
-  `domains/company/operation_living_intelligence_wave_6_gpu_still_image_inference_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_gpu_still_image_inference_approval_packet_2026-05-16.md`.
   Josue approved that boundary, and App added
   `tools/run-oli-wave6-gpu-still-image-proof.js`: the helper generated parsed
   candidate JSON with review-required/public-blocked/noncanonical guardrails
@@ -3089,7 +3089,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   approve GPU video execution. The next approved-by-design shape, if Wave 6
   continues, is the prepared docs-only GPU short-video implementation approval
   packet at
-  `domains/company/operation_living_intelligence_wave_6_gpu_short_video_implementation_approval_packet_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_gpu_short_video_implementation_approval_packet_2026-05-16.md`.
   Implementation remains unapproved; the packet requires existing ignored GPU
   runtime/cache only, `TEST_398_02_FIELD_SAMPLING` only, audio ignored, no
   dependency changes, no preprocessing, and no App runtime/public/canonical/
@@ -3101,7 +3101,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   dependencies, download a model, preprocess media, change App runtime
   behavior, or write public/canonical/database records. Company then completed
   the GPU short-video usefulness/performance review at
-  `domains/company/operation_living_intelligence_wave_6_gpu_short_video_usefulness_performance_review_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_gpu_short_video_usefulness_performance_review_2026-05-16.md`.
   App implication: GPU short-video is accepted as the current local baseline,
   but Wave 6 implementation should stop here by default. Any prompt refinement,
   owner review, additional media run, annotation workflow, Media Library
@@ -3140,7 +3140,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   telemetry, MQTT, or app source files changed.
 - **2026-05-15:** Company completed the docs-only Operation Living
   Intelligence Wave 6 Media And Visual AI Readiness design:
-  `domains/company/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
   App implication: any future Wave 6 helper/runtime path must stay local,
   ignored-output-first, review-gated, and separated from Media Library
   metadata unless separately approved. The design proposes future noncanonical
@@ -3152,7 +3152,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   writeback.
 - **2026-05-15:** Company completed the Operation Living Intelligence Wave 6
   source/runtime readiness review:
-  `domains/company/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
   App implication: source files and App ignored-output posture are partially
   ready, but implementation is deferred. `ffprobe`/`ffmpeg`/`mediainfo` are not
   on PATH, the exact Nemotron route is not selected, storage-free checks were
@@ -3161,7 +3161,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   proposal.
 - **2026-05-15:** Company prepared the Operation Living Intelligence Wave 6 App
   design-review packet:
-  `domains/company/operation_living_intelligence_wave_6_app_design_review_packet_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_app_design_review_packet_2026-05-15.md`.
   App implication: the requested next review is docs-only and
   readiness-only. The packet asks whether App should require a preflight-only
   media inspection step, whether `ffprobe` or an equivalent path is acceptable,
@@ -3185,7 +3185,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   DaVinci work, public output, paid service, or canonical writeback.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   media preflight policy/tooling proposal:
-  `domains/company/operation_living_intelligence_wave_6_media_preflight_policy_and_tooling_proposal_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_media_preflight_policy_and_tooling_proposal_2026-05-16.md`.
   App implication: future work would require separate approval before adding
   `tools/run-oli-wave6-media-preflight.js`, writing ignored preflight output,
   running read-only media inspection, or performing parent-folder side-effect
@@ -3195,7 +3195,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   Storage write, public output, paid service, or canonical writeback changed.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   preflight implementation readiness checklist:
-  `domains/company/operation_living_intelligence_wave_6_preflight_implementation_readiness_checklist_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_preflight_implementation_readiness_checklist_2026-05-16.md`.
   App implication: the next possible helper, if explicitly approved, is Phase A
   filesystem-only preflight with tool availability detection only, ignored
   preflight readback output, and immediate parent-folder side-effect checks.
@@ -3216,14 +3216,14 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   service, or canonical writeback changed.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   Phase B media stream metadata approval packet:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_phase_b_media_stream_metadata_approval_packet_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_phase_b_media_stream_metadata_approval_packet_2026-05-16.md`.
   App implication: the next possible helper change required an explicit
   `--phase-b-stream-metadata` boundary, the exact detected `ffprobe.exe` path,
   and the proposed `-v error -print_format json -show_format -show_streams`
   flags before any media inspection execution.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 Phase B media stream metadata readback:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_phase_b_media_stream_metadata_readback_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_phase_b_media_stream_metadata_readback_2026-05-16.md`.
   App updated `tools/run-oli-wave6-media-preflight.js` so Phase B requires
   `--phase-b-stream-metadata`, then ran only the approved `ffprobe` command
   against the exact four task `398` files. Result:
@@ -3235,7 +3235,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   public output, paid service, or canonical writeback changed.
 - **2026-05-16:** Company completed the Operation Living Intelligence Wave 6
   model-route decision packet:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_model_route_decision_packet_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_model_route_decision_packet_2026-05-16.md`.
   App implication at that point: the next safe gate was docs-only App
   model-route design review. Company recommended local/private-first
   feasibility review: Nemotron
@@ -3247,7 +3247,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   Storage write, public output, paid service, or canonical writeback changed.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   App model-route design-review packet:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_model_route_app_design_review_packet_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_model_route_app_design_review_packet_2026-05-16.md`.
   App implication: App's next safe action is docs-only route feasibility review
   covering local/private Nemotron feasibility, Qwen fallback practicality,
   hosted/cloud requirements, preprocessing constraints, output/cache/credential
@@ -3270,7 +3270,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   writeback changed.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   model-route feasibility preflight approval packet:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_model_route_feasibility_preflight_approval_packet_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_model_route_feasibility_preflight_approval_packet_2026-05-16.md`.
   App implication: the future implementation boundary is feasibility/readback
   only: route requirements, hardware/storage/cache checks, input-limit
   questions, output paths, validation, and stop conditions. The packet itself
@@ -3296,7 +3296,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   canonical writeback changed.
 - **2026-05-16:** Company completed the Operation Living Intelligence Wave 6
   official route recheck and route-selection packet:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_official_route_recheck_and_route_selection_packet_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_official_route_recheck_and_route_selection_packet_2026-05-16.md`.
   App implication: `Qwen/Qwen3-VL-2B-Instruct` local/offline is selected as
   the first practical future pilot proposal route. Nemotron 3 Nano Omni remains
   the strategic quality target once hardware/runtime gates are solved, and
@@ -3306,7 +3306,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   Storage write, public output, or canonical writeback is approved.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   Qwen3-VL local pilot implementation approval packet:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_qwen3_vl_local_pilot_implementation_approval_packet_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_qwen3_vl_local_pilot_implementation_approval_packet_2026-05-16.md`.
   App implication: explicit approval is now required before App code,
   dependency install, model download/cache, or model run. The prepared packet
   proposes a still-image-only first pilot using `TEST_398_01_OPAQUE_LAKE_STILL`,
@@ -3316,7 +3316,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   Wave 6 Qwen3-VL still-image local pilot:
   `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-qwen3-vl-local-pilot.js`.
   Company readback is recorded at
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_qwen3_vl_local_pilot_readback_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_qwen3_vl_local_pilot_readback_2026-05-16.md`.
   Result: `pass_with_review_required_wave6_qwen3_vl_still_image_candidate_ready`.
   The helper used only `TEST_398_01_OPAQUE_LAKE_STILL`, installed named
   dependencies and cached the model under ignored App `out/`, generated parsed
@@ -3325,7 +3325,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   video/GPU/preprocessing remain unapproved.
 - **2026-05-16:** Company completed the Operation Living Intelligence Wave 6
   Qwen3-VL prompt hardening and usefulness review:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_qwen3_vl_prompt_hardening_usefulness_review_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_qwen3_vl_prompt_hardening_usefulness_review_2026-05-16.md`.
   App implication: next implementation, if any, should be a prompt-hardened
   still-image rerun approval before video or GPU/CUDA runtime work. No App
   helper change or model rerun is approved by the review itself.
@@ -3333,7 +3333,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   Wave 6 Qwen3-VL prompt-hardened still-image rerun:
   `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-qwen3-vl-local-pilot.js`.
   Company readback is recorded at
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_qwen3_vl_prompt_hardened_rerun_readback_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_qwen3_vl_prompt_hardened_rerun_readback_2026-05-16.md`.
   Result: `pass_with_review_required_wave6_qwen3_vl_still_image_candidate_ready`.
   The final rerun used only `TEST_398_01_OPAQUE_LAKE_STILL`, used the existing
   local runtime/cache under ignored App `out/`, did not attempt dependency
@@ -3343,7 +3343,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   Runtime remained CPU-only; video/GPU/preprocessing remain unapproved.
 - **2026-05-16:** Company completed the Operation Living Intelligence Wave 6
   video/GPU runtime decision packet:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_video_gpu_runtime_decision_packet_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_video_gpu_runtime_decision_packet_2026-05-16.md`.
   App implication: do not run video yet. The next safe gate is App docs-only
   review of short-video/GPU runtime design for `TEST_398_02_FIELD_SAMPLING`.
   No App code, video input, GPU/CUDA runtime change, dependency change,
@@ -3352,7 +3352,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   output, or canonical writeback is approved.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   video/GPU runtime App design-review packet:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_video_gpu_runtime_app_design_review_packet_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_video_gpu_runtime_app_design_review_packet_2026-05-16.md`.
   App implication: App may review the packet docs-only for
   `TEST_398_02_FIELD_SAMPLING` as the only possible first short-video
   candidate. No helper implementation, video execution, GPU/CUDA runtime
@@ -3371,7 +3371,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   database/public output, or canonical writeback is approved.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   runtime/backend preflight approval packet:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_runtime_backend_preflight_approval_packet_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_runtime_backend_preflight_approval_packet_2026-05-16.md`.
   App implication: the next possible helper, if explicitly approved, is
   no-execution local Python/runtime/cache/package/CUDA/backend availability
   readback only. At packet stage it did not approve App code, local
@@ -3383,7 +3383,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   Wave 6 runtime/backend preflight helper:
   `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-runtime-backend-preflight.js`.
   Company readback is recorded at
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_runtime_backend_preflight_readback_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_runtime_backend_preflight_readback_2026-05-16.md`.
   Result: `pass_runtime_backend_preflight_cpu_only_video_packet_possible`.
   The existing Qwen runtime is CPU-only from Torch's view
   (`torch = 2.12.0+cpu`, `torch_cuda_available = false`), `torchvision` is
@@ -3394,7 +3394,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   database/public output, or canonical writeback is approved.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   CPU-only short-video implementation approval packet:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_cpu_only_short_video_implementation_approval_packet_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_cpu_only_short_video_implementation_approval_packet_2026-05-16.md`.
   App implication: implementation remains unapproved, but the packet names the
   exact possible future helper boundary: existing local/offline Qwen3-VL
   runtime/cache only, CPU only, `torchvision` only,
@@ -3405,7 +3405,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   Wave 6 CPU-only short-video helper:
   `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-qwen3-vl-short-video-pilot.js`.
   Company readback is recorded at
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_cpu_only_short_video_pilot_readback_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_cpu_only_short_video_pilot_readback_2026-05-16.md`.
   Result: `blocked_wave6_qwen3_vl_cpu_short_video_readback_only`. The helper
   stayed inside the exact approved boundary, but `qwen_vl_utils` could not use
   the approved `torchvision` backend because `torchvision.io` has no
@@ -3413,7 +3413,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   at `967 / 967`; model cache stayed unchanged.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   Decord backend short-video approval packet:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_decord_backend_short_video_approval_packet_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_decord_backend_short_video_approval_packet_2026-05-16.md`.
   App implication: implementation remains unapproved, but the next possible
   video route is a local `decord` backend run limited to the existing ignored
   App venv, CPU-only, exact `TEST_398_02_FIELD_SAMPLING` scope, existing model
@@ -3423,7 +3423,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   Wave 6 Decord backend short-video helper:
   `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-qwen3-vl-short-video-pilot.js`.
   Company readback is recorded at
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_decord_backend_short_video_pilot_readback_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_decord_backend_short_video_pilot_readback_2026-05-16.md`.
   Result:
   `pass_with_review_required_wave6_qwen3_vl_decord_short_video_candidate_ready`.
   The helper installed/used `decord 0.6.0` only inside the existing ignored App
@@ -3437,7 +3437,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   writeback changed.
 - **2026-05-16:** Company completed the Operation Living Intelligence Wave 6
   Decord short-video usefulness review:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_decord_short_video_usefulness_review_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_decord_short_video_usefulness_review_2026-05-16.md`.
   App implication: Decord is accepted as the current local CPU short-video
   baseline, but additional video/model runs, GPU/CUDA, preprocessing,
   `torchcodec`, `ffmpeg`, generated annotation workflows, Media Library
@@ -3446,7 +3446,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   be a docs-only GPU/CUDA runtime proof decision or a new exact approval packet.
 - **2026-05-16:** Company completed the Operation Living Intelligence Wave 6
   GPU/CUDA runtime proof decision packet:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_decision_packet_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_decision_packet_2026-05-16.md`.
   App implication: GPU/CUDA proof is worth planning, but no App code,
   runtime/package change, model run, video input, GPU/CUDA inference, or
   dependency work is approved. The next safe App-facing step is a docs-only
@@ -3454,7 +3454,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   starting with no-video runtime availability before any model proof.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   GPU/CUDA runtime proof App design-review packet:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_app_design_review_packet_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_app_design_review_packet_2026-05-16.md`.
   App implication: the requested next step is docs-only review of a possible
   no-video GPU/CUDA runtime proof boundary. Implementation remains unapproved:
   no App code, runtime/package install or change, model run, video input,
@@ -3472,7 +3472,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   public, canonical, Media Library, or App runtime behavior changed.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   no-video GPU/CUDA runtime proof approval packet:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_no_video_gpu_cuda_runtime_proof_approval_packet_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_no_video_gpu_cuda_runtime_proof_approval_packet_2026-05-16.md`.
   App implication: implementation is still unapproved, but the exact possible
   boundary is now named: add `tools/run-oli-wave6-gpu-cuda-runtime-proof.js`,
   create a separate ignored GPU runtime under App `out/`, install only
@@ -3483,7 +3483,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   cloud/paid route is approved.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 no-video GPU/CUDA runtime proof:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_no_video_gpu_cuda_runtime_proof_readback_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_no_video_gpu_cuda_runtime_proof_readback_2026-05-16.md`.
   App added `tools/run-oli-wave6-gpu-cuda-runtime-proof.js`, created/used only
   the separate ignored GPU runtime under App `out/`, installed `torch
   2.7.0+cu128` from the approved CUDA 12.8 PyTorch wheel index, verified CUDA
@@ -3495,7 +3495,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   separately gated.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   GPU Qwen3-VL stack proof approval packet:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_qwen3_vl_stack_proof_approval_packet_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_qwen3_vl_stack_proof_approval_packet_2026-05-16.md`.
   App implication: the next proposed implementation, if explicitly approved,
   is no-media/no-model-load package/import compatibility inside the existing
   ignored GPU runtime only. It may install only the named non-Torch model-stack
@@ -3504,7 +3504,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   database/public/canonical writes, and cloud/API routes remain blocked.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 GPU Qwen3-VL stack proof:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_qwen3_vl_stack_proof_readback_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_qwen3_vl_stack_proof_readback_2026-05-16.md`.
   App added `tools/run-oli-wave6-gpu-qwen3-vl-stack-proof.js`, installed the
   approved non-Torch package stack inside the existing ignored GPU runtime,
   kept Torch unchanged at `2.7.0+cu128`, verified CUDA and tiny tensor checks,
@@ -3516,7 +3516,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   `torchvision` compatibility proof.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 GPU `torchvision` compatibility proof:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_torchvision_compat_proof_readback_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_torchvision_compat_proof_readback_2026-05-16.md`.
   App added `tools/run-oli-wave6-gpu-torchvision-compat-proof.js`, installed
   only `torchvision 0.22.0+cu128` from the official PyTorch CUDA 12.8 wheel
   index inside the existing ignored GPU runtime, kept Torch unchanged at
@@ -3530,7 +3530,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   Qwen3-VL model cache before any GPU still-image or short-video inference.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 GPU model-load proof:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_model_load_proof_readback_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_model_load_proof_readback_2026-05-16.md`.
   App added `tools/run-oli-wave6-gpu-model-load-proof.js`, used only the
   existing ignored GPU runtime and local Qwen3-VL cache, set offline/cache-only
   flags plus `local_files_only=True`, loaded `AutoProcessor` and
@@ -3543,7 +3543,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   guardrails, and was approved and completed separately.
 - **2026-05-16:** Company prepared the Operation Living Intelligence Wave 6
   GPU still-image inference approval packet:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_still_image_inference_approval_packet_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_still_image_inference_approval_packet_2026-05-16.md`.
   App implication: implementation is not approved yet. The packet proposes one
   future helper, existing ignored GPU runtime/cache only,
   `TEST_398_01_OPAQUE_LAKE_STILL` only, accepted prompt-hardened guardrails,
@@ -3553,7 +3553,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   database/public/canonical writes, or cloud/API route.
 - **2026-05-16:** App completed the approved Operation Living Intelligence
   Wave 6 GPU still-image inference proof:
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_still_image_inference_readback_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_still_image_inference_readback_2026-05-16.md`.
   App added `tools/run-oli-wave6-gpu-still-image-proof.js`, used only
   `TEST_398_01_OPAQUE_LAKE_STILL`, existing ignored GPU runtime/cache, and the
   accepted prompt-hardened guardrails, and generated parsed candidate JSON with
@@ -3564,13 +3564,13 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   App runtime behavior, Media Library metadata, database/public/canonical
   writes, or cloud/API route changed. Company then completed the docs-only GPU
   still-image usefulness/performance review at
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_still_image_usefulness_performance_review_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_still_image_usefulness_performance_review_2026-05-16.md`.
   The proof is useful for local visual-AI readiness, but not approval for GPU
   video execution. Company then prepared the docs-only GPU short-video
   implementation approval packet at
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_short_video_implementation_approval_packet_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_short_video_implementation_approval_packet_2026-05-16.md`.
   Josue approved that exact boundary, and App completed the proof at
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_short_video_proof_readback_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_short_video_proof_readback_2026-05-16.md`.
   App added `tools/run-oli-wave6-gpu-short-video-proof.js`, used only the
   existing ignored GPU runtime/cache and `TEST_398_02_FIELD_SAMPLING`, ignored
   audio, sampled `4` frames, produced candidate-only parsed JSON, kept public/
@@ -3579,7 +3579,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   preprocessing, Media Library metadata, App runtime behavior, database/public/
   canonical write, or cloud/API route changed. Company then completed the
   docs-only GPU short-video usefulness/performance review at
-  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_short_video_usefulness_performance_review_2026-05-16.md`.
+  `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_short_video_usefulness_performance_review_2026-05-16.md`.
   The review accepts GPU short-video as the current local baseline and
   recommends stopping Wave 6 implementation here by default; any future prompt
   refinement, owner review, additional media run, annotation workflow, Media
@@ -3587,7 +3587,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   needs separate scope and approval.
 - **2026-05-15:** Company completed the docs-only Operation Living Intelligence
   Wave 7 Planner And Agent Routing Graph design:
-  `domains/company/operation_living_intelligence_wave_7_planner_agent_routing_graph_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_7_planner_agent_routing_graph_design_2026-05-15.md`.
   App implication: any future Wave 7 helper should be no-write, ignored-output
   only, and review-gated. Planner/Supabase remains live task truth; the routing
   graph may only derive ownership, blockers, approval gates, handoff surfaces,
@@ -3597,7 +3597,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   canonical writeback.
 - **2026-05-15:** Company completed the Operation Living Intelligence Wave 7
   source/readiness review:
-  `domains/company/operation_living_intelligence_wave_7_source_readiness_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_7_source_readiness_review_2026-05-15.md`.
   App implication: source shape is ready for a no-write design-review packet,
   but implementation remains unapproved. The review confirms App schema/source
   support for `work_domains`, `work_programs`, `work_program_projects`,
@@ -3609,7 +3609,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   canonical writeback is approved.
 - **2026-05-15:** Company prepared the Operation Living Intelligence Wave 7 App
   design-review packet:
-  `domains/company/operation_living_intelligence_wave_7_app_design_review_packet_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_7_app_design_review_packet_2026-05-15.md`.
   App implication: the requested next review is docs-only. The packet asks App
   to decide whether a future no-write Planner/registry routing helper boundary
   is acceptable, including read path, live-read gate, ignored output path,
@@ -3620,7 +3620,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   sensitive indexing, paid services, or canonical writeback.
 - **2026-05-15:** Josue paused Operation Living Intelligence Wave 7 as a
   deferred return gate and continued to Wave 8 Telemetry Summaries docs-only:
-  `domains/company/operation_living_intelligence_wave_8_telemetry_summaries_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_8_telemetry_summaries_design_2026-05-15.md`.
   App implication: any future telemetry helper or read path remains unapproved
   until a source/readiness review. Do not change App Monitoring, App runtime
   behavior, protected read paths, generated output, scheduled jobs, or public
@@ -3742,20 +3742,20 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   `75` semantic-proxy candidate rows, `15 / 15` vector-proxy result rows, `0`
   stale source hashes, and `0` unmanifested OLI source candidates. Company
   accepted the no-embedding comparison at
-  `domains/company/operation_living_intelligence_wave_5_local_vector_proxy_readback_review_2026-05-16.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_5_local_vector_proxy_readback_review_2026-05-16.md`.
   No embeddings, model/API calls, pgvector/vector index, live reads, App
   runtime behavior, public output, expanded corpus, structured writes,
   scheduled refresh, or canonical writeback changed.
 - **2026-05-15:** Company completed the Operation Living Intelligence Wave 8
   source/readiness review:
-  `domains/company/operation_living_intelligence_wave_8_source_readiness_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_8_source_readiness_review_2026-05-15.md`.
   App implication: source shape is ready for a no-write Hardware/App/Web
   design-review packet, but any App-owned helper, protected read path, live
   telemetry read, generated output, App Monitoring change, App runtime
   integration, scheduled job, or public telemetry behavior remains unapproved.
 - **2026-05-15:** Company prepared the Operation Living Intelligence Wave 8
   Hardware/App/Web design-review packet:
-  `domains/company/operation_living_intelligence_wave_8_hardware_app_web_design_review_packet_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_8_hardware_app_web_design_review_packet_2026-05-15.md`.
   App implication: the next App involvement is docs-only review of the future
   no-write telemetry-summary helper boundary, ignored output path, protected
   read path, snapshot-first recommendation, validation/report shape, and
@@ -3765,14 +3765,14 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   writeback.
 - **2026-05-15:** Company prepared the Operation Living Intelligence Wave 8
   domain review synthesis:
-  `domains/company/operation_living_intelligence_wave_8_domain_review_synthesis_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_8_domain_review_synthesis_2026-05-15.md`.
   App implication: Company recommends pausing Wave 8 before implementation and
   continuing Wave 9 docs-only unless Josue asks for App-owned review now. App
   acceptance of output path, protected read path, validation/report shape,
   snapshot-first sequence, and runtime exclusion remains pending.
 - **2026-05-15:** Company documented the Operation Living Intelligence Wave 9
   CRM, Financials, And Sensitive Domains docs-only design:
-  `domains/company/operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md`.
   App implication: any future helper/output path is candidate-only and must
   wait for Growth/Financials/Web owner scope plus App protected-read/output
   review. No App CRM, Financials tab, Planner, schema, migration, protected
@@ -3780,16 +3780,16 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   sensitive live read is approved.
 - **2026-05-15:** Company completed the Operation Living Intelligence Wave 9
   source/privacy readiness review:
-  `domains/company/operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md`.
   App implication: policy shape is ready for a no-write owner-review packet,
   but App acceptance of protected read boundaries, ignored output path, no
   runtime/schema behavior, validation expectations, and future helper shape
   remains pending.
 - **2026-05-15:** Company prepared the Operation Living Intelligence Wave 9
   Growth/Financials/App/Web owner-review packet:
-  `domains/company/operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md`.
   Company also prepared the owner-review synthesis:
-  `domains/company/operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md`.
   App implication: App docs-only review is ready to request for the candidate
   ignored output path, protected read/no-runtime boundary, first-output shape,
   validation requirements, and stop conditions. App acceptance remains pending;
@@ -3841,7 +3841,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   runtime, or source-of-truth migration.
 - **2026-05-15:** Company completed the docs-only Operation Living
   Intelligence Wave 2 Content Story Graph design:
-  `domains/company/operation_living_intelligence_wave_2_content_story_graph_design_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_content_story_graph_design_2026-05-15.md`.
   App's role is future protected-read helper/output ownership only if a later
   implementation proposal is approved. The design recommends reusing the Wave
   1 local-output/no-write pattern under a separate ignored output folder, but
@@ -3850,7 +3850,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   automation, or source-of-truth migration.
 - **2026-05-15:** Company completed the read-only source-availability review
   for the selected Wave 2 Lake Post-Seal packet:
-  `domains/company/operation_living_intelligence_wave_2_lake_post_seal_source_availability_review_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_lake_post_seal_source_availability_review_2026-05-15.md`.
   At that gate, the packet was ready for a future no-write App implementation
   proposal, but helper work remained unapproved until later explicit approval.
   Any App work should stay local JSONL/readback-first,
@@ -3858,7 +3858,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   preserve `none` canonical writeback plus public/media/research review gates.
 - **2026-05-15:** Company prepared the no-write Wave 2 App implementation
   proposal:
-  `domains/company/operation_living_intelligence_wave_2_no_write_app_implementation_proposal_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_no_write_app_implementation_proposal_2026-05-15.md`.
   It proposes a future App-owned local package under
   `out\operation_living_intelligence\wave_2_content_story_graph\lake_post_seal\`
   with source manifest, JSONL graph files, blocked edges, validation, and
@@ -3868,7 +3868,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   automation.
 - **2026-05-15:** Company prepared the Wave 2 App design-review packet after
   user approval to continue:
-  `domains/company/operation_living_intelligence_wave_2_app_design_review_packet_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_app_design_review_packet_2026-05-15.md`.
   Company read App operating rules, ignored-output state, Supabase safety
   memory/skill, and Wave 1 OLI helper patterns. The packet is a design-review
   handoff only; later approval covered only the smallest local helper and did
@@ -3919,12 +3919,12 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   automation, or canonical writeback changed.
 - **2026-05-15:** Company documented a public-reuse boundary for the remaining
   OLI Wave 1 Stage 3 question `5` gap:
-  `domains/company/operation_living_intelligence_wave_1_public_reuse_boundary_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_1_public_reuse_boundary_2026-05-15.md`.
   The boundary keeps public surfaces as review-gated candidates only and does
   not approve App runtime changes, Web behavior, Content copy, Supabase writes,
   media metadata, or canonical writeback.
   Company then documented the proposed Wave 1.1 public reuse sidecar:
-  `domains/company/operation_living_intelligence_wave_1_1_public_reuse_sidecar_proposal_2026-05-15.md`.
+  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_1_1_public_reuse_sidecar_proposal_2026-05-15.md`.
   App then added and verified the local helper
   `tools/generate-oli-wave1-public-reuse-sidecar.js`, which writes ignored
   sidecar JSONL/readback files under `out/operation_living_intelligence/`.
@@ -4528,75 +4528,75 @@ Brain no longer mirrors App docs. Load active App detail from the source repo:
 | `skills/update-app-memory/SKILL.md` | Playbook for promoting durable App decisions, hazards, and architecture rules into memory |
 | `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave3-design-review.md` | App-side docs-only Operation Living Intelligence Wave 3 design review |
 | `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave5-design-review.md` | App-side docs-only Operation Living Intelligence Wave 5 design review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_5_retrieval_baseline_usefulness_review_2026-05-15.md` | Company Wave 5 retrieval baseline usefulness review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_5_evaluation_tuning_plan_2026-05-15.md` | Company Wave 5 retrieval evaluation tuning plan |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_5_expected_status_helper_update_proposal_2026-05-15.md` | Company Wave 5 expected-status helper update proposal |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_5_expected_status_helper_update_2026-05-15.md` | Company Wave 5 expected-status helper update record |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_5_expected_status_readback_review_2026-05-15.md` | Company Wave 5 expected-status readback review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_5_vector_embedding_decision_brief_2026-05-16.md` | Company Wave 5 vector/embedding decision brief |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_5_vector_embedding_app_design_review_packet_2026-05-16.md` | Company Wave 5 vector/embedding App design-review packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_5_retrieval_baseline_usefulness_review_2026-05-15.md` | Company Wave 5 retrieval baseline usefulness review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_5_evaluation_tuning_plan_2026-05-15.md` | Company Wave 5 retrieval evaluation tuning plan |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_5_expected_status_helper_update_proposal_2026-05-15.md` | Company Wave 5 expected-status helper update proposal |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_5_expected_status_helper_update_2026-05-15.md` | Company Wave 5 expected-status helper update record |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_5_expected_status_readback_review_2026-05-15.md` | Company Wave 5 expected-status readback review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_5_vector_embedding_decision_brief_2026-05-16.md` | Company Wave 5 vector/embedding decision brief |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_5_vector_embedding_app_design_review_packet_2026-05-16.md` | Company Wave 5 vector/embedding App design-review packet |
 | `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave5-vector-embedding-design-review.md` | App-side Wave 5 vector/embedding docs-only review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_5_vector_embedding_app_review_synthesis_2026-05-16.md` | Company synthesis of App Wave 5 vector/embedding review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_5_local_vector_evaluation_helper_proposal_2026-05-16.md` | Company Wave 5 local vector evaluation helper proposal |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_5_local_vector_evaluation_helper_2026-05-16.md` | Company Wave 5 local vector evaluation helper implementation and stale-baseline guardrail record |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_5_local_vector_proxy_readback_review_2026-05-16.md` | Company Wave 5 local vector-proxy readback review and no-embedding comparison acceptance |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_5_vector_embedding_app_review_synthesis_2026-05-16.md` | Company synthesis of App Wave 5 vector/embedding review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_5_local_vector_evaluation_helper_proposal_2026-05-16.md` | Company Wave 5 local vector evaluation helper proposal |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_5_local_vector_evaluation_helper_2026-05-16.md` | Company Wave 5 local vector evaluation helper implementation and stale-baseline guardrail record |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_5_local_vector_proxy_readback_review_2026-05-16.md` | Company Wave 5 local vector-proxy readback review and no-embedding comparison acceptance |
 | `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave5-vector-eval-config.example.json` | Example-only Wave 5 local vector evaluation config posture |
 | `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave6-design-review.md` | App-side docs-only Operation Living Intelligence Wave 6 design review |
 | `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave6-model-route-design-review.md` | App-side docs-only Operation Living Intelligence Wave 6 model-route design review |
 | `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave7-design-review.md` | App-side docs-only Operation Living Intelligence Wave 7 design review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_7_planner_agent_routing_graph_design_2026-05-15.md` | Company Wave 7 docs-only Planner And Agent Routing Graph design |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_7_source_readiness_review_2026-05-15.md` | Company Wave 7 source/readiness review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_7_app_design_review_packet_2026-05-15.md` | Company-to-App Wave 7 design review packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_telemetry_summaries_design_2026-05-15.md` | Company Wave 8 docs-only Telemetry Summaries design |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_source_readiness_review_2026-05-15.md` | Company Wave 8 telemetry source/readiness review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_hardware_app_web_design_review_packet_2026-05-15.md` | Company Wave 8 Hardware/App/Web design review packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_8_domain_review_synthesis_2026-05-15.md` | Company Wave 8 domain review synthesis |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md` | Company Wave 9 docs-only CRM, Financials, and Sensitive Domains design |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md` | Company Wave 9 source privacy readiness review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md` | Company Wave 9 Growth/Financials/App/Web owner-review packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md` | Company Wave 9 owner-review synthesis |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md` | Company Wave 6 docs-only Media And Visual AI Readiness design |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md` | Company Wave 6 source and runtime readiness review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_app_design_review_packet_2026-05-15.md` | Company-to-App Wave 6 source/runtime readiness design review packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_media_preflight_policy_and_tooling_proposal_2026-05-16.md` | Company Wave 6 media preflight policy and tooling proposal |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_preflight_implementation_readiness_checklist_2026-05-16.md` | Company Wave 6 preflight implementation readiness checklist |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_phase_a_media_preflight_helper_2026-05-16.md` | Company Wave 6 approved Phase A media preflight helper and readback |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_phase_b_media_stream_metadata_approval_packet_2026-05-16.md` | Company Wave 6 Phase B media stream metadata approval packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_phase_b_media_stream_metadata_readback_2026-05-16.md` | Company Wave 6 approved Phase B media stream metadata readback |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_model_route_decision_packet_2026-05-16.md` | Company Wave 6 model-route decision packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_model_route_app_design_review_packet_2026-05-16.md` | Company Wave 6 model-route App design-review packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_model_route_feasibility_preflight_approval_packet_2026-05-16.md` | Company Wave 6 model-route feasibility preflight approval packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_model_route_feasibility_preflight_readback_2026-05-16.md` | Company Wave 6 model-route feasibility preflight readback |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_official_route_recheck_and_route_selection_packet_2026-05-16.md` | Company Wave 6 official route recheck and route-selection packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_qwen3_vl_local_pilot_implementation_approval_packet_2026-05-16.md` | Company Wave 6 Qwen3-VL local pilot implementation approval packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_qwen3_vl_local_pilot_readback_2026-05-16.md` | Company Wave 6 Qwen3-VL still-image local pilot readback |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_qwen3_vl_prompt_hardening_usefulness_review_2026-05-16.md` | Company Wave 6 Qwen3-VL prompt hardening and usefulness review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_qwen3_vl_prompt_hardened_rerun_readback_2026-05-16.md` | Company Wave 6 Qwen3-VL prompt-hardened still-image rerun readback |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_video_gpu_runtime_decision_packet_2026-05-16.md` | Company Wave 6 video/GPU runtime decision packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_video_gpu_runtime_app_design_review_packet_2026-05-16.md` | Company Wave 6 video/GPU runtime App design-review packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_7_planner_agent_routing_graph_design_2026-05-15.md` | Company Wave 7 docs-only Planner And Agent Routing Graph design |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_7_source_readiness_review_2026-05-15.md` | Company Wave 7 source/readiness review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_7_app_design_review_packet_2026-05-15.md` | Company-to-App Wave 7 design review packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_telemetry_summaries_design_2026-05-15.md` | Company Wave 8 docs-only Telemetry Summaries design |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_source_readiness_review_2026-05-15.md` | Company Wave 8 telemetry source/readiness review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_hardware_app_web_design_review_packet_2026-05-15.md` | Company Wave 8 Hardware/App/Web design review packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_8_domain_review_synthesis_2026-05-15.md` | Company Wave 8 domain review synthesis |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md` | Company Wave 9 docs-only CRM, Financials, and Sensitive Domains design |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md` | Company Wave 9 source privacy readiness review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md` | Company Wave 9 Growth/Financials/App/Web owner-review packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md` | Company Wave 9 owner-review synthesis |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md` | Company Wave 6 docs-only Media And Visual AI Readiness design |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md` | Company Wave 6 source and runtime readiness review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_app_design_review_packet_2026-05-15.md` | Company-to-App Wave 6 source/runtime readiness design review packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_media_preflight_policy_and_tooling_proposal_2026-05-16.md` | Company Wave 6 media preflight policy and tooling proposal |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_preflight_implementation_readiness_checklist_2026-05-16.md` | Company Wave 6 preflight implementation readiness checklist |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_phase_a_media_preflight_helper_2026-05-16.md` | Company Wave 6 approved Phase A media preflight helper and readback |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_phase_b_media_stream_metadata_approval_packet_2026-05-16.md` | Company Wave 6 Phase B media stream metadata approval packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_phase_b_media_stream_metadata_readback_2026-05-16.md` | Company Wave 6 approved Phase B media stream metadata readback |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_model_route_decision_packet_2026-05-16.md` | Company Wave 6 model-route decision packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_model_route_app_design_review_packet_2026-05-16.md` | Company Wave 6 model-route App design-review packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_model_route_feasibility_preflight_approval_packet_2026-05-16.md` | Company Wave 6 model-route feasibility preflight approval packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_model_route_feasibility_preflight_readback_2026-05-16.md` | Company Wave 6 model-route feasibility preflight readback |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_official_route_recheck_and_route_selection_packet_2026-05-16.md` | Company Wave 6 official route recheck and route-selection packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_qwen3_vl_local_pilot_implementation_approval_packet_2026-05-16.md` | Company Wave 6 Qwen3-VL local pilot implementation approval packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_qwen3_vl_local_pilot_readback_2026-05-16.md` | Company Wave 6 Qwen3-VL still-image local pilot readback |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_qwen3_vl_prompt_hardening_usefulness_review_2026-05-16.md` | Company Wave 6 Qwen3-VL prompt hardening and usefulness review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_qwen3_vl_prompt_hardened_rerun_readback_2026-05-16.md` | Company Wave 6 Qwen3-VL prompt-hardened still-image rerun readback |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_video_gpu_runtime_decision_packet_2026-05-16.md` | Company Wave 6 video/GPU runtime decision packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_video_gpu_runtime_app_design_review_packet_2026-05-16.md` | Company Wave 6 video/GPU runtime App design-review packet |
 | `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave6-video-gpu-runtime-design-review.md` | App-side docs-only Wave 6 video/GPU runtime design review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_runtime_backend_preflight_approval_packet_2026-05-16.md` | Company Wave 6 runtime/backend preflight approval packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_runtime_backend_preflight_readback_2026-05-16.md` | Company Wave 6 runtime/backend preflight readback |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_cpu_only_short_video_implementation_approval_packet_2026-05-16.md` | Company Wave 6 CPU-only short-video implementation approval packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_cpu_only_short_video_pilot_readback_2026-05-16.md` | Company Wave 6 CPU-only short-video blocked pilot readback |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_decord_backend_short_video_approval_packet_2026-05-16.md` | Company Wave 6 Decord backend short-video approval packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_decord_backend_short_video_pilot_readback_2026-05-16.md` | Company Wave 6 Decord backend short-video pilot readback |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_decord_short_video_usefulness_review_2026-05-16.md` | Company Wave 6 Decord short-video usefulness review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_decision_packet_2026-05-16.md` | Company Wave 6 GPU/CUDA runtime proof decision packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_app_design_review_packet_2026-05-16.md` | Company Wave 6 GPU/CUDA runtime proof App design-review packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_runtime_backend_preflight_approval_packet_2026-05-16.md` | Company Wave 6 runtime/backend preflight approval packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_runtime_backend_preflight_readback_2026-05-16.md` | Company Wave 6 runtime/backend preflight readback |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_cpu_only_short_video_implementation_approval_packet_2026-05-16.md` | Company Wave 6 CPU-only short-video implementation approval packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_cpu_only_short_video_pilot_readback_2026-05-16.md` | Company Wave 6 CPU-only short-video blocked pilot readback |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_decord_backend_short_video_approval_packet_2026-05-16.md` | Company Wave 6 Decord backend short-video approval packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_decord_backend_short_video_pilot_readback_2026-05-16.md` | Company Wave 6 Decord backend short-video pilot readback |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_decord_short_video_usefulness_review_2026-05-16.md` | Company Wave 6 Decord short-video usefulness review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_decision_packet_2026-05-16.md` | Company Wave 6 GPU/CUDA runtime proof decision packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_cuda_runtime_proof_app_design_review_packet_2026-05-16.md` | Company Wave 6 GPU/CUDA runtime proof App design-review packet |
 | `M:\miniBIOTA\miniBIOTA_App\docs\operation-living-intelligence-wave6-gpu-cuda-runtime-proof-design-review.md` | App-side docs-only Wave 6 GPU/CUDA runtime proof design review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_no_video_gpu_cuda_runtime_proof_approval_packet_2026-05-16.md` | Company Wave 6 no-video GPU/CUDA runtime proof approval packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_no_video_gpu_cuda_runtime_proof_readback_2026-05-16.md` | Company Wave 6 no-video GPU/CUDA runtime proof readback |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_qwen3_vl_stack_proof_approval_packet_2026-05-16.md` | Company Wave 6 GPU Qwen3-VL stack proof approval packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_qwen3_vl_stack_proof_readback_2026-05-16.md` | Company Wave 6 GPU Qwen3-VL stack proof readback |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_torchvision_compat_proof_readback_2026-05-16.md` | Company Wave 6 GPU torchvision compatibility proof readback |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_model_load_proof_readback_2026-05-16.md` | Company Wave 6 GPU model-load proof readback |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_still_image_inference_approval_packet_2026-05-16.md` | Company Wave 6 GPU still-image inference approval packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_still_image_inference_readback_2026-05-16.md` | Company Wave 6 GPU still-image inference readback |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_still_image_usefulness_performance_review_2026-05-16.md` | Company Wave 6 GPU still-image usefulness and performance review |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_short_video_implementation_approval_packet_2026-05-16.md` | Company Wave 6 GPU short-video implementation approval packet |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_short_video_proof_readback_2026-05-16.md` | Company Wave 6 GPU short-video proof readback |
-| `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_6_gpu_short_video_usefulness_performance_review_2026-05-16.md` | Company Wave 6 GPU short-video usefulness and performance review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_no_video_gpu_cuda_runtime_proof_approval_packet_2026-05-16.md` | Company Wave 6 no-video GPU/CUDA runtime proof approval packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_no_video_gpu_cuda_runtime_proof_readback_2026-05-16.md` | Company Wave 6 no-video GPU/CUDA runtime proof readback |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_qwen3_vl_stack_proof_approval_packet_2026-05-16.md` | Company Wave 6 GPU Qwen3-VL stack proof approval packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_qwen3_vl_stack_proof_readback_2026-05-16.md` | Company Wave 6 GPU Qwen3-VL stack proof readback |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_torchvision_compat_proof_readback_2026-05-16.md` | Company Wave 6 GPU torchvision compatibility proof readback |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_model_load_proof_readback_2026-05-16.md` | Company Wave 6 GPU model-load proof readback |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_still_image_inference_approval_packet_2026-05-16.md` | Company Wave 6 GPU still-image inference approval packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_still_image_inference_readback_2026-05-16.md` | Company Wave 6 GPU still-image inference readback |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_still_image_usefulness_performance_review_2026-05-16.md` | Company Wave 6 GPU still-image usefulness and performance review |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_short_video_implementation_approval_packet_2026-05-16.md` | Company Wave 6 GPU short-video implementation approval packet |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_short_video_proof_readback_2026-05-16.md` | Company Wave 6 GPU short-video proof readback |
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_6_gpu_short_video_usefulness_performance_review_2026-05-16.md` | Company Wave 6 GPU short-video usefulness and performance review |
 | `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-gpu-cuda-runtime-proof.js` | Local ignored-output Wave 6 no-video GPU/CUDA runtime proof helper |
 | `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-gpu-qwen3-vl-stack-proof.js` | Local ignored-output Wave 6 GPU Qwen3-VL stack proof helper |
 | `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-gpu-torchvision-compat-proof.js` | Local ignored-output Wave 6 GPU torchvision compatibility proof helper |

@@ -4,7 +4,7 @@ title: Operation Living Intelligence Active Reference Map
 domain: company_operations
 last_updated: 2026-05-18
 tags: [operation-living-intelligence, intelligent-harness, active-reference, cleanup, observation-workflow, phase-21]
-status: active_reference_map_current_after_early_ui_proposals_archived
+status: active_reference_map_current_after_helper_proposals_archived
 ---
 # Operation Living Intelligence Active Reference Map
 
@@ -67,11 +67,6 @@ Known example:
 
 | Phase | File | Current role |
 |---|---|---|
-| Phase 13 | `operation_living_intelligence_ih_phase_13_observation_input_runner_proposal_2026-05-18.md` | App-side local observation input runner reference. |
-| Phase 14 | `operation_living_intelligence_ih_phase_14_intelligence_tab_latest_suggestion_run_loader_proposal_2026-05-18.md` | Latest suggestion run loader reference. |
-| Phase 15 | `operation_living_intelligence_ih_phase_15_content_agent_observation_parser_to_phase_13_input_proposal_2026-05-18.md` | Content-owned parser ownership decision. |
-| Phase 16 | `operation_living_intelligence_ih_phase_16_content_audit_to_phase_13_app_bridge_proposal_2026-05-18.md` | Content audit to App input bridge reference. |
-| Phase 17 | `operation_living_intelligence_ih_phase_17_content_raw_observation_intake_command_proposal_2026-05-18.md` | Content raw intake command reference. |
 | Phase 19 | `operation_living_intelligence_ih_phase_19_local_observation_intake_pipeline_runner_proposal_2026-05-18.md` | Local no-write pipeline orchestration reference. |
 | Phase 19 | `operation_living_intelligence_ih_phase_19_local_observation_intake_pipeline_checklist_2026-05-18.md` | Operator checklist for the local pipeline. |
 | Phase 19 | `operation_living_intelligence_ih_phase_19_pipeline_readback_20260518_123237.md` | First pipeline readback proof. |
@@ -106,6 +101,7 @@ Archived wave and transition documents should be treated this way:
 | Foundational schema/source audits and individual Phase 1 seed docs | Archived provenance for the old setup path; use current Phase 13+ workflow references instead. |
 | Prior Intelligent Harness closeouts | Archived provenance; use the current master plan, active reference map, and 2026-05-18 closeout first. |
 | Early Intelligence tab and Observation Review Mode UI proposal docs | Archived design provenance for Phases 8-12; use App-owned runtime/design state for future UI changes and the current observation workflow docs for operator guidance. |
+| Helper and bridge proposal docs for Phases 13-17 | Archived implementation provenance; use actual Content/App helper code, the Phase 19 pipeline docs, and the current observation workflow closeout for daily operation. |
 
 ## Current Operating Guidance
 
@@ -136,7 +132,7 @@ The following remain unapproved:
 
 ## Cleanup Posture
 
-Wave 1-9 exploration/proof files, the old transition-summary maps, foundational source audits, individual Phase 1 seed/proposal docs, prior harness closeouts, and early Intelligence tab UI proposal docs have been archived out of `domains/company`.
+Wave 1-9 exploration/proof files, the old transition-summary maps, foundational source audits, individual Phase 1 seed/proposal docs, prior harness closeouts, early Intelligence tab UI proposal docs, and Phase 13-17 helper/bridge proposal docs have been archived out of `domains/company`.
 Use this map to avoid mistaking archived wave files for the current operator
 path.
 

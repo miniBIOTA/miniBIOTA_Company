@@ -3,47 +3,91 @@ id: operation_living_intelligence_ih_phase_15_content_agent_observation_parser_t
 title: Operation Living Intelligence Intelligent Harness Phase 15 Content Agent Observation Parser To Phase 13 Input Proposal
 domain: company_operations
 last_updated: 2026-05-18
-tags: [operation-living-intelligence, intelligent-harness, phase-15, content-agent, observation-parser, phase-13-input, local, no-write]
-status: proposal_ready_for_review_not_approved_for_implementation
+tags: [operation-living-intelligence, intelligent-harness, phase-15, content-agent, observation-parser, content-audit, phase-13-input, local, no-write]
+status: revised_proposal_ready_for_review_not_approved_for_implementation
 ---
 # Operation Living Intelligence Intelligent Harness Phase 15 Content Agent Observation Parser To Phase 13 Input Proposal
 
-## Purpose
+## Revision Note
 
-Phase 13 created a local Observation Input Runner. Phase 14 taught the Intelligence tab to display the latest Phase 13 suggestion run. The next missing workflow is turning raw observation notes into the structured JSON input that Phase 13 expects.
+This revision incorporates the Content agent's findings:
 
-Goal:
+- raw observations are handled through `log-daily-observation`;
+- Josue's wording must be preserved;
+- one discrete event should be split per observation;
+- uncertainty must be kept explicit;
+- observation records are only proposed before approval.
+
+Therefore, the first parser output should be Content-owned first, not written directly into App fixtures as the primary output.
+
+## Revised Workflow
+
+Approved first workflow:
 
 ```text
-raw observation pasted to Content agent -> structured local JSON input -> explicit Phase 13 run -> Intelligence tab displays suggestions
+raw observation text
+-> Content-owned parser draft
+-> Content review artifact
+-> later App bridge converts approved draft into Phase 13-compatible input
 ```
 
-This phase remains local, parser-only, no-write, and suggestion-prep only. It does not write Supabase, Planner, Memgraph, media metadata, public output, or canonical records.
+This keeps raw observation interpretation in Content until reviewed. App fixture output is deferred.
 
-## Recommendation
+## Ownership
 
-Start as a Content-side local helper or Content-agent workflow, not an App-side helper.
+Revised ownership:
+
+```text
+Content owns the first parser draft and review artifact.
+App owns Phase 13 runner inputs only after a later bridge converts an approved Content draft.
+```
 
 Reason:
 
-- The input is a raw narrative note, which belongs closest to Content's drafting/parsing workflow.
-- The parser is language and editorial interpretation, not App runtime behavior.
-- It keeps the desktop app from becoming an execution surface too early.
-- It lets Josue paste messy notes and get a structured file without creating canonical records.
-- Phase 13 can remain the explicit App-side suggestion runner.
+- Content owns narrative observation intake and preservation of wording.
+- Content can split one pasted note into discrete observation events before any App-side suggestion generation.
+- Content can keep uncertainty and claim caution visible before anything becomes a Phase 13 input.
+- App should not become the first landing place for unreviewed raw observations.
 
-Recommended implementation shape:
+## Recommended Output Location
+
+First parser drafts should be written to Content audits:
 
 ```text
-Content agent creates a local JSON file compatible with Phase 13.
-Josue or Codex runs Phase 13 explicitly using that JSON file.
+M:\miniBIOTA\miniBIOTA_Content\audits\observation_intake\YYYY-MM-DD_<slug>.json
+M:\miniBIOTA\miniBIOTA_Content\audits\observation_intake\YYYY-MM-DD_<slug>.md
 ```
 
-Do not trigger Phase 13 automatically in the first version.
+Do not put first parser drafts in:
+
+- `memory/`;
+- `skills/`;
+- `video_projects/`;
+- raw media folders;
+- App runtime;
+- Supabase.
+
+## Tracked Or Ignored
+
+Recommendation:
+
+```text
+Track Content observation intake audit drafts in git by default.
+```
+
+Reason:
+
+- they are not canonical records;
+- they are review artifacts;
+- they preserve Josue's wording and parser uncertainty;
+- they give the Content agent durable context for later review;
+- they create a transparent provenance trail before App/Research/Supabase decisions.
+
+Use ignored/local-only storage only when the note contains private, sensitive, or non-shareable content that should not enter repo history. That should be an explicit exception, not the default.
 
 ## Input
 
-Raw observation note pasted to the Content agent.
+Raw observation text pasted to the Content agent.
 
 Example:
 
@@ -51,22 +95,25 @@ Example:
 May 16: I observed that the grasshopper is confirmed eating the legume vine in the lowland meadow. I captured video of it. There are now three grasshoppers in the biome, including a younger nymph that looks close to molting.
 ```
 
-## Structured Output Schema
+## Revised Schema
 
-The parser should produce Phase 13-compatible JSON plus parser-specific hint fields:
+The Content-owned parser draft should preserve:
 
 ```json
 {
-  "source_type": "content_agent_parsed_observation",
-  "observation_title": "Grasshopper Legume Vine Followup",
-  "observed_at": "2026-05-16",
+  "source_type": "content_agent_observation_parser_draft",
+  "raw_text": "May 16: I observed that the grasshopper is confirmed eating the legume vine in the lowland meadow. I captured video of it. There are now three grasshoppers in the biome, including a younger nymph that looks close to molting.",
   "text": "May 16: I observed that the grasshopper is confirmed eating the legume vine in the lowland meadow. I captured video of it. There are now three grasshoppers in the biome, including a younger nymph that looks close to molting.",
+  "observation_title": "Grasshopper Legume Vine Followup",
+  "observed_at_candidate": "2026-05-16",
+  "observed_at_raw_phrase": "May 16",
+  "date_resolution_note": "Month/day phrase resolved against session context date 2026-05-18; year still requires review unless surrounding context confirms 2026.",
+  "date_review_required": true,
   "biome_hint": "lowland meadow",
   "species_hint": "grasshopper / unknown grasshopper group",
   "behavior_hint": "feeding on legume vine",
   "plant_or_object_hint": "legume vine",
   "media_note": "captured video",
-  "media_file_or_path": null,
   "possible_story_thread_hint": "herbivory / plant grazing / meadow establishment",
   "possible_open_loop_hint": "grasshopper establishment and plant grazing pressure need review",
   "claim_cautions": [
@@ -77,257 +124,245 @@ The parser should produce Phase 13-compatible JSON plus parser-specific hint fie
   "uncertainty": [
     {
       "field": "species_hint",
-      "note": "Common name only; species identity unresolved."
+      "note": "Common name only; exact species unresolved."
     },
     {
-      "field": "possible_open_loop_hint",
-      "note": "Nymph and near-molting language suggests review need but does not prove reproduction."
+      "field": "observed_at_candidate",
+      "note": "Month/day without year requires review unless context confirms the year."
     }
   ],
-  "parser_notes": "Local parsed draft for Phase 13 suggestion generation only.",
-  "writeback": "none"
+  "duplicate_check_required": true,
+  "routing_review_required": true,
+  "research_review_required": true,
+  "supabase_write_status": "not_approved",
+  "planner_write_status": "not_approved",
+  "canonical_write_status": "not_approved",
+  "public_use_status": "blocked"
 }
 ```
 
-## Required Fields
+## Fields The Parser Must Not Fill
 
-Required:
+The parser should not infer or fill:
+
+- `species_id`;
+- `biome_id`;
+- `system_id`;
+- `observation_id`;
+- `story_thread_id`;
+- `story_beat_id`;
+- `open_loop_id`;
+- `calendar_id`;
+- `pipeline_id`;
+- `chronicle_id`;
+- public claim approval;
+- media metadata;
+- Research confidence;
+- canonical ecology conclusions.
+
+If any of those become needed later, they require a separate reviewed bridge or writeback path.
+
+## Date Policy
+
+Use session date as context.
+
+For this session:
+
+- `today = 2026-05-18`;
+- `yesterday = 2026-05-17`.
+
+Rules:
+
+- If the note says `today`, set `observed_at_candidate` to `2026-05-18`, preserve `observed_at_raw_phrase: today`, and add a date resolution note.
+- If the note says `yesterday`, set `observed_at_candidate` to `2026-05-17`, preserve `observed_at_raw_phrase: yesterday`, and add a date resolution note.
+- If the note uses month/day without year, store a resolved candidate using session context only when helpful, but set `date_review_required: true` unless context clearly establishes the year.
+- If date cannot be parsed, set `observed_at_candidate: null`, preserve the raw phrase if present, and set `date_review_required: true`.
+
+Always store both:
+
+- the resolved candidate;
+- the date note.
+
+## Overclaiming Controls
+
+The parser must:
+
+- preserve `raw_text` exactly;
+- treat every inferred connection as a hint;
+- keep claim cautions explicit;
+- mark public use as blocked;
+- mark Supabase/Planner/canonical writes as not approved;
+- require Research review for ecological or population claims;
+- require duplicate and routing review before any bridge.
+
+The parser must not:
+
+- convert "three grasshoppers" into a stable population claim;
+- convert "younger nymph" into reproduction confirmation;
+- treat captured media as public proof;
+- assign IDs;
+- create canonical rows;
+- create Planner tasks;
+- publish anything.
+
+## Markdown Readback
+
+Create a matching `.md` beside the JSON.
+
+The markdown should show:
+
+- raw text;
+- parsed observation title;
+- date candidate and date review status;
+- extracted hints;
+- claim cautions;
+- uncertainty;
+- duplicate/routing/research review flags;
+- all write/public statuses;
+- explicit next step: Content review first, then later App bridge if approved.
+
+## App Fixture Output Deferred
+
+Do not write first parser drafts directly to App fixtures.
+
+Deferred App bridge target after Content review:
+
+```text
+M:\miniBIOTA\miniBIOTA_App\fixtures\operation_living_intelligence\intelligent_harness\phase_13_observation_input_runner\lake_post_seal\inputs
+```
+
+The later bridge should only read Content audit drafts that are explicitly approved for conversion. It should convert the Content-owned draft into Phase 13-compatible input fields such as:
 
 - `source_type`;
 - `observation_title`;
 - `observed_at`;
 - `text`;
-- `writeback: none`.
-
-These are the minimum needed for Phase 13.
-
-## Optional Fields
-
-Optional but recommended:
-
 - `biome_hint`;
 - `species_hint`;
-- `behavior_hint`;
-- `plant_or_object_hint`;
 - `media_note`;
 - `media_file_or_path`;
-- `possible_story_thread_hint`;
-- `possible_open_loop_hint`;
-- `claim_cautions`;
-- `uncertainty`;
-- `parser_notes`.
+- `writeback: none`.
 
-Phase 13 should tolerate these extra fields. It can use the core fields immediately and later consume richer hints as the runner improves.
-
-## Output Location
-
-Recommended output path in App fixtures, because Phase 13 reads App-side local input files:
-
-```text
-M:\miniBIOTA\miniBIOTA_App\fixtures\operation_living_intelligence\intelligent_harness\phase_15_content_agent_observation_parser\lake_post_seal\parsed_inputs
-```
-
-Recommended filename:
-
-```text
-<YYYYMMDD>_<slugified_observation_title>.json
-```
-
-Example:
-
-```text
-M:\miniBIOTA\miniBIOTA_App\fixtures\operation_living_intelligence\intelligent_harness\phase_15_content_agent_observation_parser\lake_post_seal\parsed_inputs\20260516_grasshopper_legume_vine_followup.json
-```
-
-The parser may also create a markdown readback beside the JSON:
-
-```text
-20260516_grasshopper_legume_vine_followup.md
-```
-
-The markdown readback is recommended because it gives Josue a quick human check before Phase 13 runs.
-
-## JSON Only Or Markdown Too
+## Should Phase 15 Also Create An App Bridge Proposal?
 
 Recommendation:
 
 ```text
-Create both JSON and markdown readback.
+No. Phase 15 should revise and implement the Content parser first. The App bridge should be a separate Phase 16 proposal after one or more Content audit drafts exist.
 ```
-
-JSON is the machine input for Phase 13. Markdown is the human review surface before suggestion generation.
-
-The markdown should show:
-
-- raw input;
-- parsed title/date;
-- hints;
-- claim cautions;
-- uncertainty;
-- confirmation: `writeback: none`;
-- next command to run Phase 13 manually.
-
-## Date Handling
-
-The parser must make date assumptions explicit.
-
-Current operating date for this proposal is May 18, 2026.
-
-Rules:
-
-- If the note includes a full date, use it.
-- If the note says `today`, resolve it to the current local date at parse time and add a date note.
-- If the note says `yesterday`, resolve it to current local date minus one day and add a date note.
-- If the note says month/day without year, use the current year unless that would create a future date; if it would be future, ask for confirmation or mark `date_uncertain`.
-- If date cannot be confidently parsed, set `observed_at` to `null`, add `date_uncertain`, and stop before Phase 13 until corrected.
-
-Example:
-
-```json
-"date_notes": {
-  "raw_date_text": "May 16",
-  "resolved_year": 2026,
-  "resolution_basis": "Current year from parser date 2026-05-18",
-  "date_uncertain": false
-}
-```
-
-## Uncertainty Representation
-
-Uncertainty should be first-class and field-specific.
-
-Use:
-
-```json
-"uncertainty": [
-  {
-    "field": "species_hint",
-    "note": "Common name only; exact species unresolved."
-  }
-]
-```
-
-Do not hide uncertainty inside prose only. Phase 13 and the Intelligence tab can later surface these as review hints.
-
-## Overclaiming Prevention
-
-The parser must distinguish observation text from claims.
-
-Rules:
-
-- Preserve the raw note exactly in `text`.
-- Convert inferred connections into hints, not claims.
-- Put risky statements into `claim_cautions`.
-- Never set publicness to public.
-- Never mark anything approved.
-- Always set `writeback: none`.
-- Use words like `possible`, `candidate`, `needs review`, and `uncertain` for inferred fields.
-
-For the example note, the parser may infer:
-
-- candidate grasshopper species/group;
-- lowland meadow biome hint;
-- plant grazing story hint;
-- media note.
-
-It must not infer:
-
-- stable population;
-- established population;
-- reproduction confirmed;
-- public-safe media proof.
-
-## Connection To Phase 13
-
-The parser output should be compatible with:
-
-```text
-node tools/run-oli-ih-phase13-observation-input-runner.js --input <parsed_json_path>
-```
-
-Phase 13 should remain the explicit next step.
-
-Do not automatically run Phase 13 in this phase.
 
 Reason:
 
-- keeps parsing and suggestion generation as separate reviewable steps;
-- prevents accidental generation loops;
-- avoids App-triggered execution patterns;
-- keeps the operator in control before suggestions are created.
+- it keeps raw observation parsing separate from App fixture conversion;
+- it avoids prematurely normalizing unreviewed Content drafts;
+- it preserves the review step between "what Josue said" and "what the App auto-linker consumes";
+- it prevents the App side from becoming a shadow canonical intake system.
 
-## Proposed Files
+## Later App Bridge Read Source
 
-Content-side or Company-side proposal only now.
-
-Likely implementation files after approval:
+A later App bridge should read from:
 
 ```text
-M:\miniBIOTA\miniBIOTA_Content\tools\parse-oli-observation-to-phase13-input.js
+M:\miniBIOTA\miniBIOTA_Content\audits\observation_intake\*.json
 ```
 
-If Content repo does not yet have the right helper/tooling structure, a temporary App-side parser helper may be considered only with explicit approval:
+Only drafts with an explicit future approval marker should be eligible, for example:
+
+```json
+"content_review_status": "approved_for_phase13_bridge"
+```
+
+Do not add that approval marker automatically in Phase 15.
+
+## Exact Files For Phase 15 Implementation
+
+Likely files to create in a future implementation approval:
 
 ```text
-M:\miniBIOTA\miniBIOTA_App\tools\parse-oli-observation-to-phase13-input.js
+M:\miniBIOTA\miniBIOTA_Content\tools\parse-oli-observation-to-content-audit.js
+M:\miniBIOTA\miniBIOTA_Content\audits\observation_intake\<YYYY-MM-DD>_<slug>.json
+M:\miniBIOTA\miniBIOTA_Content\audits\observation_intake\<YYYY-MM-DD>_<slug>.md
 ```
 
-Preferred output files per parsed observation:
+Possible Content documentation/readme if the repo already uses audit readmes:
 
 ```text
-M:\miniBIOTA\miniBIOTA_App\fixtures\operation_living_intelligence\intelligent_harness\phase_15_content_agent_observation_parser\lake_post_seal\parsed_inputs\<date>_<slug>.json
-M:\miniBIOTA\miniBIOTA_App\fixtures\operation_living_intelligence\intelligent_harness\phase_15_content_agent_observation_parser\lake_post_seal\parsed_inputs\<date>_<slug>.md
+M:\miniBIOTA\miniBIOTA_Content\audits\observation_intake\README.md
 ```
 
-No App runtime files should be edited.
+No App runtime files should be edited in Phase 15.
+
+## Blocked Work
+
+Phase 15 remains blocked from:
+
+- Supabase writes;
+- Supabase queries;
+- Planner writes;
+- App runtime changes;
+- Memgraph writes;
+- Memgraph query/import/reset behavior;
+- pgvector;
+- public output;
+- media metadata writes;
+- canonical writeback;
+- active approve/reject/correct actions;
+- App fixture output as the primary parser output;
+- automatic Phase 13 execution;
+- ID assignment for species, biome, systems, observations, stories, loops, calendars, pipelines, chronicles, or media.
 
 ## Validation Checks
 
 Parser validation should confirm:
 
-- raw observation text is preserved;
-- required fields are present;
-- `observed_at` is ISO date or explicitly marked uncertain;
-- date resolution notes are present when date was inferred;
-- `writeback` is `none`;
-- source type is parser-local;
-- no public output is created;
-- no Supabase write/query occurred;
-- no Planner write occurred;
-- no Memgraph write/query/import/reset occurred;
-- no media metadata write occurred;
-- no canonical writeback occurred;
-- claim cautions exist when population, reproduction, establishment, stability, or public-proof language appears;
-- uncertainty is recorded for inferred species, biome, story, or open-loop hints;
-- the output JSON can be passed to Phase 13.
+- raw text is preserved exactly;
+- one discrete event is represented per parser draft;
+- required revised schema fields are present;
+- no prohibited ID fields are present;
+- date candidate and raw phrase are preserved;
+- date review flag follows the date policy;
+- uncertainty exists for inferred species/story/open-loop fields;
+- claim cautions exist for stability, population, establishment, reproduction, and public-proof risks;
+- duplicate, routing, and Research review flags are present;
+- Supabase, Planner, canonical, and public statuses remain not approved or blocked;
+- no App fixture is written;
+- no Phase 13 runner is triggered.
 
-Recommended status:
+Recommended parser status:
 
 ```text
-pass_phase15_content_agent_observation_parser_ready
+pass_phase15_content_observation_parser_audit_draft_ready
 ```
 
 ## Stop Conditions
 
 Stop implementation if:
 
-- date cannot be parsed confidently and user has not approved the date;
-- parser would need Supabase lookup;
-- parser would need Planner write;
-- parser would need media metadata write;
-- parser would need Memgraph;
-- parser would publish or format public output;
-- parser would automatically run Phase 13;
-- parser would mark suggestions approved.
+- the parser would need a Supabase lookup;
+- the parser would write to Planner;
+- the parser would modify App runtime;
+- the parser would write directly to App fixtures as primary output;
+- the parser would assign canonical IDs;
+- the parser would mark Research confidence;
+- the parser would approve public use;
+- the parser would create media metadata;
+- the parser would automatically run Phase 13;
+- the parser would hide date uncertainty.
 
 ## Recommendation
 
-Implement Phase 15 as a Content-side local parser that writes a Phase 13-compatible JSON file plus a markdown readback. Phase 13 remains a separate explicit command.
+Revise Phase 15 to implement only the Content-owned observation parser and Content audit readback.
 
-This gives Josue the missing day-to-day handoff:
+Recommended next implementation gate:
 
 ```text
-paste raw note -> get structured local input -> run Phase 13 -> see latest suggestions in Intelligence tab
+Approve Phase 15 Content-owned observation parser implementation.
 ```
 
-It keeps the whole loop local, no-write, parser-only, and human-reviewed.
+After that passes, prepare Phase 16:
+
+```text
+Content Audit To Phase 13 App Bridge
+```
+
+That later bridge can convert an explicitly approved Content audit draft into a Phase 13-compatible App input file. Until then, App fixture output is deferred.

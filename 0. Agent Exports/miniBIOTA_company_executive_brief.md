@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Executive Brief
 
-- Generated: 2026-05-18 17:09:54 -04:00
+- Generated: 2026-05-18 17:20:16 -04:00
 - Purpose: Company-side synthesis of domain reports.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 
@@ -163,7 +163,7 @@
 ### Current Status
 - The site is public-only; legacy Flask admin has been removed from active web code.
 - Public telemetry consumes the live read-only Supabase snapshot through `/api/telemetry/overview`, `/live-monitoring`, and paired biome detail weather panels.
-- Operation Living Intelligence Wave 8 telemetry summaries are in Company docs-only design with source/readiness review, Hardware/App/Web design-review packet, and Company domain review synthesis complete. Web-facing summary reuse requires Web docs-only review and explicit Web approval before any public route, API, copy, telemetry runtime, or field-boundary change.
+- Archived Operation Living Intelligence Wave 8/9 material is provenance only. Web-facing telemetry reuse, public-intake reads, CRM linkage, route/API/form behavior, newsletter sync, public copy, public claims, and generated public output remain separately Web/Growth approval gated.
 
 ### Priorities
 - Keep Web memory and active Company Web reports aligned with the public-only, local-first telemetry and control architecture.
@@ -173,7 +173,7 @@
 ### Risks / Gaps
 - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
 - Public telemetry now depends on the App/Hardware coordinator producer staying healthy and aligned with the public read-only contract.
-- Operation Living Intelligence Wave 8 has a Hardware/App/Web design-review packet and Company domain review synthesis ready, but must not turn telemetry summaries into public Web behavior, public claims, route/API changes, generated public summary output, or public-safe field expansion without separate Web review.
+- Archived Operation Living Intelligence Wave 8 material must not become public Web behavior, public claims, route/API changes, generated public summary output, or public-safe field expansion without separate Web review.
 
 ## 10. Definitions
 

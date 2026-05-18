@@ -52,33 +52,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
-- **2026-05-15:** Company documented the Operation Living Intelligence Wave 9
-  CRM, Financials, And Sensitive Domains docs-only design:
-  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md`.
-  Growth implication: CRM and partner context remain policy-first. Growth must
-  approve relationship meaning, privacy tiers, aggregate summary shapes,
-  contact-detail exclusions, outreach boundaries, sponsor/partner commitment
-  discipline, and review-required recommendation rules before any CRM,
-  partner, public-intake, graph/vector, or generated-output projection.
-  Outreach, sponsor commitments, pricing, campaign dates, public claims, CRM
-  writes/backfills, and live CRM reads remain unapproved.
-- **2026-05-15:** Company completed the Operation Living Intelligence Wave 9
-  source/privacy readiness review:
-  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md`.
-  Growth implication: policy shape is ready for owner review from report and
-  matrix context without live CRM or partner reads.
-- **2026-05-15:** Company prepared the Operation Living Intelligence Wave 9
-  Growth/Financials/App/Web owner-review packet:
-  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md`.
-  Company also prepared the owner-review synthesis:
-  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md`.
-  Growth implication: Growth-owned docs-only review is ready to request for
-  relationship sensitivity tiers, blocked contact/source families,
-  `partner_opportunities` review status, aggregate-only CRM summary options,
-  and commitment discipline. Growth-owned acceptance remains pending. Live
-  CRM/partner reads, relationship summaries, contact-detail use, outreach
-  recommendations, sponsor/pricing/campaign implications, helper work,
-  generated output, and graph/vector indexing remain unapproved.
+- **2026-05-18:** Operation Living Intelligence Wave 9 Growth provenance was archived under `archive/superseded/operation-living-intelligence/`. The archived records preserve sensitive-domain policy and owner-review routing history only. Growth approval is still required before any CRM/partner read, relationship summary, contact-detail use, outreach recommendation, sponsor/pricing/campaign implication, helper, generated output, graph/vector indexing, public claim, or canonical writeback.
 - **2026-05-13:** Growth/App/Company coordination advanced the CRM operator
   layer: flexible labeled contact links are live, CRM activity scheduling now
   supports due time, optional Planner task links, and explicit Planner
@@ -119,26 +93,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Commercial planning spans Brand, Content, Web, Financials, and Company Operations, so ownership and sequencing can blur.
 - Revenue projections and campaign plans must be checked against current financial and audience data before execution.
 - Growth work must not invent partner commitments, sponsor claims, campaign launch dates, pricing, legal promises, financial promises, roadmap promises, or public claims.
-- Operation Living Intelligence Wave 9 must not project CRM, partner, sponsor,
-  contact, outreach, campaign, or public-intake context into broad agent memory
-  without Growth-approved privacy and commitment rules.
-
-## Cross-Domain Notes
-
-- **Financials:** Growth strategy should stay tied to debt pressure, revenue baseline, overhead, and cash-flow reality.
-- **Brand:** Sponsor-facing positioning, public voice, founder narrative, and campaign framing belong in Brand but must support Growth execution.
-- **Content:** Outreach depends on proof assets, visuals, video hooks, field notes, and campaign update content.
-- **Website:** Conversion surfaces include donation, events, build/affiliate, signup, course/waitlist, sponsor, and campaign pages as those are scoped.
-- **Company Operations:** Business plan and public commitments must be aligned before formal sponsor or crowdfunding claims go live.
-- **Hardware:** Campaign and sponsor claims must reflect real build feasibility, especially for the estuary concept.
-- **App:** Internal operator/admin surfaces stay separate from public growth messaging unless explicitly scoped.
-- **App:** App Planner/Supabase is the shared project/task runtime for Growth
-  work status. Growth owns commercial strategy and relationship context; App
-  owns Planner/CRM runtime behavior, schema, UI, and implementation.
-- **App:** CRM activity dates/times can now be coordinated with Planner by
-  linking a CRM activity to an existing task or explicitly opting unlinked CRM
-  activity items into Planner visibility. This remains an internal operator
-  surface, not public commitment or outreach approval.
+- Archived Operation Living Intelligence Wave 9 material is provenance only; CRM, partner, sponsor, outreach, pricing, campaign, and public-claim outputs remain Growth-owner approval gated.
 
 ## Domain Reference
 
@@ -149,6 +104,7 @@ Brain no longer mirrors Growth docs. Load active Growth detail from the source r
 
 | File | Contents |
 |---|---|
+| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\` | Archived Operation Living Intelligence Wave provenance for Growth; not active operating instructions |
 | `AGENTS.md` | Growth Agent entry point, source-of-truth hierarchy, safety rules, and skill routing |
 | `memory/00-index.md` | Memory index, startup routing, migration status, and skill routing |
 | `memory/01-agent-purpose.md` | Growth Agent purpose, scope, and operating posture |
@@ -168,7 +124,3 @@ Brain no longer mirrors Growth docs. Load active Growth detail from the source r
 | `skills/commercial-backlog-triage/SKILL.md` | Playbook for commercial systems and growth infrastructure |
 | `skills/commercial-backlog-triage/reference/commercial-systems-backlog.md` | Exact commercial systems backlog reference |
 | `skills/growth-closeout/SKILL.md` | Playbook for closing Growth sessions and identifying follow-up implications |
-| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_crm_financials_sensitive_domains_design_2026-05-15.md` | Company Wave 9 docs-only CRM, Financials, and Sensitive Domains design |
-| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_source_privacy_readiness_review_2026-05-15.md` | Company Wave 9 source privacy readiness review |
-| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_growth_financials_app_web_owner_review_packet_2026-05-15.md` | Company Wave 9 Growth/Financials/App/Web owner-review packet |
-| `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_wave_9_owner_review_synthesis_2026-05-15.md` | Company Wave 9 owner-review synthesis |

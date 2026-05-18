@@ -45,49 +45,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
-- **2026-05-15:** Company completed the docs-only Operation Living
-  Intelligence Wave 6 Media And Visual AI Readiness design:
-  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_media_visual_ai_readiness_design_2026-05-15.md`.
-  Research implication: any future candidate visual annotation remains
-  noncanonical until Research reviews organism wording and claim safety,
-  especially the ID-sensitive microcrustacean blocking test. The design blocks
-  model-derived Daphnia species ID, establishment, reproduction, clearing,
-  completed-food-web, public proof, species-card, caption, and media metadata
-  claims. No Research notes, species/observation records, Supabase/Planner
-  records, public wording, model run, generated output, upload, or canonical
-  writeback changed.
-- **2026-05-15:** Company completed the Operation Living Intelligence Wave 6
-  source/runtime readiness review:
-  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_6_source_runtime_readiness_review_2026-05-15.md`.
-  Research implication: the ID-sensitive microcrustacean item remains blocked
-  until Research defines allowed and forbidden wording for model output review.
-  No candidate annotation, organism ID, ecological claim, species/observation
-  record, Research note, public wording, Supabase/Planner write, upload, or
-  canonical writeback changed.
-- **2026-05-15:** Company completed the docs-only Operation Living
-  Intelligence Wave 2 Content Story Graph design:
-  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_content_story_graph_design_2026-05-15.md`.
-  Research's boundary is claim safety and observation/open-loop interpretation:
-  Wave 2 may use observations as evidence/context in a future read-only graph,
-  but observations, open loops, and story beats must not become public claims
-  without Research/Content/Web review. No species, observation, thread, loop,
-  chronicle, Research note, Supabase/Planner record, public copy, App helper,
-  automation, or source-of-truth change was approved.
-- **2026-05-15:** Company completed the read-only source-availability review
-  for the selected Wave 2 Lake Post-Seal packet:
-  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_lake_post_seal_source_availability_review_2026-05-15.md`.
-  Research-relevant result: observations `170-178`, open loops `1`, `2`, `3`,
-  `4`, and `7`, and active story threads `1`, `3`, and `5` are available for
-  future graph context, while media remains unreviewed and loops remain open
-  or advanced rather than resolved. Any future public claim path still needs
-  Research/Content/Web review.
-- **2026-05-15:** Company prepared the no-write Wave 2 App implementation
-  proposal:
-  `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_2_no_write_app_implementation_proposal_2026-05-15.md`.
-  Research boundary remains unchanged: observations, loops, and story beats may
-  be projected as source context in a future local readback, but the graph must
-  block unresolved-loop overclaims, unreviewed-media proof, and any public
-  ecological claim without Research/Content/Web review.
+- **2026-05-18:** Operation Living Intelligence Wave 2/6 Research provenance was archived under `archive/superseded/operation-living-intelligence/`. The archived records preserve claim-safety, source-availability, unresolved-loop, and visual-annotation boundary history only; active Research review still owns organism wording, ecological uncertainty, public claim discipline, and any observation/open-loop interpretation before publication or canonical writeback.
 - **2026-05-12:** Company applied approved Research/Ecosystem Planner cleanup:
   Aquatic Club claim-review project `66` is active, task `221` now belongs
   under Operation Living Atlas Evidence Integrity, dated task wording was

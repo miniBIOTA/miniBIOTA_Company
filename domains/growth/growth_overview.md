@@ -31,14 +31,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   commitments, campaign dates, and public claims remain approval-gated.
 - `miniBIOTA_Growth` now uses repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Growth `docs/` mirror; use the source repo's memory/skills structure for detailed Growth Agent context.
-- Operation Living Intelligence Wave 9 is Company docs-only design. Growth-owned
-  CRM/partner context remains policy-first and cannot be projected into broad
-  agent memory, graph/vector output, outreach recommendations, sponsor
-  commitments, pricing, campaign dates, or public claims without Growth
-  approval. Company source/privacy readiness, the Growth/Financials/App/Web
-  owner-review packet, and Company owner-review synthesis are complete, but
-  Growth-owned acceptance remains pending.
-
+- Archived Operation Living Intelligence Wave 9 material is provenance only. Growth owner approval is still required before CRM/partner reads, relationship summaries, outreach recommendations, sponsor/pricing/campaign implications, public claims, or generated output.
 ## Key Facts
 - Commercial readiness depends on aligning business planning, brand positioning, content proof, current financial reality, and public conversion surfaces.
 - The brand is already framed to attract audiences, partners, donors, sponsors, and media attention.

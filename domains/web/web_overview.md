@@ -1,4 +1,4 @@
-﻿---
+---
 id: web_overview
 title: 9. miniBIOTA_Web
 domain: web_and_digital_presence
@@ -23,14 +23,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Current State
 - The site is public-only; legacy Flask admin has been removed from active web code.
 - Public telemetry consumes the live read-only Supabase snapshot through `/api/telemetry/overview`, `/live-monitoring`, and paired biome detail weather panels.
-- Operation Living Intelligence Wave 8 telemetry summaries are in Company docs-only design with source/readiness review, Hardware/App/Web design-review packet, and Company domain review synthesis complete. Web-facing summary reuse requires Web docs-only review and explicit Web approval before any public route, API, copy, telemetry runtime, or field-boundary change.
-- Operation Living Intelligence Wave 9 is Company docs-only design. Public
-  intake and conversion signals remain aggregate-only candidates and require
-  Web/Growth approval before any read, CRM linkage, generated summary,
-  newsletter sync, route/form behavior, public copy, or public claim change.
-  Company source/privacy readiness, the Growth/Financials/App/Web owner-review
-  packet, and Company owner-review synthesis are complete, but Web-owned
-  acceptance remains pending.
+- Archived Operation Living Intelligence Wave 8/9 material is provenance only. Web-facing telemetry reuse, public-intake reads, CRM linkage, route/API/form behavior, newsletter sync, public copy, public claims, and generated public output remain separately Web/Growth approval gated.
 - The public `/faq` About page has a Brand/Web approved implementation pass as of 2026-05-15: About-first copy, owner-approved headline direction, read-only telemetry boundary language, desktop/mobile visual approval, and route-contract coverage. As of 2026-05-16, `/faq#supporters` also includes owner-approved Patreon supporter recognition as cabinet-style nameplates grouped by supported biome, with tier labels and a Patreon CTA.
 - Web context now uses the repo-native memory/skills architecture in `M:\miniBIOTA\miniBIOTA_Web\`.
 - Brain no longer keeps a Web `docs/` mirror; use the source repo's memory/skills/reference structure for detailed Web context.
@@ -59,11 +52,8 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Risks / Gaps
 - Web documentation can drift into a web-first control model if telemetry boundaries are not kept explicit.
 - Public telemetry now depends on the App/Hardware coordinator producer staying healthy and aligned with the public read-only contract.
-- Operation Living Intelligence Wave 8 has a Hardware/App/Web design-review packet and Company domain review synthesis ready, but must not turn telemetry summaries into public Web behavior, public claims, route/API changes, generated public summary output, or public-safe field expansion without separate Web review.
-- Operation Living Intelligence Wave 9 must not turn public intake,
-  newsletter/signup, donation/support, event, or conversion surfaces into CRM,
-  Growth, Financials, or broad agent-memory output without separate Web/Growth
-  approval and privacy rules.
+- Archived Operation Living Intelligence Wave 8 material must not become public Web behavior, public claims, route/API changes, generated public summary output, or public-safe field expansion without separate Web review.
+- Archived Operation Living Intelligence Wave 9 material must not turn public intake, newsletter/signup, donation/support, event, or conversion surfaces into CRM, Growth, Financials, or agent-memory output without separate Web/Growth approval and privacy rules.
 - Planner records can organize Web work, but they do not authorize production navigation, public claims, private/admin surfaces, or runtime behavior changes by themselves.
 - The owner roadmap is captured in Planner, but several tasks still need source assets, copy, policy decisions, or cross-domain input before implementation.
 - `/events`, `/news`, and `/chronicles` remain active public routes but need later content/product development.

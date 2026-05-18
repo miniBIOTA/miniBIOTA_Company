@@ -22,6 +22,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - `miniBIOTA_Company` is the dedicated Company Agent workspace for mission, vision, strategic planning, governance, roadmap, project-management strategy, and cross-domain operating context.
 - Company is the active owner for cross-domain operating coordination: planning strategy, Programs/Operations governance, roadmap cadence, dependency mapping, cross-domain operating memory, review rhythm, active domain reports, and active Company exports. Brain is archive/recovery context and retirement provenance during Phase 11 probation.
 - Operation Living Intelligence is now consolidated into the Intelligent Harness implementation path: Supabase source map, Memgraph projection, Cypher query harness, pgvector/current retrieval, LangGraph-style workflow, review-gated answer system, operator dashboard, and later upgrade adapters as needed.
+- As of 2026-05-18, the Operation Living Intelligence local-to-canonical observation workflow is proven through approved Supabase observation `253`; the active daily operator path is now current observation-to-story, while Lake Post-Seal stays as a regression/test fixture. Phase 13 now needs read-only canonical species lookup before treating species hints as missing; Creeping Beggarweed is canonical species `97` / `Desmodium incanum`.
 - `miniBIOTA_Company` now uses repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Company `docs/` mirror. Use the source repo's memory/skills structure for detailed Company Agent context.
 - miniBIOTA has already been tested as a fully closed working concept in Q1 2026.
@@ -2890,6 +2891,11 @@ Brain no longer mirrors Company docs. Load active Company detail from the source
 | `domains/company/operation_living_intelligence_intelligent_harness_master_plan_2026-05-17.md` | Operation Living Intelligence Intelligent Harness master plan |
 | `domains/company/operation_living_intelligence_intelligent_harness_session_closeout_2026-05-17.md` | Operation Living Intelligence Intelligent Harness session closeout |
 | `domains/company/operation_living_intelligence_documentation_cleanup_inventory_2026-05-17.md` | Operation Living Intelligence documentation cleanup inventory and classification |
+| `domains/company/operation_living_intelligence_active_reference_map_2026-05-18.md` | Compact active entry point for OLI after the second cleanup pass |
+| `domains/company/operation_living_intelligence_ih_observation_workflow_closeout_2026-05-18.md` | Operation Living Intelligence local-to-canonical observation workflow closeout |
+| `domains/company/operation_living_intelligence_ih_phase_21_content_agent_intelligent_follow_up_workflow_proposal_2026-05-18.md` | Phase 21 Content agent intelligent follow-up workflow proposal and approved Phase 13 canonical species lookup improvement |
+| `domains/company/operation_living_intelligence_ih_post_observation_memgraph_refresh_proposal_2026-05-18.md` | Proposal for derived post-observation Memgraph refresh after approved observation insert |
+| `domains/company/operation_living_intelligence_intelligent_harness_session_closeout_2026-05-18.md` | Operation Living Intelligence Intelligent Harness 2026-05-18 session closeout |
 | `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-gpu-cuda-runtime-proof.js` | App local ignored-output Wave 6 no-video GPU/CUDA runtime proof helper |
 | `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-gpu-qwen3-vl-stack-proof.js` | App local ignored-output Wave 6 GPU Qwen3-VL stack proof helper |
 | `M:\miniBIOTA\miniBIOTA_App\tools\run-oli-wave6-gpu-torchvision-compat-proof.js` | App local ignored-output Wave 6 GPU torchvision compatibility proof helper |

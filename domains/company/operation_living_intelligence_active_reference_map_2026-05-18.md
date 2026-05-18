@@ -3,14 +3,14 @@ id: operation_living_intelligence_active_reference_map_2026-05-18
 title: Operation Living Intelligence Active Reference Map
 domain: company_operations
 last_updated: 2026-05-18
-tags: [operation-living-intelligence, intelligent-harness, active-reference, cleanup, observation-workflow]
-status: active_reference_map_ready_for_review
+tags: [operation-living-intelligence, intelligent-harness, active-reference, cleanup, observation-workflow, phase-21]
+status: active_reference_map_current_after_second_cleanup_pass
 ---
 # Operation Living Intelligence Active Reference Map
 
 ## Purpose
 
-This is the compact operating map for Operation Living Intelligence after the Intelligent Harness proved the local-to-canonical observation workflow through Phase 20.
+This is the compact operating map for Operation Living Intelligence after the Intelligent Harness proved the local-to-canonical observation workflow through Phase 20 and the second cleanup pass clarified the current operator path.
 
 Use this map before opening older wave-expansion files. The old files remain useful provenance and deferred-lane reference, but they are no longer the primary operating path.
 
@@ -21,12 +21,13 @@ The working path is:
 1. Content raw observation intake parser.
 2. Content-owned audit draft JSON and Markdown.
 3. App bridge to Phase 13 input.
-4. Phase 13 auto-link suggestions.
+4. Phase 13 auto-link suggestions with read-only canonical species lookup.
 5. Intelligence tab latest suggestion display.
 6. Phase 19 local observation intake pipeline.
 7. Phase 20 approved observation writeback proposal.
 8. Live duplicate and ID confirmation.
 9. Canonical Supabase observation insert when explicitly approved.
+10. Later story/open-loop/media/content follow-up as separate approval layers.
 
 The completed proof example is the Gulf marsh crab excavation observation:
 
@@ -35,13 +36,32 @@ The completed proof example is the Gulf marsh crab excavation observation:
 - Biome: `5`, Marine Shore.
 - Bundled writes: none.
 
+Current operator rule:
+
+```text
+Content should interpret the harness output conversationally.
+Josue should not need to manually inspect the Intelligence tab to know what to do next.
+```
+
+Species lookup rule:
+
+```text
+Canonical species outside the bounded graph are ID-confirmation questions, not missing-species questions.
+```
+
+Known example:
+
+- Creeping Beggarweed exists as canonical species `97` / `Desmodium incanum`.
+
 ## Active Entry Points
 
 | File | Use |
 |---|---|
 | `operation_living_intelligence_intelligent_harness_master_plan_2026-05-17.md` | Current master plan and status spine. |
-| `operation_living_intelligence_intelligent_harness_session_closeout_2026-05-17.md` | Current handoff and operational testing guidance. |
+| `operation_living_intelligence_intelligent_harness_session_closeout_2026-05-18.md` | Current session handoff, Phase 21/post-write refresh proposals, and cleanup guidance. |
+| `operation_living_intelligence_intelligent_harness_session_closeout_2026-05-17.md` | Prior handoff and original operational testing guidance. |
 | `operation_living_intelligence_ih_observation_workflow_closeout_2026-05-18.md` | Plain-language closeout for the proven observation workflow. |
+| `operation_living_intelligence_documentation_cleanup_inventory_2026-05-17.md` | Classification inventory and cleanup posture. |
 | `company_brief.md` | Manager-facing Company summary of the milestone. |
 
 ## Active Workflow References
@@ -63,6 +83,8 @@ The completed proof example is the Gulf marsh crab excavation observation:
 | Phase 19 | `operation_living_intelligence_ih_phase_19_local_observation_intake_pipeline_checklist_2026-05-18.md` | Operator checklist for the local pipeline. |
 | Phase 19 | `operation_living_intelligence_ih_phase_19_pipeline_readback_20260518_123237.md` | First pipeline readback proof. |
 | Phase 20 | `operation_living_intelligence_ih_phase_20_approved_observation_writeback_from_content_intake_draft_proposal_2026-05-18.md` | Approval-gated canonical observation writeback design. |
+| Phase 21 | `operation_living_intelligence_ih_phase_21_content_agent_intelligent_follow_up_workflow_proposal_2026-05-18.md` | Content agent conversational follow-up workflow proposal. |
+| Post-write refresh | `operation_living_intelligence_ih_post_observation_memgraph_refresh_proposal_2026-05-18.md` | Derived Memgraph refresh proposal after approved observation insert/readback. |
 
 ## Active Helper Ownership
 
@@ -80,7 +102,7 @@ Old wave documents should be treated this way:
 
 | Lane | Status |
 |---|---|
-| Waves 1-3 graph/story/species docs | Provenance and model reference only unless explicitly revived. |
+| Waves 1-3 graph/story/species docs | Lake Post-Seal regression/test fixture and model provenance, not the daily operator path. |
 | Wave 4 analytics | Deferred analytics warehouse reference. |
 | Wave 5 retrieval/vector docs | Deferred retrieval/pgvector reference; pgvector remains unapproved. |
 | Wave 6 visual AI/media docs | Deferred media and visual-AI reference; media metadata writes remain unapproved. |
@@ -93,9 +115,12 @@ Old wave documents should be treated this way:
 Next operational testing should be:
 
 1. Run one or two new real observations through the Phase 19 local pipeline.
-2. Review the Intelligence tab suggestions.
-3. Choose one observation for Phase 20 writeback only if useful.
-4. Keep story links, open loop links, story beats, chronicles, Planner tasks, media metadata, content pipeline records, and public output separate unless explicitly approved later.
+2. Let Content read the Phase 19/Phase 13 outputs and summarize what the harness found.
+3. Confirm species/biome IDs, especially if the match is outside the bounded graph.
+4. Choose one observation for Phase 20 writeback only if useful.
+5. Keep story links, open loop links, story beats, chronicles, Planner tasks, media metadata, content pipeline records, graph refresh, and public output separate unless explicitly approved later.
+
+Do not start a new phase just because a suggestion is outside the current graph. First check whether the canonical row already exists.
 
 ## Not Approved
 
@@ -114,4 +139,12 @@ The following remain unapproved:
 
 ## Cleanup Posture
 
-This map does not move, delete, archive, or supersede files by itself. It gives the next cleanup pass a cleaner target: old wave documents can later be archived or labeled in batches after Josue approves the batch list.
+This second cleanup pass does not move, delete, archive, or supersede files by itself.
+
+Approved cleanup posture:
+
+- use this active map as the first entry point;
+- treat Lake Post-Seal as a regression/test fixture;
+- treat older wave files as provenance or deferred-lane references unless this map says otherwise;
+- route daily observations through the current observation-to-story path;
+- require explicit approval before any physical archive/move/delete batch.

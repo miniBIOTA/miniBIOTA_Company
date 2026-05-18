@@ -4,7 +4,7 @@ title: Operation Living Intelligence Documentation Cleanup Inventory
 domain: company_operations
 last_updated: 2026-05-18
 tags: [operation-living-intelligence, intelligent-harness, cleanup, inventory, classification]
-status: second_cleanup_pass_ready_for_review
+status: second_cleanup_pass_complete_no_files_moved
 ---
 # Operation Living Intelligence Documentation Cleanup Inventory
 
@@ -28,6 +28,14 @@ domains/company/operation_living_intelligence_active_reference_map_2026-05-18.md
 
 Use that active reference map as the first entry point before opening older wave-expansion files.
 
+Second-pass cleanup decision:
+
+```text
+Use the active reference map as the operator entry point.
+Do not physically move/archive/delete OLI docs yet.
+Classify first; batch physical cleanup only after Josue approves a batch list.
+```
+
 Current proven workflow:
 
 1. Content raw observation intake parser.
@@ -39,6 +47,7 @@ Current proven workflow:
 7. Phase 20 approved observation writeback proposal.
 8. Live duplicate/ID confirmation.
 9. Canonical Supabase observation insert when explicitly approved.
+10. Later follow-up layers remain separate approvals.
 
 Completed proof example:
 
@@ -46,6 +55,13 @@ Completed proof example:
 - Species: `174`, Gulf marsh crab.
 - Biome: `5`, Marine Shore.
 - Bundled writes: none.
+
+Latest operator refinement:
+
+- Content should become the conversational operator for harness output.
+- Josue should not have to manually inspect the Intelligence tab to know the next question.
+- Phase 13 should perform read-only canonical species lookup before labeling species hints as missing.
+- Creeping Beggarweed is canonical species `97` / `Desmodium incanum`; if outside the bounded graph, it should be treated as an ID-confirmation question.
 
 ## Controlling Path
 
@@ -58,7 +74,7 @@ domains/company/operation_living_intelligence_intelligent_harness_master_plan_20
 Active closeout/handoff:
 
 ```text
-domains/company/operation_living_intelligence_intelligent_harness_session_closeout_2026-05-17.md
+domains/company/operation_living_intelligence_intelligent_harness_session_closeout_2026-05-18.md
 ```
 
 Active observation-workflow closeout:
@@ -71,6 +87,12 @@ Active reference map:
 
 ```text
 domains/company/operation_living_intelligence_active_reference_map_2026-05-18.md
+```
+
+Prior closeout retained as provenance:
+
+```text
+domains/company/operation_living_intelligence_intelligent_harness_session_closeout_2026-05-17.md
 ```
 
 ## Inventory Summary
@@ -107,6 +129,8 @@ Second-pass family addition:
 | Intelligent Harness Phases 13-20 | Active observation workflow references. Keep easiest to find until operational testing stabilizes. |
 | Phase 19 checklist/readback | Active operator proof and checklist. |
 | Phase 20 writeback proposal | Active approval-gated canonical observation writeback design. |
+| Phase 21 follow-up proposal | Active next workflow proposal for Content agent conversational follow-up. |
+| Post-observation Memgraph refresh proposal | Proposed App-owned derived refresh helper after approved observation insert/readback; not implemented. |
 
 ## Classification Labels
 
@@ -147,7 +171,8 @@ These are the documents that should remain easiest to find during the next imple
 | File | Reason |
 |---|---|
 | `operation_living_intelligence_intelligent_harness_master_plan_2026-05-17.md` | Current active plan. |
-| `operation_living_intelligence_intelligent_harness_session_closeout_2026-05-17.md` | Current session handoff and cleanup guidance. |
+| `operation_living_intelligence_intelligent_harness_session_closeout_2026-05-18.md` | Current session handoff and cleanup guidance. |
+| `operation_living_intelligence_intelligent_harness_session_closeout_2026-05-17.md` | Prior Intelligent Harness handoff retained as provenance. |
 | `operation_living_intelligence_ih_observation_workflow_closeout_2026-05-18.md` | Proven local-to-canonical observation workflow closeout. |
 | `operation_living_intelligence_active_reference_map_2026-05-18.md` | Compact entry point for active and deferred OLI references. |
 
@@ -164,6 +189,8 @@ These are the documents that should remain easiest to find during the next imple
 | `operation_living_intelligence_ih_phase_19_local_observation_intake_pipeline_checklist_2026-05-18.md` | Operator checklist for local pipeline use. |
 | `operation_living_intelligence_ih_phase_19_pipeline_readback_20260518_123237.md` | First pipeline readback proof. |
 | `operation_living_intelligence_ih_phase_20_approved_observation_writeback_from_content_intake_draft_proposal_2026-05-18.md` | Approval-gated canonical observation writeback design. |
+| `operation_living_intelligence_ih_phase_21_content_agent_intelligent_follow_up_workflow_proposal_2026-05-18.md` | Content agent conversational follow-up workflow proposal. |
+| `operation_living_intelligence_ih_post_observation_memgraph_refresh_proposal_2026-05-18.md` | Derived post-observation Memgraph refresh proposal. |
 
 ### Active Scaffold For Phase 1: Supabase Source Map
 
@@ -418,6 +445,13 @@ The next physical cleanup pass can then classify batches as:
 - superseded reference after review.
 
 No file movement is recommended until Josue explicitly approves the batch list.
+
+If Josue approves a physical cleanup later, recommended first batch:
+
+- keep all active control and active observation workflow references in place;
+- archive only old proposal/readback files already summarized by the active reference map;
+- do not archive Phase 13/19/20/21 files until two more real observations prove the current operator flow;
+- do not archive Lake Post-Seal graph/story/species files until the regression fixture contract is written down in App/Company terms.
 
 ## Not Changed
 

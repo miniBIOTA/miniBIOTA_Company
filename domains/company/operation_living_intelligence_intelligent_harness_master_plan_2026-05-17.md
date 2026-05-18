@@ -139,6 +139,14 @@ Current cleanup inventory:
 domains/company/operation_living_intelligence_documentation_cleanup_inventory_2026-05-17.md
 ```
 
+Current active reference map:
+
+```text
+domains/company/operation_living_intelligence_active_reference_map_2026-05-18.md
+```
+
+Use the active reference map as the first entry point before opening older wave-expansion files.
+
 ### Phase 1: Supabase Source Map
 
 Goal:

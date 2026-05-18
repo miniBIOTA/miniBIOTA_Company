@@ -4,7 +4,7 @@ title: Operation Living Intelligence Planner Alignment Readback
 domain: company_operations
 last_updated: 2026-05-16
 tags: [operation-living-intelligence, planner, supabase, readback, closeout]
-status: applied
+status: archived_superseded_applied
 ---
 # Operation Living Intelligence Planner Alignment Readback
 

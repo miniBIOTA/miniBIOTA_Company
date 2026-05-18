@@ -4,7 +4,7 @@ title: Operation Living Intelligence Session Closeout
 domain: company_operations
 last_updated: 2026-05-16
 tags: [operation-living-intelligence, session-closeout, consolidation, wave-5, wave-6, next-phase, planner-aligned]
-status: planner_aligned
+status: archived_superseded_planner_aligned
 ---
 # Operation Living Intelligence Session Closeout
 
@@ -163,7 +163,7 @@ After this docs closeout, Josue explicitly approved aligning the live Planner wi
 Planner alignment readback:
 
 ```text
-domains/company/operation_living_intelligence_planner_alignment_readback_2026-05-16.md
+archive/superseded/operation-living-intelligence/operation_living_intelligence_planner_alignment_readback_2026-05-16.md
 ```
 
 Live Planner changes:

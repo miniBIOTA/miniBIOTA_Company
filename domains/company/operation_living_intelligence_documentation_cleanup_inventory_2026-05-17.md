@@ -4,7 +4,7 @@ title: Operation Living Intelligence Documentation Cleanup Inventory
 domain: company_operations
 last_updated: 2026-05-18
 tags: [operation-living-intelligence, intelligent-harness, cleanup, inventory, classification]
-status: physical_cleanup_started_safe_leaf_files_removed
+status: physical_cleanup_started_safe_leaf_files_removed_and_provenance_archived
 ---
 # Operation Living Intelligence Documentation Cleanup Inventory
 
@@ -32,8 +32,9 @@ Second-pass cleanup decision:
 
 ```text
 Use the active reference map as the operator entry point.
-Do not physically move/archive/delete OLI docs yet.
-Classify first; batch physical cleanup only after Josue approves a batch list.
+Physical cleanup may proceed in small, reviewable batches after Josue approval.
+Prefer archive moves for provenance-bearing docs and deletion only for redundant
+generated/proposal residue that is summarized elsewhere.
 ```
 
 ## 2026-05-18 Physical Cleanup Started
@@ -60,6 +61,13 @@ Removed safe leaf files:
 - Redundant generic Wave 9 owner-review packet superseded by the Growth/Financials/App/Web owner-review packet and owner-review synthesis:
   - `operation_living_intelligence_wave_9_owner_review_packet_2026-05-15.md`
 
+Archived from `domains/company` to `archive/superseded/operation-living-intelligence/`:
+
+- Provenance closeout superseded by the active Intelligent Harness closeouts, current Company brief, OLI consolidation map, and deferred return map:
+  - `operation_living_intelligence_session_closeout_2026-05-16.md`
+- Planner alignment readback superseded for active routing by live Planner state and summarized Company reports:
+  - `operation_living_intelligence_planner_alignment_readback_2026-05-16.md`
+
 Preserved during this pass:
 
 - active reference map;
@@ -69,7 +77,7 @@ Preserved during this pass:
 - Phase 8-21 active workflow proposal docs;
 - active-map referenced Phase 19 Markdown readback proof;
 - deferred lane design/readiness docs;
-- Planner/Supabase provenance docs;
+- remaining Planner/Supabase provenance docs;
 - Company brief and exports.
 
 Current proven workflow:
@@ -298,10 +306,10 @@ These files should not steer Phase 1, but should remain easy to recover for Phas
 | `operation_living_intelligence_intelligent_harness_master_plan_2026-05-17.md` | Active control | Keep active. |
 | `operation_living_intelligence_intelligent_harness_session_closeout_2026-05-17.md` | Active control | Keep active until next closeout replaces it. |
 | `operation_living_intelligence_deferred_return_map_2026-05-15.md` | Active scaffold / deferred lane reference | Keep active until Phase 8 upgrade backlog is stable. |
-| `operation_living_intelligence_planner_alignment_readback_2026-05-16.md` | Provenance preserve | Later archive candidate after Planner state is summarized elsewhere. |
+| `operation_living_intelligence_planner_alignment_readback_2026-05-16.md` | Archived provenance | Moved to `archive/superseded/operation-living-intelligence/`; active routing should use live Planner state and current Company reports. |
 | `operation_living_intelligence_planner_program_2026-05-13.md` | Provenance preserve | Later archive candidate after program setup provenance is linked. |
 | `operation_living_intelligence_session_closeout_2026-05-15.md` | Provenance preserve | Later archive candidate; large wave-session record. |
-| `operation_living_intelligence_session_closeout_2026-05-16.md` | Provenance preserve | Later archive candidate after Intelligent Harness closeout remains active. |
+| `operation_living_intelligence_session_closeout_2026-05-16.md` | Archived provenance | Moved to `archive/superseded/operation-living-intelligence/`; active routing should use the 2026-05-18 active reference map, current closeouts, consolidation map, and deferred return map. |
 | `operation_living_intelligence_supabase_schema_audit_2026-05-13.md` | Active scaffold | Keep for Phase 1 source map. |
 | `operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md` | Active scaffold | Keep for Phase 1 source map. |
 | `operation_living_intelligence_waves_1_9_consolidation_next_phase_map_2026-05-16.md` | Active scaffold / superseded reference | Keep until Phase 1 source map and Phase 2 Memgraph plan supersede it. |

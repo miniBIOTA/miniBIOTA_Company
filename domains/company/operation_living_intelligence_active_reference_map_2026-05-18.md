@@ -4,7 +4,7 @@ title: Operation Living Intelligence Active Reference Map
 domain: company_operations
 last_updated: 2026-05-18
 tags: [operation-living-intelligence, intelligent-harness, active-reference, cleanup, observation-workflow, phase-21]
-status: active_reference_map_current_after_second_cleanup_pass
+status: active_reference_map_current_after_physical_cleanup_started
 ---
 # Operation Living Intelligence Active Reference Map
 
@@ -139,7 +139,8 @@ The following remain unapproved:
 
 ## Cleanup Posture
 
-This second cleanup pass does not move, delete, archive, or supersede files by itself.
+Physical cleanup has started in small approved batches. Use this map to avoid
+mistaking older wave files for the current operator path.
 
 Approved cleanup posture:
 
@@ -147,4 +148,6 @@ Approved cleanup posture:
 - treat Lake Post-Seal as a regression/test fixture;
 - treat older wave files as provenance or deferred-lane references unless this map says otherwise;
 - route daily observations through the current observation-to-story path;
-- require explicit approval before any physical archive/move/delete batch.
+- prefer archive moves for provenance-bearing docs;
+- delete only redundant generated/proposal residue already summarized elsewhere;
+- keep current observation workflow docs active until more real operator tests are complete.

@@ -24,10 +24,10 @@ domains/company/operation_living_intelligence_ih_phase_21_content_agent_intellig
 
 The proposal defines Content as the conversational operator that reads Phase 19/Phase 13 harness outputs and asks Josue natural follow-up questions instead of requiring manual Intelligence-tab review.
 
-Created the post-observation Memgraph refresh proposal:
+Created the post-observation Memgraph refresh proposal, now archived as deferred provenance:
 
 ```text
-domains/company/operation_living_intelligence_ih_post_observation_memgraph_refresh_proposal_2026-05-18.md
+archive/superseded/operation-living-intelligence/operation_living_intelligence_ih_post_observation_memgraph_refresh_proposal_2026-05-18.md
 ```
 
 The proposal keeps Supabase canonical and Memgraph derived/local, with App owning the refresh helper and Content using refreshed graph context only after approved observation write/readback.

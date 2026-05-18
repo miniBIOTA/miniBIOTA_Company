@@ -4,7 +4,7 @@ title: Operation Living Intelligence Active Reference Map
 domain: company_operations
 last_updated: 2026-05-18
 tags: [operation-living-intelligence, intelligent-harness, active-reference, cleanup, observation-workflow, phase-21]
-status: active_reference_map_current_after_helper_proposals_archived
+status: active_reference_map_current_after_phase19_proof_and_refresh_archived
 ---
 # Operation Living Intelligence Active Reference Map
 
@@ -58,7 +58,7 @@ Known example:
 | File | Use |
 |---|---|
 | `operation_living_intelligence_intelligent_harness_master_plan_2026-05-17.md` | Current master plan and status spine. |
-| `operation_living_intelligence_intelligent_harness_session_closeout_2026-05-18.md` | Current session handoff, Phase 21/post-write refresh proposals, and cleanup guidance. |
+| `operation_living_intelligence_intelligent_harness_session_closeout_2026-05-18.md` | Current session handoff, Phase 21 workflow, archived post-write refresh proposal, and cleanup guidance. |
 | `operation_living_intelligence_ih_observation_workflow_closeout_2026-05-18.md` | Plain-language closeout for the proven observation workflow. |
 | `operation_living_intelligence_documentation_cleanup_inventory_2026-05-17.md` | Classification inventory and cleanup posture. |
 | `company_brief.md` | Manager-facing Company summary of the milestone. |
@@ -67,12 +67,9 @@ Known example:
 
 | Phase | File | Current role |
 |---|---|---|
-| Phase 19 | `operation_living_intelligence_ih_phase_19_local_observation_intake_pipeline_runner_proposal_2026-05-18.md` | Local no-write pipeline orchestration reference. |
 | Phase 19 | `operation_living_intelligence_ih_phase_19_local_observation_intake_pipeline_checklist_2026-05-18.md` | Operator checklist for the local pipeline. |
-| Phase 19 | `operation_living_intelligence_ih_phase_19_pipeline_readback_20260518_123237.md` | First pipeline readback proof. |
 | Phase 20 | `operation_living_intelligence_ih_phase_20_approved_observation_writeback_from_content_intake_draft_proposal_2026-05-18.md` | Approval-gated canonical observation writeback design. |
 | Phase 21 | `operation_living_intelligence_ih_phase_21_content_agent_intelligent_follow_up_workflow_proposal_2026-05-18.md` | Content agent conversational follow-up workflow proposal. |
-| Post-write refresh | `operation_living_intelligence_ih_post_observation_memgraph_refresh_proposal_2026-05-18.md` | Derived Memgraph refresh proposal after approved observation insert/readback. |
 
 ## Active Helper Ownership
 
@@ -102,6 +99,8 @@ Archived wave and transition documents should be treated this way:
 | Prior Intelligent Harness closeouts | Archived provenance; use the current master plan, active reference map, and 2026-05-18 closeout first. |
 | Early Intelligence tab and Observation Review Mode UI proposal docs | Archived design provenance for Phases 8-12; use App-owned runtime/design state for future UI changes and the current observation workflow docs for operator guidance. |
 | Helper and bridge proposal docs for Phases 13-17 | Archived implementation provenance; use actual Content/App helper code, the Phase 19 pipeline docs, and the current observation workflow closeout for daily operation. |
+| Phase 19 runner proposal and first readback proof | Archived implementation/proof provenance; use the active Phase 19 checklist and actual helper code for operation. |
+| Post-observation Memgraph refresh proposal | Archived deferred future layer; graph refresh remains separate and unapproved unless explicitly reopened. |
 
 ## Current Operating Guidance
 
@@ -132,7 +131,7 @@ The following remain unapproved:
 
 ## Cleanup Posture
 
-Wave 1-9 exploration/proof files, the old transition-summary maps, foundational source audits, individual Phase 1 seed/proposal docs, prior harness closeouts, early Intelligence tab UI proposal docs, and Phase 13-17 helper/bridge proposal docs have been archived out of `domains/company`.
+Wave 1-9 exploration/proof files, the old transition-summary maps, foundational source audits, individual Phase 1 seed/proposal docs, prior harness closeouts, early Intelligence tab UI proposal docs, Phase 13-17 helper/bridge proposal docs, Phase 19 runner/proof docs, and the deferred post-write Memgraph refresh proposal have been archived out of `domains/company`.
 Use this map to avoid mistaking archived wave files for the current operator
 path.
 

@@ -4,7 +4,7 @@ title: Operation Living Intelligence Documentation Cleanup Inventory
 domain: company_operations
 last_updated: 2026-05-18
 tags: [operation-living-intelligence, intelligent-harness, cleanup, inventory, archive]
-status: active_folder_reduced_helper_proposals_archived
+status: active_folder_reduced_to_current_operator_surface
 ---
 # Operation Living Intelligence Documentation Cleanup Inventory
 
@@ -22,7 +22,7 @@ Use this file first:
 domains/company/operation_living_intelligence_active_reference_map_2026-05-18.md
 ```
 
-Older Wave 1-9 documents, former transition-summary maps, foundational source audits, individual Phase 1 seed/proposal docs, prior harness closeouts, early Intelligence tab UI proposal docs, and Phase 13-17 helper/bridge proposal docs are no longer active operating instructions. They are archived provenance.
+Older Wave 1-9 documents, former transition-summary maps, foundational source audits, individual Phase 1 seed/proposal docs, prior harness closeouts, early Intelligence tab UI proposal docs, Phase 13-17 helper/bridge proposal docs, Phase 19 runner/proof docs, and the deferred post-write Memgraph refresh proposal are no longer active operating instructions. They are archived provenance.
 
 ## What Remains Active In `domains/company`
 
@@ -31,12 +31,12 @@ The active OLI set is now intentionally small:
 | Group | Files | Why kept active |
 |---|---:|---|
 | Control and current closeout | 5 | Current map, master plan, cleanup record, current handoff, and observation workflow closeout. |
-| Current observation workflow references | 6 | Phase 19 local pipeline docs, Phase 20 writeback proposal, Phase 21 follow-up proposal, and post-write refresh proposal. |
+| Current observation workflow references | 3 | Phase 19 checklist, Phase 20 writeback proposal, and Phase 21 follow-up workflow. |
 
 Active folder count after this pass:
 
 ```text
-11 Operation Living Intelligence Markdown docs in domains/company
+8 Operation Living Intelligence Markdown docs in domains/company
 ```
 
 ## Archived From `domains/company`
@@ -58,11 +58,13 @@ Archived batches:
 - Prior 2026-05-17 Intelligent Harness closeout and Phase 1-7 closeout.
 - Early Intelligence tab and Observation Review Mode UI proposal docs for Phases 8-12.
 - Phase 13-17 helper, bridge, parser, and raw-intake proposal docs.
+- Phase 19 runner proposal and first pipeline readback proof.
+- Deferred post-observation Memgraph refresh proposal.
 
 Archive count after this pass:
 
 ```text
-128 Operation Living Intelligence Markdown docs
+131 Operation Living Intelligence Markdown docs
 ```
 
 ## Why These Were Archived

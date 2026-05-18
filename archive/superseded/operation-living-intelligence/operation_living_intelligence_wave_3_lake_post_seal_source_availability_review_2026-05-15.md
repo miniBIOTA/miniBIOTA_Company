@@ -22,7 +22,7 @@ Company used same-day read-only/local artifacts already produced during Operatio
 
 | Source | Role |
 |---|---|
-| `domains/company/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md` | Same-day REST/OpenAPI source-row audit for the Lake Post-Seal packet. |
+| `archive/superseded/operation-living-intelligence/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md` | Same-day REST/OpenAPI source-row audit for the Lake Post-Seal packet. |
 | `domains/company/operation_living_intelligence_wave_3_species_public_history_design_2026-05-15.md` | Wave 3 design and validation criteria. |
 | `domains/company/operation_living_intelligence_wave_2_lake_post_seal_source_availability_review_2026-05-15.md` | Story/source availability context. |
 | `audits/living_atlas/source_packets/pipeline_338_chronicle_30_lake_post_seal_2026-05-12.md` | Company reference copy of the Lake Post-Seal source-packet scaffold. |

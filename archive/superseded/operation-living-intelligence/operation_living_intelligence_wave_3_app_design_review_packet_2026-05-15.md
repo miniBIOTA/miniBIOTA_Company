@@ -58,7 +58,7 @@ App should review these Company sources:
 | Wave 1 public reuse sidecar boundary | `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_public_reuse_boundary_2026-05-15.md` |
 | Wave 1 public reuse sidecar generation | `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_1_public_reuse_sidecar_generation_2026-05-15.md` |
 | Wave 2 readback review | `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_2_readback_review_2026-05-15.md` |
-| Task `409` schema/data audit | `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md` |
+| Task `409` schema/data audit | `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md` |
 | Projection matrix | `M:\miniBIOTA\miniBIOTA_Company\skills\coordinate-cross-domain-priorities\reference\operation-living-intelligence-data-projection-matrix.md` |
 
 ## Requested App Decision

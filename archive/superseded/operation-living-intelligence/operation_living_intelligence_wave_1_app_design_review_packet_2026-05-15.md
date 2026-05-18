@@ -49,7 +49,7 @@ App should review these Company sources:
 |---|---|
 | No-write dry-run proposal | `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_no_write_dry_run_proposal_2026-05-15.md` |
 | Wave 1 handoff | `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_living_atlas_graph_seed_handoff_2026-05-15.md` |
-| Task 409 audit | `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md` |
+| Task 409 audit | `M:\miniBIOTA\miniBIOTA_Company\archive\superseded\operation-living-intelligence\operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md` |
 | Projection matrix | `M:\miniBIOTA\miniBIOTA_Company\skills\coordinate-cross-domain-priorities\reference\operation-living-intelligence-data-projection-matrix.md` |
 | Company readiness review | `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_wave_1_app_design_review_readiness_2026-05-15.md` |
 

@@ -49,7 +49,7 @@ Use these Company records as the proposal baseline:
 | Wave 1 public reuse sidecar boundary | `domains/company/operation_living_intelligence_wave_1_public_reuse_boundary_2026-05-15.md` |
 | Wave 1 public reuse sidecar generation | `domains/company/operation_living_intelligence_wave_1_1_public_reuse_sidecar_generation_2026-05-15.md` |
 | Wave 2 readback review | `domains/company/operation_living_intelligence_wave_2_readback_review_2026-05-15.md` |
-| Task `409` schema/data audit | `domains/company/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md` |
+| Task `409` schema/data audit | `archive/superseded/operation-living-intelligence/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md` |
 | Projection matrix | `skills/coordinate-cross-domain-priorities/reference/operation-living-intelligence-data-projection-matrix.md` |
 
 Implementation-time generation must still refresh protected source reads before writing local output. This proposal uses same-day audit/readback records as a design baseline, not as permission to skip source refresh.

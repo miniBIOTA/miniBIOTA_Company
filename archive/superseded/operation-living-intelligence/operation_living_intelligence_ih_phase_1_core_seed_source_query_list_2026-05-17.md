@@ -15,8 +15,8 @@ This is the exact no-write source-query list for the first Intelligent Harness g
 Use with:
 
 ```text
-domains/company/operation_living_intelligence_ih_phase_1_supabase_source_map_2026-05-17.md
-domains/company/operation_living_intelligence_ih_phase_1_scope_review_packet_2026-05-17.md
+archive/superseded/operation-living-intelligence/operation_living_intelligence_ih_phase_1_supabase_source_map_2026-05-17.md
+archive/superseded/operation-living-intelligence/operation_living_intelligence_ih_phase_1_scope_review_packet_2026-05-17.md
 ```
 
 This query list is implementation-ready as a planning artifact, but it does not approve implementation. It should be reviewed before any App helper, generated output, Memgraph setup, graph import, pgvector work, scheduled job, Supabase write, Planner write, or canonical writeback.

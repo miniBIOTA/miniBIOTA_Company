@@ -47,8 +47,8 @@ Use these sources as the handoff bundle:
 |---|---|
 | OLI plan | `skills/coordinate-cross-domain-priorities/reference/operation-living-intelligence-plan.md` |
 | OLI projection matrix | `skills/coordinate-cross-domain-priorities/reference/operation-living-intelligence-data-projection-matrix.md` |
-| First Supabase schema audit | `domains/company/operation_living_intelligence_supabase_schema_audit_2026-05-13.md` |
-| Task 409 schema/data audit pass | `domains/company/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md` |
+| First Supabase schema audit | `archive/superseded/operation-living-intelligence/operation_living_intelligence_supabase_schema_audit_2026-05-13.md` |
+| Task 409 schema/data audit pass | `archive/superseded/operation-living-intelligence/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md` |
 | Wave 1 no-write dry-run proposal | `domains/company/operation_living_intelligence_wave_1_no_write_dry_run_proposal_2026-05-15.md` |
 | App design review packet | `domains/company/operation_living_intelligence_wave_1_app_design_review_packet_2026-05-15.md` |
 | App design review readiness | `domains/company/operation_living_intelligence_wave_1_app_design_review_readiness_2026-05-15.md` |
@@ -141,7 +141,7 @@ The two weak areas remain:
 
 Use the completed task `409` REST/OpenAPI audit pass and design-only proposal as the current App review baseline:
 
-- `domains/company/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md`
+- `archive/superseded/operation-living-intelligence/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md`
 - `domains/company/operation_living_intelligence_wave_1_no_write_dry_run_proposal_2026-05-15.md`
 - `domains/company/operation_living_intelligence_wave_1_app_design_review_packet_2026-05-15.md`
 - `domains/company/operation_living_intelligence_wave_1_app_design_review_readiness_2026-05-15.md`
@@ -177,7 +177,7 @@ No App implementation should begin without separate App-scoped approval.
 
 - Company startup completed on 2026-05-15.
 - Live Planner protected readback checked OLI projects `75-81` and tasks `380-415`.
-- Protected Supabase REST/OpenAPI and App migration-source audit pass for task `409` documented at `domains/company/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md`.
+- Protected Supabase REST/OpenAPI and App migration-source audit pass for task `409` documented at `archive/superseded/operation-living-intelligence/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md`.
 - User-approved read-only SQL metadata attempt found no active SQL-capable Supabase path in this session.
 - Josue approved proceeding to the design-only no-write dry-run proposal despite the SQL metadata access gap.
 - App design review packet documented at `domains/company/operation_living_intelligence_wave_1_app_design_review_packet_2026-05-15.md`.

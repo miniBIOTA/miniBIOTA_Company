@@ -44,7 +44,7 @@ Use these Company sources as the proposal baseline:
 | Source | Path |
 |---|---|
 | Wave 1 handoff | `domains/company/operation_living_intelligence_wave_1_living_atlas_graph_seed_handoff_2026-05-15.md` |
-| Task 409 audit | `domains/company/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md` |
+| Task 409 audit | `archive/superseded/operation-living-intelligence/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md` |
 | Projection matrix | `skills/coordinate-cross-domain-priorities/reference/operation-living-intelligence-data-projection-matrix.md` |
 | OLI plan | `skills/coordinate-cross-domain-priorities/reference/operation-living-intelligence-plan.md` |
 | Source packet | `M:\miniBIOTA\miniBIOTA_Content\audits\living_atlas\source_packets\pipeline_338_chronicle_30_lake_post_seal_2026-05-12.md` |

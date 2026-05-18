@@ -4,7 +4,7 @@ title: Operation Living Intelligence Documentation Cleanup Inventory
 domain: company_operations
 last_updated: 2026-05-18
 tags: [operation-living-intelligence, intelligent-harness, cleanup, inventory, archive]
-status: active_folder_reduced_transition_maps_archived
+status: active_folder_reduced_early_ui_proposals_archived
 ---
 # Operation Living Intelligence Documentation Cleanup Inventory
 
@@ -22,7 +22,7 @@ Use this file first:
 domains/company/operation_living_intelligence_active_reference_map_2026-05-18.md
 ```
 
-Older Wave 1-9 documents and the former transition-summary maps are no longer active operating instructions. They are archived provenance.
+Older Wave 1-9 documents, former transition-summary maps, foundational source audits, individual Phase 1 seed/proposal docs, prior harness closeouts, and early Intelligence tab UI proposal docs are no longer active operating instructions. They are archived provenance.
 
 ## What Remains Active In `domains/company`
 
@@ -30,14 +30,13 @@ The active OLI set is now intentionally small:
 
 | Group | Files | Why kept active |
 |---|---:|---|
-| Control and current closeout | 7 | Current map, master plan, cleanup record, source audits, current handoff, and observation workflow closeout. |
-| Current Intelligent Harness phases | 20 | Current observation-to-story/writeback path and near-term operator references. |
-| Prior harness provenance | 2 | Prior Intelligent Harness closeout and Phase 1-7 closeout retained until current operator testing is steadier. |
+| Control and current closeout | 5 | Current map, master plan, cleanup record, current handoff, and observation workflow closeout. |
+| Current Intelligent Harness phases | 11 | Current observation-to-story/writeback path and near-term operator references. |
 
 Active folder count after this pass:
 
 ```text
-29 Operation Living Intelligence Markdown docs in domains/company
+16 Operation Living Intelligence Markdown docs in domains/company
 ```
 
 ## Archived From `domains/company`
@@ -55,11 +54,14 @@ Archived batches:
 - 2026-05-13 OLI Planner program setup note.
 - Earlier archived 2026-05-16 OLI closeout and Planner alignment readback.
 - Former deferred return map and Waves 1-9 consolidation / next-phase map.
+- Supabase schema audit, task 409 schema/data audit, and individual Phase 1 seed/source/proposal docs.
+- Prior 2026-05-17 Intelligent Harness closeout and Phase 1-7 closeout.
+- Early Intelligence tab and Observation Review Mode UI proposal docs for Phases 8-12.
 
 Archive count after this pass:
 
 ```text
-110 Operation Living Intelligence Markdown docs
+123 Operation Living Intelligence Markdown docs
 ```
 
 ## Why These Were Archived

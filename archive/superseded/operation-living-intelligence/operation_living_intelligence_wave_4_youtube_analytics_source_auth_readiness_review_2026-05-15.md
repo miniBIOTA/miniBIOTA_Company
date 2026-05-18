@@ -55,7 +55,7 @@ Not performed or approved:
 | Input | Use |
 |---|---|
 | `domains/company/operation_living_intelligence_wave_4_youtube_analytics_warehouse_design_2026-05-15.md` | Wave 4 design, API posture, report shape, and guardrails |
-| `domains/company/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md` | Source identity for `content_pipeline.id = 338` and `chronicles.id = 30` |
+| `archive/superseded/operation-living-intelligence/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md` | Source identity for `content_pipeline.id = 338` and `chronicles.id = 30` |
 | `domains/content/content_brief.md` | Content-facing publication context and recent published YouTube source list |
 | `skills/coordinate-cross-domain-priorities/reference/operation-living-intelligence-data-projection-matrix.md` | OLI projection-first analytics warehouse rules |
 | Official Google/YouTube docs checked in the Wave 4 design pass | Current API/reporting posture and scope implications |

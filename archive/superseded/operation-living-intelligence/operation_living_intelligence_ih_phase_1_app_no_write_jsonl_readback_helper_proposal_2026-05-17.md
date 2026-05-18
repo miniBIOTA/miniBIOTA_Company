@@ -161,7 +161,7 @@ No generated output should be tracked unless a later review explicitly says to p
 Use:
 
 ```text
-domains/company/operation_living_intelligence_ih_phase_1_core_seed_source_query_list_2026-05-17.md
+archive/superseded/operation-living-intelligence/operation_living_intelligence_ih_phase_1_core_seed_source_query_list_2026-05-17.md
 ```
 
 Required source query groups:

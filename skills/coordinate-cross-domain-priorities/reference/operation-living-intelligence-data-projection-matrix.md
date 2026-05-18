@@ -82,7 +82,7 @@ Projection rule learned during closeout:
 
 Company completed a read-only REST/OpenAPI and App migration-source audit pass for task `409`:
 
-- `domains/company/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md`
+- `archive/superseded/operation-living-intelligence/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md`
 
 The audit confirmed `108` OpenAPI-visible tables/views, exact row counts for the relevant source tables, the bounded Lake Post-Seal source rows, media asset/link state, privacy/publicness tiers, candidate export-manifest rows, and validation-query requirements.
 
@@ -198,7 +198,7 @@ Local sources checked:
 - Financials Company overview, Financials data-model memory, and close/reconciliation model references.
 - Raw Footage and Definitions Company routing reports.
 - Brain archive/transition registry and retired YouTube Extraction routing.
-- Live read-only Supabase OpenAPI and Storage bucket audit on 2026-05-13, documented at `domains/company/operation_living_intelligence_supabase_schema_audit_2026-05-13.md`.
+- Live read-only Supabase OpenAPI and Storage bucket audit on 2026-05-13, documented at `archive/superseded/operation-living-intelligence/operation_living_intelligence_supabase_schema_audit_2026-05-13.md`.
 
 Current external platform sources checked:
 
@@ -396,7 +396,7 @@ The first read-only live Supabase schema audit on 2026-05-13 found:
 | Exposed RPC paths | 1 |
 | Storage buckets | 2 |
 
-The audit accounted for every exposed table/view in `domains/company/operation_living_intelligence_supabase_schema_audit_2026-05-13.md`.
+The audit accounted for every exposed table/view in `archive/superseded/operation-living-intelligence/operation_living_intelligence_supabase_schema_audit_2026-05-13.md`.
 
 Important deltas:
 
@@ -1565,7 +1565,7 @@ Closed on 2026-05-15:
 Use the completed docs-only App/Research/Content handoff, task `409` REST/OpenAPI audit pass, and design-only no-write proposal for **Wave 1: Living Atlas Graph Seed**:
 
 - `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_1_living_atlas_graph_seed_handoff_2026-05-15.md`
-- `domains/company/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md`
+- `archive/superseded/operation-living-intelligence/operation_living_intelligence_task_409_schema_data_audit_2026-05-15.md`
 - `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_1_no_write_dry_run_proposal_2026-05-15.md`
 - `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_1_app_design_review_packet_2026-05-15.md`
 - `archive/superseded/operation-living-intelligence/operation_living_intelligence_wave_1_app_design_review_readiness_2026-05-15.md`

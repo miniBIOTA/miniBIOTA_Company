@@ -53,19 +53,19 @@ domains/company/operation_living_intelligence_intelligent_harness_master_plan_20
 Phase 1 review packet:
 
 ```text
-domains/company/operation_living_intelligence_ih_phase_1_scope_review_packet_2026-05-17.md
+archive/superseded/operation-living-intelligence/operation_living_intelligence_ih_phase_1_scope_review_packet_2026-05-17.md
 ```
 
 Core seed source-query list:
 
 ```text
-domains/company/operation_living_intelligence_ih_phase_1_core_seed_source_query_list_2026-05-17.md
+archive/superseded/operation-living-intelligence/operation_living_intelligence_ih_phase_1_core_seed_source_query_list_2026-05-17.md
 ```
 
 Next App proposal:
 
 ```text
-domains/company/operation_living_intelligence_ih_phase_1_app_no_write_jsonl_readback_helper_proposal_2026-05-17.md
+archive/superseded/operation-living-intelligence/operation_living_intelligence_ih_phase_1_app_no_write_jsonl_readback_helper_proposal_2026-05-17.md
 ```
 
 Primary source packet:

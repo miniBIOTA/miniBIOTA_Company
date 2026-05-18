@@ -4,7 +4,7 @@ title: Operation Living Intelligence Active Reference Map
 domain: company_operations
 last_updated: 2026-05-18
 tags: [operation-living-intelligence, intelligent-harness, active-reference, cleanup, observation-workflow, phase-21]
-status: active_reference_map_current_after_transition_maps_archived
+status: active_reference_map_current_after_early_ui_proposals_archived
 ---
 # Operation Living Intelligence Active Reference Map
 
@@ -59,7 +59,6 @@ Known example:
 |---|---|
 | `operation_living_intelligence_intelligent_harness_master_plan_2026-05-17.md` | Current master plan and status spine. |
 | `operation_living_intelligence_intelligent_harness_session_closeout_2026-05-18.md` | Current session handoff, Phase 21/post-write refresh proposals, and cleanup guidance. |
-| `operation_living_intelligence_intelligent_harness_session_closeout_2026-05-17.md` | Prior handoff and original operational testing guidance. |
 | `operation_living_intelligence_ih_observation_workflow_closeout_2026-05-18.md` | Plain-language closeout for the proven observation workflow. |
 | `operation_living_intelligence_documentation_cleanup_inventory_2026-05-17.md` | Classification inventory and cleanup posture. |
 | `company_brief.md` | Manager-facing Company summary of the milestone. |
@@ -68,12 +67,6 @@ Known example:
 
 | Phase | File | Current role |
 |---|---|---|
-| Phase 1-7 | `operation_living_intelligence_ih_phase_1_7_closeout_2026-05-17.md` | Historical closeout for the first harness stack. |
-| Phase 8 | `operation_living_intelligence_ih_phase_8_app_integrated_intelligence_tab_proposal_2026-05-17.md` | Read-only Intelligence tab integration reference. |
-| Phase 9 | `operation_living_intelligence_ih_phase_9_observation_intake_auto_linker_proposal_2026-05-17.md` | Suggestion-generation model for observations. |
-| Phase 10 | `operation_living_intelligence_ih_phase_10_intelligence_tab_observation_suggestions_proposal_2026-05-17.md` | Intelligence tab suggestion display reference. |
-| Phase 11 | `operation_living_intelligence_ih_phase_11_observation_review_mode_proposal_2026-05-17.md` | Observation Review Mode UX reference. |
-| Phase 12 | `operation_living_intelligence_ih_phase_12_observation_review_mode_compact_decision_layout_proposal_2026-05-18.md` | Compact decision layout reference. |
 | Phase 13 | `operation_living_intelligence_ih_phase_13_observation_input_runner_proposal_2026-05-18.md` | App-side local observation input runner reference. |
 | Phase 14 | `operation_living_intelligence_ih_phase_14_intelligence_tab_latest_suggestion_run_loader_proposal_2026-05-18.md` | Latest suggestion run loader reference. |
 | Phase 15 | `operation_living_intelligence_ih_phase_15_content_agent_observation_parser_to_phase_13_input_proposal_2026-05-18.md` | Content-owned parser ownership decision. |
@@ -110,6 +103,9 @@ Archived wave and transition documents should be treated this way:
 | Wave 8 telemetry docs | Archived deferred telemetry reference. |
 | Wave 9 sensitive-domain docs | Archived deferred sensitive-data reference. |
 | Former deferred return and Waves 1-9 consolidation maps | Archived transition summaries; use this active map first and open them only for provenance. |
+| Foundational schema/source audits and individual Phase 1 seed docs | Archived provenance for the old setup path; use current Phase 13+ workflow references instead. |
+| Prior Intelligent Harness closeouts | Archived provenance; use the current master plan, active reference map, and 2026-05-18 closeout first. |
+| Early Intelligence tab and Observation Review Mode UI proposal docs | Archived design provenance for Phases 8-12; use App-owned runtime/design state for future UI changes and the current observation workflow docs for operator guidance. |
 
 ## Current Operating Guidance
 
@@ -140,7 +136,7 @@ The following remain unapproved:
 
 ## Cleanup Posture
 
-Wave 1-9 exploration/proof files and the old transition-summary maps have been archived out of `domains/company`.
+Wave 1-9 exploration/proof files, the old transition-summary maps, foundational source audits, individual Phase 1 seed/proposal docs, prior harness closeouts, and early Intelligence tab UI proposal docs have been archived out of `domains/company`.
 Use this map to avoid mistaking archived wave files for the current operator
 path.
 

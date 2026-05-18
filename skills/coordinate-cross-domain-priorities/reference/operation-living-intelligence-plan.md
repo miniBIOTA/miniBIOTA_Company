@@ -125,7 +125,7 @@ Detailed data projection scope:
 
 - The table/source-level projection matrix for species, observations, Content pipeline, chronicles, media assets, Planner records, YouTube analytics, telemetry, CRM, Financials, Memgraph, pgvector, and analytics now lives at `skills/coordinate-cross-domain-priorities/reference/operation-living-intelligence-data-projection-matrix.md`.
 - Use that matrix before implementing any export, import, sync, Memgraph graph, vector index, analytics warehouse, or writeback flow.
-- A first read-only live Supabase schema audit was completed on 2026-05-13 and documented at `domains/company/operation_living_intelligence_supabase_schema_audit_2026-05-13.md`. It found 108 public-schema tables/views, one exposed RPC, and two public Storage buckets, and it confirmed that CRM and Financials need especially cautious projection boundaries.
+- A first read-only live Supabase schema audit was completed on 2026-05-13 and documented at `archive/superseded/operation-living-intelligence/operation_living_intelligence_supabase_schema_audit_2026-05-13.md`. It found 108 public-schema tables/views, one exposed RPC, and two public Storage buckets, and it confirmed that CRM and Financials need especially cautious projection boundaries.
 - Planner task `409` is the implementation-time gate to rerun a deeper Supabase schema/data audit before the first Operation Living Intelligence export/import.
 
 ## Visual Media Intelligence Decision - 2026-05-14

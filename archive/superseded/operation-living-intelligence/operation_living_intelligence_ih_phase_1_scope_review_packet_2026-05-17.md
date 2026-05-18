@@ -15,7 +15,7 @@ This packet resolves the first Phase 1 scope questions raised by the Supabase So
 Use with:
 
 ```text
-domains/company/operation_living_intelligence_ih_phase_1_supabase_source_map_2026-05-17.md
+archive/superseded/operation-living-intelligence/operation_living_intelligence_ih_phase_1_supabase_source_map_2026-05-17.md
 domains/company/operation_living_intelligence_intelligent_harness_master_plan_2026-05-17.md
 ```
 

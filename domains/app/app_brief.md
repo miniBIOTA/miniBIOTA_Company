@@ -1,8 +1,8 @@
-﻿---
+---
 id: app_brief
 title: App Operations Brief
 domain: app_operations
-last_updated: 2026-05-16
+last_updated: 2026-05-18
 tags: [app, electron, operations, planner, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -109,6 +109,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-18:** App completed the approved Operation Living Intelligence Phase 18 Content audit to Phase 13 bridge update. `tools/bridge-oli-content-audit-to-phase13-input.js` now accepts both the Phase 15 legacy Content parser contract and the Phase 17 raw observation intake contract, with Phase 17 as the normal path. The bridge created the local App input `fixtures/operation_living_intelligence/intelligent_harness/phase_13_observation_input_runner/lake_post_seal/inputs/2026-05-16_grasshopper_legume_vine_followup_02.json` plus readbacks, preserving Phase 17 provenance and keeping writeback/public/canonical/database actions blocked. App then manually ran Phase 13 against that bridged input. Run `20260518_122448_grasshopper_legume_vine_followup` produced `8` suggestion-only records and updated `out/operation_living_intelligence/intelligent_harness/phase_13_observation_input_runner/lake_post_seal/latest_suggestion_run.json`. Phase 13 output remained local/suggestion-only: no Supabase or Planner writes, Memgraph changes, pgvector, public output, media metadata write, approve/reject/correct action, or canonical writeback. Raw Phase 17 metadata remains preserved in the bridged input path; Phase 13 normalized suggestion output does not copy that raw provenance forward.
 - **2026-05-15:** App completed the read-only Electron smoke for App
   Planner task `176`, `Verify Media Library search/filter/thumbnail behavior
   in read-only app smoke`, then marked the task done after explicit approval

@@ -546,6 +546,19 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-18:** Operation Living Intelligence Intelligent Harness proved the
+  local-to-canonical observation workflow end to end. The working chain now runs
+  from raw Content observation intake to Content audit JSON/Markdown, App bridge,
+  Phase 13 auto-link suggestions, Intelligence tab latest-suggestion display,
+  Phase 19 local pipeline, and Phase 20 approved observation writeback. The
+  completed proof wrote the Gulf marsh crab excavation event as Supabase
+  observation `253`, with confirmed `species_id = 174` for Gulf marsh crab and
+  `biome_id = 5` for Marine Shore. No story thread links, open loop links, story
+  beats, chronicles, Planner tasks, media metadata, public output, or content
+  pipeline records were bundled. The closeout is documented at
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_ih_observation_workflow_closeout_2026-05-18.md`.
+  Next work is operational testing: run one or two new real observations through
+  the Phase 19 local pipeline, then choose one for Phase 20 writeback if useful.
 - **2026-05-15:** Josue approved using the task `409` REST/OpenAPI plus App
   migration-source audit as sufficient for a design-only App proposal despite
   the unresolved live SQL metadata access gap. Company documented the

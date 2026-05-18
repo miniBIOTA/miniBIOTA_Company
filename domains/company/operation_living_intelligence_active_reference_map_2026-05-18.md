@@ -1,0 +1,117 @@
+---
+id: operation_living_intelligence_active_reference_map_2026-05-18
+title: Operation Living Intelligence Active Reference Map
+domain: company_operations
+last_updated: 2026-05-18
+tags: [operation-living-intelligence, intelligent-harness, active-reference, cleanup, observation-workflow]
+status: active_reference_map_ready_for_review
+---
+# Operation Living Intelligence Active Reference Map
+
+## Purpose
+
+This is the compact operating map for Operation Living Intelligence after the Intelligent Harness proved the local-to-canonical observation workflow through Phase 20.
+
+Use this map before opening older wave-expansion files. The old files remain useful provenance and deferred-lane reference, but they are no longer the primary operating path.
+
+## Current Operator Path
+
+The working path is:
+
+1. Content raw observation intake parser.
+2. Content-owned audit draft JSON and Markdown.
+3. App bridge to Phase 13 input.
+4. Phase 13 auto-link suggestions.
+5. Intelligence tab latest suggestion display.
+6. Phase 19 local observation intake pipeline.
+7. Phase 20 approved observation writeback proposal.
+8. Live duplicate and ID confirmation.
+9. Canonical Supabase observation insert when explicitly approved.
+
+The completed proof example is the Gulf marsh crab excavation observation:
+
+- Supabase observation ID: `253`.
+- Species: `174`, Gulf marsh crab.
+- Biome: `5`, Marine Shore.
+- Bundled writes: none.
+
+## Active Entry Points
+
+| File | Use |
+|---|---|
+| `operation_living_intelligence_intelligent_harness_master_plan_2026-05-17.md` | Current master plan and status spine. |
+| `operation_living_intelligence_intelligent_harness_session_closeout_2026-05-17.md` | Current handoff and operational testing guidance. |
+| `operation_living_intelligence_ih_observation_workflow_closeout_2026-05-18.md` | Plain-language closeout for the proven observation workflow. |
+| `company_brief.md` | Manager-facing Company summary of the milestone. |
+
+## Active Workflow References
+
+| Phase | File | Current role |
+|---|---|---|
+| Phase 1-7 | `operation_living_intelligence_ih_phase_1_7_closeout_2026-05-17.md` | Historical closeout for the first harness stack. |
+| Phase 8 | `operation_living_intelligence_ih_phase_8_app_integrated_intelligence_tab_proposal_2026-05-17.md` | Read-only Intelligence tab integration reference. |
+| Phase 9 | `operation_living_intelligence_ih_phase_9_observation_intake_auto_linker_proposal_2026-05-17.md` | Suggestion-generation model for observations. |
+| Phase 10 | `operation_living_intelligence_ih_phase_10_intelligence_tab_observation_suggestions_proposal_2026-05-17.md` | Intelligence tab suggestion display reference. |
+| Phase 11 | `operation_living_intelligence_ih_phase_11_observation_review_mode_proposal_2026-05-17.md` | Observation Review Mode UX reference. |
+| Phase 12 | `operation_living_intelligence_ih_phase_12_observation_review_mode_compact_decision_layout_proposal_2026-05-18.md` | Compact decision layout reference. |
+| Phase 13 | `operation_living_intelligence_ih_phase_13_observation_input_runner_proposal_2026-05-18.md` | App-side local observation input runner reference. |
+| Phase 14 | `operation_living_intelligence_ih_phase_14_intelligence_tab_latest_suggestion_run_loader_proposal_2026-05-18.md` | Latest suggestion run loader reference. |
+| Phase 15 | `operation_living_intelligence_ih_phase_15_content_agent_observation_parser_to_phase_13_input_proposal_2026-05-18.md` | Content-owned parser ownership decision. |
+| Phase 16 | `operation_living_intelligence_ih_phase_16_content_audit_to_phase_13_app_bridge_proposal_2026-05-18.md` | Content audit to App input bridge reference. |
+| Phase 17 | `operation_living_intelligence_ih_phase_17_content_raw_observation_intake_command_proposal_2026-05-18.md` | Content raw intake command reference. |
+| Phase 19 | `operation_living_intelligence_ih_phase_19_local_observation_intake_pipeline_runner_proposal_2026-05-18.md` | Local no-write pipeline orchestration reference. |
+| Phase 19 | `operation_living_intelligence_ih_phase_19_local_observation_intake_pipeline_checklist_2026-05-18.md` | Operator checklist for the local pipeline. |
+| Phase 19 | `operation_living_intelligence_ih_phase_19_pipeline_readback_20260518_123237.md` | First pipeline readback proof. |
+| Phase 20 | `operation_living_intelligence_ih_phase_20_approved_observation_writeback_from_content_intake_draft_proposal_2026-05-18.md` | Approval-gated canonical observation writeback design. |
+
+## Active Helper Ownership
+
+| Owner | Helper | Role |
+|---|---|---|
+| Content | `miniBIOTA_Content/tools/parse-oli-raw-observation-intake.js` | Create Content-owned parser drafts from raw observation text. |
+| Content | `miniBIOTA_Content/tools/parse-oli-observation-to-phase13-input.js` | Earlier parser proof helper retained as provenance. |
+| App | `miniBIOTA_App/tools/bridge-oli-content-audit-to-phase13-input.js` | Convert approved Content audit drafts into Phase 13-compatible local inputs. |
+| App | `miniBIOTA_App/tools/run-oli-ih-phase13-observation-input-runner.js` | Generate local observation suggestions and latest-run pointer. |
+| Company | `miniBIOTA_Company/tools/run-oli-ih-phase19-local-observation-intake-pipeline.js` | Thin orchestrator that calls existing helpers without duplicating logic. |
+
+## Deferred Reference Lanes
+
+Old wave documents should be treated this way:
+
+| Lane | Status |
+|---|---|
+| Waves 1-3 graph/story/species docs | Provenance and model reference only unless explicitly revived. |
+| Wave 4 analytics | Deferred analytics warehouse reference. |
+| Wave 5 retrieval/vector docs | Deferred retrieval/pgvector reference; pgvector remains unapproved. |
+| Wave 6 visual AI/media docs | Deferred media and visual-AI reference; media metadata writes remain unapproved. |
+| Wave 7 routing docs | Provenance for routing concepts; not the current operator workflow. |
+| Wave 8 telemetry docs | Deferred telemetry reference. |
+| Wave 9 sensitive-domain docs | Deferred sensitive-data reference. |
+
+## Current Operating Guidance
+
+Next operational testing should be:
+
+1. Run one or two new real observations through the Phase 19 local pipeline.
+2. Review the Intelligence tab suggestions.
+3. Choose one observation for Phase 20 writeback only if useful.
+4. Keep story links, open loop links, story beats, chronicles, Planner tasks, media metadata, content pipeline records, and public output separate unless explicitly approved later.
+
+## Not Approved
+
+The following remain unapproved:
+
+- Supabase writes except an explicitly approved Phase 20 observation insert.
+- Planner writes.
+- App runtime changes beyond already approved Intelligence tab work.
+- Memgraph modification.
+- pgvector.
+- public output.
+- media metadata writes.
+- canonical writeback beyond explicitly approved observation records.
+- automatic approve/reject/correct controls.
+- expansion beyond the current bounded observation testing path.
+
+## Cleanup Posture
+
+This map does not move, delete, archive, or supersede files by itself. It gives the next cleanup pass a cleaner target: old wave documents can later be archived or labeled in batches after Josue approves the batch list.

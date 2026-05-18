@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Executive Brief
 
-- Generated: 2026-05-17 08:43:41 -04:00
+- Generated: 2026-05-18 09:17:30 -04:00
 - Purpose: Company-side synthesis of domain reports.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 
@@ -199,9 +199,9 @@
 **Summary:** Owns the internal Electron desktop app used for miniBIOTA operations. CRM relationship-system tables from migration 013 are live, RLS-enabled, and policy-free; first runtime access must use the internal main-process secret-key bridge. No legacy CRM records have been backfilled into the new tables. Legacy CRM Contacts now support multiple labeled links through `crm_contact_links` rather than one column per social platform.
 
 ### Current Status
+- Operation Living Intelligence Phase 18 now has an App-owned bridge path from Content observation-intake audit JSON into manual Phase 13 suggestion input. `tools/bridge-oli-content-audit-to-phase13-input.js` accepts Phase 15 legacy parser drafts and Phase 17 raw observation intake drafts, derives collision-safe local input names, rejects canonical IDs/approval fields, and keeps writeback/public/canonical/database actions blocked. The latest manual Phase 13 run from the bridged Phase 17 input is `20260518_122448_grasshopper_legume_vine_followup`, with `8` suggestion-only records and `latest_suggestion_run.json` updated for the Intelligence tab. Raw Phase 17 provenance is preserved in the bridged input; Phase 13 normalized output keeps only the local input path.
 - CRM relationship-system migration 013 is live after user-applied Supabase SQL on 2026-05-12. It added 33 additive tables beside the legacy CRM tables, with read-only verification showing all new tables empty and legacy counts unchanged. The CRM tab now includes a read-only Relationship view for schema/table counts and review queues through the internal main-process secret-key bridge. Migration 014 is live as of 2026-05-13, adding flexible labeled `crm_contact_links` rows for legacy CRM contact websites/social/reference links.
 - `miniBIOTA_App` is the active desktop operator surface for miniBIOTA.
-- Active tabs are Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, and Monitoring.
 
 ### Priorities
 - Continue the staged CRM relationship-system UI: expand the read-only Relationship summary into People, Organizations, Opportunities, Interactions, Next Actions, Review, Agent Inbox, and reporting surfaces before any write or backfill workflows.

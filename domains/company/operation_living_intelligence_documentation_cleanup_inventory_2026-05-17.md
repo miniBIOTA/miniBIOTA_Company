@@ -2,19 +2,50 @@
 id: operation_living_intelligence_documentation_cleanup_inventory_2026-05-17
 title: Operation Living Intelligence Documentation Cleanup Inventory
 domain: company_operations
-last_updated: 2026-05-17
+last_updated: 2026-05-18
 tags: [operation-living-intelligence, intelligent-harness, cleanup, inventory, classification]
-status: classification_ready_for_review
+status: second_cleanup_pass_ready_for_review
 ---
 # Operation Living Intelligence Documentation Cleanup Inventory
 
 ## Purpose
 
-This is the second cleanup pass for Operation Living Intelligence documentation.
+This is the cleanup inventory for Operation Living Intelligence documentation.
 
 The goal is to inventory old OLI wave-expansion documents and classify each document family so the new Intelligent Harness path can stay clear without losing useful provenance.
 
 No files are moved, deleted, archived, or superseded by this document. This is a reviewable classification pass only.
+
+## 2026-05-18 Second Cleanup Pass Result
+
+The Intelligent Harness path has moved beyond the original Phase 1/2 planning spine. The local-to-canonical observation workflow is now proven through Phase 20 and is the current operational path.
+
+New compact reference map:
+
+```text
+domains/company/operation_living_intelligence_active_reference_map_2026-05-18.md
+```
+
+Use that active reference map as the first entry point before opening older wave-expansion files.
+
+Current proven workflow:
+
+1. Content raw observation intake parser.
+2. Content audit draft JSON/Markdown.
+3. App bridge to Phase 13 input.
+4. Phase 13 auto-link suggestions.
+5. Intelligence tab latest suggestion display.
+6. Phase 19 local observation intake pipeline.
+7. Phase 20 approved observation writeback proposal.
+8. Live duplicate/ID confirmation.
+9. Canonical Supabase observation insert when explicitly approved.
+
+Completed proof example:
+
+- Supabase observation ID: `253`.
+- Species: `174`, Gulf marsh crab.
+- Biome: `5`, Marine Shore.
+- Bundled writes: none.
 
 ## Controlling Path
 
@@ -30,13 +61,27 @@ Active closeout/handoff:
 domains/company/operation_living_intelligence_intelligent_harness_session_closeout_2026-05-17.md
 ```
 
+Active observation-workflow closeout:
+
+```text
+domains/company/operation_living_intelligence_ih_observation_workflow_closeout_2026-05-18.md
+```
+
+Active reference map:
+
+```text
+domains/company/operation_living_intelligence_active_reference_map_2026-05-18.md
+```
+
 ## Inventory Summary
 
-Current `domains/company/operation_living_intelligence*.md` inventory count:
+The original 2026-05-17 inventory counted the pre-Phase-20 `domains/company/operation_living_intelligence*.md` set:
 
 ```text
 115 files
 ```
+
+Since then, additional Intelligent Harness Phase 1-20 proposal, closeout, checklist, and readback files were created. This second pass does not recalculate the full count because the useful cleanup move is now classification and entry-point reduction, not another raw count.
 
 Detected file families:
 
@@ -53,6 +98,15 @@ Detected file families:
 | Wave 7 | 3 | Routing/workflow scaffold plus provenance |
 | Wave 8 | 4 | Deferred telemetry reference |
 | Wave 9 | 5 | Deferred sensitive-domain reference |
+
+Second-pass family addition:
+
+| Family | Cleanup posture |
+|---|---|
+| Intelligent Harness Phases 1-12 | Keep as implementation and UI/UX provenance; use the Phase 1-7 closeout and active reference map first. |
+| Intelligent Harness Phases 13-20 | Active observation workflow references. Keep easiest to find until operational testing stabilizes. |
+| Phase 19 checklist/readback | Active operator proof and checklist. |
+| Phase 20 writeback proposal | Active approval-gated canonical observation writeback design. |
 
 ## Classification Labels
 
@@ -94,6 +148,22 @@ These are the documents that should remain easiest to find during the next imple
 |---|---|
 | `operation_living_intelligence_intelligent_harness_master_plan_2026-05-17.md` | Current active plan. |
 | `operation_living_intelligence_intelligent_harness_session_closeout_2026-05-17.md` | Current session handoff and cleanup guidance. |
+| `operation_living_intelligence_ih_observation_workflow_closeout_2026-05-18.md` | Proven local-to-canonical observation workflow closeout. |
+| `operation_living_intelligence_active_reference_map_2026-05-18.md` | Compact entry point for active and deferred OLI references. |
+
+### Active Observation Workflow References
+
+| File | Reason |
+|---|---|
+| `operation_living_intelligence_ih_phase_13_observation_input_runner_proposal_2026-05-18.md` | App-side local observation input runner design. |
+| `operation_living_intelligence_ih_phase_14_intelligence_tab_latest_suggestion_run_loader_proposal_2026-05-18.md` | Intelligence tab latest-run loader design. |
+| `operation_living_intelligence_ih_phase_15_content_agent_observation_parser_to_phase_13_input_proposal_2026-05-18.md` | Content-owned parser ownership decision. |
+| `operation_living_intelligence_ih_phase_16_content_audit_to_phase_13_app_bridge_proposal_2026-05-18.md` | Content audit to App input bridge design. |
+| `operation_living_intelligence_ih_phase_17_content_raw_observation_intake_command_proposal_2026-05-18.md` | Content raw observation intake command design. |
+| `operation_living_intelligence_ih_phase_19_local_observation_intake_pipeline_runner_proposal_2026-05-18.md` | Local no-write pipeline runner design. |
+| `operation_living_intelligence_ih_phase_19_local_observation_intake_pipeline_checklist_2026-05-18.md` | Operator checklist for local pipeline use. |
+| `operation_living_intelligence_ih_phase_19_pipeline_readback_20260518_123237.md` | First pipeline readback proof. |
+| `operation_living_intelligence_ih_phase_20_approved_observation_writeback_from_content_intake_draft_proposal_2026-05-18.md` | Approval-gated canonical observation writeback design. |
 
 ### Active Scaffold For Phase 1: Supabase Source Map
 
@@ -331,21 +401,23 @@ Wave 6 files in the remaining provenance set:
 
 ## Recommended Next Cleanup Action
 
-Before moving or archiving files, create one compact replacement map:
+The compact replacement map now exists:
 
 ```text
-Operation Living Intelligence Active Reference Map
+domains/company/operation_living_intelligence_active_reference_map_2026-05-18.md
 ```
 
-That map should list:
+Before moving or archiving old files, review and approve that map as the active entry point.
 
-- active Intelligent Harness control docs;
-- active Phase 1/2/3 scaffolding;
-- deferred Phase 8 references;
-- provenance archive group;
-- files approved for archive/superseded movement.
+The next physical cleanup pass can then classify batches as:
 
-After that map is approved, the next pass can move/archive or supersede docs in batches.
+- keep active;
+- keep as deferred reference;
+- preserve as provenance;
+- archive candidate after review;
+- superseded reference after review.
+
+No file movement is recommended until Josue explicitly approves the batch list.
 
 ## Not Changed
 
@@ -358,7 +430,6 @@ This cleanup pass did not:
 - change Supabase;
 - change App runtime;
 - set up Memgraph;
-- create generated outputs;
+- create App or harness generated outputs;
 - change public output;
 - change canonical records.
-

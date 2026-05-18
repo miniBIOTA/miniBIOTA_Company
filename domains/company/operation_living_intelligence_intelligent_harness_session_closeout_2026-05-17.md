@@ -2,9 +2,9 @@
 id: operation_living_intelligence_intelligent_harness_session_closeout_2026-05-17
 title: Operation Living Intelligence Intelligent Harness Session Closeout
 domain: company_operations
-last_updated: 2026-05-17
+last_updated: 2026-05-18
 tags: [operation-living-intelligence, intelligent-harness, session-closeout, planner, cleanup]
-status: closeout_ready
+status: closeout_complete_with_observation_workflow_handoff
 ---
 # Operation Living Intelligence Intelligent Harness Session Closeout
 
@@ -137,6 +137,30 @@ Planner task:
 ```
 
 ## Next Session Handoff
+
+### 2026-05-18 Observation Workflow Handoff
+
+The Intelligent Harness observation workflow is now proven through Phase 20 and documented at:
+
+```text
+domains/company/operation_living_intelligence_ih_observation_workflow_closeout_2026-05-18.md
+```
+
+Working state:
+
+- Content raw observation intake parser creates Content-owned audit JSON/Markdown.
+- App bridge converts approved Content audit drafts into Phase 13 input.
+- Phase 13 creates auto-link suggestions and updates `latest_suggestion_run.json`.
+- Intelligence tab displays the latest suggestion run.
+- Phase 19 runs the local no-write intake chain from one coordinated process.
+- Phase 20 defines and proved an approval-gated canonical observation writeback path.
+- Gulf marsh crab excavation was written as Supabase observation `253`, with `species_id = 174` and `biome_id = 5`, without bundled story, open-loop, beat, chronicle, Planner, media metadata, public output, or content pipeline writes.
+
+No new planning phases should start immediately. Next work is operational testing:
+
+```text
+Run one or two new real observations through the Phase 19 local pipeline, then choose one for Phase 20 writeback if useful.
+```
 
 For the next session, start with:
 

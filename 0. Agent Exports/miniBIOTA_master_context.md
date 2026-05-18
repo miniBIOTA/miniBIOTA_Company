@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Master Context
 
-- Generated: 2026-05-17 08:43:41 -04:00
+- Generated: 2026-05-18 09:17:30 -04:00
 - Source contract: Company `domains/` reports are included below.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 - Format: portable Markdown with Obsidian wiki-links normalized or removed.
@@ -651,6 +651,19 @@
 
 ## Recent Milestones
 
+- **2026-05-18:** Operation Living Intelligence Intelligent Harness proved the
+  local-to-canonical observation workflow end to end. The working chain now runs
+  from raw Content observation intake to Content audit JSON/Markdown, App bridge,
+  Phase 13 auto-link suggestions, Intelligence tab latest-suggestion display,
+  Phase 19 local pipeline, and Phase 20 approved observation writeback. The
+  completed proof wrote the Gulf marsh crab excavation event as Supabase
+  observation `253`, with confirmed `species_id = 174` for Gulf marsh crab and
+  `biome_id = 5` for Marine Shore. No story thread links, open loop links, story
+  beats, chronicles, Planner tasks, media metadata, public output, or content
+  pipeline records were bundled. The closeout is documented at
+  `M:\miniBIOTA\miniBIOTA_Company\domains\company\operation_living_intelligence_ih_observation_workflow_closeout_2026-05-18.md`.
+  Next work is operational testing: run one or two new real observations through
+  the Phase 19 local pipeline, then choose one for Phase 20 writeback if useful.
 - **2026-05-15:** Josue approved using the task `409` REST/OpenAPI plus App
   migration-source audit as sufficient for a design-only App proposal despite
   the unresolved live SQL metadata access gap. Company documented the
@@ -5302,6 +5315,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Remains an internal secret-key-capable tool, not a public product or public website surface.
 
 ## Current State
+- Operation Living Intelligence Phase 18 now has an App-owned bridge path from Content observation-intake audit JSON into manual Phase 13 suggestion input. `tools/bridge-oli-content-audit-to-phase13-input.js` accepts Phase 15 legacy parser drafts and Phase 17 raw observation intake drafts, derives collision-safe local input names, rejects canonical IDs/approval fields, and keeps writeback/public/canonical/database actions blocked. The latest manual Phase 13 run from the bridged Phase 17 input is `20260518_122448_grasshopper_legume_vine_followup`, with `8` suggestion-only records and `latest_suggestion_run.json` updated for the Intelligence tab. Raw Phase 17 provenance is preserved in the bridged input; Phase 13 normalized output keeps only the local input path.
 - CRM relationship-system migration 013 is live after user-applied Supabase SQL on 2026-05-12. It added 33 additive tables beside the legacy CRM tables, with read-only verification showing all new tables empty and legacy counts unchanged. The CRM tab now includes a read-only Relationship view for schema/table counts and review queues through the internal main-process secret-key bridge. Migration 014 is live as of 2026-05-13, adding flexible labeled `crm_contact_links` rows for legacy CRM contact websites/social/reference links.
 - `miniBIOTA_App` is the active desktop operator surface for miniBIOTA.
 - Active tabs are Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, and Monitoring.
@@ -5898,6 +5912,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 
 ## Recent Milestones
 
+- **2026-05-18:** App completed the approved Operation Living Intelligence Phase 18 Content audit to Phase 13 bridge update. `tools/bridge-oli-content-audit-to-phase13-input.js` now accepts both the Phase 15 legacy Content parser contract and the Phase 17 raw observation intake contract, with Phase 17 as the normal path. The bridge created the local App input `fixtures/operation_living_intelligence/intelligent_harness/phase_13_observation_input_runner/lake_post_seal/inputs/2026-05-16_grasshopper_legume_vine_followup_02.json` plus readbacks, preserving Phase 17 provenance and keeping writeback/public/canonical/database actions blocked. App then manually ran Phase 13 against that bridged input. Run `20260518_122448_grasshopper_legume_vine_followup` produced `8` suggestion-only records and updated `out/operation_living_intelligence/intelligent_harness/phase_13_observation_input_runner/lake_post_seal/latest_suggestion_run.json`. Phase 13 output remained local/suggestion-only: no Supabase or Planner writes, Memgraph changes, pgvector, public output, media metadata write, approve/reject/correct action, or canonical writeback. Raw Phase 17 metadata remains preserved in the bridged input path; Phase 13 normalized suggestion output does not copy that raw provenance forward.
 - **2026-05-15:** App completed the read-only Electron smoke for App
   Planner task `176`, `Verify Media Library search/filter/thumbnail behavior
   in read-only app smoke`, then marked the task done after explicit approval

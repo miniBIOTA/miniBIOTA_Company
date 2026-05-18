@@ -2,9 +2,9 @@
 id: operation_living_intelligence_intelligent_harness_master_plan_2026-05-17
 title: "Operation Living Intelligence: Intelligent Harness Master Plan"
 domain: company_operations
-last_updated: 2026-05-17
+last_updated: 2026-05-18
 tags: [operation-living-intelligence, intelligent-harness, memgraph, supabase, graphrag, planning]
-status: planning
+status: active_harness_path_with_observation_workflow_proven
 ---
 # Operation Living Intelligence: Intelligent Harness Master Plan
 
@@ -30,6 +30,41 @@ Supabase source map
 The aim is to build a private miniBIOTA command center where agents can answer connected questions with evidence, source IDs, uncertainty, review warnings, and domain ownership.
 
 This plan is documentation only. It does not approve implementation, helpers, package installs, Supabase writes, Planner changes, migrations, Memgraph setup, generated outputs, App runtime changes, public output, or canonical writeback.
+
+## 2026-05-18 Operational Closeout Addendum
+
+The Intelligent Harness path has now produced a working local-to-canonical observation workflow.
+
+Proven chain:
+
+```text
+raw observation
+-> Content raw observation intake parser
+-> Content audit draft JSON/Markdown
+-> App bridge to Phase 13 input
+-> Phase 13 auto-link suggestions
+-> Intelligence tab latest suggestion display
+-> Phase 19 local observation intake pipeline
+-> Phase 20 approved observation writeback proposal
+-> live duplicate/ID confirmation
+-> canonical Supabase observation insert
+```
+
+Completed proof example:
+
+- Observation: Gulf marsh crab excavation activity in the coastal biome / Marine Shore.
+- New Supabase observation ID: `253`.
+- Confirmed species: `species_id = 174`, Gulf marsh crab.
+- Confirmed biome: `biome_id = 5`, Marine Shore.
+- Confirmed no bundled story thread links, open loop links, story beats, chronicles, Planner tasks, media metadata, public output, or content pipeline records.
+
+This does not start a new planning phase. The next work is operational testing:
+
+```text
+Run one or two new real observations through the Phase 19 local pipeline, then choose one for Phase 20 writeback if useful.
+```
+
+Future work remains separately approval-gated: story/open-loop linking, media review/linking, Intelligence suggestion approval controls, pgvector, actual LangGraph, and scope expansion beyond the current test lanes.
 
 ## 1. Plain-Language Outcome
 

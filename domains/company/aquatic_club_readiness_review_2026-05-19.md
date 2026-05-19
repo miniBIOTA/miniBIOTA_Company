@@ -1,7 +1,7 @@
 ---
 title: Aquatic Club Talk Readiness Review
 date: 2026-05-19
-status: review-note
+status: review-note-updated
 related_program: Aquatic Club Talk Readiness
 related_company_tasks: [268, 284]
 ---
@@ -23,7 +23,7 @@ Company setup work is substantially complete:
 - Cross-domain owner map, sequencing, dependency map, approval gates, review timing, and agent call order are captured in `domains/company/aquatic_club_dependency_map_2026-05-12.md`.
 - Live Planner readback on 2026-05-19 shows the overdue Company review task still open, plus Brand, Content, Research, and App tasks from 2026-05-15 through 2026-05-16 that remain open.
 
-No Planner records were changed by this note.
+Planner was updated later on 2026-05-19 after Josue approved the triage: App Field Observer work moved to 2026-05-19, writing tasks moved to 2026-05-20, and the completed Company setup/review tasks were closed.
 
 ## Readiness Assessment
 
@@ -36,29 +36,29 @@ The talk program is not blocked by lack of Company framing. The next risk is tha
 
 The App `Mobile Field Observer Quality System` bundle from 2026-05-16 is real implementation work, not stale duplicate task noise. File readback shows the planned mobile token layer, shared mobile UI primitives, mobile UI Lab files, and mobile validation scripts are not present yet. That work should be rescheduled or intentionally deferred, not marked done.
 
-## Proposed Planner Triage
+## Applied Planner Triage
 
-Recommended close as done after Josue approval:
+Closed as done on 2026-05-19 after Josue approval:
 
 - Task `284`: `Run first readiness review and adjust sequence for the next week`.
 - Task `268`: `Set program scope, success criteria, dependency map, and weekly review rhythm`.
 
 Rationale: the setup artifacts exist, and this note completes the first review pass. Closing these does not mean downstream Brand, Content, Research, Web, Growth, Financials, Hardware, or App work is complete.
 
-Recommended reschedule:
+Moved writing / writing-adjacent Aquatic Club prep to 2026-05-20:
 
 - Task `311` Brand: move `Write speaker bio and event description draft` from 2026-05-15 to 2026-05-20.
 - Task `319` Research: move `Inventory core ecological claims the talk wants to make` from 2026-05-15 to 2026-05-20.
-- Task `292` Content: move `Map the talk into act structure: origin, proof, living system, future, invitation` from 2026-05-16 to 2026-05-21.
+- Task `292` Content: move `Map the talk into act structure: origin, proof, living system, future, invitation` from 2026-05-16 to 2026-05-20.
 
-Rationale: Brand and Research inputs should stabilize before Content spends too much time on the act structure. These are domain-owned implementation tasks; Company should coordinate sequence but not replace domain ownership.
+Rationale: Josue chose not to do writing work on 2026-05-19 and to leave writing tasks for 2026-05-20. These are domain-owned implementation tasks; Company coordinates sequence but does not replace domain ownership.
 
-Recommended defer or reschedule as an App implementation block:
+Moved to 2026-05-19 as an App implementation block:
 
 - Project `84` App: `Mobile Field Observer Quality System`.
-- Tasks `513` through `551`, currently scheduled/due 2026-05-16.
+- Tasks `513` through `551`, previously scheduled/due 2026-05-16.
 
-Rationale: this is a 39-task App project with implementation, validation, Capacitor sync, debug APK, and optional phone install gates. It should be moved as one focused App work block, not scattered through the Aquatic Club prep queue. A realistic next slot is later this week only if Josue wants App implementation to compete with talk script/readiness work; otherwise defer it to the next App-focused day.
+Rationale: Josue chose this work for 2026-05-19 because the day should be App work rather than writing work. Phone install/relaunch remains a separate explicit device-action approval gate.
 
 Recommended no hard delete:
 
@@ -75,4 +75,3 @@ At that review, check:
 - Does the act map support a rough rehearsal script?
 - Are proof-media needs visible early enough for App, Hardware, and Raw Footage support?
 - Does any QR, Web, Growth, or Financials follow-up need to move earlier?
-

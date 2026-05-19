@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Executive Brief
 
-- Generated: 2026-05-19 08:24:44 -04:00
+- Generated: 2026-05-19 09:28:22 -04:00
 - Purpose: Company-side synthesis of domain reports.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 
@@ -17,12 +17,12 @@
 ### Current Status
 - miniBIOTA has already been tested as a fully closed working concept in Q1 2026.
 - Operation Living Atlas is active as the coordinated backfill program for published content, species histories, chronicles, observations, media, and ecological relationships.
-- Operation Living Intelligence has been consolidated into the Intelligent Harness implementation path: Supabase source map, Memgraph projection, Cypher query harness, current local retrieval baseline, LangGraph-style workflow, review-gated answer system, operator dashboard, and later upgrade adapters as needed. Paid/API-key-dependent pgvector embedding is not approved after cost/credential review.
+- Operation Living Intelligence is closed as an active Company planning program as of 2026-05-19. Its remaining value is archived provenance: local/read-first source-discovery patterns, the approved observation `253` writeback proof, and the cost/credential decision to reject OpenAI/API-key-dependent pgvector embedding.
 
 ### Priorities
 - Coordinate Aquatic Club Talk Readiness as the Q2 strategic forcing function. Remaining Q2 work should stack toward the talk unless urgent operations require otherwise. The talk should help people buy into the miniBIOTA story, feel emotionally connected to the project, understand why the build matters, make their own novel connections, and leave with curiosity, awe, and a sense of future possibilities.
 - Coordinate Operation Living Atlas across Company, Research, Content, Web, App, and Raw Footage. Source plan: `M:\miniBIOTA\miniBIOTA_Company\skills\coordinate-cross-domain-priorities\reference\operation-living-atlas-plan.md`; first model arc: Lake Post-Seal / Flagfish / Daphnia / Ghost Shrimp.
-- Coordinate Operation Living Intelligence as the Intelligent Harness build: Supabase remains canonical structured truth, Memgraph becomes the derived relationship graph, retrieval adds cited source context, workflow orchestration routes multi-step questions, and all canonical/public writeback remains approval-gated.
+- Keep OLI lessons as archived provenance only. Any future graph, vector, retrieval, workflow, or writeback work needs a fresh scope, owner review, and explicit approval.
 
 ### Risks / Gaps
 - The roadmap is mostly unfilled after the Q2 talk focus, limiting Q3+ strategic visibility.

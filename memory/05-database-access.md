@@ -33,7 +33,7 @@ Explicit user approval is also required for Memgraph projection/import/rebuild/r
 Company work is managed in App Planner through Supabase `work_projects` and `tasks`.
 
 - Company Planner records live under `work_domains.key = company_ops` / `domain_id = 1`.
-- Current Company work projects are `Business Plan & Operating Model`, `Roadmap & Quarterly Objectives`, `AI & Knowledge Infrastructure`, `Operation Living Atlas Coordination`, `Aquatic Club Talk Program Coordination`, and `Operation Living Intelligence Coordination`.
+- Current open Company work projects are `Business Plan & Operating Model`, `Roadmap & Quarterly Objectives`, `AI & Knowledge Infrastructure`, `Operation Living Atlas Coordination`, and `Aquatic Club Talk Program Coordination`. `Operation Living Intelligence Coordination` was closed on 2026-05-19 and should be treated as archive/provenance unless explicitly reopened.
 - Read Planner projects/tasks when current Company work priorities, blockers, sequencing, or completion status matter.
 - Creating projects/tasks, linking tasks to projects, adding subtasks, changing workflow status, marking done/reopened, scheduling, changing recurrence, or archiving are live operational writes.
 - At closeout, offer to update Planner task status when completed work maps clearly to an open Company Planner task, but ask before writing unless the user explicitly requested the update or standing Company project-manager delegation has been granted.

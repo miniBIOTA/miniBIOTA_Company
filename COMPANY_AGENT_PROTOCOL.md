@@ -2,7 +2,7 @@
 id: company_agent_protocol
 title: Company Agent Protocol
 domain: company
-last_updated: 2026-05-10
+last_updated: 2026-05-19
 tags: [company, protocol, operating-architecture, cross-domain-coordination, brain-transition]
 ---
 # miniBIOTA Company Agent Protocol
@@ -42,6 +42,7 @@ Brain is historical/archive, recovery, and retirement-provenance context during 
 - Planner schema, UI, migrations, and Supabase-backed workflow implementation.
 - Internal operator/admin surfaces.
 - Desktop app behavior and internal service-role paths.
+- Operation Living Intelligence implementation helpers and runtime surfaces, including local projection helpers, generated output conventions, Memgraph import/readback tooling, Company local vector retrieval, future approved retrieval implementation, and refresh automation when separately approved.
 
 ### Domain Agents Own
 
@@ -85,10 +86,12 @@ Use this hierarchy when sources disagree:
 6. Relevant Company `skills/*/SKILL.md` playbooks for repeatable workflow rules.
 7. Domain repo `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/` for domain implementation truth.
 8. Supabase/App Planner for structured/queryable projects, tasks, milestones, and operational records when those records are relevant.
-9. Brain domain briefs and Brain exports as historical/archive reference only.
-10. Archives and superseded files as historical reference only.
+9. Operation Living Intelligence derived layers, including Memgraph relationship projections, Company local vector retrieval, and future approved retrieval layers, for noncanonical relationship context and semantic source discovery only.
+10. Brain domain briefs and Brain exports as historical/archive reference only.
+11. Archives and superseded files as historical reference only.
 
 Chat history and private model memory are never durable source of truth.
+Memgraph, vector indexes, retrieval manifests, embeddings, generated readbacks, and other Operation Living Intelligence outputs are derived awareness layers unless a future source-of-truth change is explicitly approved. Agents may use them to find context, but must verify consequential claims against Markdown, Supabase, domain source docs, or approved source records.
 
 ## Routing Rules
 
@@ -126,6 +129,7 @@ Always ask explicit approval before:
 - Supabase writes.
 - Planner project/task create, edit, status, schedule, recurrence, archive, delete, link, or completion changes.
 - Raw SQL, migrations, schema changes, destructive writes, service-role actions, or live-control paths.
+- Memgraph projection/import/rebuild/refresh, vector/pgvector index changes, embedding jobs, retrieval-output generation, scheduled refresh jobs, or derived Operation Living Intelligence writeback unless the scoped action has been explicitly approved.
 - Public promises, business commitments, sponsor obligations, legal decisions, financial commitments, launch targets, or roadmap commitments.
 - App behavior, website behavior, firmware, telemetry producer behavior, or live system changes.
 
@@ -148,4 +152,5 @@ For Company sessions:
 5. Run `git diff --name-only` or equivalent.
 6. Run `git status --short --branch`.
 7. Confirm no unscoped app behavior, database records, structured records, public site behavior, Brain docs mirrors, test data, or commitments changed.
-8. Use the standard closeout report.
+8. Confirm no unscoped Memgraph projection, vector index, embedding artifact, generated retrieval output, scheduled refresh, or derived Operation Living Intelligence layer changed.
+9. Use the standard closeout report.

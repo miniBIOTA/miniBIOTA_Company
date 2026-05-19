@@ -2,7 +2,7 @@
 id: operation_living_intelligence_plan
 title: Operation Living Intelligence Plan
 domain: company_operations
-last_updated: 2026-05-14
+last_updated: 2026-05-19
 tags: [operation-living-intelligence, ai-infrastructure, databases, analytics, graph, vector, agents, cross-domain]
 status: active_planning
 ---
@@ -123,7 +123,7 @@ Routing implication:
 
 Detailed data projection scope:
 
-- The table/source-level projection matrix for species, observations, Content pipeline, chronicles, media assets, Planner records, YouTube analytics, telemetry, CRM, Financials, Memgraph, pgvector, and analytics now lives at `skills/coordinate-cross-domain-priorities/reference/operation-living-intelligence-data-projection-matrix.md`.
+- The table/source-level projection matrix for species, observations, Content pipeline, chronicles, media assets, Planner records, YouTube analytics, telemetry, CRM, Financials, Memgraph, retrieval/vector options, and analytics now lives at `skills/coordinate-cross-domain-priorities/reference/operation-living-intelligence-data-projection-matrix.md`.
 - Use that matrix before implementing any export, import, sync, Memgraph graph, vector index, analytics warehouse, or writeback flow.
 - A first read-only live Supabase schema audit was completed on 2026-05-13 and documented at `archive/superseded/operation-living-intelligence/operation_living_intelligence_supabase_schema_audit_2026-05-13.md`. It found 108 public-schema tables/views, one exposed RPC, and two public Storage buckets, and it confirmed that CRM and Financials need especially cautious projection boundaries.
 - Planner task `409` is the implementation-time gate to rerun a deeper Supabase schema/data audit before the first Operation Living Intelligence export/import.
@@ -192,8 +192,8 @@ Operation Living Intelligence does not by itself authorize:
 |---|---|---|---|---|
 | Durable operating memory | Markdown vaults | Strategy, governance, agent rules, domain briefs, decisions, source packets, review notes | Yes, for narrative/operating context | Company and domain repos |
 | Operational database | Supabase/Postgres | Planner, tasks, programs, content calendar, app records, statuses, structured workflow records | Yes, for live operational state | App runtime; domain-owned records |
-| Basic vector retrieval | Supabase pgvector first | Semantic search across selected structured text and embeddings | Derived/search layer unless table is canonical | App for implementation; domains for content |
-| Dedicated vector DB | Qdrant, Pinecone, Weaviate, Chroma, Milvus only if needed | Higher-scale or specialized retrieval, filtering, hybrid search, large embedding collections | Derived/search layer | App/AI infrastructure |
+| Basic retrieval | Company local deterministic retrieval baseline first | Source discovery across selected active docs with citations | Derived/search layer only | Company local helper now; App/domain review for future shared implementation |
+| Dedicated vector DB or pgvector | Supabase pgvector, Qdrant, Pinecone, Weaviate, Chroma, Milvus only if needed and approved | Higher-scale or specialized retrieval, filtering, hybrid search, large embedding collections | Derived/search layer | App/AI infrastructure with Company/domain approval |
 | Graph intelligence | Neo4j or Memgraph | Species, observations, events, claims, media, provenance, dependencies, multi-hop reasoning | Initially derived; possible future canonical graph only by approval | Company governance; Research/App implementation |
 | Analytics warehouse | MotherDuck/DuckDB or BigQuery first | YouTube, website, social, email, support, CRM funnel, agent telemetry, trend analysis | Derived analytical history | Growth, Content, Web, Company; App/data implementation |
 | Short-term agent memory/cache | Redis or equivalent | Session state, queues, cache, locks, recent retrieval context | No, temporary runtime state | App/AI infrastructure |
@@ -211,7 +211,7 @@ Start with:
 1. Keep Markdown and Supabase exactly in their current roles.
 2. Add a local or free-tier graph pilot for Operation Living Atlas relationship intelligence.
 3. Add analytics warehouse planning for YouTube/website/social performance, but do not implement until data sources and reporting questions are defined.
-4. Use Supabase/pgvector for first-pass semantic retrieval before adopting a dedicated vector database.
+4. Use the current no-cost local retrieval helper for first-pass source discovery. Supabase pgvector or a dedicated vector database can be reconsidered only after Josue explicitly accepts the embedding generator, credential, billing, source-scope, and write-boundary model.
 5. Add Redis/cache only when agent workflows need queueing, speed, or temporary state.
 6. Build the visual AI/media intelligence pilot as a Nemotron/Codex workflow, keeping local/private processing as the default target, then benchmark Twelve Labs free tier on the same bounded media set after the first workflow exists.
 7. Keep all current workflows operational while derived layers are built, tested, and compared. Do not switch agents or domains to a new system until it passes readiness criteria.
@@ -223,9 +223,9 @@ Operation Living Intelligence should evaluate every major data-system category t
 | Category | Candidate Platforms | Best Use | Initial Posture |
 |---|---|---|---|
 | Current operational database | Supabase/Postgres | Planner, App workflows, content calendar, Research/App structured records, current state | Keep as system of record |
-| Postgres vector layer | Supabase pgvector, plain PostgreSQL + pgvector | First-pass embeddings, semantic search near existing records | Use before a separate vector DB if sufficient |
+| Postgres vector layer | Supabase pgvector, plain PostgreSQL + pgvector | Possible later embeddings and semantic search near existing records | Available, but not active until credential/cost/source-scope approval |
 | Distributed SQL/HTAP | TiDB / TiDB Cloud | Unified SQL + vector + analytical workloads at larger scale | Evaluate later; do not replace Supabase now |
-| Managed vector DB | Pinecone | Fully managed RAG retrieval and long-term vector memory | Defer until pgvector/local retrieval is insufficient |
+| Managed vector DB | Pinecone | Fully managed RAG retrieval and long-term vector memory | Defer until local retrieval or a future approved pgvector path is insufficient |
 | Filtering-heavy vector DB | Qdrant | Semantic search with strong metadata filtering and payload constraints | Strong candidate if source/publicness filters become central |
 | Hybrid vector/keyword DB | Weaviate | Hybrid semantic + keyword search and RAG workflows | Candidate if hybrid search becomes core |
 | Massive vector scale | Milvus | Very large embedding collections | Defer until scale demands it |
@@ -1411,7 +1411,7 @@ Task `407` threshold summary:
 
 | Area | Financials output |
 |---|---|
-| Free/local defaults | Memgraph Community, pgvector/local retrieval, DuckDB/export planning, no cache by default, manual/proposed-write automation, already-available local capabilities, and Nemotron/Codex local/private design first |
+| Free/local defaults | Memgraph Community, local deterministic retrieval, DuckDB/export planning, no cache by default, manual/proposed-write automation, already-available local capabilities, and Nemotron/Codex local/private design first |
 | Financials review triggers | Recurring subscriptions, paid tiers, usage billing, free trials requiring payment, cloud resources, meaningful local hardware/storage/electricity/backup/maintenance costs, shared vendor accounts, or benchmarks likely to become paid ongoing use |
 | Explicit approval gates | Payment setup, paid/free trial with billing details, cloud accounts/resources/API keys/OAuth, tool installs, large model downloads, uploads, imports/exports/sync jobs, scheduled automation, live writes, schema/App/Web/public behavior changes, and commitments |
 | Monthly ceilings | Graph, vector, analytics, cache/runtime, automation, local models, visual AI/cloud benchmark, and whole OLI stack are all `TBD / not approved` |
@@ -1451,7 +1451,7 @@ Task `408` proven-job summary:
 
 | Category | Proven job requires |
 |---|---|
-| Vector retrieval | Evaluation set with expected answers, source paths/record IDs, privacy labels, observed misses or slow lookup, metadata filters, citation/readback needs, and evidence that pgvector/local retrieval is insufficient or insufficiently maintainable |
+| Vector retrieval | Evaluation set with expected answers, source paths/record IDs, privacy labels, observed misses or slow lookup, metadata filters, citation/readback needs, and evidence that local retrieval is insufficient or insufficiently maintainable before any paid/API-key-dependent embedding path is reconsidered |
 | Analytics warehouse | Recurring report questions with real consumers, defined cadence, source list, normalized metrics, manual pain evidence, and reason local DuckDB/export workflow is not enough |
 | Cache/runtime | Approved App/runtime need such as queueing, locks, temporary state, repeated retrieval context, rate control, or caching, plus retention policy, failure behavior, and reason local/session state is insufficient |
 | Automation | Stable recurring manual workflow with defined inputs/outputs, low-risk read-only or proposed-write path, logs/readback, stop switch, error handling, and human approval surface |
@@ -1617,12 +1617,13 @@ Use vector search for semantic retrieval:
 
 Recommended order:
 
-1. Use Supabase/pgvector first because Postgres is already in the stack.
-2. Use Qdrant if filtering-heavy semantic search becomes painful.
-3. Use Pinecone if a fully managed vector DB is worth paying for.
-4. Use Weaviate if hybrid semantic/keyword retrieval becomes a core workflow.
-5. Use Chroma for quick local prototypes only.
-6. Use Milvus only if embedding volume becomes very large.
+1. Use the no-cost local deterministic retrieval helper first.
+2. Reconsider Supabase pgvector only if the local helper misses a proven retrieval need and Josue explicitly accepts the embedding generator, credential, billing, source-scope, refresh, and write-boundary model.
+3. Use Qdrant if filtering-heavy semantic search becomes painful after an approved embedding path exists.
+4. Use Pinecone if a fully managed vector DB is worth paying for after Financials review.
+5. Use Weaviate if hybrid semantic/keyword retrieval becomes a core workflow.
+6. Use Chroma for quick local/offline prototypes only when source scope is approved.
+7. Use Milvus only if embedding volume becomes very large.
 
 Vector search should not replace graph relationships. It retrieves likely relevant material; the graph explains how evidence, claims, species, events, and owners connect.
 
@@ -2098,8 +2099,8 @@ Purpose:
 Recommended order:
 
 1. Inventory what should be indexed.
-2. Start with Supabase/pgvector or local prototype.
-3. Add Qdrant/Pinecone/Weaviate only after retrieval pain is proven.
+2. Start with the no-cost local retrieval helper.
+3. Reconsider Supabase pgvector, Qdrant, Pinecone, or Weaviate only after retrieval pain is proven and Josue explicitly accepts the embedding generator, credential, billing, source-scope, and write-boundary model.
 
 Success criteria:
 
@@ -2350,7 +2351,7 @@ Likely early costs:
 - Neo4j AuraDB Free or local Memgraph Community: likely no initial cost.
 - Neo4j AuraDB Professional: likely future candidate if graph becomes daily infrastructure.
 - MotherDuck or BigQuery: likely small early analytics cost, but depends on volume and query pattern.
-- Pinecone/Qdrant/Weaviate: defer unless Supabase/pgvector is insufficient.
+- Supabase pgvector/Pinecone/Qdrant/Weaviate: defer unless the local retrieval baseline is insufficient and the cost/credential model is explicitly accepted.
 - Redis: defer unless runtime/session needs appear.
 - Local visual models: may be free in licensing but can require GPU/storage/time costs.
 - Cloud multimodal models: defer unless local visual AI is too weak or too slow.
@@ -2367,7 +2368,7 @@ Prefer free/local first, but do not let free tools create a worse long-term syst
 - Supabase remains truth for live structured operational state.
 - Markdown remains truth for durable strategy, governance, human-readable packets, and agent protocols.
 - Graph database starts as a derived relationship layer.
-- Vector database starts as a derived retrieval layer.
+- Vector/retrieval systems start as derived retrieval layers; paid/API-key-dependent embedding is not approved by default.
 - Analytics warehouse starts as a derived performance history layer.
 - Redis/cache is never durable truth.
 
@@ -2486,7 +2487,7 @@ Each review should check:
 | Analytics misinterpretation | Small data can create false confidence | Pair metrics with context and avoid overcommitting |
 | Credential sprawl | Secrets can leak or become unmanageable | Centralize credentials in approved local/OAuth/App paths |
 | Graph over-modeling | Too much ontology work can slow progress | Start with one packet and 10 questions |
-| Vector over-reliance | Similar text is not the same as true relationship | Use vector retrieval plus graph/provenance checks |
+| Retrieval over-reliance | Similar text is not the same as true relationship | Use retrieval plus graph/provenance checks |
 | Agent write risk | Multi-database agents could change live state unsafely | Read-first posture and approval-gated writes |
 | Visual AI false positives | Models may misidentify species, events, or evidence | Treat outputs as candidate annotations; require Research/Content review |
 | Local model operations burden | Local VLMs can require GPU, storage, dependency maintenance, and batch tooling | Pilot with a small media set before committing |

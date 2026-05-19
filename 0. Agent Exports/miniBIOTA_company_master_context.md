@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Master Context
 
-- Generated: 2026-05-18 17:53:04 -04:00
+- Generated: 2026-05-19 08:24:44 -04:00
 - Source contract: Company `domains/` reports are included below.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 - Format: portable Markdown with Obsidian wiki-links normalized or removed.
@@ -24,7 +24,7 @@
 ## Current State
 - miniBIOTA has already been tested as a fully closed working concept in Q1 2026.
 - Operation Living Atlas is active as the coordinated backfill program for published content, species histories, chronicles, observations, media, and ecological relationships.
-- Operation Living Intelligence has been consolidated into the Intelligent Harness implementation path: Supabase source map, Memgraph projection, Cypher query harness, pgvector/current retrieval, LangGraph-style workflow, review-gated answer system, operator dashboard, and later upgrade adapters as needed.
+- Operation Living Intelligence has been consolidated into the Intelligent Harness implementation path: Supabase source map, Memgraph projection, Cypher query harness, current local retrieval baseline, LangGraph-style workflow, review-gated answer system, operator dashboard, and later upgrade adapters as needed. Paid/API-key-dependent pgvector embedding is not approved after cost/credential review.
 - Q2 2026 now has one approved strategic focus: execute a great Aquatic Club of
   Pasco County talk on 2026-06-13 and make the supporting assets, data, proof,
   web/social presence, and follow-up paths strong enough that the talk becomes
@@ -135,6 +135,7 @@
 - `Aquatic Club Talk Readiness` is the near-term cross-domain readiness program. It coordinates Company, Content, Brand, Research/Ecosystem, Hardware, Web, Growth/Sales, App, and Financials work around the 2026-06-13 talk.
 - `Operation Living Intelligence` is the approved Company planning program for miniBIOTA's long-term agent data stack: Markdown/Supabase continuity, graph intelligence, vector retrieval, analytics warehousing, visual AI/local model workflows, cache/runtime memory, automation, and cross-domain agent routing.
 - Operation Living Intelligence is now consolidated into the Intelligent Harness path. As of 2026-05-18, the local-to-canonical observation workflow is proven through approved Supabase observation `253`; the active daily operator path is current observation-to-story, while Lake Post-Seal remains a regression/test fixture.
+- Operation Living Intelligence now has a first simple Company-local vector retrieval helper under ignored `out/operation_living_intelligence/local_vector_layer/`. It indexes approved active Company Markdown with deterministic local vectors for cited source discovery only. Josue enabled and confirmed the Supabase `vector` extension on 2026-05-19, but rejected the OpenAI/API-key-dependent pgvector pilot after cost/credential review. No paid embedding path, public search, scheduled refresh, App runtime integration, Memgraph changes, or canonical writeback is approved.
 - Operation Living Intelligence Phase 13 now needs read-only canonical species lookup before treating species hints as missing. Creeping Beggarweed is canonical species `97` / `Desmodium incanum`; canonical species outside a bounded graph should become ID-confirmation questions, not missing-species questions.
 - Detailed OLI implementation history belongs in retained source docs, the active reference map, the projection matrix, cleanup inventory, and App/Content owned artifacts, not in this manager-facing brief.
 
@@ -154,6 +155,7 @@
 ## Recent Milestones
 
 - **2026-05-18:** Operation Living Intelligence Intelligent Harness proved the local-to-canonical observation workflow end to end. The working chain now runs from raw Content observation intake to Content audit JSON/Markdown, App bridge, Phase 13 auto-link suggestions, Intelligence tab latest-suggestion display, Phase 19 local pipeline, and Phase 20 approved observation writeback. The proof wrote Supabase observation `253` for Gulf marsh crab excavation with species `174` and biome `5`. No story links, open loop links, story beats, chronicles, Planner tasks, media metadata, public output, or content pipeline records were bundled.
+- **2026-05-19:** Company added the first lightweight local vector retrieval helper for Operation Living Intelligence. The helper builds an ignored local file index from active Company Markdown and provides a cited query helper. Josue also enabled and confirmed the Supabase `vector` extension, then rejected the OpenAI/API-key-dependent pgvector pilot after cost/credential review. The OpenAI pgvector schema/seed/query helpers were removed; the no-cost local deterministic vector helper remains active.
 - **2026-05-18:** Company created the OLI active reference map and began physical cleanup of safe leaf documentation in `domains/company`. The cleanup policy is to preserve active control docs, active observation workflow references, compact closeouts, deferred-lane references, and source-of-truth boundaries while removing redundant generated/proposal residue already summarized elsewhere.
 - **2026-05-17:** Operation Living Intelligence moved into the Intelligent Harness spine. Phase 1-7 built the local no-write Lake Post-Seal harness path; later phases moved toward Intelligence tab display, observation suggestions, local pipeline execution, approval-gated writeback, and Content agent follow-up.
 - **2026-05-16:** Company consolidated OLI Waves 1-9 into a next-phase map and deferred return map. Wave 5 retrieval and Wave 6 media/visual AI had useful local baselines; broader analytics, telemetry, sensitive-domain, persistent graph, pgvector, public output, and automation work remained deferred.
@@ -481,6 +483,7 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
 ## Current State
 - `miniBIOTA_Research` is the active Research Agent workspace at `M:\miniBIOTA\miniBIOTA_Research\`.
 - Supabase remains the source of truth for structured species, observations, story threads, open loops, chronicles, and related ecological records.
+- Supabase now includes the live ecological events layer. Migration `016_ecological_events_schema.sql` and the first two Lake Post-Seal / Seagrass Meadow seed packets were applied on 2026-05-18; the layer contains 22 approved internal events with 90 source links, 36 species links, 22 biome links, 33 story-thread links, and 43 open-loop links. App now has an internal read-only Ecology Events browser for QA; public/runtime access remains gated pending a separate RLS pass.
 - The source repo now uses repo-local memory and skills as active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Research `docs/` mirror or copied ecological reference docs; use the source repo's memory/skills/reference structure for detailed Research context.
 - App Planner/Supabase is the live Research/Ecosystem work queue under `work_domains.key = ecosystem` / `domain_id = 3`, with current project records `43` through `48`.
@@ -500,6 +503,7 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
 - Resolve identification gaps and unresolved ecological questions, including water beetles, amber snail species, terrestrial isopod, aquatic amphipods, apple snail confirmation, ghost shrimp juvenile recruitment, and macroalgae/sea urchin trajectory.
 - Preserve the distinction between internal story threads and public open loops when ecological developments become content opportunities.
 - Preserve the distinction between research briefs and finished content assets.
+- Use the ecological events layer as the next dated evidence bridge between observations, species/biome state, chronicles, story threads, and public open loops.
 
 ## Risks / Gaps
 - Ecology docs can drift quickly because live observations and Supabase records are updated often.
@@ -508,6 +512,7 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
 - Several species identifications remain unresolved or pending.
 - Current measurement gaps remain: CO2, O2, methane, salinity drift, pH, and dissolved oxygen are not yet measured.
 - Macroalgae dominance, Mesostoma predation, ostracod population decline, ghost shrimp juvenile recruitment, and sea urchin establishment remain active ecological uncertainties.
+- Ecological events have internal App read access but no public/runtime RLS policy yet; public display, write workflows, and graph projection remain separate approvals.
 
 ## Files In This Folder
 - `research_brief.md` - active Company manager-facing report brief for Research.
@@ -546,6 +551,7 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
   Living Web/Atlas support projects `58` and `60`, and Aquatic Club claim
   review project `66`.
 - Planner tracks work only. Supabase structured records remain ecological truth, and Markdown remains the evidence, uncertainty, interpretation, and handoff context layer.
+- Ecological events are now a live structured evidence layer in Supabase. Migration `016_ecological_events_schema.sql` and the first two Lake Post-Seal / Seagrass Meadow seed packets were applied on 2026-05-18; packet 03, the Seed Shrimp link cleanup, packet 03 status correction, and Lowland Meadow packet 04 were applied on 2026-05-19. Research read-only checks verified 33 approved internal events with 131 source links, 52 species links, 33 biome links, 51 story-thread links, and 49 open-loop links. App now has an internal read-only Ecology Events browser for QA through the main-process secret-key bridge; public/runtime RLS access remains gated.
 - As of the migrated overview dated 2026-04-30: 170 species records, 239 observations, and 29 active story threads are documented. Verify live Supabase before treating those numbers as current.
 
 ## Active Priorities
@@ -560,6 +566,11 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
 
 ## Recent Milestones
 
+- **2026-05-18:** Ecological events schema and first two internal seed packets applied in Supabase. The new layer now holds 22 approved internal ecological events spanning the Lake Post-Seal and Seagrass Meadow pilots, with 90 source links, 36 species links, 22 biome links, 33 story-thread links, and 43 open-loop links. Open loops were only advanced/contextualized, not resolved; no public/runtime RLS policies were added.
+- **2026-05-19:** Research prepared an ecological-events coverage map to compare the two dated event pilots against the 22 live event rows. The map identifies packet 03 candidates, including the Daphnia magna diagnostic trial, Freshwater Lake surface-biofilm niche shift, and earlier Mottled Shore Crab grazing precursor, while preserving public-claim and open-loop boundaries.
+- **2026-05-19:** App QA found no blockers in the internal Ecology Events browser. Research revised packet 03 down to two stronger draft event candidates, deferred the surface-biofilm event, and prepared a separate review-only Seed Shrimp link-cleanup packet for the existing April 8 Daphnia introduction event. No live Supabase changes were made by this follow-up.
+- **2026-05-19:** Josue applied revised ecological-events packet 03, the Seed Shrimp link-cleanup packet, and the packet 03 status-correction packet. Research read-only checks verified 24 live ecological events, 99 source links, 41 species links, 24 biome links, 35 story-thread links, and 46 open-loop links. All live event `review_status` values are now `approved_for_internal_use`.
+- **2026-05-19:** Josue applied ecological-events packet 04 for the Lowland Meadow. Research read-only checks verified 33 live ecological events, 131 source links, 52 species links, 33 biome links, 51 story-thread links, and 49 open-loop links. App QA found no blockers; all live event `review_status` values remain `approved_for_internal_use`, and open loops were only advanced/contextualized, not resolved. Josue also applied a narrow species cleanup for species `27`, normalizing the display label to `Smoky Oak Millipede` while leaving the slug and alternate names unchanged.
 - **2026-05-18:** Operation Living Intelligence Wave 2/6 Research provenance was archived under `archive/superseded/operation-living-intelligence/`. The archived records preserve claim-safety, source-availability, unresolved-loop, and visual-annotation boundary history only; active Research review still owns organism wording, ecological uncertainty, public claim discipline, and any observation/open-loop interpretation before publication or canonical writeback.
 - **2026-05-12:** Company applied approved Research/Ecosystem Planner cleanup:
   Aquatic Club claim-review project `66` is active, task `221` now belongs
@@ -590,6 +601,7 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
 - Several species identifications remain unresolved or pending.
 - Current measurement gaps remain: CO2, O2, methane, salinity drift, pH, and dissolved oxygen are not yet measured.
 - Macroalgae dominance, Mesostoma predation, ostracod population decline, ghost shrimp juvenile recruitment, and sea urchin establishment remain active ecological uncertainties.
+- Ecological events are now seeded and visible in the internal App browser, but public/runtime RLS policies, public display, Memgraph projection, event editing, and future event batches remain separate approvals.
 
 ## Cross-Domain Notes
 
@@ -598,6 +610,7 @@ Brain no longer keeps a Financials `docs/` mirror after the memory/skills migrat
 - **Website/App:** Biome profile display should use the canonical biome profile data model in `skills/species-research/reference/biome-profile-data-model.md`, with Supabase as structured source of truth and Markdown as the interpretation/uncertainty layer.
 - **Hardware:** Sensor priorities should follow ecological measurement gaps and instability tracking.
 - **App:** Data-entry and operator workflows must preserve species, observation, thread, loop, and chronicle link integrity. App also owns the Planner runtime used as Research/Ecosystem's live work queue.
+- **App:** Internal ecological-event browsing is now live and should be used to QA broader event backfill before public RLS policies, website display, event editing, or Memgraph projection.
 - **Brand:** Public scientific claims should be grounded in observed or clearly qualified inferred research.
 - **Growth:** Campaign, sponsorship, course, and Kickstarter claims must reflect documented ecological feasibility and outcomes.
 - **Financials:** Research priorities can create field collection, instrumentation, testing, and equipment costs.
@@ -941,6 +954,7 @@ Brain no longer keeps a Content `docs/` mirror. Do not use archived/superseded C
   chronicles, publish closeout, and active project docs.
 
 ## Recent Milestones
+- **2026-05-19:** Content observation and relationship cleanup workflow stabilized around Supabase-first canonical writes and App-owned Memgraph as a derived relationship map. Normal observations now use approved `public.observations` insert/readback, post-write graph refresh, and recommendation-first follow-up. Cleanup passes are layered and approval-based: species-to-biome membership, high-confidence ecosystem interactions, story beat/evidence coverage, full Supabase-to-Memgraph projection, and read-only graph verification. This session connected recent May observations plus historical gaps through canonical `species_to_biomes`, `ecosystem_interactions`, and story beat/evidence rows without changing Planner, chronicles, media metadata, public output, content pipeline records, or open loop statuses.
 - **2026-05-18:** Operation Living Intelligence observation workflow became
   operational through the Content Agent conversational layer. Phase 21 now lets
   Content read Phase 19 / Phase 13 Intelligent Harness outputs, summarize
@@ -2021,9 +2035,11 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 
 ## Current State
 - Operation Living Intelligence Phase 18 now has an App-owned bridge path from Content observation-intake audit JSON into manual Phase 13 suggestion input. `tools/bridge-oli-content-audit-to-phase13-input.js` accepts Phase 15 legacy parser drafts and Phase 17 raw observation intake drafts, derives collision-safe local input names, rejects canonical IDs/approval fields, and keeps writeback/public/canonical/database actions blocked. The latest manual Phase 13 run from the bridged Phase 17 input is `20260518_123237_grasshopper_legume_vine_followup`, with `8` suggestion-only records and `latest_suggestion_run.json` updated for the Intelligence tab. Raw Phase 17 provenance is preserved in the bridged input; Phase 13 normalized output keeps only the local input path.
+- Operation Living Intelligence now has an approved App-owned full Supabase-to-Memgraph projection v1. The helpers read approved canonical Supabase rows with GET/HEAD only, generate ignored local JSONL/Cypher/status files, and rebuild only the `OLIFullProjectionNode` namespace in the existing local Memgraph container. The latest readback passed with `1219` nodes, `3318` relationships, and observations `253`, `254`, `255`, and `256` present exactly once; observation `256` connects to species `162`, biome `3`, story thread `8`, open loop `10`, related story beats `14` and `18`, published pipeline `31`, and chronicle `59` through canonical source rows. Ecosystem interaction/resource rows are deferred from v1 and absent from the current projection. Memgraph remains derived/local/noncanonical and does not approve story links, open loops, beats, chronicles, media metadata, Planner work, public output, or writeback.
 - CRM relationship-system migration 013 is live after user-applied Supabase SQL on 2026-05-12. It added 33 additive tables beside the legacy CRM tables, with read-only verification showing all new tables empty and legacy counts unchanged. The CRM tab now includes a read-only Relationship view for schema/table counts and review queues through the internal main-process secret-key bridge. Migration 014 is live as of 2026-05-13, adding flexible labeled `crm_contact_links` rows for legacy CRM contact websites/social/reference links.
+- Ecology Events is now a top-level internal read-only tab. It browses the live ecological-events tables through the Electron main-process secret-key REST bridge and verified the first seeded dataset: 12 events, 49 source links, 20 species links, 12 biome links, 17 story-thread links, and 27 open-loop links.
 - `miniBIOTA_App` is the active desktop operator surface for miniBIOTA.
-- Active tabs are Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, and Monitoring.
+- Active tabs are Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, Ecology Events, and Monitoring.
 - Planner project-manager schema foundation is live after migration 007, and
   former top-level Weekly Checklist and Tasks behavior has been consolidated
   into Planner replacement surfaces.
@@ -2062,10 +2078,12 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - The app source repo now uses repo-local memory and skills as active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`. `memory/11-app-quality-system.md` and `planning/app_quality_system_roadmap.md` capture the completed initial App quality-system rollout inspired by miniBIOTA_Web, and `planning/mobile_field_observer_quality_system_project.md` captures the planned mobile Field Observer quality-system follow-up.
 - Operation Living Intelligence archived Wave 1-9 App provenance now lives under `archive/superseded/operation-living-intelligence/`. Those files record local graph/readback, retrieval, visual-AI/media, routing, telemetry, and sensitive-data proof work, but they are not active App operating instructions.
 - For current OLI work, App should use the Intelligent Harness path instead: Content audit-to-Phase 13 bridge, Phase 13 suggestion runner, latest suggestion display, Phase 19 local pipeline support, and explicit Phase 20 approval-gated writeback. Older Wave helpers remain local, ignored-output provenance unless a current Company/App session explicitly reactivates a deferred lane.
-- App OLI boundaries remain unchanged: no App runtime behavior, schema, Planner/Supabase records, Media Library metadata, public output, model/media runs, generated annotations, persistent graph runtime, pgvector, automation, or canonical writeback without separate explicit approval.- Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
+- App OLI boundaries remain unchanged: no App runtime behavior, schema, Planner/Supabase records, Media Library metadata, public output, model/media runs, generated annotations, persistent graph runtime, pgvector, automation, or canonical writeback without separate explicit approval.
+- Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
 
 ## Key Facts
 - CRM relationship-system tables from migration 013 are live, RLS-enabled, and policy-free; first runtime access must use the internal main-process secret-key bridge. No legacy CRM records have been backfilled into the new tables. Legacy CRM Contacts now support multiple labeled links through `crm_contact_links` rather than one column per social platform.
+- Ecological events tables from migration 016 are live and internally browsable in App through the main-process secret-key bridge. Public/runtime RLS policies, public website display, event editing, Memgraph projection, and additional event seed batches remain separately scoped.
 - The app uses Supabase publishable keys in renderer/browser-facing config and secret keys only in Electron main-process services or local admin tooling. Internal renderer REST helpers route through an Electron IPC bridge when secret-key access is needed, without exposing the secret key to browser code.
 - Public website surfaces should remain read-only observability; operator/admin workflows belong in the desktop app.
 - App owns CRM as software/runtime/schema/UI implementation. Growth owns CRM
@@ -2085,7 +2103,10 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   App sessions should read Planner projects/tasks when choosing work, and ask
   before marking completed Planner tasks done at closeout.
 - Operation Living Intelligence archived Wave 1-9 outputs are derived-only, local, rebuildable provenance. The current App-facing path is the Intelligent Harness observation workflow, not the older wave exploration stack.
-- Deferred OLI lanes remain blocked by default: persistent graph service, scheduled sync, embeddings/pgvector, media/visual-AI runs, telemetry helpers, sensitive CRM/Financials reads, public output, App runtime integration, and canonical writeback all require separate approval and owner scope.- Planner task UI has initial migration 007 support for live domains, project
+- Operation Living Intelligence full projection helpers use `OLIFullProjectionNode` and must delete only that label namespace during rebuild. The older Lake Post-Seal seed graph label `OLIIHPhase1Node` is protected and must not be deleted by full projection runs.
+- Content may use the full Memgraph projection for derived relationship/context questions after approved observation writes, but Supabase remains the source of truth and graph paths are not approval for new canonical links or public output.
+- Deferred OLI lanes remain blocked by default: persistent graph service, scheduled sync, embeddings/pgvector, media/visual-AI runs, telemetry helpers, sensitive CRM/Financials reads, public output, App runtime integration, and canonical writeback all require separate approval and owner scope.
+- Planner task UI has initial migration 007 support for live domains, project
   assignment, workflow status, blocked reason, completion timestamp, and
   multi-day task spans.
 - Planner task UI supports parent-child task hierarchy through
@@ -2136,6 +2157,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 
 ## Risks / Gaps
 - CRM migration 013 created live RLS-protected tables with no policies. Any publishable-key policy design, legacy backfill, or CRM write workflow must be separately approved and tested. Migration 014's `crm_contact_links` table is live for legacy contact links; creating/editing those links remains a live CRM record write.
+- Ecological events are visible internally but remain RLS-gated for public/runtime reads. The browser is read-only; any event write/edit workflow or public access policy must be separately approved.
 - Supabase secret-key access would be a major security risk if exposed outside the internal app.
 - Real admin image upload to Supabase Storage still needs careful live verification when that work resumes.
 - Packaged build behavior with Sharp/native dependencies should be verified before relying on distributable builds.
@@ -2146,6 +2168,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
   Program UI create/edit/link behavior still needs interactive smoke
   verification before daily reliance.
 - Prompt Library schema is live after migration 012, but create/edit/copy/archive flows still need interactive app smoke verification before daily reliance.
+- OLI full Memgraph projection is useful for Content follow-up context, but it remains a local helper rather than a persistent service or App runtime feature. Scheduled sync, ecosystem-interaction projection, media/storage projection, Planner/task projection, pgvector, public output, and canonical writeback all remain separately blocked.
 
 ## Files In This Folder
 - `app_brief.md` - active Company manager-facing report brief for App.
@@ -2173,11 +2196,12 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 
 - `miniBIOTA_App` is the internal Electron desktop app for miniBIOTA operations.
 - The app is an operator surface, not a public product. It uses Supabase publishable keys in renderer/browser-facing config and secret keys only in Electron main-process services or local admin tooling. Internal renderer REST helpers route through an Electron IPC bridge when secret-key access is needed, without exposing the secret key to browser code.
-- Active tabs: Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, and Monitoring. Former top-level Weekly Checklist and Tasks behavior has been consolidated into Planner.
+- Active tabs: Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, Ecology Events, and Monitoring. Former top-level Weekly Checklist and Tasks behavior has been consolidated into Planner.
 - App owns CRM as software/runtime/schema/UI implementation. Growth owns CRM
   relationship meaning, lifecycle strategy, follow-up rules, opportunity
   context, and commercial commitment discipline.
 - CRM relationship-system migration 013 is live after user-applied Supabase SQL on 2026-05-12. It added 33 additive tables beside `crm_contacts`, `crm_activities`, and `partner_opportunities`; App read-only verification confirmed all 33 new tables exist, all are empty, and legacy counts remain `crm_contacts = 0`, `crm_activities = 0`, `partner_opportunities = 5`. The first read-only CRM Relationship view now summarizes those table counts and review queues through the internal main-process secret-key bridge. Migration 014 is also live as of 2026-05-13, adding flexible labeled contact links to legacy CRM contacts through `crm_contact_links`.
+- Ecology Events is now a top-level internal read-only App tab. It uses the Electron main-process secret-key REST bridge to browse the live `ecological_events` layer and its source/species/biome/story-thread/open-loop links without adding RLS policies or public reads.
 - Monitoring tab is live for direct MQTT telemetry from the local biome network when on `mB2.4`; it now displays internal-only heat-exchanger/liquid temperature (`liq_t`) and pump run percentage (`pump_pct`) for sensor biomes 2-5 without adding those fields to Web/public telemetry.
 - Site Admin includes species, biosphere, biome, chronicle, announcement, and staging workflows.
 - Media Library/tagging and backend WebP image upload pipeline are implemented in the app.
@@ -2203,6 +2227,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - `miniBIOTA_App` now has repo-local memory and skills as its active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
 - Operation Living Intelligence archived Wave 1-9 App provenance now lives under `archive/superseded/operation-living-intelligence/`. Those files record local graph/readback, retrieval, visual-AI/media, routing, telemetry, and sensitive-data proof work, but they are not active App operating instructions. The current App-facing path is the Intelligent Harness observation workflow, including the Phase 13 suggestion runner, Content intake bridge, and latest-suggestion display.
+- Operation Living Intelligence now has an approved App-owned full Supabase-to-Memgraph projection v1 for local derived relationship context. The helper reads canonical Supabase content/story/observation/ecology-identity/calendar/pipeline/chronicle rows with GET/HEAD only, rebuilds only the `OLIFullProjectionNode` namespace in the existing local Memgraph container, preserves the older `OLIIHPhase1Node` seed graph, and writes compact status to App ignored `out/`. The latest run passed with `1219` nodes, `3318` relationships, and observation `256` connected through canonical rows to species `162`, biome `3`, story thread `8`, open loop `10`, related story beats `14` and `18`, published pipeline `31`, and chronicle `59`. Ecosystem interaction/resource rows are deferred from v1 and absent from the current projection. Memgraph remains derived/noncanonical and must not approve story links, open loops, beats, chronicles, media metadata, Planner tasks, public output, or canonical writeback.
 
 ## Active Priorities
 
@@ -2220,7 +2245,9 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 
 ## Recent Milestones
 
+- **2026-05-18:** App added the internal read-only Ecology Events browser after Research/App migration 016 and the first 12-event seed packet went live. Runtime verification through `window.electronAPI.supabaseRest` loaded 12 events, 49 sources, 20 species links, 12 biome links, 17 thread links, and 27 loop links. No RLS policies, schema changes, seed data, database writes, Storage, telemetry, MQTT, public reads, or runtime controls changed.
 - **2026-05-18:** App completed the approved Operation Living Intelligence Phase 18 Content audit to Phase 13 bridge update. `tools/bridge-oli-content-audit-to-phase13-input.js` now accepts both the Phase 15 legacy Content parser contract and the Phase 17 raw observation intake contract, with Phase 17 as the normal path. The bridge created the local App input `fixtures/operation_living_intelligence/intelligent_harness/phase_13_observation_input_runner/lake_post_seal/inputs/2026-05-16_grasshopper_legume_vine_followup_03.json` plus readbacks, preserving Phase 17 provenance and keeping writeback/public/canonical/database actions blocked. App then manually ran Phase 13 against that bridged input. Run `20260518_123237_grasshopper_legume_vine_followup` produced `8` suggestion-only records and updated `out/operation_living_intelligence/intelligent_harness/phase_13_observation_input_runner/lake_post_seal/latest_suggestion_run.json`. Phase 13 output remained local/suggestion-only: no Supabase or Planner writes, Memgraph changes, pgvector, public output, media metadata write, approve/reject/correct action, or canonical writeback. Raw Phase 17 metadata remains preserved in the bridged input path; Phase 13 normalized suggestion output does not copy that raw provenance forward.
+- **2026-05-18:** App implemented and ran the approved full Supabase-to-Memgraph projection v1. New helpers `tools/generate-oli-full-supabase-projection-jsonl.js`, `tools/generate-oli-full-supabase-projection-cypher.js`, and `tools/rebuild-oli-full-supabase-memgraph-projection.js` read approved Supabase tables with GET/HEAD only, generate local ignored JSONL/Cypher/status artifacts, and rebuild only `OLIFullProjectionNode` in the existing local Memgraph container. A cleanup pass corrected stale ecosystem projection drift, reran the projection, and readback passed with `1219` nodes and `3318` relationships imported, protected `OLIIHPhase1Node` count unchanged, observations `253`, `254`, `255`, and `256` present exactly once, zero ecosystem interaction/resource rows, zero writeback exceptions, zero public/canonical approval flags, and zero suggestion-as-approved relationships. The graph is available for derived Content follow-up context only; it did not write Supabase, Planner, schema, media metadata, public output, pgvector, or canonical records.
 - **2026-05-15:** App completed the read-only Electron smoke for App
   Planner task `176`, `Verify Media Library search/filter/thumbnail behavior
   in read-only app smoke`, then marked the task done after explicit approval
@@ -2617,6 +2644,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 ## Known Risks & Blockers
 
 - CRM relationship-system tables are live with RLS enabled and no policies. Runtime access must stay on the internal main-process secret-key bridge unless a separate RLS policy pass is approved; backfill from legacy CRM rows remains a separate reviewed migration/write task. Legacy CRM contact links now use `crm_contact_links` after migration 014; additional link writes remain live CRM data changes.
+- Ecological events tables are live with internal App read access only through the main-process secret-key bridge. Public/runtime RLS policy design, public display, Memgraph projection, event editing, and additional seed batches remain separate approvals.
 - The app has Supabase secret-key access in main-process/local tooling; accidental public or renderer exposure would be a security risk.
 - Real admin image upload to Supabase Storage still needs careful live verification with approval if not already completed.
 - Packaged build behavior with Sharp/native dependencies should be verified before relying on distributable `.exe` builds.
@@ -2630,6 +2658,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - Prompt Library schema is live after migration 012, but create/edit/copy/archive flows still need interactive app smoke verification before daily reliance.
 - Operation Living Intelligence Wave 1-9 outputs are archived provenance only. They preserve local graph/readback, retrieval, visual-AI/media, Planner-routing, telemetry, and sensitive-domain proof history, but the active App-facing path is now the Intelligent Harness observation workflow.
 - Intelligent Harness outputs remain local/suggestion-only unless separately approved. Supabase/Planner writes, Memgraph or pgvector changes, Media Library metadata writes, public output, approve/reject/correct actions, App runtime behavior changes, and canonical writeback remain blocked by default.
+- The new full OLI Memgraph projection is a derived local readback layer, not canonical truth. It may support Content relationship/context questions after approved observation writes, but Content must continue to rely on canonical Supabase rows for source truth and must not treat graph paths as approval for story links, open loop links, beats, chronicles, media metadata, Planner work, public output, or writeback.
 ## Cross-Domain Notes
 
 - **Website:** Public website should remain read-only observability. Operator/admin workflows belong in the desktop app.
@@ -2652,7 +2681,7 @@ Brain keeps the original `10. Definitions` copy as transition/history until arch
 - **Growth:** Growth owns CRM as a commercial relationship system; App owns the CRM operator surface, Supabase-backed workflow implementation, validation, and runtime behavior when CRM features are scoped. Migration 013 is live as the additive relationship-system foundation, but relationship records, backfills, outreach, approvals, and commitments still require separately scoped Growth/App approval.
 - **Financials:** Financials tab reads `revenue_streams`, `operating_expenses`, `liabilities`, and `planned_purchases`.
 - **Hardware:** Monitoring tab reads live biome MQTT data. Internal App/operator display includes `liq_t` heat-exchanger/liquid temperature and `pump_pct` pump run percentage for sensor biomes 2-5; those fields should remain out of Web/public telemetry unless separately scoped. Monitoring may later integrate Supabase telemetry snapshot fallback and setpoint controls.
-- **Ecosystem/Data:** Species and chronicle admin changes in the app affect public ecology records. Field Observer sighting counts/details should remain history datapoints; curated species population fields remain manually maintained.
+- **Ecosystem/Data:** Species and chronicle admin changes in the app affect public ecology records. Field Observer sighting counts/details should remain history datapoints; curated species population fields remain manually maintained. Ecology Events is now the internal QA/browser surface for the dated ecological-event layer before broader backfill, public access, or graph projection.
 
 ## Domain Reference
 

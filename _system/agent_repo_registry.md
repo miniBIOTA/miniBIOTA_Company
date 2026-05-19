@@ -14,6 +14,8 @@ It is not live schema truth. Use Supabase MCP or approved read paths for current
 
 This registry does not authorize live writes by itself. Raw SQL, migrations, destructive writes, deletes, schema changes, service-role actions, live-control paths, and Planner writes outside current-session approval or explicitly granted standing domain project-manager delegation require explicit user approval.
 
+Operation Living Intelligence derived layers are routed here only at the ownership/boundary level. Memgraph relationship projections and Company local vector retrieval are noncanonical helper layers for relationship context and semantic source discovery. Supabase `vector` is available, but OpenAI/API-key-dependent pgvector embedding is not approved after cost/credential review. These layers do not replace Markdown, Supabase, domain source docs, or approved source records.
+
 ## Active Agent Repos
 
 | Repo | Local path | GitHub repo | Domain role | Primary entry point | Memory path | Skills path | Current reporting path | Company reporting candidate path | Risk |
@@ -41,6 +43,13 @@ This registry does not authorize live writes by itself. Raw SQL, migrations, des
 | Tool | Local path | Active owner | Current status | Allowed use during Phase 11 | Not allowed without approval |
 |---|---|---|---|---|---|
 | YouTube Extraction | `M:\miniBIOTA\YouTube_Extraction` | None active; Content only if reactivated | Retired historical extraction/backfill tooling; `main.py` is fail-closed and the embedded OpenAI key was removed | Historical transcript/extraction source review only | Running extraction/import, hardcoded secrets, Brain helper imports, live `content_pipeline` writes, Supabase writes, App/runtime changes, public behavior changes |
+
+## Operation Living Intelligence Derived Layers
+
+| Layer | Active owner | Current status | Allowed use | Not allowed without approval |
+|---|---|---|---|---|
+| Memgraph relationship projection | App implementation; Company governance/routing; domain owners for source meaning | Local/noncanonical derived relationship layer. Current App-owned helpers can rebuild approved projections into local Memgraph namespaces when explicitly scoped. | Read derived relationship/provenance context, ask graph questions, compare graph paths against canonical Supabase/Markdown/domain sources. | Projection/import/rebuild/refresh, persistent service, scheduled sync, public output, canonical relationship approval, Planner/writeback, media metadata changes, or treating graph edges as source truth. |
+| Local vector retrieval / Supabase pgvector | Company local helper now; App implementation for future shared/runtime system; domain owners for indexed source scope | First simple Company-local semantic retrieval helper exists under ignored `out/operation_living_intelligence/local_vector_layer/`. Supabase `vector` extension was enabled and confirmed on 2026-05-19, but OpenAI/API-key-dependent pgvector embedding was rejected after cost/credential review. No pgvector schema, embedding rows, scheduled refresh, App runtime integration, Memgraph change, public search, or canonical writeback is approved. | Semantic source discovery from approved active Company Markdown chunks using the no-cost local helper, with citations and metadata filters, after source verification against canonical owners. | API-key-dependent embedding jobs, expanded corpus indexing, sensitive-domain/source indexing, public search, scheduled refresh, App runtime integration, Memgraph coupling, broad vector index/table creation, canonical writeback, or treating similarity hits as source truth. |
 
 ## Supabase Responsibility Map
 
@@ -79,6 +88,7 @@ If a repo lacks one of these commands, treat that as a coordination bug and upda
 - Use domain repos for domain implementation truth, domain memory, domain skills, code, and domain-owned structured records.
 - Use Brain only for transition guardrails still explicitly in scope, historical lookup, archive/recovery context, and the Brain retirement plan.
 - Use Supabase/App Planner for current structured project/task/record state when it matters.
+- Use Memgraph/vector only as Operation Living Intelligence derived context when relationship traversal or semantic recall matters; verify consequential claims against canonical sources.
 - Treat `YouTube_Extraction` as retired historical tooling. If the user later reactivates YouTube transcript-to-`content_pipeline` import work, use a Content-owned helper/workflow implementation; Company may coordinate ownership and sequencing, but does not own Content pipeline writes.
 - Use Company exports under `0. Agent Exports/` for broad Company cold starts and cross-domain operating context; Brain exports are historical/archive artifacts.
 - Do not write live records without explicit approval, except ordinary own-domain Planner project/task writes after Josue explicitly grants standing domain project-manager delegation.

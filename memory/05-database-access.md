@@ -10,6 +10,7 @@ Company owns Planner strategy, Programs/Operations governance, roadmap cadence, 
 - Default mode: Read-only.
 - MCP/read-only awareness is preferred for current schema, table, relationship, log, advisor, and broad database context. Use Company `_system/agent_repo_registry.md` for ownership/risk routing and `_system/database_awareness.md` for Phase 5 transition rules.
 - Preferred path: MCP/read-only awareness first. Use MCP/read-only awareness and Company/domain-owned helpers; Brain helper functions are retired from normal workflows.
+- Operation Living Intelligence derived layers may be used for read context when relevant: Memgraph for relationship/provenance traversal and the Company local vector layer for semantic source discovery. Supabase `vector` is available, but OpenAI/API-key-dependent pgvector embedding is not approved after cost/credential review. Broader pgvector tables, vector indexes, refresh jobs, shared/runtime vector infrastructure, public search, App integration, Memgraph coupling, and canonical writeback remain separately approval-gated.
 - Secrets: Local environment variables or ignored local config only.
 
 ## Table Responsibilities
@@ -24,6 +25,8 @@ Company owns Planner strategy, Programs/Operations governance, roadmap cadence, 
 ## Approval Boundary
 
 Explicit user approval is required for raw SQL, migrations, destructive writes, schema changes, service-role actions, Planner project/task writes outside current-session approval or standing domain project-manager delegation, or any write outside scoped helper functions.
+
+Explicit user approval is also required for Memgraph projection/import/rebuild/refresh, vector/pgvector index changes, embedding jobs, generated retrieval outputs, scheduled refresh jobs, or derived Operation Living Intelligence writeback unless the exact action is already covered by a scoped approved helper/closeout rule. OpenAI/API-key-dependent pgvector embedding is not approved and does not authorize sensitive sources, public search, scheduled refresh, App runtime integration, Memgraph changes, or canonical writeback.
 
 ## Planner Task Records
 

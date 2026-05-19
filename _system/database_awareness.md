@@ -2,12 +2,21 @@
 
 Supabase MCP/read-only awareness is the preferred Company database-awareness layer for broad schema, table, relationship, log, advisor, and cross-domain database context.
 
+Operation Living Intelligence adds derived awareness layers beside Supabase:
+
+- Memgraph is the local/noncanonical relationship graph for approved projections and readback questions.
+- The Company local vector layer under `out/operation_living_intelligence/local_vector_layer/` is the first simple semantic source-discovery helper for cited recall across approved active Company Markdown chunks.
+- Supabase `vector` is available, but OpenAI/API-key-dependent pgvector embedding is not approved after cost/credential review. Any future pgvector path must be explicitly scoped as no-surprise on cost, credentials, source scope, and write boundaries.
+- Both layers are derived from Markdown, Supabase, domain source docs, or approved generated manifests. They do not replace canonical sources, approve public claims, create Planner state, or authorize writeback.
+
 ## Current Transition State
 
 - Brain `_system/minibiota_tools.py` is retired from normal workflows after Phase 10 reporting activation.
 - Company now owns a scoped helper module at `_system/company_supabase.py` for sanitized env status, protected Supabase reads, and approval-gated Company Planner helper writes.
 - Company has a local ignored workspace MCP config at `.vscode/mcp.json` for Supabase's hosted MCP server with `read_only=true` and database/debugging/development/docs features.
 - Codex global MCP registration for `supabase` was added and OAuth login completed on 2026-05-10. Already-running Codex sessions may still show no MCP resources until the agent/session is restarted.
+- Josue enabled the Supabase `vector` extension on 2026-05-19 and confirmed it with `pg_extension` readback.
+- On 2026-05-19, Josue rejected the OpenAI/API-key-dependent pgvector pilot after clarifying that a separate API credential and billing path were not expected. The OpenAI pgvector schema/seed/query helpers were removed. The no-cost local deterministic vector helper remains the active semantic source-discovery layer.
 - Phase 5 created `memory/11-helper-and-database-awareness-migration.md` as the helper ownership and migration plan.
 - Brain helper paths are archive/recovery lookup only; use MCP/read-only awareness and Company/domain-owned helpers for normal workflows.
 
@@ -16,7 +25,8 @@ Supabase MCP/read-only awareness is the preferred Company database-awareness lay
 1. Use Supabase MCP or approved read-only paths for live schema/table/relationship/log/advisor awareness.
 2. Use Company `_system/agent_repo_registry.md` to map tables and records back to domain owners, risk levels, and approval boundaries.
 3. Use MCP/read-only awareness and Company/domain-owned helpers for typed reads, explicitly approved helper writes, or ordinary own-domain Planner writes after standing domain project-manager delegation is granted. For Company Planner records, `_system/company_supabase.py` is the active Company helper.
-4. Route domain-specific writes to the owning domain before acting.
+4. Use Memgraph or vector retrieval only as derived context when OLI relationship or semantic-recall context matters, then verify consequential claims against the canonical owner.
+5. Route domain-specific writes to the owning domain before acting.
 
 ## Planner Current-Status Reads
 
@@ -41,6 +51,7 @@ Explicit user approval is required for:
 - Storage/admin actions.
 - Live-control paths.
 - Public production behavior changes.
+- Memgraph projection/import/rebuild/refresh, vector/pgvector index changes, embedding jobs, generated retrieval outputs, scheduled refresh jobs, or derived OLI writeback unless the exact action is explicitly approved or already covered by a scoped approved helper/closeout rule. OpenAI/API-key-dependent pgvector embedding is not approved; no broad vector indexing, scheduling, App runtime use, Memgraph changes, public search, or canonical writeback is approved.
 
 ## Secret Policy
 

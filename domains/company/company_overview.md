@@ -2,7 +2,7 @@
 id: company_operations
 title: 1. miniBIOTA_Company
 domain: company_operations
-last_updated: 2026-05-18
+last_updated: 2026-05-19
 tags: [operations, strategy, roadmap, business-planning, governance, operation-living-atlas, operation-living-intelligence]
 reporting_status: active
 reporting_phase: brain_retirement_phase_11_probation
@@ -22,7 +22,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Current State
 - miniBIOTA has already been tested as a fully closed working concept in Q1 2026.
 - Operation Living Atlas is active as the coordinated backfill program for published content, species histories, chronicles, observations, media, and ecological relationships.
-- Operation Living Intelligence has been consolidated into the Intelligent Harness implementation path: Supabase source map, Memgraph projection, Cypher query harness, pgvector/current retrieval, LangGraph-style workflow, review-gated answer system, operator dashboard, and later upgrade adapters as needed.
+- Operation Living Intelligence has been consolidated into the Intelligent Harness implementation path: Supabase source map, Memgraph projection, Cypher query harness, current local retrieval baseline, LangGraph-style workflow, review-gated answer system, operator dashboard, and later upgrade adapters as needed. Paid/API-key-dependent pgvector embedding is not approved after cost/credential review.
 - Q2 2026 now has one approved strategic focus: execute a great Aquatic Club of
   Pasco County talk on 2026-06-13 and make the supporting assets, data, proof,
   web/social presence, and follow-up paths strong enough that the talk becomes

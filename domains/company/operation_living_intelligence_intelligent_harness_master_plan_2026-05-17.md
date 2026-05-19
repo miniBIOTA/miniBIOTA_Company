@@ -2,7 +2,7 @@
 id: operation_living_intelligence_intelligent_harness_master_plan_2026-05-17
 title: "Operation Living Intelligence: Intelligent Harness Master Plan"
 domain: company_operations
-last_updated: 2026-05-18
+last_updated: 2026-05-19
 tags: [operation-living-intelligence, intelligent-harness, memgraph, supabase, graphrag, planning]
 status: active_harness_path_with_observation_workflow_proven
 ---
@@ -20,7 +20,7 @@ The active build path is now:
 Supabase source map
 -> Memgraph projection
 -> Cypher query harness
--> pgvector retrieval
+-> current local retrieval baseline
 -> LangGraph-style workflow
 -> review-gated answer system
 -> operator dashboard
@@ -64,7 +64,7 @@ This does not start a new planning phase. The next work is operational testing:
 Run one or two new real observations through the Phase 19 local pipeline, then choose one for Phase 20 writeback if useful.
 ```
 
-Future work remains separately approval-gated: story/open-loop linking, media review/linking, Intelligence suggestion approval controls, pgvector, actual LangGraph, and scope expansion beyond the current test lanes.
+Future work remains separately approval-gated: story/open-loop linking, media review/linking, Intelligence suggestion approval controls, paid/API-key-dependent pgvector embedding, actual LangGraph, and scope expansion beyond the current test lanes.
 
 ## 1. Plain-Language Outcome
 
@@ -85,7 +85,7 @@ Josue should not need to personally operate five databases every day. Most daily
 
 - Supabase for canonical structured records;
 - Memgraph for relationships;
-- pgvector or the current retrieval baseline for semantic text search;
+- the current local retrieval baseline for source discovery; paid/API-key-dependent pgvector embedding is not approved unless Josue explicitly accepts the credential and billing model;
 - Markdown/GitHub repos for governance, durable meaning, and source packets;
 - workflow orchestration for multi-step questions, review pauses, and future approved writeback.
 
@@ -97,13 +97,13 @@ The harness should enhance current miniBIOTA workflows. It should not replace th
 |---|---|---|---|---|---|
 | Supabase/Postgres | Canonical structured record store | Observations, tasks, projects, content records, species/source records, review status, operational structured data | Yes, for structured records | Build now as the source map and projection input | App owns runtime/schema; domains own meaning; Company coordinates governance |
 | Memgraph | Derived relationship graph | Nodes and relationships for species, observations, media, stories, content, claims, tasks, locations, systems, review gates | No | Build now for one bounded local persistent pilot | App implements; Company governs scope; source domains review meaning |
-| Supabase pgvector | First-pass semantic retrieval | Embeddings over selected long text, notes, docs, scripts, captions, transcripts, readbacks, and source packets | No | Build now or use current retrieval baseline first, then upgrade to pgvector when approved | App implements; Company/Content/Research review source scope |
+| Supabase pgvector | Possible later semantic retrieval | Embeddings over selected long text, notes, docs, scripts, captions, transcripts, readbacks, and source packets | No | Deferred; do not build paid/API-key-dependent embedding unless Josue explicitly accepts the credential and billing model | App implements; Company/Content/Research review source scope |
 | Markdown/GitHub repos | Governance and durable context | Operating rules, decisions, agent instructions, source packets, short readbacks, domain reports | Yes, for governance/context where repo docs are source | Use now, but keep concise | Company and domain repo owners |
 | LangGraph-style orchestration | Workflow brain | Multi-step routed agent questions, context assembly, review pauses, tool routing, future approved writeback flow | No | Build now as a skeleton/spec for one routed Q&A workflow | App implements; Company governs routing rules |
 | miniBIOTA App UI/helpers | Operator control surface | Refresh/rebuild controls, graph import/query controls, readbacks, review queues, later approved writeback | No, except where App owns runtime configuration | Build now for minimal local controls after plan approval; full UI later | App |
 | Redis/cache | Fast cache layer | Recent query packets, session state, intermediate results, expensive lookup cache | No | Specify for later | App |
 | DuckDB/MotherDuck or BigQuery | Analytics path | Analytics warehouse, aggregate reporting, larger event/history analysis | No | Specify for later | Growth/Web/Financials depending on data |
-| Qdrant/Pinecone/Weaviate | Dedicated vector database adapter path | Vector search if pgvector becomes too limited | No | Specify for later | App with Company approval |
+| Qdrant/Pinecone/Weaviate | Dedicated vector database adapter path | Vector search if the current retrieval baseline or a future approved pgvector path becomes too limited | No | Specify for later | App with Company approval |
 | Visual AI/media pipeline | Media understanding adapter | Candidate image/video/audio observations, visual evidence suggestions, media-review readbacks | No | Specify for later; local/private first | Raw Footage, Content, Research, App |
 | Approved writeback path | Controlled canonical update path | Human-approved changes back to Supabase or other owner systems | Yes only after the target system accepts the write | Specify for later; no automatic writeback | App implements; domain owner approves; Company governs boundaries |
 
@@ -258,7 +258,7 @@ Combine graph intelligence with semantic retrieval and canonical records.
 Output:
 
 - Memgraph finds relationships.
-- pgvector or the current retrieval baseline finds relevant text.
+- The current local retrieval baseline finds relevant text; any paid/API-key-dependent pgvector path remains separately approval-gated.
 - Supabase fetches canonical rows.
 - Markdown contributes rules/context.
 - Agent receives one clean context packet.
@@ -337,7 +337,7 @@ Done when:
 
 Purpose:
 
-Provide a dedicated vector database path if Supabase pgvector becomes too limited for the volume, speed, filtering, or retrieval quality needed by the harness.
+Provide a dedicated vector database path only if the current local retrieval baseline or a future approved pgvector path becomes too limited for the volume, speed, filtering, or retrieval quality needed by the harness.
 
 What it would do:
 
@@ -347,11 +347,11 @@ What it would do:
 
 Trigger condition:
 
-- Use only if pgvector or the current retrieval baseline is measurably insufficient.
+- Use only if the current retrieval baseline or a future approved pgvector path is measurably insufficient.
 
 Approval gate:
 
-- Requires explicit approval before replacing or supplementing pgvector with a dedicated vector database.
+- Requires explicit approval before replacing or supplementing the current retrieval baseline or a future approved pgvector path with a dedicated vector database.
 
 #### Redis/Cache
 
@@ -564,7 +564,7 @@ Purpose:
 
 Current provider:
 
-- Supabase pgvector, or the current retrieval baseline until pgvector is approved.
+- Current local retrieval baseline. Supabase pgvector is only a possible later provider after explicit cost/credential approval.
 
 Possible later providers:
 
@@ -689,7 +689,7 @@ The harness should perform read-only canonical ID checks before treating a speci
 - Persistent local Memgraph pilot for one bounded scope.
 - Supabase-to-Memgraph projection helper.
 - Query library.
-- Basic GraphRAG context packet using pgvector or the current retrieval baseline.
+- Basic GraphRAG context packet using the current local retrieval baseline.
 - LangGraph-style skeleton for one routed Q&A workflow.
 - OLI documentation cleanup plan for superseded wave-expansion docs.
 - Short readback reports.
@@ -698,7 +698,7 @@ The harness should perform read-only canonical ID checks before treating a speci
 
 These are now preserved in Phase 8 as a later upgrade specification and expansion backlog:
 
-- Qdrant/Pinecone/Weaviate upgrade adapter for dedicated vector search if pgvector becomes insufficient.
+- Qdrant/Pinecone/Weaviate upgrade adapter for dedicated vector search if the current retrieval baseline or a future approved pgvector path becomes insufficient.
 - Redis/cache for repeated expensive lookups, context packets, and workflow/session state.
 - Analytics warehouse for larger trend analysis, campaign learning, telemetry, and owner-approved analytical history.
 - Visual AI/media expansion for candidate media evidence and review-gated media understanding.
@@ -738,7 +738,7 @@ The following require explicit Josue/domain approval:
 - Any automated scheduled job.
 - Any canonical writeback.
 - Any expansion into CRM/Financials/sensitive data.
-- Any replacement of pgvector with a dedicated vector database.
+- Any replacement or supplementation of the current retrieval baseline or a future approved pgvector path with a dedicated vector database.
 - Any move from local Memgraph pilot to shared/persistent production service.
 
 ## 9. Timeline
@@ -751,7 +751,7 @@ This estimate applies only to the first bounded scope, such as Lake Post-Seal. I
 
 ### 3 To 6 Focused Weeks
 
-Broader cross-domain system with dashboard, review queues, pgvector, and controlled writeback.
+Broader cross-domain system with dashboard, review queues, future approved retrieval upgrades, and controlled writeback.
 
 ### Longer
 

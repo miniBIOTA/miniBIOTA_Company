@@ -2,7 +2,7 @@
 id: company_brief
 title: Company Operations Brief
 domain: company_operations
-last_updated: 2026-05-18
+last_updated: 2026-05-19
 tags: [company, operations, strategy, roadmap, strategy-brief]
 reporting_status: active
 reporting_phase: brain_retirement_phase_11_probation
@@ -28,6 +28,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - `Aquatic Club Talk Readiness` is the near-term cross-domain readiness program. It coordinates Company, Content, Brand, Research/Ecosystem, Hardware, Web, Growth/Sales, App, and Financials work around the 2026-06-13 talk.
 - `Operation Living Intelligence` is the approved Company planning program for miniBIOTA's long-term agent data stack: Markdown/Supabase continuity, graph intelligence, vector retrieval, analytics warehousing, visual AI/local model workflows, cache/runtime memory, automation, and cross-domain agent routing.
 - Operation Living Intelligence is now consolidated into the Intelligent Harness path. As of 2026-05-18, the local-to-canonical observation workflow is proven through approved Supabase observation `253`; the active daily operator path is current observation-to-story, while Lake Post-Seal remains a regression/test fixture.
+- Operation Living Intelligence now has a first simple Company-local vector retrieval helper under ignored `out/operation_living_intelligence/local_vector_layer/`. It indexes approved active Company Markdown with deterministic local vectors for cited source discovery only. Josue enabled and confirmed the Supabase `vector` extension on 2026-05-19, but rejected the OpenAI/API-key-dependent pgvector pilot after cost/credential review. No paid embedding path, public search, scheduled refresh, App runtime integration, Memgraph changes, or canonical writeback is approved.
 - Operation Living Intelligence Phase 13 now needs read-only canonical species lookup before treating species hints as missing. Creeping Beggarweed is canonical species `97` / `Desmodium incanum`; canonical species outside a bounded graph should become ID-confirmation questions, not missing-species questions.
 - Detailed OLI implementation history belongs in retained source docs, the active reference map, the projection matrix, cleanup inventory, and App/Content owned artifacts, not in this manager-facing brief.
 
@@ -47,6 +48,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Recent Milestones
 
 - **2026-05-18:** Operation Living Intelligence Intelligent Harness proved the local-to-canonical observation workflow end to end. The working chain now runs from raw Content observation intake to Content audit JSON/Markdown, App bridge, Phase 13 auto-link suggestions, Intelligence tab latest-suggestion display, Phase 19 local pipeline, and Phase 20 approved observation writeback. The proof wrote Supabase observation `253` for Gulf marsh crab excavation with species `174` and biome `5`. No story links, open loop links, story beats, chronicles, Planner tasks, media metadata, public output, or content pipeline records were bundled.
+- **2026-05-19:** Company added the first lightweight local vector retrieval helper for Operation Living Intelligence. The helper builds an ignored local file index from active Company Markdown and provides a cited query helper. Josue also enabled and confirmed the Supabase `vector` extension, then rejected the OpenAI/API-key-dependent pgvector pilot after cost/credential review. The OpenAI pgvector schema/seed/query helpers were removed; the no-cost local deterministic vector helper remains active.
 - **2026-05-18:** Company created the OLI active reference map and began physical cleanup of safe leaf documentation in `domains/company`. The cleanup policy is to preserve active control docs, active observation workflow references, compact closeouts, deferred-lane references, and source-of-truth boundaries while removing redundant generated/proposal residue already summarized elsewhere.
 - **2026-05-17:** Operation Living Intelligence moved into the Intelligent Harness spine. Phase 1-7 built the local no-write Lake Post-Seal harness path; later phases moved toward Intelligence tab display, observation suggestions, local pipeline execution, approval-gated writeback, and Content agent follow-up.
 - **2026-05-16:** Company consolidated OLI Waves 1-9 into a next-phase map and deferred return map. Wave 5 retrieval and Wave 6 media/visual AI had useful local baselines; broader analytics, telemetry, sensitive-domain, persistent graph, pgvector, public output, and automation work remained deferred.

@@ -22,9 +22,11 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Current State
 - Operation Living Intelligence Phase 18 now has an App-owned bridge path from Content observation-intake audit JSON into manual Phase 13 suggestion input. `tools/bridge-oli-content-audit-to-phase13-input.js` accepts Phase 15 legacy parser drafts and Phase 17 raw observation intake drafts, derives collision-safe local input names, rejects canonical IDs/approval fields, and keeps writeback/public/canonical/database actions blocked. The latest manual Phase 13 run from the bridged Phase 17 input is `20260518_123237_grasshopper_legume_vine_followup`, with `8` suggestion-only records and `latest_suggestion_run.json` updated for the Intelligence tab. Raw Phase 17 provenance is preserved in the bridged input; Phase 13 normalized output keeps only the local input path.
+- Operation Living Intelligence now has an approved App-owned full Supabase-to-Memgraph projection v1. The helpers read approved canonical Supabase rows with GET/HEAD only, generate ignored local JSONL/Cypher/status files, and rebuild only the `OLIFullProjectionNode` namespace in the existing local Memgraph container. The latest readback passed with `1219` nodes, `3318` relationships, and observations `253`, `254`, `255`, and `256` present exactly once; observation `256` connects to species `162`, biome `3`, story thread `8`, open loop `10`, related story beats `14` and `18`, published pipeline `31`, and chronicle `59` through canonical source rows. Ecosystem interaction/resource rows are deferred from v1 and absent from the current projection. Memgraph remains derived/local/noncanonical and does not approve story links, open loops, beats, chronicles, media metadata, Planner work, public output, or writeback.
 - CRM relationship-system migration 013 is live after user-applied Supabase SQL on 2026-05-12. It added 33 additive tables beside the legacy CRM tables, with read-only verification showing all new tables empty and legacy counts unchanged. The CRM tab now includes a read-only Relationship view for schema/table counts and review queues through the internal main-process secret-key bridge. Migration 014 is live as of 2026-05-13, adding flexible labeled `crm_contact_links` rows for legacy CRM contact websites/social/reference links.
+- Ecology Events is now a top-level internal read-only tab. It browses the live ecological-events tables through the Electron main-process secret-key REST bridge and verified the first seeded dataset: 12 events, 49 source links, 20 species links, 12 biome links, 17 story-thread links, and 27 open-loop links.
 - `miniBIOTA_App` is the active desktop operator surface for miniBIOTA.
-- Active tabs are Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, and Monitoring.
+- Active tabs are Planner, Financials, CRM, Roadmap, Prompt Library, Site Admin, Ecology Events, and Monitoring.
 - Planner project-manager schema foundation is live after migration 007, and
   former top-level Weekly Checklist and Tasks behavior has been consolidated
   into Planner replacement surfaces.
@@ -63,10 +65,12 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - The app source repo now uses repo-local memory and skills as active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`. `memory/11-app-quality-system.md` and `planning/app_quality_system_roadmap.md` capture the completed initial App quality-system rollout inspired by miniBIOTA_Web, and `planning/mobile_field_observer_quality_system_project.md` captures the planned mobile Field Observer quality-system follow-up.
 - Operation Living Intelligence archived Wave 1-9 App provenance now lives under `archive/superseded/operation-living-intelligence/`. Those files record local graph/readback, retrieval, visual-AI/media, routing, telemetry, and sensitive-data proof work, but they are not active App operating instructions.
 - For current OLI work, App should use the Intelligent Harness path instead: Content audit-to-Phase 13 bridge, Phase 13 suggestion runner, latest suggestion display, Phase 19 local pipeline support, and explicit Phase 20 approval-gated writeback. Older Wave helpers remain local, ignored-output provenance unless a current Company/App session explicitly reactivates a deferred lane.
-- App OLI boundaries remain unchanged: no App runtime behavior, schema, Planner/Supabase records, Media Library metadata, public output, model/media runs, generated annotations, persistent graph runtime, pgvector, automation, or canonical writeback without separate explicit approval.- Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
+- App OLI boundaries remain unchanged: no App runtime behavior, schema, Planner/Supabase records, Media Library metadata, public output, model/media runs, generated annotations, persistent graph runtime, pgvector, automation, or canonical writeback without separate explicit approval.
+- Brain no longer keeps an App `docs/` mirror; use the source repo's memory/skills structure for detailed App Agent context.
 
 ## Key Facts
 - CRM relationship-system tables from migration 013 are live, RLS-enabled, and policy-free; first runtime access must use the internal main-process secret-key bridge. No legacy CRM records have been backfilled into the new tables. Legacy CRM Contacts now support multiple labeled links through `crm_contact_links` rather than one column per social platform.
+- Ecological events tables from migration 016 are live and internally browsable in App through the main-process secret-key bridge. Public/runtime RLS policies, public website display, event editing, Memgraph projection, and additional event seed batches remain separately scoped.
 - The app uses Supabase publishable keys in renderer/browser-facing config and secret keys only in Electron main-process services or local admin tooling. Internal renderer REST helpers route through an Electron IPC bridge when secret-key access is needed, without exposing the secret key to browser code.
 - Public website surfaces should remain read-only observability; operator/admin workflows belong in the desktop app.
 - App owns CRM as software/runtime/schema/UI implementation. Growth owns CRM
@@ -86,7 +90,10 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   App sessions should read Planner projects/tasks when choosing work, and ask
   before marking completed Planner tasks done at closeout.
 - Operation Living Intelligence archived Wave 1-9 outputs are derived-only, local, rebuildable provenance. The current App-facing path is the Intelligent Harness observation workflow, not the older wave exploration stack.
-- Deferred OLI lanes remain blocked by default: persistent graph service, scheduled sync, embeddings/pgvector, media/visual-AI runs, telemetry helpers, sensitive CRM/Financials reads, public output, App runtime integration, and canonical writeback all require separate approval and owner scope.- Planner task UI has initial migration 007 support for live domains, project
+- Operation Living Intelligence full projection helpers use `OLIFullProjectionNode` and must delete only that label namespace during rebuild. The older Lake Post-Seal seed graph label `OLIIHPhase1Node` is protected and must not be deleted by full projection runs.
+- Content may use the full Memgraph projection for derived relationship/context questions after approved observation writes, but Supabase remains the source of truth and graph paths are not approval for new canonical links or public output.
+- Deferred OLI lanes remain blocked by default: persistent graph service, scheduled sync, embeddings/pgvector, media/visual-AI runs, telemetry helpers, sensitive CRM/Financials reads, public output, App runtime integration, and canonical writeback all require separate approval and owner scope.
+- Planner task UI has initial migration 007 support for live domains, project
   assignment, workflow status, blocked reason, completion timestamp, and
   multi-day task spans.
 - Planner task UI supports parent-child task hierarchy through
@@ -137,6 +144,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Risks / Gaps
 - CRM migration 013 created live RLS-protected tables with no policies. Any publishable-key policy design, legacy backfill, or CRM write workflow must be separately approved and tested. Migration 014's `crm_contact_links` table is live for legacy contact links; creating/editing those links remains a live CRM record write.
+- Ecological events are visible internally but remain RLS-gated for public/runtime reads. The browser is read-only; any event write/edit workflow or public access policy must be separately approved.
 - Supabase secret-key access would be a major security risk if exposed outside the internal app.
 - Real admin image upload to Supabase Storage still needs careful live verification when that work resumes.
 - Packaged build behavior with Sharp/native dependencies should be verified before relying on distributable builds.
@@ -147,6 +155,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   Program UI create/edit/link behavior still needs interactive smoke
   verification before daily reliance.
 - Prompt Library schema is live after migration 012, but create/edit/copy/archive flows still need interactive app smoke verification before daily reliance.
+- OLI full Memgraph projection is useful for Content follow-up context, but it remains a local helper rather than a persistent service or App runtime feature. Scheduled sync, ecosystem-interaction projection, media/storage projection, Planner/task projection, pgvector, public output, and canonical writeback all remain separately blocked.
 
 ## Files In This Folder
 - `app_brief.md` - active Company manager-facing report brief for App.

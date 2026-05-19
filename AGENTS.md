@@ -31,6 +31,7 @@ App Planner/Supabase is the live Company work queue when current Company project
 - Roadmap exact reference under `skills/review-roadmap-implications/reference/`.
 - Company strategy brief at `M:\miniBIOTA\miniBIOTA_Company\domains\company\company_brief.md`.
 - Supabase/App Planner via MCP/read-only awareness first and Company/domain-owned helpers, for `work_domains`, `work_projects`, `tasks`, milestones, and structured operational records when the work requires current structured state. App owns the Planner runtime, schema, UI, and implementation details.
+- Operation Living Intelligence derived layers: Memgraph is the local/noncanonical relationship graph for approved projections; the Company local vector layer under `out/operation_living_intelligence/local_vector_layer/` is the first simple semantic-retrieval helper. Supabase `vector` is available, but OpenAI/API-key-dependent pgvector embedding is not approved after cost/credential review. These are derived awareness layers, not sources of truth. App owns runtime/shared implementation; Company owns routing, governance, and approval boundaries.
 
 ## Startup Sequence
 For a full Codex bootstrap, run:
@@ -56,6 +57,7 @@ If working manually:
 13. Read `M:\miniBIOTA\miniBIOTA_Company\domains\company\company_brief.md` for manager-facing strategy-level current state.
 14. Use `skills/*/reference/` for exact workflow reference material.
 15. Use Supabase/App Planner only when current structured projects, tasks, milestones, or operational records matter.
+16. Use Memgraph/vector retrieval only as derived context when Operation Living Intelligence relationship or semantic-recall context matters; verify consequential claims against Markdown, Supabase, domain source docs, or approved source records before treating them as true.
 
 For broad Company cold starts, cross-domain architecture work, or unclear requests, use `0. Agent Exports\miniBIOTA_master_context.md` after the startup files. This is a Company-generated export built from active `domains/` reports; Brain exports are historical/archive artifacts.
 
@@ -76,10 +78,12 @@ Use this hierarchy when sources disagree:
 6. Relevant `skills/*/SKILL.md` playbooks for active workflow rules.
 7. Company `domains/company/company_brief.md` for manager-facing strategy-level current state.
 8. Supabase/App Planner for structured/queryable projects, tasks, milestones, and operational records when those records are relevant.
-9. `skills/*/reference/` files for exact workflow reference material.
-10. Historical Brain company brief and compiled Brain exports as archive reference artifacts only.
+9. Operation Living Intelligence derived layers, including Memgraph relationship projections, Company local vector retrieval, and future approved retrieval layers, for noncanonical relationship context and semantic source discovery only.
+10. `skills/*/reference/` files for exact workflow reference material.
+11. Historical Brain company brief and compiled Brain exports as archive reference artifacts only.
 
 Chat history and private model memory are never source of truth. Durable project memory belongs in Markdown in this repo, in the Company report, or in Supabase when it is structured data.
+Memgraph, vector indexes, retrieval manifests, embeddings, generated readbacks, and other Operation Living Intelligence outputs are derived helper layers unless a future source-of-truth change is explicitly approved. They may help agents find context, but they do not approve canonical links, public claims, Planner records, media metadata, app behavior, or writeback.
 
 ## Company Safety Rules
 - Do not invent business commitments, launch targets, legal decisions, financial commitments, sponsor obligations, roadmap commitments, or public promises from memory.
@@ -93,6 +97,7 @@ Chat history and private model memory are never source of truth. Durable project
 - Treat Claude-specific files as legacy reference unless the user explicitly reactivates them. Codex is the primary interface moving forward.
 - Do not write to Supabase, change structured records, change app behavior, or change public site behavior unless the user explicitly asks for that specific action.
 - Creating, editing, linking, scheduling, completing, reopening, archiving, or deleting Planner projects/tasks are live Supabase writes and require explicit user approval.
+- Do not create, refresh, rebuild, import, schedule, or write Memgraph, vector/pgvector, embedding, retrieval, or generated Operation Living Intelligence outputs unless the user explicitly approves the scoped action or the current repo has an approved helper/closeout rule for that exact refresh. OpenAI/API-key-dependent pgvector embedding is not approved; any future pgvector path must be no-surprise on cost, credentials, source scope, and write boundaries.
 
 ## Planner / Project Management
 - App Planner/Supabase is the live Company work queue for actionable Company projects and tasks.
@@ -196,6 +201,7 @@ For documentation-only sessions:
 - Run `git diff --name-only` or equivalent.
 - Run `git status --short --branch`.
 - Confirm no app behavior, database records, structured records, public site behavior, or retired Brain docs mirrors changed.
+- Confirm no Memgraph projection, vector index, embedding artifact, generated retrieval output, scheduled refresh, or derived Operation Living Intelligence layer changed unless explicitly scoped.
 - Confirm no business commitments, public promises, financial commitments, launch targets, legal decisions, sponsor obligations, or roadmap commitments were created.
 
 For company planning/ops sessions:

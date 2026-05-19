@@ -2,7 +2,7 @@
 id: research_overview
 title: 3. miniBIOTA_Research
 domain: ecosystem_and_data
-last_updated: 2026-05-09
+last_updated: 2026-05-18
 tags: [research, ecosystem, species, biomes, observations, food-web, planner]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -23,6 +23,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 ## Current State
 - `miniBIOTA_Research` is the active Research Agent workspace at `M:\miniBIOTA\miniBIOTA_Research\`.
 - Supabase remains the source of truth for structured species, observations, story threads, open loops, chronicles, and related ecological records.
+- Supabase now includes the live ecological events layer. Migration `016_ecological_events_schema.sql` and the first two Lake Post-Seal / Seagrass Meadow seed packets were applied on 2026-05-18; the layer contains 22 approved internal events with 90 source links, 36 species links, 22 biome links, 33 story-thread links, and 43 open-loop links. App now has an internal read-only Ecology Events browser for QA; public/runtime access remains gated pending a separate RLS pass.
 - The source repo now uses repo-local memory and skills as active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
 - Brain no longer keeps a Research `docs/` mirror or copied ecological reference docs; use the source repo's memory/skills/reference structure for detailed Research context.
 - App Planner/Supabase is the live Research/Ecosystem work queue under `work_domains.key = ecosystem` / `domain_id = 3`, with current project records `43` through `48`.
@@ -42,6 +43,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Resolve identification gaps and unresolved ecological questions, including water beetles, amber snail species, terrestrial isopod, aquatic amphipods, apple snail confirmation, ghost shrimp juvenile recruitment, and macroalgae/sea urchin trajectory.
 - Preserve the distinction between internal story threads and public open loops when ecological developments become content opportunities.
 - Preserve the distinction between research briefs and finished content assets.
+- Use the ecological events layer as the next dated evidence bridge between observations, species/biome state, chronicles, story threads, and public open loops.
 
 ## Risks / Gaps
 - Ecology docs can drift quickly because live observations and Supabase records are updated often.
@@ -50,6 +52,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Several species identifications remain unresolved or pending.
 - Current measurement gaps remain: CO2, O2, methane, salinity drift, pH, and dissolved oxygen are not yet measured.
 - Macroalgae dominance, Mesostoma predation, ostracod population decline, ghost shrimp juvenile recruitment, and sea urchin establishment remain active ecological uncertainties.
+- Ecological events have internal App read access but no public/runtime RLS policy yet; public display, write workflows, and graph projection remain separate approvals.
 
 ## Files In This Folder
 - `research_brief.md` - active Company manager-facing report brief for Research.

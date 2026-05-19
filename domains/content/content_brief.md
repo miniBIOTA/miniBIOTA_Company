@@ -2,7 +2,7 @@
 id: content_brief
 title: Content Production Brief
 domain: content_production
-last_updated: 2026-05-18
+last_updated: 2026-05-19
 tags: [content, production, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -60,6 +60,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   chronicles, publish closeout, and active project docs.
 
 ## Recent Milestones
+- **2026-05-19:** Content observation and relationship cleanup workflow stabilized around Supabase-first canonical writes and App-owned Memgraph as a derived relationship map. Normal observations now use approved `public.observations` insert/readback, post-write graph refresh, and recommendation-first follow-up. Cleanup passes are layered and approval-based: species-to-biome membership, high-confidence ecosystem interactions, story beat/evidence coverage, full Supabase-to-Memgraph projection, and read-only graph verification. This session connected recent May observations plus historical gaps through canonical `species_to_biomes`, `ecosystem_interactions`, and story beat/evidence rows without changing Planner, chronicles, media metadata, public output, content pipeline records, or open loop statuses.
 - **2026-05-18:** Operation Living Intelligence observation workflow became
   operational through the Content Agent conversational layer. Phase 21 now lets
   Content read Phase 19 / Phase 13 Intelligent Harness outputs, summarize

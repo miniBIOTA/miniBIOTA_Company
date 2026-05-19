@@ -1,8 +1,8 @@
----
+﻿---
 id: research_brief
 title: Research Brief
 domain: ecosystem_and_data
-last_updated: 2026-05-12
+last_updated: 2026-05-19
 tags: [research, ecosystem, species, biomes, planner, strategy-brief]
 reporting_status: company_active
 reporting_phase: phase_10_reporting_active
@@ -31,6 +31,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
   Living Web/Atlas support projects `58` and `60`, and Aquatic Club claim
   review project `66`.
 - Planner tracks work only. Supabase structured records remain ecological truth, and Markdown remains the evidence, uncertainty, interpretation, and handoff context layer.
+- Ecological events are now a live structured evidence layer in Supabase. Migration `016_ecological_events_schema.sql` and the first two Lake Post-Seal / Seagrass Meadow seed packets were applied on 2026-05-18; packet 03, the Seed Shrimp link cleanup, packet 03 status correction, Lowland Meadow packet 04, and Lakeshore packet 05 were applied on 2026-05-19. Research and App read-only checks verified 44 approved internal events with 162 source links, 65 species links, 44 biome links, 68 story-thread links, and 50 open-loop links. App now has an internal read-only Ecology Events browser for QA through the main-process secret-key bridge; public/runtime RLS access remains gated.
 - As of the migrated overview dated 2026-04-30: 170 species records, 239 observations, and 29 active story threads are documented. Verify live Supabase before treating those numbers as current.
 
 ## Active Priorities
@@ -45,6 +46,12 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 
 ## Recent Milestones
 
+- **2026-05-18:** Ecological events schema and first two internal seed packets applied in Supabase. The new layer now holds 22 approved internal ecological events spanning the Lake Post-Seal and Seagrass Meadow pilots, with 90 source links, 36 species links, 22 biome links, 33 story-thread links, and 43 open-loop links. Open loops were only advanced/contextualized, not resolved; no public/runtime RLS policies were added.
+- **2026-05-19:** Research prepared an ecological-events coverage map to compare the two dated event pilots against the 22 live event rows. The map identifies packet 03 candidates, including the Daphnia magna diagnostic trial, Freshwater Lake surface-biofilm niche shift, and earlier Mottled Shore Crab grazing precursor, while preserving public-claim and open-loop boundaries.
+- **2026-05-19:** App QA found no blockers in the internal Ecology Events browser. Research revised packet 03 down to two stronger draft event candidates, deferred the surface-biofilm event, and prepared a separate review-only Seed Shrimp link-cleanup packet for the existing April 8 Daphnia introduction event. No live Supabase changes were made by this follow-up.
+- **2026-05-19:** Josue applied revised ecological-events packet 03, the Seed Shrimp link-cleanup packet, and the packet 03 status-correction packet. Research read-only checks verified 24 live ecological events, 99 source links, 41 species links, 24 biome links, 35 story-thread links, and 46 open-loop links. All live event `review_status` values are now `approved_for_internal_use`.
+- **2026-05-19:** Josue applied ecological-events packet 04 for the Lowland Meadow. Research read-only checks verified 33 live ecological events, 131 source links, 52 species links, 33 biome links, 51 story-thread links, and 49 open-loop links. App QA found no blockers; all live event `review_status` values remain `approved_for_internal_use`, and open loops were only advanced/contextualized, not resolved. Josue also applied a narrow species cleanup for species `27`, normalizing the display label to `Smoky Oak Millipede` while leaving the slug and alternate names unchanged.
+- **2026-05-19:** Josue applied ecological-events packet 05 for the Lakeshore. Research read-only checks and App QA verified 44 live ecological events, 162 source links, 65 species links, 44 biome links, 68 story-thread links, and 50 open-loop links. App QA found no blockers; Lakeshore rows are visible through the internal read-only Electron bridge, sorted by ecological date/window, and claim boundaries remain visible for Amber Snail establishment/recruitment, baby Slough Crayfish recruitment, beetle larva identity, Blackworm establishment/regeneration, and Daphnia population-size claims.
 - **2026-05-18:** Operation Living Intelligence Wave 2/6 Research provenance was archived under `archive/superseded/operation-living-intelligence/`. The archived records preserve claim-safety, source-availability, unresolved-loop, and visual-annotation boundary history only; active Research review still owns organism wording, ecological uncertainty, public claim discipline, and any observation/open-loop interpretation before publication or canonical writeback.
 - **2026-05-12:** Company applied approved Research/Ecosystem Planner cleanup:
   Aquatic Club claim-review project `66` is active, task `221` now belongs
@@ -75,6 +82,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - Several species identifications remain unresolved or pending.
 - Current measurement gaps remain: CO2, O2, methane, salinity drift, pH, and dissolved oxygen are not yet measured.
 - Macroalgae dominance, Mesostoma predation, ostracod population decline, ghost shrimp juvenile recruitment, and sea urchin establishment remain active ecological uncertainties.
+- Ecological events are now seeded and visible in the internal App browser, but public/runtime RLS policies, public display, Memgraph projection, event editing, and future event batches remain separate approvals.
 
 ## Cross-Domain Notes
 
@@ -83,6 +91,7 @@ brain_transition_status: "Company reporting active; Brain source historical/arch
 - **Website/App:** Biome profile display should use the canonical biome profile data model in `skills/species-research/reference/biome-profile-data-model.md`, with Supabase as structured source of truth and Markdown as the interpretation/uncertainty layer.
 - **Hardware:** Sensor priorities should follow ecological measurement gaps and instability tracking.
 - **App:** Data-entry and operator workflows must preserve species, observation, thread, loop, and chronicle link integrity. App also owns the Planner runtime used as Research/Ecosystem's live work queue.
+- **App:** Internal ecological-event browsing is now live and has passed QA through Lakeshore packet 05. Continue using the browser to QA broader event backfill before public RLS policies, website display, event editing, or Memgraph projection.
 - **Brand:** Public scientific claims should be grounded in observed or clearly qualified inferred research.
 - **Growth:** Campaign, sponsorship, course, and Kickstarter claims must reflect documented ecological feasibility and outcomes.
 - **Financials:** Research priorities can create field collection, instrumentation, testing, and equipment costs.
@@ -109,3 +118,4 @@ Historical Brain overview: `3. miniBIOTA_Research\research_overview.md`
 | `skills/experiment-background/reference/instabilities-and-risks.md` | Current ecological instability and measurement-gap reference |
 | `skills/supabase-ecology-read/reference/ecosystem-and-data-overview.md` | Migrated ecosystem overview reference |
 | `skills/claim-check/reference/uncertainty-labels.md` | Standard confidence and uncertainty labels for research claims |
+

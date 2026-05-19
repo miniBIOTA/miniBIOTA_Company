@@ -1,6 +1,6 @@
 ﻿---
 title: Source Of Truth Rules
-last_updated: 2026-05-09
+last_updated: 2026-05-19
 ---
 # Source Of Truth Rules
 
@@ -14,10 +14,12 @@ Use this order when sources disagree:
 6. Relevant `skills/*/SKILL.md` files for repeatable workflow rules.
 7. Company `domains/company/company_brief.md` for manager-facing strategy-level current state.
 8. Supabase/App Planner for structured/queryable projects, tasks, milestones, and operational records when relevant.
-9. `skills/*/reference/` files for exact workflow reference material.
-10. Historical Brain company brief and compiled Brain exports as archive reference artifacts only.
+9. Operation Living Intelligence derived layers, including Memgraph relationship projections, Company local vector retrieval, and future approved retrieval layers, for noncanonical relationship context and semantic source discovery only.
+10. `skills/*/reference/` files for exact workflow reference material.
+11. Historical Brain company brief and compiled Brain exports as archive reference artifacts only.
 
 Chat history and private model memory are never durable project truth.
+Memgraph, vector indexes, retrieval manifests, embeddings, generated readbacks, and other OLI outputs are derived awareness layers. They can help agents find context, but consequential claims must be verified against Markdown, Supabase, domain source docs, or approved source records.
 
 ## AI Interface And Handoff Rules
 Treat the repo, Company report, domain reports, and structured records as the real memory. If work moves between interfaces or agents, write durable conclusions back to the appropriate source before treating the handoff as complete.
@@ -34,6 +36,7 @@ Old Claude-specific routing guidance is historical. Codex is the active Company 
 - `archive/superseded/`: historical docs only; do not use archive files as active operating instructions.
 - Company report: manager-facing strategy-level summary under `domains/company/company_brief.md`.
 - Supabase/App Planner: structured records only when current projects, tasks, milestones, or operational records matter.
+- Operation Living Intelligence derived layers: Memgraph for noncanonical relationship/provenance traversal and Company local vector retrieval for semantic source discovery. Supabase `vector` is available, but OpenAI/API-key-dependent pgvector embedding is not approved after cost/credential review. Broader pgvector tables, indexes, schedules, runtime integration, Memgraph coupling, public search, sensitive sources, and canonical writeback remain separately approval-gated. These layers do not approve canonical writeback, public claims, Planner records, media metadata, or app behavior.
 
 ## Operating Ownership Split
 Company is the active owner for cross-domain operating coordination: planning strategy, Programs/Operations governance, roadmap cadence, dependency mapping, cross-domain operating memory, and review rhythm.
@@ -58,6 +61,9 @@ Original Company docs have been absorbed into `memory/`, `skills/`, skill refere
 
 ## Structured Records
 Do not write to Supabase or structured records unless explicitly asked. If a recommendation depends on current structured state, verify it before answering in depth and report any live-check limitation.
+
+## Derived Intelligence Layers
+Use Memgraph and vector retrieval as helper context only. A graph edge, similarity hit, generated readback, or embedding result does not create a canonical relationship, public-safe claim, Planner state, media metadata state, or approved App/Web/domain behavior. Refreshes, imports, embedding jobs, vector index changes, scheduled sync, and writeback require explicit approval unless a scoped approved helper or closeout rule already covers the exact action. The OpenAI/API-key-dependent pgvector helper path is not approved; the no-cost local retrieval helper requires source verification before consequential use.
 
 ## Brain Mirrors
 Brain no longer keeps an active Company docs mirror after the Company restructure. Active workflow authority lives in this repo memory/skills architecture. Do not edit, sync, or recreate retired Brain docs mirrors.

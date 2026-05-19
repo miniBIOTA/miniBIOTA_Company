@@ -1,6 +1,6 @@
 ﻿# miniBIOTA Company Executive Brief
 
-- Generated: 2026-05-18 17:53:04 -04:00
+- Generated: 2026-05-19 08:24:44 -04:00
 - Purpose: Company-side synthesis of domain reports.
 - Migration status: Active Company export during Phase 11 Brain retirement probation. Brain exports are historical/archive artifacts.
 
@@ -17,7 +17,7 @@
 ### Current Status
 - miniBIOTA has already been tested as a fully closed working concept in Q1 2026.
 - Operation Living Atlas is active as the coordinated backfill program for published content, species histories, chronicles, observations, media, and ecological relationships.
-- Operation Living Intelligence has been consolidated into the Intelligent Harness implementation path: Supabase source map, Memgraph projection, Cypher query harness, pgvector/current retrieval, LangGraph-style workflow, review-gated answer system, operator dashboard, and later upgrade adapters as needed.
+- Operation Living Intelligence has been consolidated into the Intelligent Harness implementation path: Supabase source map, Memgraph projection, Cypher query harness, current local retrieval baseline, LangGraph-style workflow, review-gated answer system, operator dashboard, and later upgrade adapters as needed. Paid/API-key-dependent pgvector embedding is not approved after cost/credential review.
 
 ### Priorities
 - Coordinate Aquatic Club Talk Readiness as the Q2 strategic forcing function. Remaining Q2 work should stack toward the talk unless urgent operations require otherwise. The talk should help people buy into the miniBIOTA story, feel emotionally connected to the project, understand why the build matters, make their own novel connections, and leave with curiosity, awe, and a sense of future possibilities.
@@ -55,7 +55,7 @@
 ### Current Status
 - `miniBIOTA_Research` is the active Research Agent workspace at `M:\miniBIOTA\miniBIOTA_Research\`.
 - Supabase remains the source of truth for structured species, observations, story threads, open loops, chronicles, and related ecological records.
-- The source repo now uses repo-local memory and skills as active detailed context: `AGENTS.md`, `memory/`, `skills/`, and `skills/*/reference/`.
+- Supabase now includes the live ecological events layer. Migration `016_ecological_events_schema.sql` and the first two Lake Post-Seal / Seagrass Meadow seed packets were applied on 2026-05-18; the layer contains 22 approved internal events with 90 source links, 36 species links, 22 biome links, 33 story-thread links, and 43 open-loop links. App now has an internal read-only Ecology Events browser for QA; public/runtime access remains gated pending a separate RLS pass.
 
 ### Priorities
 - Keep species counts, observation totals, thread/loop state, and population status synchronized with Supabase.
@@ -200,8 +200,8 @@
 
 ### Current Status
 - Operation Living Intelligence Phase 18 now has an App-owned bridge path from Content observation-intake audit JSON into manual Phase 13 suggestion input. `tools/bridge-oli-content-audit-to-phase13-input.js` accepts Phase 15 legacy parser drafts and Phase 17 raw observation intake drafts, derives collision-safe local input names, rejects canonical IDs/approval fields, and keeps writeback/public/canonical/database actions blocked. The latest manual Phase 13 run from the bridged Phase 17 input is `20260518_123237_grasshopper_legume_vine_followup`, with `8` suggestion-only records and `latest_suggestion_run.json` updated for the Intelligence tab. Raw Phase 17 provenance is preserved in the bridged input; Phase 13 normalized output keeps only the local input path.
+- Operation Living Intelligence now has an approved App-owned full Supabase-to-Memgraph projection v1. The helpers read approved canonical Supabase rows with GET/HEAD only, generate ignored local JSONL/Cypher/status files, and rebuild only the `OLIFullProjectionNode` namespace in the existing local Memgraph container. The latest readback passed with `1219` nodes, `3318` relationships, and observations `253`, `254`, `255`, and `256` present exactly once; observation `256` connects to species `162`, biome `3`, story thread `8`, open loop `10`, related story beats `14` and `18`, published pipeline `31`, and chronicle `59` through canonical source rows. Ecosystem interaction/resource rows are deferred from v1 and absent from the current projection. Memgraph remains derived/local/noncanonical and does not approve story links, open loops, beats, chronicles, media metadata, Planner work, public output, or writeback.
 - CRM relationship-system migration 013 is live after user-applied Supabase SQL on 2026-05-12. It added 33 additive tables beside the legacy CRM tables, with read-only verification showing all new tables empty and legacy counts unchanged. The CRM tab now includes a read-only Relationship view for schema/table counts and review queues through the internal main-process secret-key bridge. Migration 014 is live as of 2026-05-13, adding flexible labeled `crm_contact_links` rows for legacy CRM contact websites/social/reference links.
-- `miniBIOTA_App` is the active desktop operator surface for miniBIOTA.
 
 ### Priorities
 - Continue the staged CRM relationship-system UI: expand the read-only Relationship summary into People, Organizations, Opportunities, Interactions, Next Actions, Review, Agent Inbox, and reporting surfaces before any write or backfill workflows.
@@ -210,8 +210,8 @@
 
 ### Risks / Gaps
 - CRM migration 013 created live RLS-protected tables with no policies. Any publishable-key policy design, legacy backfill, or CRM write workflow must be separately approved and tested. Migration 014's `crm_contact_links` table is live for legacy contact links; creating/editing those links remains a live CRM record write.
+- Ecological events are visible internally but remain RLS-gated for public/runtime reads. The browser is read-only; any event write/edit workflow or public access policy must be separately approved.
 - Supabase secret-key access would be a major security risk if exposed outside the internal app.
-- Real admin image upload to Supabase Storage still needs careful live verification when that work resumes.
 
 ## Cross-Domain Next Actions
 

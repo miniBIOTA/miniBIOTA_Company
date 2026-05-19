@@ -2,8 +2,8 @@
 id: operation_living_intelligence_data_projection_matrix
 title: Operation Living Intelligence Data Projection Matrix
 domain: company_operations
-last_updated: 2026-05-16
-tags: [operation-living-intelligence, data-projection, memgraph, supabase, pgvector, analytics, agents, migration-scope]
+last_updated: 2026-05-19
+tags: [operation-living-intelligence, data-projection, memgraph, supabase, retrieval, analytics, agents, migration-scope]
 status: active_planning
 ---
 # Operation Living Intelligence Data Projection Matrix
@@ -217,7 +217,7 @@ Current external platform sources checked:
 | Markdown domain repos | Durable meaning, source packets, decisions, briefs, workflow rules | Yes for narrative and operating context | Source packets, Research notes, Company coordination |
 | Supabase/Postgres | Structured operational records, public/admin website data, Planner, Content, Research, App, Growth, telemetry | Yes for live structured state | Keep all current tables |
 | Memgraph | Relationship reasoning, provenance graph, multi-hop agent context | No at first; derived graph | Living Atlas and agent routing graph |
-| Supabase pgvector | First-pass semantic retrieval near existing records | Derived/search unless a table is explicitly canonical | Source packets, scripts, notes, summaries |
+| Local retrieval baseline | No-cost source discovery near active docs and source packets | Derived/search only | Source packets, scripts, notes, summaries |
 | DuckDB/MotherDuck | Analytics warehouse for audience, website, QR, agent telemetry, and performance history | Derived analytical history | YouTube first |
 | Postgres telemetry tables | Current and internal biome telemetry history | Yes for current telemetry state and internal history for now | `telemetry_snapshot`, `biome_telemetry` |
 | Visual AI/local models | Candidate media annotations and evidence discovery | No; review layer only | Raw footage/media evidence pilot |
@@ -304,7 +304,7 @@ Write only after the relevant approval gate is satisfied.
 | Supabase/Postgres | Live structured operational truth | App runtime plus owning domains | Agents when current structured state matters | Proposed writes or approval bundles to owning records | Explicit approval or future standing domain delegation; schema/runtime/admin changes remain App-approved |
 | Planner Programs/Projects/Tasks | Live operating work queue and program links | App runtime; Company/domain governance by record owner | Company and domain agents for current status | Task/project/status/link/schedule updates | Explicit Planner approval unless standing delegation exists for that domain |
 | Memgraph | Derived relationship and provenance graph | App implementation; Company/Research governance by graph lane | Agents after a rebuildable graph exists | Candidate relationships, missing evidence, dependency paths | Write only to derived graph after scoped build approval; canonical corrections go back to source owner |
-| pgvector/vector search | Derived semantic retrieval | App implementation; domains own indexed content meaning | Agents after indexed corpus is approved | Indexing scope, citation rules, retrieval evaluation fixes | Embedding/index job approval; canonical text edits remain repo/domain writes |
+| Retrieval/vector search | Derived source discovery and possible later semantic retrieval | Company local helper now; App implementation later only if approved; domains own indexed content meaning | Agents after indexed corpus is approved | Indexing scope, citation rules, retrieval evaluation fixes | Embedding/index job approval; canonical text edits remain repo/domain writes |
 | DuckDB/MotherDuck analytics | Derived performance history | Growth/Content/Web/Company meaning; App/data implementation | Agents after source/API/export approval | Reports, dashboard questions, metric joins | API/OAuth/export approval; no strategy, sponsor, pricing, or campaign commitments by metric inference |
 | Visual AI candidate annotations | Derived media review layer | App tooling; Raw Footage/Content/Research review | Agents after bounded test set approval | Candidate tags, descriptions, timestamps, pull sheets, review notes | Model run/test-set approval; no media metadata, upload, publication, or claim write without separate approval |
 | Redis/cache/queues | Temporary runtime state only | App implementation | Agents only through approved runtime tools | Queue/cache needs, job status design | App-owned runtime approval; never durable truth |
@@ -357,16 +357,16 @@ Before any first export/import, Memgraph graph, vector index, analytics pull, vi
 | Database/platform | Accounted role | Current stance |
 |---|---|---|
 | Supabase/Postgres | Canonical structured records across Planner, Content, Research, Web/App, Growth, Financials, media, telemetry | Keep; do not replace |
-| PostgreSQL + pgvector | Current Supabase-compatible retrieval path for embeddings near existing records | Preferred first vector path |
+| Local deterministic retrieval | Current no-cost retrieval path for source discovery near active docs | Preferred first retrieval path |
 | Memgraph | Derived graph for relationships, provenance, agent routing, dependency reasoning | Selected graph pilot direction |
 | Neo4j | Competing graph database option | Not selected for the first pilot because Memgraph better fits the current free/local-first posture |
-| Supabase pgvector | First-pass vector retrieval close to existing Postgres data | Candidate before dedicated vector DB |
+| Supabase pgvector | Possible later vector retrieval close to existing Postgres data | Deferred until embedding generator, credential, billing, source-scope, refresh, and write-boundary model are explicitly accepted |
 | TiDB/TiDB Cloud | Unified SQL, vector, and HTAP platform option | Deferred; not needed while Supabase remains canonical |
-| Pinecone | Managed vector database for production RAG | Deferred unless pgvector/local retrieval becomes a bottleneck |
-| Qdrant | Filtering-heavy vector search platform | Deferred; strongest dedicated vector candidate if metadata filters outgrow pgvector |
+| Pinecone | Managed vector database for production RAG | Deferred unless local retrieval or a future approved embedding path becomes a bottleneck |
+| Qdrant | Filtering-heavy vector search platform | Deferred; strongest dedicated vector candidate if metadata filters outgrow local retrieval or a future approved pgvector path |
 | Weaviate | Open-source hybrid vector/semantic search platform | Deferred unless hybrid semantic search becomes central |
 | Milvus | Large-scale vector platform for very high embedding volume | Deferred; oversized for current scale |
-| ChromaDB | Local/prototype vector database | Optional local experiment, but pgvector is cleaner for the shared system |
+| ChromaDB | Local/prototype vector database | Optional local/offline experiment only when source scope is approved |
 | MongoDB Atlas Vector Search | Document database plus vector search | Deferred; current canonical data is already relational/Supabase-first |
 | DuckDB | Local analytics prototype for YouTube-first warehouse | Recommended first analytics prototype |
 | MotherDuck | Cloud/collaborative DuckDB option | Optional later |
@@ -416,7 +416,7 @@ This ledger keeps the earlier database research from disappearing into broad cat
 | Platform | Keep in architecture? | Why |
 |---|---|---|
 | Supabase/Postgres | Yes, canonical | Already owns live structured records, Planner, app-facing workflows, public/admin data, and domain tables. |
-| PostgreSQL + pgvector | Yes, first vector layer | Lowest-friction semantic retrieval because it stays close to Supabase/Postgres records. |
+| Local deterministic retrieval | Yes, current retrieval baseline | Lowest-friction source discovery because it has no API key, bill, schema, or runtime integration. |
 | Memgraph | Yes, first graph layer | Best current fit for local/free graph projection, relationship reasoning, and agent routing. |
 | Neo4j | Watchlist | Strong graph option, but less aligned with the current free/local-first decision and the $65/month concern. |
 | Financials task `406` graph cost review | Yes, cost gate | Stay no-cost and Memgraph-first; use Neo4j Aura Free only as bounded fallback/comparison after cloud-data approval; defer paid graph tooling until task `409`, manifests, rollback owner, and real free/local limitation exist. |
@@ -428,7 +428,7 @@ This ledger keeps the earlier database research from disappearing into broad cat
 | BigQuery | Optional Google-native upgrade | Use if YouTube/Google Analytics integration becomes easier or more valuable there than DuckDB. |
 | TiDB/TiDB Cloud | Watchlist | Interesting unified SQL/vector/HTAP option, but adopting it would duplicate or replace Supabase too early. |
 | Pinecone | Watchlist | Strong managed vector DB, but paid managed retrieval is unnecessary until volume/latency require it. |
-| Qdrant | Watchlist, likely best dedicated-vector fallback | Useful if metadata-filtered semantic search becomes hard in pgvector. |
+| Qdrant | Watchlist, likely best dedicated-vector fallback | Useful if metadata-filtered semantic search becomes hard after a future approved embedding path exists. |
 | Weaviate | Watchlist | Useful if hybrid semantic/classic search becomes a core product capability. |
 | Milvus | Watchlist | Intended for much larger vector scale than the current OLI pilot. |
 | ChromaDB | Local experiment only | Good prototyping tool, but less appropriate as the shared durable retrieval layer. |
@@ -522,7 +522,7 @@ Every node and relationship should carry enough provenance to rebuild and audit:
 
 ## Vector Projection Scope
 
-Use Supabase/pgvector first unless App later proves a dedicated vector database is needed.
+Use the no-cost local retrieval baseline first. Supabase pgvector and dedicated vector databases remain possible later retrieval paths only after Josue explicitly accepts the embedding generator, credential, billing, source-scope, refresh, and write-boundary model.
 
 Vector search should retrieve likely relevant material. It should not decide truth. It should always return source paths or record IDs that an agent can cite and check.
 
@@ -1429,7 +1429,7 @@ read-only exports with provenance
 CSV or Parquet staging files
         |
         v
-Memgraph / pgvector / DuckDB projections
+Memgraph / local retrieval / DuckDB projections
         |
         v
 agent queries, summaries, proposed-write bundles
@@ -1441,16 +1441,16 @@ Recommended export file families:
 |---|---|---|
 | `nodes_species.csv` | CSV | Memgraph |
 | `nodes_biomes.csv` | CSV | Memgraph |
-| `nodes_observations.csv` | CSV | Memgraph/vector |
+| `nodes_observations.csv` | CSV | Memgraph/retrieval |
 | `nodes_content_items.csv` | CSV | Memgraph/analytics |
-| `nodes_chronicles.csv` | CSV | Memgraph/vector |
+| `nodes_chronicles.csv` | CSV | Memgraph/retrieval |
 | `nodes_media_assets.csv` | CSV | Memgraph |
 | `nodes_work_items.csv` | CSV | Memgraph |
 | `edges_ecology.csv` | CSV | Memgraph |
 | `edges_content_story.csv` | CSV | Memgraph |
 | `edges_media_evidence.csv` | CSV | Memgraph |
 | `edges_program_dependencies.csv` | CSV | Memgraph |
-| `documents_vector.jsonl` | JSONL | pgvector embedding job |
+| `documents_retrieval.jsonl` | JSONL | local retrieval baseline; future embedding job only after explicit cost/credential approval |
 | `media_ai_candidates.jsonl` | JSONL | Nemotron/Codex visual AI pilot, optional Qwen benchmark, optional vector search |
 | `media_clip_pull_sheets.jsonl` | JSONL | Content/DaVinci review workflow |
 | `youtube_daily_metrics.parquet` | Parquet | DuckDB/MotherDuck |

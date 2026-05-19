@@ -2,7 +2,7 @@
 id: operation_living_intelligence_active_reference_map_2026-05-18
 title: Operation Living Intelligence Active Reference Map
 domain: company_operations
-last_updated: 2026-05-18
+last_updated: 2026-05-19
 tags: [operation-living-intelligence, intelligent-harness, active-reference, cleanup, observation-workflow, phase-21]
 status: active_reference_map_current_after_phase19_proof_and_refresh_archived
 ---
@@ -89,7 +89,7 @@ Archived wave and transition documents should be treated this way:
 |---|---|
 | Waves 1-3 graph/story/species docs | Archived Lake Post-Seal regression/test fixture and model provenance, not the daily operator path. |
 | Wave 4 analytics | Archived deferred analytics warehouse reference. |
-| Wave 5 retrieval/vector docs | Archived deferred retrieval/pgvector reference; pgvector remains unapproved. |
+| Wave 5 retrieval/vector docs | Archived deferred retrieval/vector reference; paid/API-key-dependent pgvector embedding remains unapproved. |
 | Wave 6 visual AI/media docs | Archived deferred media and visual-AI reference; media metadata writes remain unapproved. |
 | Wave 7 routing docs | Archived provenance for routing concepts; not the current operator workflow. |
 | Wave 8 telemetry docs | Archived deferred telemetry reference. |
@@ -122,7 +122,7 @@ The following remain unapproved:
 - Planner writes.
 - App runtime changes beyond already approved Intelligence tab work.
 - Memgraph modification.
-- pgvector.
+- paid/API-key-dependent pgvector embedding.
 - public output.
 - media metadata writes.
 - canonical writeback beyond explicitly approved observation records.
